@@ -9,7 +9,7 @@
 ---
  
 #ejGrid
-The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
+The grid can be easily configured to the DOM element using the 'ej-grid' html tag. You can create a grid with a highly customizable look and feel.
 
 ####Syntax
 $(element).ejGrid(options)
