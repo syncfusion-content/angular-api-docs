@@ -84,6 +84,4738 @@ export class AppComponent {
 * module:ej.excelfilter.js
 
 
+## Members
+
+### allowCellMerging `Boolean`
+{:#members:allowcellmerging}
+
+Gets or sets a value that indicates whether to customizing cell based on our needs.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowCellMerging]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowGrouping `Boolean`
+{:#members:allowgrouping}
+
+Gets or sets a value that indicates whether to enable dynamic grouping behavior. Grouping can be done by drag on drop desired columns to grid&rsquo;s GroupDropArea. This can be further customized through &ldquo;groupSettings&rdquo; property.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowKeyboardNavigation `Boolean`
+{:#members:allowkeyboardnavigation}
+
+Gets or sets a value that indicates whether to enable keyboard support for performing grid actions. selectionType &ndash; Gets or sets a value that indicates whether to enable single row or multiple rows selection behavior in grid. Multiple selection can be done through by holding CTRL and clicking the grid rows
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowKeyboardNavigation]="false">
+</ej-grid>
+{% endhighlight %}
+
+### allowFiltering `Boolean`
+{:#members:allowFiltering}
+
+Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through &ldquo;filterSettings&rdquo; property
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowSorting `Boolean`
+{:#members:allowsorting}
+
+Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowMultiSorting `Boolean`
+{:#members:allowmultisorting}
+
+Gets or sets a value that indicates whether to enable multi columns sorting behavior in grid. Sort multiple columns by holding CTRL and click on the corresponding column header.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true" [allowMultiSorting]="true">
+</ej-grid>
+ {% endhighlight %}
+
+### allowPaging `Boolean`
+{:#members:allowpaging}
+
+This specifies the grid to show the paginated data. Also enables pager control at the bottom of grid for dynamic navigation through data source. Paging can be further customized through &ldquo;pageSettings&rdquo; property.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}            
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
+</ej-grid>                 
+{% endhighlight %}
+
+### allowReordering `Boolean`
+{:#members:allowreordering}
+
+Gets or sets a value that indicates whether to enable the columns reordering behavior in the grid. Reordering can be done through by drag and drop the particular column from one index to another index within the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}                     
+<ej-grid id="Grid" [dataSource]="gridData" [allowReordering]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowResizeToFit `Boolean`
+{:#members:allowresizetofit}
+
+Gets or sets a value that indicates whether the column is non resizable. Column width is set automatically based on the content or header text which is large.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowResizeToFit]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowResizing `Boolean`
+{:#members:allowresizing}
+
+Gets or sets a value that indicates whether to enable dynamic resizable of columns. Resize the width of the columns by simply click and move the particular column header line
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowResizing]="true" [allowScrolling]=”true” [scrollSettings]=”dimensions”>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.dimensions={height:300,width:200};
+{% endhighlight %}
+
+### allowRowDragAndDrop `Boolean`
+{:#members:allowrowdraganddrop}
+
+Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag & drop rows between multiple Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}                     
+<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowScrolling `Boolean`
+{:#members:allowscrolling}
+
+Gets or sets a value that indicates whether to enable the scrollbar in the grid and view the records by scroll through the grid manually
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]=”true” [scrollSettings]=”dimensions”>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.dimensions={height:200,width:200};
+{% endhighlight %}
+
+### allowSearching `Boolean`
+{:#members:allowsearching}
+
+Gets or sets a value that indicates whether to enable dynamic searching behavior in grid. Currently search box can be enabled through &ldquo;toolbarSettings&rdquo;
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]=”true” [toolbarSettings]=”toolbaritems”>
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.toolbaritems={showToolbar:true,toolbarItems:["search"]};
+{% endhighlight %}
+
+### allowSelection `Boolean`
+{:#members:allowselection}
+
+Gets or sets a value that indicates whether user can select rows on grid. On enabling feature, selected row will be highlighted.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowTextWrap `Boolean`
+{:#members:allowtextwrap}
+
+Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowTextWrap]="true">
+</ej-grid>
+{% endhighlight %}
+
+### allowMultipleExporting `Boolean`
+{:#members:allowmultipleexporting}
+
+Gets or sets a value that indicates whether to enable the multiple exporting behavior on grid data. 
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData" [allowMultipleExporting]="true">
+</ej-grid>
+{% endhighlight %}
+
+### commonWidth `Number`
+{:#members:commonwidth}
+
+Gets or sets a value that indicates to define common width for all the columns in the grid.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData" [commonWidth]="200">
+</ej-grid>
+{% endhighlight %}
+
+### gridLines `enum`
+{:#members:gridlines}
+
+<ts name="ej.Grid.GridLines"/>
+
+Gets or sets a value that indicates to enable the visibility of the grid lines.
+
+#### Default Value:
+{:.param}
+* ej.Grid.GridLines.Both
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">Displays both the horizontal and vertical grid lines.</td>
+</tr>
+<tr>
+<td class="name">Horizontal</td>
+<td class="description">Displays the horizontal grid lines only.</td>
+</tr>
+<tr>
+<td class="name">Vertical</td>
+<td class="description">Displays the vertical grid lines only.</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">No grid lines are displayed.</td>
+</tr>
+</table>
+
+#### Example 
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData"  gridLines="none" >
+</ej-grid>
+{% endhighlight %}
+
+### childGrid `Object`
+{:#members:childgrid}
+
+This specifies the grid to add the grid control inside the grid row of the parent with expand/collapse options
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [childGrid]="attributes">
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.employee=[{ 
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            OrderDate: new Date(8367642e5), Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            OrderDate: new Date(8367642e5), Freight: 41.34
+        }];
+this.attributes={dataSource:window.employee,queryString: "OrderID"};
+{% endhighlight %}
+
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+<ts name="ej.Grid.ClipMode"/>
+
+Sets the clip mode for Grid cell as ellipsis or clipped content(both header and content)
+
+#### Default Value:
+{:.param}
+* ej.Grid.ClipMode.Clip
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Ellipsis</td>
+<td class="description">Shows ellipsis for the overflown cell.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell</td>
+</tr> 
+<tr>
+<td class="name">EllipsisWithTooltip</td>
+<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
+</tr>   
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80" clipMode="ellipsis"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columnLayout `enum`
+{:#members:columnlayout}
+
+<ts name="ej.Grid.ColumnLayout"/>
+
+Used to enable or disable static width settings for column. If the columnLayout is set as fixed, then column width will be static.
+
+#### Default Value:
+{:.param}
+* ej.Grid.ColumnLayout.Auto
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Auto</td>
+<td class="description">Column layout is auto(based on width).</td>
+</tr>
+<tr>
+<td class="name">Fixed</td>
+<td class="description">Column layout is fixed(based on width).</td>
+</tr> 
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" columnLayout="fixed">
+    <e-columns>
+        <e-column field= "OrderID" headerText= "Order ID" width= "80"></e-column>
+        <e-column field= "CustomerID" headerText= "Customer ID" width= "90"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns `Array`
+{:#members:columns}
+
+Gets or sets an object that indicates to render the grid with specified columns
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
+</ej-grid>
+{% endhighlight %}
+
+{% highlight html %} 
+public value = $("#Grid").ejGrid("OrderID", "CustomerID");
+{% endhighlight %}
+
+### columns.allowEditing `Boolean`
+{:#members:columns-allowediting}
+
+Gets or sets a value that indicates whether to enable editing behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true};
+{% endhighlight %}
+
+### columns.allowFiltering `Boolean`
+{:#members:columns-allowfiltering}
+
+Gets or sets a value that indicates whether to enable dynamic filtering behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowFiltering]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.allowGrouping `Boolean`
+{:#members:columns-allowgrouping}
+
+Gets or sets a value that indicates whether to enable dynamic grouping behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowGrouping]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.allowSorting `Boolean`
+{:#members:columns-allowsorting}
+
+Gets or sets a value that indicates whether to enable dynamic sorting behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowSorting]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.allowResizing `Boolean`
+{:#members:columns-allowresizing}
+
+Gets or sets a value that indicates whether to enable dynamic resizable for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowResizing]="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowResizing]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.commands `Array`
+{:#members:columns-commands}
+
+Gets or sets an object that indicates to define a command column in the grid.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column  headerText= "Manage Records" [commands]="buttons" [isUnbound]= "true",width="130"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight html %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
+                  { type: "delete", buttonOptions: { text: "Delete" } },
+                  { type: "save", buttonOptions: { text: "Save" } },
+                  { type: "cancel", buttonOptions: { text: "Cancel" } }
+             ];
+{% endhighlight %}
+
+### columns.commands.buttonOptions `Object`
+{:#members:columns-commands-buttonoptions}
+
+Gets or sets an object that indicates to define all the button options which are available in ejButton.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column headerText= "Manage Records" [commands]="buttons" [isUnbound]= "true",width="130"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight html %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
+                  { type: "delete", buttonOptions: { text: "Delete" } },
+                  { type: "save", buttonOptions: { text: "Save" } },
+                  { type: "cancel", buttonOptions: { text: "Cancel" } }
+             ];
+{% endhighlight %}
+
+### columns.commands.type `enum`
+{:#members:columns-commands-type}
+
+<ts name="ej.Grid.UnboundType"/>
+
+Gets or sets a value that indicates to add the command column button. See unboundType
+
+#### Default Value:
+{:.param}
+* -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Unbound type is edit.</td>
+</tr>
+<tr>
+<td class="name">Save</td>
+<td class="description">Unbound type is save.</td>
+</tr> 
+<tr>
+<td class="name">Delete</td>
+<td class="description">Unbound type is delete.</td>
+</tr> 
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Unbound type is cancel.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column headerText= "Manage Records" [commands]="buttons" [isUnbound]= "true",width="130"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight html %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
+                  { type: "delete", buttonOptions: { text: "Delete" } },
+                  { type: "save", buttonOptions: { text: "Save" } },
+                  { type: "cancel", buttonOptions: { text: "Cancel" } }
+             ];
+{% endhighlight %}
+
+### columns.cssClass `String`
+{:#members:columns-cssclass}
+
+Gets or sets a value that indicates to provide custom CSS for an individual column.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<style class="temp">
+.temp{
+color:green;
+}
+</style>
+<ej-grid id="Grid" [dataSource]="gridData">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" cssClass="temp"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid> 
+{% endhighlight %}
+
+### columns.customAttributes `Object`
+{:#members:columns-customattributes}
+
+Gets or sets a value that indicates the attribute values to the td element of a particular column
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [customAttributes]="attributes"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>  
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={"style":"color:red"};
+{% endhighlight %}
+
+### columns.dataSource `Array`
+{:#members:columns-datasource}
+
+Gets or sets a value that indicates to bind the external datasource to the particular column when column `editType` as `dropdownedit` and also it is used to bind the datasource to the foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [visible]="false"></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.gridData = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+            OrderDate: new Date(8364186e5), Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+            OrderDate: new Date(836505e6), Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            OrderDate: new Date(8367642e5), Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            OrderDate: new Date(8367642e5), Freight: 41.34
+        },
+        
+        {
+            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
+            OrderDate: new Date(8368506e5), Freight: 51.3
+        }];
+this.employee = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+            FirstName: 'VIN', Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+            FirstName: 'DIA', Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            FirstName: 'NIM', Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            FirstName: 'AUN', Freight: 41.34
+        },
+        
+        {
+            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
+            FirstName: 'REN', Freight: 51.9
+        }];
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+{% endhighlight %}
+
+### columns.defaultValue `String|Number|Boolean|Date`
+{:#members:columns-defaultvalue}
+
+Gets or sets a value that indicates to display the specified default value while adding a new record to the grid
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" defaultValue="ABC"></e-column>
+        <e-column field= "Freight" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowAdding:true};
+this.items={ showToolbar: true,toolbarItems:["add"]};
+{% endhighlight %}
+
+### columns.disableHtmlEncode `Boolean`
+{:#members:columns-disablehtmlencode}
+
+Gets or sets a value that indicates to render the grid content and header with an HTML elements
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field= "OrderID" headerText="<div&amp;gtOrder ID</div>" [disableHtmlEncode]="false"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.displayAsCheckBox `Boolean`
+{:#members:columns-displayascheckbox}
+
+Gets or sets a value that indicates to display a column value as checkbox or string
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "Verified" [displayAsCheckBox]= "false"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.editParams `Object`
+{:#members:columns-editparams}
+
+Gets or sets a value that indicates to customize ejNumericTextbox of an editable column. See editingType
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "Freight" [editType]= "numeric" [editParams]="deci" ></e-column>
+    </e-columns>
+</ej-grid>  
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.deci={decimalPlaces:2};
+{% endhighlight %}
+
+### columns.editTemplate `Object`
+{:#members:columns-edittemplate}
+
+Gets or sets a template that displays a custom editor used to edit column values. See editTemplate
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "Freight"></e-column>
+        <e-column field= "EmployeeID" [editTemplate]="functions"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+this.attributes={allowEditing:true};
+this.functions={ create: function () { return "<input>"; }, read: function (args) { return args.ejMaskEdit("get_StrippedValue"); }, write: function (args) { args.element.ejMaskEdit({ width: "100%" ,maskFormat: "9",value: args.rowdata !== undefined ? args.rowdata["EmployeeID"]: "" }); } };
+
+### columns.editType `enum`
+{:#members:columns-edittype}
+
+<ts name="ej.Grid.EditingType"/>
+
+Gets or sets a value that indicates to render the element(based on edit type) for editing the grid record. See editingType
+
+#### Default Value:
+{:.param}
+* ej.Grid.EditingType.String
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">String</td>
+<td class="description">Specifies editing type as string edit.</td>
+</tr>
+<tr>
+<td class="name">Boolean</td>
+<td class="description">Specifies editing type as boolean edit.</td>
+</tr> 
+<tr>
+<td class="name">Numeric</td>
+<td class="description">Specifies editing type as numeric edit.</td>
+</tr> 
+<tr>
+<td class="name">Dropdown</td>
+<td class="description">Specifies editing type as dropdown edit.</td>
+</tr> 
+<tr>
+<td class="name">DatePicker</td>
+<td class="description">Specifies editing type as datepicker.</td>
+</tr> 
+<tr>
+<td class="name">DateTimePicker</td>
+<td class="description">Specifies editing type as datetime picker.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "Freight" [editType]= "numeric" [editParams]="deci" ></e-column>
+    </e-columns>
+</ej-grid>  
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.deci={decimalPlaces:2};
+{% endhighlight %}
+
+### columns.enableGroupByFormat `Boolean`
+{:#members:columns-enablegroupbyformat}
+
+Gets or sets a value that indicates to groups the column based on its column format.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [allowPaging]="true" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" ></e-column>
+        <e-column field="CustomerID" headerText="CustomerID"></e-column>
+        <e-column field="Freight" headerText="Freight" format= "{0:C2}" [enableGroupByFormat]= "true"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" format= "{0:MM/dd/yyyy}" [enableGroupByFormat]= "true"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.field `String`
+{:#members:columns-field}
+
+Gets or sets a value that indicates to display the columns in the grid mapping with column name of the dataSource.
+
+#### Default Value:
+{:.param}
+* ""
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData">
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" ></e-column>        
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.foreignKeyField `String`
+{:#members:columns-foreignkeyfield}
+
+Gets or sets a value that indicates to define foreign key field name of the grid datasource.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [visible]="false"></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.gridData = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+            OrderDate: new Date(8364186e5), Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+            OrderDate: new Date(836505e6), Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            OrderDate: new Date(8367642e5), Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            OrderDate: new Date(8367642e5), Freight: 41.34
+        },
+        
+        {
+            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
+            OrderDate: new Date(8368506e5), Freight: 51.3
+        }];
+this.employee = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+            FirstName: 'VIN', Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+            FirstName: 'DIA', Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            FirstName: 'NIM', Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            FirstName: 'AUN', Freight: 41.34
+        },
+        
+        {
+            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
+            FirstName: 'REN', Freight: 51.9
+        }];
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+{% endhighlight %}
+
+### columns.foreignKeyValue `String`
+{:#members:columns-foreignkeyvalue}
+
+Gets or sets a value that indicates to bind the field which is in foreign column datasource based on the foreignKeyField
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [visible]="false"></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.gridData = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+            OrderDate: new Date(8364186e5), Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+            OrderDate: new Date(836505e6), Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            OrderDate: new Date(8367642e5), Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            OrderDate: new Date(8367642e5), Freight: 41.34
+        },
+        
+        {
+            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
+            OrderDate: new Date(8368506e5), Freight: 51.3
+        }];
+this.employee = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+            FirstName: 'VIN', Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+            FirstName: 'DIA', Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            FirstName: 'NIM', Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            FirstName: 'AUN', Freight: 41.34
+        },
+        
+        {
+            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
+            FirstName: 'REN', Freight: 51.9
+        }];
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+{% endhighlight %}
+
+### columns.format `String`
+{:#members:columns-format}
+
+Gets or sets a value that indicates the format for the text applied on the column
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid> 
+{% endhighlight %}
+
+### columns.headerTemplateID `String`
+{:#members:columns-headertemplateid}
+
+Gets or sets a value that indicates to add the template within the header element of the particular column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<div id="customerTemplate">
+<span class="e-userlogin e-icon headericon"></span>
+ CUS ID
+</div>
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" headerTemplateID= "#customerTemplate"></e-column>
+        <e-column field= "Freight"  ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.headerText `String`
+{:#members:columns-headertext}
+
+Gets or sets a value that indicates to display the title of that particular column.
+
+#### Default Value:
+{:.param}
+* ""
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+       <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+       <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.headerTextAlign `enum`
+{:#members:columns-headertextalign}
+
+<ts ref="ej.TextAlign"/>
+
+This defines the text alignment of a particular column header cell value. See headerTextAlign
+
+#### Default Value:
+{:.param}
+* null
+
+<table>
+Add a comment to this line
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">Header text is centered.</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">Header text is justified.</td>
+</tr> 
+<tr>
+<td class="name">Left</td>
+<td class="description">Header text is aligned to the left.</td>
+</tr> 
+<tr>
+<td class="name">Right</td>
+<td class="description">Header text is aligned to the right.</td>
+</tr>   
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+       <e-column field="OrderID"  headerText="OrderID" width="75" headerTextAlign="right"></e-column>
+       <e-column field="CustomerID" headerText="CustomerID" width="80" headerTextAlign="center"></e-column>
+    </e-columns>
+</ej-grid> 
+{% endhighlight %}
+
+### columns.isFrozen `Boolean`
+{:#members:columns-isfrozen}
+
+You can use this property to freeze selected columns in grid at the time of scrolling.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]=”true” [scrollSettings]=”dimensions”>
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" [isFrozen]="true"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.dimensions={ width : 300,height:300};
+{% endhighlight %}
+
+### columns.isIdentity `Boolean`
+{:#members:columns-isidentity}
+
+Gets or sets a value that indicates the column has an identity in the database.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData">
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" [isIdentity]="true"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.isPrimaryKey `Boolean`
+{:#members:columns-isprimarykey}
+
+Gets or sets a value that indicates the column is act as a primary key(read-only) of the grid. The editing is performed based on the primary key column
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true};
+{% endhighlight %}
+
+### columns.priority `Number`
+{:#members:columns-priority}
+
+Gets or sets a value that indicates the order of Column that are to be hidden or visible when Grid element is in responsive mode and could not occupy all columns. 
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [isResponsive]= "true" [minWidth]= "400">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" [priority]= "2"></e-column>
+        <e-column field="EmployeeID"[priority]= "1"></e-column>
+    </e-columns>
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true};
+{% endhighlight %}
+
+### columns.showInColumnChooser `Boolean`
+{:#members:columns-showincolumnchooser}
+
+Used to hide the particular column in column chooser by giving value as false.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [showColumnChooser]="true">
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" [showInColumnChooser]="true"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.template `Boolean|String`
+{:#members:columns-template}
+
+Gets or sets a value that indicates whether to enables column template for a particular column.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="columnTemplate" type="text/x-jsrender">
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
+</script>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" [template]="true" templateID="#columnTemplate"></e-column>
+        <e-column field="EmployeeID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.textAlign `enum`
+{:#members:columns-textalign}
+
+<ts ref=" ej.TextAlign"/>
+
+Gets or sets a value that indicates to align the text within the column. See textAlign
+
+#### Default Value:
+{:.param}
+* ej.TextAlign.Left
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Center</td>
+<td class="description">Text is centered.</td>
+</tr>
+<tr>
+<td class="name">Justify</td>
+<td class="description">Text is justified.</td>
+</tr> 
+<tr>
+<td class="name">Left</td>
+<td class="description">Text is aligned to the left.</td>
+</tr> 
+<tr>
+<td class="name">Right</td>
+<td class="description">Text is aligned to the right.</td>
+</tr>   
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" textAlign="center"></e-column>
+        <e-column field="CustomerID" textAlign="right"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid> 
+{% endhighlight %}
+
+
+### columns.tooltip `string`
+{:#members:columns-tooltip}
+
+Sets the template for Tooltip in Grid Columns(both header and content)
+
+Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+
+{% highlight html %}
+<script type="text/template" id="colTip">
+  {{:value }}
+  </script>
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" textAlign="center"></e-column>
+        <e-column field="CustomerID" textAlign="right"tooltip="#colTip"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.type `String`
+{:#members:columns-type}
+
+Gets or sets a value that indicates to specify the data type of the specified columns.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" type="string"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### columns.validationRules `Object`
+{:#members:columns-validationrules}
+
+Gets or sets a value that indicates to define constraints for saving data to the database.
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" [validationRules]="rules"></e-column>
+        <e-column field="CustomerID"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.rules={required: true, number: true };
+{% endhighlight %}
+
+### columns.visible `Boolean`
+{:#members:columns-visible}
+
+Gets or sets a value that indicates whether this column is visible in the grid.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" [visible]="false"></e-column>
+        <e-column field="CustomerID"></e-column>
+        <e-column field="EmployeeID"></e-column>
+    </e-columns>
+</ej-grid> 
+{% endhighlight %}
+
+### columns.width `Number`
+{:#members:columns-width}
+
+Gets or sets a value that indicates to define the width for a particular column in the grid.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID" width="75"></e-column>
+        <e-column field="CustomerID" width="80"></e-column>
+        <e-column field="ShipCity" width="110"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### contextMenuSettings `Object`
+{:#members:contextmenusettings}
+
+Gets or sets an object that indicates whether to customize the context menu behavior of the grid.
+
+### contextMenuSettings.contextMenuItems `Array`
+{:#members:contextmenusettings-contextmenuitems}
+
+Gets or sets a value that indicates whether to add the default context menu actions as a context menu items If enableContextMenu is true it will show all the items related to the target, if you want selected items from contextmenu you have to mention in the contextMenuItems
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [allowGrouping]="true" [allowSorting]="true" [allowPaging]="true" [contextMenuSettings]="settings">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.settings={enableContextMenu: true, contextMenuItems:["Add Record,Edit Record,Delete Record"] };
+{% endhighlight %}
+
+### contextMenuSettings.customContextMenuItems `Array`
+{:#members:contextmenusettings-customcontextmenuitems}
+
+Gets or sets a value that indicates whether to add custom contextMenu items within the toolbar to perform any action in the grid
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [contextMenuSettings]="settings">
+    <e-columns>
+        <e-column field="OrderID"></e-column>
+        <e-column field="CustomerID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={enableContextMenu: true, contextMenuItems:["Hidden Columns,Visible Columns"] };
+{% endhighlight %}
+
+### contextMenuSettings.enableContextMenu `Boolean`
+{:#members:contextmenusettings-enablecontextmenu}
+
+Gets or sets a value that indicates whether to enable the context menu action in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [allowGrouping]="true" [allowSorting]="true" [allowPaging]="true" [contextMenuSettings]="settings">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.settings={enableContextMenu: true };
+{% endhighlight %}
+
+### contextMenuSettings.subContextMenu `Array`
+{:#members:contextmenusettings-subcontextmenu}
+
+Used to get or set the subMenu to the corresponding custom context menu item.
+
+### contextMenuSettings.subContextMenu.contextMenuItem `string`
+{:#members:contextmenusettings-subcontextmenu-contextmenuitem}
+
+Used to get or set the corresponding custom context menu item to which the submenu to be appended.
+
+#### Default Value:
+{:.param}
+* null
+
+### contextMenuSettings.subContextMenu.subMenu `Array`
+{:#members:contextmenusettings-subcontextmenu-submenu}
+
+Used to get or set the sub menu items to the custom context menu item.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [contextMenuSettings]="settings" >
+
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.settings={enableContextMenu: true, customContextMenuItems: ["Hide Column"],subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }]};         
+{% endhighlight %}
+
+### contextMenuSettings.disableDefaultItems `Boolean`
+{:#members:contextmenusettings-disabledefaultitems}
+
+Gets or sets a value that indicates whether to disable the default context menu items in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [allowGrouping]="true" [allowSorting]="true" [allowPaging]="true" [contextMenuSettings]="settings">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.settings={enableContextMenu: true, customContextMenuItems:["Hidden Columns,Visible Columns"], disableDefaultItems: true };
+{% endhighlight %}
+
+### cssClass `String`
+{:#members:cssclass}
+
+Gets or sets a value that indicates to render the grid with custom theme. 
+
+#### Default Value:
+{:.param}
+* ""
+
+#### Example
+{:.example}
+{% highlight html %}
+<style type="text/css">
+   .gradient-green {
+       font-family: cursive;
+   }
+   .gradient-green .e-alt_row {
+       background: none repeat scroll 0 0 #71A409;
+   }
+</style>
+<ej-grid id="Grid" [dataSource]="gridData" cssClass= "gradient-green" >
+</ej-grid> 
+{% endhighlight %}
+
+### dataSource `Object`
+{:#members:datasource}
+
+Gets or sets the data to render the grid with records
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData">   
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.gridData = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
+            OrderDate: new Date(8364186e5), Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
+            OrderDate: new Date(836505e6), Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
+            OrderDate: new Date(8367642e5), Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
+            OrderDate: new Date(8367642e5), Freight: 41.34
+        },
+        
+        {
+            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
+            OrderDate: new Date(8368506e5), Freight: 51.3
+        }];
+{% endhighlight %}
+
+### detailsTemplate `String`
+{:#members:detailstemplate}
+This specifies the grid to add the details row for the corresponding master row
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="templateData" type="text/x-jsrender">
+<table>
+<tr>
+<td>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
+</td>
+</tr>
+</table>
+</script>
+<ej-grid id="Grid" [dataSource]="gridData" detailsTemplate="#templateData" detailsDataBound= "detailGridData">
+</ej-grid>            
+{% endhighlight %}
+
+### editSettings `Object`
+{:#members:editsettings}
+
+Gets or sets an object that indicates whether to customize the editing behavior of the grid.
+
+### editSettings.allowAdding `Boolean`
+{:#members:editsettings-allowadding}
+
+Gets or sets a value that indicates whether to enable insert action in the editing mode.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>               
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowAdding:true};
+this.items={ showToolbar: true,toolbarItems:["add"]};
+{% endhighlight %}
+
+### editSettings.allowDeleting `Boolean`
+{:#members:editsettings-allowdeleting}
+
+Gets or sets a value that indicates whether to enable the delete action in the editing mode.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                   
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowDeleting:true};
+this.items={ showToolbar: true,toolbarItems:["delete"]};
+{% endhighlight %}
+
+### editSettings.allowEditing `Boolean`
+{:#members:editsettings-allowediting}
+
+Gets or sets a value that indicates whether to enable the edit action in the editing mode.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>         
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true};
+this.items={ showToolbar: true,toolbarItems:["edit"]};
+{% endhighlight %}
+
+### editSettings.allowEditOnDblClick `Boolean`
+{:#members:editsettings-alloweditondblclick}
+
+Gets or sets a value that indicates whether to enable the editing action while double click on the record
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>   
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,allowEditOnDblClick: false};
+this.items={ showToolbar: true,toolbarItems:["edit"]};
+{% endhighlight %}
+
+### editSettings.dialogEditorTemplateID `String`
+{:#members:editsettings-dialogeditortemplateid}
+
+This specifies the id of the template. This template can be used to display the data that you require to be edited using the Dialog Box
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}               
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>               
+{% endhighlight %}
+
+{% highlight html %}
+    <script id="template" type="text/template">
+        <table>
+            <tr>
+                <td>OrderID</td>
+                <td>
+                    <input id="OrderID" name="OrderID" value="{{:OrderID}}" disabled="disabled" />
+                </td>
+            </tr>
+            <tr>
+                <td>CustomerID</td>
+                <td>
+                    <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" />
+                </td>
+            </tr>
+            <tr>
+                <td>EmployeeID</td>
+                <td>
+                    <input id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+                </td>
+            </tr>
+        </table>
+    </script>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,editMode: "dialogtemplate", dialogEditorTemplateID: "#template" };
+this.items={ showToolbar: true,toolbarItems:["edit"]};
+{% endhighlight %}
+
+### editSettings.editMode `enum`
+{:#members:editsettings-editmode}
+
+<ts name="ej.Grid.EditMode"/>
+
+Gets or sets a value that indicates whether to define the mode of editing See editMode
+
+#### Default Value:
+{:.param}
+* ej.Grid.EditMode.Normal
+
+<table>
+Add a comment to this line
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">Edit mode is normal.</td>
+</tr>
+<tr>
+<td class="name">Dialog</td>
+<td class="description">Edit mode is dialog.</td>
+</tr>  
+<tr>
+<td class="name">DialogTemplate</td>
+<td class="description">Edit mode is dialog template.</td>
+</tr> 
+<tr>
+<td class="name">Batch</td>
+<td class="description">Edit mode is batch.</td>
+</tr> 
+<tr>
+<td class="name">InlineForm</td>
+<td class="description">Edit mode is inline form.</td>
+</tr> 
+<tr>
+<td class="name">InlineTemplateForm</td>
+<td class="description">Edit mode is inline template form.</td>
+</tr> 
+<tr>
+<td class="name">ExternalForm</td>
+<td class="description">Edit mode is external form.</td>
+</tr> 
+<tr>
+<td class="name">ExternalFormTemplate</td>
+<td class="description">Edit mode is external form template.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                          
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,editMode: "dialog"};
+this.items={ showToolbar: true,toolbarItems:["edit"]};
+{% endhighlight %}
+
+### editSettings.externalFormTemplateID `String`
+{:#members:editsettings-externalformtemplateid}
+
+This specifies the id of the template. This template can be used to display the data that you require to be edited using the External edit form
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                          
+{% endhighlight %}
+
+{% highlight html %}
+<script id="template" type="text/template">
+   <table>
+       <tr>
+           <td>OrderID</td>
+           <td>
+               <input id="OrderID" name="OrderID" value="{{:OrderID}}" disabled="disabled" /></td>
+       </tr>
+       <tr>
+           <td>CustomerID</td>
+           <td>
+               <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" /></td>
+       </tr>
+       <tr>
+           <td>EmployeeID</td>
+           <td>
+               <input id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" /></td>
+       </tr>
+   </table>
+</script>
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,editMode: "ExternalFormTemplate", externalFormTemplateID: "#template"};
+this.items={ showToolbar: true,toolbarItems:["edit"]};
+{% endhighlight %}
+
+### editSettings.formPosition `enum`
+{:#members:editsettings-formposition}
+
+<ts name="ej.Grid.FormPosition"/>
+
+This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid
+
+#### Default Value:
+{:.param}
+* ej.Grid.FormPosition.BottomLeft
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">BottomLeft</td>
+<td class="description">Form position is bottomleft.</td>
+</tr>
+<tr>
+<td class="name">TopRight</td>
+<td class="description">Form position is topright.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                          
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true,editMode: "externalform", formPosition: "topright"};
+this.items={ showToolbar: true,toolbarItems:["edit"]};
+{% endhighlight %}
+
+### editSettings.inlineFormTemplateID `String`
+{:#members:editsettings-inlineformtemplateid}
+
+This specifies the id of the template. This template can be used to display the data that you require to be edited using the Inline edit form
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}               
+<div id="Grid"></div>
+<script id="template" type="text/template">
+   <table>
+       <tr>
+           <td>OrderID</td>
+           <td>
+               <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
+       </tr>
+       <tr>
+           <td>CustomerID</td>
+           <td>
+               <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
+       </tr>
+       <tr>
+           <td>EmployeeID</td>
+           <td>
+               <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
+       </tr>
+   </table>
+</script>
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
+    editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.InlineTemplateForm, inlineFormTemplateID: "#template" },
+    toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }                             
+});
+</script>                
+{% endhighlight %}
+
+### editSettings.rowPosition `enum`
+{:#members:editsettings-rowposition}
+
+<ts name="ej.Grid.RowPosition"/>
+
+This specifies to set the position of an adding new row either in the top or bottom of the grid
+
+#### Default Value:
+{:.param}
+* ej.Grid.RowPosition.Top
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Top</td>
+<td class="description">Specifies position of add new row as top.</td>
+</tr>
+<tr>
+<td class="name">Bottom</td>
+<td class="description">Specifies position of add new row as bottom.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                          
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true, allowAdding:true, rowPosition:"bottom" };
+this.items={ showToolbar: true,toolbarItems:["add"]};
+{% endhighlight %}
+
+### editSettings.showConfirmDialog `Boolean`
+{:#members:editsettings-showconfirmdialog}
+
+Gets or sets a value that indicates whether the confirm dialog has to be shown while saving or discarding the batch changes
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                          
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing:true, editMode: "batch", showConfirmDialog:false };
+this.items={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
+{% endhighlight %}
+
+### editSettings.showDeleteConfirmDialog `Boolean`
+{:#members:editsettings-showdeleteconfirmdialog}
+
+Gets or sets a value that indicates whether the confirm dialog has to be shown while deleting record
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                           
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowDeleting: true, showDeleteConfirmDialog:true };
+this.items={ showToolbar: true,toolbarItems: ["edit","delete","cancel"]};
+{% endhighlight %}
+
+### editSettings.titleColumn `String`
+{:#members:editsettings-titleColumn}
+
+Gets or sets a value that indicates whether the title for edit form is different from the primarykey column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                   
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowAdding: true, showAddNewRow: true, editMode: "dialog", titleColumn: "CustomerID" };
+this.items={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
+{% endhighlight %}
+
+### editSettings.showAddNewRow `Boolean`
+{:#members:editsettings-showaddnewrow}
+
+Gets or sets a value that indicates whether to display the add new form by default in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                   
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowAdding: true, showAddNewRow: true };
+this.items={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
+{% endhighlight %}
+
+### enableAltRow `Boolean`
+{:#members:enablealtrow}
+
+Gets or sets a value that indicates whether to enable the alternative rows differentiation in the grid records based on corresponding theme.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [enableAltRow]="true">
+</ej-grid>
+{% endhighlight %}
+
+### enableAutoSaveOnSelectionChange `Boolean`
+{:#members:enableautosaveonselectionchange}
+
+Gets or sets a value that indicates whether to enable the save action in the grid through row selection
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items" [enableAutoSaveOnSelectionChange]="false">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+### enableHeaderHover `Boolean`
+{:#members:enableheaderhover}
+
+Gets or sets a value that indicates whether to enable mouse over effect on the corresponding column header cell of the grid
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [enableHeaderHover]="true">
+</ej-grid>
+{% endhighlight %}
+
+### enablePersistence `Boolean`
+{:#members:enablepersistence}
+
+Gets or sets a value that indicates whether to persist the grid model state in page using applicable medium i.e., HTML5 localStorage or cookies
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]= "true" [enablePresistence]="true">
+</ej-grid>
+{% endhighlight %}
+
+### enableResponsiveRow `Boolean`
+{:#members:enableresponsiverow}
+
+Gets or sets a value that indicates whether the grid rows has to be rendered as detail view in mobile mode
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData" [isResponsive]="true" [enableResponsiveRow]= "true" >
+</ej-grid>
+{% endhighlight %}
+
+### enableRowHover `Boolean`
+{:#members:enablerowhover}
+
+Gets or sets a value that indicates whether to enable mouse over effect on corresponding grid row.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [enableRowHover]= "true" >
+</ej-grid>
+{% endhighlight %}
+
+### enableRTL `Boolean`
+{:#members:enablertl}
+
+Align content in the grid control from right to left by setting the property as true.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [enableRTL]= "true" >
+</ej-grid> 
+{% endhighlight %}
+
+### enableTouch `Boolean`
+{:#members:enabletouch}
+
+To Disable the mouse swipe property as false.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [enableTouch]= "false" >
+</ej-grid> 
+{% endhighlight %}
+
+### filterSettings `Object`
+{:#members:filtersettings}
+
+Gets or sets an object that indicates whether to customize the filtering behavior of the grid
+
+### filterSettings.enableCaseSensitivity `Boolean`
+{:#members:filtersettings-enablecasesensitivity}
+
+Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ enableCaseSensitivity:true, filterType:"excel"};
+{% endhighlight %}
+
+### filterSettings.filterBarMode `enum`
+{:#members:filtersettings-filterbarmode}
+
+<ts name="ej.Grid.FilterBarMode"/>
+
+This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode
+
+#### Default Value:
+{:.param}
+* ej.Grid.FilterBarMode.Immediate
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Immediate</td>
+<td class="description">Initiate filter operation on typing the filter query.</td>
+</tr>
+<tr>
+<td class="name">OnEnter</td>
+<td class="description">Initiate filter operation after Enter key is pressed.</td>
+</tr> 
+</table>
+
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ filterBarMode: "onenter"};
+{% endhighlight %}
+
+
+### filterSettings.filteredColumns `Array`
+{:#members:filtersettings-filteredcolumns}
+
+Gets or sets a value that indicates whether to define the filtered columns details programmatically at initial load
+
+#### Default Value:
+{:.param}
+* []
+
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Gets or sets a value that indicates whether to define the field name of the column to be filter.
+
+### filterSettings.filteredColumns.operator `enum`
+{:#members:filtersettings-filteredcolumns-operator}
+
+<ts ref="ej.FilterOperators"/>
+
+Gets or sets a value that indicates whether to define the filter condition to filtered column.
+
+#### Default Value:
+{:.param}
+* -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">startsWith</td>
+<td class="description">Specifies the filter operator as startswith.</td>
+</tr>
+<tr>
+<td class="name">endsWith</td>
+<td class="description">Specifies the filter operator as endswith.</td>
+</tr> 
+<tr>
+<td class="name">contains</td>
+<td class="description">Specifies the filter operator as contains.</td>
+</tr> 
+<tr>
+<td class="name">equal</td>
+<td class="description">Specifies the filter operator as equal.</td>
+</tr> 
+<tr>
+<td class="name">notEqual</td>
+<td class="description">Specifies the filter operator as notequal.</td>
+</tr> 
+<tr>
+<td class="name">greaterThan</td>
+<td class="description">Specifies the filter operator as greaterthan.</td>
+</tr> 
+<tr>
+<td class="name">greaterThanOrEqual</td>
+<td class="description">Specifies the filter operator as greaterthanorequal.</td>
+</tr> 
+<tr>
+<td class="name">lessThan</td>
+<td class="description">Specifies the filter operator as lessthan.</td>
+</tr> 
+<tr>
+<td class="name">lessThanOrEqual</td>
+<td class="description">Specifies the filter operator as Lessthanorequal.</td>
+</tr> 
+</table>
+
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
+
+Gets or sets a value that indicates whether to define the predicate as and/or.
+
+### filterSettings.filteredColumns.value `string|number`
+{:#members:filtersettings-filteredcolumns-value}
+
+Gets or sets a value that indicates whether to define the value to be filtered in a column.
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ filterType: "menu", filteredColumns: [{ field: "CustomerID", operator: "startswith", value: "vi", predicate: "and" }]};
+{% endhighlight %}
+
+### filterSettings.filterType `enum`
+{:#members:filtersettings-filtertype}
+
+<ts name="ej.Grid.FilterType"/>
+
+This specifies the grid to show the filterBar or filterMenu to the grid records. See <a href="global.html#filterType">filterType</a>
+
+#### Default Value:
+{:.param}
+* ej.Grid.FilterType.FilterBar
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Specifies the filter type as menu.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the filter type as excel.</td>
+</tr> 
+<tr>
+<td class="name">FilterBar</td>
+<td class="description">Specifies the filter type as filterbar.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ filterType: "menu"};
+{% endhighlight %}
+
+### filterSettings.maxFilterChoices `Number`
+{:#members:filtersettings-maxfilterchoices}
+
+Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
+
+#### Default Value:
+{:.param}
+* 1000
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ maxFilterChoices:200, filterType:"excel"};
+{% endhighlight %}
+
+### filterSettings.showFilterBarMessage `Boolean`
+{:#members:filtersettings-showfilterbarmessage}
+
+This specifies the grid to show the filter text within the grid pager itself.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ showFilterBarStatus: true};
+{% endhighlight %}
+
+### filterSettings.showPredicate `Boolean`
+{:#members:filtersettings-showpredicate}
+
+Gets or sets a value that indicates whether to enable the predicate options in the filtering menu
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ showPredicate:true, filterType:"menu"};
+{% endhighlight %}
+
+### groupSettings `Object`
+{:#members:groupsettings}
+
+Gets or sets an object that indicates whether to customize the grouping behavior of the grid.
+
+### groupSettings.captionFormat `String`
+{:#members:groupsettings-captionformat}
+
+Gets or sets a value that customize the group caption format.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={ captionFormat: "{{:field}} - {{:key}} : {{:count}} {{if count == 1 }} item {{else}} items {{/if}}" };
+{% endhighlight %}
+
+### groupSettings.enableDropAreaAutoSizing `Boolean`
+{:#members:groupsettings-enabledropareaautosizing}
+
+Gets or sets a value that indicates whether to enable animation button option in the group drop area of the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={enableDropAreaAutoSizing: true };
+{% endhighlight %}
+
+### groupSettings.groupedColumns `Array`
+{:#members:groupsettings-groupedcolumns}
+
+Gets or sets a value that indicates whether to add grouped columns programmatically at initial load
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={groupedColumns:["OrderID"] };
+{% endhighlight %}
+
+### groupSettings.showDropArea `Boolean`
+{:#members:groupsettings-showdroparea}
+
+Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using `groupSettings`.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={showDropArea:false,groupedColumns:["OrderID"] };
+{% endhighlight %}   
+
+### groupSettings.showGroupedColumn `Boolean`
+{:#members:groupsettings-showgroupedcolumn}
+
+Gets or sets a value that indicates whether to hide the grouped columns from the grid
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={showDropArea:false,groupedColumns:["OrderID"],showGroupedColumn:false };
+{% endhighlight %}
+
+### groupSettings.showToggleButton `Boolean`
+{:#members:groupsettings-showtogglebutton}
+
+Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={showDropArea:false,groupedColumns:["OrderID"],showGroupedColumn:false,showToggleButton:true };
+{% endhighlight %}
+
+### groupSettings.showUngroupButton `Boolean`
+{:#members:groupsettings-showungroupbutton}
+
+Gets or sets a value that indicates whether to enable the close button in the grouped column which is in the group drop area to ungroup the grouped column
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={groupedColumns:["OrderID"],showGroupedColumn:false,showToggleButton:true,showUngroupButton:true };
+{% endhighlight %}
+
+### isResponsive `Boolean`
+{:#members:isresponsive}
+
+Gets or sets a value that indicates whether the grid design has be to made responsive.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}       
+<ej-grid id="Grid" [dataSource]="gridData" [isResponsive]="true" >
+</ej-grid>
+{% endhighlight %}
+
+### keySettings `Object`
+{:#members:keysettings}
+
+This specifies to change the key in keyboard interaction to grid control
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}            
+<ej-grid id="Grid" [dataSource]="gridData" [keySettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={saveRequest: "83",moveCellRight: "13"};
+{% endhighlight %}
+
+### locale `String`
+{:#members:locale}
+
+Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to a particular country or region.
+
+#### Default Value:
+{:.param}
+* "en-US"
+
+#### Example
+{:.example}
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+ej.Pager.locale["es-ES"] = {
+   pagerInfo: "{0} de {1} p&aacute;ginas ({2} art&iacute;culos)"
+};
+$("#Grid").ejGrid({
+  dataSource:window.gridData,
+  allowPaging:true,
+  locale : "es-ES" 
+});
+</script>             
+{% endhighlight %}
+
+### minWidth `Number`
+{:#members:minwidth}
+
+Gets or sets a value that indicates whether to set the minimum width of the responsive grid while isResponsive property is true and enableResponsiveRow property is set as false.
+
+#### Default Value:
+{:.param}
+* 0
+
+#### Example
+{:.example}
+{% highlight html %}            
+<ej-grid id="Grid" [dataSource]="gridData" minWidth="990" [isResponsive]="true" >
+</ej-grid>
+{% endhighlight %}
+
+### pageSettings `Object`
+{:#members:pagesettings}
+
+Gets or sets an object that indicates whether to modify the pager default configuration.
+
+### pageSettings.currentPage `Number`
+{:#members:pagesettings-currentpage}
+
+Gets or sets a value that indicates whether to define which page to display currently in the grid
+
+#### Default Value:
+{:.param}
+* 1
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %} 
+this.settings={ currentPage: 1 };
+{% endhighlight %}
+
+### pageSettings.enableQueryString `Boolean`
+{:#members:pagesettings-enablequerystring}
+
+Gets or sets a value that indicates whether to pass the current page information as a query string along with the URL while navigating to other page.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %} 
+this.settings={ enableQueryString: true };
+{% endhighlight %}
+
+### pageSettings.enableTemplates `Boolean`
+{:#members:pagesettings-enabletemplates}
+
+Gets or sets a value that indicates whether to enables pager template for the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %} 
+this.settings={enableTemplates:true,template:"#pagerTemplate"};
+{% endhighlight %}
+
+{% highlight html %} 
+<script id="pagerTemplate" type="text/x-jsrender">
+        <input type="text" id="txtPageNumber" value="" style="width: 45px; border: none; cursor: text" />
+        <input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" onclick="gotoPage(this)" />
+</script>
+{% endhighlight %}
+
+### pageSettings.pageCount `Number`
+{:#members:pagesettings-pagecount}
+
+Gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation
+
+#### Default Value:
+{:.param}
+* 8
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %} 
+this.settings={ pageCount: 1};
+{% endhighlight %}
+
+### pageSettings.pageSize `Number`
+{:#members:pagesettings-pagesize}
+
+Gets or sets a value that indicates whether to define the number of records displayed per page
+
+#### Default Value:
+{:.param}
+* 12
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %} 
+this.settings={ pageSize: 1};
+{% endhighlight %}
+
+### pageSettings.showDefaults `Boolean`
+{:#members:pagesettings-showdefaults}
+
+Gets or sets a value that indicates whether to enables default pager for the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %} 
+this.settings={ showDefaults:true,enableTemplates:true,templateID:"#pagerTemplate" };
+{% endhighlight %}
+
+{% highlight html %} 
+<script id="pagerTemplate" type="text/x-jsrender">
+        <input type="text" id="txtPageNumber" value="" style="width: 45px; border: none; cursor: text" />
+        <input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" onclick="gotoPage(this)" />
+</script>
+{% endhighlight %}
+
+### pageSettings.template `String`
+{:#members:pagesettings-template}
+
+Gets or sets a value that indicates to add the template as a pager template for grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %} 
+this.settings={enableTemplates:true,template:"#pagerTemplate"};
+{% endhighlight %}
+
+{% highlight html %} 
+<script id="pagerTemplate" type="text/x-jsrender">
+<input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" />
+<input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" />
+</script>
+{% endhighlight %}
+
+### pageSettings.totalPages `Number`
+{:#members:pagesettings-totalpages}
+
+Get the value of total number of pages in the grid. The totalPages value is calculated based on page size and total records of grid
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
+</ej-grid>
+<div id="print"></div>
+{% endhighlight %}
+
+{% highlight ts %}
+$("#print").text("TotalPages: " + $("#Grid").ejGrid("option", "pageSettings.totalPages"));
+{% endhighlight %}
+
+### pageSettings.totalRecordsCount `Number`
+{:#members:pagesettings-totalrecordscount}
+
+Get the value of total number of records which is bound to the grid. The totalRecordsCount value is calculated based on dataSource bound to the grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
+</ej-grid>
+<div id="print"></div>
+{% endhighlight %}
+
+{% highlight ts %}
+$("#print").text("TotalRecordsCount: " + $("#Grid").ejGrid("option", "pageSettings.totalRecordsCount"));
+{% endhighlight %}
+
+### pageSettings.printMode `enum`
+{:#members:pagesettings-printmode}
+
+<ts name="ej.Grid.PrintMode"/>
+
+Gets or sets a value that indicates whether to define the number of pages to print
+
+#### Default Value:
+{:.param}
+* ej.Grid.PrintMode.AllPages
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">AllPages</td>
+<td class="description">Prints all pages.</td>
+</tr>
+<tr>
+<td class="name">CurrentPage</td>
+<td class="description">Prints current page.</td>
+</tr>  
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [toolbarSettings]="items" [pageSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={ showToolbar: true,toolbarItems: ["printGrid"]};
+this.settings={printMode:"currentpage"};
+{% endhighlight %}
+
+### query `Object`
+{:#members:query}
+
+Query the dataSource from the table for Grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}       
+<div id="Grid"></div> 
+ 
+<script type="text/javascript">
+var queryOrder=ej.Query().select(["OrderID", "CustomerID"]); 
+$("#Grid").ejGrid({
+  dataSource: window.gridData,
+  query: queryOrder
+});  
+</script>
+{% endhighlight %}
+
+### resizeSettings `Object`
+{:#members:resizesettings}
+
+Gets or sets an object that indicates whether to modify the resizing behavior.
+
+### resizeSettings.resizeMode `enum`
+{:#members:resizesettings-resizemode}
+
+<ts name="ej.Grid.ResizeMode"/>
+
+Gets or sets a value that indicates whether to define the mode of resizing.
+
+#### Default Value:
+{:.param}
+* ej.Grid.ResizeMode.Normal
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">New column size will be adjusted by all other Columns</td>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">New column Size will be adjusted using next column.</td>
+</tr>
+<tr>
+<td class="name">Control</td>
+<td class="description">New column Size will be adjusted using entire control</td>
+</tr>
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [allowResizing]="true" [resizeSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={resizeMode: "control"};
+{% endhighlight %}
+
+### rowTemplate `String`
+{:#members:rowtemplate}
+
+Gets or sets a value that indicates to render the grid with template rows. The template row must be a table row. That table row must have the JavaScript render binding format ({{:columnName}}) then the grid data source binds the data to the corresponding table row of the template.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" rowTemplate="#templateData" >
+    <e-columns>
+        <e-column headerText="Employeephoto"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight html %}
+<script id="templateData" type="text/x-jsrender">
+<tr>
+<td>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
+</td>
+<td>
+{{"{{"}}:EmployeeID{{}}}}
+</td>
+</tr>
+</script>
+{% endhighlight %}
+
+### rowDropSettings `Object`
+{:#members:rowdropsettings}
+
+Gets or sets an object that indicates whether to customize the drag and drop behavior of the grid rows    
+
+### rowDropSettings.dropTargetID `object`
+{:#members:rowdropsettings-droptargetid}
+
+This specifies the grid to drop the grid rows only at particular target element.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true" [rowDropSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={dropTargetID: "#DestGrid"};
+{% endhighlight %}
+
+### rowDropSettings.dragMapper `string`
+{:#members:rowdropsettings-dragmapper}
+
+This helps in mapping server-side action when rows are dragged from Grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true" [rowDropSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={dropTargetID: "#DestGrid",dragMapper: "Home/DragHandler" };
+{% endhighlight %}
+
+### rowDropSettings.dropMapper `string`
+{:#members:rowdropsettings-dropmapper}
+
+This helps in mapping server-side action when rows are dropped in Grid.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true" [rowDropSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
+{% endhighlight %}
+
+### searchSettings `Object`
+{:#members:searchsettings}
+
+Gets or sets an object that indicates whether to customize the searching behavior of the grid
+
+### searchSettings.fields `object`
+{:#members:searchsettings-fields}
+
+This specify the grid to search for the value in particular columns that is mentioned in the field.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={ showToolbar: true,toolbarItems: ["search"]};
+this.settings={fields:["OrderID","CustomerID","EmployeeID"], key:"VICTE"};
+{% endhighlight %}
+
+### searchSettings.key `string`
+{:#members:searchsettings-key}
+
+This specifies the grid to search the particular data that is mentioned in the key.
+
+#### Default Value:
+{:.param}
+* ""
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={ showToolbar: true,toolbarItems: ["search"]};
+this.settings={ key:"VICTE"};
+{% endhighlight %}
+
+### searchSettings.operator `string`
+{:#members:searchsettings-operator}
+
+It specifies the grid to search the records based on operator.
+
+**List of enum type operators**
+1. ej.FilterOperators.contain
+2. ej.FilterOperators.equal
+3. ej.FilterOperators.notEqual
+4. ej.FilterOperators.startsWith
+5. ej.FilterOperators.endsWith
+
+#### Default Value:
+{:.param}
+* contains
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={ showToolbar: true,toolbarItems: ["search"]};
+this.settings={operator:"contains", key:"VICTE"};
+{% endhighlight %}
+
+### searchSettings.ignoreCase `boolean`
+{:#members:searchsettings-ignorecase}
+
+It enables or disables case-sensitivity while searching the search key in grid.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={ showToolbar: true,toolbarItems: ["search"]};
+this.settings={ignoreCase:true, key:"VICTE"};
+{% endhighlight %}
+
+### selectedRecords `Array`
+{:#members:selectedrecords}
+
+Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using &ldquo;selectedRecords&rdquo; property
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData">
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+$("#Grid").ejGrid("model.selectedRecords") 
+{% endhighlight %}
+
+### selectedRowIndex `Number`
+{:#members:selectedrowindex}
+
+Gets or sets a value that indicates to select the row while initializing the grid
+
+#### Default Value:
+{:.param}
+* -1
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" selectedRowIndex="1">
+</ej-grid> 
+{% endhighlight %}
+
+### selectedRowIndices `Array`
+{:#members:selectedrowindices}
+
+Gets or sets a value that indicates the selected rows in grid
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" selectedRowIndices="[1,4,7]">
+</ej-grid> 
+{% endhighlight %}
+
+### selectionSettings `Object`
+{:#members:selectionsettings}
+
+This property is used to configure the selection behavior of the grid.
+
+### selectionSettings.enableToggle `Boolean`
+{:#members:selectionsettings-enabletoggle}
+
+Gets or sets a value that indicates whether to enable the toggle selection behavior for row, cell and column.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true" [selectionSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={enableToggle: true };
+{% endhighlight %}
+
+### selectionSettings.selectionMode `Array`
+{:#members:selectionsettings-selectionmode}
+
+Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
+
+#### Default Value:
+{:.param}
+* ["row"]
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Row</td>
+<td class="description">Selection is row basis.</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="description">Selection is cell basis.</td>
+</tr>  
+<tr>
+<td class="name">Column</td>
+<td class="description">Selection is column basis.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true" [selectionSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={selectionMode: ["row","cell","column"] };
+{% endhighlight %}
+
+### selectionType `enum`
+{:#members:selectiontype}
+
+<ts name="ej.Grid.SelectionType"/>
+
+The row selection behavior of grid. Accepting types are "single" and "multiple".
+
+#### Default Value:
+{:.param}
+* ej.Grid.SelectionType.Single
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Single</td>
+<td class="description">Specifies the selection type as single.</td>
+</tr>
+<tr>
+<td class="name">Multiple</td>
+<td class="description">Specifies the selection type as multiple.</td>
+</tr>  
+</table>
+
+#### Example
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" selectionType="multiple" >
+</ej-grid>
+{% endhighlight %}
+
+### scrollSettings `Object`
+{:#members:scrollsettings}
+
+Gets or sets an object that indicates whether to customize the scrolling behavior of the grid.
+
+### scrollSettings.allowVirtualScrolling `Boolean`
+{:#members:scrollsettings-allowvirtualscrolling}
+
+This specify the grid to to view data that you require without buffering the entire load of a huge database
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={width:300,height:100,allowVirtualScrolling:true};
+{% endhighlight %}
+
+### scrollSettings.enableTouchScroll `Boolean`
+{:#members:scrollsettings-enabletouchscroll}
+
+This specify the grid to enable/disable touch control for scrolling.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={enableTouchScroll:true};
+{% endhighlight %}
+
+### scrollSettings.frozenColumns `Number`
+{:#members:scrollsettings-frozencolumns}
+
+This specify the grid to freeze particular columns at the time of scrolling.
+
+#### Default Value:
+{:.param}
+* 0
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={width:500,height:50,frozenColumns:2 };
+{% endhighlight %}
+### scrollSettings.frozenRows `Number`
+{:#members:scrollsettings-frozenrows}
+
+This specify the grid to freeze particular rows at the time of scrolling.
+
+#### Default Value:
+{:.param}
+* 0
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={width:500,height:50,frozenRows:2 };
+{% endhighlight %}
+
+### scrollSettings.height `String|Number`
+{:#members:scrollsettings-height}
+
+This specify the grid to show the vertical scroll bar, to scroll and view the grid contents.
+
+#### Default Value:
+{:.param}
+* 0
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={height:50};
+{% endhighlight %}
+
+### scrollSettings.virtualScrollMode `enum`
+{:#members:scrollsettings-virtualscrollmode}
+
+<ts name="ej.Grid.VirtualScrollMode"/>
+
+This is used to define the mode of virtual scrolling in grid. See virtualScrollMode
+
+#### Default Value:
+{:.param}
+* ej.Grid.VirtualScrollMode.Normal
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">virtual scroll mode is normal.</td>
+</tr>
+<tr>
+<td class="name">Continuous</td>
+<td class="description">virtual scroll mode is continuous.</td>
+</tr>  
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={width:500 , height: 550 , allowVirtualScrolling:true, virtualScrollMode:"normal"};
+{% endhighlight %}
+
+### scrollSettings.enableVirtualization `Boolean`
+{:#members:scrollsettings-enablevirtualization}
+
+This is used to enable the enhanced virtual scrolling in Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={width:500 , height: 550 , enablevirtualization:true};
+{% endhighlight %}
+
+### scrollSettings.width `String|Number`
+{:#members:scrollsettings-width}
+
+This specify the grid to show the horizontal scroll bar, to scroll and view the grid contents
+
+#### Default Value:
+{:.param}
+* 250
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={width:500};
+{% endhighlight %}
+
+### scrollSettings.scrollOneStepBy `Number`
+{:#members:scrollsettings-scrollonestepby}
+ 
+This specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents.
+
+#### Default Value:
+{:.param}
+* 57
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+this.settings={scrollonestepby:100};
+{% endhighlight %}
+
+### showColumnChooser `Boolean`
+{:#members:showcolumnchooser}
+Gets or sets a value that indicates whether to enable column chooser on grid. On enabling feature able to show/hide grid columns
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [showColumnChooser]="true" >
+</ej-grid> 
+{% endhighlight %}
+
+### showStackedHeader `Boolean`
+{:#members:showstackedheader}
+
+Gets or sets a value that indicates stacked header should be shown on grid layout when the property &ldquo;stackedHeaderRows&rdquo; is set.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true" [showSummary]="true" [showStackedHeader]="true"  [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight html %} 
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID"},{headerText:"Frieght",column:"Freight,CustomerID,OrderDate"}]}]
+{% endhighlight %}
+
+### showSummary `Boolean`
+{:#members:showsummary}
+
+Gets or sets a value that indicates summary rows should be shown on grid layout when the property &ldquo;summaryRows&rdquo; is set
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData"  [showSummary]="true"  [summaryRows]="summaryRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight html %} 
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType:ej.Grid.SummaryType.Count, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### sortSettings `Object`
+{:#members:sortsettings}
+
+Gets or sets a value that indicates whether to customize the sorting behavior of the grid.
+
+### sortSettings.sortedColumns `Array`
+{:#members:sortsettings-sortedcolumns}
+
+Gets or sets a value that indicates whether to define the direction and field to sort the column.
+
+
+### sortSettings.sortedColumns.direction `String`
+{:#members:sortsettings-sortedcolumns-direction}
+
+Gets or sets a value that indicates whether to define the direction to sort the column.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData"[sortSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="EmployeeID" ></e-column>
+    </e-columns>
+</ej-grid>  
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={ sortedColumns: [{field:"EmployeeID", direction:"descending"}]};
+{% endhighlight %}
+
+### sortSettings.sortedColumns.field `String`
+{:#members:sortsettings-sortedcolumns-field}
+
+Gets or sets a value that indicates whether to define the field name of the column to be sort
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData"[sortSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="EmployeeID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={ sortedColumns: [{field:"EmployeeID"}]};
+{% endhighlight %}
+
+### stackedHeaderRows `Array`
+{:#members:stackedheaderrows}
+
+Gets or sets an object that indicates to managing the collection of stacked header rows for the grid.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true" [showSummary]="true" [showStackedHeader]="true"  [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}  
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"},{headerText:"Frieght",column:"Freight,OrderID,OrderDate"}]}]
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns `Array`
+{:#members:stackedheaderrows-stackedheadercolumns}
+
+Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSorting:true,
+   showStackedHeader:true,
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
+         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
+           ]}
+          ],
+   columns: [
+      { field: "CustomerID", headerText: "Customer ID", width: 80 },
+       { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+       { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
+      { field: "ShipCity", headerText: "Ship City", width: 110 }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.column `Object`
+{:#members:stackedheaderrows-stackedheadercolumns-column}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSorting:true,
+   showStackedHeader:true,
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
+         ,{headerText:"Frieght",column:["Freight","EmployeeID","OrderDate"]}
+         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
+           ]}
+          ],
+   columns: [
+      { field: "CustomerID", headerText: "Customer ID", width: 80 },
+       { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+       { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
+      { field: "ShipCity", headerText: "Ship City", width: 110 }
+      ]
+});
+</script>
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.cssClass `String`
+{:#members:stackedheaderrows-stackedheadercolumns-cssclass}
+
+Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="Grid"></div>       
+<style class="temp">
+.temp{
+color:green;
+}
+</style>
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSorting:true,
+   showStackedHeader:true,
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", cssClass:
+         "temp"},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
+           ]}
+          ],
+   columns: [
+      { field: "CustomerID", headerText: "Customer ID", width: 80 },
+      { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+      { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign:           ej.TextAlign.Right },
+      { field: "ShipCity", headerText: "Ship City", width: 110 }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.headerText `String`
+{:#members:stackedheaderrows-stackedheadercolumns-headertext}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSorting:true,
+   showStackedHeader:true,
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
+         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
+           ]}
+          ],
+   columns: [
+      { field: "CustomerID", headerText: "Customer ID", width: 80 },
+       { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+       { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
+      { field: "ShipCity", headerText: "Ship City", width: 110 }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.textAlign `String`
+{:#members:stackedheaderrows-stackedheadercolumns-textalign}
+
+Gets or sets a value that indicates the text alignment of the corresponding headerText.
+
+#### Default Value:
+{:.param}
+* ej.TextAlign.Left
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSorting:true,
+   showStackedHeader:true,
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textalign: 
+         ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
+           ]}
+          ],
+   columns: [
+      { field: "CustomerID", headerText: "Customer ID", width: 80 },
+      { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+      { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
+      { field: "ShipCity", headerText: "Ship City", width: 110 }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### summaryRows `Array`
+{:#members:summaryrows}
+
+Gets or sets an object that indicates to managing the collection of summary rows for the grid.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.showCaptionSummary `Boolean`
+{:#members:summaryrows-showcaptionsummary}
+
+Gets or sets a value that indicates whether to show the summary value within the group caption area for the corresponding summary column while grouping the column
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showCaptionSummary]="true">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.showGroupSummary `Boolean`
+{:#members:summaryrows-showgroupsummary}
+
+Gets or sets a value that indicates whether to show the group summary value for the corresponding summary column while grouping a column
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showGroupSummary]="true">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.showTotalSummary `Boolean`
+{:#members:summaryrows-showtotalsummary}
+
+Gets or sets a value that indicates whether to show the total summary value the for the corresponding summary column. The summary row is added after the grid content.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showTotalSummary]="true">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns `Array`
+{:#members:summaryrows-summarycolumns}
+
+Gets or sets a value that indicates whether to add summary columns into the summary rows.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.customSummaryValue `String`
+{:#members:summaryrows-summarycolumns-customsummaryvalue}
+
+Gets or sets a value that indicates the text displayed in the summary column as a value
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showTotalSummary]="true">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : "Currency"}]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.dataMember `String`
+{:#members:summaryrows-summarycolumns-datamember}
+
+This specifies summary column used to perform the summary calculation
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.displayColumn `String`
+{:#members:summaryrows-summarycolumns-displaycolumn}
+
+Gets or sets a value that indicates to define the target column at which to display the summary.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.format `String`
+{:#members:summaryrows-summarycolumns-format}
+
+Gets or sets a value that indicates the format for the text applied on the column
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,format: "{0:C2}"}]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.prefix `String`
+{:#members:summaryrows-summarycolumns-prefix}
+
+Gets or sets a value that indicates the text displayed before the summary column value
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,prefix : "Currency:"}]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.suffix `String`
+{:#members:summaryrows-summarycolumns-suffix}
+
+Gets or sets a value that indicates the text displayed after the summary column value
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" , suffix: "/-"}]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.summaryType `enum`
+{:#members:summaryrows-summarycolumns-summarytype}
+
+<ts name="ej.Grid.SummaryType"/>
+
+Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column
+
+#### Default Value:
+{:.param}
+* []
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Average</td>
+<td class="description">Summary type is average.</td>
+</tr>
+<tr>
+<td class="name">Minimum</td>
+<td class="description">Summary type is minimum.</td>
+</tr>  
+<tr>
+<td class="name">Maximum</td>
+<td class="description">Summary type is maximum.</td>
+</tr>  
+<tr>
+<td class="name">Count</td>
+<td class="description">Summary type is count.</td>
+</tr>  
+<tr>
+<td class="name">Sum</td>
+<td class="description">Summary type is sum.</td>
+</tr>  
+<tr>
+<td class="name">Custom</td>
+<td class="description">Summary type is custom.</td>
+</tr>  
+<tr>
+<td class="name">TrueCount</td>
+<td class="description">Summary type is true count.</td>
+</tr>  
+<tr>
+<td class="name">FalseCount</td>
+<td class="description">Summary type is false count.</td>
+</tr>  
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+{% endhighlight %}
+
+### summaryRows.summaryColumns.template `String`
+{:#members:summaryRows-summaryColumns-template}
+
+Gets or sets a value that indicates to add the template for the summary value of dataMember given.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="templateData" type="text/x-jsrender">
+     Freight has Average of {{"{{"}}:summaryValue{{}}}} in  dollars
+</script>
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight",template: "#templateData",format: "{0:C2}"}]}];
+{% endhighlight %}
+
+
+### summaryRows.title `String`
+{:#members:summaryrows-title}
+
+This specifies the grid to show the title for the summary rows.
+
+#### Default Value:
+{:.param}
+* ""
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight"}]}];
+{% endhighlight %}
+
+### summaryRows.titleColumn `String`
+{:#members:summaryrows-titleColumn}
+
+This specifies the grid to show the title of summary row in the specified column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.summaryRows=[{title: "Sum",titleColumn: "EmployeeID",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight"}]}];
+{% endhighlight %}
+
+### textWrapSettings `Object`
+{:#members:textwrapsettings}
+
+Gets or sets an object that indicates whether to auto wrap the grid header or content or both
+
+### textWrapSettings.wrapMode `enum`
+{:#members:textWrapSettings-wrapmode}
+
+<ts name="ej.Grid.WrapMode"/>
+
+This specifies the grid to apply the auto wrap for grid content or header or both.
+
+#### Default Value:
+{:.param}
+* ej.Grid.WrapMode.Both
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">Auto wrap is applied for both content and header.</td>
+</tr>
+<tr>
+<td class="name">Content</td>
+<td class="description">Auto wrap is applied only for content.</td>
+</tr>  
+<tr>
+<td class="name">Header</td>
+<td class="description">Auto wrap is applied only for header.</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowTextWrap: true, 
+   textWrapSettings:{ wrapMode: ej.Grid.WrapMode.Both }                
+});
+</script>
+{% endhighlight %}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowTextWrap]="true" [showSummary]="true"  [textWrapSettings]="textWrapSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.textWrapSettings={wrapMode: ej.Grid.WrapMode.Both};
+{% endhighlight %}
+
+### toolbarSettings `Object`
+{:#members:toolbarsettings}
+
+Gets or sets an object that indicates whether to enable the toolbar in the grid and add toolbar items
+
+### toolbarSettings.customToolbarItems `Array`
+{:#members:toolbarsettings-customtoolbaritems}
+
+Gets or sets a value that indicates whether to add custom toolbar items within the toolbar to perform any action in the grid
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData"  [toolbarSettings]="items" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.items={showToolbar:true,customToolbarItems:["expand"]};
+{% endhighlight %}
+
+{% highlight html %}
+<style type="text/css" class="cssStyles">
+        .expand:before {
+            content: "\e627";
+        }
+</style>
+{% endhighlight %}
+
+### toolbarSettings.showToolbar `Boolean`
+{:#members:toolbarsettings-showtoolbar}
+
+Gets or sets a value that indicates whether to enable toolbar in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                   
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowEditing: true };
+this.items={ showToolbar: true,toolbarItems: ["edit"]};
+{% endhighlight %}
+
+### toolbarSettings.toolbarItems `Array`
+{:#members:toolbarsettings-toolbaritems}
+
+<ts name="ej.Grid.ToolBarItems" />
+
+Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
+
+#### Default Value:
+{:.param}
+* []
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Add</td>
+<td class="description">Toolbar item is add.</td>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Toolbar item is edit.</td>
+</tr>  
+<tr>
+<td class="name">Delete</td>
+<td class="description">Toolbar item is delete.</td>
+</tr>  
+<tr>
+<td class="name">Update</td>
+<td class="description">Toolbar item is update.</td>
+</tr>  
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Toolbar item is cancel.</td>
+</tr>  
+<tr>
+<td class="name">Search</td>
+<td class="description">Toolbar item is search.</td>
+</tr>  
+<tr>
+<td class="name">PdfExport</td>
+<td class="description">Toolbar item is pdfExport.</td>
+</tr>  
+<tr>
+<td class="name">PrintGrid</td>
+<td class="description">Toolbar item is printGrid.</td>
+</tr>  
+<tr>
+<td class="name">WordExport</td>
+<td class="description">Toolbar item is wordExport.</td>
+</tr>  
+</table>
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                   
+{% endhighlight %}
+
+{% highlight ts %}
+this.attributes={allowDeleting: true, allowEditing: true, allowAdding: true };
+this.items={ showToolbar: true,toolbarItems: ["edit","add","update","delete","cancel"]};
+{% endhighlight %}
+
 ## Methods
 
 
