@@ -6032,7 +6032,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.getBrowserdetails();    // Gets the browser details of the application being run
+    this.Grid.widget.getBrowserDetails();    // Gets the browser details of the application being run
 } 
 @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
 }
@@ -6233,7 +6233,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.getColumnIdexByField("OrderID");   // Gets the column index based on the given field name
+    this.Grid.widget.getColumnIndexByField("OrderID");   // Gets the column index based on the given field name
 } 
 @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
 }
@@ -6311,7 +6311,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.getCurrentEditcellData();    // Get data of currently edited cell value
+    this.Grid.widget.getCurrentEditCellData();    // Get data of currently edited cell value
 } 
 @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
 }
@@ -6603,7 +6603,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.getHeadertextByFiledName();   // Gets the column header text from the given field name
+    this.Grid.widget.getHeaderTextByFieldName();   // Gets the column header text from the given field name
 } 
 @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
 }  
@@ -6726,7 +6726,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.getPrimaryKeyFieldnames();    // Gets the names of primary key columns
+    this.Grid.widget.getPrimaryKeyFieldNames();    // Gets the names of primary key columns
 } 
 @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
 }
@@ -6995,7 +6995,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.goToPage(5);     // Sends a paging request to the grid with specified page index
+    this.Grid.widget.gotoPage(5);     // Sends a paging request to the grid with specified page index
 } 
 @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
 }
@@ -7133,7 +7133,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.refreshBatchEditchanges();   // It is used to refresh and reset the changes made in batch edit mode
+    this.Grid.widget.refreshBatchEditChanges();   // It is used to refresh and reset the changes made in batch edit mode
    }
    @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
    }
@@ -7303,7 +7303,7 @@ export class AppComponent {
 ngAfterViewInit(){
     
     this.Grid.widget.removeSortedColumns("OrderID");    // Removes a column from sorted column collections
-    this.Grid.widget.removeSortedcolumns(["CustomerID","ShipCity"]);   // Removes specified collection of columns from sorted column collections
+    this.Grid.widget.removeSortedColumns(["CustomerID","ShipCity"]);   // Removes specified collection of columns from sorted column collections
     
    }
    @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
@@ -7379,7 +7379,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.renderColumns("OrderID","CustomerID");   // Reorders the column based on the given index
+    this.Grid.widget.reorderColumns("OrderID","CustomerID");   // Reorders the column based on the given index
  
    }
    @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
@@ -7598,7 +7598,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.setDimensions(300,400);   // Set grid dimension
+    this.Grid.widget.setDimension(300,400);   // Set grid dimension
     
    }
    @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
@@ -9196,7 +9196,7 @@ Triggered for every grid action before its starts.
 {:.example}
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (actionBegin)="onActionBegin($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (actionBegin)="onActionBegin($event)">
 
 {% endhighlight %}
 
@@ -10008,7 +10008,7 @@ columnName</td>
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (actionComplete)="onActionComplete($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (actionComplete)="onActionComplete($event)"> 
 
 {% endhighlight %}
 
@@ -10610,7 +10610,7 @@ Triggered for every grid action server failure event.
 
 {% highlight html %}
 
-<ej-grid #grid  [dataSource]="gridData1" (actionFailure)="onActionFailure($event)"> >
+<ej-grid #grid  [dataSource]="gridData" (actionFailure)="onActionFailure($event)"> 
 
 {% endhighlight %}
 
@@ -10708,7 +10708,7 @@ Triggered when record batch add.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (batchAdd)="onBatchAdd($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (batchAdd)="onBatchAdd($event)"> 
 
 {% endhighlight %}
 
@@ -10791,7 +10791,7 @@ Triggered when record batch delete.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (batchDelete)="onBatchDelete($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (batchDelete)="onBatchDelete($event)"> 
 
 {% endhighlight %}
 
@@ -10875,7 +10875,7 @@ cancel</td>
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (beforeBatchAdd)="OnBeforeBatchAdd($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (beforeBatchAdd)="OnBeforeBatchAdd($event)"> 
 
 {% endhighlight %}
 
@@ -10963,8 +10963,8 @@ Triggered before the batch delete.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (beforeBatchDelete)="OnBeforeBatchDelete($event)"> >
-
+  <ej-grid #grid  [dataSource]="gridData" (beforeBatchDelete)="OnBeforeBatchDelete($event)"> 
+  
 {% endhighlight %}
 
 {% highlight ts %}
@@ -11035,7 +11035,7 @@ Triggered before the batch save.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (beforeBatchSave)="onBeforeBatchSave($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (beforeBatchSave)="onBeforeBatchSave($event)"> 
 
 {% endhighlight %}
 
@@ -11123,7 +11123,7 @@ Triggered before the record is going to be edited.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (beginEdit)="onBeginEdit($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (beginEdit)="onBeginEdit($event)"> 
 
 {% endhighlight %}
 
@@ -11231,7 +11231,7 @@ Triggered when record cell edit.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (cellEdit)="onCellEdit($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (cellEdit)="onCellEdit($event)"> 
 
 {% endhighlight %}
 
@@ -11333,7 +11333,7 @@ Triggered when record cell save.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (cellSave)="onCellSave($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (cellSave)="onCellSave($event)"> 
 
 {% endhighlight %}
 
@@ -11431,7 +11431,7 @@ Triggered after the cell is selected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (cellSelected)="onCellSelected($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (cellSelected)="onCellSelected($event)"> 
 
 {% endhighlight %}
 
@@ -11533,7 +11533,7 @@ Triggered before the cell is going to be selected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (cellSelecting)="onCellSelecting($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (cellSelecting)="onCellSelecting($event)"> 
 
 {% endhighlight %}
 
@@ -11616,7 +11616,7 @@ Triggered when the column is being dragged.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (columnDrag)="onColumnDrag($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (columnDrag)="onColumnDrag($event)"> 
 
 {% endhighlight %}
 
@@ -11698,7 +11698,7 @@ Triggered when column dragging begins.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (columnDragStart)="onColumnDragStart($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (columnDragStart)="onColumnDragStart($event)"> 
 
 {% endhighlight %}
 
@@ -11780,7 +11780,7 @@ Triggered when the column is dropped.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (columnDrop)="onColumnDrop($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (columnDrop)="onColumnDrop($event)"> 
 
 {% endhighlight %}
 
@@ -11866,7 +11866,7 @@ Triggered when the row is being dragged.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rowDrag)="onRowDrag($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (rowDrag)="onRowDrag($event)"> 
 
 {% endhighlight %}
 
@@ -11953,7 +11953,7 @@ Triggered when row dragging begins.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rowDragStart)="onRowDragStart($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (rowDragStart)="onRowDragStart($event)"> 
 
 {% endhighlight %}
 
@@ -12040,7 +12040,7 @@ Triggered when the row is dropped.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rowDrop)="onRowDrop($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (rowDrop)="onRowDrop($event)"> 
 
 {% endhighlight %}
 
@@ -12137,7 +12137,7 @@ Triggered after the column is selected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (columnSelected)="onColumnSelected($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (columnSelected)="onColumnSelected($event)"> 
 
 {% endhighlight %}
 
@@ -12238,7 +12238,7 @@ Triggered before the column is going to be selected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (columnSelecting)="onColumnSelecting($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (columnSelecting)="onColumnSelecting($event)"> 
 
 {% endhighlight %}
 
@@ -12320,7 +12320,7 @@ Triggered when context menu item is clicked
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (contextClick)="onContextClick($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (contextClick)="onContextClick($event)"> 
 
 {% endhighlight %}
 
@@ -12401,7 +12401,7 @@ Triggered before the context menu is opened.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (contextOpen)="onContextOpen($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (contextOpen)="onContextOpen($event)"> 
 
 {% endhighlight %}
 
@@ -12468,7 +12468,7 @@ Triggered when the grid is rendered completely.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (create)="onCreate($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (create)="onCreate($event)"> 
 
 {% endhighlight %}
 
@@ -12535,7 +12535,7 @@ Triggered when the grid is bound with data during initial rendering.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (dataBound)="onDataBound($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (dataBound)="onDataBound($event)"> 
 
 {% endhighlight %}
 
@@ -12602,7 +12602,7 @@ Triggered when grid going to destroy.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (destroy)="onDestroy($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (destroy)="onDestroy($event)"> 
 
 {% endhighlight %}
 
@@ -12688,7 +12688,7 @@ Triggered when detail template row is clicked to collapse.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (detailsCollapse)="onDetailsCollapse($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (detailsCollapse)="onDetailsCollapse($event)"> 
 
 {% endhighlight %}
 
@@ -12766,7 +12766,7 @@ Triggered detail template row is initialized.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (detailsDataBound)="onDetailsDataBound($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (detailsDataBound)="onDetailsDataBound($event)"> 
 
 {% endhighlight %}
 
@@ -12852,7 +12852,7 @@ Triggered when detail template row is clicked to expand.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (detailsExpand)="onDetailsExpand($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (detailsExpand)="onDetailsExpand($event)"> 
 
 {% endhighlight %}
 
@@ -12918,8 +12918,8 @@ Triggered after the record is added.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (endAdd)="onEndAdd($event)"> >
-
+  <ej-grid #grid  [dataSource]="gridData" (endAdd)="onEndAdd($event)"> 
+  
 {% endhighlight %}
 
 {% highlight ts %}
@@ -12984,7 +12984,7 @@ Triggered after the record is deleted.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (endDelete)="onEndDelete($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (endDelete)="onEndDelete($event)"> 
 
 {% endhighlight %}
 
@@ -13050,7 +13050,7 @@ Triggered after the record is edited.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (endEdit)="onEndEdit($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (endEdit)="onEndEdit($event)"> 
 
 {% endhighlight %}
 
@@ -13123,7 +13123,7 @@ Triggered initial load.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (load)="onLoad($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (load)="onLoad($event)"> 
 
 {% endhighlight %}
 
@@ -13225,7 +13225,7 @@ Triggered every time a request is made to access particular cell information, el
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (mrgeCellInfo)="OnMergeCellInfo($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (mrgeCellInfo)="OnMergeCellInfo($event)"> 
 
 {% endhighlight %}
 
@@ -13316,7 +13316,7 @@ Triggered every time a request is made to access particular cell information, el
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (queryCellInfo)="onQueryCellInfo($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (queryCellInfo)="onQueryCellInfo($event)"> 
 
 {% endhighlight %}
 
@@ -13417,7 +13417,7 @@ Triggered when record is clicked.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (recordClick)="onRecordClick($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (recordClick)="onRecordClick($event)"> 
 
 {% endhighlight %}
 
@@ -13518,7 +13518,7 @@ Triggered when record is double clicked.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (recordDoubleClick)="onRecordDoubleClick($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (recordDoubleClick)="onRecordDoubleClick($event)"> 
 
 {% endhighlight %}
 
@@ -13615,7 +13615,7 @@ Triggered after column resized.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (resized)="onResized($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (resized)="onResized($event)"> 
 
 {% endhighlight %}
 
@@ -13712,7 +13712,7 @@ Triggered when column resize end.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (resizeEnd)="onResizeEnd($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (resizeEnd)="onResizeEnd($event)"> 
 
 {% endhighlight %}
 
@@ -13799,7 +13799,7 @@ Triggered when column resize start.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (resizeStart)="onResizeStart($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (resizeStart)="onResizeStart($event)"> 
 
 {% endhighlight %}
 
@@ -13902,13 +13902,13 @@ Triggered when right clicked on grid element.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rightClick)="onRightClick($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (rightClick)="onRightClick($event)"> 
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-onrightClick(e: any){ 
+onRightClick(e: any){ 
              //Do Something.
   }
 
@@ -13984,7 +13984,7 @@ Triggered every time a request is made to access row information, element and da
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rawDataBound)="onRawDataBound($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (rawDataBound)="onRawDataBound($event)"> 
 
 {% endhighlight %}
 
@@ -14080,8 +14080,7 @@ Triggered after the row is selected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rowSelected)="onRowSelected($event)"> >
-
+  <ej-grid #grid  [dataSource]="gridData" (rowSelected)="onRowSelected($event)"> 
 {% endhighlight %}
 
 {% highlight ts %}
@@ -14172,8 +14171,7 @@ Triggered before the row is going to be selected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rowSelecting)="onRowSelecting($event)"> >
-
+  <ej-grid #grid  [dataSource]="gridData" (rowSelecting)="onRowSelecting($event)">
 {% endhighlight %}
 
 {% highlight ts %}
@@ -14259,8 +14257,8 @@ cancel</td>
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (templateRefresh)="onTemplateRefresh($event)"> >
-
+  <ej-grid #grid  [dataSource]="gridData" (templateRefresh)="onTemplateRefresh($event)"> 
+  
 {% endhighlight %}
 
 {% highlight ts %}
@@ -14365,7 +14363,7 @@ Triggered when toolbar item is clicked in grid.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (toolbarClick)="onToolBarClick($event)"> >
+  <ej-grid #grid  [dataSource]="gridData" (toolbarClick)="onToolBarClick($event)"> 
 
 {% endhighlight %}
 
