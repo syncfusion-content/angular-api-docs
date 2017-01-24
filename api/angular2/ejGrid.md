@@ -7140,6 +7140,35 @@ ngAfterViewInit(){
 {% endhighlight %}
 
 
+### refreshHeader()
+{:#methods:refreshheader}
+
+
+Refresh the grid header. 
+
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+
+####Example
+{:.example}
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.refreshHeader();   // Refreshes the grid Header.
+   
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance. 
+   }
+{% endhighlight %}
+
+
 ### refreshContent(\[templateRefresh\])
 {:#methods:refreshcontent}
 
@@ -13955,7 +13984,7 @@ Triggered every time a request is made to access row information, element and da
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData1" (rawDataBund)="onRawDataBound($event)"> >
+  <ej-grid #grid  [dataSource]="gridData1" (rawDataBound)="onRawDataBound($event)"> >
 
 {% endhighlight %}
 
