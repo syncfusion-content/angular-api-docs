@@ -4855,7 +4855,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
 
-    this.Grid.widget.addIgnoreOnExport("FilterSettings");    // Sends a request to ignore the filterSettings property upon exporting
+    this.Grid.widget.addIgnoreOnExport("filterSettings");    // Sends a request to ignore the filterSettings property upon exporting
 }
 
 @ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
@@ -13225,13 +13225,13 @@ Triggered every time a request is made to access particular cell information, el
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData" (mrgeCellInfo)="OnMergeCellInfo($event)"> 
+  <ej-grid #grid  [dataSource]="gridData" (mergeCellInfo)="onMergeCellInfo($event)"> 
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-onMegreCellInfo(e: any){ 
+onMergeCellInfo(e: any){ 
              //Do Something.
   }
 
