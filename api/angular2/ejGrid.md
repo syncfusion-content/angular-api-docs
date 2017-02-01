@@ -1424,7 +1424,6 @@ This defines the text alignment of a particular column header cell value.
 * null
 
 <table>
-Add a comment to this line
 <tr>
 <th>Name</th>
 <th>Description</th>
@@ -4734,12 +4733,12 @@ Gets or sets a value that indicates the text displayed in the summary column as 
 {% highlight ts %}
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
-this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : "Currency"}]}];
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : "currency"}]}];
 currency(){ 
-        this.gridObj = this.Grid.widget.instance();
-        this.rs=ej.sum(this.gridData, "Freight");
-        this.dol = 2.017
-        return (this.rs * this.dol);
+        public gridObj = $("#Grid").ejGrid("instance")
+        public rs=ej.sum(gridObj.model.dataSource, "Freight")
+        public dol = 0.017
+        return (rs * dol);
         }
 {% endhighlight %}
 
