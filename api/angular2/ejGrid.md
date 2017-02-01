@@ -476,53 +476,6 @@ this.employee=[{
 this.attributes={dataSource:this.employee,queryString: "OrderID"};
 {% endhighlight %}
 
-### columns.clipMode `enum`
-{:#members:columns-clipmode}
-
-<ts name="ej.Grid.ClipMode"/>
-
-Sets the clip mode for Grid cell as ellipsis or clipped content(both header and content)
-
-#### Default Value:
-{:.param}
-* ej.Grid.ClipMode.Clip
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Ellipsis</td>
-<td class="description">Shows ellipsis for the overflown cell.</td>
-</tr>
-<tr>
-<td class="name">Clip</td>
-<td class="description">Truncate the text in the cell</td>
-</tr> 
-<tr>
-<td class="name">EllipsisWithTooltip</td>
-<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
-</tr>   
-</table>
-
-#### Example
-{:.example}
-
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" >
-    <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
-        <e-column field="CustomerID" headerText="CustomerID" width="80" clipMode="ellipsis"></e-column>
-    </e-columns>
-</ej-grid>
-{% endhighlight %}
-
-{% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-{% endhighlight %}
-
 ### columnLayout `enum`
 {:#members:columnlayout}
 
@@ -708,6 +661,53 @@ Gets or sets a value that indicates whether to enable dynamic resizable for part
         <e-column field= "OrderID"></e-column>
         <e-column field= "CustomerID" allowResizing="false"></e-column>
         <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
+this.gridData = this.dataManager;
+{% endhighlight %}
+
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+<ts name="ej.Grid.ClipMode"/>
+
+Sets the clip mode for Grid cell as ellipsis or clipped content(both header and content)
+
+#### Default Value:
+{:.param}
+* ej.Grid.ClipMode.Clip
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Ellipsis</td>
+<td class="description">Shows ellipsis for the overflown cell.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell</td>
+</tr> 
+<tr>
+<td class="name">EllipsisWithTooltip</td>
+<td class="description">Shows ellipsis and tooltip for the overflown cell.</td>
+</tr>   
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" >
+    <e-columns>
+        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80" clipMode="ellipsis"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
