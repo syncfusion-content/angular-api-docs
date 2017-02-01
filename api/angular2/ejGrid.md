@@ -463,16 +463,16 @@ This specifies the grid to add the grid control inside the grid row of the paren
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.employee=[{ 
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        }];
+this.employeedata = ej.DataManager({
+                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
+                    crossDomain:true
+                });
+this.dataManager = ej.DataManager({
+                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees/", 
+                    crossDomain:true
+                });
+this.gridData = this.employeedata;
+this.employee=this.dataManager;
 this.attributes={dataSource:this.employee,queryString: "OrderID"};
 {% endhighlight %}
 
