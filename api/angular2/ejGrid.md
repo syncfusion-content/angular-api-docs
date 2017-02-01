@@ -537,6 +537,7 @@ Gets or sets an object that indicates to render the grid with specified columns
 {% highlight ts %}
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
+public value=$("#Grid").ejGrid("option", "columns");
 {% endhighlight %}
 
 ### columns.allowEditing `Boolean`
