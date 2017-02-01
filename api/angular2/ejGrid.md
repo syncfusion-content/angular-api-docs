@@ -437,7 +437,7 @@ Gets or sets a value that indicates to define common width for all the columns i
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" commonWidth="200">
+<ej-grid id="Grid" [dataSource]="gridData" commonWidth=200>
 </ej-grid>
 {% endhighlight %}
 
@@ -3908,6 +3908,7 @@ Gets a value that indicates whether the grid model to hold multiple selected rec
 {% highlight ts %}
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
+// display single or multiple selected records
 $("#Grid").ejGrid("model.selectedRecords") 
 {% endhighlight %}
 
