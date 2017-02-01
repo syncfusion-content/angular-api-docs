@@ -554,7 +554,7 @@ Gets or sets a value that indicates whether to enable editing behavior for parti
 <ej-grid id="Grid" [dataSource]="gridData" editSettings="editSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" allowEditing="false"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
 </ej-grid>
@@ -581,7 +581,7 @@ Gets or sets a value that indicates whether to enable dynamic filtering behavior
 <ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true">
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" allowFiltering="false"></e-column>
+        <e-column field= "CustomerID" [allowFiltering]="false"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
 </ej-grid>
@@ -607,7 +607,7 @@ Gets or sets a value that indicates whether to enable dynamic grouping behavior 
 <ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true">
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" allowGrouping="false"></e-column>
+        <e-column field= "CustomerID" [allowGrouping]="false"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
 </ej-grid>
@@ -633,7 +633,7 @@ Gets or sets a value that indicates whether to enable dynamic sorting behavior f
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true">
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" allowSorting="false"></e-column>
+        <e-column field= "CustomerID" [allowSorting]="false"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
 </ej-grid>
@@ -659,7 +659,7 @@ Gets or sets a value that indicates whether to enable dynamic resizable for part
 <ej-grid id="Grid" [dataSource]="gridData" allowResizing="true">
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" allowResizing="false"></e-column>
+        <e-column field= "CustomerID" [allowResizing]="false"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
 </ej-grid>
@@ -732,7 +732,7 @@ Gets or sets an object that indicates to define a command column in the grid.
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" allowEditing="false"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
         <e-column  headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
@@ -764,7 +764,7 @@ Gets or sets an object that indicates to define all the button options which are
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" allowEditing="false"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
         <e-column headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
@@ -820,7 +820,7 @@ Gets or sets a value that indicates to add the command column button.
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field= "OrderID"  [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" allowEditing="false"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
         <e-column headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
@@ -1027,7 +1027,7 @@ Gets or sets a value that indicates to display a column value as checkbox or str
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "Verified" displayAsCheckBox= "false"></e-column>
+        <e-column field= "Verified" [displayAsCheckBox]= "false"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -1217,7 +1217,7 @@ Gets or sets a value that indicates to define foreign key field name of the grid
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" visible="false"></e-column>
+        <e-column field= "CustomerID" [visible]="false"></e-column>
         <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
@@ -1281,7 +1281,7 @@ Gets or sets a value that indicates to bind the field which is in foreign column
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" visible="false"></e-column>
+        <e-column field= "CustomerID" [visible]="false"></e-column>
         <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
@@ -1476,7 +1476,7 @@ You can use this property to freeze selected columns in grid at the time of scro
 <ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings">
     <e-columns>
         <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" isFrozen="true"></e-column>
+        <e-column field="CustomerID" [isFrozen]="true"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid>
@@ -1502,7 +1502,7 @@ Gets or sets a value that indicates the column has an identity in the database.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData"  [editSettings]="editSettings">
     <e-columns>
-        <e-column field="OrderID" isIdentity="true"></e-column>
+        <e-column field="OrderID" [isIdentity]="true"></e-column>
         <e-column field="CustomerID"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
@@ -1583,7 +1583,7 @@ Used to hide the particular column in column chooser by giving value as false.
 <ej-grid id="Grid" [dataSource]="gridData" showColumnChooser="true">
     <e-columns>
         <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" showInColumnChooser="false"></e-column>
+        <e-column field="CustomerID" [showInColumnChooser]="false"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid>
@@ -1768,7 +1768,7 @@ Gets or sets a value that indicates whether this column is visible in the grid.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" visible="false"></e-column>
+        <e-column field="OrderID" [visible]="false"></e-column>
         <e-column field="CustomerID"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
@@ -2413,7 +2413,7 @@ This specifies the id of the template. This template can be used to display the 
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" allowEditing="false"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
         <e-column field= "EmployeeID"></e-column>
     </e-columns>
 </ej-grid>
