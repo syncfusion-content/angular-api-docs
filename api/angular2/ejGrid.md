@@ -437,7 +437,7 @@ Gets or sets a value that indicates to define common width for all the columns i
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" commonWidth=200>
+<ej-grid id="Grid" [dataSource]="gridData" [commonWidth]=200>
 </ej-grid>
 {% endhighlight %}
 
@@ -733,7 +733,7 @@ Gets or sets an object that indicates to define a command column in the grid.
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column field= "CustomerID"></e-column>
         <e-column  headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
@@ -765,7 +765,7 @@ Gets or sets an object that indicates to define all the button options which are
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column field= "CustomerID"></e-column>
         <e-column headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
@@ -821,7 +821,7 @@ Gets or sets a value that indicates to add the command column button.
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field= "OrderID"  [isPrimaryKey]="true"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column field= "CustomerID"></e-column>
         <e-column headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
@@ -1554,7 +1554,7 @@ Gets or sets a value that indicates the order of Column that are to be hidden or
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" isResponsive= "true" minWidth= "400">
+<ej-grid id="Grid" [dataSource]="gridData" isResponsive= "true" [minWidth]= 400>
     <e-columns>
         <e-column field="OrderID"></e-column>
         <e-column field="CustomerID" [priority]= "2"></e-column>
@@ -1740,7 +1740,7 @@ Gets or sets a value that indicates to define constraints for saving data to the
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
-        <e-column field="OrderID" [validationRules]="rules" [isPrimaryKey]="true"></e-column>
+        <e-column field="OrderID" [validationRules]="rules"></e-column>
         <e-column field="CustomerID"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
@@ -2422,7 +2422,7 @@ This specifies the id of the template. This template can be used to display the 
 {% highlight ts %}
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
-this.editSettings={allowEditing:true, editMode: "inlinetemplateform", inlineFormTemplateID: "#template" };
+this.editSettings={allowEditing:true, editMode: "inlineformtemplate", inlineFormTemplateID: "#template" };
 this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
@@ -3333,7 +3333,7 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 #### Example
 {:.example}
 {% highlight html %}            
-<ej-grid id="Grid" [dataSource]="gridData" minWidth="990" isResponsive="true" >
+<ej-grid id="Grid" [dataSource]="gridData" [minWidth]=990 isResponsive="true" >
 </ej-grid>
 {% endhighlight %}
 
@@ -3923,7 +3923,7 @@ Gets or sets a value that indicates to select the row while initializing the gri
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" selectedRowIndex="1">
+<ej-grid id="Grid" [dataSource]="gridData" [selectedRowIndex]=1>
 </ej-grid> 
 {% endhighlight %}
 
@@ -3944,7 +3944,7 @@ Gets or sets a value that indicates the selected rows in grid
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" selectionType="multiple" selectedRowIndices="[1,4,7]">
+<ej-grid id="Grid" [dataSource]="gridData" selectionType="multiple" [selectedRowIndices]=[1,4,7]>
 </ej-grid> 
 {% endhighlight %}
 
@@ -4147,7 +4147,7 @@ This specify the grid to freeze particular rows at the time of scrolling.
 {% highlight ts %}
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
-this.scrollSettings={width:500,height:50,frozenRows:2 };
+this.scrollSettings={width:500,height:150,frozenRows:2 };
 {% endhighlight %}
 
 ### scrollSettings.height `String|Number`
@@ -4969,7 +4969,7 @@ Gets or sets a value that indicates to add the template for the summary value of
 {:.example}
 {% highlight html %}
 <script id="templateData" type="text/x-jsrender">
-     Freight has Average of {{"{{"}}:summaryValue{{}}}} in  dollars
+     Freight has Average of {{:summaryValue}} in  dollars
 </script>
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
