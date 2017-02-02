@@ -1053,7 +1053,7 @@ Gets or sets a value that indicates to customize ejNumericTextbox of an editable
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "Freight" editType= "numeric" [editParams]="editParams" ></e-column>
+        <e-column field= "Freight" [editType]= "editType" [editParams]="editParams" ></e-column>
     </e-columns>
 </ej-grid>  
 {% endhighlight %}
@@ -1062,6 +1062,7 @@ Gets or sets a value that indicates to customize ejNumericTextbox of an editable
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.editType=ej.Grid.EditingType.Numeric;
 this.editParams={decimalPlaces:2};
 {% endhighlight %}
 
@@ -1140,7 +1141,7 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "Freight" editType= "numeric" [editParams]="editParams" ></e-column>
+        <e-column field= "Freight" editType= "editType" [editParams]="editParams" ></e-column>
     </e-columns>
 </ej-grid>  
 {% endhighlight %}
@@ -1149,6 +1150,7 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.editType=ej.Grid.EditingType.Numeric;
 this.editParams={decimalPlaces:2};
 {% endhighlight %}
 
