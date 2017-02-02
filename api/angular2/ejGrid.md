@@ -1614,7 +1614,7 @@ Gets or sets a value that indicates whether to enables column template for a par
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" template="true" [templateID]="columnTemplate"></e-column>
+        <e-column field="CustomerID" [template]="columnTemplate"></e-column>
         <e-column field="EmployeeID" ></e-column>
     </e-columns>
 </ej-grid>
