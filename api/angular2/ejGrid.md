@@ -4735,13 +4735,13 @@ Gets or sets a value that indicates the text displayed in the summary column as 
 {% highlight ts %}
 this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
 this.gridData = this.dataManager;
-this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : "currency"}]}];
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : this.currency.bind(this)}]}];
 currency(){ 
-        public gridObj = $("#Grid").ejGrid("instance")
-        public rs=ej.sum(gridObj.model.dataSource, "Freight")
-        public dol = 0.017
-        return (rs * dol);
-        }
+        this.gridObj = $("#Grid").ejGrid("instance")
+        this.rs=ej.sum(this.gridObj.model.dataSource(), "Freight")
+        this.dol = 0.017
+        return (this.rs);
+    }
 {% endhighlight %}
 
 ### summaryRows.summaryColumns.dataMember `String`
