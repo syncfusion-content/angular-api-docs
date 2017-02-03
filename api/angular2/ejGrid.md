@@ -1205,6 +1205,33 @@ this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwn
 this.gridData = this.dataManager;
 {% endhighlight %}
 
+### columns.filterBarTemplate `Object`
+{:#members:columns-filterbartemplate}
+
+Gets or sets a template that customize the filter control from default . See filterBarTemplate
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "Freight"></e-column>
+        <e-column field= "EmployeeID" width="100" [filterBarTemplate]="filterBarTemplate"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
+this.gridData = this.dataManager;
+this.filterBarTemplate={ create: function (args) {return "<input>"},write: function (args) {var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });},read: function (args) {this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)}};
+{% endhighlight %}
+
 ### columns.foreignKeyField `String`
 {:#members:columns-foreignkeyfield}
 
@@ -1559,8 +1586,8 @@ Gets or sets a value that indicates the order of Column that are to be hidden or
 <ej-grid id="Grid" [dataSource]="gridData" isResponsive= "true" [minWidth]= 400>
     <e-columns>
         <e-column field="OrderID"></e-column>
-        <e-column field="CustomerID" [priority]= "2"></e-column>
-        <e-column field="EmployeeID"[priority]= "1"></e-column>
+        <e-column field="CustomerID" [priority]= 2></e-column>
+        <e-column field="EmployeeID" [priority]= 1></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
@@ -4733,8 +4760,26 @@ Gets or sets a value that indicates the text displayed in the summary column as 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+this.gridData = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 1,
+            OrderDate: new Date(8364186e5), Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 2,
+            OrderDate: new Date(836505e6), Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 3,
+            OrderDate: new Date(8367642e5), Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 4,
+            OrderDate: new Date(8367642e5), Freight: 41.34
+        },
+        {
+            OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 5,
+            OrderDate: new Date(8368506e5), Freight: 51.3
+        }];
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : this.currency.bind(this)}]}];
 currency(){ 
         this.gridObj = $("#Grid").ejGrid("instance")
