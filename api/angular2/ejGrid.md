@@ -103,8 +103,8 @@ Gets or sets a value that indicates whether to customizing cell based on our nee
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowGrouping `Boolean`
@@ -124,8 +124,8 @@ Gets or sets a value that indicates whether to enable dynamic grouping behavior.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowKeyboardNavigation `Boolean`
@@ -145,8 +145,8 @@ Gets or sets a value that indicates whether to enable keyboard support for perfo
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowFiltering `Boolean`
@@ -166,8 +166,8 @@ Gets or sets a value that indicates whether to enable dynamic filtering behavior
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowSorting `Boolean`
@@ -187,8 +187,8 @@ Gets or sets a value that indicates whether to enable the dynamic sorting behavi
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowMultiSorting `Boolean`
@@ -208,8 +208,8 @@ Gets or sets a value that indicates whether to enable multi columns sorting beha
  {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowPaging `Boolean`
@@ -229,8 +229,8 @@ This specifies the grid to show the paginated data. Also enables pager control a
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowReordering `Boolean`
@@ -250,8 +250,8 @@ Gets or sets a value that indicates whether to enable the columns reordering beh
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowResizeToFit `Boolean`
@@ -271,8 +271,8 @@ Gets or sets a value that indicates whether the column is non resizable. Column 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowResizing `Boolean`
@@ -292,8 +292,8 @@ Gets or sets a value that indicates whether to enable dynamic resizable of colum
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={height:300,width:200};
 {% endhighlight %}
 
@@ -314,8 +314,8 @@ Gets or sets a value that indicates whether to enable the rows reordering in Gri
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowScrolling `Boolean`
@@ -335,8 +335,8 @@ Gets or sets a value that indicates whether to enable the scrollbar in the grid 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={height:200,width:200};
 {% endhighlight %}
 
@@ -357,8 +357,8 @@ Gets or sets a value that indicates whether to enable dynamic searching behavior
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.toolbarSettings={showToolbar:true,toolbarItems:["search"]};
 {% endhighlight %}
 
@@ -379,8 +379,8 @@ Gets or sets a value that indicates whether user can select rows on grid. On ena
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowTextWrap `Boolean`
@@ -400,8 +400,8 @@ Gets or sets a value that indicates whether the Content will wrap to the next li
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowMultipleExporting `Boolean`
@@ -416,13 +416,14 @@ Gets or sets a value that indicates whether to enable the multiple exporting beh
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" allowMultipleExporting="true">
+<ej-grid id="Grid" [dataSource]="gridData" [toolbarSettings]="toolbarSettings" allowMultipleExporting="true">
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings = { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport, ej.Grid.ToolBarItems.PdfExport] }
 {% endhighlight %}
 
 ### commonWidth `Number`
@@ -442,8 +443,8 @@ Gets or sets a value that indicates to define common width for all the columns i
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### childGrid `Object`
@@ -463,17 +464,10 @@ This specifies the grid to add the grid control inside the grid row of the paren
 {% endhighlight %}
 
 {% highlight ts %}
-this.employeedata = ej.DataManager({
-                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/", 
-                    crossDomain:true
-                });
-this.dataManager = ej.DataManager({
-                    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Employees/", 
-                    crossDomain:true
-                });
-this.gridData = this.employeedata;
-this.employee=this.dataManager;
-this.attributes={dataSource:this.employee,queryString: "OrderID"};
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.employeeView;
+this.employee = window.gridData;
+this.attributes={dataSource:this.employee,queryString: "EmployeeID"};
 {% endhighlight %}
 
 ### columnLayout `enum`
@@ -505,7 +499,7 @@ Used to enable or disable static width settings for column. If the columnLayout 
 #### Example
 {:.example}
 {% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" columnLayout="fixed">
+<ej-grid id="Grid" [dataSource]="gridData" [columnLayout]="fixed">
     <e-columns>
         <e-column field= "OrderID" headerText= "Order ID" width= "80"></e-column>
         <e-column field= "CustomerID" headerText= "Customer ID" width= "90"></e-column>
@@ -514,8 +508,9 @@ Used to enable or disable static width settings for column. If the columnLayout 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.fixed = ej.Grid.ColumnLayout.Fixed;
 {% endhighlight %}
 
 ### columns `Array`
@@ -535,8 +530,8 @@ Gets or sets an object that indicates to render the grid with specified columns
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 public value=$("#Grid").ejGrid("option", "columns");
 {% endhighlight %}
 
@@ -552,7 +547,7 @@ Gets or sets a value that indicates whether to enable editing behavior for parti
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" editSettings="editSettings">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field= "CustomerID" [allowEditing]="false"></e-column>
@@ -562,8 +557,8 @@ Gets or sets a value that indicates whether to enable editing behavior for parti
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true};
 {% endhighlight %}
 
@@ -589,8 +584,8 @@ Gets or sets a value that indicates whether to enable dynamic filtering behavior
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.allowGrouping `Boolean`
@@ -615,8 +610,8 @@ Gets or sets a value that indicates whether to enable dynamic grouping behavior 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.allowSorting `Boolean`
@@ -641,8 +636,8 @@ Gets or sets a value that indicates whether to enable dynamic sorting behavior f
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.allowResizing `Boolean`
@@ -667,8 +662,8 @@ Gets or sets a value that indicates whether to enable dynamic resizable for part
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.clipMode `enum`
@@ -707,15 +702,17 @@ Sets the clip mode for Grid cell as ellipsis or clipped content(both header and 
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
-        <e-column field="CustomerID" headerText="CustomerID" width="80" clipMode="ellipsis"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80" [clipMode]="ellipsis"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.ellipsis= ej.Grid.ClipMode.Ellipsis;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.commands `Array`
@@ -740,8 +737,8 @@ Gets or sets an object that indicates to define a command column in the grid.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
                   { type: "delete", buttonOptions: { text: "Delete" } },
@@ -772,8 +769,8 @@ Gets or sets an object that indicates to define all the button options which are
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
                   { type: "delete", buttonOptions: { text: "Delete" } },
@@ -828,8 +825,8 @@ Gets or sets a value that indicates to add the command column button.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
                   { type: "delete", buttonOptions: { text: "Delete" } },
@@ -865,8 +862,8 @@ color:green;
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.customAttributes `Object`
@@ -891,8 +888,8 @@ Gets or sets a value that indicates the attribute values to the td element of a 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.customAttributes={"style":"color:red"};
 {% endhighlight %}
 
@@ -908,57 +905,19 @@ Gets or sets a value that indicates to bind the external datasource to the parti
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
+<ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "OrderID"></e-column>
         <e-column field= "CustomerID" [visible]="false"></e-column>
-        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.gridData = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 1,
-            OrderDate: new Date(8364186e5), Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 2,
-            OrderDate: new Date(836505e6), Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        },
-        {
-            OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 5,
-            OrderDate: new Date(8368506e5), Freight: 51.3
-        }];
-this.employee = [{
-            OrderID: 10253, CustomerID: 'TENIV', EmployeeID: 1,
-            FirstName: 'VIN', Freight: 23.38
-        },
-        {
-            OrderID: 10254, CustomerID: 'PSMOT', EmployeeID: 2,
-            FirstName: 'DIA', Freight: 12.61
-        },
-        {
-            OrderID: 10255, CustomerID: 'RANAH', EmployeeID: 3,
-            FirstName: 'NIM', Freight: 56.83
-        },
-        {
-            OrderID: 10256, CustomerID: 'ETCIV', EmployeeID: 4,
-            FirstName: 'AUN', Freight: 14.34
-        },
-        {
-            OrderID: 10257, CustomerID: 'DRPUS', EmployeeID: 5,
-            FirstName: 'REN', Freight: 15.9
-        }];
-this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
 {% endhighlight %}
 
 ### columns.defaultValue `String|Number|Boolean|Date`
@@ -983,8 +942,8 @@ Gets or sets a value that indicates to display the specified default value while
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowAdding:true};
 this.toolbarSettings={ showToolbar: true,toolbarItems:["add"]};
 {% endhighlight %}
@@ -1009,8 +968,8 @@ Gets or sets a value that indicates to render the grid content and header with a
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.displayAsCheckBox `Boolean`
@@ -1034,8 +993,8 @@ Gets or sets a value that indicates to display a column value as checkbox or str
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.editParams `Object`
@@ -1050,7 +1009,7 @@ Gets or sets a value that indicates to customize ejNumericTextbox of an editable
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field= "Freight" [editType]= "editType" [editParams]="editParams" ></e-column>
@@ -1059,9 +1018,10 @@ Gets or sets a value that indicates to customize ejNumericTextbox of an editable
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.toolbarSettings={ showToolbar: true,toolbarItems:["edit"]};
 this.editType=ej.Grid.EditingType.Numeric;
 this.editParams={decimalPlaces:2};
 {% endhighlight %}
@@ -1088,8 +1048,8 @@ Gets or sets a template that displays a custom editor used to edit column values
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true};
 this.editTemplate={ create: function () { return "<input>"; }, read: function (args) { return args.ejMaskEdit("get_StrippedValue"); }, write: function (args) { args.element.ejMaskEdit({ width: "100%" ,maskFormat: "9",value: args.rowdata !== undefined ? args.rowdata["EmployeeID"]: "" }); } };
 {% endhighlight %}
@@ -1141,14 +1101,14 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
         <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field= "Freight" editType= "editType" [editParams]="editParams" ></e-column>
+        <e-column field= "Freight" [editType]= "editType" [editParams]="editParams" ></e-column>
     </e-columns>
 </ej-grid>  
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.editType=ej.Grid.EditingType.Numeric;
 this.editParams={decimalPlaces:2};
@@ -1177,8 +1137,8 @@ Gets or sets a value that indicates to group the column based on its column form
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.field `String`
@@ -1201,14 +1161,14 @@ Gets or sets a value that indicates to display the columns in the grid mapping w
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.filterBarTemplate `Object`
 {:#members:columns-filterbartemplate}
 
-Gets or sets a template that customize the filter control from default . See filterBarTemplate
+Gets or sets a template that customize the filter control from default .
 
 #### Default Value:
 {:.param}
@@ -1221,14 +1181,14 @@ Gets or sets a template that customize the filter control from default . See fil
     <e-columns>
         <e-column field= "OrderID"></e-column>
         <e-column field= "Freight"></e-column>
-        <e-column field= "EmployeeID" width="100" [filterBarTemplate]="filterBarTemplate"></e-column>
+        <e-column field= "EmployeeID" [filterBarTemplate]="filterBarTemplate"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.filterBarTemplate={ create: function (args) {return "<input>"},write: function (args) {var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });},read: function (args) {this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)}};
 {% endhighlight %}
 
@@ -1246,54 +1206,17 @@ Gets or sets a value that indicates to define foreign key field name of the grid
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "OrderID" ></e-column>
         <e-column field= "CustomerID" [visible]="false"></e-column>
-        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.gridData = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 1,
-            OrderDate: new Date(8364186e5), Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 2,
-            OrderDate: new Date(836505e6), Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        },
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 5,
-            OrderDate: new Date(8368506e5), Freight: 51.3
-        }];
-this.employee = [{
-            OrderID: 10253, CustomerID: 'TENIV', EmployeeID: 1,
-            FirstName: 'VIN', Freight: 23.38
-        },
-        {
-            OrderID: 10254, CustomerID: 'PSMOT', EmployeeID: 2,
-            FirstName: 'DIA', Freight: 12.61
-        },
-        {
-            OrderID: 10255, CustomerID: 'RANAH', EmployeeID: 3,
-            FirstName: 'NIM', Freight: 56.83
-        },
-        {
-            OrderID: 10256, CustomerID: 'ETCIV', EmployeeID: 4,
-            FirstName: 'AUN', Freight: 14.34
-        },
-        {
-            OrderID: 10257, CustomerID: 'DRPUS', EmployeeID: 5,
-            FirstName: 'REN', Freight: 15.9
-        }];
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
 {% endhighlight %}
 
 ### columns.foreignKeyValue `String`
@@ -1308,56 +1231,20 @@ Gets or sets a value that indicates to bind the field which is in foreign column
 #### Example
 {:.example}
 {% highlight html %}
+{% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "OrderID" ></e-column>
         <e-column field= "CustomerID" [visible]="false"></e-column>
-        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.gridData = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 1,
-            OrderDate: new Date(8364186e5), Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 2,
-            OrderDate: new Date(836505e6), Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        },
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 5,
-            OrderDate: new Date(8368506e5), Freight: 51.3
-        }];
-this.employee = [{
-            OrderID: 10253, CustomerID: 'TENIV', EmployeeID: 1,
-            FirstName: 'VIN', Freight: 23.38
-        },
-        {
-            OrderID: 10254, CustomerID: 'PSMOT', EmployeeID: 2,
-            FirstName: 'DIA', Freight: 12.61
-        },
-        {
-            OrderID: 10255, CustomerID: 'RANAH', EmployeeID: 3,
-            FirstName: 'NIM', Freight: 56.83
-        },
-        {
-            OrderID: 10256, CustomerID: 'ETCIV', EmployeeID: 4,
-            FirstName: 'AUN', Freight: 14.34
-        },
-        {
-            OrderID: 10257, CustomerID: 'DRPUS', EmployeeID: 5,
-            FirstName: 'REN', Freight: 15.9
-        }];
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
 {% endhighlight %}
 
 ### columns.format `String`
@@ -1374,16 +1261,17 @@ Gets or sets a value that indicates the format for the text applied on the colum
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.headerTemplateID `String`
@@ -1412,8 +1300,8 @@ Gets or sets a value that indicates to add the template within the header elemen
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.headerText `String`
@@ -1430,15 +1318,16 @@ Gets or sets a value that indicates to display the title of that particular colu
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-       <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+       <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.headerTextAlign `enum`
@@ -1479,15 +1368,16 @@ This defines the text alignment of a particular column header cell value.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-       <e-column field="OrderID"  headerText="OrderID" width="75" headerTextAlign="right"></e-column>
-       <e-column field="CustomerID" headerText="CustomerID" width="80" headerTextAlign="center"></e-column>
+       <e-column field="OrderID"  headerText="OrderID" width="75" ></e-column>
+       <e-column field="CustomerID" headerText="CustomerID" width="80" [headerTextAlign]="right"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.isFrozen `Boolean`
@@ -1512,8 +1402,8 @@ You can use this property to freeze selected columns in grid at the time of scro
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={ width : 300,height:300};
 {% endhighlight %}
 
@@ -1539,8 +1429,8 @@ Gets or sets a value that indicates the column has an identity in the database.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true};
 {% endhighlight %}
 
@@ -1566,8 +1456,8 @@ Gets or sets a value that indicates the column is act as a primary key(read-only
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true};
 {% endhighlight %}
 
@@ -1593,8 +1483,8 @@ Gets or sets a value that indicates the order of Column that are to be hidden or
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.showInColumnChooser `Boolean`
@@ -1619,8 +1509,8 @@ Used to hide the particular column in column chooser by giving value as false.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.template `Boolean|String`
@@ -1648,8 +1538,8 @@ Gets or sets a value that indicates whether to enables column template for a par
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.columnTemplate="#columnTemplate";
 {% endhighlight %}
 
@@ -1691,16 +1581,17 @@ Gets or sets a value that indicates to align the text within the column.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" textAlign="center"></e-column>
-        <e-column field="CustomerID" textAlign="right"></e-column>
+        <e-column field="OrderID"></e-column>
+        <e-column field="CustomerID" [textAlign]="right"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.tooltip `string`
@@ -1721,16 +1612,16 @@ Default Value:
   </script>
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" textAlign="center"></e-column>
-        <e-column field="CustomerID" textAlign="right" tooltip="#colTip"></e-column>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" tooltip="#colTip"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.type `String`
@@ -1755,8 +1646,8 @@ Gets or sets a value that indicates to specify the data type of the specified co
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.validationRules `Object`
@@ -1777,8 +1668,8 @@ Gets or sets a value that indicates to define constraints for saving data to the
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true};
 this.rules={required: true, number: true };
 {% endhighlight %}
@@ -1805,8 +1696,8 @@ Gets or sets a value that indicates whether this column is visible in the grid.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.width `Number`
@@ -1831,8 +1722,8 @@ Gets or sets a value that indicates to define the width for a particular column 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### contextMenuSettings `Object`
@@ -1861,8 +1752,8 @@ Gets or sets a value that indicates whether to add the default context menu acti
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.settings={enableContextMenu: true,  contextMenuItems:["Add Record","Edit Record","Delete Record"] };
 {% endhighlight %}
@@ -1888,8 +1779,8 @@ Gets or sets a value that indicates whether to add custom contextMenu items with
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.settings={enableContextMenu: true, customContextMenuItems:["Hidden Columns","Visible Columns"] };
 {% endhighlight %}
 
@@ -1914,8 +1805,8 @@ Gets or sets a value that indicates whether to enable the context menu action in
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.settings={enableContextMenu: true };
 {% endhighlight %}
@@ -1941,8 +1832,8 @@ Gets or sets a value that indicates whether to disable the default context menu 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.settings={enableContextMenu: true, customContextMenuItems:["Hidden Columns,Visible Columns"], disableDefaultItems: true };
 {% endhighlight %}
@@ -1978,8 +1869,8 @@ Used to get or set the sub menu items to the custom context menu item.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.settings={enableContextMenu: true, customContextMenuItems: ["Hide Column"],subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }]};         
 {% endhighlight %}
 
@@ -2008,8 +1899,8 @@ Gets or sets a value that indicates to render the grid with custom theme.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### dataSource `Object`
@@ -2076,8 +1967,8 @@ This specifies the grid to add the details row for the corresponding master row
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.templateData="#templateData";
 {% endhighlight %}
 
@@ -2108,8 +1999,8 @@ Gets or sets a value that indicates whether to enable insert action in the editi
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowAdding:true};
 this.toolbarSettings={ showToolbar: true,toolbarItems:["add"]};
 {% endhighlight %}
@@ -2136,8 +2027,8 @@ Gets or sets a value that indicates whether to enable the delete action in the e
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowDeleting:true};
 this.toolbarSettings={ showToolbar: true,toolbarItems:["delete"]};
 {% endhighlight %}
@@ -2164,8 +2055,8 @@ Gets or sets a value that indicates whether to enable the edit action in the edi
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true};
 this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
@@ -2192,8 +2083,8 @@ Gets or sets a value that indicates whether to enable the editing action while d
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing:true,allowEditOnDblClick: false};
 this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
@@ -2242,9 +2133,9 @@ This specifies the id of the template. This template can be used to display the 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowEditing:true,editMode: "dialogtemplate", dialogEditorTemplateID: "#template" };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode: ej.Grid.EditMode.DialogTemplate, dialogEditorTemplateID: "#template" };
 this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
@@ -2311,9 +2202,9 @@ Add a comment to this line
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowEditing:true,editMode: "dialog"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode:ej.Grid.EditMode.Dialog};
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
@@ -2358,9 +2249,9 @@ This specifies the id of the template. This template can be used to display the 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowEditing:true,editMode: "externalformtemplate", externalFormTemplateID: "#template"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode: ej.Grid.EditMode.ExternalFormTemplate, externalFormTemplateID: "#template"};
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
@@ -2402,9 +2293,9 @@ This specifies to set the position of an External edit form either in the top-ri
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowEditing:true,editMode: "externalform", formPosition: "topright"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode: ej.Grid.EditMode.ExternalForm, formPosition: ej.Grid.FormPosition.BottomLeft};
 this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
@@ -2449,9 +2340,9 @@ This specifies the id of the template. This template can be used to display the 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowEditing:true, editMode: "inlineformtemplate", inlineFormTemplateID: "#template" };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true, editMode: ej.Grid.EditMode.InlineFormTemplate", inlineFormTemplateID: "#template" };
 this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
@@ -2493,9 +2384,9 @@ This specifies to set the position of an adding new row either in the top or bot
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowEditing:true, allowAdding:true, rowPosition:"bottom" };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true, allowAdding:true, rowPosition:ej.Grid.RowPosition.Bottom" };
 this.toolbarSettings={ showToolbar: true,toolbarItems:["add"]};
 {% endhighlight %}
 
@@ -2521,9 +2412,9 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowEditing:true, editMode: "batch", showConfirmDialog:false };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true, editMode: ej.Grid.EditMode.Batch, showConfirmDialog:false };
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
@@ -2549,8 +2440,8 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowDeleting: true, showDeleteConfirmDialog:true };
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","delete","cancel"]};
 {% endhighlight %}
@@ -2577,9 +2468,9 @@ Gets or sets a value that indicates whether the title for edit form is different
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.editSettings={allowAdding: true,editMode: "dialog", titleColumn: "CustomerID" };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowAdding: true,editMode: ej.Grid.EditMode.Dialog, titleColumn: "CustomerID" };
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
 {% endhighlight %}
 
@@ -2605,8 +2496,8 @@ Gets or sets a value that indicates whether to display the add new form by defau
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowAdding: true, showAddNewRow: true };
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
 {% endhighlight %}
@@ -2628,8 +2519,8 @@ Gets or sets a value that indicates whether to enable the alternative rows diffe
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableAutoSaveOnSelectionChange `Boolean`
@@ -2654,8 +2545,8 @@ Gets or sets a value that indicates whether to enable the save action in the gri
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing: true };
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
@@ -2677,8 +2568,8 @@ Gets or sets a value that indicates whether to enable mouse over effect on the c
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enablePersistence `Boolean`
@@ -2698,8 +2589,8 @@ Gets or sets a value that indicates whether to persist the grid model state in p
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableResponsiveRow `Boolean`
@@ -2719,8 +2610,8 @@ Gets or sets a value that indicates whether the grid rows has to be rendered as 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableRowHover `Boolean`
@@ -2740,8 +2631,8 @@ Gets or sets a value that indicates whether to enable mouse over effect on corre
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableRTL `Boolean`
@@ -2761,8 +2652,8 @@ Align content in the grid control from right to left by setting the property as 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableTouch `Boolean`
@@ -2782,8 +2673,8 @@ To Disable the mouse swipe property as false.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### filterSettings `Object`
@@ -2808,9 +2699,9 @@ Gets or sets a value that indicates to perform the filter operation with case se
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.filterSettings={ enableCaseSensitivity:true, filterType:"excel"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;;
+this.filterSettings={ enableCaseSensitivity:true, filterType:ej.Grid.FilterType.Excel};
 {% endhighlight %}
 
 ### filterSettings.filterBarMode `enum`
@@ -2847,9 +2738,9 @@ This specifies the grid to starts the filter action while typing in the filterBa
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.filterSettings={ filterBarMode: "onenter"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ filterBarMode: ej.Grid.FilterBarMode.OnEnter};
 {% endhighlight %}
 
 
@@ -2939,9 +2830,9 @@ Gets or sets a value that indicates whether to define the value to be filtered i
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager
-this.filterSettings={ filterType: "menu", filteredColumns: [{ field: "CustomerID", operator: "startswith", value: "vi", predicate: "and" }]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ filterType: ej.Grid.FilterType.Menu, filteredColumns: [{ field: "CustomerID", operator: "startswith", value: "vi", predicate: "and" }]};
 {% endhighlight %}
 
 ### filterSettings.filterType `enum`
@@ -2981,9 +2872,9 @@ This specifies the grid to show the filterBar or filterMenu to the grid records.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.filterSettings={ filterType: "menu"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ filterType: ej.Grid.FilterType.Menu};
 {% endhighlight %}
 
 ### filterSettings.maxFilterChoices `Number`
@@ -3003,9 +2894,9 @@ Gets or sets a value that indicates the maximum number of filter choices that ca
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.filterSettings={ maxFilterChoices:200, filterType:"excel"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ maxFilterChoices:200, filterType:ej.Grid.FilterType.Excel};
 {% endhighlight %}
 
 ### filterSettings.showfilterbarstatus `Boolean`
@@ -3025,8 +2916,8 @@ This specifies the grid to show the filter text within the grid pager itself.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.filterSettings={ showfilterbarstatus: true};
 {% endhighlight %}
 
@@ -3047,9 +2938,9 @@ Gets or sets a value that indicates whether to enable the predicate options in t
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.filterSettings={ showPredicate:true, filterType:"menu"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ showPredicate:true, filterType:ej.Grid.FilterType.Menu};
 {% endhighlight %}
 
 ### groupSettings `Object`
@@ -3074,8 +2965,8 @@ Gets or sets a value that customize the group caption format.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.groupSettings={ captionFormat: "{{:field}} - {{:key}} : {{:count}} {{if count == 1 }} item {{else}} items {{/if}}" };
 {% endhighlight %}
 
@@ -3096,8 +2987,8 @@ Gets or sets a value that indicates whether to enable animation button option in
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.groupSettings={enableDropAreaAutoSizing: true };
 {% endhighlight %}
 
@@ -3115,16 +3006,16 @@ Gets or sets a value that indicates whether to add grouped columns programmatica
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.groupSettings={groupedColumns:["OrderID"] };
 {% endhighlight %}
 
@@ -3142,16 +3033,16 @@ Gets or sets a value that indicates whether to show the group drop area just abo
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" ></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.groupSettings={showDropArea:false,groupedColumns:["OrderID"] };
 {% endhighlight %}   
 
@@ -3169,16 +3060,16 @@ Gets or sets a value that indicates whether to hide the grouped columns from the
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.groupSettings={groupedColumns:["OrderID"],showGroupedColumn:false };
 {% endhighlight %}
 
@@ -3196,16 +3087,16 @@ Gets or sets a value that indicates whether to show the group button image(toggl
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.groupSettings={groupedColumns:["OrderID"],showToggleButton:true };
 {% endhighlight %}
 
@@ -3223,20 +3114,20 @@ Gets or sets a value that indicates whether to enable the close button in the gr
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" ></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.groupSettings={groupedColumns:["OrderID"],showGroupedColumn:false,showToggleButton:true,showUngroupButton:true };
 {% endhighlight %}
 
-### gridLines `string`
+### gridLines `enum`
 {:#members:gridlines}
 
 <ts name="ej.Grid.GridLines"/>
@@ -3272,13 +3163,14 @@ Gets or sets a value that indicates to enable the visibility of the grid lines.
 
 #### Example 
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData"  gridLines="none" >
+<ej-grid id="Grid" [dataSource]="gridData"  [gridLines]="none" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.none = ej.Grid.GridLines.None;
 {% endhighlight %}
 
 ### isResponsive `Boolean`
@@ -3298,8 +3190,8 @@ Gets or sets a value that indicates whether the grid design has be to made respo
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### keySettings `Object`
@@ -3319,8 +3211,8 @@ This specifies to change the key in keyboard interaction to grid control
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.keySettings={saveRequest: "83",moveCellRight: "13"};
 {% endhighlight %}
 
@@ -3346,8 +3238,8 @@ ej.Pager.locale["es-ES"] = {
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### minWidth `Number`
@@ -3367,8 +3259,8 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### pageSettings `Object`
@@ -3393,8 +3285,8 @@ Gets or sets a value that indicates whether to define which page to display curr
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.pageSettings={ currentPage: 1 };
 {% endhighlight %}
 
@@ -3415,8 +3307,8 @@ Gets or sets a value that indicates whether to pass the current page information
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.pageSettings={ enableQueryString: true };
 {% endhighlight %}
 
@@ -3441,8 +3333,8 @@ Gets or sets a value that indicates whether to enables pager template for the gr
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.pageSettings={enableTemplates:true,template:"#pagerTemplate"};
 {% endhighlight %}
 
@@ -3463,8 +3355,8 @@ Gets or sets a value that indicates whether to define the number of pages displa
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.pageSettings={ pageCount: 1};
 {% endhighlight %}
 
@@ -3485,8 +3377,8 @@ Gets or sets a value that indicates whether to define the number of records disp
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.pageSettings={ pageSize: 1};
 {% endhighlight %}
 
@@ -3511,8 +3403,8 @@ Gets or sets a value that indicates whether to enables default pager for the gri
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.pageSettings={ showDefaults:true,enableTemplates:true,templateID:"#pagerTemplate" };
 {% endhighlight %}
 
@@ -3537,8 +3429,8 @@ Gets or sets a value that indicates to add the template as a pager template for 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.pageSettings={enableTemplates:true,template:"#pagerTemplate"};
 {% endhighlight %}
 
@@ -3560,8 +3452,8 @@ Get the value of total number of pages in the grid. The totalPages value is calc
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 $("#print").text("TotalPages: " + $("#Grid").ejGrid("option", "pageSettings.totalPages"));
 {% endhighlight %}
 
@@ -3584,8 +3476,8 @@ Get the value of total number of records which is bound to the grid. The totalRe
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 $("#print").text("TotalRecordsCount: " + $("#Grid").ejGrid("option", "pageSettings.totalRecordsCount"));
 {% endhighlight %}
 
@@ -3623,10 +3515,10 @@ Gets or sets a value that indicates whether to define the number of pages to pri
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["printGrid"]};
-this.pageSettings={printMode:"currentpage"};
+this.pageSettings={printMode:ej.Grid.PrintMode.CurrentPage"};
 {% endhighlight %}
 
 ### query `Object`
@@ -3646,8 +3538,8 @@ Query the dataSource from the table for Grid.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.queryOrder=ej.Query().select(["OrderID", "CustomerID"]);
 {% endhighlight %}
 
@@ -3695,9 +3587,9 @@ Gets or sets a value that indicates whether to define the mode of resizing.
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.resizeSettings={resizeMode: "control"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.resizeSettings={resizeMode: ej.Grid.ResizeMode.Control};
 {% endhighlight %}
 
 ### rowTemplate `String`
@@ -3715,7 +3607,7 @@ Gets or sets a value that indicates to render the grid with template rows. The t
 <ej-grid id="Grid" [dataSource]="gridData" [rowTemplate]="templateData" >
     <e-columns>
         <e-column headerText="Employeephoto"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 <script id="templateData" type="text/x-jsrender">
@@ -3731,9 +3623,10 @@ Gets or sets a value that indicates to render the grid with template rows. The t
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.templateData="#templateData";
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### rowDropSettings `Object`
@@ -3759,8 +3652,8 @@ This specifies the grid to drop the grid rows only at particular target element.
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.rowDropSettings={dropTargetID: "#DestGrid"};
 {% endhighlight %}
 
@@ -3782,8 +3675,8 @@ This helps in mapping server-side action when rows are dragged from Grid.
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.rowDropSettings={dropTargetID: "#DestGrid",dragMapper: "Home/DragHandler" };
 {% endhighlight %}
 
@@ -3805,8 +3698,8 @@ This helps in mapping server-side action when rows are dropped in Grid.
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.rowDropSettings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
 {% endhighlight %}
 
@@ -3833,8 +3726,8 @@ This specify the grid to search for the value in particular columns that is ment
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
 this.searchSettings={fields:["OrderID","CustomerID","EmployeeID"], key:"VICTE"};
 {% endhighlight %}
@@ -3857,8 +3750,8 @@ This specifies the grid to search the particular data that is mentioned in the k
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
 this.searchSettings={ key:"VICTE"};
 {% endhighlight %}
@@ -3888,8 +3781,8 @@ It specifies the grid to search the records based on operator.
 
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
 this.searchSettings={operator:"contains", key:"VICTE"};
 {% endhighlight %}
@@ -3911,8 +3804,8 @@ It enables or disables case-sensitivity while searching the search key in grid.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
 this.searchSettings={ignoreCase:true, key:"VICTE"};
 {% endhighlight %}
@@ -3934,8 +3827,8 @@ Gets a value that indicates whether the grid model to hold multiple selected rec
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 // display single or multiple selected records
 $("#Grid").ejGrid("model.selectedRecords") 
 {% endhighlight %}
@@ -3957,8 +3850,8 @@ Gets or sets a value that indicates to select the row while initializing the gri
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### selectedRowIndices `Array`
@@ -3973,13 +3866,14 @@ Gets or sets a value that indicates the selected rows in grid
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" selectionType="multiple" [selectedRowIndices]=[1,4,7]>
+<ej-grid id="Grid" [dataSource]="gridData" [selectionType]="multiple" [selectedRowIndices]=[1,4,7]>
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.multiple=ej.Grid.SelectionType.Multiple;
 {% endhighlight %}
 
 ### selectionSettings `Object`
@@ -4004,8 +3898,8 @@ Gets or sets a value that indicates whether to enable the toggle selection behav
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.selectionSettings={enableToggle: true };
 {% endhighlight %}
 
@@ -4044,8 +3938,8 @@ Gets or sets a value that indicates whether to add the default selection actions
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.selectionSettings={selectionMode: ["row","cell","column"] };
 {% endhighlight %}
 
@@ -4077,13 +3971,14 @@ The row selection behavior of grid. Accepting types are "single" and "multiple".
 
 #### Example
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" selectionType="multiple" >
+<ej-grid id="Grid" [dataSource]="gridData" [selectionType]="multiple" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.multiple = ej.Grid.SelectionType.Multiple;
 {% endhighlight %}
 
 ### scrollSettings `Object`
@@ -4108,8 +4003,8 @@ This specify the grid to to view data that you require without buffering the ent
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={width:300,height:100,allowVirtualScrolling:true};
 {% endhighlight %}
 
@@ -4130,8 +4025,8 @@ This specify the grid to enable/disable touch control for scrolling.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={enableTouchScroll:true};
 {% endhighlight %}
 
@@ -4152,8 +4047,8 @@ This specify the grid to freeze particular columns at the time of scrolling.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={width:500,height:50,frozenColumns:2 };
 {% endhighlight %}
 
@@ -4174,8 +4069,8 @@ This specify the grid to freeze particular rows at the time of scrolling.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={width:500,height:150,frozenRows:2 };
 {% endhighlight %}
 
@@ -4196,8 +4091,8 @@ This specify the grid to show the vertical scroll bar, to scroll and view the gr
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={height:50};
 {% endhighlight %}
 
@@ -4234,9 +4129,9 @@ This is used to define the mode of virtual scrolling in grid. See virtualScrollM
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.scrollSettings={width:500 , height: 550 , allowVirtualScrolling:true, virtualScrollMode:"normal"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={width:500 , height: 550 , allowVirtualScrolling:true, virtualScrollMode:ej.Grid.VirtualScrollMode.Normal};
 {% endhighlight %}
 
 ### scrollSettings.enableVirtualization `Boolean`
@@ -4256,8 +4151,8 @@ This is used to enable the enhanced virtual scrolling in Grid.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={width:500 , height: 550 , enableVirtualization:true};
 {% endhighlight %}
 
@@ -4278,8 +4173,8 @@ This specify the grid to show the horizontal scroll bar, to scroll and view the 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={width:500};
 {% endhighlight %}
 
@@ -4300,8 +4195,8 @@ This specify the scroll down pixel of mouse wheel, to scroll mouse wheel and vie
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.scrollSettings={scrollOneStepBy:100};
 {% endhighlight %}
 
@@ -4321,8 +4216,8 @@ Gets or sets a value that indicates whether to enable column chooser on grid. On
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### showStackedHeader `Boolean`
@@ -4339,17 +4234,18 @@ Gets or sets a value that indicates stacked header should be shown on grid layou
 {% highlight html %} 
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
@@ -4367,16 +4263,16 @@ Gets or sets a value that indicates summary rows should be shown on grid layout 
 {% highlight html %} 
 <ej-grid id="Grid" [dataSource]="gridData"  showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType:ej.Grid.SummaryType.Count, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4413,8 +4309,8 @@ Gets or sets a value that indicates whether to define the direction to sort the 
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.sortSettings={ sortedColumns: [{field:"EmployeeID", direction:"descending"}]};
 {% endhighlight %}
 
@@ -4440,8 +4336,8 @@ Gets or sets a value that indicates whether to define the field name of the colu
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.sortSettings={ sortedColumns: [{field:"EmployeeID"}]};
 {% endhighlight %}
 
@@ -4459,17 +4355,18 @@ Gets or sets an object that indicates to managing the collection of stacked head
 {% highlight html %}  
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
@@ -4487,17 +4384,18 @@ Gets or sets a value that indicates whether to add stacked header columns into t
 {% highlight html %} 
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
@@ -4515,17 +4413,18 @@ Gets or sets a value that indicates the header text for the particular stacked h
 {% highlight html %} 
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
@@ -4548,17 +4447,18 @@ color:green;
 </style>
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght",cssClass:"temp"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}]
 {% endhighlight %}
 
@@ -4576,17 +4476,17 @@ Gets or sets a value that indicates the header text for the particular stacked h
 {% highlight html %} 
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}]
 {% endhighlight %}
 
@@ -4603,20 +4503,21 @@ Gets or sets a value that indicates the text alignment of the corresponding head
 {:.example}
 
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true" textAlign="left" [stackedHeaderRows]="stackedHeaderRows">
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true" [textAlign]="right" [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
-this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght",textAlign:"right"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate",textAlign:"left"}]}];
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght",textAlign:ej.TextAlign.Right},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate",textAlign:ej.TextAlign.Left}]}];
 {% endhighlight %}
 
 ### summaryRows `Array`
@@ -4633,18 +4534,19 @@ Gets or sets an object that indicates to managing the collection of summary rows
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4662,18 +4564,19 @@ Gets or sets a value that indicates whether to show the summary value within the
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" showCaptionSummary="true">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 this.groupSettings={groupedColumns:["OrderID"] };
 {% endhighlight %}
@@ -4692,18 +4595,19 @@ Gets or sets a value that indicates whether to show the total summary value the 
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" showTotalSummary="true">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4721,18 +4625,19 @@ Gets or sets a value that indicates whether to add summary columns into the summ
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4750,11 +4655,11 @@ Gets or sets a value that indicates the text displayed in the summary column as 
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -4780,6 +4685,7 @@ this.gridData = [{
             OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 5,
             OrderDate: new Date(8368506e5), Freight: 51.3
         }];
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : this.currency.bind(this)}]}];
 currency(){ 
         this.gridObj = $("#Grid").ejGrid("instance")
@@ -4803,18 +4709,19 @@ This specifies summary column used to perform the summary calculation
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4832,18 +4739,19 @@ Gets or sets a value that indicates to define the target column at which to disp
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4861,18 +4769,19 @@ Gets or sets a value that indicates the format for the text applied on the colum
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight"  format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,format: "{0:C2}"}]}];
 {% endhighlight %}
 
@@ -4890,18 +4799,19 @@ Gets or sets a value that indicates the text displayed before the summary column
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,prefix : "Currency:"}]}];
 {% endhighlight %}
 
@@ -4919,18 +4829,19 @@ Gets or sets a value that indicates the text displayed after the summary column 
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight"  format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" , suffix: "/-"}]}];
 {% endhighlight %}
 
@@ -4988,18 +4899,19 @@ Gets or sets a value that indicates the type of calculations to be performed for
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -5020,18 +4932,19 @@ Gets or sets a value that indicates to add the template for the summary value of
 </script>
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight",template: "#templateData",format: "{0:C2}"}]}];
 {% endhighlight %}
 
@@ -5050,18 +4963,19 @@ This specifies the grid to show the title for the summary rows.
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight"}]}];
 {% endhighlight %}
 
@@ -5079,18 +4993,19 @@ This specifies the grid to show the title of summary row in the specified column
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",titleColumn: "EmployeeID",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight"}]}];
 {% endhighlight %}
 
@@ -5137,8 +5052,8 @@ This specifies the grid to apply the auto wrap for grid content or header or bot
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.textWrapSettings={wrapMode: ej.Grid.WrapMode.Both};
 {% endhighlight %}
 
@@ -5169,8 +5084,8 @@ Gets or sets a value that indicates whether to add custom toolbar items within t
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.toolbarSettings={showToolbar:true,customToolbarItems:["expand"]};
 {% endhighlight %}
 
@@ -5196,8 +5111,8 @@ Gets or sets a value that indicates whether to enable toolbar in the grid.
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowEditing: true };
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
@@ -5268,8 +5183,8 @@ Gets or sets a value that indicates whether to add the default editing actions a
 {% endhighlight %}
 
 {% highlight ts %}
-this.dataManager=ej.DataManager({url:"http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",crossDomain:true});
-this.gridData = this.dataManager;
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.editSettings={allowDeleting: true, allowEditing: true, allowAdding: true };
 this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","add","update","delete","cancel"]};
 {% endhighlight %}
