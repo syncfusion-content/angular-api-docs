@@ -1660,8 +1660,8 @@ Gets or sets a value that indicates to define constraints for saving data to the
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
-        <e-column field="OrderID" [validationRules]="rules"></e-column>
-        <e-column field="CustomerID" [isPrimaryKey]="true"></e-column>
+        <e-column field="OrderID" [isPrimaryKey]="true" [validationRules]="rules"></e-column>
+        <e-column field="CustomerID"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid> 
