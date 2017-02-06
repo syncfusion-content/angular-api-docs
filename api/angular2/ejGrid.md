@@ -1,15 +1,15 @@
 ---
  layout: post
- title: Properties,Methods and Events of Essential JS ejGrid Widget
+ title: Properties,Methods and Events of Essential Angular2 ejGrid Widget
  description: Methods,members and events avaliable in ejGrid
  documentation: API
- platform: js-api
+ platform: angular2-api
  description: API reference for ejGrid
- keywords: ejGrid, API, Essential JS Grid
+ keywords: ejGrid, API, Essential Angular2 Grid
 ---
  
 #ejGrid
-The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
+The grid can be easily configured to the DOM element using the 'ej-grid' html tag. You can create a grid with a highly customizable look and feel.
 
 ####Syntax
 $(element).ejGrid(options)
@@ -35,31 +35,23 @@ $(element).ejGrid(options)
 {:.example}
 
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData">
+<ej-grid id="grid" [dataSource]="gridData">
+
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.gridData = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
-            OrderDate: new Date(8364186e5), Freight: 32.38
-        },
+
+export class AppComponent {
+    
+    public  gridData;
+
+        constructor()
         {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
-            OrderDate: new Date(836505e6), Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        },
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
-            OrderDate: new Date(8368506e5), Freight: 51.3
-        }];
+          this.gridData = (window as any).gridData; 
+        }
+ }
+
 {% endhighlight %}
 
 ####Requires
@@ -92,7 +84,6 @@ this.gridData = [{
 * module:ej.menu.js
 * module:ej.excelfilter.js
 
-
 ## Members
 
 ### allowCellMerging `Boolean`
@@ -107,14 +98,19 @@ Gets or sets a value that indicates whether to customizing cell based on our nee
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowCellMerging]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowCellMerging="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowGrouping `Boolean`
 {:#members:allowgrouping}
 
-Gets or sets a value that indicates whether to enable dynamic grouping behavior. Grouping can be done by drag on drop desired columns to grid&rsquo;s GroupDropArea. This can be further customized through &ldquo;groupSettings&rdquo; property.
+Gets or sets a value that indicates whether to enable dynamic grouping behavior. Grouping can be done by drag on drop desired columns to grid&rsquo;s GroupDropArea. This can be further customized through "groupSettings" property.
 
 #### Default Value:
 {:.param}
@@ -123,8 +119,13 @@ Gets or sets a value that indicates whether to enable dynamic grouping behavior.
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowKeyboardNavigation `Boolean`
@@ -139,14 +140,19 @@ Gets or sets a value that indicates whether to enable keyboard support for perfo
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowKeyboardNavigation]="false">
+<ej-grid id="Grid" [dataSource]="gridData" allowKeyboardNavigation="false">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowFiltering `Boolean`
 {:#members:allowFiltering}
 
-Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through &ldquo;filterSettings&rdquo; property
+Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through "filterSettings" property
 
 #### Default Value:
 {:.param}
@@ -155,8 +161,13 @@ Gets or sets a value that indicates whether to enable dynamic filtering behavior
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowSorting `Boolean`
@@ -171,8 +182,13 @@ Gets or sets a value that indicates whether to enable the dynamic sorting behavi
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowMultiSorting `Boolean`
@@ -187,14 +203,19 @@ Gets or sets a value that indicates whether to enable multi columns sorting beha
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true" [allowMultiSorting]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" allowMultiSorting="true">
 </ej-grid>
  {% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
 
 ### allowPaging `Boolean`
 {:#members:allowpaging}
 
-This specifies the grid to show the paginated data. Also enables pager control at the bottom of grid for dynamic navigation through data source. Paging can be further customized through &ldquo;pageSettings&rdquo; property.
+This specifies the grid to show the paginated data. Also enables pager control at the bottom of grid for dynamic navigation through data source. Paging can be further customized through "pageSettings" property.
 
 #### Default Value:
 {:.param}
@@ -203,8 +224,13 @@ This specifies the grid to show the paginated data. Also enables pager control a
 #### Example
 {:.example}
 {% highlight html %}            
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true">
 </ej-grid>                 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowReordering `Boolean`
@@ -219,8 +245,13 @@ Gets or sets a value that indicates whether to enable the columns reordering beh
 #### Example
 {:.example}
 {% highlight html %}                     
-<ej-grid id="Grid" [dataSource]="gridData" [allowReordering]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowReordering="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowResizeToFit `Boolean`
@@ -235,8 +266,13 @@ Gets or sets a value that indicates whether the column is non resizable. Column 
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowResizeToFit]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowResizeToFit="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowResizing `Boolean`
@@ -251,12 +287,14 @@ Gets or sets a value that indicates whether to enable dynamic resizable of colum
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowResizing]="true" [allowScrolling]=”true” [scrollSettings]=”dimensions”>
+<ej-grid id="Grid" [dataSource]="gridData" allowResizing="true" allowScrolling="true" [scrollSettings]="scrollSettings">
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dimensions={height:300,width:200};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={height:300,width:200};
 {% endhighlight %}
 
 ### allowRowDragAndDrop `Boolean`
@@ -271,8 +309,13 @@ Gets or sets a value that indicates whether to enable the rows reordering in Gri
 #### Example
 {:.example}
 {% highlight html %}                     
-<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowRowDragAndDrop="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowScrolling `Boolean`
@@ -287,18 +330,20 @@ Gets or sets a value that indicates whether to enable the scrollbar in the grid 
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]=”true” [scrollSettings]=”dimensions”>
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings">
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.dimensions={height:200,width:200};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={height:200,width:200};
 {% endhighlight %}
 
 ### allowSearching `Boolean`
 {:#members:allowsearching}
 
-Gets or sets a value that indicates whether to enable dynamic searching behavior in grid. Currently search box can be enabled through &ldquo;toolbarSettings&rdquo;
+Gets or sets a value that indicates whether to enable dynamic searching behavior in grid. Currently search box can be enabled through "toolbarSettings"
 
 #### Default Value:
 {:.param}
@@ -307,12 +352,14 @@ Gets or sets a value that indicates whether to enable dynamic searching behavior
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]=”true” [toolbarSettings]=”toolbaritems”>
+<ej-grid id="Grid" [dataSource]="gridData" allowSearching="true" [toolbarSettings]="toolbarSettings">
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.toolbaritems={showToolbar:true,toolbarItems:["search"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings={showToolbar:true,toolbarItems:["search"]};
 {% endhighlight %}
 
 ### allowSelection `Boolean`
@@ -327,8 +374,13 @@ Gets or sets a value that indicates whether user can select rows on grid. On ena
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowSelection="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowTextWrap `Boolean`
@@ -343,8 +395,13 @@ Gets or sets a value that indicates whether the Content will wrap to the next li
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowTextWrap]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowTextWrap="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### allowMultipleExporting `Boolean`
@@ -359,8 +416,14 @@ Gets or sets a value that indicates whether to enable the multiple exporting beh
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" [allowMultipleExporting]="true">
+<ej-grid id="Grid" [dataSource]="gridData" [toolbarSettings]="toolbarSettings" allowMultipleExporting="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings = { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport, ej.Grid.ToolBarItems.WordExport, ej.Grid.ToolBarItems.PdfExport] }
 {% endhighlight %}
 
 ### commonWidth `Number`
@@ -375,48 +438,13 @@ Gets or sets a value that indicates to define common width for all the columns i
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" [commonWidth]="200">
+<ej-grid id="Grid" [dataSource]="gridData" [commonWidth]=200>
 </ej-grid>
 {% endhighlight %}
 
-### gridLines `enum`
-{:#members:gridlines}
-
-<ts name="ej.Grid.GridLines"/>
-
-Gets or sets a value that indicates to enable the visibility of the grid lines.
-
-#### Default Value:
-{:.param}
-* ej.Grid.GridLines.Both
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Both</td>
-<td class="description">Displays both the horizontal and vertical grid lines.</td>
-</tr>
-<tr>
-<td class="name">Horizontal</td>
-<td class="description">Displays the horizontal grid lines only.</td>
-</tr>
-<tr>
-<td class="name">Vertical</td>
-<td class="description">Displays the vertical grid lines only.</td>
-</tr>
-<tr>
-<td class="name">None</td>
-<td class="description">No grid lines are displayed.</td>
-</tr>
-</table>
-
-#### Example 
-{% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData"  gridLines="none" >
-</ej-grid>
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### childGrid `Object`
@@ -436,15 +464,206 @@ This specifies the grid to add the grid control inside the grid row of the paren
 {% endhighlight %}
 
 {% highlight ts %}
-this.employee=[{ 
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        }];
-this.attributes={dataSource:window.employee,queryString: "OrderID"};
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.employeeView;
+this.employee = window.gridData;
+this.attributes={dataSource:this.employee,queryString: "EmployeeID"};
+{% endhighlight %}
+
+### columnLayout `enum`
+{:#members:columnlayout}
+
+<ts name="ej.Grid.ColumnLayout"/>
+
+Used to enable or disable static width settings for column. If the columnLayout is set as fixed, then column width will be static.
+
+#### Default Value:
+{:.param}
+* ej.Grid.ColumnLayout.Auto
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Auto</td>
+<td class="description">Column layout is auto(based on width).</td>
+</tr>
+<tr>
+<td class="name">Fixed</td>
+<td class="description">Column layout is fixed(based on width).</td>
+</tr> 
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" [columnLayout]="fixed">
+    <e-columns>
+        <e-column field= "OrderID" headerText= "Order ID" width= "80"></e-column>
+        <e-column field= "CustomerID" headerText= "Customer ID" width= "90"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.fixed = ej.Grid.ColumnLayout.Fixed;
+{% endhighlight %}
+
+### columns `Array`
+{:#members:columns}
+
+Gets or sets an object that indicates to render the grid with specified columns
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true">
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+public value=$("#Grid").ejGrid("option", "columns");
+{% endhighlight %}
+
+### columns.allowEditing `Boolean`
+{:#members:columns-allowediting}
+
+Gets or sets a value that indicates whether to enable editing behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
+    <e-columns>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true};
+{% endhighlight %}
+
+### columns.allowFiltering `Boolean`
+{:#members:columns-allowfiltering}
+
+Gets or sets a value that indicates whether to enable dynamic filtering behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowFiltering]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
+### columns.allowGrouping `Boolean`
+{:#members:columns-allowgrouping}
+
+Gets or sets a value that indicates whether to enable dynamic grouping behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowGrouping]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
+### columns.allowSorting `Boolean`
+{:#members:columns-allowsorting}
+
+Gets or sets a value that indicates whether to enable dynamic sorting behavior for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowSorting]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
+### columns.allowResizing `Boolean`
+{:#members:columns-allowresizing}
+
+Gets or sets a value that indicates whether to enable dynamic resizable for particular column.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowResizing="true">
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "CustomerID" [allowResizing]="false"></e-column>
+        <e-column field= "Freight"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.clipMode `enum`
@@ -483,176 +702,17 @@ Sets the clip mode for Grid cell as ellipsis or clipped content(both header and 
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
-        <e-column field="CustomerID" headerText="CustomerID" width="80" clipMode="ellipsis"></e-column>
-    </e-columns>
-</ej-grid>
-{% endhighlight %}
-
-### columnLayout `enum`
-{:#members:columnlayout}
-
-<ts name="ej.Grid.ColumnLayout"/>
-
-Used to enable or disable static width settings for column. If the columnLayout is set as fixed, then column width will be static.
-
-#### Default Value:
-{:.param}
-* ej.Grid.ColumnLayout.Auto
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Auto</td>
-<td class="description">Column layout is auto(based on width).</td>
-</tr>
-<tr>
-<td class="name">Fixed</td>
-<td class="description">Column layout is fixed(based on width).</td>
-</tr> 
-</table>
-
-#### Example
-{:.example}
-{% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" columnLayout="fixed">
-    <e-columns>
-        <e-column field= "OrderID" headerText= "Order ID" width= "80"></e-column>
-        <e-column field= "CustomerID" headerText= "Customer ID" width= "90"></e-column>
-    </e-columns>
-</ej-grid>
-{% endhighlight %}
-
-### columns `Array`
-{:#members:columns}
-
-Gets or sets an object that indicates to render the grid with specified columns
-
-#### Default Value:
-{:.param}
-* []
-
-#### Example
-{:.example}
-{% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
-</ej-grid>
-{% endhighlight %}
-
-{% highlight html %} 
-public value = $("#Grid").ejGrid("OrderID", "CustomerID");
-{% endhighlight %}
-
-### columns.allowEditing `Boolean`
-{:#members:columns-allowediting}
-
-Gets or sets a value that indicates whether to enable editing behavior for particular column.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
-    <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
-        <e-column field= "Freight"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="CustomerID" width="80" [clipMode]="ellipsis"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true};
-{% endhighlight %}
-
-### columns.allowFiltering `Boolean`
-{:#members:columns-allowfiltering}
-
-Gets or sets a value that indicates whether to enable dynamic filtering behavior for particular column.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true">
-    <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowFiltering]="false"></e-column>
-        <e-column field= "Freight"></e-column>
-    </e-columns>
-</ej-grid>
-{% endhighlight %}
-
-### columns.allowGrouping `Boolean`
-{:#members:columns-allowgrouping}
-
-Gets or sets a value that indicates whether to enable dynamic grouping behavior for particular column.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true">
-    <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowGrouping]="false"></e-column>
-        <e-column field= "Freight"></e-column>
-    </e-columns>
-</ej-grid>
-{% endhighlight %}
-
-### columns.allowSorting `Boolean`
-{:#members:columns-allowsorting}
-
-Gets or sets a value that indicates whether to enable dynamic sorting behavior for particular column.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true">
-    <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowSorting]="false"></e-column>
-        <e-column field= "Freight"></e-column>
-    </e-columns>
-</ej-grid>
-{% endhighlight %}
-
-### columns.allowResizing `Boolean`
-{:#members:columns-allowresizing}
-
-Gets or sets a value that indicates whether to enable dynamic resizable for particular column.
-
-#### Default Value:
-{:.param}
-* true
-
-#### Example
-{:.example}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowResizing]="true">
-    <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowResizing]="false"></e-column>
-        <e-column field= "Freight"></e-column>
-    </e-columns>
-</ej-grid>
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.ellipsis= ej.Grid.ClipMode.Ellipsis;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.commands `Array`
@@ -667,17 +727,19 @@ Gets or sets an object that indicates to define a command column in the grid.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
-        <e-column  headerText= "Manage Records" [commands]="buttons" [isUnbound]= "true",width="130"></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "CustomerID"></e-column>
+        <e-column  headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
-{% highlight html %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
                   { type: "delete", buttonOptions: { text: "Delete" } },
                   { type: "save", buttonOptions: { text: "Save" } },
@@ -697,17 +759,19 @@ Gets or sets an object that indicates to define all the button options which are
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
-        <e-column headerText= "Manage Records" [commands]="buttons" [isUnbound]= "true",width="130"></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "CustomerID"></e-column>
+        <e-column headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
-{% highlight html %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
                   { type: "delete", buttonOptions: { text: "Delete" } },
                   { type: "save", buttonOptions: { text: "Save" } },
@@ -720,7 +784,7 @@ this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
 
 <ts name="ej.Grid.UnboundType"/>
 
-Gets or sets a value that indicates to add the command column button. See unboundType
+Gets or sets a value that indicates to add the command column button.
 
 #### Default Value:
 {:.param}
@@ -751,17 +815,19 @@ Gets or sets a value that indicates to add the command column button. See unboun
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
-        <e-column headerText= "Manage Records" [commands]="buttons" [isUnbound]= "true",width="130"></e-column>
+        <e-column field= "OrderID"  [isPrimaryKey]="true"></e-column>
+        <e-column field= "CustomerID"></e-column>
+        <e-column headerText= "Manage Records" [commands]="buttons"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
-{% highlight html %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.buttons=[    { type: "edit", buttonOptions: { text: "Edit" } },
                   { type: "delete", buttonOptions: { text: "Delete" } },
                   { type: "save", buttonOptions: { text: "Save" } },
@@ -795,6 +861,11 @@ color:green;
 </ej-grid> 
 {% endhighlight %}
 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
 ### columns.customAttributes `Object`
 {:#members:columns-customattributes}
 
@@ -810,14 +881,16 @@ Gets or sets a value that indicates the attribute values to the td element of a 
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "CustomerID" [customAttributes]="attributes"></e-column>
+        <e-column field= "CustomerID" [customAttributes]="customAttributes"></e-column>
         <e-column field= "Freight"></e-column>
     </e-columns>
 </ej-grid>  
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={"style":"color:red"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.customAttributes={"style":"color:red"};
 {% endhighlight %}
 
 ### columns.dataSource `Array`
@@ -832,59 +905,19 @@ Gets or sets a value that indicates to bind the external datasource to the parti
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID"></e-column>
         <e-column field= "CustomerID" [visible]="false"></e-column>
-        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.gridData = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
-            OrderDate: new Date(8364186e5), Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
-            OrderDate: new Date(836505e6), Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        },
-        
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
-            OrderDate: new Date(8368506e5), Freight: 51.3
-        }];
-this.employee = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
-            FirstName: 'VIN', Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
-            FirstName: 'DIA', Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            FirstName: 'NIM', Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            FirstName: 'AUN', Freight: 41.34
-        },
-        
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
-            FirstName: 'REN', Freight: 51.9
-        }];
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
 {% endhighlight %}
 
 ### columns.defaultValue `String|Number|Boolean|Date`
@@ -899,9 +932,9 @@ Gets or sets a value that indicates to display the specified default value while
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
-        <e-column field= "OrderID"></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field= "CustomerID" defaultValue="ABC"></e-column>
         <e-column field= "Freight" ></e-column>
     </e-columns>
@@ -909,8 +942,10 @@ Gets or sets a value that indicates to display the specified default value while
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowAdding:true};
-this.items={ showToolbar: true,toolbarItems:["add"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowAdding:true};
+this.toolbarSettings={ showToolbar: true,toolbarItems:["add"]};
 {% endhighlight %}
 
 ### columns.disableHtmlEncode `Boolean`
@@ -927,9 +962,14 @@ Gets or sets a value that indicates to render the grid content and header with a
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field= "OrderID" headerText="<div&amp;gtOrder ID</div>" [disableHtmlEncode]="false"></e-column>
+        <e-column field= "OrderID" headerText="<div&amp;gtOrder ID</div>" [disableHtmlEncode]="true"></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.displayAsCheckBox `Boolean`
@@ -952,6 +992,11 @@ Gets or sets a value that indicates to display a column value as checkbox or str
 </ej-grid>
 {% endhighlight %}
 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
 ### columns.editParams `Object`
 {:#members:columns-editparams}
 
@@ -964,23 +1009,27 @@ Gets or sets a value that indicates to customize ejNumericTextbox of an editable
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "Freight" [editType]= "numeric" [editParams]="deci" ></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "Freight" [editType]= "editType" [editParams]="editParams" ></e-column>
     </e-columns>
 </ej-grid>  
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
-this.deci={decimalPlaces:2};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.toolbarSettings={ showToolbar: true,toolbarItems:["edit"]};
+this.editType=ej.Grid.EditingType.Numeric;
+this.editParams={decimalPlaces:2};
 {% endhighlight %}
 
 ### columns.editTemplate `Object`
 {:#members:columns-edittemplate}
 
-Gets or sets a template that displays a custom editor used to edit column values. See editTemplate
+Gets or sets a template that displays a custom editor used to edit column values.
 
 #### Default Value:
 {:.param}
@@ -989,17 +1038,21 @@ Gets or sets a template that displays a custom editor used to edit column values
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
-        <e-column field= "OrderID"></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field= "Freight"></e-column>
-        <e-column field= "EmployeeID" [editTemplate]="functions"></e-column>
+        <e-column field= "EmployeeID" [editTemplate]="editTemplate"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
-this.attributes={allowEditing:true};
-this.functions={ create: function () { return "<input>"; }, read: function (args) { return args.ejMaskEdit("get_StrippedValue"); }, write: function (args) { args.element.ejMaskEdit({ width: "100%" ,maskFormat: "9",value: args.rowdata !== undefined ? args.rowdata["EmployeeID"]: "" }); } };
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true};
+this.editTemplate={ create: function () { return "<input>"; }, read: function (args) { return args.ejMaskEdit("get_StrippedValue"); }, write: function (args) { args.element.ejMaskEdit({ width: "100%" ,maskFormat: "9",value: args.rowdata !== undefined ? args.rowdata["EmployeeID"]: "" }); } };
+{% endhighlight %}
 
 ### columns.editType `enum`
 {:#members:columns-edittype}
@@ -1045,23 +1098,26 @@ Gets or sets a value that indicates to render the element(based on edit type) fo
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
-        <e-column field= "OrderID"></e-column>
-        <e-column field= "Freight" [editType]= "numeric" [editParams]="deci" ></e-column>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "Freight" [editType]= "editType" [editParams]="editParams" ></e-column>
     </e-columns>
 </ej-grid>  
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
-this.deci={decimalPlaces:2};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.editType=ej.Grid.EditingType.Numeric;
+this.editParams={decimalPlaces:2};
 {% endhighlight %}
 
 ### columns.enableGroupByFormat `Boolean`
 {:#members:columns-enablegroupbyformat}
 
-Gets or sets a value that indicates to groups the column based on its column format.
+Gets or sets a value that indicates to group the column based on its column format.
 
 #### Default Value:
 {:.param}
@@ -1070,7 +1126,7 @@ Gets or sets a value that indicates to groups the column based on its column for
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [allowPaging]="true" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" allowPaging="true" >
     <e-columns>
         <e-column field="OrderID"  headerText="OrderID" ></e-column>
         <e-column field="CustomerID" headerText="CustomerID"></e-column>
@@ -1078,6 +1134,11 @@ Gets or sets a value that indicates to groups the column based on its column for
         <e-column field="OrderDate" headerText="OrderDate" format= "{0:MM/dd/yyyy}" [enableGroupByFormat]= "true"></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.field `String`
@@ -1099,6 +1160,38 @@ Gets or sets a value that indicates to display the columns in the grid mapping w
 </ej-grid>
 {% endhighlight %}
 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
+### columns.filterBarTemplate `Object`
+{:#members:columns-filterbartemplate}
+
+Gets or sets a template that customize the filter control from default .
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "Freight"></e-column>
+        <e-column field= "EmployeeID" [filterBarTemplate]="filterBarTemplate"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterBarTemplate={ create: function (args) {return "<input>"},write: function (args) {var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });},read: function (args) {this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)}};
+{% endhighlight %}
+
 ### columns.foreignKeyField `String`
 {:#members:columns-foreignkeyfield}
 
@@ -1111,59 +1204,19 @@ Gets or sets a value that indicates to define foreign key field name of the grid
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field= "OrderID"></e-column>
+        <e-column field= "OrderID" ></e-column>
         <e-column field= "CustomerID" [visible]="false"></e-column>
-        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.gridData = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
-            OrderDate: new Date(8364186e5), Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
-            OrderDate: new Date(836505e6), Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        },
-        
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
-            OrderDate: new Date(8368506e5), Freight: 51.3
-        }];
-this.employee = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
-            FirstName: 'VIN', Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
-            FirstName: 'DIA', Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            FirstName: 'NIM', Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            FirstName: 'AUN', Freight: 41.34
-        },
-        
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
-            FirstName: 'REN', Freight: 51.9
-        }];
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
 {% endhighlight %}
 
 ### columns.foreignKeyValue `String`
@@ -1178,59 +1231,20 @@ Gets or sets a value that indicates to bind the field which is in foreign column
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field= "OrderID"></e-column>
+        <e-column field= "OrderID" ></e-column>
         <e-column field= "CustomerID" [visible]="false"></e-column>
-        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employee" headerText= "FirstName" ></e-column>
+        <e-column field="EmployeeID" foreignKeyField= "EmployeeID" foreignKeyValue= "FirstName" [dataSource]= "employeedata" headerText= "FirstName" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.gridData = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
-            OrderDate: new Date(8364186e5), Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
-            OrderDate: new Date(836505e6), Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            OrderDate: new Date(8367642e5), Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            OrderDate: new Date(8367642e5), Freight: 41.34
-        },
-        
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
-            OrderDate: new Date(8368506e5), Freight: 51.3
-        }];
-this.employee = [{
-            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 5,
-            FirstName: 'VIN', Freight: 32.38
-        },
-        {
-            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 6,
-            FirstName: 'DIA', Freight: 11.61
-        },
-        {
-            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 4,
-            FirstName: 'NIM', Freight: 65.83
-        },
-        {
-            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
-            FirstName: 'AUN', Freight: 41.34
-        },
-        
-        {
-            OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
-            FirstName: 'REN', Freight: 51.9
-        }];
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
 {% endhighlight %}
 
 ### columns.format `String`
@@ -1245,13 +1259,19 @@ Gets or sets a value that indicates the format for the text applied on the colum
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" textAlign="right"></e-column>
+        <e-column field="Freight" width="75" format="{0:C2}" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.headerTemplateID `String`
@@ -1266,18 +1286,22 @@ Gets or sets a value that indicates to add the template within the header elemen
 #### Example
 {:.example}
 {% highlight html %}
-<div id="Grid"></div> 
 <div id="customerTemplate">
 <span class="e-userlogin e-icon headericon"></span>
  CUS ID
 </div>
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" >
+<ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field= "OrderID"></e-column>
         <e-column field= "CustomerID" headerTemplateID= "#customerTemplate"></e-column>
         <e-column field= "Freight"  ></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.headerText `String`
@@ -1292,12 +1316,18 @@ Gets or sets a value that indicates to display the title of that particular colu
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-       <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+       <e-column field="OrderID"  headerText="OrderID" width="75" [textAlign]="right"></e-column>
        <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.headerTextAlign `enum`
@@ -1305,14 +1335,13 @@ Gets or sets a value that indicates to display the title of that particular colu
 
 <ts ref="ej.TextAlign"/>
 
-This defines the text alignment of a particular column header cell value. See headerTextAlign
+This defines the text alignment of a particular column header cell value.
 
 #### Default Value:
 {:.param}
 * null
 
 <table>
-Add a comment to this line
 <tr>
 <th>Name</th>
 <th>Description</th>
@@ -1337,12 +1366,18 @@ Add a comment to this line
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
-       <e-column field="OrderID"  headerText="OrderID" width="75" headerTextAlign="right"></e-column>
-       <e-column field="CustomerID" headerText="CustomerID" width="80" headerTextAlign="center"></e-column>
+       <e-column field="OrderID"  headerText="OrderID" width="75" ></e-column>
+       <e-column field="CustomerID" headerText="CustomerID" width="80" [headerTextAlign]="right"></e-column>
     </e-columns>
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### columns.isFrozen `Boolean`
@@ -1357,7 +1392,7 @@ You can use this property to freeze selected columns in grid at the time of scro
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]=”true” [scrollSettings]=”dimensions”>
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings">
     <e-columns>
         <e-column field="OrderID" ></e-column>
         <e-column field="CustomerID" [isFrozen]="true"></e-column>
@@ -1367,7 +1402,9 @@ You can use this property to freeze selected columns in grid at the time of scro
 {% endhighlight %}
 
 {% highlight ts %}
-this.dimensions={ width : 300,height:300};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={ width : 300,height:300};
 {% endhighlight %}
 
 ### columns.isIdentity `Boolean`
@@ -1382,13 +1419,19 @@ Gets or sets a value that indicates the column has an identity in the database.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData">
+<ej-grid id="Grid" [dataSource]="gridData"  [editSettings]="editSettings">
     <e-columns>
-        <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" [isIdentity]="true"></e-column>
+        <e-column field="OrderID" [isIdentity]="true"></e-column>
+        <e-column field="CustomerID" [isPrimaryKey]="true"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true};
 {% endhighlight %}
 
 ### columns.isPrimaryKey `Boolean`
@@ -1403,7 +1446,7 @@ Gets or sets a value that indicates the column is act as a primary key(read-only
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID"></e-column>
@@ -1413,7 +1456,9 @@ Gets or sets a value that indicates the column is act as a primary key(read-only
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true};
 {% endhighlight %}
 
 ### columns.priority `Number`
@@ -1428,17 +1473,18 @@ Gets or sets a value that indicates the order of Column that are to be hidden or
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [isResponsive]= "true" [minWidth]= "400">
+<ej-grid id="Grid" [dataSource]="gridData" isResponsive= "true" [minWidth]= 400>
     <e-columns>
-        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field="CustomerID" [priority]= "2"></e-column>
-        <e-column field="EmployeeID"[priority]= "1"></e-column>
+        <e-column field="OrderID"></e-column>
+        <e-column field="CustomerID" [priority]= 2></e-column>
+        <e-column field="EmployeeID" [priority]= 1></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.showInColumnChooser `Boolean`
@@ -1453,13 +1499,18 @@ Used to hide the particular column in column chooser by giving value as false.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [showColumnChooser]="true">
+<ej-grid id="Grid" [dataSource]="gridData" showColumnChooser="true">
     <e-columns>
         <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" [showInColumnChooser]="true"></e-column>
+        <e-column field="CustomerID" [showInColumnChooser]="false"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.template `Boolean|String`
@@ -1473,18 +1524,23 @@ Gets or sets a value that indicates whether to enables column template for a par
 
 #### Example
 {:.example}
-{% highlight html %}
-<div id="Grid"></div> 
+{% highlight html %} 
 <script id="columnTemplate" type="text/x-jsrender">
-<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
+<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
 </script>
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field="OrderID" ></e-column>
-        <e-column field="CustomerID" [template]="true" templateID="#columnTemplate"></e-column>
+        <e-column field="CustomerID" [template]="columnTemplate"></e-column>
         <e-column field="EmployeeID" ></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.columnTemplate="#columnTemplate";
 {% endhighlight %}
 
 ### columns.textAlign `enum`
@@ -1492,7 +1548,7 @@ Gets or sets a value that indicates whether to enables column template for a par
 
 <ts ref=" ej.TextAlign"/>
 
-Gets or sets a value that indicates to align the text within the column. See textAlign
+Gets or sets a value that indicates to align the text within the column.
 
 #### Default Value:
 {:.param}
@@ -1525,13 +1581,18 @@ Gets or sets a value that indicates to align the text within the column. See tex
 {% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" textAlign="center"></e-column>
-        <e-column field="CustomerID" textAlign="right"></e-column>
+        <e-column field="OrderID"></e-column>
+        <e-column field="CustomerID" [textAlign]="right"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+{% endhighlight %}
 
 ### columns.tooltip `string`
 {:#members:columns-tooltip}
@@ -1551,11 +1612,16 @@ Default Value:
   </script>
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
-        <e-column field="OrderID" textAlign="center"></e-column>
-        <e-column field="CustomerID" textAlign="right"tooltip="#colTip"></e-column>
+        <e-column field="OrderID" ></e-column>
+        <e-column field="CustomerID" tooltip="#colTip"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### columns.type `String`
@@ -1579,6 +1645,11 @@ Gets or sets a value that indicates to specify the data type of the specified co
 </ej-grid>
 {% endhighlight %}
 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
 ### columns.validationRules `Object`
 {:#members:columns-validationrules}
 
@@ -1587,16 +1658,19 @@ Gets or sets a value that indicates to define constraints for saving data to the
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" >
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" >
     <e-columns>
         <e-column field="OrderID" [validationRules]="rules"></e-column>
-        <e-column field="CustomerID"></e-column>
+        <e-column field="CustomerID" [isPrimaryKey]="true"></e-column>
         <e-column field="EmployeeID"></e-column>
     </e-columns>
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true};
 this.rules={required: true, number: true };
 {% endhighlight %}
 
@@ -1621,6 +1695,11 @@ Gets or sets a value that indicates whether this column is visible in the grid.
 </ej-grid> 
 {% endhighlight %}
 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
 ### columns.width `Number`
 {:#members:columns-width}
 
@@ -1642,6 +1721,11 @@ Gets or sets a value that indicates to define the width for a particular column 
 </ej-grid>
 {% endhighlight %}
 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+{% endhighlight %}
+
 ### contextMenuSettings `Object`
 {:#members:contextmenusettings}
 
@@ -1659,7 +1743,7 @@ Gets or sets a value that indicates whether to add the default context menu acti
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [allowGrouping]="true" [allowSorting]="true" [allowPaging]="true" [contextMenuSettings]="settings">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" allowGrouping="true" allowSorting="true" allowPaging="true" [contextMenuSettings]="settings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -1668,8 +1752,10 @@ Gets or sets a value that indicates whether to add the default context menu acti
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
-this.settings={enableContextMenu: true, contextMenuItems:["Add Record,Edit Record,Delete Record"] };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.settings={enableContextMenu: true,  contextMenuItems:["Add Record","Edit Record","Delete Record"] };
 {% endhighlight %}
 
 ### contextMenuSettings.customContextMenuItems `Array`
@@ -1693,7 +1779,9 @@ Gets or sets a value that indicates whether to add custom contextMenu items with
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={enableContextMenu: true, contextMenuItems:["Hidden Columns,Visible Columns"] };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.settings={enableContextMenu: true, customContextMenuItems:["Hidden Columns","Visible Columns"] };
 {% endhighlight %}
 
 ### contextMenuSettings.enableContextMenu `Boolean`
@@ -1708,7 +1796,7 @@ Gets or sets a value that indicates whether to enable the context menu action in
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [allowGrouping]="true" [allowSorting]="true" [allowPaging]="true" [contextMenuSettings]="settings">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" allowGrouping="true" allowSorting="true" allowPaging="true" [contextMenuSettings]="settings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -1717,8 +1805,37 @@ Gets or sets a value that indicates whether to enable the context menu action in
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
 this.settings={enableContextMenu: true };
+{% endhighlight %}
+
+### contextMenuSettings.disableDefaultItems `Boolean`
+{:#members:contextmenusettings-disabledefaultitems}
+
+Gets or sets a value that indicates whether to disable the default context menu items in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" allowGrouping="true" allowSorting="true" allowPaging="true" [contextMenuSettings]="settings">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowAdding:true,allowDeleting:true};
+this.settings={enableContextMenu: true, customContextMenuItems:["Hidden Columns,Visible Columns"], disableDefaultItems: true };
 {% endhighlight %}
 
 ### contextMenuSettings.subContextMenu `Array`
@@ -1747,39 +1864,14 @@ Used to get or set the sub menu items to the custom context menu item.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [contextMenuSettings]="settings" >
-
+<ej-grid id="Grid" [dataSource]="gridData" [contextMenuSettings]="settings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.settings={enableContextMenu: true, customContextMenuItems: ["Hide Column"],subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }]};         
-{% endhighlight %}
-
-### contextMenuSettings.disableDefaultItems `Boolean`
-{:#members:contextmenusettings-disabledefaultitems}
-
-Gets or sets a value that indicates whether to disable the default context menu items in the grid.
-
-#### Default Value:
-{:.param}
-* false
-
-#### Example
-{:.example}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [allowGrouping]="true" [allowSorting]="true" [allowPaging]="true" [contextMenuSettings]="settings">
-    <e-columns>
-        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field="CustomerID" ></e-column>
-    </e-columns>
-</ej-grid>
-{% endhighlight %}
-
-{% highlight ts %}
-this.attributes={allowEditing:true,allowAdding:true,allowDeleting:true};
-this.settings={enableContextMenu: true, customContextMenuItems:["Hidden Columns,Visible Columns"], disableDefaultItems: true };
 {% endhighlight %}
 
 ### cssClass `String`
@@ -1804,6 +1896,11 @@ Gets or sets a value that indicates to render the grid with custom theme.
 </style>
 <ej-grid id="Grid" [dataSource]="gridData" cssClass= "gradient-green" >
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### dataSource `Object`
@@ -1839,7 +1936,6 @@ this.gridData = [{
             OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 3,
             OrderDate: new Date(8367642e5), Freight: 41.34
         },
-        
         {
             OrderID: 10260, CustomerID: 'SUPRD', EmployeeID: 4,
             OrderDate: new Date(8368506e5), Freight: 51.3
@@ -1857,18 +1953,23 @@ This specifies the grid to add the details row for the corresponding master row
 #### Example
 {:.example}
 {% highlight html %}
-<div id="Grid"></div> 
 <script id="templateData" type="text/x-jsrender">
 <table>
 <tr>
 <td>
-<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
+<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
 </td>
 </tr>
 </table>
 </script>
-<ej-grid id="Grid" [dataSource]="gridData" detailsTemplate="#templateData" detailsDataBound= "detailGridData">
+<ej-grid id="Grid" [dataSource]="gridData" [detailsTemplate]="templateData">
 </ej-grid>            
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.templateData="#templateData";
 {% endhighlight %}
 
 ### editSettings `Object`
@@ -1888,7 +1989,7 @@ Gets or sets a value that indicates whether to enable insert action in the editi
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -1898,8 +1999,10 @@ Gets or sets a value that indicates whether to enable insert action in the editi
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowAdding:true};
-this.items={ showToolbar: true,toolbarItems:["add"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowAdding:true};
+this.toolbarSettings={ showToolbar: true,toolbarItems:["add"]};
 {% endhighlight %}
 
 ### editSettings.allowDeleting `Boolean`
@@ -1914,7 +2017,7 @@ Gets or sets a value that indicates whether to enable the delete action in the e
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -1924,8 +2027,10 @@ Gets or sets a value that indicates whether to enable the delete action in the e
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowDeleting:true};
-this.items={ showToolbar: true,toolbarItems:["delete"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowDeleting:true};
+this.toolbarSettings={ showToolbar: true,toolbarItems:["delete"]};
 {% endhighlight %}
 
 ### editSettings.allowEditing `Boolean`
@@ -1940,7 +2045,7 @@ Gets or sets a value that indicates whether to enable the edit action in the edi
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -1950,8 +2055,10 @@ Gets or sets a value that indicates whether to enable the edit action in the edi
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true};
-this.items={ showToolbar: true,toolbarItems:["edit"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true};
+this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.allowEditOnDblClick `Boolean`
@@ -1966,7 +2073,7 @@ Gets or sets a value that indicates whether to enable the editing action while d
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -1976,8 +2083,10 @@ Gets or sets a value that indicates whether to enable the editing action while d
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,allowEditOnDblClick: false};
-this.items={ showToolbar: true,toolbarItems:["edit"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,allowEditOnDblClick: false};
+this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.dialogEditorTemplateID `String`
@@ -1991,18 +2100,8 @@ This specifies the id of the template. This template can be used to display the 
 
 #### Example
 {:.example}
-{% highlight html %}               
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [editSettings]="attributes" [toolbarSettings]="items">
-    <e-columns>
-        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field="CustomerID" ></e-column>
-        <e-column field="Freight" ></e-column>
-    </e-columns>
-</ej-grid>               
-{% endhighlight %}
-
 {% highlight html %}
-    <script id="template" type="text/template">
+<script id="template" type="text/template">
         <table>
             <tr>
                 <td>OrderID</td>
@@ -2023,12 +2122,21 @@ This specifies the id of the template. This template can be used to display the 
                 </td>
             </tr>
         </table>
-    </script>
+</script>             
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>               
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,editMode: "dialogtemplate", dialogEditorTemplateID: "#template" };
-this.items={ showToolbar: true,toolbarItems:["edit"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode: ej.Grid.EditMode.DialogTemplate, dialogEditorTemplateID: "#template" };
+this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.editMode `enum`
@@ -2036,7 +2144,7 @@ this.items={ showToolbar: true,toolbarItems:["edit"]};
 
 <ts name="ej.Grid.EditMode"/>
 
-Gets or sets a value that indicates whether to define the mode of editing See editMode
+Gets or sets a value that indicates whether to define the mode of editing 
 
 #### Default Value:
 {:.param}
@@ -2084,7 +2192,7 @@ Add a comment to this line
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -2094,8 +2202,10 @@ Add a comment to this line
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,editMode: "dialog"};
-this.items={ showToolbar: true,toolbarItems:["edit"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode:ej.Grid.EditMode.Dialog};
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.externalFormTemplateID `String`
@@ -2109,16 +2219,6 @@ This specifies the id of the template. This template can be used to display the 
 
 #### Example
 {:.example}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
-    <e-columns>
-        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
-        <e-column field="CustomerID" ></e-column>
-        <e-column field="Freight" ></e-column>
-    </e-columns>
-</ej-grid>                          
-{% endhighlight %}
-
 {% highlight html %}
 <script id="template" type="text/template">
    <table>
@@ -2139,11 +2239,20 @@ This specifies the id of the template. This template can be used to display the 
        </tr>
    </table>
 </script>
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
+    <e-columns>
+        <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field="CustomerID" ></e-column>
+        <e-column field="Freight" ></e-column>
+    </e-columns>
+</ej-grid>                          
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,editMode: "ExternalFormTemplate", externalFormTemplateID: "#template"};
-this.items={ showToolbar: true,toolbarItems:["edit"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode: ej.Grid.EditMode.ExternalFormTemplate, externalFormTemplateID: "#template"};
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.formPosition `enum`
@@ -2174,7 +2283,7 @@ This specifies to set the position of an External edit form either in the top-ri
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -2184,8 +2293,10 @@ This specifies to set the position of an External edit form either in the top-ri
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true,editMode: "externalform", formPosition: "topright"};
-this.items={ showToolbar: true,toolbarItems:["edit"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true,editMode: ej.Grid.EditMode.ExternalForm, formPosition: ej.Grid.FormPosition.BottomLeft};
+this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.inlineFormTemplateID `String`
@@ -2199,35 +2310,40 @@ This specifies the id of the template. This template can be used to display the 
 
 #### Example
 {:.example}
-{% highlight html %}               
-<div id="Grid"></div>
+{% highlight html %}
 <script id="template" type="text/template">
    <table>
        <tr>
            <td>OrderID</td>
            <td>
-               <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
+               <input id="OrderID" name="OrderID" value="{{:OrderID}}" disabled="disabled" /></td>
        </tr>
        <tr>
            <td>CustomerID</td>
            <td>
-               <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
+               <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" /></td>
        </tr>
        <tr>
            <td>EmployeeID</td>
            <td>
-               <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
+               <input id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" /></td>
        </tr>
    </table>
 </script>
-<script>
-$("#Grid").ejGrid({
-    dataSource: window.gridData,
-    columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
-    editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.InlineTemplateForm, inlineFormTemplateID: "#template" },
-    toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }                             
-});
-</script>                
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
+    <e-columns>
+        <e-column field= "OrderID" [isPrimaryKey]="true"></e-column>
+        <e-column field= "CustomerID" [allowEditing]="false"></e-column>
+        <e-column field= "EmployeeID"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true, editMode: ej.Grid.EditMode.InlineFormTemplate", inlineFormTemplateID: "#template" };
+this.toolbarSettings={  showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.rowPosition `enum`
@@ -2258,7 +2374,7 @@ This specifies to set the position of an adding new row either in the top or bot
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -2268,8 +2384,10 @@ This specifies to set the position of an adding new row either in the top or bot
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true, allowAdding:true, rowPosition:"bottom" };
-this.items={ showToolbar: true,toolbarItems:["add"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true, allowAdding:true, rowPosition:ej.Grid.RowPosition.Bottom" };
+this.toolbarSettings={ showToolbar: true,toolbarItems:["add"]};
 {% endhighlight %}
 
 ### editSettings.showConfirmDialog `Boolean`
@@ -2284,7 +2402,7 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -2294,8 +2412,10 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing:true, editMode: "batch", showConfirmDialog:false };
-this.items={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing:true, editMode: ej.Grid.EditMode.Batch, showConfirmDialog:false };
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.showDeleteConfirmDialog `Boolean`
@@ -2310,7 +2430,7 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -2320,8 +2440,10 @@ Gets or sets a value that indicates whether the confirm dialog has to be shown w
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowDeleting: true, showDeleteConfirmDialog:true };
-this.items={ showToolbar: true,toolbarItems: ["edit","delete","cancel"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowDeleting: true, showDeleteConfirmDialog:true };
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","delete","cancel"]};
 {% endhighlight %}
 
 ### editSettings.titleColumn `String`
@@ -2336,7 +2458,7 @@ Gets or sets a value that indicates whether the title for edit form is different
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -2346,8 +2468,10 @@ Gets or sets a value that indicates whether the title for edit form is different
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowAdding: true, showAddNewRow: true, editMode: "dialog", titleColumn: "CustomerID" };
-this.items={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowAdding: true,editMode: ej.Grid.EditMode.Dialog, titleColumn: "CustomerID" };
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
 {% endhighlight %}
 
 ### editSettings.showAddNewRow `Boolean`
@@ -2362,7 +2486,7 @@ Gets or sets a value that indicates whether to display the add new form by defau
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -2372,8 +2496,10 @@ Gets or sets a value that indicates whether to display the add new form by defau
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowAdding: true, showAddNewRow: true };
-this.items={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowAdding: true, showAddNewRow: true };
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","add","delete","update","cancel"]};
 {% endhighlight %}
 
 ### enableAltRow `Boolean`
@@ -2388,8 +2514,13 @@ Gets or sets a value that indicates whether to enable the alternative rows diffe
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [enableAltRow]="true">
+<ej-grid id="Grid" [dataSource]="gridData" enableAltRow="false">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableAutoSaveOnSelectionChange `Boolean`
@@ -2404,13 +2535,20 @@ Gets or sets a value that indicates whether to enable the save action in the gri
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items" [enableAutoSaveOnSelectionChange]="false">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings" enableAutoSaveOnSelectionChange="false">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
         <e-column field="Freight" ></e-column>
     </e-columns>
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing: true };
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### enableHeaderHover `Boolean`
@@ -2425,8 +2563,13 @@ Gets or sets a value that indicates whether to enable mouse over effect on the c
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [enableHeaderHover]="true">
+<ej-grid id="Grid" [dataSource]="gridData" enableHeaderHover="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enablePersistence `Boolean`
@@ -2441,8 +2584,13 @@ Gets or sets a value that indicates whether to persist the grid model state in p
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]= "true" [enablePresistence]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping= "true" enablePresistence="true">
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableResponsiveRow `Boolean`
@@ -2457,8 +2605,13 @@ Gets or sets a value that indicates whether the grid rows has to be rendered as 
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" [isResponsive]="true" [enableResponsiveRow]= "true" >
+<ej-grid id="Grid" [dataSource]="gridData" isResponsive="true" enableResponsiveRow= "true" >
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableRowHover `Boolean`
@@ -2473,8 +2626,13 @@ Gets or sets a value that indicates whether to enable mouse over effect on corre
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [enableRowHover]= "true" >
+<ej-grid id="Grid" [dataSource]="gridData" enableRowHover= "false" >
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableRTL `Boolean`
@@ -2489,8 +2647,13 @@ Align content in the grid control from right to left by setting the property as 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [enableRTL]= "true" >
+<ej-grid id="Grid" [dataSource]="gridData" enableRTL= "true" >
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### enableTouch `Boolean`
@@ -2505,8 +2668,13 @@ To Disable the mouse swipe property as false.
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [enableTouch]= "false" >
+<ej-grid id="Grid" [dataSource]="gridData" enableTouch= "false" >
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### filterSettings `Object`
@@ -2526,12 +2694,14 @@ Gets or sets a value that indicates to perform the filter operation with case se
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ enableCaseSensitivity:true, filterType:"excel"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;;
+this.filterSettings={ enableCaseSensitivity:true, filterType:ej.Grid.FilterType.Excel};
 {% endhighlight %}
 
 ### filterSettings.filterBarMode `enum`
@@ -2539,7 +2709,7 @@ this.settings={ enableCaseSensitivity:true, filterType:"excel"};
 
 <ts name="ej.Grid.FilterBarMode"/>
 
-This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode
+This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. 
 
 #### Default Value:
 {:.param}
@@ -2563,12 +2733,14 @@ This specifies the grid to starts the filter action while typing in the filterBa
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ filterBarMode: "onenter"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ filterBarMode: ej.Grid.FilterBarMode.OnEnter};
 {% endhighlight %}
 
 
@@ -2653,12 +2825,14 @@ Gets or sets a value that indicates whether to define the value to be filtered i
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ filterType: "menu", filteredColumns: [{ field: "CustomerID", operator: "startswith", value: "vi", predicate: "and" }]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ filterType: ej.Grid.FilterType.Menu, filteredColumns: [{ field: "CustomerID", operator: "startswith", value: "vi", predicate: "and" }]};
 {% endhighlight %}
 
 ### filterSettings.filterType `enum`
@@ -2693,12 +2867,14 @@ This specifies the grid to show the filterBar or filterMenu to the grid records.
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ filterType: "menu"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ filterType: ej.Grid.FilterType.Menu};
 {% endhighlight %}
 
 ### filterSettings.maxFilterChoices `Number`
@@ -2713,16 +2889,18 @@ Gets or sets a value that indicates the maximum number of filter choices that ca
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ maxFilterChoices:200, filterType:"excel"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ maxFilterChoices:200, filterType:ej.Grid.FilterType.Excel};
 {% endhighlight %}
 
-### filterSettings.showFilterBarMessage `Boolean`
-{:#members:filtersettings-showfilterbarmessage}
+### filterSettings.showfilterbarstatus `Boolean`
+{:#members:filtersettings-showfilterbarstatus}
 
 This specifies the grid to show the filter text within the grid pager itself.
 
@@ -2733,12 +2911,14 @@ This specifies the grid to show the filter text within the grid pager itself.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ showFilterBarStatus: true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ showFilterBarStatus: true};
 {% endhighlight %}
 
 ### filterSettings.showPredicate `Boolean`
@@ -2753,12 +2933,14 @@ Gets or sets a value that indicates whether to enable the predicate options in t
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowFiltering]="true" [filterSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ showPredicate:true, filterType:"menu"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ showPredicate:true, filterType:ej.Grid.FilterType.Menu};
 {% endhighlight %}
 
 ### groupSettings `Object`
@@ -2778,12 +2960,14 @@ Gets or sets a value that customize the group caption format.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={ captionFormat: "{{:field}} - {{:key}} : {{:count}} {{if count == 1 }} item {{else}} items {{/if}}" };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.groupSettings={ captionFormat: "{{:field}} - {{:key}} : {{:count}} {{if count == 1 }} item {{else}} items {{/if}}" };
 {% endhighlight %}
 
 ### groupSettings.enableDropAreaAutoSizing `Boolean`
@@ -2798,12 +2982,14 @@ Gets or sets a value that indicates whether to enable animation button option in
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={enableDropAreaAutoSizing: true };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.groupSettings={enableDropAreaAutoSizing: true };
 {% endhighlight %}
 
 ### groupSettings.groupedColumns `Array`
@@ -2818,17 +3004,19 @@ Gets or sets a value that indicates whether to add grouped columns programmatica
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={groupedColumns:["OrderID"] };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.groupSettings={groupedColumns:["OrderID"] };
 {% endhighlight %}
 
 ### groupSettings.showDropArea `Boolean`
@@ -2843,17 +3031,19 @@ Gets or sets a value that indicates whether to show the group drop area just abo
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" ></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={showDropArea:false,groupedColumns:["OrderID"] };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.groupSettings={showDropArea:false,groupedColumns:["OrderID"] };
 {% endhighlight %}   
 
 ### groupSettings.showGroupedColumn `Boolean`
@@ -2868,17 +3058,19 @@ Gets or sets a value that indicates whether to hide the grouped columns from the
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={showDropArea:false,groupedColumns:["OrderID"],showGroupedColumn:false };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.groupSettings={groupedColumns:["OrderID"],showGroupedColumn:false };
 {% endhighlight %}
 
 ### groupSettings.showToggleButton `Boolean`
@@ -2893,17 +3085,19 @@ Gets or sets a value that indicates whether to show the group button image(toggl
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75"></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={showDropArea:false,groupedColumns:["OrderID"],showGroupedColumn:false,showToggleButton:true };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.groupSettings={groupedColumns:["OrderID"],showToggleButton:true };
 {% endhighlight %}
 
 ### groupSettings.showUngroupButton `Boolean`
@@ -2913,22 +3107,70 @@ Gets or sets a value that indicates whether to enable the close button in the gr
 
 #### Default Value:
 {:.param}
-* false
+* true
 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowGrouping]="true" [groupSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" >
     <e-columns>
-        <e-column field="OrderID"  headerText="OrderID" width="75" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="OrderID" width="75" ></e-column>
         <e-column field="CustomerID" headerText="CustomerID" width="80"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" width="75" ></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={groupedColumns:["OrderID"],showGroupedColumn:false,showToggleButton:true,showUngroupButton:true };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.groupSettings={groupedColumns:["OrderID"],showGroupedColumn:false,showToggleButton:true,showUngroupButton:true };
+{% endhighlight %}
+
+### gridLines `enum`
+{:#members:gridlines}
+
+<ts name="ej.Grid.GridLines"/>
+
+Gets or sets a value that indicates to enable the visibility of the grid lines.
+
+#### Default Value:
+{:.param}
+* ej.Grid.GridLines.Both
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">Displays both the horizontal and vertical grid lines.</td>
+</tr>
+<tr>
+<td class="name">Horizontal</td>
+<td class="description">Displays the horizontal grid lines only.</td>
+</tr>
+<tr>
+<td class="name">Vertical</td>
+<td class="description">Displays the vertical grid lines only.</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">No grid lines are displayed.</td>
+</tr>
+</table>
+
+#### Example 
+{% highlight html %}  
+<ej-grid id="Grid" [dataSource]="gridData"  [gridLines]="none" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.none = ej.Grid.GridLines.None;
 {% endhighlight %}
 
 ### isResponsive `Boolean`
@@ -2943,8 +3185,13 @@ Gets or sets a value that indicates whether the grid design has be to made respo
 #### Example
 {:.example}
 {% highlight html %}       
-<ej-grid id="Grid" [dataSource]="gridData" [isResponsive]="true" >
+<ej-grid id="Grid" [dataSource]="gridData" isResponsive="true" >
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### keySettings `Object`
@@ -2959,12 +3206,14 @@ This specifies to change the key in keyboard interaction to grid control
 #### Example
 {:.example}
 {% highlight html %}            
-<ej-grid id="Grid" [dataSource]="gridData" [keySettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" [keySettings]="keySettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={saveRequest: "83",moveCellRight: "13"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.keySettings={saveRequest: "83",moveCellRight: "13"};
 {% endhighlight %}
 
 ### locale `String`
@@ -2978,18 +3227,19 @@ Gets or sets a value that indicates whether to customizing the user interface (U
 
 #### Example
 {:.example}
-{% highlight html %} 
-<div id="Grid"></div> 
+{% highlight html %}
 <script>
 ej.Pager.locale["es-ES"] = {
    pagerInfo: "{0} de {1} p&aacute;ginas ({2} art&iacute;culos)"
 };
-$("#Grid").ejGrid({
-  dataSource:window.gridData,
-  allowPaging:true,
-  locale : "es-ES" 
-});
-</script>             
+</script>           
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" locale="es-ES">
+</ej-grid>                 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### minWidth `Number`
@@ -3004,8 +3254,13 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 #### Example
 {:.example}
 {% highlight html %}            
-<ej-grid id="Grid" [dataSource]="gridData" minWidth="990" [isResponsive]="true" >
+<ej-grid id="Grid" [dataSource]="gridData" [minWidth]=990 isResponsive="true" >
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### pageSettings `Object`
@@ -3025,12 +3280,14 @@ Gets or sets a value that indicates whether to define which page to display curr
 #### Example
 {:.example}
 {% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
 </ej-grid>
 {% endhighlight %}
 
-{% highlight ts %} 
-this.settings={ currentPage: 1 };
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={ currentPage: 1 };
 {% endhighlight %}
 
 ### pageSettings.enableQueryString `Boolean`
@@ -3045,12 +3302,14 @@ Gets or sets a value that indicates whether to pass the current page information
 #### Example
 {:.example}
 {% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
 </ej-grid>
 {% endhighlight %}
 
-{% highlight ts %} 
-this.settings={ enableQueryString: true };
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={ enableQueryString: true };
 {% endhighlight %}
 
 ### pageSettings.enableTemplates `Boolean`
@@ -3064,20 +3323,19 @@ Gets or sets a value that indicates whether to enables pager template for the gr
 
 #### Example
 {:.example}
-{% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
-</ej-grid>
-{% endhighlight %}
-
-{% highlight ts %} 
-this.settings={enableTemplates:true,template:"#pagerTemplate"};
-{% endhighlight %}
-
-{% highlight html %} 
+{% highlight html %}  
 <script id="pagerTemplate" type="text/x-jsrender">
         <input type="text" id="txtPageNumber" value="" style="width: 45px; border: none; cursor: text" />
         <input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" onclick="gotoPage(this)" />
 </script>
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={enableTemplates:true,template:"#pagerTemplate"};
 {% endhighlight %}
 
 ### pageSettings.pageCount `Number`
@@ -3092,12 +3350,14 @@ Gets or sets a value that indicates whether to define the number of pages displa
 #### Example
 {:.example}
 {% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
 </ej-grid>
 {% endhighlight %}
 
-{% highlight ts %} 
-this.settings={ pageCount: 1};
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={ pageCount: 1};
 {% endhighlight %}
 
 ### pageSettings.pageSize `Number`
@@ -3112,12 +3372,14 @@ Gets or sets a value that indicates whether to define the number of records disp
 #### Example
 {:.example}
 {% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
 </ej-grid>
 {% endhighlight %}
 
-{% highlight ts %} 
-this.settings={ pageSize: 1};
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={ pageSize: 1};
 {% endhighlight %}
 
 ### pageSettings.showDefaults `Boolean`
@@ -3131,20 +3393,19 @@ Gets or sets a value that indicates whether to enables default pager for the gri
 
 #### Example
 {:.example}
-{% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
-</ej-grid>
-{% endhighlight %}
-
-{% highlight ts %} 
-this.settings={ showDefaults:true,enableTemplates:true,templateID:"#pagerTemplate" };
-{% endhighlight %}
-
-{% highlight html %} 
+{% highlight html %}        
 <script id="pagerTemplate" type="text/x-jsrender">
         <input type="text" id="txtPageNumber" value="" style="width: 45px; border: none; cursor: text" />
         <input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" onclick="gotoPage(this)" />
 </script>
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={ showDefaults:true,enableTemplates:true,templateID:"#pagerTemplate" };
 {% endhighlight %}
 
 ### pageSettings.template `String`
@@ -3159,19 +3420,18 @@ Gets or sets a value that indicates to add the template as a pager template for 
 #### Example
 {:.example}
 {% highlight html %}           
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [pageSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
 </ej-grid>
-{% endhighlight %}
-
-{% highlight ts %} 
-this.settings={enableTemplates:true,template:"#pagerTemplate"};
-{% endhighlight %}
-
-{% highlight html %} 
 <script id="pagerTemplate" type="text/x-jsrender">
 <input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" />
 <input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" />
 </script>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={enableTemplates:true,template:"#pagerTemplate"};
 {% endhighlight %}
 
 ### pageSettings.totalPages `Number`
@@ -3186,12 +3446,14 @@ Get the value of total number of pages in the grid. The totalPages value is calc
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true">
 </ej-grid>
 <div id="print"></div>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 $("#print").text("TotalPages: " + $("#Grid").ejGrid("option", "pageSettings.totalPages"));
 {% endhighlight %}
 
@@ -3207,12 +3469,15 @@ Get the value of total number of records which is bound to the grid. The totalRe
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true">
 </ej-grid>
 <div id="print"></div>
 {% endhighlight %}
 
+
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 $("#print").text("TotalRecordsCount: " + $("#Grid").ejGrid("option", "pageSettings.totalRecordsCount"));
 {% endhighlight %}
 
@@ -3244,13 +3509,16 @@ Gets or sets a value that indicates whether to define the number of pages to pri
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [toolbarSettings]="items" [pageSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [toolbarSettings]="toolbarSettings" [pageSettings]="pageSettings" >
 </ej-grid>
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.items={ showToolbar: true,toolbarItems: ["printGrid"]};
-this.settings={printMode:"currentpage"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["printGrid"]};
+this.pageSettings={printMode:ej.Grid.PrintMode.CurrentPage"};
 {% endhighlight %}
 
 ### query `Object`
@@ -3264,16 +3532,15 @@ Query the dataSource from the table for Grid.
 
 #### Example
 {:.example}
-{% highlight html %}       
-<div id="Grid"></div> 
- 
-<script type="text/javascript">
-var queryOrder=ej.Query().select(["OrderID", "CustomerID"]); 
-$("#Grid").ejGrid({
-  dataSource: window.gridData,
-  query: queryOrder
-});  
-</script>
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [query]="queryOrder">
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.queryOrder=ej.Query().select(["OrderID", "CustomerID"]);
 {% endhighlight %}
 
 ### resizeSettings `Object`
@@ -3314,12 +3581,15 @@ Gets or sets a value that indicates whether to define the mode of resizing.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [allowResizing]="true" [resizeSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" allowResizing="true" [resizeSettings]="resizeSettings" >
 </ej-grid>
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.settings={resizeMode: "control"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.resizeSettings={resizeMode: ej.Grid.ResizeMode.Control};
 {% endhighlight %}
 
 ### rowTemplate `String`
@@ -3334,25 +3604,29 @@ Gets or sets a value that indicates to render the grid with template rows. The t
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" rowTemplate="#templateData" >
+<ej-grid id="Grid" [dataSource]="gridData" [rowTemplate]="templateData" >
     <e-columns>
         <e-column headerText="Employeephoto"></e-column>
-        <e-column field="EmployeeID" headerText="EmployeeID" width="75" textAlign="left"></e-column>
+        <e-column field="EmployeeID" headerText="EmployeeID" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
-{% endhighlight %}
-
-{% highlight html %}
 <script id="templateData" type="text/x-jsrender">
 <tr>
 <td>
-<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
+<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
 </td>
 <td>
-{{"{{"}}:EmployeeID{{}}}}
+{{:EmployeeID}}
 </td>
 </tr>
 </script>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.templateData="#templateData";
+this.right=ej.TextAlign.Right;
 {% endhighlight %}
 
 ### rowDropSettings `Object`
@@ -3372,12 +3646,15 @@ This specifies the grid to drop the grid rows only at particular target element.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true" [rowDropSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowRowDragAndDrop="true" [rowDropSettings]="rowDropSettings" >
 </ej-grid> 
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.settings={dropTargetID: "#DestGrid"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.rowDropSettings={dropTargetID: "#DestGrid"};
 {% endhighlight %}
 
 ### rowDropSettings.dragMapper `string`
@@ -3392,12 +3669,15 @@ This helps in mapping server-side action when rows are dragged from Grid.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true" [rowDropSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowRowDragAndDrop="true" [rowDropSettings]="rowDropSettings" >
 </ej-grid> 
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.settings={dropTargetID: "#DestGrid",dragMapper: "Home/DragHandler" };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.rowDropSettings={dropTargetID: "#DestGrid",dragMapper: "Home/DragHandler" };
 {% endhighlight %}
 
 ### rowDropSettings.dropMapper `string`
@@ -3412,12 +3692,15 @@ This helps in mapping server-side action when rows are dropped in Grid.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true" [rowDropSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowRowDragAndDrop="true" [rowDropSettings]="rowDropSettings" >
 </ej-grid> 
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.settings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.rowDropSettings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
 {% endhighlight %}
 
 ### searchSettings `Object`
@@ -3437,13 +3720,16 @@ This specify the grid to search for the value in particular columns that is ment
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowSearching="true" [toolbarSettings]="toolbarSettings" [searchSettings]="searchSettings" >
 </ej-grid>
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.items={ showToolbar: true,toolbarItems: ["search"]};
-this.settings={fields:["OrderID","CustomerID","EmployeeID"], key:"VICTE"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
+this.searchSettings={fields:["OrderID","CustomerID","EmployeeID"], key:"VICTE"};
 {% endhighlight %}
 
 ### searchSettings.key `string`
@@ -3458,13 +3744,16 @@ This specifies the grid to search the particular data that is mentioned in the k
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowSearching="true" [toolbarSettings]="toolbarSettings" [searchSettings]="searchSettings" >
 </ej-grid>
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.items={ showToolbar: true,toolbarItems: ["search"]};
-this.settings={ key:"VICTE"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
+this.searchSettings={ key:"VICTE"};
 {% endhighlight %}
 
 ### searchSettings.operator `string`
@@ -3486,13 +3775,16 @@ It specifies the grid to search the records based on operator.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowSearching="true" [toolbarSettings]="toolbarSettings" [searchSettings]="searchSettings" >
 </ej-grid>
 {% endhighlight %}
 
+
 {% highlight ts %}
-this.items={ showToolbar: true,toolbarItems: ["search"]};
-this.settings={operator:"contains", key:"VICTE"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
+this.searchSettings={operator:"contains", key:"VICTE"};
 {% endhighlight %}
 
 ### searchSettings.ignoreCase `boolean`
@@ -3507,19 +3799,21 @@ It enables or disables case-sensitivity while searching the search key in grid.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowSearching]="true" [toolbarSettings]="items" [searchSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowSearching="true" [toolbarSettings]="toolbarSettings" [searchSettings]="searchSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.items={ showToolbar: true,toolbarItems: ["search"]};
-this.settings={ignoreCase:true, key:"VICTE"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["search"]};
+this.searchSettings={ignoreCase:true, key:"VICTE"};
 {% endhighlight %}
 
 ### selectedRecords `Array`
 {:#members:selectedrecords}
 
-Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using &ldquo;selectedRecords&rdquo; property
+Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using "selectedRecords" property
 
 #### Default Value:
 {:.param}
@@ -3533,6 +3827,9 @@ Gets a value that indicates whether the grid model to hold multiple selected rec
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+// display single or multiple selected records
 $("#Grid").ejGrid("model.selectedRecords") 
 {% endhighlight %}
 
@@ -3548,8 +3845,13 @@ Gets or sets a value that indicates to select the row while initializing the gri
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" selectedRowIndex="1">
+<ej-grid id="Grid" [dataSource]="gridData" [selectedRowIndex]=1>
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### selectedRowIndices `Array`
@@ -3564,8 +3866,14 @@ Gets or sets a value that indicates the selected rows in grid
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" selectedRowIndices="[1,4,7]">
+<ej-grid id="Grid" [dataSource]="gridData" [selectionType]="multiple" [selectedRowIndices]=[1,4,7]>
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.multiple=ej.Grid.SelectionType.Multiple;
 {% endhighlight %}
 
 ### selectionSettings `Object`
@@ -3585,12 +3893,14 @@ Gets or sets a value that indicates whether to enable the toggle selection behav
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true" [selectionSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowSelection="true" [selectionSettings]="selectionSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={enableToggle: true };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.selectionSettings={enableToggle: true };
 {% endhighlight %}
 
 ### selectionSettings.selectionMode `Array`
@@ -3623,12 +3933,14 @@ Gets or sets a value that indicates whether to add the default selection actions
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true" [selectionSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowSelection="true" [selectionSettings]="selectionSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={selectionMode: ["row","cell","column"] };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.selectionSettings={selectionMode: ["row","cell","column"] };
 {% endhighlight %}
 
 ### selectionType `enum`
@@ -3659,8 +3971,14 @@ The row selection behavior of grid. Accepting types are "single" and "multiple".
 
 #### Example
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" selectionType="multiple" >
+<ej-grid id="Grid" [dataSource]="gridData" [selectionType]="multiple" >
 </ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.multiple = ej.Grid.SelectionType.Multiple;
 {% endhighlight %}
 
 ### scrollSettings `Object`
@@ -3680,12 +3998,14 @@ This specify the grid to to view data that you require without buffering the ent
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={width:300,height:100,allowVirtualScrolling:true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={width:300,height:100,allowVirtualScrolling:true};
 {% endhighlight %}
 
 ### scrollSettings.enableTouchScroll `Boolean`
@@ -3700,12 +4020,14 @@ This specify the grid to enable/disable touch control for scrolling.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={enableTouchScroll:true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={enableTouchScroll:true};
 {% endhighlight %}
 
 ### scrollSettings.frozenColumns `Number`
@@ -3720,13 +4042,16 @@ This specify the grid to freeze particular columns at the time of scrolling.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={width:500,height:50,frozenColumns:2 };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={width:500,height:50,frozenColumns:2 };
 {% endhighlight %}
+
 ### scrollSettings.frozenRows `Number`
 {:#members:scrollsettings-frozenrows}
 
@@ -3739,12 +4064,14 @@ This specify the grid to freeze particular rows at the time of scrolling.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={width:500,height:50,frozenRows:2 };
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={width:500,height:150,frozenRows:2 };
 {% endhighlight %}
 
 ### scrollSettings.height `String|Number`
@@ -3759,12 +4086,14 @@ This specify the grid to show the vertical scroll bar, to scroll and view the gr
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={height:50};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={height:50};
 {% endhighlight %}
 
 ### scrollSettings.virtualScrollMode `enum`
@@ -3795,12 +4124,14 @@ This is used to define the mode of virtual scrolling in grid. See virtualScrollM
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={width:500 , height: 550 , allowVirtualScrolling:true, virtualScrollMode:"normal"};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={width:500 , height: 550 , allowVirtualScrolling:true, virtualScrollMode:ej.Grid.VirtualScrollMode.Normal};
 {% endhighlight %}
 
 ### scrollSettings.enableVirtualization `Boolean`
@@ -3815,12 +4146,14 @@ This is used to enable the enhanced virtual scrolling in Grid.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={width:500 , height: 550 , enablevirtualization:true};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={width:500 , height: 550 , enableVirtualization:true};
 {% endhighlight %}
 
 ### scrollSettings.width `String|Number`
@@ -3835,12 +4168,14 @@ This specify the grid to show the horizontal scroll bar, to scroll and view the 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={width:500};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={width:500};
 {% endhighlight %}
 
 ### scrollSettings.scrollOneStepBy `Number`
@@ -3855,12 +4190,14 @@ This specify the scroll down pixel of mouse wheel, to scroll mouse wheel and vie
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowScrolling]="true" [scrollSettings]="settings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
 </ej-grid> 
 {% endhighlight %}
 
 {% highlight ts %}
-this.settings={scrollonestepby:100};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={scrollOneStepBy:100};
 {% endhighlight %}
 
 ### showColumnChooser `Boolean`
@@ -3874,14 +4211,19 @@ Gets or sets a value that indicates whether to enable column chooser on grid. On
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [showColumnChooser]="true" >
+<ej-grid id="Grid" [dataSource]="gridData" showColumnChooser="true" >
 </ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 {% endhighlight %}
 
 ### showStackedHeader `Boolean`
 {:#members:showstackedheader}
 
-Gets or sets a value that indicates stacked header should be shown on grid layout when the property &ldquo;stackedHeaderRows&rdquo; is set.
+Gets or sets a value that indicates stacked header should be shown on grid layout when the property "stackedHeaderRows" is set.
 
 #### Default Value:
 {:.param}
@@ -3890,24 +4232,27 @@ Gets or sets a value that indicates stacked header should be shown on grid layou
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true" [showSummary]="true" [showStackedHeader]="true"  [stackedHeaderRows]="stackedHeaderRows">
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
-{% highlight html %} 
-this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID"},{headerText:"Frieght",column:"Freight,CustomerID,OrderDate"}]}]
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
 ### showSummary `Boolean`
 {:#members:showsummary}
 
-Gets or sets a value that indicates summary rows should be shown on grid layout when the property &ldquo;summaryRows&rdquo; is set
+Gets or sets a value that indicates summary rows should be shown on grid layout when the property "summaryRows" is set
 
 #### Default Value:
 {:.param}
@@ -3916,16 +4261,18 @@ Gets or sets a value that indicates summary rows should be shown on grid layout 
 #### Example
 {:.example}
 {% highlight html %} 
-<ej-grid id="Grid" [dataSource]="gridData"  [showSummary]="true"  [summaryRows]="summaryRows">
+<ej-grid id="Grid" [dataSource]="gridData"  showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
-{% highlight html %} 
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType:ej.Grid.SummaryType.Count, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -3952,7 +4299,7 @@ Gets or sets a value that indicates whether to define the direction to sort the 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData"[sortSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData"[sortSettings]="sortSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -3962,7 +4309,9 @@ Gets or sets a value that indicates whether to define the direction to sort the 
 {% endhighlight %}
 
 {% highlight ts %}
-this.items={ sortedColumns: [{field:"EmployeeID", direction:"descending"}]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.sortSettings={ sortedColumns: [{field:"EmployeeID", direction:"descending"}]};
 {% endhighlight %}
 
 ### sortSettings.sortedColumns.field `String`
@@ -3977,7 +4326,7 @@ Gets or sets a value that indicates whether to define the field name of the colu
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData"[sortSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData"[sortSettings]="sortSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -3987,7 +4336,9 @@ Gets or sets a value that indicates whether to define the field name of the colu
 {% endhighlight %}
 
 {% highlight ts %}
-this.items={ sortedColumns: [{field:"EmployeeID"}]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.sortSettings={ sortedColumns: [{field:"EmployeeID"}]};
 {% endhighlight %}
 
 ### stackedHeaderRows `Array`
@@ -4002,18 +4353,21 @@ Gets or sets an object that indicates to managing the collection of stacked head
 #### Example
 {:.example}
 {% highlight html %}  
-<ej-grid id="Grid" [dataSource]="gridData" [allowSorting]="true" [showSummary]="true" [showStackedHeader]="true"  [stackedHeaderRows]="stackedHeaderRows">
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
-{% highlight ts %}  
-this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"},{headerText:"Frieght",column:"Freight,OrderID,OrderDate"}]}]
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns `Array`
@@ -4027,27 +4381,22 @@ Gets or sets a value that indicates whether to add stacked header columns into t
 
 #### Example
 {:.example}
-{% highlight html %}  
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSorting:true,
-   showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
-         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
-           ]}
-          ],
-   columns: [
-      { field: "CustomerID", headerText: "Customer ID", width: 80 },
-       { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
-       { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
-      { field: "ShipCity", headerText: "Ship City", width: 110 }
-      ]
-});
-</script> 
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns.column `Object`
@@ -4061,27 +4410,22 @@ Gets or sets a value that indicates the header text for the particular stacked h
 
 #### Example
 {:.example}
-{% highlight html %}  
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSorting:true,
-   showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:["Freight","EmployeeID","OrderDate"]}
-         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
-           ]}
-          ],
-   columns: [
-      { field: "CustomerID", headerText: "Customer ID", width: 80 },
-       { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
-       { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
-      { field: "ShipCity", headerText: "Ship City", width: 110 }
-      ]
-});
-</script>
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}];
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns.cssClass `String`
@@ -4095,32 +4439,27 @@ Gets or sets a value that indicates class to the corresponding stackedHeaderColu
 
 #### Example
 {:.example}
-{% highlight html %}  
-<div id="Grid"></div>       
+{% highlight html %} 
 <style class="temp">
 .temp{
 color:green;
 }
 </style>
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSorting:true,
-   showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", cssClass:
-         "temp"},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
-         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
-           ]}
-          ],
-   columns: [
-      { field: "CustomerID", headerText: "Customer ID", width: 80 },
-      { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
-      { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign:           ej.TextAlign.Right },
-      { field: "ShipCity", headerText: "Ship City", width: 110 }
-      ]
-});
-</script> 
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght",cssClass:"temp"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}]
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns.headerText `String`
@@ -4134,27 +4473,21 @@ Gets or sets a value that indicates the header text for the particular stacked h
 
 #### Example
 {:.example}
-{% highlight html %}  
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSorting:true,
-   showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
-         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
-           ]}
-          ],
-   columns: [
-      { field: "CustomerID", headerText: "Customer ID", width: 80 },
-       { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
-       { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
-      { field: "ShipCity", headerText: "Ship City", width: 110 }
-      ]
-});
-</script> 
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true"  [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght"},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate"}]}]
 {% endhighlight %}
 
 ### stackedHeaderRows.stackedHeaderColumns.textAlign `String`
@@ -4168,27 +4501,23 @@ Gets or sets a value that indicates the text alignment of the corresponding head
 
 #### Example
 {:.example}
-{% highlight html %}  
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSorting:true,
-   showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textalign: 
-         ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
-         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
-           ]}
-          ],
-   columns: [
-      { field: "CustomerID", headerText: "Customer ID", width: 80 },
-      { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
-      { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
-      { field: "ShipCity", headerText: "Ship City", width: 110 }
-      ]
-});
-</script> 
+
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true" [textAlign]="right" [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght",textAlign:ej.TextAlign.Right},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate",textAlign:ej.TextAlign.Left}]}];
 {% endhighlight %}
 
 ### summaryRows `Array`
@@ -4203,18 +4532,21 @@ Gets or sets an object that indicates to managing the collection of summary rows
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4230,19 +4562,23 @@ Gets or sets a value that indicates whether to show the summary value within the
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showCaptionSummary]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" showCaptionSummary="true">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+this.groupSettings={groupedColumns:["OrderID"] };
 {% endhighlight %}
 
 ### summaryRows.showGroupSummary `Boolean`
@@ -4257,19 +4593,23 @@ Gets or sets a value that indicates whether to show the group summary value for 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showGroupSummary]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowGrouping="true" [groupSettings]="groupSettings" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" showGroupSummary="true">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
+this.groupSettings={groupedColumns:["OrderID"] };
 {% endhighlight %}
 
 ### summaryRows.showTotalSummary `Boolean`
@@ -4284,18 +4624,21 @@ Gets or sets a value that indicates whether to show the total summary value the 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showTotalSummary]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" showTotalSummary="true">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4311,18 +4654,21 @@ Gets or sets a value that indicates whether to add summary columns into the summ
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4338,19 +4684,46 @@ Gets or sets a value that indicates the text displayed in the summary column as 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" [showTotalSummary]="true">
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows">
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
-this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : "Currency"}]}];
+this.gridData = [{
+            OrderID: 10248, CustomerID: 'VINET', EmployeeID: 1,
+            OrderDate: new Date(8364186e5), Freight: 32.38
+        },
+        {
+            OrderID: 10249, CustomerID: 'TOMSP', EmployeeID: 2,
+            OrderDate: new Date(836505e6), Freight: 11.61
+        },
+        {
+            OrderID: 10250, CustomerID: 'HANAR', EmployeeID: 3,
+            OrderDate: new Date(8367642e5), Freight: 65.83
+        },
+        {
+            OrderID: 10251, CustomerID: 'VICTE', EmployeeID: 4,
+            OrderDate: new Date(8367642e5), Freight: 41.34
+        },
+        {
+            OrderID: 10252, CustomerID: 'SUPRD', EmployeeID: 5,
+            OrderDate: new Date(8368506e5), Freight: 51.3
+        }];
+this.right=ej.TextAlign.Right;
+this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, displayColumn: "Freight", dataMember: "Freight" ,customSummaryValue : this.currency.bind(this)}]}];
+currency(){ 
+        this.gridObj = $("#Grid").ejGrid("instance")
+        this.rs=ej.sum(this.gridObj.model.dataSource(), "Freight")
+        this.dol = 0.017
+        return (this.rs);
+    }
 {% endhighlight %}
 
 ### summaryRows.summaryColumns.dataMember `String`
@@ -4365,18 +4738,21 @@ This specifies summary column used to perform the summary calculation
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4392,18 +4768,21 @@ Gets or sets a value that indicates to define the target column at which to disp
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4419,18 +4798,21 @@ Gets or sets a value that indicates the format for the text applied on the colum
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight"  format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,format: "{0:C2}"}]}];
 {% endhighlight %}
 
@@ -4446,18 +4828,21 @@ Gets or sets a value that indicates the text displayed before the summary column
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" ,prefix : "Currency:"}]}];
 {% endhighlight %}
 
@@ -4473,18 +4858,21 @@ Gets or sets a value that indicates the text displayed after the summary column 
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight"  format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" , suffix: "/-"}]}];
 {% endhighlight %}
 
@@ -4540,18 +4928,21 @@ Gets or sets a value that indicates the type of calculations to be performed for
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight" }]}];
 {% endhighlight %}
 
@@ -4567,22 +4958,24 @@ Gets or sets a value that indicates to add the template for the summary value of
 #### Example
 {:.example}
 {% highlight html %}
-<div id="Grid"></div> 
 <script id="templateData" type="text/x-jsrender">
-     Freight has Average of {{"{{"}}:summaryValue{{}}}} in  dollars
+     Freight has Average of {{:summaryValue}} in  dollars
 </script>
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight",template: "#templateData",format: "{0:C2}"}]}];
 {% endhighlight %}
 
@@ -4599,18 +4992,21 @@ This specifies the grid to show the title for the summary rows.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight"}]}];
 {% endhighlight %}
 
@@ -4626,18 +5022,21 @@ This specifies the grid to show the title of summary row in the specified column
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowPaging]="true" [showSummary]="true"  [summaryRows]="summaryRows" >
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
-        <e-column field="OrderID"  headerText="Order ID"  width="80" textAlign="left"></e-column>
-        <e-column field="CustomerID" headerText="Customer ID" width="80" textAlign="right"></e-column>
-        <e-column field="OrderDate" headerText="OrderDate" width="80" textAlign="left"></e-column>
-        <e-column field="EmployeeID" headerText="Employee ID" width="80" textAlign="right"></e-column>
-        <e-column field="Freight" width="75" format="{0:C2}" width="80" textAlign="right"></e-column>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" [textAlign]="right"></e-column>
+        <e-column field="EmployeeID" headerText="Employee ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
 this.summaryRows=[{title: "Sum",titleColumn: "EmployeeID",summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight"}]}];
 {% endhighlight %}
 
@@ -4677,22 +5076,15 @@ This specifies the grid to apply the auto wrap for grid content or header or bot
 </table>
 
 #### Example
+{:.example}
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowTextWrap: true, 
-   textWrapSettings:{ wrapMode: ej.Grid.WrapMode.Both }                
-});
-</script>
-{% endhighlight %}
-{% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [allowTextWrap]="true" [showSummary]="true"  [textWrapSettings]="textWrapSettings" >
+<ej-grid id="Grid" [dataSource]="gridData" allowTextWrap="true" [textWrapSettings]="textWrapSettings" >
 </ej-grid>
 {% endhighlight %}
 
 {% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
 this.textWrapSettings={wrapMode: ej.Grid.WrapMode.Both};
 {% endhighlight %}
 
@@ -4713,20 +5105,19 @@ Gets or sets a value that indicates whether to add custom toolbar items within t
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData"  [toolbarSettings]="items" >
+<ej-grid id="Grid" [dataSource]="gridData"  [toolbarSettings]="toolbarSettings" >
 </ej-grid>
-{% endhighlight %}
-
-{% highlight ts %}
-this.items={showToolbar:true,customToolbarItems:["expand"]};
-{% endhighlight %}
-
-{% highlight html %}
 <style type="text/css" class="cssStyles">
         .expand:before {
             content: "\e627";
         }
 </style>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.toolbarSettings={showToolbar:true,customToolbarItems:["expand"]};
 {% endhighlight %}
 
 ### toolbarSettings.showToolbar `Boolean`
@@ -4741,7 +5132,7 @@ Gets or sets a value that indicates whether to enable toolbar in the grid.
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -4751,8 +5142,10 @@ Gets or sets a value that indicates whether to enable toolbar in the grid.
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowEditing: true };
-this.items={ showToolbar: true,toolbarItems: ["edit"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowEditing: true };
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","update","cancel"]};
 {% endhighlight %}
 
 ### toolbarSettings.toolbarItems `Array`
@@ -4811,7 +5204,7 @@ Gets or sets a value that indicates whether to add the default editing actions a
 
 #### Example
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="attributes" [toolbarSettings]="items">
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]="editSettings" [toolbarSettings]="toolbarSettings">
     <e-columns>
         <e-column field="OrderID" [isPrimaryKey]="true"></e-column>
         <e-column field="CustomerID" ></e-column>
@@ -4821,11 +5214,15 @@ Gets or sets a value that indicates whether to add the default editing actions a
 {% endhighlight %}
 
 {% highlight ts %}
-this.attributes={allowDeleting: true, allowEditing: true, allowAdding: true };
-this.items={ showToolbar: true,toolbarItems: ["edit","add","update","delete","cancel"]};
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.editSettings={allowDeleting: true, allowEditing: true, allowAdding: true };
+this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","add","update","delete","cancel"]};
 {% endhighlight %}
 
+
 ## Methods
+
 
 ### addIgnoreOnExport(propertyNames)
 {:#methods:addignoreonexport}
@@ -4857,24 +5254,21 @@ Void
 
 ####Example
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a request to ignore the filterSettings property upon exporting
-gridObj.addIgnoreOnExport("filterSettings"); 
-</script>
+{% highlight ts %}
+
+export class AppComponent {
+    
+ngAfterViewInit(){
+
+    this.Grid.widget.addIgnoreOnExport("filterSettings");    // Sends a request to ignore the filterSettings property upon exporting
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+
+}
+
 {% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// Sends a request to ignore the filterSettings property upon exporting
-$("#Grid").ejGrid("addIgnoreOnExport","filterSettings");       
-</script>
-{% endhighlight %}
 
 ### addRecord()
 {:#methods:addrecord}
@@ -4888,24 +5282,21 @@ Void
 
 ####Example
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an add new record request to the grid
-gridObj.addRecord(); 
-</script>
+{% highlight ts %}
+
+export class AppComponent {
+    
+ngAfterViewInit(){
+
+    this.Grid.widget.addRecord();    // Sends an add new record request to the grid
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+
+}
+
 {% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// add new record to the grid
-$("#Grid").ejGrid("addRecord");       
-</script>
-{% endhighlight %}
 
 ### addRecord(data,\[serverChange\])
 {:#methods:addrecord}
@@ -4929,7 +5320,7 @@ Add a new record in grid control when allowAdding is set as true.
 <tr>
 <td class="name">serverChange</td>
 <td class="type"><span class="param-type">Array</span></td>
-<td class="description last"><span class="optional">optional</span>If we pass serverChange as true, send post to server side for server action.</td>
+<td class="description last"><span class="optional">optional</span> If we pass serverChange as true, send post to server side for server action.</td>
 </tr>
 </tbody>
 </table>
@@ -4941,26 +5332,21 @@ Void
 
 ####Example
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an add new record request to the grid
-gridObj.addRecord({"OrderID":12333});
-</script>
+{% highlight ts %}
+
+export class AppComponent {
+
+ngAfterViewInit(){
+
+    this.Grid.widget.addRecord({"OrderID":12333});     // Sends an add new record request to the grid
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+
+}
+
 {% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// add new record to the grid
-$("#Grid").ejGrid("addRecord",{OrderID:12333})       
-</script>
-{% endhighlight %}
-
-
 
 ### batchCancel()
 {:#methods:batchcancel}
@@ -4976,25 +5362,23 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.batchCancel();
-// Cancel added, edited, and deleted changes made in grid
-</script>{% endhighlight %}
+{% highlight ts %}
 
+export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// Cancel added, edited, and deleted changes made in grid
-$("#Grid").ejGrid("batchCancel");
-</script>
+ngAfterViewInit(){
+
+    this.Grid.widget.batchCancel();     // Cancel added, edited, and deleted changes made in grid
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+
 {% endhighlight %}
 
-
+ 
 ### batchSave()
 {:#methods:batchsave}
 
@@ -5009,27 +5393,22 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Save added, edited, and deleted changes to source of data
-gridObj.batchSave(); 
-</script>
+ export class AppComponent {
+
+ ngAfterViewInit(){
+
+    this.Grid.widget.batchSave();      // Save added, edited, and deleted changes to source of data
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
 {% endhighlight %}
 
-
-{% highlight html %}
  
-<script>
-// Save added, edited, and deleted changes to source of data
-$("#Grid").ejGrid("batchSave");
-</script>
-{% endhighlight %}
-
-
-
 ### cancelEdit()
 {:#methods:canceledit}
 
@@ -5044,59 +5423,21 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a cancel request to the grid
-gridObj.cancelEdit(); 
-</script>
+{% highlight ts %}
+
+export class AppComponent {
+
+ngAfterViewInit(){
+
+    this.Grid.widget.cancelEdit();     // Sends a cancel request to the grid
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+  
+}
+
 {% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Sends a cancel request to the grid
-$("#Grid").ejGrid("cancelEdit");        
-</script>
-{% endhighlight %}
-
-
-
-### cancelEditCell()
-{:#methods:canceleditcell}
-
-Send a cancel request to the edited cell in grid.
-
-#### Returns:
-{:#methods:returns:}
-
-Void
-
-####Example
-{:.example}
-
-
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a cancel request to the edited cell in  grid
-gridObj.cancelEditCell();   
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Sends a cancel request to the edited cell in grid
-$("#Grid").ejGrid("cancelEditCell");        
-</script>{% endhighlight %}
-
-
 
 
 ### clearCellSelection()
@@ -5113,22 +5454,22 @@ Boolean
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearCellSelection();  // clears all of the cell selection
-</script>
+{% highlight ts %}
+
+export class AppComponent {
+
+ngAfterViewInit(){
+
+    this.Grid.widget.clearCellSelection();    // clears all of the cell selection
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+
+}
 {% endhighlight %}
 
 
-{% highlight html %}
- 
-<script>         
-// clears all of the cell selection
-$("#Grid").ejGrid("clearCellSelection");        
-</script>{% endhighlight %}
 
 ### clearCellSelection(rowIndex,columnIndex)
 {:#methods:clearcellselection}
@@ -5166,22 +5507,19 @@ Boolean
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearCellSelection(1,2);  // clears specified the cell selection
-</script>
-{% endhighlight %}
+{% highlight ts %}
+  export class AppComponent {
+  
+ngAfterViewInit(){
 
+    this.Grid.widget.clearCellSelection(1,2);     // clears specified the cell selection
 
-{% highlight html %}
- 
-<script>         
-// clears all of the cell selection
-$("#Grid").ejGrid("clearCellSelection",1,2);        
-</script>{% endhighlight %}
+  }
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+  {% endhighlight %}
 
 
 ### clearColumnSelection(\[index\])
@@ -5216,27 +5554,21 @@ Boolean
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearColumnSelection(2);  // Removes the selection based on the column index
-gridObj.clearColumnSelection();  // clears all of the column selection
-</script>{% endhighlight %}
+{% highlight ts %}
 
+  export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// Removes the selection based on the column index
-$("#Grid").ejGrid("clearColumnSelection", 2);   
-// clears all of the column selection
-$("#Grid").ejGrid("clearColumnSelection");        
-</script>
+  ngAfterViewInit(){
 
-{% endhighlight %}
+    this.Grid.widget.clearColumnSelection(2);    // Removes the selection based on the column index
+    this.Grid.widget.clearColumnSelection();    // clears all of the column selection
 
+   }
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+} 
+  {% endhighlight %}
 
 
 ### clearFiltering(field)
@@ -5270,22 +5602,23 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearFiltering("EmployeeID"); //clears the filtering based on the fieldName passed
-gridObj.clearFiltering();  // clears all the filtering
-</script>{% endhighlight %}
+ export class AppComponent {
+ 
+ ngAfterViewInit(){
+ 
+    this.Grid.widget.clearFiltering();    // clears all the filtering
+    this.Grid.widget.clearFiltering("EmployeeID");   //clears the filtering based on the fieldName passed
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-<script>         
-$("#Grid").ejGrid("clearFiltering","EmployeeID");// clears the filtering based on the fieldName passed
-$("#Grid").ejGrid("clearFiltering"); // clears all the filtering
-</script>{% endhighlight %}
 
 ### clearSearching()
 {:#methods:clearsearching}
@@ -5301,22 +5634,21 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Clears the searching from the grid
-gridObj.clearSearching(); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+ export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// Clears the searching from the grid
-$("#Grid").ejGrid("clearSearching");        
-</script>{% endhighlight %}
+ ngAfterViewInit(){
+
+    this.Grid.widget.clearSearching();    // Clears the searching from the grid
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+{% endhighlight %}
+
 
 ### clearSelection(\[index\])
 {:#methods:clearselection}
@@ -5351,24 +5683,22 @@ Boolean
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.clearSelection(2);  // Removes the selection based on the row index
-gridObj.clearSelection();  // clears all of the row selection
-</script>{% endhighlight %}
+export class AppComponent {
 
+ngAfterViewInit(){
 
-{% highlight html %}
+    this.Grid.widget.clearSelection(2);    // Removes the selection based on the row index
+    this.Grid.widget.clearSelection();     // clears all of the row selection
  
-<script>
-// Removes the selection based on the row index
-$("#Grid").ejGrid("clearSelection", 2);   
-// clears all of the row selection
-$("#Grid").ejGrid("clearSelection");        
-</script>{% endhighlight %}
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+{% endhighlight %}
+
 
 
 ### clearSorting()
@@ -5385,22 +5715,22 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Clears the sorting from columns in the grid
-gridObj.clearSorting(); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// Clears the sorting from columns in the grid
-$("#Grid").ejGrid("clearSorting");        
-</script>{% endhighlight %}
+ngAfterViewInit(){
+
+    this.Grid.widget.clearSorting();    // Clears the sorting from columns in the grid
+  
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+
+{% endhighlight %}
+
 
 
 ### collapseAll()
@@ -5417,22 +5747,21 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Collapse all the group caption rows
-gridObj.collapseAll(); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// Collapse all the group caption rows
-$("#Grid").ejGrid("collapseAll");        
-</script>{% endhighlight %}
+ngAfterViewInit(){
+
+    this.Grid.widget.collapseAll();    // Collapse all the group caption rows
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+
+{% endhighlight %}
 
 
 ### collapseGroupDropArea()
@@ -5449,23 +5778,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Collapse the group drop area of the grid
-gridObj.collapseGroupDropArea(); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.collapseGroupDropArea();    // Collapse the group drop area of the grid
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
 
-{% highlight html %}
- 
-<script>
-// Collapse the group drop area of the grid
-$("#Grid").ejGrid("collapseGroupDropArea");        
-</script>{% endhighlight %}
-
+{% endhighlight %}
 
 
 ### columns(columnDetails, \[action\])
@@ -5505,28 +5829,22 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// remove grid column
-gridObj.columns("OrderID", "remove");
-// Add new column into grid or modified already existing column in the grid.
-gridObj.columns("CustomerID", "add"); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+ export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// remove grid column
-$("#Grid").ejGrid("columns","OrderID", "remove");   
-// Add new column into grid or modified already existing column in the grid.                    
-$("#Grid").ejGrid("columns","CustomerID", "add");                       
-</script>{% endhighlight %}
+ ngAfterViewInit(){
 
+    this.Grid.widget.columns("OrderID", "remove");    // remove grid column
+    this.Grid.widget.columns("OrderID", "add");      // Add new column into grid or modified already existing column in the grid.
 
+   }
+
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+   }
+   
+  {% endhighlight %}
 
 ### dataSource(datasource,\[templateRefresh\])
 {:#methods:datasource}
@@ -5565,22 +5883,20 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Refreshes the grid data source
-gridObj.dataSource(data); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// Refreshes the grid data source
-$("#Grid").ejGrid("dataSource", data);        
-</script>{% endhighlight %}
+ngAfterViewInit(){
+    
+    this.Grid.widget.dataSource(data);    // Refreshes the grid data source
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+
+{% endhighlight %}
 
 
 ### deleteRecord(fieldName, data)
@@ -5620,22 +5936,21 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a delete record request to the grid
-gridObj.deleteRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+export class AppComponent {
 
-{% highlight html %}
- 
-<script>
-// Sends a delete record request to the grid
-$("#Grid").ejGrid("deleteRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
-</script>{% endhighlight %}
+ngAfterViewInit(){
+
+    this.Grid.widget.deleteRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });       // Sends a delete record request to the grid
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+{% endhighlight %}
+
 
 
 ### destroy()
@@ -5651,21 +5966,21 @@ Void
 ####Example
 {:.example}
 
+{% highlight ts %}
 
-{% highlight html %}
- 
-<script>
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.destroy(); // destroy the Grid
-</script>{% endhighlight %}
+export class AppComponent {
 
+ngAfterViewInit(){
 
-{% highlight html %}
- 
-<script>
-// destroy the Grid
-$("#Grid").ejGrid("destroy");        
-</script>{% endhighlight %}
+    this.Grid.widget.destroy();     // destroy the Grid
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+
+{% endhighlight %}
 
 ### editCell(index, fieldName)
 {:#methods:editcell}
@@ -5704,20 +6019,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Edit particular cell based on row index and column field name
-gridObj.editCell(2, "OrderID"); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.editCell(2, "EmployeeID");   // Edit particular cell based on row index and column field name
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+}
 
+{% endhighlight %}
 
-{% highlight html %}
-<script>
-// Edit particular cell based on row index and column field name
-$("#Grid").ejGrid("editCell", 2, "OrderID");
-</script>{% endhighlight %}
 
 
 ### endEdit()
@@ -5734,22 +6047,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a save request to the grid
-gridObj.endEdit(); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.endEdit();    // Sends a save request to the grid
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+}
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-<script>
-// Sends a save request to the grid
-$("#Grid").ejGrid("endEdit");        
-</script>{% endhighlight %}
 
 
 ### expandAll()
@@ -5766,22 +6075,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Expand all the group caption rows
-gridObj.expandAll(); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.expandAll();    // Expand all the group caption rows
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-<script>
-// Expand all the group caption rows
-$("#Grid").ejGrid("expandAll");        
-</script>{% endhighlight %}
 
 
 ### expandCollapse($target)
@@ -5816,23 +6121,18 @@ Void
 ####Example
 {:.example}
 
-
-{% highlight html %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Expands or collapses the row based on the row state
-gridObj.expandCollapse($("tr td.recordplusexpand > div").first());  
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.expandCollapse($("tr td.e-recordplusexpand > div").first());    // Expands or collapses the row based on the row state
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
 
-
-{% highlight html %}
- 
-<script>
-// Expands or collapses the row based on the row state
-$("#Grid").ejGrid("expandCollapse", $("tr td.recordplusexpand > div").first());        
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 ### expandGroupDropArea()
@@ -5849,22 +6149,19 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Expands the group drop area of the grid
-gridObj.expandGroupDropArea(); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.expandGroupDropArea();     // Expands the group drop area of the grid
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-<script>
-// Expands the group drop area of the grid
-$("#Grid").ejGrid("expandGroupDropArea");        
-</script>{% endhighlight %}
 
 ### export(action, \[serverEvent\], \[multipleExport\], \[gridIds\])
 {:#methods:export}
@@ -5912,22 +6209,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an exporting request
-gridObj.export("/api/GridExport/ExcelExport"); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.export("/api/GridExport/ExcelExport");  // Sends an exporting request
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+}
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-<script>
-// Sends an exporting request
-$("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
-</script>{% endhighlight %}
 
 ### export(action, \[serverEvent\], \[multipleExport\])
 {:#methods:export}
@@ -5969,23 +6262,18 @@ Void
 #### Example
 {:.example}
 
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.export("/api/GridExport/ExcelExport");    // Sends an exporting request
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an exporting request
-gridObj.export("/api/GridExport/ExcelExport"); 
-</script>{% endhighlight %}
+{% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// Sends an exporting request
-$("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
-</script>{% endhighlight %}
 
 ### filterColumn(fieldName, filterOperator, filterValue, predicate, \[matchcase\],\[actualFilterValue\])
 {:#methods:filtercolumn}
@@ -6044,22 +6332,18 @@ Void
 #### Example
 {:.example}
 
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.filterColumn("OrderID","equal","10248","and", true);    // Sends a filtering request to the grid
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a filtering request to the grid
-gridObj.filterColumn("OrderID","equal","10248","and", true);
-</script>{% endhighlight %}
+{% endhighlight %}
 
-
-{% highlight html %}
-<script>
-// Sends a filtering request to the grid
-$("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
-</script>{% endhighlight %}
 
 
 ### filterColumn(filterCollection)
@@ -6094,23 +6378,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a filtering request to the grid
-gridObj.filterColumn([{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.filterColumn([{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);      // Sends a filtering request to the grid 
+   }
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
-<script>
-// Sends a filtering request to the grid
-$("#Grid").ejGrid("filterColumn",[{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
-</script>{% endhighlight %}
-
+}
+{% endhighlight %}
 
 ### getBatchChanges()
 {:#methods:getbatchchanges}
@@ -6126,20 +6404,18 @@ Object
 {:.example}
 
 
-{% highlight html %}
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the edit, delete, and add changes of a grid
-gridObj.getBatchChanges(); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getBatchChanges();    // Gets the edit, delete, and add changes of a grid
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
 
-{% highlight html %}
-<script>
-// Gets the edit, delete, and add changes of a grid
-$("#Grid").ejGrid("getBatchChanges");        
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 ### getBrowserDetails()
@@ -6156,24 +6432,17 @@ Object
 {:.example}
 
 
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the browser details of the application being run
-gridObj.getBrowserDetails(); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getBrowserDetails();    // Gets the browser details of the application being run
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
+{% endhighlight %}
 
-
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Gets the browser details of the application being run
-$("#Grid").ejGrid("getBrowserDetails");        
-</script>{% endhighlight %}
 
 
 ### getColumnByField(fieldName)
@@ -6208,22 +6477,16 @@ Object
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the column details based on the given field name
-gridObj.getColumnByField("OrderID");
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the column details based on the given field name
-$("#Grid").ejGrid("getColumnByField", "OrderID");        
-</script>{% endhighlight %} 
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getColumnByField("OrderID");   // Gets the column details based on the given field name
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %} 
 
 ### getColumnByHeaderText(headerText)
 {:#methods:getcolumnbyheadertext}
@@ -6258,22 +6521,16 @@ Object
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the column details based on the given headerText
-gridObj.getColumnByHeaderText("Order ID"); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the column details based on the given headerText
-$("#Grid").ejGrid("getColumnByHeaderText", "Order ID");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getColumnByHeaderText("Order ID");    // Gets the column details based on the given headerText
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getColumnByIndex(columnIndex)
@@ -6306,22 +6563,16 @@ Object
 #### Example
 {:.example}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the column details based on the given column index
-gridObj.getColumnByIndex(1); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the column details based on the given column index
-$("#Grid").ejGrid("getColumnByIndex", 1);        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getColumnByIndex(1);   // Gets the column details based on the given column index
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 ### getColumnFieldNames()
 {:#methods:getcolumnfieldnames}
@@ -6337,22 +6588,16 @@ Array
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the column field names based on the given index
-gridObj.getColumnFieldNames(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the column field names based on the given index
-$("#Grid").ejGrid("getColumnFieldNames");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getColumnFieldNames();   // Gets the column field names based on the given index
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 ### getColumnIndexByField(fieldName)
 {:#methods:getcolumnindexbyfield}
@@ -6388,25 +6633,16 @@ number
 {:.example}
 
 
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the column index based on the given field name
-gridObj.getColumnIndexByField("OrderID"); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Gets the column index based on the given field name
-$("#Grid").ejGrid("getColumnIndexByField", "OrderID");        
-</script>{% endhighlight %}
-
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getColumnIndexByField("OrderID");   // Gets the column index based on the given field name
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 ### getContent()
 {:#methods:getcontent}
@@ -6422,23 +6658,15 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets content of grid control
-gridObj.getContent(); 
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets content of grid control
-$("#Grid").ejGrid("getContent");        
-</script>
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getContent();    // Gets content of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
 {% endhighlight %}
 
 
@@ -6456,22 +6684,16 @@ Array\<HTMLTableElement\>
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets content table of grid control
-gridObj.getContentTable();
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets content table of grid control
-$("#Grid").ejGrid("getContentTable");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getContentTable();    // Gets content table of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 ### getCurrentEditCellData()
 {:#methods:getcurrenteditcelldata}
@@ -6487,22 +6709,18 @@ Object
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Get data of currently edited cell value
-gridObj.getCurrentEditCellData(); 
-</script>{% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// Get data of currently edited cell value
-$("#Grid").ejGrid("getCurrentEditCellData");        
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getCurrentEditCellData();    // Get data of currently edited cell value
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getCurrentIndex()
@@ -6520,22 +6738,16 @@ number
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the current page index in grid
-gridObj.getCurrentIndex();  
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the current page index in grid
-$("#Grid").ejGrid("getCurrentIndex");   
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getCurrentIndex(); // Gets the current page index in grid
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getCurrentViewData()
@@ -6552,22 +6764,16 @@ Array
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets current view data of grid control
-gridObj.getCurrentViewData(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets current view data of grid control
-$("#Grid").ejGrid("getCurrentViewData");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getCurrentViewData();       // Gets current view data of grid control 
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
+{% endhighlight %}
 
 ### getFieldNameByHeaderText(headerText)
 {:#methods:getfieldnamebyheadertext}
@@ -6600,23 +6806,18 @@ String
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the column field name from the given headerText
-gridObj.getFieldNameByHeaderText("Order ID"); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getFieldNameByHeaderText("Order ID");   // Gets the column field name from the given headerText
+}  
 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
 
-{% highlight html %}
- 
-<script>
-// Gets the column field name from the given headerText
-$("#Grid").ejGrid("getFieldNameByHeaderText", "Order ID");
-</script>{% endhighlight %}
-
+}
+{% endhighlight %}
 
 ### getFilterBar()
 {:#methods:getfilterbar}
@@ -6632,22 +6833,16 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets filter bar of grid control
-gridObj.getFilterBar(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets filter bar of grid control
-$("#Grid").ejGrid("getFilterBar");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getFilterBar();   // Gets filter bar of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getFilteredRecords()
@@ -6664,22 +6859,16 @@ Array
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the filtered or searched records in Grid
-gridObj.getFilteredRecords();  
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the filtered or searched records in Grid
-$("#Grid").ejGrid("getFilteredRecords");   
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getFilteredRecords();   // Gets the filtered or searched records in Grid
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 ### getFooterContent()
 {:#methods:getfootercontent}
@@ -6695,22 +6884,16 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets grid footer content of grid control
-gridObj.getFooterContent(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets grid footer content of grid control
-$("#Grid").ejGrid("getFooterContent");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getFooterContent();   // Gets grid footer content of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getFooterTable()
@@ -6727,22 +6910,16 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets grid footer table of grid control
-gridObj.getFooterTable(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets grid footer table of grid control
-$("#Grid").ejGrid("getFooterTable");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getFooterTable();    // Gets grid footer table of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 ### getHeaderContent()
 {:#methods:getheadercontent}
@@ -6758,23 +6935,15 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets grid header content of grid control
-gridObj.getHeaderContent(); 
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets grid header content of grid control
-$("#Grid").ejGrid("getHeaderContent");        
-</script>
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getHeaderContent();    // Gets grid header content of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
 {% endhighlight %}
 
 
@@ -6791,22 +6960,16 @@ Element
 ####Example
 {:.example}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.getHeaderTable(); 
-// Gets header table of grid control
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets header table of grid control
-$("#Grid").ejGrid("getHeaderTable");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getHeaderTable();     // Gets header table of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getHeaderTextByFieldName(field)
@@ -6840,21 +7003,16 @@ String
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.getHeaderTextByFieldName("OrderID"); // Gets the column header text from the given field name
-</script>{% endhighlight %}
-
-{% highlight html %}
- 
-<script>
-// Gets the column header text from the given field name
-$("#Grid").ejGrid("getHeaderTextByFieldName", "OrderID");
-</script>{% endhighlight %}
-
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getHeaderTextByFieldName();   // Gets the column header text from the given field name
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}  
+{% endhighlight %}
 
 ### getHiddenColumnNames()
 {:#methods:gethiddencolumnnames}
@@ -6870,22 +7028,16 @@ Array
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets names of all the hidden column collections
-gridObj.getHiddenColumnNames(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets names of all the hidden column collections
-$("#Grid").ejGrid("getHiddenColumnNames");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getHiddenColumnNames();   // Gets names of all the hidden column collections
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getIndexByRow($tr)
@@ -6921,22 +7073,16 @@ number
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the row index based on the given row
-gridObj.getIndexByRow($(".gridcontent tr").first()); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the row index based on the given row
-$("#Grid").ejGrid("getIndexByRow", $(".gridcontent tr").first());        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getIndexByRow($(".e-gridcontent tr").first());        // Gets the row index based on the given row
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getPager()
@@ -6953,22 +7099,16 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets grid pager of grid control
-gridObj.getPager(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets grid pager of grid control
-$("#Grid").ejGrid("getPager");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getPager();    // Gets grid pager of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+} 
+{% endhighlight %}
 
 
 ### getPrimaryKeyFieldNames()
@@ -6986,23 +7126,16 @@ Array
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the names of primary key columns
-gridObj.getPrimaryKeyFieldNames(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the names of primary key columns
-$("#Grid").ejGrid("getPrimaryKeyFieldNames");        
-</script>{% endhighlight %}
-
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getPrimaryKeyFieldNames();    // Gets the names of primary key columns
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
+{% endhighlight %}
 
 ### getRowByIndex(from, to)
 {:#methods:getrowbyindex}
@@ -7041,23 +7174,16 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the rows from the specified row index 
-gridObj.getRowByIndex(3, 6);  
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the rows from the specified row index
-$("#Grid").ejGrid("getRowByIndex", 3, 6);   
-</script>{% endhighlight %}
-
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getRowByIndex(3,6);   // Gets the rows from the specified row index 
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
+{% endhighlight %}
 
 ### getRowHeight()
 {:#methods:getrowheight}
@@ -7073,22 +7199,16 @@ number
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the row height of the grid
-gridObj.getRowHeight();  
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the row height of the grid
-$("#Grid").ejGrid("getRowHeight");   
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getRowHeight();    // Gets the row height of the grid
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getRows()
@@ -7105,22 +7225,16 @@ Element
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets grid rows of grid control
-gridObj.getRows(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets grid rows of grid control
-$("#Grid").ejGrid("getRows");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getRows();   // Gets grid rows of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getScrollObject()
@@ -7138,22 +7252,16 @@ ej.Scroller
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets scroll object of grid control
-gridObj.getScrollObject(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets scroll object of grid control
-$("#Grid").ejGrid("getScrollObject");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getScrollObject();    // Gets scroll object of grid control
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getSelectedRecords()
@@ -7170,22 +7278,17 @@ Array
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the selected row list
-gridObj.getSelectedRecords();
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getSelectedRecords();   // Gets the selected row list
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// Gets the selected row list
-$("#Grid").ejGrid("getSelectedRecords");        
-</script>{% endhighlight %}
 
 ### getSummaryValues(summaryCol, summaryData)
 {:#methods:getsummaryvalues}
@@ -7223,23 +7326,16 @@ Number
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-var summaryCol = { summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight" };
-// Get the calculated summary values of JSON data passed to it
-gridObj.getSummaryValues(summaryCol, window.gridData); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Get the calculated summary values of JSON data passed to it
-$("#Grid").ejGrid("getSummaryValues", summaryCol, window.gridData);        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getSummaryValues();    // Get the calculated summary values of JSON data passed to it
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 
 ### getVisibleColumnNames()
@@ -7256,22 +7352,16 @@ Array
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Gets the names of all the visible column collections
-gridObj.getVisibleColumnNames(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Gets the names of all the visible column collections
-$("#Grid").ejGrid("getVisibleColumnNames");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getVisibleColumnNames();    // Gets the names of all the visible column collections
+}  
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
 ### gotoPage(pageIndex)
 {:#methods:gotopage}
@@ -7304,22 +7394,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a paging request to the grid with specified page index
-gridObj.gotoPage(3);
-</script>{% endhighlight %}
 
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.gotoPage(5);     // Sends a paging request to the grid with specified page index
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
+{% endhighlight %}
 
-{% highlight html %}
- 
-<script>
-// Sends a paging request to the grid with specified page index
-$("#Grid").ejGrid("gotoPage", 3);        
-</script>{% endhighlight %}
 
 
 ### groupColumn(fieldName)
@@ -7352,22 +7438,17 @@ Void
 ####Example
 {:.example}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a group column request to the grid
-gridObj.groupColumn("OrderID"); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.groupColumn("OrderID");   // Sends a group column request to the grid
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// Sends a group column request to the grid
-$("#Grid").ejGrid("groupColumn", "OrderID");        
-</script>{% endhighlight %}
 
 ### hideColumns(headerText)
 {:#methods:hidecolumns}
@@ -7400,25 +7481,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.hideColumns("Order ID"); // Hides column based on the given header text of the column
-gridObj.hideColumns(["Order ID", "Customer ID"]); // Hide columns based on the array of header text of the columns given
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Hide column based on the given header text of the column
-$("#Grid").ejGrid("hideColumns", "Order ID"); 
-// Hide columns based on the array of header text of the columns given
-$("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);                  
-</script>{% endhighlight %}
-
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.hideColumns("EmployeeID");  // Hides column based on the given header text of the column
+    this.Grid.widget.hideColumns(["Order ID", "Customer ID"]);    // Hide columns based on the array of header text of the columns given
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 ### print()
 {:#methods:print}
@@ -7434,24 +7507,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<div id="Grid"></div> 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// It prints the grid.
-gridObj.print(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<div id="Grid"></div&amp;dgt; 
-<script>
-// It prints the grid.
-$("#Grid").ejGrid("print");        
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.print();    // It prints the grid.
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
+{% endhighlight %}
 
 
 ### refreshBatchEditChanges()
@@ -7467,24 +7533,45 @@ Void
 ####Example
 {:.example}
 
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.refreshBatchEditChanges();   // It is used to refresh and reset the changes made in batch edit mode
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.refreshBatchEditChanges(); 
-// It is used to refresh and reset the changes made in batch edit mode
-</script>{% endhighlight %}
+
+### refreshHeader()
+{:#methods:refreshheader}
 
 
-{% highlight html %}
- 
-<script>
-// It is used to refresh and reset the changes made in batch edit mode
-$("#Grid").ejGrid("refreshBatchEditChanges");
-</script>{% endhighlight %}
+Refresh the grid header. 
 
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+
+####Example
+{:.example}
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.refreshHeader();   // Refreshes the grid Header.
+   
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance. 
+   }
+{% endhighlight %}
 
 
 ### refreshContent(\[templateRefresh\])
@@ -7519,27 +7606,17 @@ Void
 ####Example
 {:.example}
 
-
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.refreshContent(); // Refreshes the grid contents only
-gridObj.refreshContent(true); // Refreshes the template and grid contents
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Refreshes the grid contents only
-$("#Grid").ejGrid("refreshContent");        
-// Refreshes the template and grid contents
-$("#Grid").ejGrid("refreshContent", true);        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.refreshContent();   // Refreshes the grid contents only
+    this.Grid.widget.refreshContent(true);   // Refreshes the template and grid contents
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance. 
+   }
+{% endhighlight %}
 
 
 ### refreshTemplate()
@@ -7555,23 +7632,17 @@ Void
 ####Example
 {:.example}
 
-
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Refreshes the template of the grid control
-gridObj.refreshTemplate(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Refreshes the template of the grid control.
-$("#Grid").ejGrid("refreshTemplate");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.refreshTemplate();   // Refreshes the template of the grid control
+   
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   } 
+{% endhighlight %}
 
 
 ### refreshToolbar()
@@ -7588,24 +7659,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Refreshes the toolbar items state
-gridObj.refreshToolbar(); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.refreshToolbar();   // Refreshes the toolbar items state
 
-
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Refreshes the toolbar items state
-$("#Grid").ejGrid("refreshToolbar");        
-</script>{% endhighlight %}
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
+{% endhighlight %}
 
 ### removeSortedColumns(fieldName)
 {:#methods:removesortedcolumns}
@@ -7638,26 +7702,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Removes a column from sorted column collections
-gridObj.removeSortedColumns("OrderID"); 
-// Removes specified collection of columns from sorted column collections
-gridObj.removeSortedColumns(["CustomerID", "ShipCity"]); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Removes a column from sorted column collections
-$("#Grid").ejGrid("removeSortedColumns", "OrderID");        
-// Removes specified collection of columns from sorted column collections
-$("#Grid").ejGrid("removeSortedColumns", ["CustomerID", "ShipCity"]);        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.removeSortedColumns("OrderID");    // Removes a column from sorted column collections
+    this.Grid.widget.removeSortedColumns(["CustomerID","ShipCity"]);   // Removes specified collection of columns from sorted column collections
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 
 ### render()
@@ -7675,25 +7731,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// It renders the grid.
-gridObj.render(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<div id="Grid"></div&amp;dgt; 
-<script>
-// It renders the grid.
-$("#Grid").ejGrid("render");        
-</script>{% endhighlight %}
-
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.render();   // It renders the grid.
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 ### reorderColumns(fromFieldName, toFieldName)
 {:#methods:reordercolumns}
@@ -7731,22 +7779,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.reorderColumns("OrderID","CustomerID");   // Reorders the column based on the given index
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Reorders the column based on the given index
-gridObj.reorderColumns("OrderID", "CustomerID"); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Reorders the column based on the given index
-$("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
-</script>{% endhighlight %}
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 
 ### resetModelCollections()
@@ -7762,21 +7805,17 @@ Void
 ####Example
 {:.example}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Reset model collections
-gridObj.resetModelCollections(); 
-</script>{% endhighlight %}
-
-{% highlight html %}
- 
-<script>
-// Reset model collections
-$("#Grid").ejGrid("resetModelCollections");
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.resetModelCollections();    // Reset model collections
+     
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 ### resizeColumns(column,width)
 {:#methods:resizecolumns}
@@ -7813,22 +7852,17 @@ Void
 #### Example
 {:.example}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// ResizeColumns
-gridObj.resizeColumns("OrderID",width); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// ResizeColumns
-$("#Grid").ejGrid("resizeColumns","OrderID",width);
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.resizeColumns("OrderID",width);   // ResizeColumns
+   
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 
 ### rowHeightRefresh()
@@ -7845,24 +7879,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.rowHeightRefresh(); // Resolves row height issue
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>         
-// Resolves row height issue
-$("#Grid").ejGrid("rowHeightRefresh");   
-</script>{% endhighlight %}
-
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.rowHeightRefresh();   // Resolves row height issue
+   
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 ### saveCell()
 {:#methods:savecell}
@@ -7878,23 +7905,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Save the edited cell
-gridObj.saveCell(); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
-
-<script>
-
-// Save the edited cell
-$("#Grid").ejGrid("saveCell);
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.saveCell();   // Save the edited cell
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 ### saveCell(preventSaveEvent)
 {:#methods:savecell}
@@ -7926,21 +7947,17 @@ Void
 ####Example
 {:.example}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Prevent save the edited cell
-gridObj.saveCell(true); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
-<script>
-// Prevent save the edited cell
-$("#Grid").ejGrid("saveCell",true);
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.saveCell(true);   // Prevent save the edited cell
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 
 
@@ -7981,19 +7998,18 @@ Void
 ####Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
-// Create grid object.
- var gridObj = $("#Grid").data("ejGrid");
-   gridObj.setDimension(300,400); // Set grid dimension
-  &lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>
-  &lt;script&gt;
- //Set grid dimension based on providing height and width
- &lt;/script&gt;</code>
-</pre>
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.setDimension(300,400);   // Set grid dimension
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
+
 
 ### setWidthToColumns()
 {:#methods:setwidthtocolumns}
@@ -8009,22 +8025,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a request to the grid to refresh columns width
-gridObj.setWidthToColumns(); 
-</script>
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.setWidthToColumns();   // Sends a request to the grid to refresh columns width
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
 {% endhighlight %}
-
-
-{% highlight html %}
-<script>
-// Sends a request to the grid to refresh columns width
-$("#Grid").ejGrid("setWidthToColumns");        
-</script>{% endhighlight %}
 
 ### search(searchString)
 {:#methods:search}
@@ -8057,22 +8068,19 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a search request to the grid
-gridObj.search("France"); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
-
-{% highlight html %}
-<script>
-// Sends a search request to the grid
-$("#Grid").ejGrid("search", "France");        
-</script>{% endhighlight %}
-
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.search("FRANCE");   // Sends a search request to the grid
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;     // Create grid instance.
+   }  
+   
+{% endhighlight %}
 
 ### selectCells(rowCellIndexes)
 {:#methods:selectcells}
@@ -8105,21 +8113,20 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Selects cells based on the given index
-gridObj.selectCells([[1, [4, 3, 2]]]); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
-{% highlight html %}
- 
-<script>
-// Selects cells based on the given index
-$("#Grid").ejGrid("selectCells", [[1, [4, 3, 2]]]);
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.selectCells([[1, [4, 3, 2]]]);  // Selects cells based on the given index
+    
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;     // Create grid instance.
+   }   
+   
+{% endhighlight %}
+
 
 
 ### selectColumns(fromIndex)
@@ -8154,22 +8161,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Selects columns based on the given index
-gridObj.selectColumns(1,4); 
-</script>{% endhighlight %}
+{% highlight ts %}
 
-
-{% highlight html %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.selectColumns(3);    // Selects columns based on the given index
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
  
-<script>
-// Selects columns based on the given index
-$("#Grid").ejGrid("selectColumns", 1, 4);
-</script>{% endhighlight %}
+{% endhighlight %}
 
 ### selectColumns(columnIndex,\[toIndex\])
 {:#methods:selectcolumns}
@@ -8207,22 +8210,18 @@ Boolean
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Selects columns based on the given index
-gridObj.selectColumns(1,4); 
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.selectColumns(1,4);   // Selects columns based on the given index
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
+   {% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// Selects columns based on the given index
-$("#Grid").ejGrid("selectColumns", 1, 4);
-</script>{% endhighlight %}
 
 ### selectRows(fromIndex, toIndex)
 {:#methods:selectrows}
@@ -8260,22 +8259,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Selects rows based on the given index
-gridObj.selectRows(1, 4); 
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.selectRows(1,4);   // Selects rows based on the given index
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }{% endhighlight %}
 
 
-{% highlight html %}
- 
-<script>
-// Selects rows based on the given index
-$("#Grid").ejGrid("selectRows", 1, 4);
-</script>{% endhighlight %}
 
 ### selectRows(from,to,\[target\])
 {:#methods:selectrows}
@@ -8318,22 +8313,16 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Selects rows based on the given index
-gridObj.selectRows(1, 4); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Selects rows based on the given index
-$("#Grid").ejGrid("selectRows", 1, 4);
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.selectRows(1,4);   // Selects rows based on the given index
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }{% endhighlight %}
 
 
 ### selectRows(rowIndexes)
@@ -8367,24 +8356,19 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Selects rows based on the given array of indexes
-gridObj.selectRows([1,3,5,7]);
-
-</script>{% endhighlight %}
-
-
-{% highlight html %}
-<script>
-// Selects rows based on the given array of indexes
-$("#Grid").ejGrid("selectRows",[{1,3,5,7}]);
-</script>{% endhighlight %}
-
-
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.selectRows([1,3,5,7]);    // Selects rows based on the given index
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+   {% endhighlight %}
+   
+   
 ### setCellText()
 {:#methods:setcelltext}
 
@@ -8430,24 +8414,20 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 Void
 
 ####Example
-{:.example}
+{:.example}  
 
-{% highlight html %}
+{% highlight ts %}
+ 
+ export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.setCellText(0,1,"GREYER");   // update a particular cell value
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// update a particular cell value
-gridObj.setCellText(0, 1, "GREYER");
-</script>{% endhighlight %}
-
-{% highlight html %}
-
-<script>
-// update a particular cell value
-$("#Grid").ejGrid("setCellText", 0, 1, "GREYER");
-</script>{% endhighlight %}
-
+{% endhighlight %}
 
 #### setCellText(primaryKeyValue, field, value)
 {:#methods:setcelltext}
@@ -8490,21 +8470,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// update a particular cell value
-gridObj.setCellText(10248,"EmployeeID", "GREYER");
-</script>{% endhighlight %}
+ export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.setCellText(10248,"EmployeeID","GREYER");   // update a particular cell value
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
 
-{% highlight html %}
- 
-<script>
-// update a particular cell value
-$("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 ### setCellValue(index, fieldName, cellValue)
@@ -8550,21 +8527,17 @@ Void
 {:.example}
 
 
-{% highlight html %} 
+{% highlight ts %} 
 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-//Used to update a particular cell value
-gridObj.setCellValue(1,"EmployeeID", "GREYER");
-</script>{% endhighlight %}
-
-{% highlight html %}
- 
-<script>
-//Used to update a particular cell value
-$("#Grid").ejGrid("setCellValue", 1, "EmployeeID", "GREYER");
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.setCellValue(1,"EmployeeID","GREYER");   //Used to update a particular cell value
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
 
 ### setPhoneModeMaxWidth(value)
 {:#methods:setphonemodemaxwidth}
@@ -8599,21 +8572,17 @@ Void
 {:.example}
 
 
-{% highlight html %} 
+{% highlight ts %} 
 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-//Used to render grid rows as details view in mobile mode
-gridObj.setPhoneModeMaxWidth(500);
-</script>{% endhighlight %}
-
-{% highlight html %}
- 
-<script>
-//Used to render grid rows as details view in mobile mode
-$("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.setPhoneModeMaxWidth(500);    //Used to render grid rows as details view in mobile mode
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;     // Create grid instance.
+   }
+{% endhighlight %}
 
 
 ### setValidationToField(fieldName, rules)
@@ -8652,22 +8621,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// It is used to set validation to a field during editing
-gridObj.setValidationToField("OrderID", { required: true }); 
-</script>{% endhighlight %}
+{% highlight ts %} 
 
-
-{% highlight html %}
- 
-<script>
-// It is used to set validation to a field during editing
-$("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.setValidationToField("EmployeeID", { required: true });    // It is used to set validation to a field during editing
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
+{% endhighlight %}
 
 
 ### showColumns(headerText)
@@ -8701,24 +8665,19 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.showColumns("Order ID"); // Shows column based on the given header text of the column
-gridObj.showColumns(["Order ID", "Customer ID"]); // Shows columns based on the array of header text of the columns given
-</script>{% endhighlight %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.showColumns("Order ID");   // Shows column based on the given header text of the column
+    this.Grid.widget.showColumns(["Order ID", "Customer ID"]);   // Shows columns based on the array of header text of the columns given
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;     // Create grid instance.
+   }
+   {% endhighlight %}
 
-
-{% highlight html %}
- 
-<script>
-// Shows column based on the given header text of the column
-$("#Grid").ejGrid("showColumns", "Order ID"); 
-// Shows columns based on the array of header text of the columns given
-$("#Grid").ejGrid("showColumns", ["Order ID", "Customer ID"]);                  
-</script>{% endhighlight %}
 
 ### sortColumn(columnName, \[sortingDirection\])
 {:#methods:sortcolumn}
@@ -8757,22 +8716,17 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-gridObj.sortColumn("OrderID", "ascending"); // Sends a sorting request to the grid with specified columnName and sortDirection
-</script>{% endhighlight %}
+{% highlight ts %}
+ export class AppComponent {
+ngAfterViewInit(){
+    
+    this.Grid.widget.sortColumn("OrderID","ascending");    // Sends a sorting request to the grid with specified columnName and sortDirection
+   
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
 
-
-{% highlight html %}
- 
-<script>
-// Sends a sorting request to the grid with specified columnName and sortDirection
-$("#Grid").ejGrid("sortColumn", "OrderID", "ascending");        
-</script>{% endhighlight %}
-
+{% endhighlight %}
 
 ### startEdit($tr)
 {:#methods:startedit}
@@ -8805,23 +8759,18 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an edit record request to the grid
-gridObj.startEdit($(".gridcontent tr").first()); 
-</script>{% endhighlight %}
+{% highlight ts %}
+ export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.startEdit($(".gridcontent tr").first());    // Sends an edit record request to the grid
+   
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
 
-
-{% highlight html %}
- 
-<script>
-// Sends an edit record request to the grid
-$("#Grid").ejGrid("startEdit", $(".gridcontent tr").first());        
-</script>{% endhighlight %}
-
+{% endhighlight %}
 
 ### ungroupColumn(fieldName)
 {:#methods:ungroupcolumn}
@@ -8854,22 +8803,15 @@ Void
 {:.example}
 
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an ungroup column request to the grid
-gridObj.ungroupColumn("OrderID"); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Sends an ungroup column request to the grid
-$("#Grid").ejGrid("ungroupColumn", "OrderID");        
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.ungroupColumn("Order ID");   // Sends an ungroup column request to the grid
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }{% endhighlight %}
 
 
 ### updateRecord(fieldName, data)
@@ -8908,23 +8850,19 @@ Void
 {:.example}
 
 
-{% highlight html %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });    // Sends a update record request to the grid
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+      
+{% endhighlight %}
+
  
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends a update record request to the grid
-gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Sends a update record request to the grid
-$("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
-</script>{% endhighlight %}
-
 ### windowonresize()
 {:#methods:windowonresize}
 
@@ -8938,21 +8876,18 @@ Void
 ####Example
 {:.example}
 
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Used for resizing the grid window
-gridObj.windowonresize(); 
-</script>{% endhighlight %}
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.windowonresize();     // Used for resizing the grid window
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+   }
+      
+{% endhighlight %}
 
-{% highlight html %}
- 
-<script>
-// Used for resizing the grid window
-$("#Grid").ejGrid("windowonresize");        
-</script>{% endhighlight %}
 
 
 ## Events
@@ -9664,13 +9599,22 @@ Triggered for every grid action before its starts.
 
 ####Example
 {:.example}
-{% highlight html %} 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   actionBegin: function (args){}
-});
-</script>{% endhighlight %}
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (actionBegin)="onActionBegin($event)">
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onActionBegin(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+
+
 
 ### actionComplete
 {:#events:actioncomplete}
@@ -10463,21 +10407,23 @@ columnName</td>
 </tbody>
 </table>
 
-
-
-
 ####Example
 {:.example}
 
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   actionComplete: function (args) {}
-}); 
-</script>{% endhighlight %}
 
+  <ej-grid #grid  [dataSource]="gridData" (actionComplete)="onActionComplete($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onActionComplete(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### actionFailure
 {:#events:actionfailure}
@@ -11068,12 +11014,18 @@ Triggered for every grid action server failure event.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   actionFailure: function (args) {}
-}); 
-</script>{% endhighlight %}
+
+<ej-grid #grid  [dataSource]="gridData" (actionFailure)="onActionFailure($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onActionFailure(e: any){ 
+             //Do Something.
+  }
+ 
+{% endhighlight %}
 
 
 ### batchAdd
@@ -11160,12 +11112,18 @@ Triggered when record batch add.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   batchAdd: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (batchAdd)="onBatchAdd($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onBatchAdd(e: any){ 
+                 //Do Something.
+  }
+
+{% endhighlight %}
 
 ### batchDelete
 {:#events:batchdelete}
@@ -11237,12 +11195,18 @@ Triggered when record batch delete.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   batchDelete: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (batchDelete)="onBatchDelete($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onBatchDelete(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 
 ### beforeBatchAdd
@@ -11315,12 +11279,19 @@ cancel</td>
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   beforeBatchAdd: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (beforeBatchAdd)="OnBeforeBatchAdd($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onBeforeBatchAdd(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### beforeBatchDelete
 {:#events:beforebatchdelete}
@@ -11396,12 +11367,18 @@ Triggered before the batch delete.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   beforeBatchDelete: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (beforeBatchDelete)="OnBeforeBatchDelete($event)"> 
+  
+{% endhighlight %}
+
+{% highlight ts %}
+
+onBeforeBatchDelete(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 
 ### beforeBatchSave
@@ -11462,12 +11439,19 @@ Triggered before the batch save.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   beforeBatchSave: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (beforeBatchSave)="onBeforeBatchSave($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onBeforeBatchSave(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 
 ### beginEdit
@@ -11543,12 +11527,19 @@ Triggered before the record is going to be edited.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   beginEdit: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (beginEdit)="onBeginEdit($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onBeginEdit(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 
 ### cellEdit
@@ -11644,12 +11635,19 @@ Triggered when record cell edit.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   cellEdit: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (cellEdit)="onCellEdit($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onCellEdit(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### cellSave
 {:#events:cellsave}
@@ -11739,12 +11737,19 @@ Triggered when record cell save.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   cellSave: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (cellSave)="onCellSave($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onCellSave(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### cellSelected
 {:#events:cellselected}
@@ -11830,12 +11835,19 @@ Triggered after the cell is selected.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   cellSelected: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (cellSelected)="onCellSelected($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onCellSelected(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### cellSelecting
 {:#events:cellselecting}
@@ -11925,12 +11937,19 @@ Triggered before the cell is going to be selected.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   cellSelecting: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (cellSelecting)="onCellSelecting($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onCellSelecting(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 
 ### columnDrag
@@ -12001,12 +12020,19 @@ Triggered when the column is being dragged.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   columnDrag: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (columnDrag)="onColumnDrag($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onColumnDrag(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### columnDragStart
 {:#events:columndragstart}
@@ -12076,12 +12102,19 @@ Triggered when column dragging begins.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    columnDragStart: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (columnDragStart)="onColumnDragStart($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onColumnDragStart(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### columnDrop
 {:#events:columndrop}
@@ -12151,12 +12184,18 @@ Triggered when the column is dropped.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div>
-<script>
-$("#Grid").ejGrid({
- columnDrop: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (columnDrop)="onColumnDrop($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onColumnDrop(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### rowDrag
 {:#events:rowdrag}
@@ -12231,12 +12270,19 @@ Triggered when the row is being dragged.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   rowDrag: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rowDrag)="onRowDrag($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowDrag(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### rowDragStart
 {:#events:rowdragstart}
@@ -12311,12 +12357,19 @@ Triggered when row dragging begins.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-    rowDragStart: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rowDragStart)="onRowDragStart($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowDragStart(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### rowDrop
 {:#events:rowdrop}
@@ -12391,12 +12444,18 @@ Triggered when the row is dropped.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div>
-<script>
-$("#Grid").ejGrid({
- rowDrop: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rowDrop)="onRowDrop($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowDrop(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 
 ### columnSelected
@@ -12482,12 +12541,18 @@ Triggered after the column is selected.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   columnSelected: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (columnSelected)="onColumnSelected($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onColumnSelected(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### columnSelecting
 {:#events:columnselecting}
@@ -12577,12 +12642,19 @@ Triggered before the column is going to be selected.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   columnSelecting: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (columnSelecting)="onColumnSelecting($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onColumnSelecting(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### contextClick
 {:#events:contextclick}
@@ -12652,12 +12724,18 @@ Triggered when context menu item is clicked
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   contextClick: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (contextClick)="onContextClick($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onContextClick(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### contextOpen
 {:#events:contextopen}
@@ -12727,12 +12805,19 @@ Triggered before the context menu is opened.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   contextOpen: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (contextOpen)="onContextOpen($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onContextOpen(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### create
 {:#events:create}
@@ -12787,12 +12872,18 @@ Triggered when the grid is rendered completely.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div>
-<script>
-$("#Grid").ejGrid({
-   create: function (args){}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (create)="onCreate($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onCreate(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 
 ### dataBound
@@ -12848,12 +12939,19 @@ Triggered when the grid is bound with data during initial rendering.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div>
-<script>
-$("#Grid").ejGrid({
- dataBound: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (dataBound)="onDataBound($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onDataBound(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### destroy
 {:#events:destroy}
@@ -12908,12 +13006,18 @@ Triggered when grid going to destroy.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   destroy: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (destroy)="onDestroy($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onDestroy(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### detailsCollapse
 {:#events:detailscollapse}
@@ -12988,12 +13092,19 @@ Triggered when detail template row is clicked to collapse.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   detailsCollapse: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (detailsCollapse)="onDetailsCollapse($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onDetailsCollpase(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### detailsDataBound
 {:#events:detailsdatabound}
@@ -13059,12 +13170,18 @@ Triggered detail template row is initialized.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div>
-<script>
-$("#Grid").ejGrid({
-   detailsDataBound: function (args){}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (detailsDataBound)="onDetailsDataBound($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onDetailsDataBound(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### detailsExpand
 {:#events:detailsexpand}
@@ -13139,12 +13256,18 @@ Triggered when detail template row is clicked to expand.
 {:.example}
 
 {% highlight html %}
- <div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   detailsExpand: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (detailsExpand)="onDetailsExpand($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onDetailsExpand(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### endAdd
 {:#events:endadd}
@@ -13199,13 +13322,18 @@ Triggered after the record is added.
 {:.example}
 
 {% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   endAdd: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (endAdd)="onEndAdd($event)"> 
+  
+{% endhighlight %}
+
+{% highlight ts %}
+
+onEndAdd(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### endDelete
 {:#events:enddelete}
@@ -13260,12 +13388,18 @@ Triggered after the record is deleted.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   endDelete: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (endDelete)="onEndDelete($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onEndDelete(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### endEdit
 {:#events:endedit}
@@ -13320,13 +13454,18 @@ Triggered after the record is edited.
 {:.example}
 
 {% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   endEdit: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (endEdit)="onEndEdit($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onEndEdit(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 
 ### load
@@ -13388,12 +13527,18 @@ Triggered initial load.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   load: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (load)="onLoad($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onLoad(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### mergeCellInfo
 {:#events:mergecellinfo}
@@ -13484,12 +13629,18 @@ Triggered every time a request is made to access particular cell information, el
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   mergeCellInfo: function (args){}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (mergeCellInfo)="onMergeCellInfo($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onMergeCellInfo(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### queryCellInfo
 {:#events:querycellinfo}
@@ -13569,12 +13720,18 @@ Triggered every time a request is made to access particular cell information, el
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   queryCellInfo: function (args){}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (queryCellInfo)="onQueryCellInfo($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onQueryCellInfo(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### recordClick
 {:#events:recordclick}
@@ -13664,12 +13821,18 @@ Triggered when record is clicked.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   recordClick: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (recordClick)="onRecordClick($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRecordClick(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### recordDoubleClick
 {:#events:recorddoubleclick}
@@ -13759,12 +13922,19 @@ Triggered when record is double clicked.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   recordDoubleClick: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (recordDoubleClick)="onRecordDoubleClick($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRecordDoubleClick(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### resized
 {:#events:resized}
@@ -13849,12 +14019,18 @@ Triggered after column resized.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   resized: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (resized)="onResized($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onResized(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### resizeEnd
 {:#events:resizeend}
@@ -13940,12 +14116,18 @@ Triggered when column resize end.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   resizeEnd: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (resizeEnd)="onResizeEnd($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onResizeEnd(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 
 ### resizeStart
@@ -14021,12 +14203,19 @@ Triggered when column resize start.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   resizeStart: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (resizeStart)="onResizeStart($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onResizeStart(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### rightClick
 {:#events:rightclick}
@@ -14117,12 +14306,18 @@ Triggered when right clicked on grid element.
 
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   rightClick: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rightClick)="onRightClick($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRightClick(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### rowDataBound
 {:#events:rowdatabound}
@@ -14193,13 +14388,18 @@ Triggered every time a request is made to access row information, element and da
 
 
 {% highlight html %}
- 
-<div id="Grid"></div>
-<script>
-$("#Grid").ejGrid({
-   rowDataBound: function (args){}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rawDataBound)="onRawDataBound($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRawDataBound(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### rowSelected
 {:#events:rowselected}
@@ -14284,13 +14484,17 @@ Triggered after the row is selected.
 {:.example}
 
 {% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   rowSelected: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rowSelected)="onRowSelected($event)"> 
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowSelected(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 
 ### rowSelecting
@@ -14371,13 +14575,17 @@ Triggered before the row is going to be selected.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   rowSelecting: function (args) {}
-});
-</script>{% endhighlight %}
 
+  <ej-grid #grid  [dataSource]="gridData" (rowSelecting)="onRowSelecting($event)">
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowSelecting(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### templateRefresh
 {:#events:templaterefresh}
@@ -14453,12 +14661,18 @@ cancel</td>
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div>
-<script>
-$("#Grid").ejGrid({
- templateRefresh: function (args) {}
-});
-</script>{% endhighlight %}
+
+  <ej-grid #grid  [dataSource]="gridData" (templateRefresh)="onTemplateRefresh($event)"> 
+  
+{% endhighlight %}
+
+{% highlight ts %}
+
+onTemplateRefresh(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### toolbarClick
 {:#events:toolbarclick}
@@ -14553,10 +14767,15 @@ Triggered when toolbar item is clicked in grid.
 {:.example}
 
 {% highlight html %}
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   toolbarClick: function (args) {}
-});
-</script>{% endhighlight %}
 
+  <ej-grid #grid  [dataSource]="gridData" (toolbarClick)="onToolBarClick($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onToolBarClick(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
