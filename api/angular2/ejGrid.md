@@ -1231,7 +1231,6 @@ Gets or sets a value that indicates to bind the field which is in foreign column
 #### Example
 {:.example}
 {% highlight html %}
-{% highlight html %}
 <ej-grid id="Grid" [dataSource]="gridData">
     <e-columns>
         <e-column field= "OrderID" ></e-column>
