@@ -1,18 +1,20 @@
 ---
  layout: post
- title: Properties,Methods and Events of Essential Angular2 ejGrid Widget
- description: Methods,members and events avaliable in ejGrid
+ title: Properties,Methods and Events of Essential Angular2 Grid Widget
+ description: Methods,members and events avaliable in Grid
  documentation: API
  platform: angular2-api
- description: API reference for ejGrid
- keywords: ejGrid, API, Essential Angular2 Grid
+ description: API reference for Grid
+ keywords: Grid, API, Essential Angular2 Grid
 ---
  
-#ejGrid
+#Grid
 The grid can be easily configured to the DOM element using the 'ej-grid' html tag. You can create a grid with a highly customizable look and feel.
 
 ####Syntax
-$(element).ejGrid(options)
+<ej-grid id="grid" options>
+
+</ej-grid>
 
 <table class="params">
 <thead>
