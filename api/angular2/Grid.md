@@ -11,27 +11,6 @@
 #Grid
 The grid can be easily configured to the DOM element using the 'ej-grid' html tag. You can create a grid with a highly customizable look and feel.
 
-####Syntax
-<ej-grid id="grid" options>
-
-</ej-grid>
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">options</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for grid</td>
-</tr>
-</tbody>
-</table>
 
 ####Example
 {:.example}
