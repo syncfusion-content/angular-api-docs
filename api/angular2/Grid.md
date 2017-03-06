@@ -8,11 +8,11 @@
  keywords: Grid, API, Essential Angular2 Grid
 ---
  
-#Grid
+# Grid
 The grid can be easily configured to the DOM element using the 'ej-grid' html tag. You can create a grid with a highly customizable look and feel.
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -35,7 +35,7 @@ export class AppComponent {
 
 {% endhighlight %}
 
-####Requires
+#### Requires
 {:.require}
 
 * module:jQuery
@@ -1589,7 +1589,7 @@ Default Value:
 {% highlight html %}
 <script type="text/template" id="colTip">
   {{:value }}
-  </script>
+</script>
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field="OrderID" ></e-column>
@@ -1605,7 +1605,7 @@ this.gridData = window.gridData;
 {% endhighlight %}
 
 
-### columns.type `String`
+### columns.type `string`
 {:#members:columns-type}
 
 Gets or sets a value that indicates to specify the data type of the specified columns.
@@ -5233,7 +5233,7 @@ Adds a grid model property which is to be ignored upon exporting.
 Void
 
 
-####Example
+#### Example
 
 {% highlight ts %}
 
@@ -5261,7 +5261,7 @@ Add a new record in grid control when allowAdding is set as true.
 
 Void
 
-####Example
+#### Example
 
 {% highlight ts %}
 
@@ -5311,7 +5311,7 @@ Add a new record in grid control when allowAdding is set as true.
 
 Void
 
-####Example
+#### Example
 
 {% highlight ts %}
 
@@ -5339,7 +5339,7 @@ Cancel the modified changes in grid control when edit mode is "batch".
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5370,7 +5370,7 @@ Save the modified changes to data source in grid control when edit mode is "batc
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5400,7 +5400,7 @@ Send a cancel request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5431,7 +5431,7 @@ It is used to clear all the cell selection.
 
 Boolean
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5484,7 +5484,7 @@ It is used to clear specified cell selection based on the rowIndex and columnInd
 
 Boolean
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5531,7 +5531,7 @@ It is used to clear all the row selection or at specific row selection based on 
 
 Boolean
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5579,7 +5579,7 @@ It is used to clear all the filtering done.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5611,7 +5611,7 @@ Clear the searching from the grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5660,7 +5660,7 @@ Clear all the row selection or at specific row selection based on the index prov
 Boolean
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5692,7 +5692,7 @@ Clear the sorting from columns in the grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5724,7 +5724,7 @@ Collapse all the group caption rows in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5755,7 +5755,7 @@ Collapse the group drop area in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5806,7 +5806,7 @@ Add or remove columns in grid column collections
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5860,7 +5860,7 @@ Refresh the grid with new data source
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5913,7 +5913,7 @@ Delete a record in grid control when allowDeleting is set as true
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5944,7 +5944,7 @@ Destroy the grid widget all events bound using this._on will be unbind automatic
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -5996,7 +5996,7 @@ Edit a particular cell based on the row index and field name provided in "batch"
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6024,7 +6024,7 @@ Send a save request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6052,7 +6052,7 @@ Expand all the group caption rows in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6099,7 +6099,7 @@ Expand or collapse the row based on the row state in grid
 Void
 
 
-####Example
+#### Example
 {:.example}
 
  
@@ -6126,7 +6126,7 @@ Expand the group drop area in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6409,7 +6409,7 @@ Get the browser details
 
 Object
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6610,7 +6610,7 @@ Get the column index of the given field in grid.
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6635,7 +6635,7 @@ Get the content div element of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6661,7 +6661,7 @@ Get the content table element of grid
 
 Array\<HTMLTableElement\>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6686,7 +6686,7 @@ Get the data of currently edited cell value in "batch" edit mode
 
 Object
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6715,7 +6715,7 @@ Get the current page index in grid pager.
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6741,7 +6741,7 @@ Get the current page data source of grid.
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6783,7 +6783,7 @@ Get the column field name from the given header text in grid.
 
 String
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6810,7 +6810,7 @@ Get the filter bar of grid
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6836,7 +6836,7 @@ Get the records filtered or searched in Grid
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6861,7 +6861,7 @@ Get the footer content of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6887,7 +6887,7 @@ Get the footer table element of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6938,7 +6938,7 @@ Get the header table element of grid
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7050,7 +7050,7 @@ Get the row index based on the given tr element in grid.
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7076,7 +7076,7 @@ Get the pager of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7103,7 +7103,7 @@ Get the names of primary key columns in Grid
 Array
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7151,7 +7151,7 @@ Get the rows(tr element) from the given from and to row index in grid
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7176,7 +7176,7 @@ Get the row height of grid.
 
 number
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7202,7 +7202,7 @@ Get the rows(tr element)of grid which is displayed in the current page.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7229,7 +7229,7 @@ Get the scroller object of grid.
 
 ej.Scroller
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7255,7 +7255,7 @@ Get the selected records details in grid.
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7303,7 +7303,7 @@ Get the calculated summary values of JSON data passed to it
 
 Number
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7329,7 +7329,7 @@ Get the names of all the visible column collections in grid
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7371,7 +7371,7 @@ Send a paging request to specified page in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7416,7 +7416,7 @@ Send a column grouping request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7458,7 +7458,7 @@ Hide columns from the grid based on the header text
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7484,7 +7484,7 @@ Print the grid control
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7511,7 +7511,7 @@ It is used to refresh and reset the changes made in "batch" edit mode
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7539,7 +7539,7 @@ Refresh the grid header.
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7584,7 +7584,7 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7610,7 +7610,7 @@ Refresh the template of the grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7636,7 +7636,7 @@ Refresh the toolbar items in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7708,7 +7708,7 @@ Creates a grid control
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7783,7 +7783,7 @@ Reset the model collections like pageSettings, groupSettings, filterSettings, so
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7856,7 +7856,7 @@ Resolves row height issue when unbound column is used with FrozenColumn
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7882,7 +7882,7 @@ Save the particular edited cell in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7925,7 +7925,7 @@ We can prevent the client side cellSave event triggering by passing the preventS
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -7976,7 +7976,7 @@ Set dimension for grid with corresponding to grid parent.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -8002,7 +8002,7 @@ Send a request to grid to refresh the width set to columns
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8045,7 +8045,7 @@ Send a search request to grid with specified string passed in it
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8090,7 +8090,7 @@ Select cells in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8333,7 +8333,7 @@ Select rows in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8394,7 +8394,7 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 
 Void
 
-####Example
+#### Example
 {:.example}  
 
 {% highlight ts %}
@@ -8504,7 +8504,7 @@ N> It will working only for batch edit mode.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8549,7 +8549,7 @@ N> Need to set same value for max-width in ejgrid.responsive.css file
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8598,7 +8598,7 @@ Set validation to a field during editing.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8642,7 +8642,7 @@ Show columns in the grid based on the header text
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8693,7 +8693,7 @@ Send a sorting request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8736,7 +8736,7 @@ Send an edit record request in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8780,7 +8780,7 @@ Un-group a column from grouped columns collection in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8827,7 +8827,7 @@ Update a edited record in grid control when allowEditing is set as true.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8854,7 +8854,7 @@ It adapts grid to its parent element or to the browsers window.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight ts %}
@@ -9578,7 +9578,7 @@ Triggered for every grid action before its starts.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 {% highlight html %}
 
@@ -10388,7 +10388,7 @@ columnName</td>
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -10991,7 +10991,7 @@ Triggered for every grid action server failure event.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11089,7 +11089,7 @@ Triggered when record batch add.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11172,7 +11172,7 @@ Triggered when record batch delete.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11256,7 +11256,7 @@ cancel</td>
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11344,7 +11344,7 @@ Triggered before the batch delete.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11416,7 +11416,7 @@ Triggered before the batch save.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11504,7 +11504,7 @@ Triggered before the record is going to be edited.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11612,7 +11612,7 @@ Triggered when record cell edit.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11714,7 +11714,7 @@ Triggered when record cell save.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11812,7 +11812,7 @@ Triggered after the cell is selected.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11914,7 +11914,7 @@ Triggered before the cell is going to be selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11997,7 +11997,7 @@ Triggered when the column is being dragged.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12079,7 +12079,7 @@ Triggered when column dragging begins.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12161,7 +12161,7 @@ Triggered when the column is dropped.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12247,7 +12247,7 @@ Triggered when the row is being dragged.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12334,7 +12334,7 @@ Triggered when row dragging begins.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12421,7 +12421,7 @@ Triggered when the row is dropped.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12518,7 +12518,7 @@ Triggered after the column is selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12619,7 +12619,7 @@ Triggered before the column is going to be selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12701,7 +12701,7 @@ Triggered when context menu item is clicked
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12782,7 +12782,7 @@ Triggered before the context menu is opened.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12849,7 +12849,7 @@ Triggered when the grid is rendered completely.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12916,7 +12916,7 @@ Triggered when the grid is bound with data during initial rendering.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12983,7 +12983,7 @@ Triggered when grid going to destroy.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13069,7 +13069,7 @@ Triggered when detail template row is clicked to collapse.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13147,7 +13147,7 @@ Triggered detail template row is initialized.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13233,7 +13233,7 @@ Triggered when detail template row is clicked to expand.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13299,7 +13299,7 @@ Triggered after the record is added.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13365,7 +13365,7 @@ Triggered after the record is deleted.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13431,7 +13431,7 @@ Triggered after the record is edited.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13504,7 +13504,7 @@ Triggered initial load.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13606,7 +13606,7 @@ Triggered every time a request is made to access particular cell information, el
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13697,7 +13697,7 @@ Triggered every time a request is made to access particular cell information, el
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13798,7 +13798,7 @@ Triggered when record is clicked.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13899,7 +13899,7 @@ Triggered when record is double clicked.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13996,7 +13996,7 @@ Triggered after column resized.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14093,7 +14093,7 @@ Triggered when column resize end.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14180,7 +14180,7 @@ Triggered when column resize start.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14282,7 +14282,7 @@ Triggered when right clicked on grid element.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -14364,7 +14364,7 @@ Triggered every time a request is made to access row information, element and da
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -14461,7 +14461,7 @@ Triggered after the row is selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14552,7 +14552,7 @@ Triggered before the row is going to be selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14638,7 +14638,7 @@ cancel</td>
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14744,7 +14744,7 @@ Triggered when toolbar item is clicked in grid.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
