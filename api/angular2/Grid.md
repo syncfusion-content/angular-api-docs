@@ -3684,6 +3684,49 @@ this.gridData = window.gridData;
 this.rowDropSettings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
 {% endhighlight %}
 
+### rowDropSettings.dragBehaviour `enum`
+{:#members:rowdropsettings-dragbehaviour}
+
+<ts name="ej.Grid.DragBehaviour"/>
+
+Gets or sets a value that indicates whether to define the behaviour for drag.
+
+#### Default Value:
+{:.param}
+* ej.Grid.DragBehaviour.Move
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Move</td>
+<td class="description">Moves a dragged row from one grid to another</td>
+</tr>
+<tr>
+<td class="name">Copy</td>
+<td class="description">Copies a dragged row from one grid to another</td>
+</tr>
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" style="float:left;width:49%" [dataSource]="gridData" allowPaging="true" allowRowDragAndDrop="true" [rowDropSettings]="rowDropSettings" >
+</ej-grid> 
+<ej-grid id="DestGrid" style="float:right;width:49%" [dataSource]="employee" allowPaging="true" allowRowDragAndDrop="true">
+</ej-grid>
+{% endhighlight %}
+
+
+{% highlight ts %}
+//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.employee = window.employeeView;
+this.rowDropSettings={dropTargetID: "#DestGrid",dragBehaviour :ej.Grid.DragBehaviour.Copy};
+{% endhighlight %}
+
 ### searchSettings `Object`
 {:#members:searchsettings}
 
