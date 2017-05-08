@@ -13559,7 +13559,7 @@ Triggered every time a request is made to access particular cell information, el
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
@@ -13661,7 +13661,7 @@ Triggered every time a request is made to access particular cell information, el
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
@@ -14338,7 +14338,7 @@ Triggered every time a request is made to access row information, element and da
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
@@ -14612,7 +14612,7 @@ cancel</td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current row data.</td>
 </tr>
