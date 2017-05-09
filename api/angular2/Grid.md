@@ -3684,16 +3684,16 @@ this.gridData = window.gridData;
 this.rowDropSettings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
 {% endhighlight %}
 
-### rowDropSettings.dragBehaviour `enum`
-{:#members:rowdropsettings-dragbehaviour}
+### rowDropSettings.dragBehavior `enum`
+{:#members:rowdropsettings-dragbehavior}
 
-<ts name="ej.Grid.DragBehaviour"/>
+<ts name="ej.Grid.DragBehavior"/>
 
-Gets or sets a value that indicates whether to define the behaviour for drag.
+Gets or sets a value that indicates whether to define the behavior for drag.
 
 #### Default Value:
 {:.param}
-* ej.Grid.DragBehaviour.Move
+* ej.Grid.DragBehavior.Move
 
 <table>
 <tr>
@@ -3724,7 +3724,7 @@ Gets or sets a value that indicates whether to define the behaviour for drag.
 //The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 this.gridData = window.gridData;
 this.employee = window.employeeView;
-this.rowDropSettings={dropTargetID: "#DestGrid",dragBehaviour :ej.Grid.DragBehaviour.Copy};
+this.rowDropSettings={dropTargetID: "#DestGrid",dragBehavior :ej.Grid.DragBehavior.Copy};
 {% endhighlight %}
 
 ### searchSettings `Object`
