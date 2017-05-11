@@ -874,7 +874,7 @@ this.gridData = window.gridData;
 this.customAttributes={"style":"color:red"};
 {% endhighlight %}
 
-### columns.dataSource `Array`
+### columns.dataSource `Object`
 {:#members:columns-datasource}
 
 Gets or sets a value that indicates to bind the external datasource to the particular column when column `editType` as `dropdownedit` and also it is used to bind the datasource to the foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
@@ -5843,7 +5843,7 @@ Refresh the grid with new data source
 <tbody>
 <tr>
 <td class="name">datasource</td>
-<td class="type"><span class="param-type">array</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass new data source to the grid</td>
 </tr>
 <tr>
