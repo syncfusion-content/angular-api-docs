@@ -13623,6 +13623,80 @@ onMergeCellInfo(e: any){
 
 {% endhighlight %}
 
+### mergeHeaderCellInfo
+{:#events:mergeheadercellinfo}
+
+Triggered every time a request is made to access particular header cell information, element and data.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from grid
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td class="name">columnHeaders</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the column object.</td>
+</tr>
+
+<tr>
+<td class="name">headerCellMerge</td>
+<td class="type"><span class="param-type">void</span></td>
+<td class="description last">Method to merge the Grid columns headers.</td>
+</tr>
+<tr>
+
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (mergeHeaderCellInfo)="onMergeHeaderCellInfo($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onMergeHeaderCellInfo(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+
+
 ### queryCellInfo
 {:#events:querycellinfo}
 
