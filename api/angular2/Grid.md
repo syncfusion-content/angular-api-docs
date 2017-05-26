@@ -5353,6 +5353,50 @@ ngAfterViewInit(){
 
 {% endhighlight %}
 
+### addIgnoreOnToolbarServerClick(propertyNames)
+{:#methods:addignoreontoolbarserverclick}
+
+Adds a grid model property which is to be ignored upon OnServerToolbarClick.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">propertyNames</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description last">Pass the array of parameters which need to be ignored on OnServerToolbarClick </td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+
+#### Example
+
+{% highlight ts %}
+ 
+export class AppComponent {
+    
+ngAfterViewInit(){
+
+    this.Grid.widget.addIgnoreOnToolbarServerClick("filterSettings");    // Sends a request to ignore the filterSettings property upon exporting
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+
+}
+
+{% endhighlight %}
 
 ### addRecord()
 {:#methods:addrecord}
