@@ -5977,6 +5977,53 @@ ngAfterViewInit(){
 {% endhighlight %}
 
 
+### deleteRow($tr)
+{:#methods:deleterow}
+
+Delete the row based on the given tr element in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">$tr</td>
+<td class="type"><span class="param-type">jQuery</span></td>
+<td class="description last">Pass the tr element in grid content to get its row index</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Returns:
+{:#methods:returns:}
+
+Element
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+
+export class AppComponent {
+
+ngAfterViewInit(){
+
+    this.Grid.widget.deleteRow($(".gridcontent tr").first());       // Sends a delete record request to the grid
+
+}
+
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+
+}
+{% endhighlight %}
+
 
 ### destroy()
 {:#methods:destroy}
@@ -6056,6 +6103,31 @@ ngAfterViewInit(){
 
 {% endhighlight %}
 
+### editFormValidate()
+{:#methods:editformvalidate}
+
+It returns a value and if the input field values of edit form is not based on the validation rules then it will show the validation message.
+
+#### Returns:
+{:#methods:returns:}
+
+Boolean
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.editFormValidate();   // Edit particular cell based on row index and column field name
+}
+@ViewChild('grid') Grid: EJComponents<any, any>;  // Create grid instance.
+}
+
+{% endhighlight %}
 
 
 ### endEdit()
@@ -6800,6 +6872,42 @@ ngAfterViewInit(){
 }
 {% endhighlight %}
 
+
+### getDataByIndex(rowIndex)
+{:#methods:getdatabyindex}
+
+Get the data of given row index in grid.
+
+N> It will work only for batch edit mode.
+
+#### Returns:
+{:#methods:returns:}
+
+Object
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getDataByIndex(0);        // Gets current view data of grid control 
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
+}
+{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+// Gets data of corresponding row index in grid control
+$("#Grid").ejGrid("getDataByIndex",0);        
+</script>
+{% endhighlight %}
+
 ### getFieldNameByHeaderText(headerText)
 {:#methods:getfieldnamebyheadertext}
 
@@ -7314,6 +7422,84 @@ ngAfterViewInit(){
 }
 {% endhighlight %}
 
+### getSelectedRows()
+{:#methods:getselectedrows}
+
+Get the selected row element details in grid.
+
+#### Returns:
+{:#methods:returns:}
+
+Array
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getSelectedRows();   // Gets the selected row list
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Gets the selected row element list
+$("#Grid").ejGrid("getSelectedRows");        
+</script>
+{% endhighlight %}
+
+### getsortColumnByField(field)
+{:#methods:getsortcolumnbyfield}
+
+It accepts the string value and returns the field and sorted direction of the column in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">field</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the field of the column to get the sorted direction of the corresponding column in Grid.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.getsortColumnByField("OrderID");   // Gets the selected row list
+} 
+@ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+}
+{% endhighlight %}
+
 
 ### getSummaryValues(summaryCol, summaryData)
 {:#methods:getsummaryvalues}
@@ -7815,6 +8001,57 @@ ngAfterViewInit(){
    @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
    }
 {% endhighlight %}
+
+
+
+### reorderRows(indexes, toIndex)
+{:#methods:reorderrows}
+
+Re-order the row in grid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">indexes</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description last">Pass the indexes of the rows needs to reorder.</td>
+</tr>
+<tr>
+<td class="name">toIndex</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description last">Pass the index of a row where to be reordered.</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.reorderRows([0,1],3);    // Reorders the column based on the given index
+ 
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
+
 
 
 ### resetModelCollections()
@@ -8564,6 +8801,36 @@ ngAfterViewInit(){
    }
 {% endhighlight %}
 
+
+### setDefaultData(defaultData)
+{:#methods:setdefaultdata}
+
+It sets the default data to the column in grid during adding record in batch edit mode.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight ts %} 
+
+export class AppComponent {
+    
+ngAfterViewInit(){
+
+    var defaultData = {OrderID:"10000"};
+       //Set the default date to the column in grid.
+    
+    this.Grid.widget.setDefaultData(defaultData);   //Used to update a particular cell value
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
+
 ### setPhoneModeMaxWidth(value)
 {:#methods:setphonemodemaxwidth}
 
@@ -8609,6 +8876,41 @@ ngAfterViewInit(){
    }
 {% endhighlight %}
 
+### setValidation()
+{:#methods:setvalidation}
+
+Set validation to edit form in the grid.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// It is used to set validation to columns.
+gridObj.setValidation(); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// It is used to set validation to columns.
+$("#Grid").ejGrid("setValidation");
+</script>
+{% endhighlight %}
+
+
+
 
 ### setValidationToField(fieldName, rules)
 {:#methods:setvalidationtofield}
@@ -8652,7 +8954,7 @@ export class AppComponent {
     
 ngAfterViewInit(){
     
-    this.Grid.widget.setValidationToField("EmployeeID", { required: true });    // It is used to set validation to a field during editing
+    this.Grid.widget.setValidation();    // It is used to set validation to a field during editing
    }
    @ViewChild('grid') Grid: EJComponents<any, any>;    // Create grid instance.
    }
@@ -11478,6 +11780,154 @@ onBeforeBatchSave(e: any){
 {% endhighlight %}
 
 
+### beforePrint
+{:#events:beforePrint}
+
+Triggered before the print.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when beforePrint event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Grid element.</td>
+</tr>
+<tr>
+<td class="name">selectedRows</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the selected records.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (beforePrint)="onbeforePrint($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onbeforePrint(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+
+### beforeRowDrop
+{:#events:beforeRowDrop}
+
+Triggered before row drop in the grid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when beforeRowDrop event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the targeted row.</td>
+</tr>
+<tr>
+<td class="name">targetIndex</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the targeted row index.</td>
+</tr>
+<tr>
+<td class="name">draggedRecords</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the dragged record details</td>
+</tr>
+<tr>
+<td class="name">dropDetails</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the drop details</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (beforeRowDrop)="onbeforeRowDrop($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onbeforeRowDrop(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 
 ### beginEdit
 {:#events:beginedit}
@@ -11975,7 +12425,169 @@ onCellSelecting(e: any){
 
 {% endhighlight %}
 
+### cellDeselected
+{:#events:celldeselected}
 
+Triggered after the cell is deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when cellDeselected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselected cell index value.</td>
+</tr>
+<tr>
+<td class="name">currentCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselected cell element.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (cellDeSelected)="onCellDeSelected($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onCellDeSelected(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+
+### cellDeselecting
+{:#events:celldeselecting}
+
+Triggered before the cell is going to be deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when cellDeselecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselecting cell index value.</td>
+</tr>
+<tr>
+<td class="name">currentCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselecting cell element.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">isCtrlKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the ctrl key is pressed while deselecting cell</td>
+</tr>
+<tr>
+<td class="name">isShiftKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the shift key is pressed while deselecting cell</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (cellDeSelecting)="onCellDeSelecting($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onCellDeSelecting(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
 
 ### columnDrag
 {:#events:columndrag}
@@ -12675,6 +13287,170 @@ Triggered before the column is going to be selected.
 {% highlight ts %}
 
 onColumnSelecting(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+
+
+### columnDeselected
+{:#events:columndeselected}
+
+Triggered after the column is deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when columnDeselected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the Deselected column index value.</td>
+</tr>
+<tr>
+<td class="name">headerCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Deselected column header element.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns corresponding column object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (columnDeSelected)="onColumnDeSelected($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onColumnDeSelected(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+### columnDeselecting
+{:#events:columndeselecting}
+
+Triggered before the column is going to be deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when columnDeselecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselecting column index value.</td>
+</tr>
+<tr>
+<td class="name">headerCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselecting column header element.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns corresponding column object (JSON).</td>
+</tr>
+<tr>
+<td class="name">isCtrlKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the ctrl key is pressed while deselecting column</td>
+</tr>
+<tr>
+<td class="name">isShiftKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the shift key is pressed while deselecting column</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (columnDeSelecting)="onColumnDeSelecting($event)"> 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+onColumnDeSelecting(e: any){ 
              //Do Something.
   }
 
@@ -14602,6 +15378,168 @@ Triggered before the row is going to be selected.
 {% highlight html %}
 
   <ej-grid #grid  [dataSource]="gridData" (rowSelecting)="onRowSelecting($event)">
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowSelecting(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+### rowDeselected
+{:#events:rowdeselected}
+
+Triggered after the row is deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowDeselected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the row index of the deselected row.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current deselected row element.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rowDeSelected)="onRowDeSelected($event)"> 
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowSelected(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
+
+
+### rowDeselecting
+{:#events:rowdeselecting}
+
+Triggered before the row is going to be deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowDeselecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselecting row index value.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselecting row element.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">isCtrlKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the ctrl key is pressed while deselecting row</td>
+</tr>
+<tr>
+<td class="name">isShiftKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the shift key is pressed while deselecting row</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rowDeSelecting)="onRowDeSelecting($event)">
 {% endhighlight %}
 
 {% highlight ts %}
