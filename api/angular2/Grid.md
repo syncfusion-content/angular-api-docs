@@ -1203,7 +1203,7 @@ Gets or sets a value that indicates to render the excel or menu filter dialog to
 #### Example
 {:.example}
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" filterSettings: "filter"   >
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]= "filter"   >
     <e-columns>
         <e-column field= "OrderID"></e-column>
         <e-column field= "Freight"></e-column>
