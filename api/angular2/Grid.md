@@ -1173,6 +1173,52 @@ this.gridData = window.gridData;
 this.filterBarTemplate={ create: function (args) {return "<input>"},write: function (args) {var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(args.column.filterBarTemplate.read, this, args) });},read: function (args) {this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)}};
 {% endhighlight %}
 
+
+### columns.filterType `enum`
+{:#members:columns-filtertype}
+
+<ts name="ej.Grid.FilterType"/>
+
+Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See <a href="global.html#enum:filterType">filterType</a>
+
+#### Default Value:
+{:.param}
+* null
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Specifies the filter type as menu.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the filter type as excel.</td>
+</tr>
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" filterSettings: "filter"   >
+    <e-columns>
+        <e-column field= "OrderID"></e-column>
+        <e-column field= "Freight"></e-column>
+        <e-column field= "EmployeeID" [filterType]="filtertype"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filter = { filterType: "menu"};
+this.filtertype={filterType: ej.Grid.FilterType.Excel };
+{% endhighlight %}
+
 ### columns.foreignKeyField `String`
 {:#members:columns-foreignkeyfield}
 
@@ -2658,6 +2704,102 @@ To Disable the mouse swipe property as false.
 this.gridData = window.gridData;
 {% endhighlight %}
 
+### enableToolbarItems `Boolean`
+{:#members:enabletoolbaritems}
+
+It sets a value that indicates whether to enable toolbar items, when allowEditing, allowAdding and allowDeleting property set as false in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]= "edit" [toolbarSettings]= "tool">
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+public edit = { allowEditing: true, allowAdding: true, allowDeleting: true }
+public tool =  { showToolbar: true, toolbarItems: ["add","edit","delete","update","cancel"] }
+{% endhighlight %}
+
+### exportToExcelAction `string`
+{:#members:exporttoexcelaction}
+
+Act as mapper for the excel exporting URL.
+
+#### Default Value:
+{:.param}
+* ExportToExcel
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]= "edit" [exportToExcelAction]= "exportExcel" [toolbarSettings]= "tool">
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+public tool =  { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport] };
+public exportExcel =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/ExcelExport";
+
+{% endhighlight %}
+
+
+### exportToPdfAction `string`
+{:#members:exporttopdfaction}
+
+Act as mapper for the PDF exporting URL.
+
+#### Default Value:
+{:.param}
+* ExportToPdf
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]= "edit" [exportToPdfAction]= "exportPdf" [toolbarSettings]= "tool">
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+public tool =  { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.PdfExport] }
+public exportPdf =  "http://js.syncfusion.com/ExportingServices/api/JSGridExport/PdfExport";
+
+{% endhighlight %}
+### exportToWordAction `string`
+{:#members:exporttowordaction}
+
+Act as mapper for the Word exporting URL.
+
+#### Default Value:
+{:.param}
+* ExportToWord
+
+#### Example
+{:.example}
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" [editSettings]= "edit" [exportToWordAction]= "exportWord" [toolbarSettings]= "tool">
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+public tool =  { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.WordExport] }
+public exportWord = "http://js.syncfusion.com/ExportingServices/api/JSGridExport/WordExport";
+
+{% endhighlight %}
+
+
 ### filterSettings `Object`
 {:#members:filtersettings}
 
@@ -2684,6 +2826,30 @@ Gets or sets a value that indicates to perform the filter operation with case se
 this.gridData = window.gridData;;
 this.filterSettings={ enableCaseSensitivity:true, filterType:ej.Grid.FilterType.Excel};
 {% endhighlight %}
+
+### filterSettings.enableInterDeterminateState `Boolean`
+{:#members:filtersettings-enableinterdeterminatestate}
+
+Gets or sets a value that indicates to define the interDeterminateState of checkbox in excel filter dialog.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;;
+this.filterSettings={ enableInterDeterminateState:false, filterType:ej.Grid.FilterType.Excel};
+{% endhighlight %}
+
+
 
 ### filterSettings.filterBarMode `enum`
 {:#members:filtersettings-filterbarmode}
@@ -2736,6 +2902,11 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 
 ### filterSettings.filteredColumns.field `string`
 {:#members:filtersettings-filteredcolumns-field}
+
+### filterSettings.filteredColumns.matchCase `Boolean`
+{:#members:filtersettings-filteredcolumns-matchcase}
+
+Gets or sets a value that indicates whether to define the matchCase of given value to be filter.
 
 Gets or sets a value that indicates whether to define the field name of the column to be filter.
 
@@ -2857,6 +3028,28 @@ This specifies the grid to show the filterBar or filterMenu to the grid records.
 this.gridData = window.gridData;
 this.filterSettings={ filterType: ej.Grid.FilterType.Menu};
 {% endhighlight %}
+
+### filterSettings.immediateModeDelay `Number`
+{:#members:filtersettings-immediatemodedelay}
+
+This specifies the grid to delay the filter action while typing in the filterBar.
+
+#### Default Value:
+{:.param}
+* 1500
+
+#### Example
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowFiltering="true" [filterSettings]="filterSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.filterSettings={ filterBarMode: ej.Grid.FilterBarMode.Immediate, immediateModeDelay:2000 };
+{% endhighlight %}
+
 
 ### filterSettings.maxFilterChoices `Number`
 {:#members:filtersettings-maxfilterchoices}
@@ -3862,6 +4055,43 @@ this.multiple=ej.Grid.SelectionType.Multiple;
 
 This property is used to configure the selection behavior of the grid.
 
+### selectionSettings.cellSelectionMode `String`
+{:#members:selectionsettings-cellselectionmode}
+
+Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
+
+#### Default Value:
+{:.param}
+* flow
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">flow</td>
+<td class="description">It selects cells continuously from the start cell to end cell.</td>
+</tr>
+<tr>
+<td class="name">box</td>
+<td class="description">It selects range of cells as a block from start cell to the end cell.</td>
+</tr> 
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowSelection="true" [selectionSettings]="selectionSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.selectionSettings={selectionMode: ["cell"], cellSelectionMode: "box" };
+{% endhighlight %}
+
 ### selectionSettings.enableToggle `Boolean`
 {:#members:selectionsettings-enabletoggle}
 
@@ -3987,6 +4217,51 @@ This specify the grid to to view data that you require without buffering the ent
 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 this.gridData = window.gridData;
 this.scrollSettings={width:300,height:100,allowVirtualScrolling:true};
+{% endhighlight %}
+
+
+### scrollSettings.autoHide `Boolean`
+{:#members:scrollsettings-autohide}
+ 
+It accepts the boolean value and shows or hides the scrollbar while focus in or focus out of the Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={autoHide: true};
+{% endhighlight %}
+
+### scrollSettings.buttonSize `Number`
+{:#members:scrollsettings-buttonsize}
+ 
+Specifies the height and width of button in the scrollbar.
+
+#### Default Value:
+{:.param}
+* 18
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowScrolling="true" [scrollSettings]="scrollSettings" >
+</ej-grid> 
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.scrollSettings={ buttonSize:20 };
 {% endhighlight %}
 
 ### scrollSettings.enableTouchScroll `Boolean`
@@ -4500,6 +4775,40 @@ this.gridData = window.gridData;
 this.right=ej.TextAlign.Right;
 this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"OrderID,Frieght",textAlign:ej.TextAlign.Right},{headerText:"CustomerID,OrderDate",column:"CustomerID,OrderDate",textAlign:ej.TextAlign.Left}]}];
 {% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.tooltip `String`
+{:#members:stackedheaderrows-stackedheadercolumns-tooltip}
+
+Sets the template for tooltip for the Grid stackedHeaderColumns.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+
+{% highlight html %} 
+<ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true" [textAlign]="right" [stackedHeaderRows]="stackedHeaderRows">
+    <e-columns>
+        <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
+        <e-column field="CustomerID" headerText="Customer ID" width="80" [textAlign]="right"></e-column>
+        <e-column field="OrderDate" headerText="OrderDate" width="80" format="{0:MM/dd/yyyy}" [textAlign]="right"></e-column>
+        <e-column field="Freight" format="{0:C2}" width="80" [textAlign]="right"></e-column>
+    </e-columns>
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.right=ej.TextAlign.Right;
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textalign: 
+         ej.TextAlign.Right},{headerText:"Frieght",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Date &amp; Location Top Level",tooltip:"#colTip",column:"ShipCity"}
+           ]}];
+{% endhighlight %}
+
 
 ### summaryRows `Array`
 {:#members:summaryrows}
