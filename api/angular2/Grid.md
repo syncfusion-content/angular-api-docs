@@ -12799,13 +12799,13 @@ Triggered after the cell is deselected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData" (cellDeSelected)="onCellDeSelected($event)"> 
+  <ej-grid #grid  [dataSource]="gridData" (cellDeselected)="onCellDeselected($event)"> 
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-onCellDeSelected(e: any){ 
+onCellDeselected(e: any){ 
              //Do Something.
   }
 
@@ -12886,13 +12886,13 @@ Triggered before the cell is going to be deselected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData" (cellDeSelecting)="onCellDeSelecting($event)"> 
+  <ej-grid #grid  [dataSource]="gridData" (cellDeselecting)="onCellDeselecting($event)"> 
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-onCellDeSelecting(e: any){ 
+onCellDeselecting(e: any){ 
              //Do Something.
   }
 
@@ -13667,13 +13667,13 @@ Triggered after the column is deselected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData" (columnDeSelected)="onColumnDeSelected($event)"> 
+  <ej-grid #grid  [dataSource]="gridData" (columnDeselected)="onColumnDeselected($event)"> 
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-onColumnDeSelected(e: any){ 
+onColumnDeselected(e: any){ 
              //Do Something.
   }
 
@@ -13753,13 +13753,13 @@ Triggered before the column is going to be deselected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData" (columnDeSelecting)="onColumnDeSelecting($event)"> 
+  <ej-grid #grid  [dataSource]="gridData" (columnDeselecting)="onColumnDeselecting($event)"> 
 
 {% endhighlight %}
 
 {% highlight ts %}
 
-onColumnDeSelecting(e: any){ 
+onColumnDeselecting(e: any){ 
              //Do Something.
   }
 
@@ -15761,12 +15761,12 @@ Triggered after the row is deselected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData" (rowDeSelected)="onRowDeSelected($event)"> 
+  <ej-grid #grid  [dataSource]="gridData" (rowDeselected)="onRowDeselected($event)"> 
 {% endhighlight %}
 
 {% highlight ts %}
 
-onRowSelected(e: any){ 
+onRowDeselected(e: any){ 
              //Do Something.
   }
 
@@ -15848,12 +15848,12 @@ Triggered before the row is going to be deselected.
 
 {% highlight html %}
 
-  <ej-grid #grid  [dataSource]="gridData" (rowDeSelecting)="onRowDeSelecting($event)">
+  <ej-grid #grid  [dataSource]="gridData" (rowDeselecting)="onRowDeselecting($event)">
 {% endhighlight %}
 
 {% highlight ts %}
 
-onRowSelecting(e: any){ 
+onRowDeselecting(e: any){ 
              //Do Something.
   }
 
