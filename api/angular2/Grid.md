@@ -4098,14 +4098,14 @@ this.multiple=ej.Grid.SelectionType.Multiple;
 
 This property is used to configure the selection behavior of the grid.
 
-### selectionSettings.cellSelectionMode `String`
+### selectionSettings.cellSelectionMode `enum`
 {:#members:selectionsettings-cellselectionmode}
 
 Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
 
 #### Default Value:
 {:.param}
-* flow
+* ej.Grid.CellSelectionMode.Flow
 
 <table>
 <tr>
@@ -4113,11 +4113,11 @@ Gets or sets a value that indicates the cell selection actions based on the cell
 <th>Description</th>
 </tr>
 <tr>
-<td class="name">flow</td>
+<td class="name">Flow</td>
 <td class="description">It selects cells continuously from the start cell to end cell.</td>
 </tr>
 <tr>
-<td class="name">box</td>
+<td class="name">Box</td>
 <td class="description">It selects range of cells as a block from start cell to the end cell.</td>
 </tr> 
 </table>
@@ -4132,7 +4132,7 @@ Gets or sets a value that indicates the cell selection actions based on the cell
 {% highlight ts %}
 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 this.gridData = window.gridData;
-this.selectionSettings={selectionMode: ["cell"], cellSelectionMode: "box" };
+this.selectionSettings={selectionMode: ["cell"], cellSelectionMode: ej.Grid.CellSelectionMode.Box };
 {% endhighlight %}
 
 ### selectionSettings.enableToggle `Boolean`
