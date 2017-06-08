@@ -1,11 +1,11 @@
 ---
  layout: post
- title: Properties,Methods and Events of Essential Angular2 Grid Widget
+ title: Properties,Methods and Events of Essential Angular Grid Widget
  description: Methods,members and events avaliable in Grid
  documentation: API
- platform: angular2-api
+ platform: angular-api
  description: API reference for Grid
- keywords: Grid, API, Essential Angular2 Grid
+ keywords: Grid, API, Essential Angular Grid
 ---
  
 # Grid
