@@ -8116,6 +8116,51 @@ ngAfterViewInit(){
    }
 {% endhighlight %}
 
+
+### hideColumns(columnIndex)
+{:#methods:hidecolumns}
+
+Hide columns from the grid based on the columnIndex.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">array/number</span></td>
+<td class="description last">you can pass either array of columnIndex of various columns or a columnIndex of a column to hide</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.hideColumns(0);  // Hides column based on the given column Index of the column
+    this.Grid.widget.hideColumns([0,1]);    // Hide columns based on the array of column Indexes of the columns given
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance.
+   }
+{% endhighlight %}
+
+
 ### print()
 {:#methods:print}
 
@@ -9412,6 +9457,51 @@ ngAfterViewInit(){
     
     this.Grid.widget.showColumns("Order ID");   // Shows column based on the given header text of the column
     this.Grid.widget.showColumns(["Order ID", "Customer ID"]);   // Shows columns based on the array of header text of the columns given
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;     // Create grid instance.
+   }
+   {% endhighlight %}
+
+
+### showColumns(columnIndex)
+{:#methods:showcolumns}
+
+Show columns in the grid based on the columnIndex.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">array/number</span></td>
+<td class="description last">you can pass either array of columnIndex of various columns or a column Index of a column to show</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight ts %}
+ 
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.showColumns(0);   // Shows column based on the given column Index of the column
+    this.Grid.widget.showColumns([0,1]);   // Shows columns based on the array of column Indexes of the columns given
    }
    @ViewChild('grid') Grid: EJComponents<any, any>;     // Create grid instance.
    }
