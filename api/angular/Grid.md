@@ -3877,49 +3877,6 @@ this.gridData = window.gridData;
 this.rowDropSettings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
 {% endhighlight %}
 
-### rowDropSettings.dragBehavior `enum`
-{:#members:rowdropsettings-dragbehavior}
-
-<ts name="ej.Grid.DragBehavior"/>
-
-Gets or sets a value that indicates whether to define the behavior for drag.
-
-#### Default Value:
-{:.param}
-* ej.Grid.DragBehavior.Move
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Move</td>
-<td class="description">Moves a dragged row from one grid to another</td>
-</tr>
-<tr>
-<td class="name">Copy</td>
-<td class="description">Copies a dragged row from one grid to another</td>
-</tr>
-</table>
-
-#### Example
-{:.example}
-{% highlight html %}
-<ej-grid id="Grid" style="float:left;width:49%" [dataSource]="gridData" allowPaging="true" allowRowDragAndDrop="true" [rowDropSettings]="rowDropSettings" >
-</ej-grid> 
-<ej-grid id="DestGrid" style="float:right;width:49%" [dataSource]="employee" allowPaging="true" allowRowDragAndDrop="true">
-</ej-grid>
-{% endhighlight %}
-
-
-{% highlight ts %}
-//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-this.gridData = window.gridData;
-this.employee = window.employeeView;
-this.rowDropSettings={dropTargetID: "#DestGrid",dragBehavior :ej.Grid.DragBehavior.Copy};
-{% endhighlight %}
-
 ### searchSettings `Object`
 {:#members:searchsettings}
 
@@ -4098,14 +4055,16 @@ this.multiple=ej.Grid.SelectionType.Multiple;
 
 This property is used to configure the selection behavior of the grid.
 
-### selectionSettings.cellSelectionMode `String`
+### selectionSettings.cellSelectionMode `enum`
 {:#members:selectionsettings-cellselectionmode}
+
+<ts name="ej.Grid.CellSelectionMode"/>
 
 Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
 
 #### Default Value:
 {:.param}
-* flow
+* ej.Grid.CellSelectionMode.Flow
 
 <table>
 <tr>
@@ -4113,11 +4072,11 @@ Gets or sets a value that indicates the cell selection actions based on the cell
 <th>Description</th>
 </tr>
 <tr>
-<td class="name">flow</td>
+<td class="name">Flow</td>
 <td class="description">It selects cells continuously from the start cell to end cell.</td>
 </tr>
 <tr>
-<td class="name">box</td>
+<td class="name">Box</td>
 <td class="description">It selects range of cells as a block from start cell to the end cell.</td>
 </tr> 
 </table>
@@ -4132,7 +4091,7 @@ Gets or sets a value that indicates the cell selection actions based on the cell
 {% highlight ts %}
 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 this.gridData = window.gridData;
-this.selectionSettings={selectionMode: ["cell"], cellSelectionMode: "box" };
+this.selectionSettings={selectionMode: ["cell"], cellSelectionMode: ej.Grid.CellSelectionMode.Box };
 {% endhighlight %}
 
 ### selectionSettings.enableToggle `Boolean`
@@ -9999,6 +9958,11 @@ Triggered for every grid action before its starts.
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
@@ -10088,6 +10052,11 @@ Triggered for every grid action before its starts.
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
@@ -10136,6 +10105,11 @@ Triggered for every grid action before its starts.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
@@ -10763,6 +10737,11 @@ Triggered for every grid action success event.
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">selectedRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selectedRow index.</td>
@@ -10868,6 +10847,11 @@ Triggered for every grid action success event.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
@@ -11597,6 +11581,11 @@ Triggered for every grid action server failure event.
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">selectedRow</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selectedRow index.</td>
@@ -11660,6 +11649,11 @@ Triggered for every grid action server failure event.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
@@ -11895,7 +11889,7 @@ Triggered when record batch add.
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">defaultData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
@@ -11993,7 +11987,7 @@ Triggered when record batch delete.
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
@@ -12077,11 +12071,6 @@ cancel</td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
-</tr>
-<tr>
 <td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
@@ -12153,11 +12142,6 @@ Triggered before the batch delete.
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -12241,11 +12225,6 @@ Triggered before the batch save.
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -12552,11 +12531,6 @@ Triggered when record cell edit.
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
-</tr>
-<tr>
 <td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
@@ -12657,11 +12631,6 @@ Triggered when record cell save.
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -12781,6 +12750,11 @@ Triggered after the cell is selected.
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">selectedData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">selectedRowCellIndex</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the selected row cell index values.</td>
@@ -12879,6 +12853,11 @@ Triggered before the cell is going to be selected.
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">selectedData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">previousRowCellIndex</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously selected row cell index values</td>
@@ -12965,6 +12944,11 @@ Triggered after the cell is deselected.
 <td class="description last">Returns the deselected cell element.</td>
 </tr>
 <tr>
+<td class="name">selectedData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
@@ -13044,6 +13028,11 @@ Triggered before the cell is going to be deselected.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">selectedData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
@@ -13398,6 +13387,11 @@ Triggered when the row is being dragged.
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns JSON data of dragged rows.</td>
 </tr>
+<tr>
+<td class="name">draggedRecords</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns JSON data of dragged rows.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -13485,6 +13479,11 @@ Triggered when row dragging begins.
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the JSON data of dragged rows.</td>
 </tr>
+<tr>
+<td class="name">draggedRecords</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the JSON data of dragged rows.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -13569,6 +13568,11 @@ Triggered when the row is dropped.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the JSON data of dragged rows.</td>
+</tr>
+<tr>
+<td class="name">droppedRecords</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the JSON data of dragged rows.</td>
 </tr>
@@ -14289,11 +14293,6 @@ Triggered when grid going to destroy.
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
-</tr>
-<tr>
 <td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
@@ -14449,6 +14448,11 @@ Triggered detail template row is initialized.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the details row data.</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the details row data.</td>
 </tr>
@@ -14610,6 +14614,11 @@ Triggered after the record is added.
 <td class="description last">Returns added data.</td>
 </tr>
 <tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns added data.</td>
+</tr>
+<tr>
 <td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
@@ -14672,6 +14681,11 @@ Triggered after the record is deleted.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns deleted data.</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
@@ -14740,6 +14754,11 @@ Triggered after the record is edited.
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns modified data.</td>
+</tr
+<tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns modified data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -14802,11 +14821,6 @@ Triggered initial load.
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
@@ -14879,6 +14893,11 @@ Triggered every time a request is made to access particular cell information, el
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
 <td class="name">rowData</td>
@@ -15062,6 +15081,11 @@ Triggered every time a request is made to access particular cell information, el
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current row record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the text value in the cell.</td>
@@ -15144,6 +15168,11 @@ Triggered when record is clicked.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
@@ -15245,6 +15274,11 @@ Triggered when record is double clicked.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
@@ -15351,11 +15385,6 @@ Triggered after column resized.
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
-</tr>
-<tr>
 <td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
@@ -15440,11 +15469,6 @@ Triggered when column resize end.
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -15538,11 +15562,6 @@ Triggered when column resize start.
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -15647,6 +15666,11 @@ Triggered when right clicked on grid element.
 <td class="description last">Returns the selected row data object.</td>
 </tr>
 <tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the selected row data object.</td>
+</tr>
+<tr>
 <td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the cell index of the selected cell.</td>
@@ -15739,6 +15763,11 @@ Triggered every time a request is made to access row information, element and da
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current row record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">foreignKeyData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
@@ -15812,6 +15841,11 @@ Triggered after the row is selected.
 </tr>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">selectedData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
@@ -15927,6 +15961,11 @@ Triggered before the row is going to be selected.
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">selectedData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
@@ -15993,6 +16032,11 @@ Triggered after the row is deselected.
 <tbody>
 <tr>
 <td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">selectedData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
@@ -16084,6 +16128,11 @@ Triggered before the row is going to be deselected.
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
+<td class="name">selectedData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
 <td class="name">isCtrlKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the ctrl key is pressed while deselecting row</td>
@@ -16171,6 +16220,11 @@ cancel</td>
 </tr>
 <tr>
 <td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current row data.</td>
+</tr>
+<tr>
+<td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current row data.</td>
 </tr>
