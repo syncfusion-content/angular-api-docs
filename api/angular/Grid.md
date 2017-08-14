@@ -3556,6 +3556,28 @@ this.gridData = window.gridData;
 this.pageSettings={ pageSize: 1};
 {% endhighlight %}
 
+### pageSettings.pageSizeList `Array`
+{:#members:pagesettings-pagesizelist}
+
+Gets or sets different page size values to the Dropdown in Grid Pager, by which number of records in a page can be changed dynamically.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}           
+<ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" [pageSettings]="pageSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.pageSettings={ pageSizeList: [7,3,9]};
+{% endhighlight %}
+
 ### pageSettings.showDefaults `Boolean`
 {:#members:pagesettings-showdefaults}
 
