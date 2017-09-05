@@ -953,7 +953,7 @@ Gets or sets a value that indicates to render the grid content and header with a
 this.gridData = window.gridData;
 {% endhighlight %}
 
-### columns.displayAsCheckBox `Boolean`
+### columns.displayAsCheckbox `Boolean`
 {:#members:columns-displayascheckbox}
 
 Gets or sets a value that indicates to display a column value as checkbox or string
@@ -968,7 +968,7 @@ Gets or sets a value that indicates to display a column value as checkbox or str
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
         <e-column field= "OrderID"></e-column>
-        <e-column field= "Verified" [displayAsCheckBox]= "false"></e-column>
+        <e-column field= "Verified" [displayAsCheckbox]= "false"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
