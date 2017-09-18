@@ -1901,6 +1901,28 @@ this.gridData = window.gridData;
 this.settings={enableContextMenu: true, customContextMenuItems: ["Hide Column"],subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }]};         
 {% endhighlight %}
 
+### contextMenuSettings.subContextMenu.template `string`
+{:#members:contextmenusettings-subcontextmenu-template}
+
+Used to get or set the sub menu items to the custom context menu item using JsRender template.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [contextMenuSettings]="settings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.settings={enableContextMenu: true, customContextMenuItems: ["Hide Column"],subContextMenu: [{ contextMenuItem: "Hide Column", template: "<ul><li><a>OrderID</a></li></ul>" }]};         
+{% endhighlight %}
+
 ### cssClass `String`
 {:#members:cssclass}
 
