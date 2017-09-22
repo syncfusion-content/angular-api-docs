@@ -1,10 +1,10 @@
 ---
 layout: post
 title: API reference for ejChart
-description: What are the options, methods and events available in Essential JavaScript Chart.
+description: What are the options, methods and events available in Essential Angular Chart.
 documentation: API
-platform: js-api
-keywords: ejChart, API, Essential JS Chart, Chart
+platform: angular-api
+keywords: ejChart, API, Essential Angular Chart, Chart
 metaname: 
 metacontent: 
 ---
