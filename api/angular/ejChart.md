@@ -84,7 +84,7 @@ Angle to rotate the annotation in degrees.
 {% endhighlight %}
 
 
-Try it: [Annotation angle](http://jsplayground.syncfusion.com/rgl4uwkj)
+
 
 
 
@@ -122,7 +122,7 @@ Text content or id of a HTML element to be displayed as annotation.
 {% endhighlight %}
 
 
-Try it: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
+
 
 
 
@@ -247,7 +247,7 @@ Middle</td>
 
 
 
-Try it: [Horizontal Alignment](http://jsplayground.syncfusion.com/n5zfhoir)
+
 
 
 
@@ -261,7 +261,7 @@ Try it: [Horizontal Alignment](http://jsplayground.syncfusion.com/n5zfhoir)
 Options to customize the margin of annotation.
 
 
-Try it: [Margin](http://jsplayground.syncfusion.com/n5zfhoir)
+
 
 
 
@@ -432,7 +432,7 @@ Controls the opacity of the annotation.
 
 
 
-Try it: [Annotation Opacity](http://jsplayground.syncfusion.com/rgl4uwkj)
+
 
 
 
@@ -493,7 +493,7 @@ Series</td>
 
 
 
-Try it: [Annotation Region](http://jsplayground.syncfusion.com/yfxghhut)
+
 
 
 
@@ -558,7 +558,7 @@ Middle</td>
 
 
 
-Try it: [Vertical Alignment](http://jsplayground.syncfusion.com/frjpm2um)
+
 
 
 
@@ -594,7 +594,7 @@ Controls the visibility of the annotation.
 
 
 
-Try it: [Annotation Visibility](http://jsplayground.syncfusion.com/plihjtm3)
+
 
 
 
@@ -633,7 +633,7 @@ This property is not applicable when coordinateUnit is none.
 
 
 
-Try it: [Annotation Positioning](http://jsplayground.syncfusion.com/frjpm2um)
+
 
 
 
@@ -668,7 +668,7 @@ Name of the horizontal axis to be used for positioning the annotation. This prop
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/h23k4jcy)
+
 
 
 
@@ -705,7 +705,7 @@ This property is not applicable when coordinateUnit is none.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1nq2ss4v)
+
 
 
 
@@ -742,7 +742,7 @@ This property is applicable only when coordinateUnit is points.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
+
 
 ### background `string`
 {:#members:background}
@@ -771,7 +771,7 @@ Sets the background color of the  chart.
 
 
 
-Try it: [JS playground Sample](http://jsplayground.syncfusion.com/fqyoilqm)
+
 
 
 
@@ -803,7 +803,7 @@ URL of the image to be used as chart background.
 
 
 
-Try it: [JS playground Sample](http://jsplayground.syncfusion.com/i1bys43l)
+
 
 
 
@@ -817,7 +817,7 @@ Try it: [JS playground Sample](http://jsplayground.syncfusion.com/i1bys43l)
 Options for customizing the color, opacity and width of the chart border.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
+
 
 
 
@@ -1248,7 +1248,7 @@ Background color of the plot area.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/picztz23)
+
 
 
 ### chartArea.border `object`
@@ -1260,7 +1260,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/picztz23)
 Options for customizing the border of the plot area.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kzy21bwx)
+
 
 
 
@@ -1366,7 +1366,7 @@ Border width of the plot area.
 Options to split Chart into multiple plotting areas vertically. Each object in the collection represents a plotting area in Chart.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
+
 
 
 
@@ -1868,7 +1868,7 @@ this.chartData = [
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
+ 
 
 
 
@@ -1901,7 +1901,7 @@ Controls the size of the hole in doughnut series. Value ranges from 0 to 1
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/15exlbqk)
+
 
 
 
@@ -1933,7 +1933,7 @@ Controls the size of the doughnut series. Value ranges from 0 to 1.
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ywbzcwhh)
+ 
 
 
 
@@ -1992,7 +1992,7 @@ Column</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/woedp3qa)
+
 
 
 
@@ -2069,7 +2069,7 @@ this.dataMarker = {
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ojz1vbr4)
+
 
 
 
@@ -2102,7 +2102,7 @@ Start angle of pie/doughnut series.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/52kkuy5d)
+
 
 
 ### commonSeriesOptions.explode `boolean`
@@ -2133,7 +2133,7 @@ Explodes the pie/doughnut slices on mouse move.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cletijkr)
+
 
 
 
@@ -2165,7 +2165,7 @@ Explodes all the slice of pie/doughnut on render.
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2btbqicb)
+ 
 
 
 
@@ -2198,7 +2198,7 @@ Index of the point to be exploded from pie/doughnut/pyramid/funnel.
  
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lypx2awm)
+ 
 
 
 
@@ -2231,7 +2231,7 @@ Specifies the distance of the slice from the center, when it is exploded.
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t2ysyshe)
+ 
 
 
 
@@ -2264,7 +2264,7 @@ Fill color for all the series.
 
 
 
-Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
+
 
 
 
@@ -2524,7 +2524,7 @@ this.dataMarker = {
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gmjlryrg)
+
 
 
 
@@ -2556,7 +2556,7 @@ Sets the height of the funnel in funnel series. Values can be either pixel or pe
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cnku50hw)
+
 
 
 
@@ -2589,7 +2589,7 @@ Sets the width of the funnel in funnel series. Values can be either pixel or per
  
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/aj4pwnrm)
+ 
 
 
 
@@ -2622,7 +2622,7 @@ Gap between the slices in pyramid and funnel series.
 {% endhighlight %}
   
   
-Try it: [JS Playground](http://jsplayground.syncfusion.com/om3zazbd)
+
 
 
 
@@ -2655,7 +2655,7 @@ Specifies whether to join start and end point of a line/area series used in pola
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d41kmmwt)
+
 
 
 
@@ -2688,7 +2688,7 @@ Specifies whether to stack the column series in polar/radar charts.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g40hdrpl)
+
 
 
 
@@ -2819,7 +2819,7 @@ this.dataMarker = {
 {% endhighlight %}
  
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
+
 
 
 ### commonSeriesOptions.splitMode `enum`
@@ -3056,7 +3056,7 @@ Used for setting the maximum radius of the bubble
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
+
 
 
 
@@ -3339,7 +3339,7 @@ this.dataMarker = {
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rbw3xizf)
+
 
 
 
@@ -3376,7 +3376,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
 
 
 
@@ -3410,7 +3410,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
 
 
 ### commonSeriesOptions.marker.dataLabel.border `object`
@@ -3510,7 +3510,7 @@ this.dataMarker = {
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f4b4p32r)
+ 
 
 
 
@@ -3591,7 +3591,7 @@ this.dataMarker = {
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
+
 
 
 
@@ -3635,7 +3635,7 @@ this.dataMarker = {
 {% endhighlight %}
  
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
+
 
 
 
@@ -4060,7 +4060,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/c3i3lxpg)
+
 
 
 
@@ -4238,7 +4238,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dff0lfpg)
+
 
 
 
@@ -4686,7 +4686,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/tzmb3o0y)
+
 
 
 
@@ -4759,7 +4759,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/zro5pbw2)
+
 
 
 
@@ -4839,7 +4839,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
+
 
 
 
@@ -4879,7 +4879,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/251niupi)
+
 
 
 
@@ -4958,7 +4958,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
+
 
 
 
@@ -5049,7 +5049,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fbrqexxu)
+
 
 
 ### commonSeriesOptions.marker.visible `boolean`
@@ -5088,7 +5088,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f2qfyfbt)
+
 
 
 
@@ -5329,7 +5329,7 @@ Controls the size of pie series. Value ranges from 0 to 1.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
+
 
 ### commonSeriesOptions.pieOfPieCoefficient `number`
 {:#members:commonseriesoptions-pieofpiecoefficient}
@@ -5587,7 +5587,7 @@ Surface</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/maeo3b3s)
+
 
 
 
@@ -5619,7 +5619,7 @@ Start angle from where the pie/doughnut series renders. By default it starts fro
 {% endhighlight %}
  
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gposb4vh)
+
 
 
 ### commonSeriesOptions.cornerRadius `object`
@@ -5860,7 +5860,7 @@ this.tooltip = {
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
+
 
 ### commonSeriesOptions.tooltip.rx `number`
 {:#members:commonseriesoptions-tooltip-rx}
@@ -5892,7 +5892,7 @@ Customize the corner radius of the tooltip rectangle.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 ### commonSeriesOptions.tooltip.ry `number`
@@ -5925,7 +5925,7 @@ Customize the corner radius of the tooltip rectangle.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 ### commonSeriesOptions.tooltip.duration `string`
@@ -6072,7 +6072,7 @@ Format of the tooltip content.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
+
 
 
 
@@ -6106,7 +6106,7 @@ Opacity of the tooltip.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jih5jejk)
+
 
 
 
@@ -6154,7 +6154,7 @@ Custom template to format the tooltip content. Use “point.x” and “point.y�
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rmunfu1b)
+
 
 
 
@@ -6186,7 +6186,7 @@ Controls the visibility of the tooltip.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tpizvdt0)
+
 
 
 ### commonSeriesOptions.type `enum`
@@ -6393,7 +6393,7 @@ RangeArea</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/iyglee55)
+
 
 
 
@@ -6426,7 +6426,7 @@ Specifies the name of the x-axis that has to be associated with this series. Add
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1t424pc)
+
 
 
 ### commonSeriesOptions.xName `string`
@@ -6458,7 +6458,7 @@ Name of the property in the datasource that contains x value for the series.
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
+ 
 
 
 
@@ -6492,7 +6492,7 @@ Specifies the name of the y-axis that has to be associated with this series. Add
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kac2fcth)
+ 
 
 
 
@@ -6525,7 +6525,7 @@ Name of the property in the datasource that contains y value for the series.
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
+ 
  
  
 
@@ -6590,7 +6590,7 @@ Name of the property in the datasource that contains low value for the series.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
+
 
 
 
@@ -6650,7 +6650,7 @@ Name of the property in the datasource that contains close value for the series.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
+
 
 
 
@@ -6708,7 +6708,7 @@ Name of the property in the datasource that contains the size value for the bubb
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kf0d05wi)
+
 
 
 ### commonSeriesOptions.emptyPointSettings `object`
@@ -6750,7 +6750,7 @@ Controls the visibility of the empty point.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
+
 
 
 ### commonSeriesOptions.emptyPointSettings.displayMode `enum`
@@ -6978,7 +6978,7 @@ Fill color for the positive column of the waterfall.
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
+ 
  
  
 ### commonSeriesOptions.connectorLine `object`
@@ -6989,7 +6989,7 @@ Fill color for the positive column of the waterfall.
 
 Options for customizing the waterfall connector line.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
+
 
 
 ### commonSeriesOptions.connectorLine.width `number`
@@ -7191,7 +7191,7 @@ Show/hides the error bar
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
    
 ### commonSeriesOptions.errorBar.type `enum`
 {:#members:commonSeriesOptions.errorbar.type}
@@ -7255,7 +7255,7 @@ StandardError</td>
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
  
 ### commonSeriesOptions.errorBar.mode `enum`
 {:#members:commonSeriesOptions.errorbar.mode}
@@ -7313,7 +7313,7 @@ Horizontal</td>
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
  
 
 ### commonSeriesOptions.errorBar.direction `enum`
@@ -7374,7 +7374,7 @@ Minus</td>
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
  
 
 ### commonSeriesOptions.errorBar.verticalErrorValue `number`
@@ -7401,7 +7401,7 @@ Value of vertical error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 ### commonSeriesOptions.errorBar.horizontalErrorValue `number`
 {:#members:commonSeriesOptions.errorbar.horizontalerrorvalue}
@@ -7427,7 +7427,7 @@ Value of horizontal  error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### commonSeriesOptions.errorBar.horizontalPositiveErrorValue `number`
@@ -7454,7 +7454,7 @@ Value of positive horizontal error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 
@@ -7482,7 +7482,7 @@ Value of negative horizontal error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### commonSeriesOptions.errorBar.verticalPositiveErrorValue `number`
@@ -7509,7 +7509,7 @@ Value of positive vertical error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 
@@ -7537,7 +7537,7 @@ Value of negative vertical error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### commonSeriesOptions.errorBar.fill `string`
@@ -7564,7 +7564,7 @@ Fill color of the error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
     
 
 ### commonSeriesOptions.errorBar.width `number`
@@ -7599,7 +7599,7 @@ Width of the error bar.
 
 Options for customizing the error bar cap.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### commonSeriesOptions.errorBar.cap.visible `boolean`
@@ -8072,7 +8072,7 @@ this.ChartTrendlines= [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d5o0dk1l)
+
 
 
 
@@ -8110,7 +8110,7 @@ this.ChartTrendlines= [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/opxwgddc)
+
 
 
 ### commonSeriesOptions.trendlines.period `number`
@@ -8147,7 +8147,7 @@ this.ChartTrendlines= [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/opxwgddc)
+
 
 
 ### commonSeriesOptions.trendlines.tooltip `object`
@@ -8249,7 +8249,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
+
 
 
 
@@ -8292,7 +8292,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 ### commonSeriesOptions.trendlines.tooltip.ry `number`
@@ -8334,7 +8334,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 
@@ -8494,7 +8494,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
+
 
 
 
@@ -8798,7 +8798,7 @@ Border width of the series/point on highlight.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rppilz5a)
+
 
 
 ### commonSeriesOptions.highlightSettings.pattern `string`
@@ -8827,7 +8827,7 @@ Specifies the pattern for the series/point on highlight.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e31yyof2)
+
 
 
 
@@ -8869,7 +8869,7 @@ Custom pattern for the series on highlight.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ecgabpa5)
+
 
 
 
@@ -8989,7 +8989,7 @@ Specifies whether the series or data point has to be selected.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
+
 
 
 
@@ -9191,7 +9191,7 @@ Specifies the pattern for the series/point on selection.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zbipilg5)
+
 
 
 ### commonSeriesOptions.selectionSettings.customPattern `string`
@@ -9231,7 +9231,7 @@ Custom pattern for the series on selection.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ne1iit3s)
+
 
 
 ### selectedDataPointIndexes `array`
@@ -9257,7 +9257,7 @@ Options for displaying the chart along with selected points while loading
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/b3oj1nlt)
+
 
 ### crosshair `object`
 {:#members:crosshair}
@@ -9642,7 +9642,7 @@ Show/hides the marker.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
+
 
 
 
@@ -9801,7 +9801,7 @@ Show/hides the crosshair/trackball visibility.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/31w3q03j)
+
 
 
 
@@ -9833,7 +9833,7 @@ Depth of the 3D Chart from front view of series to background wall. This propert
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mfcep44t)
+
 
 ### enable3D `boolean`
 {:#members:enable3d}
@@ -9862,7 +9862,7 @@ Controls whether 3D view has to be enabled or not. 3D view is supported only for
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dx0nj11k)
+
 
 
 
@@ -9893,7 +9893,7 @@ Controls whether Chart has to be rendered as Canvas or SVG. Canvas rendering sup
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
+
 
 
 
@@ -9954,7 +9954,7 @@ Controls whether 3D view has to be rotated on dragging. This property is applica
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hf5wopxp)
+
 
 
 ### indicators `array`
@@ -10008,7 +10008,7 @@ this.chartindicators = [{
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnfnqsqd)
+
 
 
 ### indicators.enableAnimation `boolean`
@@ -10048,7 +10048,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p443wnjd)
+
 
 
 ### indicators.fill `string`
@@ -10088,7 +10088,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vrm2umdf)
+
 
 
 ### indicators.histogram `object`
@@ -10113,7 +10113,7 @@ Options to customize the histogram in MACD indicator.
 Options to customize the histogram border in MACD indicator.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/stbnoy0x)
+
 
 
 
@@ -10242,7 +10242,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2rvadgmd)
+
 
 
 ### indicators.histogram.opacity `number`
@@ -10474,7 +10474,7 @@ this.chartindicators = [{
 
 Options to customize the MACD line.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/oarmpbow)
+
 
 
 
@@ -10640,7 +10640,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
+
 
 
 ### indicators.periodLine `object`
@@ -10651,7 +10651,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
 
 Options to customize the period line in indicators.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/20dlmyxk)
+
 
 
 
@@ -10777,7 +10777,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
+
 
 
 ### indicators.shortPeriod `number`
@@ -10817,7 +10817,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2hpibxjj)
+
 
 
 ### indicators.standardDeviations `number`
@@ -10857,7 +10857,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0b04ckwl)
+
 
 
 ### indicators.tooltip `object`
@@ -10868,7 +10868,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0b04ckwl)
 
 Options to customize the tooltip.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ritlgl5w)
+
 
 
 
@@ -11263,7 +11263,7 @@ trigger : 14
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nrh5tk4z)
+
 
 
 ### indicators.visibility `string`
@@ -11303,7 +11303,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gshculgi)
+
 
 
 ### indicators.type `string`
@@ -11343,7 +11343,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mr4ykv5i)
+
 
 
 ### indicators.upperLine `object`
@@ -11354,7 +11354,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mr4ykv5i)
 
 Options to customize the upper line in indicators
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/duskfkix)
+
 
 
 
@@ -11480,7 +11480,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r23e0yrp)
+
 
 
 ### indicators.xAxisName `string`
@@ -11520,7 +11520,7 @@ this.chartindicators = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kksyu40s)
+
 
 
 ### indicators.yAxisName `string`
@@ -11587,7 +11587,7 @@ Controls whether Chart has to be responsive while resizing.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1dkyopq5)
+
 
 
 ### legend `object`
@@ -11658,7 +11658,7 @@ Far</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jpcc441l)
+
 
 
 
@@ -11690,7 +11690,7 @@ Background for the legend. Use this property to add a background image or backgr
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yesrbzgh)
+
 
 
 
@@ -11704,7 +11704,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yesrbzgh)
 Options for customizing the legend border.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zob1c5er)
+
 
 
 
@@ -11794,7 +11794,7 @@ Number of columns to arrange the legend items.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3p1ocgh)
+
 
 
 
@@ -11826,7 +11826,7 @@ Controls whether legend has to use scrollbar or not. When enabled, scroll bar ap
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3budcknt)
+
 
 
 
@@ -11859,7 +11859,7 @@ Legend items representing invisible series is displayed in gray color.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3alytf20)
+
 
 
 
@@ -11873,7 +11873,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3alytf20)
 Options to customize the font used for legend item text.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jo5t2d4u)
+
 
 
 
@@ -12052,7 +12052,7 @@ Gap or padding between the legend items.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tozzsrit)
+
 
 
 
@@ -12079,7 +12079,7 @@ Options to customize the style of legend items.
 Options for customizing the border of legend items.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hplwwoll)
+
 
 
 
@@ -12205,7 +12205,7 @@ Width of the shape in legend items.
 Options to customize the location of chart legend. Legend is placed in provided location only when value of **position** property is **custom**
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xurqtijv)
+
 
 
 
@@ -12292,7 +12292,7 @@ Opacity of the legend.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nlewhk5r)
+
 
 
 
@@ -12359,7 +12359,7 @@ Bottom</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
+
 
 
 
@@ -12390,7 +12390,7 @@ Number of rows to arrange the legend items.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
+
 
 
 
@@ -12422,7 +12422,7 @@ Shape of the legend items. Default shape for pie and doughnut series is circle a
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/uq3eho3v)
+
 
 
 
@@ -12436,7 +12436,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/uq3eho3v)
 Options to customize the size of the legend.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
+
 
 
 
@@ -12519,7 +12519,7 @@ Options to customize the legend title.
 Options to customize the font used for legend title
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/bkgyatau)
+
 
 
 
@@ -12695,7 +12695,7 @@ Text to be displayed in legend title.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ux1xb3j4)
+
 
 
 
@@ -12758,7 +12758,7 @@ Far</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
+
 
 
 ### legend.textOverflow `enum`
@@ -12824,7 +12824,7 @@ WrapAndTrim</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
+
 
 
 ### legend.textWidth `number`
@@ -12853,7 +12853,7 @@ Text width for legend item.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
+
 
 
 
@@ -12883,7 +12883,7 @@ Controls the visibility of the legend.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
+
 
 
 ### legend.toggleSeriesVisibility `boolean`
@@ -12912,7 +12912,7 @@ Controls the selection through the legend.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f1oocjec)
+
 
 
 
@@ -12943,7 +12943,7 @@ String type properties like title text are not localized automatically. Provide 
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3q30pdl)
+
 
 
 
@@ -12973,7 +12973,7 @@ Palette is used to store the series fill color in array and apply the color to s
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0vka45gc)
+
 
 ### Margin `object`
 {:#members:margin}
@@ -12984,7 +12984,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0vka45gc)
 Options to customize the left, right, top and bottom margins of chart area.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5rlvd0ri)
+
 
 
 
@@ -13130,7 +13130,7 @@ This property is applicable only when 3D view is enabled
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ofpxunlm)
+
 
 
 
@@ -13233,7 +13233,7 @@ Opacity of the even grid band.
 {% endhighlight %} 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vanuvupl)
+
 
 
 ### primaryXAxis.alternateGridBand.odd `object`
@@ -13309,7 +13309,7 @@ Opacity of odd grid band
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n23ku03f)
+
 
 
 
@@ -13475,7 +13475,7 @@ Pattern of dashes and gaps to be applied to the axis line.
 {% endhighlight %} 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gx3dji4o)
+
 
 
 ### primaryXAxis.axisLine.offset `number`
@@ -13506,7 +13506,7 @@ Padding for axis line. Normally, it is used along with plotOffset to pad the plo
 {% endhighlight %} 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fmchh3yz)
+
 
 
 ### primaryXAxis.axisLine.visible `boolean`
@@ -13594,7 +13594,7 @@ Width of axis line.
 {% endhighlight %} 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0chmy5rg)
+
 
 
 ### primaryXAxis.columnIndex `number`
@@ -13655,7 +13655,7 @@ Specifies the number of columns or plot areas an axis has to span horizontally.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zqgvpx1v)
+
 
 
 ### primaryXAxis.crosshairLabel `object`
@@ -13840,7 +13840,7 @@ Hide</td>
 </ej-chart>
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ff44lp52)
+
 
 
 ### primaryXAxis.enableTrim `boolean`
@@ -13872,7 +13872,7 @@ Specifies whether to trim the axis label when the width of the label exceeds the
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qt3th50v)
+
 
 
 ### primaryXAxis.font `object`
@@ -14041,7 +14041,7 @@ Font size of the axis labels.
 </ej-chart>
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xm2ur0jj)
+
 
 
 ### primaryXAxis.intervalType `enum`
@@ -14128,7 +14128,7 @@ Years</td>
  
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
+
 
 
 ### primaryXAxis.isInversed `boolean`
@@ -14159,7 +14159,7 @@ Specifies whether to inverse the axis.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xp1frbzw)
+
 
 
 ### primaryXAxis.labelFormat `string`
@@ -14190,7 +14190,7 @@ Custom formatting for axis label and supports all standard formatting type of nu
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/x22gftws)
+
 
 
 ### primaryXAxis.labelIntersectAction `enum`
@@ -14283,7 +14283,7 @@ MultipleRows</td>
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sedhp2ek)
+
 
 
 ### primaryXAxis.labelPosition `enum`
@@ -14341,7 +14341,7 @@ OutSide</td>
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
+
 
 
 
@@ -14402,7 +14402,7 @@ Center</td>
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vfgwipz1)
+
 
 
 
@@ -14433,7 +14433,7 @@ Angle in degrees to rotate the axis labels.
 </ej-chart>
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gl5iwbsh)
+
 
 
 ### primaryXAxis.logBase `number`
@@ -14626,7 +14626,7 @@ Width of the major grid lines.
 </ej-chart>
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1tjezqc0)
+
 
 
 ### primaryXAxis.majorTickLines `object`
@@ -14729,7 +14729,7 @@ Width of the major tick lines.
 </ej-chart>
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/30i5qgrm)
+
 
 
 ### primaryXAxis.maximumLabels `number`
@@ -14754,7 +14754,7 @@ Maximum number of labels to be displayed in every 100 pixels.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/a4gcmpzx)
+
 
 
 ### primaryXAxis.maximumLabelWidth `number`
@@ -14888,7 +14888,7 @@ Width of the minorGridLines.
 </ej-chart>
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlobmfvj)
+
 
 
 ### primaryXAxis.minorTickLines `object`
@@ -15165,7 +15165,7 @@ Specifies the padding for the plot area.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yo4ek2ci)
+
 
 
 ### primaryXAxis.range `object`
@@ -15176,7 +15176,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yo4ek2ci)
 
 Options to customize the range of the axis.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_jhhilggd)
+
 
 
 ### primaryXAxis.range.min `number`
@@ -15350,7 +15350,7 @@ Rounds the number to the given number of decimals.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hgqmxm50)
+
 
 
 ### primaryXAxis.multiLevelLabels `array`
@@ -16819,7 +16819,7 @@ this.Strip = [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1at44wzi)
+
 
 
 ### primaryXAxis.tickLinesPosition `enum`
@@ -17881,7 +17881,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l3nds5td)
+
 
 
 ### axes.alternateGridBand.odd `object`
@@ -17978,7 +17978,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0dhpptec)
+
 
 
 ### axes.crossesAt `number`
@@ -18128,7 +18128,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3pqlrwwx)
+
 
 
 ### axes.axisLine.offset `number`
@@ -18168,7 +18168,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sokh4rez)
+
 
 
 ### axes.axisLine.visible `boolean`
@@ -18286,7 +18286,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nqumidfr)
+
 
 
 ### axes.columnIndex `number`
@@ -18515,7 +18515,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zff5idq4)
+
 
 
 ### axes.enableTrim `boolean`
@@ -18802,7 +18802,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5x5zgpnf)
+
 
 
 ### axes.intervalType `enum`
@@ -18872,7 +18872,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/izzaexfa)
+
 
 
 ### axes.labelFormat `string`
@@ -18910,7 +18910,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wurgvm33)
+
 
 
 ### axes.labelIntersectAction `enum`
@@ -18982,7 +18982,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/4qljgc5m)
+
 
 
 
@@ -19307,7 +19307,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/53i5levx)
+
 
 
 ### axes.majorTickLines `object`
@@ -19440,7 +19440,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w1ii251s)
+
 
 
 ### axes.maximumLabels `number`
@@ -19648,7 +19648,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/uuofmzcq)
+
 
 
 ### axes.minorTickLines `object`
@@ -19968,7 +19968,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mqb1dwpy)
+
 
 
 ### axes.range `object`
@@ -19979,7 +19979,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mqb1dwpy)
 
 Options to customize the range of the axis.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t2ogn4fa)
+
 
 
 ### axes.range.min `number`
@@ -20160,7 +20160,7 @@ this.axes = [{
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ccisbode)
+
 
 
 ### axes.multiLevelLabels `array`
@@ -21605,7 +21605,7 @@ this.axes = [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vuduvnu1)
+
 
 
 ### axes.tickLinesPosition `enum`
@@ -22689,7 +22689,7 @@ Opacity of the even grid band.
 {% endhighlight %} 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/12z4yd2l)
+
 
 
 ### primaryYAxis.alternateGridBand.odd `object`
@@ -22767,7 +22767,7 @@ Opacity of odd grid band.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hyakwb3m)
+
 
 
 ### primaryYAxis.enableAutoIntervalOnZooming`boolean`
@@ -22864,7 +22864,7 @@ Padding for axis line. Normally, it is used along with plotOffset to pad the plo
 {% endhighlight %} 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3drq4c1j)
+
 
 
 ### primaryYAxis.axisLine.visible `boolean`
@@ -22958,7 +22958,7 @@ Width of axis line.
 {% endhighlight %} 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zz4cubdn)
+
 
 
 ### primaryYAxis.crossesAt `number`
@@ -23362,7 +23362,7 @@ Font size of the axis labels.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/s1dshld4))
+
 
 
 ### primaryYAxis.intervalType `enum`
@@ -23393,7 +23393,7 @@ Specifies the type of interval in date time axis.
  
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
+
 
 
 ### primaryYAxis.isInversed `boolean`
@@ -23424,7 +23424,7 @@ Specifies whether to inverse the axis.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mnnwkac1)
+
 
 
 ### primaryYAxis.labelFormat `string`
@@ -23455,7 +23455,7 @@ Custom formatting for axis label and supports all standard formatting type of nu
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
+
 
 
 ### primaryYAxis.labelIntersectAction `enum`
@@ -23486,7 +23486,7 @@ Specifies the action to take when the axis labels are overlapping with each othe
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pm2ksurr)
+
 
 
 ### primaryYAxis.labelPosition `enum`
@@ -23577,7 +23577,7 @@ Logarithmic base value. This is applicable only for logarithmic axis.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nfviof2i)
+
 
 
 ### primaryYAxis.majorGridLines `object`
@@ -23741,7 +23741,7 @@ Width of the major grid lines.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jaqmz0ox)
+
 
 
 ### primaryYAxis.majorTickLines `object`
@@ -23847,7 +23847,7 @@ Width of the major tick lines.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dumkxazd)
+
 
 
 ### primaryYAxis.maximumLabels `number`
@@ -24010,7 +24010,7 @@ Width of the minorGridLines.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3ijc021x)
+
 
 
 ### primaryYAxis.minorTickLines `object`
@@ -24148,7 +24148,7 @@ Specifies the number of minor ticks per interval.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tbbhdw21)
+
 
 
 ### primaryYAxis.name `string`
@@ -24277,7 +24277,7 @@ Specifies the padding for the plot area.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ls2i5oiv)
+
 
 
 
@@ -24428,7 +24428,7 @@ Rounds the number to the given number of decimals.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ad225rnj)
+
 
 
 ### primaryYAxis.rowIndex `number`
@@ -24492,7 +24492,7 @@ Specifies the number of row or plot areas an axis has to span vertically.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fitf4tn3)
+
 
 
 ### primaryYAxis.multiLevelLabels `array`
@@ -26141,7 +26141,7 @@ this.Strip = [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pigg3hc0)
+
 
 
 ### primaryYAxis.tickLinesPosition `enum`
@@ -26819,7 +26819,7 @@ Rotation angle of the 3D view. This property is applicable only when 3D view is 
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pf23aw13)
+
 
 
 
@@ -26833,7 +26833,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pf23aw13)
 Options to split Chart into multiple plotting areas horizontally. Each object in the collection represents a plotting area in Chart.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
+
 
 
 
@@ -27017,7 +27017,7 @@ SERIES.BEARFILLCOLOR
 
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p404ugol)
+ 
  
 
 
@@ -27134,7 +27134,7 @@ DashArray for border of the series.
 
  
  
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/vf2xong1)
+
 
 
 ### series.bullFillColor `string`
@@ -27168,7 +27168,7 @@ Color of the point, where the close is down in financial chart.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
+
 
 
 
@@ -27198,7 +27198,7 @@ To render the column and bar type series in rectangle/cylinder shape. See <a hre
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yxqlqo2x)
+
 
 
 ### series.columnWidth `number`
@@ -27333,7 +27333,7 @@ Pattern of dashes and gaps used to stroke the line type series.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/322c4ex3)
+
 
 
 
@@ -27369,7 +27369,7 @@ Specifies the dataSource for the series. It can be an array of JSON objects or a
 
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
+
 
 
 ### series.doughnutCoefficient `number`
@@ -27404,7 +27404,7 @@ Controls the size of the hole in doughnut series. Value ranges from 0 to 1.
 
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1xjrwrxl)
+
 
 
 ### series.doughnutSize `number`
@@ -27439,7 +27439,7 @@ Controls the size of the doughnut series. Value ranges from 0 to 1.
 
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/eyi1qmre)
+
 
 ### series.drawType `enum`
 {:#members:series-drawtype}
@@ -27473,7 +27473,7 @@ Type of series to be drawn in radar or polar series.
 
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/pg04h4gh)
+
 
 
 ### series.enableAnimation `boolean`
@@ -27508,7 +27508,7 @@ Enable/disable the animation of series.
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/w4mkzixd)
+
 
 
 ### series.enableSmartLabels `number`
@@ -27556,7 +27556,7 @@ this.dataMarker = {
 
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/40docuib)
+
 
 
 ### series.endAngle `number`
@@ -27590,7 +27590,7 @@ End angle of pie/doughnut series. For a complete circle, it has to be 360, by de
   
 {% endhighlight %}
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/fqpf3ort)
+
 
 
 
@@ -27625,7 +27625,7 @@ Explodes the pie/doughnut slices on mouse move.
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/prpei1ld)
+
 
 
 ### series.explodeAll `boolean`
@@ -27659,7 +27659,7 @@ Explodes all the slice of pie/doughnut on render.
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/n3if1tnn)
+
 
 
 ### series.explodeIndex `number`
@@ -27693,7 +27693,7 @@ Index of the point to be exploded from pie/doughnut/pyramid/funnel.
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/taccivfh)
+
 
 
 
@@ -27728,7 +27728,7 @@ Specifies the distance of the slice from the center, when it is exploded.
 {% endhighlight %}
  
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/2j040lr0)
+
 
 
 
@@ -27763,7 +27763,7 @@ Fill color of the series.
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/sit3agft)
+
 
 
 ### series.font `object`
@@ -27958,7 +27958,7 @@ Size of the series text.
 
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/g0jeybnt)
+
 
 
 ### series.funnelHeight `string`
@@ -27992,7 +27992,7 @@ Specifies the height of the funnel in funnel series. Values can be in both pixel
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/5gqzqndn)
+
 
 
 ### series.funnelWidth `string`
@@ -28026,7 +28026,7 @@ Specifies the width of the funnel in funnel series. Values can be in both pixel 
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/u0f5hsbw)
+
 
 
 ### series.gapRatio `number`
@@ -28059,7 +28059,7 @@ Gap between the slices of pyramid/funnel series.
 
 {% endhighlight %}
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/cjocyfce)
+
 
 
 ### series.isClosed `boolean`
@@ -28093,7 +28093,7 @@ Specifies whether to join start and end point of a line/area series used in pola
 
 {% endhighlight %}
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/ktrsbcrh)
+
 
 
 ### series.isStacking `boolean`
@@ -28128,7 +28128,7 @@ Specifies whether to stack the column series in polar/radar charts.
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/mj2qdclr)
+
 
 
 
@@ -28165,7 +28165,7 @@ Renders the chart vertically. This is applicable only for Cartesian type series.
 {% endhighlight %}
 
 
-Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1ypcv5bf)
+
 
 
 
@@ -28235,7 +28235,7 @@ Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtende
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q013nk40)
+ 
 
 
  ### series.splitMode `enum`
@@ -28390,7 +28390,7 @@ Used for setting the maximum radius of the bubble
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
+
 
 
 
@@ -28576,7 +28576,7 @@ border:{width:2},
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/po32cgmg)
+
 
 
 
@@ -28637,7 +28637,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ulhda01g)
+
 
 
 ### series.marker.dataLabel.maximumLabelWidth `number`
@@ -28676,7 +28676,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
 
 
 
@@ -28713,7 +28713,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
+
 
 
 ### series.marker.dataLabel.border `object`
@@ -28916,7 +28916,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
+
 
 
 ### series.marker.dataLabel.connectorLine.color `string`
@@ -29295,7 +29295,7 @@ this.dataMarker = {
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
+
 
 
 
@@ -29530,7 +29530,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3yoplr42)
+
 
 
 
@@ -29746,7 +29746,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/emylj2pu)
+
 
 
 ### series.marker.dataLabel.visible `boolean`
@@ -29843,7 +29843,7 @@ this.dataMarker = {
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l5pmkkgr)
+ 
  
  
  
@@ -30042,7 +30042,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1bavaoqq)
+
 
 
 
@@ -30084,7 +30084,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vd552nid)
+
 
 
 ### series.marker.size `object`
@@ -30182,7 +30182,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/53gkiuse)
+
 
 
 ### series.marker.visible `boolean`
@@ -30515,7 +30515,7 @@ Controls the size of pie series. Value ranges from 0 to 1.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
+
 
 ### series.pieOfPieCoefficient `number`
 {:#members:series-pieofpiecoefficient}
@@ -30709,7 +30709,7 @@ Controls the visibility of the empty point.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
+
 
 
 ### series.emptyPointSettings.displayMode `enum`
@@ -30922,7 +30922,7 @@ Fill color for the positive column of the waterfall.
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
+ 
  
  
 ### series.connectorLine `object`
@@ -30933,7 +30933,7 @@ Fill color for the positive column of the waterfall.
 
 Options for customizing the waterfall connector line.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
+
 
 
 ### series.connectorLine.width `number`
@@ -31161,7 +31161,7 @@ Show/hides the error bar
 {% endhighlight %}
  
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
    
 ### series.errorBar.type `enum`
 {:#members:series.errorbar.type}
@@ -31191,7 +31191,7 @@ Specifies the type of error bar.
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
  
 ### series.errorBar.mode `enum`
 {:#members:series.errorbar.mode}
@@ -31220,7 +31220,7 @@ Specifies the mode of error bar.
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
  
 
 ### series.errorBar.direction `enum`
@@ -31251,7 +31251,7 @@ Specifies the direction of error bar.
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+ 
  
 
 ### series.errorBar.verticalErrorValue `number`
@@ -31281,7 +31281,7 @@ Value of vertical error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 ### series.errorBar.horizontalErrorValue `number`
 {:#members:series.errorbar.horizontalerrorvalue}
@@ -31310,7 +31310,7 @@ Value of horizontal  error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### series.errorBar.horizontalPositiveErrorValue `number`
@@ -31340,7 +31340,7 @@ Value of positive horizontal error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 
@@ -31371,7 +31371,7 @@ Value of negative horizontal error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### series.errorBar.verticalPositiveErrorValue `number`
@@ -31401,7 +31401,7 @@ Value of positive vertical error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 
@@ -31432,7 +31432,7 @@ Value of negative vertical error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### series.errorBar.fill `string`
@@ -31462,7 +31462,7 @@ Fill color of the error bar.
 
 {% endhighlight %}
  
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
     
 
 ### series.errorBar.width `number`
@@ -31500,7 +31500,7 @@ Width of the error bar.
 
 Options for customizing the error bar cap.
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
+
 
 
 ### series.errorBar.cap.visible `boolean`
@@ -31704,7 +31704,7 @@ Border width of the point.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
+
 
 
 
@@ -31774,7 +31774,7 @@ To show/hide the intermediate summary from the last intermediate point.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_t1fwledt)
+
 
 ### series.points.showTotalSum `boolean`
 {:#members:series-points-showtotalsum}
@@ -31808,7 +31808,7 @@ To show/hide the total summary of the waterfall series.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_t1fwledt)
+
 
 
 ### series.points.close `number`
@@ -32066,7 +32066,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3vkjgyc0)
+
 
 
 
@@ -32125,7 +32125,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d3r5mcfc)
+
 
 
 ### series.points.marker.dataLabel.border `object`
@@ -32334,7 +32334,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tm0wneyn)
+
 
 
 
@@ -32623,7 +32623,7 @@ this.dataMarker = {
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v4rp3aio)
+
 
 
 
@@ -32866,7 +32866,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rezz5cjo)
+
 
 
 
@@ -33040,7 +33040,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/k5e5rltz)
+
 
 
 ### series.points.marker.dataLabel.visible `boolean`
@@ -33137,7 +33137,7 @@ this.dataMarker = {
 
 {% endhighlight %}
  
- Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lzjtnka5)
+ 
 
  
  
@@ -33290,7 +33290,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fr1zj5v3)
+
 
 
 
@@ -33332,7 +33332,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5cgrkynp)
+
 
 
 ### series.points.marker.size `object`
@@ -33430,7 +33430,7 @@ this.dataMarker = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hcnmls5c)
+
 
 
 ### series.points.marker.visible `boolean`
@@ -33643,7 +33643,7 @@ Specifies the mode of the pyramid series.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlnaeyog)
+
 
 
 
@@ -33672,7 +33672,7 @@ SERIES.QUERY
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
+
 
 
 
@@ -33708,7 +33708,7 @@ Start angle from where the pie/doughnut series renders. It starts from 0, by def
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cw1zlin3)
+
 
 
 
@@ -34008,7 +34008,7 @@ Customize the corner radius of the tooltip rectangle.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 ### series.tooltip.ry `number`
@@ -34044,7 +34044,7 @@ Customize the corner radius of the tooltip rectangle.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 ### series.tooltip.duration `string`
@@ -34168,7 +34168,7 @@ this.tooltip = {
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xz1asbhm)
+
 
 
 
@@ -34205,7 +34205,7 @@ Format of the tooltip content.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ykkxirn1)
+
 
 
 ### series.tooltip.opacity `number`
@@ -34290,7 +34290,7 @@ Custom template to format the tooltip content. Use “point.x” and “point.y�
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/j0twqmow)
+
 
 
 
@@ -34358,7 +34358,7 @@ Specifies the type of the series to render in chart.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xab3pr0x)
+
 
 
 ### series.visibility `string`
@@ -34393,7 +34393,7 @@ Controls the visibility of the series.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
+
 
 
 
@@ -34463,7 +34463,7 @@ Specifies the name of the x-axis that has to be associated with this series. Add
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hz4rz01v)
+
 
 
 ### series.xName `string`
@@ -34498,7 +34498,7 @@ Name of the property in the datasource that contains x value for the series.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
+
 
 
 ### series.yAxisName `string`
@@ -34533,7 +34533,7 @@ Specifies the name of the y-axis that has to be associated with this series. Add
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xn2uktf2)
+
 
 
 
@@ -34638,7 +34638,7 @@ Name of the property in the datasource that contains low value for the series.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
+
 
 
 
@@ -34705,7 +34705,7 @@ Name of the property in the datasource that contains close value for the series.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
+
 
 
 
@@ -34790,7 +34790,7 @@ Name of the property in the datasource that contains the size value for the bubb
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xsmhbrfn)
+
 
 
 ### series.trendlines `array`
@@ -35160,7 +35160,7 @@ this.ChartTrendlines= [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d3gntcp0)
+
 
 
 
@@ -35201,7 +35201,7 @@ this.ChartTrendlines= [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
+
 
 ### series.trendlines.period `number`
 {:#members:series-trendlines-period}
@@ -35240,7 +35240,7 @@ this.ChartTrendlines= [{
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
+
 
 
 
@@ -35349,7 +35349,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
+
 
 
 
@@ -35395,7 +35395,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 ### series.trendlines.tooltip.ry `number`
@@ -35440,7 +35440,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 
 
@@ -35612,7 +35612,7 @@ this.ChartTrendlines= [{
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
+
 
 
 
@@ -35940,7 +35940,7 @@ Border width of the series/point on highlight.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ormhp3rz)
+
 
 
 ### series.highlightSettings.pattern `string`
@@ -35972,7 +35972,7 @@ Specifies the pattern for the series/point on highlight.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gcdopi4d)
+
 
 
 
@@ -36017,7 +36017,7 @@ Custom pattern for the series on highlight.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zmumutbx)
+
 
 
 
@@ -36093,7 +36093,7 @@ Specifies whether series or data point has to be selected.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f0udmdts)
+
 
 
 ### series.selectionSettings.type `enum`
@@ -36343,7 +36343,7 @@ Specifies the pattern for the series/point on selection.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cuee3fgt)
+
 
 
 ### series.selectionSettings.customPattern `string`
@@ -36386,7 +36386,7 @@ Custom pattern for the series on selection.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wlovhaqi)
+
 
 
 
@@ -36420,7 +36420,7 @@ Controls whether data points has to be displayed side by side or along the depth
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lhtjjczw)
+
 
 
 ### size `object`
@@ -36432,7 +36432,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lhtjjczw)
 Options to customize the Chart size.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wpvk5t3p)
+
 
 
 
@@ -36595,7 +36595,7 @@ GradientDark</td>
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jael2rfm)
+
 
 
 
@@ -36623,7 +36623,7 @@ Slope angle of 3D Chart. This property is applicable only when 3D view is enable
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p0cd1lvx)
+
 
 
 
@@ -36665,7 +36665,7 @@ Background color for the chart title.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
 
 
 ### title.border `object`
@@ -36677,7 +36677,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
 Options to customize the border of the title.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
 
 
 ### title.border.width `number`
@@ -36800,7 +36800,7 @@ opacity of the title border.
 Options for customizing the font of Chart title.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fhtgy2vx)
+
 
 
 
@@ -37074,7 +37074,7 @@ Options to customize the sub title of Chart.
 Options for customizing the font of sub title.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
 
 
 
@@ -37249,7 +37249,7 @@ Background color for the chart subtitle.
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
 
 
 
@@ -37262,7 +37262,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
 Options to customize the border of the title.
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
+
 
 
 ### title.subTitle.border.width `number`
@@ -37399,7 +37399,7 @@ Text to be displayed in sub title.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e3thfz5p)
+
 
 
 
@@ -37431,7 +37431,7 @@ Alignment of sub title text.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yh1hzrly)
+
 
 
 ### title.subTitle.visible `boolean`
@@ -37561,7 +37561,7 @@ Text to be displayed in Chart title.
 
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rk0x1e5u)
+
 
 
 
@@ -37593,7 +37593,7 @@ Alignment of the title text.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1vsex5m)
+
 
 
 
@@ -37626,7 +37626,7 @@ Width of the wall used in 3D Chart. Wall is present only in Cartesian type 3D se
 
 {% endhighlight %}
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q4nv04rw)
+
 
 
 
@@ -37758,7 +37758,7 @@ Enables/disables the ability to zoom the chart on moving the mouse wheel.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0gkvnyi3)
+
 
 
 
@@ -37790,7 +37790,7 @@ Specifies whether to allow zooming the chart vertically or horizontally or in bo
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
+
 
 
 
@@ -37848,7 +37848,7 @@ To display user specified buttons in zooming toolbar.
 {% endhighlight %}
 
 
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
+
 
 
 ## Methods
@@ -37884,22 +37884,37 @@ Following are the parameters that you can pass to this method.
 <br/><br/>
 Example
 
-{% highlight js %}
-var chartObj  = $("#container").data("ejChart");
-//animating series array
-chartObj.animate(chartObj.model.series);
+{% highlight ts %}
+
+animate(){
+     
+     //Do something
+     this.chart.widget.animate();
+
+}
+
 {% endhighlight %}
+
+
 
 <br/>
 If a series or indicator object is passed to this method, then the specific series or indicator is animated.
 <br/><br/>
 Example,
 
-{% highlight js %}
-var chartObj  = $("#container").data("ejChart");
-//animating a specific indicator
-chartObj.animate(chartObj.model.indicators[0]);
+{% highlight ts %}
+
+animate(){
+     
+     //Do something
+     this.chart.widget.animate(this.chart.widget.model.indicators[0]);
+
+}
+
 {% endhighlight %}
+
+
+
 </td>
 </tr>
 </tbody>
@@ -37925,11 +37940,18 @@ If you wish to print multiple charts on a same page, then you need to pass the I
 <div id="container1"></div> 
 <div id="container2"></div> 
 
-{% highlight js %}
-// Print Chart
-var chartObj = $("#container1").data("ejChart");
-chartObj.print("container1","container2");
+{% highlight ts %}
+
+print(){
+     
+     //Do something
+     this.chart.widget.print("container1","container2");
+
+}
+
 {% endhighlight %}
+
+
 
 
 ### export(type, URL, exportMultipleChart)
@@ -37966,10 +37988,19 @@ Following are the parameters that you can pass to this method,
 <br/><br./>
 Example
 
-{% highlight js %}
-var chartObj  = $("#container").data("ejChart");
-chartObj.export(‘image’);
+{% highlight ts %}
+
+export(){
+     
+     //Do something
+     this.chart.widget.export(‘image’);
+
+}
+
 {% endhighlight %}
+
+
+
 </td>
 </tr>
 <tr>
@@ -37980,10 +38011,19 @@ URL of the service, where the chart will be exported to excel.
 <br/><br/>
 Example,
 
-{% highlight js %}
-var chartObj  = $("#container").data("ejChart");
-chartObj.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport')
+{% highlight ts %}
+
+export(){
+     
+     //Do something
+     this.chart.widget.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport');
+
+}
+
 {% endhighlight %}
+
+
+
 </td>
 </tr>
 <tr>
@@ -37995,10 +38035,19 @@ When this parameter is true, all the chart objects initialized to the same docum
 <br/><br/>
 Example,
 
-{% highlight js %}
-var chartObj  = $("#container").data("ejChart");
-chartObj.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport', true)
+{% highlight ts %}
+
+export(){
+     
+     //Do something
+     this.chart.widget.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport', true);
+
+}
+
 {% endhighlight %}
+
+
+
 </td>
 </tr>
 </tbody>
@@ -38025,10 +38074,17 @@ REDRAW
 
 
 
-{% highlight js %}
- 
-$("#container").ejChart("redraw");      
+{% highlight ts %}
+
+redraw(){
+     
+     //Do something
+     this.chart.widget.redraw();
+
+}
+
 {% endhighlight %}
+
 
 
 
