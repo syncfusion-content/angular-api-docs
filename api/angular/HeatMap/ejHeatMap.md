@@ -41,8 +41,9 @@ Specifies the width of the heat map.
 #### Example
 
 {% highlight html %}
-<ej-heatmap id="heatmap1" width = 300>
-</ej-heatmap>
+
+<ej-heatmap id="heatmap1" width = 300> </ej-heatmap>
+
 {% endhighlight %}
 
 
@@ -58,8 +59,9 @@ Specifies the width of the heat map.
 #### Example
 
 {% highlight html %}
-<ej-heatmap id="heatmap1" height = 300>
-</ej-heatmap>
+
+<ej-heatmap id="heatmap1" height = 300> </ej-heatmap>
+
 {% endhighlight %}
 
 
@@ -75,8 +77,9 @@ Specifies the name of the heat map.
 #### Example
 
 {% highlight html %}
-<ej-heatmap id="heatmap1">
-</ej-heatmap>
+
+<ej-heatmap id="heatmap1"> </ej-heatmap>
+
 {% endhighlight %}
 
 
@@ -94,11 +97,12 @@ Enables or disables tooltip of heatmap
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip">
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip"> </ej-heatmap>
 
-</ej-heatmap>
+{% endhighlight %}
 
-showTooltip:boolean;
+{% highlight ts %}
+
 
 this.showTooltip = true;
 
@@ -126,11 +130,11 @@ Defines the tooltip that should be shown when the mouse hovers over rows/columns
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" >
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" > </ej-heatmap>
 
-</ej-heatmap>
+{% endhighlight %}
 
-tooltipSettings:object;
+{% highlight ts %}
 
 this.tooltipSettings = {templateId:"mouseovertoolTipId"}
 
@@ -140,7 +144,6 @@ this.tooltipSettings = {templateId:"mouseovertoolTipId"}
 ### tooltipSettings.associate `enum`
 {:#members:tooltipsettings-associate}
 
-<ts name = "ej.datavisualization.HeatMap.Associate"/>
 
 Defines the tooltip of associate that should be shown when the mouse hovers over rows/columns.
 
@@ -177,15 +180,17 @@ Defines the tooltip of associate that should be shown when the mouse hovers over
 {% highlight html %}
 
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" >
-            
-        </ej-heatmap>
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" > </ej-heatmap>
 
-        showTooltip:boolean;
+{% endhighlight %}
 
-        this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow"}
+{% highlight ts %}
 
-        {% endhighlight %}
+this.showTooltip = true;
+
+this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow"}
+
+{% endhighlight %}
 
 
 ### tooltipSettings.isBalloon `boolean`
@@ -202,15 +207,17 @@ Enables/ disables the balloon for the tooltip to be shown
 {% highlight html %}
 
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" >
-            
-        </ej-heatmap>
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" > </ej-heatmap>
 
-        showTooltip:boolean;
+{% endhighlight %}
 
-        this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow",isBalloon: true,}
+{% highlight ts %}
 
-        {% endhighlight %}
+this.showTooltip = true;
+
+this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow",isBalloon: true,}
+
+{% endhighlight %}
 
 
 ### tooltipSettings.position `object`
@@ -226,7 +233,6 @@ Sets the Tooltip position against target.
 ### tooltipSettings.position.target.horizontal `enum`
 {:#members:tooltipsettings-position-target-horizontal}
 
-<ts name = "ej.datavisualization.HeatMap.Horizontal"/>
 
 Sets the arrow position again popup based on horizontal(x) value
 
@@ -260,7 +266,6 @@ Sets the arrow position again popup based on horizontal(x) value
 ### tooltipSettings.position.target.vertical `enum`
 {:#members:tooltipsettings-position-target-vertical}
 
-<ts name = "ej.datavisualization.HeatMap.Vertical"/>
 
 Sets the arrow position again popup based on vertical(y) value
 
@@ -323,23 +328,25 @@ Sets the arrow position again popup based on vertical(y) value
 {% highlight html %}
 
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" >
-            
-        </ej-heatmap>
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" > </ej-heatmap>
 
-        showTooltip:boolean;
+{% endhighlight %}
 
-        this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow", isBalloon:true,position: {
-            stem: { horizontal: "left"},
-        },}
+{% highlight ts %}
 
-        {% endhighlight %}
+this.showTooltip = true;
+
+this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow", isBalloon:true,position: {
+    stem: { horizontal: "left"},
+    },
+}
+
+{% endhighlight %}
 
 
 ### tooltipSettings.trigger `enum`
 {:#members:tooltipsettings-trigger}
 
-<ts name = "ej.datavisualization.HeatMap.Trigger"/>
 
 Defines the tooltip to be triggered.
 
@@ -371,15 +378,17 @@ Defines the tooltip to be triggered.
 {% highlight html %}
 
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" >
-            
-        </ej-heatmap>
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" > </ej-heatmap>
 
-        showTooltip:boolean;
+{% endhighlight %}
 
-          this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow", isBalloon:true, trigger:"click"}
+{% highlight ts %}
 
-        {% endhighlight %}
+this.showTooltip =  true;
+
+this.tooltipSettings = {templateId:"mouseovertoolTipId",associate:"mouseFollow", isBalloon:true, trigger:"click"}
+
+{% endhighlight %}
 
 
 ### tooltipSettings.animation `object`
@@ -390,7 +399,6 @@ Defines the animation for the tooltip that should be shown when the mouse hovers
 ### tooltipSettings.animation.effect `enum`
 {:#members:tooltipsettings-animation-effect}
 
-<ts name = "ej.datavisualization.HeatMap.Effect"/>
 
 Defines the animation effect for the tooltip that should be shown when the mouse hovers over rows/columns.
 
@@ -426,15 +434,17 @@ Defines the animation effect for the tooltip that should be shown when the mouse
 {% highlight html %}
 
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" >
-            
-        </ej-heatmap>
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" > </ej-heatmap>
 
-        showTooltip:boolean;
+{% endhighlight %}
 
-          this.tooltipSettings = {templateId:"mouseovertoolTipId",animation:{effect:"none"}}
+{% highlight ts %}
 
-        {% endhighlight %}
+this.showTooltip = true;
+
+this.tooltipSettings = {templateId:"mouseovertoolTipId",animation:{effect:"none"}}
+
+{% endhighlight %}
 
 
 ### tooltipSettings.animation.speed `number`
@@ -451,15 +461,17 @@ Defines the animation speed for the tooltip that should be shown when the mouse 
 {% highlight html %}
 
 
-<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" >
-            
-        </ej-heatmap>
+<ej-heatmap id="heatmap1" [showTooltip] = "showTooltip" [tooltipSettings] = "toolTipSettings" > </ej-heatmap>
 
-        showTooltip:boolean;
+{% endhighlight %}
 
-          this.tooltipSettings = {templateId:"mouseovertoolTipId",animation:{effect:"none", speed:0}}
+{% highlight ts %}
 
-        {% endhighlight %}
+this.showTooltip = true;
+
+this.tooltipSettings = {templateId:"mouseovertoolTipId",animation:{effect:"none", speed:0}}
+
+{% endhighlight %}
 
 
 ### itemsSource `object`
@@ -473,9 +485,7 @@ Specifies the source data of the heat map.
 
 #### Example
 
-{% highlight html %}
-
- itemsSource: Array<Object>;
+{% highlight ts %}
 
  let itemsSource = [];
         let coloumns = ['Vegie-spread', 'Tofuaa', 'Alice Mutton', 'Konbu', 'Fløtemysost', 'Perth Pasties', 'Boston Crab Meat', 'Raclette Courdavault'];
@@ -505,13 +515,24 @@ Specifies the property of the heat map cell.
 
 #### Example
 
-HEATMAPCELL
+{% highlight html %}
+
+<ej-heatmap id="heatmap1"  [heatMapCell]= "heatmapCell"> </ej-heatmap>
+
+{% endhighlight %}
+
+
+{% highlight ts %}
+
+this.heatmapCell = {showColor: true };
+
+{% endhighlight %}
+
 
 
 ### heatMapCell.showContent `enum`
 {:#members:heatmapcell-showcontent}
  
-<ts name = "ej.datavisualization.HeatMap.CellVisibility"/>
 
 Specifies whether the cell content can be visible or not.
 
@@ -540,12 +561,14 @@ Specifies whether the cell content can be visible or not.
 * ej.HeatMap.CellVisibility.Visible
 
 #### Example
+
 {% highlight html %}
-<ej-heatmap id="heatmap1"  [heatMapCell]= "heatmapCell">
-</ej-heatmap>
 
-heatmapCell:object;
+<ej-heatmap id="heatmap1"  [heatMapCell]= "heatmapCell"> </ej-heatmap>
 
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.heatmapCell = { showContent:ej.datavisualization.HeatMap.CellVisibility.Hidden };
 
@@ -565,10 +588,13 @@ Specifies whether the cell color can be visible or not.
 #### Example
 
 {% highlight html %}
-<ej-heatmap id="heatmap1"  [heatMapCell]= "heatmapCell">
 
-</ej-heatmap>
-heatmapCell:object;
+<ej-heatmap id="heatmap1"  [heatMapCell]= "heatmapCell"> </ej-heatmap>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 this.heatmapCell = {showColor: false };
 
 {% endhighlight %}
@@ -586,12 +612,15 @@ Specifies can enable responsive mode or not for heat map.
 #### Example
 
 {% highlight html %}
-<ej-heatmap id="heatmap1" [isResponsive] ="isResponsive">
-</ej-heatmap>
 
-isResponsive: boolean;
+<ej-heatmap id="heatmap1" [isResponsive] ="isResponsive"> </ej-heatmap>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.isResponsive = true;
+
 {% endhighlight %}
 
 
@@ -607,7 +636,7 @@ Specifies whether the virtualization can be enable or not.
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('heatmap1') HeatMap: EJComponents<any,any>;
 
@@ -627,11 +656,11 @@ Specifies the default column properties for all the column style not specified i
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.defaultColumnStyle = {textAlign: "left"}
 
-{% highlight html %}
+{% endhighlight %}
 
 
 ### defaultColumnStyle.textAlign `object`
@@ -639,7 +668,6 @@ this.defaultColumnStyle = {textAlign: "left"}
 
 Specifies the alignment mode of the heat map column.
 
-<ts name = "ej.datavisualization.HeatMap.TextAlign"/>
 
 Enables/disables the bold style
 
@@ -673,11 +701,11 @@ Enables/disables the bold style
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.defaultColumnStyle = {textAlign: "left"}
 
-{% highlight html %}
+{% endhighlight %}
 
 
 
@@ -691,6 +719,20 @@ Specifies the template id of the heat map column header.
 * ""
 
 #### Example
+{% highlight ts %}
+
+<script type="text/x-jsrender" id="template">
+    <img style="width: 45px; height: 40px" src="2.jpg" alt="" />
+        <span></span>
+</script>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+this.defaultColumnStyle = {textAlign: "left" templateId= "template"}
+
+{% endhighlight %}
 
 
 ### defaultColumnStyle.templateID`string`
@@ -708,13 +750,17 @@ Specifies the template id of all individual cell data of the heat map.
 {% highlight html %}
 
  <script type="text/x-jsrender" id="columnTemplate">
-        <img style="width: 45px; height: 40px" src="2.jpg" alt="" />
-        <span></span>
-    </script>
+    <img style="width: 45px; height: 40px" src="2.jpg" alt="" />
+    <span></span>
+</script>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.defaultColumnStyle = {headerTemplateID: "columnTemplate"}
 
-{% highlight html %}
+{% endhighlight %}
 
 ### legendCollection `array`
 {:#members:legendcollection}
@@ -729,12 +775,13 @@ Specifies the no of legends can sync with heat map.
 
 {% highlight html %}
 
- <ej-heatmap id="heatmap1" [legendCollection]="legendCollection">
- </ej-heatmap>
+ <ej-heatmap id="heatmap1" [legendCollection]="legendCollection"> </ej-heatmap>
 
- legendCollection: Array<Object>;
+{% endhighlight %}
 
- this.legendCollection = ['heatmaplegend'];
+{% highlight ts %}
+
+this.legendCollection = ['heatmaplegend'];
 
 {% endhighlight %}
 
@@ -753,18 +800,17 @@ Specifies the property and display value of the heat map column.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
             column: { "propertyName": "ProductName", "displayName": "Product Name" },
             row: { "propertyName": "Year", "displayName": "Year" }
             };
         
-
 {% endhighlight %}
 
 
@@ -782,11 +828,11 @@ Column settings for the individual heat map column.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
             columnStyle: {
@@ -810,17 +856,17 @@ Specifies the width of the heat map column.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
-            columnStyle: {
-                    width:100
-                    }
-        };
+    columnStyle: {
+                   width:100
+    }
+};
 
 {% endhighlight %}
 
@@ -840,17 +886,17 @@ Specifies the text align mode of the heat map column.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
             columnStyle: {
                     textAlign: ej.HeatMap.TextAlign.Left
-                    }
-        };
+            }
+};
 
 {% endhighlight %}
 
@@ -868,17 +914,17 @@ Specifies the template id of the column header.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
             columnStyle: {
                     headerTemplateID: "template"
-                    }
-        };
+            }
+};
 
 {% endhighlight %}
 
@@ -896,17 +942,17 @@ Specifies the template id of all individual cell data.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
             columnStyle: {
                     templateID: "template"
-                    }
-        };
+            }
+};
 
 {% endhighlight %}
 
@@ -924,17 +970,17 @@ Specifies the property and display value of the column.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">  </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
             columnStyle: {
                     "propertyName": "ProductName", "displayName": "Product Name"
-                    }
-        };
+            }
+};
 
 {% endhighlight %}
 
@@ -952,17 +998,17 @@ Specifies the name of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
+{% endhighlight %}
 
-itemsMapping: Object;
+{% highlight ts %}
 
 this.itemsMapping = {
             columnStyle: {
                     "opertyName": "ProductName"
-                    }
-        };
+            }
+};
 
 {% endhighlight %}
 
@@ -980,16 +1026,17 @@ Specifies the value of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             columnStyle: {
                      "displayName": "Product Name"
-                    }
-        };
+            }
+};
 
 {% endhighlight %}
 
@@ -1007,14 +1054,15 @@ Specifies the row property and display value of the heat map.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             row: { "propertyName": "ProductName", "displayName": "Product Name" }
-        };
+};
 
 {% endhighlight %}
 
@@ -1032,14 +1080,15 @@ Specifies the name of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             row: { "propertyName": "ProductName"  }
-        };
+};
 
 {% endhighlight %}
 
@@ -1057,14 +1106,15 @@ Specifies the value of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             row: { "dislpayName": "ProductName"  }
-        };
+};
 
 {% endhighlight %}
 
@@ -1083,14 +1133,15 @@ Specifies the property and display value of the column value.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             value: { "propertyName": "Value"  }
-        };
+};
 
 {% endhighlight %}
 
@@ -1108,14 +1159,15 @@ Specifies the name of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             value: { "propertyName": "productName"  }
-        };
+};
 
 {% endhighlight %}
 
@@ -1133,14 +1185,15 @@ Specifies the value of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             value: { "displayName": "productName"  }
-        };
+};
 
 {% endhighlight %}
 
@@ -1159,14 +1212,15 @@ Specifies the property and display value of the header.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             headerMapping: { "propertyName": "Year" , "displayName":"Year"  }
-        };
+};
 
 {% endhighlight %}
 
@@ -1185,14 +1239,15 @@ Specifies the name of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             headerMapping: { "propertyName": "Year" }
-        };
+};
 
 {% endhighlight %}
 
@@ -1210,14 +1265,15 @@ Specifies the value of the column or row.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             headerMapping: { "displayName": "Year" }
-        };
+};
 
 {% endhighlight %}
 
@@ -1235,14 +1291,15 @@ Specifies the property and display value of the header.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             headerMapping: { "columnStyle": { width: 105, textAlign: "right" } }
-        };
+};
 
 {% endhighlight %}
 
@@ -1261,17 +1318,18 @@ Specifies the property and display value of the collection of column.
 
 {% highlight html %}
 
-<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping">
- </ej-heatmap>
+<ej-heatmap id="heatmap1" [itemsMapping]="itemsMapping"> </ej-heatmap>
 
-itemsMapping: Object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.itemsMapping = {
             columnMapping: [
                    { "propertyName": "property name1", "displayName": "display name1" },
                    { "propertyName": "property name2", "displayName": "display name2" }
-                ]
-        };
+            ]
+};
 
 {% endhighlight %}
 
@@ -1288,16 +1346,16 @@ Specifies the color values of the heat map column data.
 
 #### Example
 
-        {% highlight html %}
+{% highlight html %}
 
 <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
-                </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="label">
-                </e-colormapping>
-            </e-colormappingcollection>
+    <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
+    </e-colormapping>
+    <e-colormapping [value]="100" color="#0d47a1" [label]="label">
+    </e-colormapping>
+</e-colormappingcollection>
 
-            {% endhighlight %}
+{% endhighlight %}
 
 
 ### colorMappingCollection.color`string`
@@ -1311,16 +1369,16 @@ Specifies the color of the heat map column data.
 
 #### Example
 
-  {% highlight html %}
+{% highlight html %}
 
 <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
-                </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="label">
-                </e-colormapping>
-            </e-colormappingcollection>
+    <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
+    </e-colormapping>
+    <e-colormapping [value]="100" color="#0d47a1" [label]="label">
+    </e-colormapping>
+</e-colormappingcollection>
 
-            {% endhighlight %}
+{% endhighlight %}
 
 
 ### colorMappingCollection.value `number`
@@ -1334,16 +1392,16 @@ Specifies the color values of the heat map column data.
 
 #### Example
 
-  {% highlight html %}
+{% highlight html %}
 
 <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
-                </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="label">
-                </e-colormapping>
-            </e-colormappingcollection>
+    <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
+    </e-colormapping>
+    <e-colormapping [value]="100" color="#0d47a1" [label]="label">
+    </e-colormapping>
+</e-colormappingcollection>
 
-            {% endhighlight %}
+{% endhighlight %}
 
 
 ### colorMappingCollection.label `object`
@@ -1357,16 +1415,16 @@ Specifies the label properties of the heat map color.
 
 #### Example
 
-  {% highlight html %}
+{% highlight html %}
 
 <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
-                </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="label">
-                </e-colormapping>
-            </e-colormappingcollection>
+    <e-colormapping [value]="0" color="#8ec8f8" [label]="label">
+    </e-colormapping>
+    <e-colormapping [value]="100" color="#0d47a1" [label]="label">
+    </e-colormapping>
+</e-colormappingcollection>
 
-            {% endhighlight %}
+{% endhighlight %}
 
 
 ### colorMappingCollection.label.bold `boolean`
@@ -1380,7 +1438,7 @@ Enables/disables the bold style of the heat map label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.label = { 'text': '0' ,'bold': true};
 
@@ -1400,7 +1458,7 @@ Enables/disables the italic style of the heat map label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.label = { 'text': '0' ,'italic': true};
 
@@ -1419,7 +1477,7 @@ specifies the text value of the heat map label.
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 this.label = { 'text': '10' };
 
@@ -1430,7 +1488,6 @@ this.label = { 'text': '10' };
 ### colorMappingCollection.label.textDecoration `enum`
 {:#members:colormappingcollection-label-textdecoration}
 
-<ts name = "ej.datavisualization.HeatMap.TextDecoration "/>
 
 Specifies the text style of the heat map label.
 
@@ -1468,7 +1525,7 @@ Specifies the text style of the heat map label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.label = {  'textDecoration': ej.HeatMap.TextDecoration.None };
 
@@ -1486,7 +1543,7 @@ Specifies the font size of the heat map label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.label = {   'fontSize': 18 };
 
@@ -1505,7 +1562,7 @@ Specifies the font family of the heat map label.
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 this.label = {   'fontFamily': "Arial" };
 
@@ -1524,7 +1581,7 @@ Specifies the font color of the heat map label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.label = {   'fontColor': "red" };
 
@@ -1571,6 +1628,10 @@ Triggered when the mouse over on the cell.
 
 <ej-heatmap id="heatmap1" (cellMouseOver) ="cellMouseOver($event)"> </ej-heatmap>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 //cellMouseOver event for heatmap
  cellMouseOver(args:any){
 //doSomething.
@@ -1616,6 +1677,10 @@ Triggered when the mouse over on the cell.
 {% highlight html %}
 
 <ej-heatmap id="heatmap1" (cellMouseEnter) ="cellMouseEnter($event)"> </ej-heatmap>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //cellMouseEnter event for heatmap
  cellMouseEnter(args:any){
@@ -1664,6 +1729,10 @@ Triggered when the mouse over on the cell.
 
 <ej-heatmap id="heatmap1" (cellMouseLeave) ="cellMouseLeave($event)"> </ej-heatmap>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 //cellMouseLeave event for heatmap
  cellMouseLeave(args:any){
 //doSomething.
@@ -1709,6 +1778,10 @@ Triggered when the mouse over on the cell.
 {% highlight html %}
 
 <ej-heatmap id="heatmap1" (cellSelected) ="cellSelected($event)"> </ej-heatmap>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //cellSelected event for heatmap
  cellSelected(args:any){

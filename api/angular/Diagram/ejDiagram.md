@@ -47,12 +47,6 @@ Defines the background color of diagram elements
 
 {% highlight html %}
 
-backgroundColor:"whiteSmoke";
-
-{% endhighlight %}
-
-{% highlight html %}
-
 <ej-diagram width="1000" height="1000" [pageSettings]="pageSettings" >
     
 </ej-diagram
@@ -60,6 +54,12 @@ backgroundColor:"whiteSmoke";
 <ej-diagram width="1000" height="1000" backgroundColor="black" >
     
 </ej-diagram>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+backgroundColor:"whiteSmoke";
 
 {% endhighlight %}
 
@@ -81,7 +81,6 @@ BACKGROUNDIMAGE
 ### backgroundImage.alignment `enum`
 {:#members:backgroundimage-alignment}
 
-<ts name = "ej.datavisualization.Diagram.ImageAlignment "/>
     
 Defines how to align the background image over the diagram area.
 
@@ -141,17 +140,10 @@ Defines how to align the background image over the diagram area.
 
 * ej.datavisualization.Diagram.ImageAlignment.XMidYMid
 
-#### Example
-
-BACKGROUNDIMAGE.ALIGNMENT
-
-
 
 ### backgroundImage.scale `enum`
 {:# members:backgroundimage-scale}
 
-<ts name = "ej.datavisualization.Diagram.ScaleConstraints "/>
-    
 Defines how the background image should be scaled/stretched
 
 <table class="props">
@@ -179,10 +171,6 @@ Defines how the background image should be scaled/stretched
  
 #### Default Value:
 
-* ej.datavisualization.Diagram.ScaleConstraints.Meet
-
-#### Example
-
 
 ### backgroundImage.source `string`
 {:# members:backgroundimage-source}
@@ -199,7 +187,6 @@ Sets the source path of the background image
 ### bridgeDirection `enum`
 {:#members:bridgedirection}
 
-<ts name = "ej.datavisualization.Diagram.BridgeDirection"/>
     
 Sets the direction of line bridges.
 
@@ -237,17 +224,19 @@ Sets the direction of line bridges.
 #### Example
 
 {% highlight html %}
-<ej-diagram width="1000" height="1000" [pageSettings]="pageSettings"  [connectors]="connectors">
-</ej-diagram>
+
+<ej-diagram width="1000" height="1000" [pageSettings]="pageSettings"  [connectors]="connectors"> </ej-diagram>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 connectors:Array<any>;
 	constructor(){
 	    this.connectors=[{
 	        bridgeDirection:ej.datavisualization.Diagram.BridgeDirection.Bottom,
-	    }];
-	}
-
-
-
+        }];
+    }
 
 {% endhighlight %}
 
@@ -276,7 +265,7 @@ COMMANDMANAGER.COMMANDS
 A method that defines whether the command is executable at the moment or not. 
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
   
 	commandManager: Object;
         constructor(){
@@ -299,7 +288,8 @@ A method that defines whether the command is executable at the moment or not.
 A method that defines what to be executed when the key combination is recognized.
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
+
  execute: function(args) {
     this.copy();
     this.paste();
@@ -314,7 +304,6 @@ Defines a combination of keys and key modifiers, on recognition of which the com
 ### commandManager.commands.gesture.key `enum`
 {:#members:commandmanager-commands-gesture-key}
 
-<ts name = "ej.datavisualization.Diagram.Keys"/>
 
 Sets the key value, on recognition of which the command will be executed.
 
@@ -514,17 +503,17 @@ Sets the key value, on recognition of which the command will be executed.
 * ej.datavisualization.Diagram.Keys.None
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
+
 gesture: {
     key: ej.datavisualization.Diagram.Keys.C,
-    }
+}
+
 {% endhighlight %}
 
 ### commandManager.commands.gesture.keyModifiers `enum`
 {:#members:commandmanager-commands-gesture-keymodifiers}
 
-<ts name = "ej.datavisualization.Diagram.KeyModifiers"/>
-	
 Sets a combination of key modifiers, on recognition of which the command will be executed.
 
 <table class="props">
@@ -559,9 +548,8 @@ Sets a combination of key modifiers, on recognition of which the command will be
 * ej.datavisualization.Diagram.KeyModifiers.None
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-	commandManager: Object;
 	constructor(){
 	    this.commandManager={
 	        "clone":{
@@ -586,9 +574,8 @@ Defines any additional parameters that are required at runtime
 * null
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-commandManager: Object;
 	constructor(){
 	    this.commandManager={
 	        "clone":{
@@ -619,26 +606,24 @@ A collection of JSON objects where each object represents a connector
 
 #### Example
 {% highlight html %}
-<ej-diagram width="1000" height="1000"[connectors]="connectors">
-    
-</ej-diagram>
-dgm class DiagramComponent {
-	connectors: Array<any>;
-    constructor(){
-        this.connectors = [{
-            name:"connector",
-            sourcePoint:{
-                x:100,
-                y:100
-            },
-            targetPoint:{
-                x:200,
-                y:200
-            }
-        }];
-    }
-};
+<ej-diagram width="1000" height="1000"[connectors]="connectors"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
+this.connectors = [{
+    name:"connector",
+    sourcePoint:{
+        x:100,
+        y:100
+    },
+    targetPoint:{
+        x:200,
+        y:200
+    }
+}];
+    
 {% endhighlight %}
 
 
@@ -652,11 +637,10 @@ To maintain additional information about connectors
 * null
 
 #### Example
-{% highlight html %}
-	connectors: Array<any>;
-    constructor(){
-        this.connectors = [{
-            name:"connector",
+{% highlight ts %}
+	
+    this.connectors = [{
+        name:"connector",
             sourcePoint:{
                 x:100,
                 y:100
@@ -665,9 +649,9 @@ To maintain additional information about connectors
                 x:200,
                 y:200
             },
-            addInfo:"Bidirectional Flow"
+        addInfo:"Bidirectional Flow"
         }];
-    }
+    
 
 {% endhighlight %}
 
@@ -681,11 +665,9 @@ Defines the width of the line bridges
 * 10
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-	connectors:Array<any>;
-    constructor(){
-        this.connectors=[{
+    this.connectors=[{
             name:"connector1",
             sourcePoint:{
                 x:100,
@@ -711,13 +693,11 @@ Defines the width of the line bridges
             constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default & ~ej.datavisualization.Diagram.ConnectorConstraints.InheritBridging | ej.datavisualization.Diagram.ConnectorConstraints.Bridging
         }
         ];
-    }
+    
 
 {% endhighlight %}
 ### connectors.constraints `enum`
 {:#members:connectors-constraints}
-
-<ts name = "ej.datavisualization.Diagram.ConnectorConstraints"/>
 
 Enables or disables the behaviors of connectors.
 
@@ -809,9 +789,8 @@ Enables or disables the behaviors of connectors.
 * ej.datavisualization.Diagram.ConnectorConstraints.Default
 
 #### Example
-{% highlight html %}
-	connectors:Array<any>;
-    constructor(){
+{% highlight ts %}
+	
         this.connectors=[{
             name:"connect1",
             sourcePoint:{
@@ -824,7 +803,7 @@ Enables or disables the behaviors of connectors.
             },
             constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default & ~ej.datavisualization.Diagram.ConnectorConstraints.Select };
         }];
-    };
+    
 
 {% endhighlight %}
 ### connectors.cornerRadius `number`
@@ -837,9 +816,8 @@ Defines the radius of the rounded corner
 * 0
 
 #### Example
-{% highlight html %}
-connectors:Array<any>;
-constructor(){
+{% highlight ts %}
+
     this.connectors=[{
         name:"connect1",
         segments:[{ type: "orthogonal"}],
@@ -854,7 +832,7 @@ constructor(){
             y:200
         },
     }];
-	}
+	
 
 {% endhighlight %}
 
@@ -879,11 +857,12 @@ Configures the styles of shapes
 <ej-diagram width="1000" height="1000" [pageSettings]="pageSettings"  [connectors]="connectors">
 </ej-diagram>
 
+{% endhighlight %}
 
-	connectors:Array<any>;
-    constructor(){
-        this.connectors=[{
-            name:"connect1",
+{% highlight ts %}
+
+    this.connectors=[{
+        name:"connect1",
             sourcePoint:{
                 x:100,
                 y:100
@@ -892,19 +871,15 @@ Configures the styles of shapes
                 x:200,
                 y:200
             },
-            cssClass:"hoverConnector",
-        }
-        ];
+        cssClass:"hoverConnector",
     }
-	
+    ];
     
 {% endhighlight %}
 
 
 ### connectors.horizontalAlign `enum`
 {:#members:connectors-horizontalalign}
-
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Sets the horizontal alignment of the connector. Applicable, if the parent of the connector is a container.
 
@@ -936,7 +911,7 @@ Sets the horizontal alignment of the connector. Applicable, if the parent of the
 * ej.datavisualization.Diagram.HorizontalAlignment.Left
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
     name: "group1",
@@ -971,33 +946,29 @@ A collection of JSON objects where each object represents a label.
 * []
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Connector label collection
-	        labels:[{ text:"label" }],
-	        sourcePoint:{
+
+this.connectors=[{
+    name:"connect1",
+    segments:[{ type: "orthogonal"}],
+    //Connector label collection
+    labels:[{ text:"label" }],
+        sourcePoint:{
 	            x:100,
 	            y:100
-	        },
-	        targetPoint:{
+        },
+        targetPoint:{
 	            x:200,
 	            y:200
-	        },
-	    }];
-	}
+        },
+}];
+	
 
 {% endhighlight %}
 
 ### connectors.labels.alignment `enum`
 {:#members:connectors-labels-alignment}
-
-<ts name = "ej.datavisualization.Diagram.Alignment"/>
 
 Defines how the label should be aligned with respect to the segment
 
@@ -1031,11 +1002,9 @@ Defines how the label should be aligned with respect to the segment
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
+
 	    this.connectors=[{
 	        name:"connect1",
 	        segments:[{ type: "orthogonal"}],
@@ -1050,7 +1019,7 @@ connectors:Array<any>;
 	            y:200
 	        },
 	    }];
-	}
+	
     
 {% endhighlight %}
 
@@ -1066,25 +1035,23 @@ Enables/disables the bold style
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label" , bold:true}],
-	        sourcePoint:{
+
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+	    labels:[{ text:"label" , bold:true}],
+            sourcePoint:{
 	            x:100,
 	            y:100
-	        },
+	    },
 	        targetPoint:{
 	            x:200,
 	            y:200
-	        },
-	    }];
-	}
+            },
+    }];
+	
     
 {% endhighlight %}
 
@@ -1100,25 +1067,23 @@ Sets the border color of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label" , borderColor:"red", borderWidth: 2}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+
+    this.connectors=[{
+        name:"connect1",
+        segments:[{ type: "orthogonal"}],
+	    labels:[{ text:"label" , borderColor:"red", borderWidth: 2}],
+	    sourcePoint:{
+            x:100,
+            y:100
+	    },
+	    targetPoint:{
+            x:200,
+	        y:200
+        },
+    }];
+	
     
 {% endhighlight %}
 
@@ -1134,25 +1099,22 @@ Sets the border width of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label" , borderColor:"red", borderWidth: 2}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+    segments:[{ type: "orthogonal"}],
+    labels:[{ text:"label" , borderColor:"red", borderWidth: 2}],
+    sourcePoint:{
+        x:100,
+        y:100
+    },
+    targetPoint:{
+	    x:200,
+	    y:200
+    },
+}];
+	
     
 {% endhighlight %}
 
@@ -1167,25 +1129,23 @@ Defines whether the label should be aligned within the connector boundaries
 * true
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label" , boundaryConstraints: "false"}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+
+    this.connectors=[{
+	name:"connect1",
+    segments:[{ type: "orthogonal"}],
+	labels:[{ text:"label" , boundaryConstraints: "false"}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	    x:200,
+	    y:200
+    },
+	}];
+	
     
 {% endhighlight %}
 
@@ -1202,11 +1162,8 @@ Sets the fill color of the text area
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
 	    this.connectors=[{
 	        name:"connect1",
 	        segments:[{ type: "orthogonal"}],
@@ -1220,7 +1177,6 @@ connectors:Array<any>;
 	            y:200
 	        },
 	    }];
-	}
     
 {% endhighlight %}
 
@@ -1237,25 +1193,22 @@ Sets the font color of the text
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label", fontcolor: "green" }],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	name:"connect1",
+	segments:[{ type: "orthogonal"}],
+	labels:[{ text:"label", fontcolor: "green" }],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+    targetPoint:{
+	    x:200,
+	    y:200
+    },
+    }];
+	
     
 {% endhighlight %}
 
@@ -1271,25 +1224,23 @@ Sets the font family of the text
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label", fontcolor: "green",fontFamily:"seugoe UI"}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+	    labels:[{ text:"label", fontcolor: "green",fontFamily:"seugoe UI"}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
+	
     
 {% endhighlight %}
 
@@ -1306,25 +1257,22 @@ Defines the font size of the text
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label", fontSize: 14}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+	    labels:[{ text:"label", fontSize: 14}],
+        sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
+	
     
 {% endhighlight %}
 
@@ -1342,25 +1290,22 @@ Sets the horizontal alignment of the label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+	    labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -1376,25 +1321,22 @@ Sets the hyperlink for the labels in the connectors.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{  "hyperLink": "https://www.syncfusion.com"}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+	segments:[{ type: "orthogonal"}],
+	labels:[{  "hyperLink": "https://www.syncfusion.com"}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+	    },
+	targetPoint:{
+	    x:200,
+	    y:200
+	    },
+}];
+	
     
 {% endhighlight %}
 
@@ -1411,25 +1353,22 @@ Enables/disables the italic style
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{  text:"label", italic:true}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+	segments:[{ type: "orthogonal"}],
+	labels:[{  text:"label", italic:true}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	x:200,
+	y:200
+    },
+}];
+	
     
 {% endhighlight %}
 
@@ -1447,12 +1386,12 @@ Gets whether the label is currently being edited or not.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-@ViewChild('diagram') diagram: EJComponents<any, any>;
+@ViewChild('Diagram') diagram: EJComponents<any, any>;
 
 ngAfterViewInit() {
-    let connector = this.diagram.selectionList[0]
+    let connector = this.Diagram.widget.selectionList[0]
     console.log(connector.labels[0].mode);
 }
     
@@ -1470,25 +1409,22 @@ Sets the unique identifier of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{  text:"label", name:"label1"}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+	    labels:[{  text:"label", name:"label1"}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
+	
     
 {% endhighlight %}
 
@@ -1504,25 +1440,22 @@ Sets the fraction/ratio(relative to connector) that defines the position of the 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{  text:"label",offsetX:0 , offsetY:0.5 }],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+	segments:[{ type: "orthogonal"}],
+	labels:[{  text:"label",offsetX:0 , offsetY:0.5 }],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	    x:200,
+	    y:200
+	    },
+}];
+	
     
 {% endhighlight %}
 
@@ -1540,23 +1473,19 @@ Sets the fraction/ratio(relative to connector) that defines the position of the 
 
 {% highlight html %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{  text:"label",offsetX:0 , offsetY:0.5 }],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+	    labels:[{  text:"label",offsetX:0 , offsetY:0.5 }],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -1571,25 +1500,21 @@ To set the margin of the label in right direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ right: 105 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+	segments:[{ type: "orthogonal"}],
+	labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ right: 105 }}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	x:200,
+	y:200
+    },
+}];
     
 {% endhighlight %}
 
@@ -1605,26 +1530,23 @@ To set the margin of the label in left direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Leaves 5px space between the left boundary of connector and label
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ left: 5 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+	segments:[{ type: "orthogonal"}],
+    //Leaves 5px space between the left boundary of connector and label
+	labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ left: 5 }}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	    x:200,
+	    y:200
+    },
+}];
+	
     
 {% endhighlight %}
 
@@ -1640,26 +1562,23 @@ To set the margin of the label in top direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Leaves 5px space between the left boundary of connector and label
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ top: 5 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+	segments:[{ type: "orthogonal"}],
+    //Leaves 5px space between the left boundary of connector and label
+	labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ top: 5 }}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	x:200,
+	y:200
+    },
+}];
+
     
 {% endhighlight %}
 
@@ -1675,26 +1594,22 @@ To set the margin of the label in bottom direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Leaves 5px space between the left boundary of connector and label
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ bottom: 5 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connect1",
+	segments:[{ type: "orthogonal"}],
+    //Leaves 5px space between the left boundary of connector and label
+	labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ bottom: 5 }}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	x:200,
+	y:200
+	},
+}];
     
 {% endhighlight %}
 
@@ -1719,26 +1634,22 @@ To set the drag limit of the label in right direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Leaves 5px space between the left boundary of connector and label
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ right: 5 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+        //Leaves 5px space between the left boundary of connector and label
+	    labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ right: 5 }}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	    x:200,
+	    y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -1755,26 +1666,23 @@ To set the drag limit of the label in left direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Leaves 5px space between the left boundary of connector and label
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ left: 5 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+        //Leaves 5px space between the left boundary of connector and label
+	    labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ left: 5 }}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	    x:200,
+	    y:200
+        },
+    }];
+	
     
 {% endhighlight %}
 
@@ -1790,27 +1698,23 @@ To set the drag limit of the label in top direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Leaves 5px space between the left boundary of connector and label
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ top: 10 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
-    
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+        //Leaves 5px space between the left boundary of connector and label
+	    labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ top: 10 }}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
+	
 {% endhighlight %}
 
 
@@ -1825,27 +1729,23 @@ To set the drag limit of the label in bottom direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connect1",
-	        segments:[{ type: "orthogonal"}],
-            //Leaves 5px space between the left boundary of connector and label
-	        labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ bottom: 10 }}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
-    
+    this.connectors=[{
+	    name:"connect1",
+	    segments:[{ type: "orthogonal"}],
+        //Leaves 5px space between the left boundary of connector and label
+	    labels:[{text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ bottom: 10 }}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	    x:200,
+	    y:200
+        },
+    }];
+	
 {% endhighlight %}
 
 
@@ -1860,24 +1760,20 @@ Defines the transparency of labels
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", opacity: 0.7}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	    name:"connector1",
+        labels:[{text:"label", opacity: 0.7}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -1893,24 +1789,20 @@ Defines whether the label is editable or not
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", readOnly:true}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	    name:"connector1",
+        labels:[{text:"label", readOnly:true}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	    x:200,
+	    y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -1918,7 +1810,6 @@ connectors:Array<any>;
 ### connectors.labels.relativeMode `enum`
 {:#members:connectors-labels-relativemode}
 
-<ts name = "ej.datavisualization.Diagram.LabelRelativeMode"/>
 
 Defines whether the label should be positioned whether relative to segments or connector boundaries
 
@@ -1947,25 +1838,21 @@ Defines whether the label should be positioned whether relative to segments or c
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", relativeMode:"segmentPath"}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
-    
+    this.connectors=[{
+	    name:"connector1",
+        labels:[{text:"label", relativeMode:"segmentPath"}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
+	
 {% endhighlight %}
 
 
@@ -1980,24 +1867,20 @@ Defines the angle to which the label needs to be rotated
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", rotateAngle:90}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connector1",
+    labels:[{text:"label", rotateAngle:90}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	    x:200,
+	    y:200
+    },
+}];
     
 {% endhighlight %}
 
@@ -2013,24 +1896,21 @@ Sets the position of the label with respect to the total segment length
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", segmentOffset:0.7}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connector1",
+    labels:[{text:"label", segmentOffset:0.7}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	    x:200,
+	    y:200
+    },
+}];
+	
     
 {% endhighlight %}
 
@@ -2047,24 +1927,20 @@ Defines the label text
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label"}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+        name:"connector1",
+        labels:[{text:"label"}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -2082,24 +1958,20 @@ Defines how to align the text inside the label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", textAlign:ej.datavisualization.Diagram.TextAlign.Left}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+        name:"connector1",
+        labels:[{text:"label", textAlign:ej.datavisualization.Diagram.TextAlign.Left}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -2116,24 +1988,20 @@ Sets how to decorate the label text.
 * ej.datavisualization.Diagram.TextDecorations.None
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connector1",
+    labels:[{text:"label", textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	    x:200,
+	    y:200
+	    },
+}];
     
 {% endhighlight %}
 
@@ -2150,24 +2018,20 @@ Sets the vertical alignment of the label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	    name:"connector1",
+        labels:[{text:"label", verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+    }];
     
 {% endhighlight %}
 
@@ -2183,25 +2047,21 @@ Enables or disables the visibility of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label",visible:false}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
-    
+this.connectors=[{
+	    name:"connector1",
+        labels:[{text:"label",visible:false}],
+	    sourcePoint:{
+	        x:100,
+	        y:100
+        },
+	    targetPoint:{
+	        x:200,
+	        y:200
+        },
+}];
+
 {% endhighlight %}
 
 
@@ -2216,24 +2076,20 @@ Sets the width of the label(the maximum value of label width and the connector w
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"label", width:100}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+this.connectors=[{
+    name:"connector1",
+    labels:[{text:"label", width:100}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	targetPoint:{
+	    x:200,
+        y:200
+    },
+}];
     
 {% endhighlight %}
 
@@ -2251,24 +2107,21 @@ Defines how the label text needs to be wrapped.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
-	    this.connectors=[{
-	        name:"connector1",
-            labels:[{text:"Enter Your Text",wrapping:ej.datavisualization.Diagram.TextWrapping.NoWrap}],
-	        sourcePoint:{
-	            x:100,
-	            y:100
-	        },
-	        targetPoint:{
-	            x:200,
-	            y:200
-	        },
-	    }];
-	}
+    this.connectors=[{
+	name:"connector1",
+    labels:[{text:"Enter Your Text",wrapping:ej.datavisualization.Diagram.TextWrapping.NoWrap}],
+	sourcePoint:{
+	    x:100,
+	    y:100
+    },
+	 targetPoint:{
+	    x:200,
+	    y:200
+     },
+    }];
+	
     
 {% endhighlight %}
 
@@ -2284,7 +2137,7 @@ Sets the stroke color of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors=[{
 	        name:"connector1",
@@ -2313,7 +2166,7 @@ Sets the pattern of dashes and gaps used to stroke the path of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors=[{
 	        name:"connector1",
@@ -2343,7 +2196,7 @@ Defines the padding value to ease the interaction with connectors
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors=[{
 	        name:"connector1",
@@ -2373,7 +2226,7 @@ Sets the width of the line
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors=[{
 	        name:"connector1",
@@ -2403,11 +2256,9 @@ Defines the minimum space to be left between the bottom of parent bounds and the
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
+
 	    this.connectors = [{
 	        name: "group1",
 	        type: "group",
@@ -2443,11 +2294,9 @@ Defines the minimum space to be left between the left of parent bounds and the c
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
+
 	    this.connectors = [{
 	        name: "group1",
 	        type: "group",
@@ -2484,11 +2333,9 @@ Defines the minimum space to be left between the right of parent bounds and the 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
+
 	    this.connectors = [{
 	        name: "group1",
 	        type: "group",
@@ -2525,11 +2372,8 @@ Defines the minimum space to be left between the top of parent bounds and the co
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
 	    this.connectors = [{
 	        name: "group1",
 	        type: "group",
@@ -2565,11 +2409,9 @@ Sets a unique name for the connector
 * ""
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	labels:Array<any>;
-	constructor(){
+
 	    this.connectors=[{
 	        name:"connect1",
 	        labels:[{text:"Connector1",
@@ -2598,7 +2440,7 @@ Defines the transparency of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 connectors:Array<any>;
 	labels:Array<any>;
@@ -2632,22 +2474,8 @@ Defines the size and preview size of the node to add that to symbol palette. To 
 
 #### Example
 
-{% highlight html %}
 
-<div class="symPalette_section">
-    <ej-symbolpalette   id="symbolpalette" diagramId="diagramCore">
-    </ej-symbolpalette>
-</div>
-
-import {Component} from '@angular/core';
-
-@Component({
-  selector: 'ej-app',
-  templateUrl: 'app/components/diagram/Symbolpalette.component.html',
-})
-
-export class SymbolpaletteComponent {
-    constructor() {}
+{% highlight ts %}
 
     palettes: [{
 		name: "Connectors", expanded: true,
@@ -2679,7 +2507,7 @@ Sets the parent name of the connector.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.Connectors=[
             {
@@ -2706,7 +2534,7 @@ An array of JSON objects where each object represents a segment
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
     name: "connector1",
@@ -2736,7 +2564,7 @@ Sets the direction of orthogonal segment
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -2764,7 +2592,7 @@ Describes the length of orthogonal segment
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -2795,7 +2623,7 @@ Describes the end point of bezier/straight segment
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -2826,7 +2654,7 @@ Defines the first control point of the bezier segment
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -2857,7 +2685,7 @@ Defines the second control point of bezier segment
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -2878,7 +2706,6 @@ this.connectors = [{
 ### connectors.segments.type `enum`
 {:#members:connectors-segments-type}
 
-<ts name = "ej.datavisualization.Diagram.Segments"/>
 
 Sets the type of the segment.
 
@@ -2911,7 +2738,7 @@ Sets the type of the segment.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -2940,7 +2767,7 @@ Describes the length and angle between the first control point and the start poi
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -2971,7 +2798,7 @@ Describes the length and angle between the second control point and end point of
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3003,7 +2830,6 @@ Defines the role/meaning of the connector
 ### connectors.shape.type `enum`
 {:#members:connectors-shape-type}
 
-<ts name = "ej.datavisualization.Diagram.ConnectorShapes"/>
 
 Sets the type of the connector
 
@@ -3036,7 +2862,7 @@ Sets the type of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3057,7 +2883,6 @@ this.connectors = [{
 ### connectors.shape.flow `enum`
 {:#members:connectors-shape-flow}
 
-<ts name = "ej.datavisualization.Diagram.BPMNFlows"/>
 
 Sets the type of the flow in a BPMN Process
 
@@ -3090,7 +2915,7 @@ Sets the type of the flow in a BPMN Process
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3111,7 +2936,6 @@ this.connectors = [{
 ### connectors.shape.association `enum`
 {:#members:connectors-shape-flow-association}
 
-<ts name = "ej.datavisualization.Diagram.AssociationFlows"/>
 
 Sets the type of the Association in a BPMN Process
 
@@ -3144,7 +2968,7 @@ Sets the type of the Association in a BPMN Process
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3165,7 +2989,6 @@ this.connectors = [{
 ### connectors.shape.message `enum`
 {:#members:connectors-shape-message}
 
-<ts name = "ej.datavisualization.Diagram.BPMNMessageFlows"/>
 
 Sets the type of the message flow. Applicable, if the connector is of type "BPMN"
 
@@ -3198,7 +3021,7 @@ Sets the type of the message flow. Applicable, if the connector is of type "BPMN
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3219,7 +3042,6 @@ this.connectors = [{
 ### connectors.shape.sequence `enum`
 {:#members:connectors-shape-sequence}
 
-<ts name = "ej.datavisualization.Diagram.BPMNSequenceFlows"/>
 
 Sets the type of BPMN sequence flow
 
@@ -3252,7 +3074,7 @@ Sets the type of BPMN sequence flow
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3273,7 +3095,6 @@ this.connectors = [{
 ### connectors.shape.relationship `enum`
 {:#members:connectors-shape-relationship}
 
-<ts name = "ej.datavisualization.Diagram.ClassifierShapes"/>
 
 Defines the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is "classifier".
 
@@ -3326,7 +3147,7 @@ Defines the role of the connector in a UML Class Diagram. Applicable, if the typ
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3357,7 +3178,6 @@ Defines the multiplicity option of the connector
 ### connectors.shape.multiplicity.type `enum`
 {:#members:connectors-shape-multiplicity-type}
 
-<ts name = "ej.datavisualization.Diagram.Multiplicity"/>
 
 Sets the type of the multiplicity. Applicable, if the connector is of type "classifier"
 
@@ -3392,7 +3212,7 @@ Sets the type of the multiplicity. Applicable, if the connector is of type "clas
 
 * ej.datavisualization.Diagram.Multiplicity.OneToOne
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
@@ -3457,7 +3277,7 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
@@ -3482,7 +3302,7 @@ Defines the source label to connector. Applicable, if the connector is of type "
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
@@ -3508,7 +3328,7 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
@@ -3535,7 +3355,7 @@ Defines the target label to connector. Applicable, if the connector is of type "
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
@@ -3553,7 +3373,6 @@ this.connectors = [{
 ### connectors.shape.ActivityFlow `enum`
 {:#members:connectors-shape-activityflow}
 
-<ts name = "ej.datavisualization.Diagram.UMLActivityFlow"/>
 
 Defines the shape of UMLActivity to connector. Applicable, if the connector is of type `UMLActivity`
 
@@ -3585,7 +3404,7 @@ Defines the shape of UMLActivity to connector. Applicable, if the connector is o
 * ej.datavisualization.Diagram.UMLActivityFlow.Control
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -3612,7 +3431,8 @@ Defines the source decorator of the connector
 * { shape:"arrow", width: 8, height:8, borderColor:"black", fillColor:"black" }
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3625,6 +3445,7 @@ this.connectors = [{
 	            },
 				sourceDecorator : { shape:"openarrow" }
 	    }];
+
 {% endhighlight %}
 
 ### connectors.sourceDecorator.borderColor `string`
@@ -3638,7 +3459,8 @@ Sets the border color of the source decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3651,6 +3473,7 @@ this.connectors = [{
 	            },
 				sourceDecorator : { shape:"openarrow" ,borderColor:"red"}
 	    }];
+
 {% endhighlight %}
 
 
@@ -3665,7 +3488,8 @@ Sets the border width of the decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3678,6 +3502,7 @@ this.connectors = [{
 	            },
 				sourceDecorator : { shape:"openarrow" ,borderWidth:5}
 	    }];
+
 {% endhighlight %}
 
 
@@ -3692,7 +3517,8 @@ Sets the fill color of the source decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3705,6 +3531,7 @@ this.connectors = [{
 	            },
 				sourceDecorator : { shape:"circle" , fillColor:"red"}
 	    }];
+
 {% endhighlight %}
 
 
@@ -3719,7 +3546,8 @@ Sets the height of the source decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3732,6 +3560,7 @@ this.connectors = [{
 	            },
 				 sourceDecorator : { width: 10, height:10 }
 	    }];
+
 {% endhighlight %}
 
 
@@ -3746,7 +3575,8 @@ Defines the custom shape of the source decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3759,13 +3589,13 @@ this.connectors = [{
 	            },
 				 sourceDecorator : { shape:"path", pathData:"M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 376.892,225.284 Z"}
 	    }];
+
 {% endhighlight %}
 
 
 ### connectors.sourceDecorator.shape `enum`
 {:#members:connectors-sourcedecorator-shape}
 
-<ts name = "ej.datavisualization.Diagram.DecoratorShapes"/>
 
 Defines the shape of the source decorator.
 
@@ -3810,7 +3640,8 @@ Defines the shape of the source decorator.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3823,6 +3654,7 @@ this.connectors = [{
 	            },
 				 sourceDecorator : { shape: ej.datavisualization.Diagram.DecoratorShapes.Circle }
 	    }];
+
 {% endhighlight %}
 
 
@@ -3837,7 +3669,8 @@ Defines the width of the source decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.connectors = [{
 	       name: "connector1",
 	            sourcePoint: {
@@ -3850,6 +3683,7 @@ this.connectors = [{
 	            },
 				 sourceDecorator : { width: 10, height:10 } 
 	    }];
+
 {% endhighlight %}
 
 
@@ -3864,10 +3698,8 @@ Sets the source node of the connector
 
 #### Example
 
-{% highlight html %}
-connectors:Array<any>;
-	nodes:Array<any>;
-	constructor(){
+{% highlight ts %}
+
 	this.nodes = [{
 	name:"source", offsetX:100, offsetY:100, width: 50, height: 50},
 	{name:"target" ,offsetX:300, offsetY:300, width:50, height:50}];
@@ -3884,7 +3716,7 @@ connectors:Array<any>;
 	        y: 200
 	    },
 	}];
-	}
+	
 {% endhighlight %}
 
 ### connectors.sourcePadding `number`
@@ -3897,11 +3729,9 @@ Defines the space to be left between the source node and the source point of a c
 * 0
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	nodes:Array<any>;
-	constructor(){
+
 	this.nodes = [{
 	name:"source", offsetX:100, offsetY:100, width: 50, height: 50},
 	{name:"target" ,offsetX:300, offsetY:300, width:50, height:50}];
@@ -3920,7 +3750,7 @@ connectors:Array<any>;
 	        y: 200
 	    },
 	}];
-	}
+	
 {% endhighlight %}
 
 ### connectors.sourcePoint `object`
@@ -3933,19 +3763,15 @@ Describes the start point of the connector
 * ej.datavisualization.Diagram.Point()
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	nodes:Array<any>;
-	labels:Array<any>;
-	constructor(){
+
 	    this.connectors = [{
 	        name: "connector1",
 	        sourcePoint:{x:100, y:100}, 
 	        targetPoint:{x:200, y:200},
 				  
 	    }];
-	}	
 
 	{% endhighlight %}
 
@@ -3961,19 +3787,15 @@ Defines the x-coordinate of a position
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	nodes:Array<any>;
-	labels:Array<any>;
-	constructor(){
 	    this.connectors = [{
 	        name: "connector1",
 	        sourcePoint:{x:100, y:100}, 
 	        targetPoint:{x:200, y:200},
 				  
 	    }];
-	}	
+	
 
 	{% endhighlight %}
 
@@ -3989,19 +3811,15 @@ Defines the y-coordinate of a position
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-connectors:Array<any>;
-	nodes:Array<any>;
-	labels:Array<any>;
-	constructor(){
 	    this.connectors = [{
 	        name: "connector1",
 	        sourcePoint:{x:100, y:100}, 
 	        targetPoint:{x:200, y:200},
 				  
 	    }];
-	}	
+	
 
 	{% endhighlight %}
 
@@ -4018,10 +3836,6 @@ Sets the source port of the connector
 #### Example
 {% highlight html %}
 
-connectors:Array<any>;
-	nodes:Array<any>;
-	labels:Array<any>;
-	constructor(){
 	this.nodes = [{
 	name:"source", offsetX:100, offsetY:100, width: 50, height: 50,ports:[{name:"port", offset:{x:1,y:0.5}}]},
 	{name:"target" ,offsetX:300, offsetY:300, width:50, height:50,ports:[{name:"port" , offset:{x:0,y:0.5}}]}];
@@ -4032,7 +3846,7 @@ connectors:Array<any>;
 	    sourcePort:"port",
 	    targetPort:"port",
 	}];
-	}
+	
 
 {% endhighlight %}
 
@@ -4046,7 +3860,7 @@ Defines the target decorator of the connector
 * { shape:"arrow", width: 8, height:8, borderColor:"black", fillColor:"black" }
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -4074,7 +3888,7 @@ Sets the border color of the decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -4103,7 +3917,7 @@ Sets the color with which the decorator will be filled
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -4132,7 +3946,7 @@ Defines the height of the target decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -4161,7 +3975,7 @@ Defines the custom shape of the target decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -4182,7 +3996,6 @@ this.connectors = [{
 ### connectors.targetDecorator.shape `enum`
 {:#members:connectors-targetdecorator-shape}
 
-<ts name = "ej.datavisualization.Diagram.DecoratorShapes"/>
 
 Defines the shape of the target decorator.
 
@@ -4227,7 +4040,7 @@ Defines the shape of the target decorator.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -4256,7 +4069,7 @@ Defines the width of the target decorator
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 	       name: "connector1",
@@ -4286,7 +4099,7 @@ Sets the target node of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes = [{
 	name:"source", offsetX:100, offsetY:100, width: 50, height: 50},
@@ -4310,7 +4123,7 @@ Defines the space to be left between the target node and the target point of the
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes = [{
 	name:"source", offsetX:100, offsetY:100, width: 50, height: 50},
@@ -4340,7 +4153,7 @@ Describes the end point of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes = [{
 	name:"source", offsetX:100, offsetY:100, width: 50, height: 50},
@@ -4365,7 +4178,7 @@ Sets the targetPort of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 connectors:Array<any>;
 	nodes:Array<any>;
@@ -4397,7 +4210,7 @@ Defines the tooltip that should be shown when the mouse hovers over connector. F
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 		//Defines connectors
@@ -4424,7 +4237,6 @@ this.connectors = [{
 ### connectors.verticalAlign `enum`
 {:#members:connectors-verticalalign}
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 To set the vertical alignment of connector (Applicable,if the parent is group).
 
@@ -4457,7 +4269,7 @@ To set the vertical alignment of connector (Applicable,if the parent is group).
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 		//Defines connectors
@@ -4492,7 +4304,7 @@ Enables or disables the visibility of connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 		//Defines connectors
@@ -4522,7 +4334,7 @@ Sets the z-index of the connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 		//Defines connectors
@@ -4552,7 +4364,7 @@ Binds the custom JSON data with connector properties
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.connectors = [{
 		//Defines connectors
@@ -4578,7 +4390,6 @@ this.connectors = [{
 ### constraints `enum`
 {:#members:constraints}
 
-<ts name = "ej.datavisualization.Diagram.DiagramConstraints"/>
 
 Enables/Disables the default behaviors of the diagram.
 
@@ -4658,27 +4469,20 @@ Enables/Disables the default behaviors of the diagram.
 * ej.datavisualization.Diagram.DiagramConstraints.All
 
 #### Example
+{% highlight html %}
 
 <div>
 <ej-diagram  id="diagram" width="100%" height="600px" [constraints]="constraints">
 </ej-diagram>
 </div>
-{% highlight html %}
+
+{% endhighlight %}
 
 
-import { Component } from '@angular/core';
+{% highlight ts %}
 
-@Component({
-  selector: 'ej-app',
-  templateUrl: 'app/components/diagram/default.component.html'
-})
-export class ModelComponent {
-    constraints: Object;
-    constructor() {
-        //Disables PageEditing
-        this.constraints = ej.datavisualization.Diagram.DiagramConstraints.Default & ~ej.datavisualization.Diagram.DiagramConstraints.Bridging
-  }
-};
+   //Disables PageEditing
+   this.constraints = ej.datavisualization.Diagram.DiagramConstraints.Default & ~ej.datavisualization.Diagram.DiagramConstraints.Bridging
 
 {% endhighlight %}
 
@@ -4705,11 +4509,12 @@ Defines the collection of context menu items
 </ej-diagram>
 </div>
 
-export class ModelComponent {
-    enableContextMenu: boolean;
-    contextMenu: Object;
-    constructor() {
-        this.contextMenu = {
+{% endhighlight %}
+
+
+{% highlight ts %}
+
+    this.contextMenu = {
         // Collection of items
         items: [{
             name: "hyperLink",
@@ -4719,8 +4524,7 @@ export class ModelComponent {
         }],
         showCustomMenuItemsOnly: true
     };
-    }
-};
+    
 
 {% endhighlight %}
 
@@ -4742,10 +4546,11 @@ Defines the text for the collection of context menu item
 </ej-diagram>
 </div>
 
-export class ModelComponent {
-    enableContextMenu: boolean;
-    contextMenu: Object;
-    constructor() {
+{% endhighlight %}
+
+
+{% highlight ts %}
+
         this.contextMenu = {
         // Collection of items
         items: [{
@@ -4756,9 +4561,7 @@ export class ModelComponent {
         }],
         showCustomMenuItemsOnly: true
     };
-    }
-};
-
+    
 {% endhighlight %}
 
 
@@ -4780,10 +4583,11 @@ Defines the name for the collection of context menu items
 </ej-diagram>
 </div>
 
-export class ModelComponent {
-    enableContextMenu: boolean;
-    contextMenu: Object;
-    constructor() {
+{% endhighlight %}
+
+
+{% highlight ts %}
+
         this.contextMenu = {
         // Collection of items
         items: [{
@@ -4794,8 +4598,7 @@ export class ModelComponent {
         }],
         showCustomMenuItemsOnly: true
     };
-    }
-};
+
 
 {% endhighlight %}
 ### contextMenu.items.imageUrl `string`
@@ -4816,12 +4619,13 @@ Defines the image url for the collection of context menu items
 </ej-diagram>
 </div>
 
+{% endhighlight %}
 
 
-export class ModelComponent {
-    enableContextMenu: boolean;
-    contextMenu: Object;
-    constructor() {
+{% highlight ts %}
+
+
+
         this.contextMenu = {
         // Collection of items
         items: [{
@@ -4832,8 +4636,6 @@ export class ModelComponent {
         }],
         showCustomMenuItemsOnly: true
     };
-    }
-};
 
 {% endhighlight %}
 
@@ -4864,10 +4666,13 @@ Defines the CssClass for the collection of context menu items
             }
 </style>
 
-export class ModelComponent {
-    enableContextMenu: boolean;
-    contextMenu: Object;
-    constructor() {
+
+{% endhighlight %}
+
+
+{% highlight ts %}
+
+
         this.contextMenu = {
         // Collection of items
         items: [{
@@ -4877,9 +4682,8 @@ export class ModelComponent {
             "cssClass":"menuplace",
             "style:""",
         }],
-    };
-    }
-};
+        };
+
 
 {% endhighlight %}
 
@@ -4902,12 +4706,12 @@ Defines the collection of sub items for the context menu items
 </ej-diagram>
 </div>
 
+{% endhighlight %}
 
 
-export class ModelComponent {
-    enableContextMenu: boolean;
-    contextMenu: Object;
-    constructor() {
+{% highlight ts %}
+
+
         this.contextMenu = {
         // Collection of items
         items: [{
@@ -4916,8 +4720,6 @@ export class ModelComponent {
             subItems: [{name: "zoomIn", text: "ZoomIn"}, {name: "zoomOut",text: "ZoomOut"}]
         }],
     };
-    }
-};
 
 {% endhighlight %}
 
@@ -4935,15 +4737,17 @@ To set whether to display the default context menu items or not
 
 #### Example
 
-        export class ModelComponent {
-    enableContextMenu: boolean;
-    contextMenu: Object;
-    constructor() {
+    
+
+
+{% highlight ts %}
         this.contextMenu = {
         showCustomMenuItemsOnly: true
     };
     }
 };
+
+{% endhighlight %}
 
 
 
@@ -4963,9 +4767,8 @@ Defines the data source either as a collection of objects or as an instance of e
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -4987,9 +4790,8 @@ Sets the unique id of the data source items
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -5011,9 +4813,8 @@ Defines the parent id of the data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -5035,11 +4836,7 @@ Describes query to retrieve a set of data from the specified datasource
 
 #### Example
 
-{% highlight html %}
-
-dataSourceSettings: Object;
-
-
+{% highlight ts %}
 
         dataSourceSettings: {dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
        query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
@@ -5059,9 +4856,7 @@ Sets the unique id of the root data source item
 
 #### Example
 
-{% highlight html %}
-
-dataSourceSettings: Object;
+{% highlight ts %}
 
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -5083,11 +4878,7 @@ Describes the name of the table on which the specified query has to be executed
 
 #### Example
 
-{% highlight html %}
-
-dataSourceSettings: Object;
-
-
+{% highlight ts %}
 
         dataSourceSettings: {dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
        query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
@@ -5109,17 +4900,14 @@ Specifies the method name which is used to get the updated data from client side
 
 #### Example
 
-{% highlight html %}
-
-dataSourceSettings: Object;
+{% highlight ts %}
 
 
-
-        dataSourceSettings: {id: "Name",
-                    crudAction:
-                    {
-                        read: http://js.syncfusion.com/demos/ejservices/api/Diagram/GetNodes
-                        } }
+dataSourceSettings: {id: "Name",
+    crudAction:
+        {
+            read: http://js.syncfusion.com/demos/ejservices/api/Diagram/GetNodes
+ } }
 
 {% endhighlight %}
 
@@ -5136,17 +4924,15 @@ Specifies the create method which is used to get the nodes to be added from clie
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 dataSourceSettings: Object;
 
-
-
-        dataSourceSettings: {id: "Name",
-                    crudAction:
-                    {
-                        create: "http://js.syncfusion.com/demos/ejservices/api/Diagram/AddNodes",
-                        } }
+    dataSourceSettings: {id: "Name",
+        crudAction:
+            {
+                create: "http://js.syncfusion.com/demos/ejservices/api/Diagram/AddNodes",
+     } }
 
 {% endhighlight %}
 
@@ -5162,17 +4948,13 @@ Specifies the update method which is used to get the updated data from client si
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
-
-
-
-        dataSourceSettings: {id: "Name",
-                    crudAction:
-                    {
-                        update: "http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateNodes",
-                        } }
+    dataSourceSettings: {id: "Name",
+        crudAction:
+            {
+                update: "http://js.syncfusion.com/demos/ejservices/api/Diagram/UpdateNodes",
+     } }
 
 {% endhighlight %}
 
@@ -5188,17 +4970,14 @@ Specifies the destroy method which is used to get the deleted items data from cl
 
 #### Example
 
-{% highlight html %}
-
-dataSourceSettings: Object;
+{% highlight ts %}
 
 
-
-        dataSourceSettings: {id: "Name",
-                    crudAction:
-                    {
-                        destroy: "http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteNodes"
-                        } }
+    dataSourceSettings: {id: "Name",
+        crudAction:
+            {
+                destroy: "http://js.syncfusion.com/demos/ejservices/api/Diagram/DeleteNodes"
+     } }
 
 {% endhighlight %}
 
@@ -5214,17 +4993,13 @@ Specifies the read method to get the created nodes from client side to the serve
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
-
-
-
-        dataSourceSettings: {id: "Name",
-                    crudAction:
-                    {
-                        read: "http://js.syncfusion.com/demos/ejservices/api/Diagram/GetNodes
-                        } }
+    dataSourceSettings: {id: "Name",
+        crudAction:
+            {
+                read: "http://js.syncfusion.com/demos/ejservices/api/Diagram/GetNodes
+     } }
 
 {% endhighlight %}
 
@@ -5242,15 +5017,8 @@ Specifies the custom fields to get the updated data from client side to the serv
 
 {% highlight html %}
 
-dataSourceSettings: Object;
-
-
-
-        dataSourceSettings: {id: "Name",
-                    customFields: [
-                        "Description",
-                        "Color"
-                    ] }
+    dataSourceSettings: {id: "Name",
+        customFields: ["Description","Color" ] }
 
 {% endhighlight %}
 
@@ -5267,17 +5035,13 @@ Defines the data source either as a collection of objects or as an instance of e
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
-
-
-
-        dataSourceSettings: {id: "Name",
-                    connectionDataSource:
-                    {
-                        id: "Name"
-                    } }
+    dataSourceSettings: {id: "Name",
+        connectionDataSource:
+            {
+                id: "Name"
+     } }
 
 {% endhighlight %}
 
@@ -5293,9 +5057,7 @@ Sets the datasource for the connection datasource settings items.
 
 #### Example
 
-{% highlight html %}
-
-dataSourceSettings: Object;
+{% highlight ts %}
 
 let data = [
         { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
@@ -5323,9 +5085,8 @@ Sets the unique id of the connection data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: { id: "Name",
                     connectionDataSource:
@@ -5348,9 +5109,8 @@ Sets the source node of the connection data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: { id: "Name",
                     connectionDataSource:
@@ -5377,9 +5137,8 @@ Sets the target node of the connection data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: { id: "Name",
                     connectionDataSource:
@@ -5403,9 +5162,8 @@ Sets the sourcePointX value of the connection data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {id: "Name",
                     connectionDataSource:
@@ -5429,9 +5187,8 @@ Sets the sourcePointY value of the connection data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {id: "Name",
                     connectionDataSource:
@@ -5455,9 +5212,8 @@ Sets the targetPoint-x value of the connection data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {id: "Name",
                     connectionDataSource:
@@ -5482,9 +5238,8 @@ Sets the targetPoint-y value of the connection data source item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {id: "Name",
                     connectionDataSource:
@@ -5508,9 +5263,8 @@ Specifies the method name which is used to get updated connectors from client si
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {
                     id: "Name",
@@ -5540,9 +5294,8 @@ Specifies the create method which is used to get the connectors to be added from
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {
                     id: "Name",
@@ -5571,9 +5324,8 @@ Specifies the update method which is used to get the updated connectors from cli
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {
                     id: "Name",
@@ -5601,7 +5353,7 @@ Specifies the destroy method which is used to get the deleted items data from cl
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 dataSourceSettings: Object;
 
@@ -5630,9 +5382,8 @@ Specifies the read method which is used to get the data from client side to the 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: {id: "Name",
                     connectionDataSource:
@@ -5658,9 +5409,8 @@ Specifies the custom fields to get the updated data from client side to the serv
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-dataSourceSettings: Object;
 
         dataSourceSettings: { id: "Name",
                     connectionDataSource:
@@ -5685,7 +5435,7 @@ Initializes the default values for nodes and connectors
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.defaultSettings = {
             node: {
@@ -5707,7 +5457,7 @@ Initializes the default connector properties
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.defaultSettings = {
     //Apply default styles to all connectors
@@ -5730,7 +5480,7 @@ Initializes the default properties of groups
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.defaultSettings = {
    //Disable dragging all groups
@@ -5751,7 +5501,7 @@ Initializes the default properties for nodes
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.defaultSettings = {
             node: {
@@ -5773,9 +5523,7 @@ Sets the type of JSON object to be drawn through drawing tool
 
 #### Example
 
-{% highlight html %}
-
-drawType:object;
+{% highlight ts %}
 
 this.drawType = {drawType:{type:"node"}}
 
@@ -5793,9 +5541,8 @@ Enables or disables auto scroll in diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-enableAutoScroll:object;
 
 this.enableAutoScroll = {enableAutoScroll:false}
 
@@ -5813,11 +5560,9 @@ Enables or disables diagram context menu
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-enableContextMenu:object;
-
-this.enableContextMenu = {enableContextMenu:false}
+this.enableContextMenu = false
 
 {% endhighlight %}
 
@@ -5854,7 +5599,7 @@ A method that takes a history entry as argument and returns whether the specific
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
@@ -5877,7 +5622,7 @@ A method that ends grouping the changes
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 let group = this.diagram.widget.model.selectedItems;
 
@@ -5906,7 +5651,7 @@ A method that removes the history of a recent change made in diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
@@ -5922,7 +5667,7 @@ A method that allows to track the custom changes made in diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
@@ -5948,7 +5693,7 @@ Defines what should be happened while trying to restore a custom change
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
@@ -5985,7 +5730,7 @@ The `redoStack` property is used to get the number of redo actions to be stored 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
@@ -6005,7 +5750,7 @@ The `stackLimit` property used to restrict the undo and redo actions to a certai
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
@@ -6021,7 +5766,7 @@ A method that starts to group the changes to revert/restore them in a single und
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 let group = this.diagram.widget.model.selectedItems;
 
@@ -6051,7 +5796,7 @@ Defines what should be happened while trying to revert a custom change
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
@@ -6088,7 +5833,7 @@ The `undoStack` property is used to get the number of undo actions to be stored 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
@@ -6100,7 +5845,6 @@ this.diagram.widget.model.historyManager.undoStack();
 ### labelRenderingMode `enum`
 {:#members:labelrenderingmode}
 
-<ts name = "ej.datavisualization.Diagram.LabelRenderingMode"/>
 
 Defines the type of the rendering mode of label.
 
@@ -6129,9 +5873,8 @@ Defines the type of the rendering mode of label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-labelRenderingMode:object;
 
 this.labelRenderingMode = {labelRenderingMode:"svg"};
 
@@ -6154,13 +5897,12 @@ Specifies the custom bounds to arrange/align the layout
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 <ej-diagram id="diagramCore" width="100%" height="450" [pageSettings]="pageSettings" [snapSettings]="snapSettings" 
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
 
 this.layout = { type: 'radialtree', horizontalSpacing: 30, verticalSpacing: 30 };
 
@@ -6179,13 +5921,12 @@ Defines the fixed node with reference to which, the layout will be arranged and 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 <ej-diagram id="diagramCore" width="100%" height="450" [pageSettings]="pageSettings" [snapSettings]="snapSettings" 
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
 
 this.layout = { fixedNode: "nodeName" };
 
@@ -6204,13 +5945,12 @@ Customizes the orientation of trees/sub trees. For orientations, see [Chart Orie
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 <ej-diagram id="diagramCore" width="100%" height="450" [pageSettings]="pageSettings" [snapSettings]="snapSettings" 
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
 
  getLayoutInfo(diagram, node, options){
         options.orientation = "vertical"; 
@@ -6235,13 +5975,12 @@ Defines a method to customize the segments based on source and target nodes.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 <ej-diagram id="diagramCore" width="100%" height="450" [pageSettings]="pageSettings" [snapSettings]="snapSettings" 
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
 
 getConnectorSegment(diagram, node, options) { };
 
@@ -6263,13 +6002,12 @@ Sets the space to be horizontally left between nodes
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 <ej-diagram id="diagramCore" width="100%" height="450" [pageSettings]="pageSettings" [snapSettings]="snapSettings" 
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
 
 
 this.layout = { { horizontalSpacing: 50 }  };
@@ -6296,7 +6034,10 @@ Defines the space to be left between layout bounds and layout.
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
+{% endhighlight %}
+
+{% highlight ts %}
+
 
 
 this.layout = { { margin:{ left: 10, right: 10, top: 10, bottom: 10}   }};
@@ -6308,7 +6049,6 @@ this.layout = { { margin:{ left: 10, right: 10, top: 10, bottom: 10}   }};
 ### layout.horizontalAlignment `enum`
 {:#members:layout-horizontalalignment}
 
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Defines how to horizontally align the layout within the layout bounds
 
@@ -6347,8 +6087,10 @@ Defines how to horizontally align the layout within the layout bounds
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
 
+{% endhighlight %}
+
+{% highlight ts %}
 
 this.layout = {  horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Center   };
 
@@ -6360,7 +6102,6 @@ this.layout = {  horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlig
 ### layout.verticalAlignment `enum`
 {:#members:layout-verticalalignment }
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Defines how to vertically align the layout within the layout bounds
 
@@ -6399,8 +6140,9 @@ Defines how to vertically align the layout within the layout bounds
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
+{% endhighlight %}
 
+{% highlight ts %}
 
 this.layout = {  verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Center   };
 
@@ -6412,7 +6154,6 @@ this.layout = {  verticalAlignment:ej.datavisualization.Diagram.VerticalAlignmen
 ### layout.orientation `enum`
 {:#members:layout-orientation}
 
-<ts name = "ej.datavisualization.Diagram.LayoutOrientations"/>
 
 Sets the orientation/direction to arrange the diagram elements.
 
@@ -6455,7 +6196,9 @@ Sets the orientation/direction to arrange the diagram elements.
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 
 this.layout = {  orientation: ej.datavisualization.Diagram.LayoutOrientations.LeftToRight};
@@ -6467,7 +6210,6 @@ this.layout = {  orientation: ej.datavisualization.Diagram.LayoutOrientations.Le
 ### layout.type `enum`
 {:#members:layout-type}
 
-<ts name = "ej.datavisualization.Diagram.LayoutTypes"/>
 
 Sets the type of the layout based on which the elements will be arranged.
 
@@ -6506,8 +6248,9 @@ Sets the type of the layout based on which the elements will be arranged.
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
+{% endhighlight %}
 
+{% highlight ts %}
 
 this.layout = { type: ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree };
 
@@ -6532,7 +6275,9 @@ Sets the space to be vertically left between nodes
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 
 this.layout = { verticalSpacing: 50 };
@@ -6559,7 +6304,9 @@ Sets the value is used to define the root node of the layout.
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
-layout:object;
+{% endhighlight %}
+
+{% highlight ts %}
 
 
 this.layout = { root: 'rootNode' };
@@ -6579,11 +6326,9 @@ Defines the current culture of diagram
 
 #### Example
 
-{% highlight html %}
+}
 
-
-
-locale:object;
+{% highlight ts %}
 
 
 this.locale = { locale: "en-US"  };
@@ -6601,15 +6346,9 @@ Array of JSON objects where each object represents a node
 
 * []
 
-#### Example
-
-NODES
-
-
 ### nodes.activity `enum`
 {:#members:nodes-activity}
 
-<ts name = "ej.datavisualization.Diagram.BPMNActivity"/>
 
 Defines the type of BPMN Activity. Applicable, if the node is a BPMN activity.
 
@@ -6642,7 +6381,7 @@ Defines the type of BPMN Activity. Applicable, if the node is a BPMN activity.
 * ej.datavisualization.Diagram.BPMNActivity.Task
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             type:"bpmn",
@@ -6664,7 +6403,7 @@ To maintain additional information about nodes
 * {}
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
 constructor(){
         this.addInfo = {TooltipData:"Shares the information with the customer"};
@@ -6691,7 +6430,7 @@ Defines the additional information of a process. It is not directly related to t
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
@@ -6714,7 +6453,7 @@ Sets the angle between the BPMN shape and the annotation
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
             type:"bpmn", shape: "activity",
@@ -6727,7 +6466,6 @@ this.nodes=[{
 ### nodes.annotation.direction `enum`
 {:#members:nodes-annotation-direction}
 
-<ts name = "ej.datavisualization.Diagram.BPMNAnnotationDirection"/>
 
 Sets the direction of the text annotation
 
@@ -6764,7 +6502,8 @@ Sets the direction of the text annotation
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
  this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
             type:"bpmn", shape: "activity",
@@ -6772,6 +6511,7 @@ Sets the direction of the text annotation
                 direction:"right", length: 130, angle: -45, 
                 width: 100, height: 50 }
         }];
+
 {% endhighlight %}
 
 
@@ -6783,6 +6523,14 @@ Sets the height of the text annotation
 #### Default Value:
 
 * 20
+
+{% highlight ts %}
+this.nodes=[
+            {
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier"
+        },
+
+        {% endhighlight %}
 
 
 ### nodes.annotation.length `number`
@@ -6796,13 +6544,15 @@ Sets the distance between the BPMN shape and the annotation
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
  this.nodes=[{
            name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape: "activity",
         annotation: { text: "This is a BPMN Activity shape", width: 100, height: 50,
            length: 150  } 
         }];
+
 {% endhighlight %}
 
 
@@ -6817,13 +6567,15 @@ Defines the additional information about the flow object in a BPMN Process
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
  this.nodes=[{
            name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape: "activity",
         annotation: { text: "This is a BPMN Activity shape", width: 100
             } 
         }];
+
 {% endhighlight %}
 
 
@@ -6838,13 +6590,15 @@ Sets the  width of the text annotation
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
  this.nodes=[{
            name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape: "activity",
         annotation: { text: "This is a BPMN Activity shape", width: 100
             }
         }];
+
 {% endhighlight %}
 
 
@@ -6859,10 +6613,12 @@ Sets the border color of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
  this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red"
         }];
+
 {% endhighlight %}
 
 
@@ -6877,10 +6633,12 @@ Sets the pattern of dashes and gaps to stroke the border
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
  this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" , borderDashArray: "4,2"
         }];
+
 {% endhighlight %}
 
 
@@ -6895,10 +6653,12 @@ Sets the border width of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
  this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50, borderColor: "red" , borderDashArray: "2,2", borderWidth:2
         }];
+
 {% endhighlight %}
 
 
@@ -6913,7 +6673,7 @@ Defines whether the group can be ungrouped or not
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -6947,7 +6707,7 @@ Array of JSON objects where each object represents a child node/connector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -6980,7 +6740,7 @@ Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram 
 * ej.datavisualization.Diagram.ClassifierShapes.Class
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 this.nodes=[
             {
                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
@@ -7000,7 +6760,13 @@ Defines the name, attributes and methods of a Class. Applicable, if the node is 
 
 #### Example
 
-NODES.CLASS
+{% highlight ts %}
+this.nodes=[
+            {
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
+        },
+
+        {% endhighlight %}
 
 
 ### nodes.class.name `string`
@@ -7033,7 +6799,7 @@ Defines the collection of attributes
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7055,7 +6821,7 @@ Sets the name of the attribute
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7077,7 +6843,7 @@ Sets the data type of attribute
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7098,7 +6864,7 @@ Defines the visibility of the attribute
 * ej.datavisualization.Diagram.ScopeValueDefaults.Public
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7120,7 +6886,7 @@ Defines the collection of methods of a Class.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7142,7 +6908,7 @@ Sets the name of the method.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
  this.nodes=[
             {
@@ -7163,7 +6929,7 @@ Defines the arguments of the method.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7183,7 +6949,7 @@ Sets the name of the argument
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7204,7 +6970,7 @@ Sets the type of the argument
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7227,7 +6993,7 @@ Sets the return type of the method
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7248,7 +7014,7 @@ Sets the visibility of the method.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7265,7 +7031,7 @@ Defines the state of the node is collapsed.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7285,7 +7051,7 @@ Sets the border color for collapse icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7305,7 +7071,7 @@ Sets the border width for collapse icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7326,7 +7092,7 @@ Sets the fill color for collapse icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7346,7 +7112,7 @@ Defines the height for collapse icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7358,7 +7124,6 @@ this.nodes=[
 ### nodes.collapseIcon.horizontalAlignment `enum`
 {:#members:nodes-collapseicon-horizontalalignment}
 
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Sets the horizontal alignment of the icon.
 
@@ -7391,7 +7156,7 @@ Sets the horizontal alignment of the icon.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7413,7 +7178,7 @@ To set the margin for the collapse icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7434,7 +7199,7 @@ Sets the fraction/ratio(relative to node) that defines the position of the icon
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7447,7 +7212,6 @@ this.nodes=[
 ### nodes.collapseIcon.shape `enum`
 {:#members:nodes-collapseicon-shape}
 
-<ts name = "ej.datavisualization.Diagram.IconShapes"/>
 
 Defines the shape of the collapsed state of the node.
 
@@ -7496,7 +7260,7 @@ Defines the shape of the collapsed state of the node.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7510,7 +7274,6 @@ collapseIcon:{ shape:"arrowdown", width:10, height:10}}]
 ### nodes.collapseIcon.verticalAlignment `enum`
 {:#members:nodes-collapseicon-verticalalignment}
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Sets the vertical alignment of the icon.
 
@@ -7543,6 +7306,8 @@ Sets the vertical alignment of the icon.
 
 #### Example
 
+{% highlight ts %}
+
 this.nodes=[
             {
              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
@@ -7563,7 +7328,7 @@ Defines the distance to be left between a node and its connections(In coming and
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7575,7 +7340,6 @@ this.nodes=[
 ### nodes.constraints `enum`
 {:#members:nodes-constraints}
 
-<ts name = "ej.datavisualization.Diagram.NodeConstraints"/>
 
 Enables or disables the default behaviors of the node.
 
@@ -7684,7 +7448,7 @@ Enables or disables the default behaviors of the node.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7705,7 +7469,7 @@ Defines how the child objects need to be arranged(Either in any predefined manne
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7733,7 +7497,7 @@ Defines the orientation of the container. Applicable, if the group is a containe
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7753,7 +7517,6 @@ this.nodes=[
 ### nodes.container.type `enum`
 {:#members:nodes-container-type}
 
-<ts name = "ej.datavisualization.Diagram.ContainerType"/>
 
 Sets the type of the container. Applicable if the group is a container.
 
@@ -7782,7 +7545,7 @@ Sets the type of the container. Applicable if the group is a container.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7812,7 +7575,7 @@ Defines the corner radius of rectangular shapes.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7845,6 +7608,10 @@ Configures the styles of shapes
     }
 </style>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 this.nodes=[
             {
                  name: "node", 
@@ -7866,7 +7633,6 @@ Defines the BPMN data object
 ### nodes.data.type `enum`
 {:#members:nodes-data-type}
 
-<ts name = "ej.datavisualization.Diagram.BPMNDataObjects"/>
  
 Sets the type of the BPMN Data object
 
@@ -7899,7 +7665,7 @@ Sets the type of the BPMN Data object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7922,7 +7688,7 @@ Defines whether the BPMN data object is a collection or not
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7946,7 +7712,7 @@ Defines an Enumeration in a UML Class Diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7971,7 +7737,7 @@ Sets the name of the Enumeration
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -7995,7 +7761,7 @@ Defines the collection of enumeration members
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8019,7 +7785,7 @@ Sets the name of the enumeration member
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8035,7 +7801,6 @@ this.nodes=[
 ### nodes.event `enum`
 {:#members:nodes-event}
 
-<ts name = "ej.datavisualization.Diagram.BPMNEvents"/>
 
 Sets the type of the BPMN Events. Applicable, if the node is a BPMN event.
 
@@ -8081,7 +7846,7 @@ Sets the type of the BPMN Events. Applicable, if the node is a BPMN event.
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8105,7 +7870,7 @@ Defines whether the node can be automatically arranged using layout or not
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8130,7 +7895,7 @@ Defines the state of the node is expanded or collapsed.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8153,7 +7918,7 @@ Sets the border color for expand icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8176,7 +7941,7 @@ Sets the border width for expand icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8200,7 +7965,7 @@ Sets the fill color for expand icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8223,7 +7988,7 @@ Defines the height for expand icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8238,7 +8003,6 @@ this.nodes=[
 ### nodes.expandIcon.horizontalAlignment `enum`
 {:#members:nodes-expandicon-horizontalalignment}
 
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Sets the horizontal alignment of the icon.
 
@@ -8271,7 +8035,7 @@ Sets the horizontal alignment of the icon.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8296,7 +8060,7 @@ To set the margin for the expand icon of node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8320,7 +8084,7 @@ Sets the fraction/ratio(relative to node) that defines the position of the icon
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8336,7 +8100,6 @@ this.nodes=[
 ### nodes.expandIcon.shape `enum`
 {:#members:nodes-expandicon-shape}
 
-<ts name = "ej.datavisualization.Diagram.IconShapes"/>
 
 Defines the shape of the expanded state of the node.
 
@@ -8385,7 +8148,7 @@ Defines the shape of the expanded state of the node.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8401,7 +8164,6 @@ expandIcon:{ shape:"arrowdown", width:10, height:10}
 ### nodes.expandIcon.verticalAlignment `enum`
 {:#members:nodes-expandicon-verticalalignment}
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Sets the vertical alignment of the icon.
 
@@ -8434,7 +8196,7 @@ Sets the vertical alignment of the icon.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8459,7 +8221,7 @@ Defines the fill color of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8474,7 +8236,6 @@ this.nodes=[
 ### nodes.gateway `enum`
 {:#members:nodes-gateway}
 
-<ts name = "ej.datavisualization.Diagram.BPMNGateways"/>
 
 Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway.
 
@@ -8527,7 +8288,7 @@ Sets the type of the BPMN Gateway. Applicable, if the node is a BPMN gateway.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8560,7 +8321,7 @@ Defines the different colors and the region of color transitions
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.gradient={
             type: "linear", x1: 0, x2: 50, y1: 0, y2: 50, stops: [
@@ -8588,7 +8349,7 @@ Defines the left most position(relative to node) of the rectangular region that 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.gradient={
             type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, stops: [
@@ -8617,7 +8378,7 @@ Defines the right most position(relative to node) of the rectangular region that
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.gradient={
             type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, stops: [
@@ -8645,7 +8406,7 @@ Defines the top most position(relative to node) of the rectangular region that n
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.gradient={
             type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, stops: [
@@ -8673,7 +8434,7 @@ Defines the bottom most position(relative to node) of the rectangular region tha
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.gradient={
             type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, stops: [
@@ -8706,7 +8467,7 @@ Defines the position of the outermost circle
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8732,7 +8493,7 @@ Defines the outer most circle of the radial gradient
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8758,7 +8519,7 @@ Defines the innermost circle of the radial gradient
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8784,7 +8545,7 @@ Defines the innermost circle of the radial gradient
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8810,7 +8571,7 @@ Defines the different colors and the region of color transitions.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8843,7 +8604,7 @@ Sets the color to be filled over the specified region
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8869,7 +8630,7 @@ Sets the position where the previous color transition ends and a new color trans
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8895,7 +8656,7 @@ Describes the transparency level of the region
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8922,7 +8683,7 @@ Sets the type of the BPMN Shapes as group. Applicable, if the node is a BPMN.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8943,7 +8704,7 @@ Defines the header of a swimlane/lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8964,7 +8725,7 @@ Defines the height of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -8977,7 +8738,6 @@ this.nodes=[
 ### nodes.horizontalAlign `enum`
 {:#members:nodes-horizontalalign}
 
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Sets the horizontal alignment of the node. Applicable, if the parent of the node is a container.
 
@@ -9010,7 +8770,7 @@ Sets the horizontal alignment of the node. Applicable, if the parent of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9028,7 +8788,7 @@ this.nodes=[
                     name :"group", children:[ "node1", "node2" ], container: { type: "canvas" }, offsetX:200, offsetY:100, minWidth:200, minHeight: 200, fillColor:"gray"
                 }];
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.inEdges `array`
@@ -9041,12 +8801,17 @@ A read only collection of the incoming connectors/edges of the node
 * []
 
 #### Example
+
+{% highlight ts %}
+
 //Read the incoming connections to the selected node
 let node = this.diagram.widget.selectionList[0];
         this.diagram.widget.addSelection(node);
         for(let i=0;i<node.inEdges.length;i++){
         console.log(node.inEdges[i]);
         }
+
+{% endhighlight %}
 
 
 ### nodes.interface `object`
@@ -9060,7 +8825,7 @@ Defines an interface in a UML Class Diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9082,7 +8847,7 @@ Sets the name of the interface
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9106,7 +8871,7 @@ Defines a collection of attributes of the interface
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9130,7 +8895,7 @@ Sets the name of the attribute
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9154,7 +8919,7 @@ Sets the type of the attribute
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9178,7 +8943,7 @@ Sets the visibility of the attribute
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9202,7 +8967,7 @@ Defines the collection of public methods of an interface
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9226,7 +8991,7 @@ Sets the name of the method.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9250,7 +9015,7 @@ Defines the collection of arguments of a method
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9274,7 +9039,7 @@ Sets the name of the argument
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9298,7 +9063,7 @@ Sets the type of the argument
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9322,7 +9087,7 @@ Sets the return type of the method
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9346,7 +9111,7 @@ Sets the visibility of the method
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9370,7 +9135,7 @@ Defines whether the sub tree of the node is expanded or collapsed
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9402,7 +9167,7 @@ Sets the node as a swimlane
 
 #### Example
 
-{% highlight html %}
+{% highlight htstml %}
 
 this.nodes=[
             {
@@ -9426,7 +9191,7 @@ A collection of objects where each object represents a label
 
 #### Example
 
-{% highlight html %}
+{% highlight httsml %}
 
 this.labels = [{"text": "Node1", "fontColor":"red"}];
 
@@ -9450,7 +9215,7 @@ Enables/disables the bold style
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9473,17 +9238,11 @@ Sets the border color of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
+this.nodes=[{name: "node1", width: 50, height:50, offsetX:50, offsetY:50,labels:[{ text:"label", borderColor:"red", borderWidth: 2}]}]
 
-this.nodes=[
-            {
-                name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
-         labels:[{ text:"label", borderColor:"red", borderWidth: 2}]
-            
-        },]
-
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels.borderWidth `number`
@@ -9497,7 +9256,7 @@ Sets the border width of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9521,7 +9280,7 @@ Sets the fill color of the text area
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9545,7 +9304,7 @@ Sets the font color of the text
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9569,7 +9328,7 @@ Sets the font family of the text
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9593,7 +9352,7 @@ Defines the font size of the text
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9609,7 +9368,6 @@ this.nodes=[
 ### nodes.labels.horizontalAlignment `enum`
 {:#members:nodes-labels-horizontalalignment}
 
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Sets the horizontal alignment of the label.
 
@@ -9642,7 +9400,7 @@ Sets the horizontal alignment of the label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9667,7 +9425,7 @@ Enables/disables the italic style
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9691,7 +9449,7 @@ To set the margin of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9707,7 +9465,6 @@ this.nodes=[
 ### nodes.labels.mode `enum`
 {:#members:nodes-labels-mode}
 
-<ts name = "ej.datavisualization.Diagram.LabelEditMode"/>
 
 Gets whether the label is currently being edited or not.
 
@@ -9736,7 +9493,7 @@ Gets whether the label is currently being edited or not.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9760,7 +9517,7 @@ Sets the unique identifier of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9786,10 +9543,10 @@ Sets the fraction/ratio(relative to node) that defines the position of the label
 {% highlight html %}
 
 
-this.nodes=[
+this.nodes=[ts
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5) }]
-        }]
+            }]
 
         {% endhighlight %}
 
@@ -9805,7 +9562,7 @@ Defines the transparency of the labels
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9819,7 +9576,6 @@ this.nodes=[
 ### nodes.labels.overflowType `enum`
 {:#members:nodes-labels-overflowtype}
 
-<ts name = "ej.datavisualization.Diagram.OverflowType"/>
 
 Sets the overflowType of the labels
 
@@ -9848,7 +9604,7 @@ Sets the overflowType of the labels
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9871,7 +9627,7 @@ Defines whether the label is editable or not
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9893,7 +9649,7 @@ Defines the angle to which the label needs to be rotated
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9901,7 +9657,7 @@ this.nodes=[
          labels:[{ text:"label", rotateAngle: 90}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels.text `string`
@@ -9915,7 +9671,7 @@ Defines the label text
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9923,13 +9679,12 @@ this.nodes=[
          labels:[{ text:"Label"}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels.textAlign `enum`
 {:#members:nodes-labels-textalign}
 
-<ts name = "ej.datavisualization.Diagram.TextAlign"/>
 	
 Defines how to align the text inside the label.
 
@@ -9962,7 +9717,7 @@ Defines how to align the text inside the label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -9970,13 +9725,12 @@ this.nodes=[
          labels:[{ text:"node Label", textAlign:ej.datavisualization.Diagram.TextAlign.Left}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels.textDecoration `enum`
 {:#members:nodes-labels-textdecoration}
 
-<ts name = "ej.datavisualization.Diagram.TextDecorations"/>
 
 Sets how to decorate the label text.
 
@@ -10013,8 +9767,7 @@ Sets how to decorate the label text.
 
 #### Example
 
-{% highlight html %}
-
+{% highlight ts %}
 
 this.nodes=[
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
@@ -10035,8 +9788,7 @@ Defines the overflowed content is displayed or not.
 
 #### Example
 
-{% highlight html %}
-
+{% highlight ts %}
 
 this.nodes=[
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
@@ -10044,13 +9796,12 @@ this.nodes=[
          overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels.verticalAlignment `enum`
 {:#members:nodes-labels-verticalalignment}
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Sets the vertical alignment of the label.
 
@@ -10083,7 +9834,7 @@ Sets the vertical alignment of the label.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -10092,7 +9843,7 @@ this.nodes=[
          labels:[{ text:"label", offset:{ y:0 }, verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels.visible `boolean`
@@ -10106,7 +9857,7 @@ Enables or disables the visibility of the label
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -10114,7 +9865,7 @@ this.nodes=[
          labels:[{ text:"Label", visible: false}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -10129,7 +9880,7 @@ Sets the width of the label(the maximum value of label width and the node width 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -10137,13 +9888,12 @@ this.nodes=[
          labels:[{ text:"Label", width: 100}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels.wrapping `enum`
 {:#members:nodes-labels-wrapping}
 
-<ts name = "ej.datavisualization.Diagram.TextWrapping"/>
 
 Defines how the label text needs to be wrapped.
 
@@ -10176,7 +9926,7 @@ Defines how the label text needs to be wrapped.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -10184,7 +9934,7 @@ this.nodes=[
          labels:[{ text:"Enter Your Text", wrapping:ej.datavisualization.Diagram.TextWrapping.NoWrap}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes `array`
@@ -10199,7 +9949,7 @@ An array of objects where each object represents a lane. Applicable, if the node
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[
@@ -10208,7 +9958,7 @@ this.nodes=[
 				 {name:"lane2", width:100}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.width `number`
@@ -10222,7 +9972,7 @@ Defines the width of lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.addInfo = {Description:"Describe the functionality"};
 this.nodes=[
@@ -10230,7 +9980,7 @@ this.nodes=[
                 lanes:[{ name:"lane1", width:200, addInfo: this.addInfo }]
         ]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.height `number`
@@ -10244,7 +9994,7 @@ Defines the height of lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.addInfo = {Description:"Describe the functionality"};
 this.nodes=[
@@ -10252,7 +10002,7 @@ this.nodes=[
 lanes:[{ name:"lane1", width:200, height:100, addInfo: addInfo }]
         ]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.zorder `number`
@@ -10266,7 +10016,7 @@ Defines the z-index of the lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.addInfo = {Description:"Describe the functionality"};
 this.nodes=[
@@ -10274,7 +10024,7 @@ this.nodes=[
 lanes:[{ name:"lane1", width:200,height:100,zOrder:10, addInfo: addInfo }]
         ]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.addInfo `object`
@@ -10288,7 +10038,7 @@ Allows to maintain additional information about lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.addInfo = {Description:"Describe the functionality"};
 this.nodes=[
@@ -10296,7 +10046,7 @@ this.nodes=[
 lanes:[{ name:"lane1", width:200,  addInfo: addInfo }]
         ]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.children `array`
@@ -10310,7 +10060,7 @@ An array of objects where each object represents a child node of the lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -10320,7 +10070,7 @@ this.nodes=[
         },
 ]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.fillColor `string`
@@ -10334,7 +10084,7 @@ Defines the fill color of the lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -10344,7 +10094,7 @@ this.nodes=[
         },
 ]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.header `object`
@@ -10358,7 +10108,7 @@ Defines the header of the lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10368,7 +10118,7 @@ this.nodes=[
             
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.isLane `boolean`
@@ -10382,7 +10132,7 @@ Defines the object as a lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10390,7 +10140,7 @@ this.nodes=[
             
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.name `string`
@@ -10404,7 +10154,7 @@ Sets the unique identifier of the lane
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10412,7 +10162,7 @@ this.nodes=[
             
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.lanes.orientation `string`
@@ -10426,7 +10176,7 @@ Sets the orientation of the lane.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, orientation:"horizontal",
@@ -10434,7 +10184,7 @@ lanes:[{ name:"function1", width:200 , orientation:"vertical" }]
             
         }];
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.marginBottom `number`
@@ -10448,7 +10198,7 @@ Defines the minimum space to be left between the bottom of parent bounds and the
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10458,7 +10208,7 @@ lanes:[{name:"lane1", width:200 ,
             
             }];
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.marginLeft `number`
@@ -10472,7 +10222,7 @@ Defines the minimum space to be left between the left of parent bounds and the n
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{}
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10482,7 +10232,7 @@ lanes:[{name:"lane1", width:200 ,
             
         
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.marginRight `number`
@@ -10496,7 +10246,7 @@ Defines the minimum space to be left between the right of the parent bounds and 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10506,7 +10256,7 @@ lanes:[{name:"lane1", width:200 ,
             
         
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.marginTop `number`
@@ -10520,7 +10270,7 @@ Defines the minimum space to be left between the top of parent bounds and the no
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10530,7 +10280,7 @@ lanes:[{name:"lane1", width:200 ,
             
         
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.maxHeight `number`
@@ -10544,7 +10294,7 @@ Defines the maximum height limit of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10554,7 +10304,7 @@ lanes:[{name:"lane1", width:200 ,
             
         
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.maxWidth `number`
@@ -10568,7 +10318,7 @@ Defines the maximum width limit of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10578,7 +10328,7 @@ lanes:[{name:"lane1", width:200 ,
             
         
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.minHeight `number`
@@ -10592,7 +10342,7 @@ Defines the minimum height limit of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10602,7 +10352,7 @@ lanes:[{name:"lane1", width:200 ,
             
         
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.minWidth `number`
@@ -10616,7 +10366,7 @@ Defines the minimum width limit of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
@@ -10626,7 +10376,7 @@ lanes:[{name:"lane1", width:200 ,
             
         
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.name `string`
@@ -10640,7 +10390,7 @@ Sets the unique identifier of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50 
@@ -10658,11 +10408,12 @@ Defines the position of the node on X-Axis
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50 
         }]
+
 {% endhighlight %}
 
 
@@ -10677,11 +10428,12 @@ Defines the position of the node on Y-Axis
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50 
         }]
+
 {% endhighlight %}
 
 
@@ -10696,11 +10448,12 @@ Defines the opaque of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50 ,opacity:0.7
         }]
+
 {% endhighlight %}
 
 
@@ -10714,7 +10467,8 @@ Defines the orientation of nodes. Applicable, if the node is a swimlane.
 * "vertical"
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[
             {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,orientation:"horizontal"
                 }];
@@ -10733,7 +10487,17 @@ A read only collection of outgoing connectors/edges of the node
 
 #### Example
 
-NODES.OUTEDGES
+
+{% highlight ts %}
+
+//Read the incoming connections to the selected node
+let node = this.diagram.widget.selectionList[0];
+        this.diagram.widget.addSelection(node);
+        for(let i=0;i<node.outEdges.length;i++){
+        console.log(node.outEdges[i]);
+        }
+
+{% endhighlight %}
 
 
 ### nodes.paddingBottom `number`
@@ -10748,7 +10512,7 @@ Defines the minimum padding value to be left between the bottom most position of
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[{name: "node1", width: 50, height:50},
@@ -10777,7 +10541,7 @@ Defines the minimum padding value to be left between the left most position of a
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 
 this.nodes=[{name: "node1", width: 50, height:50},
@@ -10791,7 +10555,7 @@ this.nodes=[{name: "node1", width: 50, height:50},
         fillColor:"gray", minWidth:200, minHeight:200,
         paddingLeft:10}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.paddingRight `number`
@@ -10806,7 +10570,7 @@ Defines the minimum padding value to be left between the right most position of 
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 
 
@@ -10821,7 +10585,7 @@ this.nodes=[{name: "node1", width: 50, height:50},
         fillColor:"gray", minWidth:200, minHeight:200,
         paddingRight:10}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.paddingTop `number`
@@ -10836,9 +10600,7 @@ Defines the minimum padding value to be left between the top most position of a 
 #### Example
 
 
-{% highlight html %}
-
-
+{% highlight ts %}
 
 this.nodes=[{name: "node1", width: 50, height:50},
         {
@@ -10851,7 +10613,7 @@ this.nodes=[{name: "node1", width: 50, height:50},
         fillColor:"gray", minWidth:200, minHeight:200,
         paddingTop:10}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.paletteItem `object`
@@ -10866,11 +10628,9 @@ Defines the size and preview size of the node to add that to symbol palette
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
-
-
- this.palettes = [{
+this.palettes = [{
         name: "Basic Shapes", expanded: true,
 		items: [
 		{
@@ -10883,7 +10643,7 @@ Defines the size and preview size of the node to add that to symbol palette
 		}]
        }];
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.paletteItem.enableScale `boolean`
@@ -10897,11 +10657,9 @@ Defines whether the symbol should be drawn at its actual size regardless of prec
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-
-
- this.palettes = [{
+this.palettes = [{
         name: "Nodes", expanded: true,
 		items: [
 		{
@@ -10929,11 +10687,9 @@ Defines the height of the symbol
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-
-
- this.palettes = [{
+this.palettes = [{
         name: "Nodes", expanded: true,
 		items: [
 		{
@@ -10947,7 +10703,7 @@ Defines the height of the symbol
 		}]
        }];
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.paletteItem.label `string`
@@ -10961,11 +10717,9 @@ To display a name for nodes in the symbol palette
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-
-
- this.palettes = [{
+this.palettes = [{
         name: "Nodes", expanded: true,
 		items: [
 		{
@@ -10991,11 +10745,9 @@ Defines the margin of the symbol item
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-
-
- this.palettes = [{
+this.palettes = [{
         name: "Nodes", expanded: true,
 		items: [
 		{
@@ -11007,7 +10759,7 @@ Defines the margin of the symbol item
 		}]
        }];
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.paletteItem.previewHeight `number`
@@ -11021,11 +10773,9 @@ Defines the preview height of the symbol
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-
-
- this.palettes = [{
+this.palettes = [{
         name: "Nodes", expanded: true,
 		items: [
 		{
@@ -11052,13 +10802,7 @@ Defines the preview width of the symbol
 
 #### Example
 
-{% highlight html %}
-
-
-
- {% highlight html %}
-
-
+{% highlight ts %}
 
  this.palettes = [{
         name: "Nodes", expanded: true,
@@ -11073,7 +10817,7 @@ Defines the preview width of the symbol
 		}]
        }];
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.paletteItem.width `number`
@@ -11087,11 +10831,9 @@ Defines the width of the symbol
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-
-
- this.palettes = [{
+this.palettes = [{
         name: "Nodes", expanded: true,
 		items: [
 		{
@@ -11105,7 +10847,7 @@ Defines the width of the symbol
 		}]
        }];
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.parent `string`
@@ -11119,7 +10861,7 @@ Sets the name of the parent group
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {name: "node1", width: 50, height:50,offsetX:50, offsetY:50, parent:"group"
@@ -11135,7 +10877,7 @@ this.nodes=[
         fillColor:"gray", minWidth:200, minHeight:200,
         paddingBottom:10}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.pathData `string`
@@ -11149,7 +10891,7 @@ Sets the path geometry that defines the shape of a path node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node3", width: 50, height:50, offsetX:50, offsetY:50, 
@@ -11157,7 +10899,7 @@ this.nodes=[{
         }
         ];
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.phases `array`
@@ -11172,7 +10914,8 @@ An array of objects, where each object represents a smaller region(phase) of a s
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
             width: 300, orientation:"horizontal",
@@ -11194,7 +10937,8 @@ Defines the header of the smaller regions
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
             width: 300, orientation:"horizontal",
@@ -11216,7 +10960,8 @@ Defines the line color of the splitter that splits adjacent phases.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
             width: 300, orientation:"horizontal",
@@ -11238,7 +10983,8 @@ Sets the dash array that used to stroke the phase splitter
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
             width: 300, orientation:"horizontal",
@@ -11260,7 +11006,8 @@ Sets the lineWidth of the phase
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
             width: 300, orientation:"horizontal",
@@ -11282,7 +11029,8 @@ Sets the unique identifier of the phase
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
             width: 300, orientation:"horizontal",
@@ -11303,7 +11051,11 @@ Sets the length of the smaller region(phase) of a swimlane
 * 100
 
 #### Example
+{% highlight ts %}
+
 this.nodes=[{type: "swimlane",name: "swimlane", phases:{offset: 200}]}]
+
+{% endhighlight %}
 
 
 ### nodes.phases.orientation `string`
@@ -11317,7 +11069,8 @@ Sets the orientation of the phase
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             {
             name: "verticalPhase", 
@@ -11339,7 +11092,8 @@ Sets the type of the object as phase
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             {
             name: "verticalPhase", 
@@ -11361,7 +11115,8 @@ Sets the height of the phase headers
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 this.nodes=[{
             type: "swimlane",name: "swimlane", offsetX:300, offsetY:100, 
 width: 300, orientation:"horizontal",phaseSize:50,
@@ -11382,7 +11137,7 @@ Sets the ratio/ fractional value relative to node, based on which the node will 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50, pivot: {x:0, y:0}
@@ -11402,14 +11157,15 @@ Defines a collection of points to draw a polygon. Applicable, if the shape is a 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
+
 
 this.nodes=[{
              name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
 type: "basic",shape:"polygon", points:[{ x: 0, y: 12.5 }, { x: 0, y: 50 }, { x: 50, y: 50 }, { x: 50, y: 0 }, { x: 12.5, y: 0 }, { x: 0, y: 12.5 }]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports `array`
@@ -11423,7 +11179,7 @@ An array of objects where each object represents a port
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
              name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
@@ -11431,7 +11187,7 @@ this.nodes=[{
             {name:"port2", offset:{ x:0.5, y:1 }}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.borderColor `string`
@@ -11445,14 +11201,14 @@ Sets the border color of the port
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
              name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, borderColor:"yellow" }] 
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.borderWidth `number`
@@ -11466,14 +11222,14 @@ Sets the stroke width of the port
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
              name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, borderColor:"yellow", borderWidth: 3 }]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.connectorPadding `number`
@@ -11487,20 +11243,19 @@ Defines the space to be left between the port bounds and its incoming and outgoi
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
              name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, connectorPadding:10 }]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.constraints `enum`
 {:#members:nodes-ports-constraints}
 
-<ts name = "ej.datavisualization.Diagram.PortConstraints"/>
 	
 Defines whether connections can be created with the port
 
@@ -11533,7 +11288,7 @@ Defines whether connections can be created with the port
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
@@ -11541,7 +11296,7 @@ this.nodes=[{
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, constraints: ej.datavisualization.Diagram.PortConstraints.Default &~ ej.datavisualization.Diagram.PortConstraints.Connect }] 
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.fillColor `string`
@@ -11555,14 +11310,14 @@ Sets the fill color of the port
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, fillColor:"red" }] 
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.name `string`
@@ -11576,14 +11331,14 @@ Sets the unique identifier of the port
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{ name:"port1", offset:{ x:0.5, y:0.5 } }]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.offset `object`
@@ -11597,7 +11352,7 @@ Defines the position of the port as fraction/ ratio relative to node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
@@ -11605,7 +11360,7 @@ this.nodes=[{
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 } }]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -11620,7 +11375,7 @@ Defines the path data to draw the port. Applicable, if the port `shape` is path.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
@@ -11629,13 +11384,12 @@ this.nodes=[{
       shape:"path", pathData: "M5,0 L10,10 L0,10 z"}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.shape `enum`
 {:#members:nodes-ports-shape}
 
-<ts name = "ej.datavisualization.Diagram.PortShapes"/>
 	
 Defines the shape of the port.
 
@@ -11672,7 +11426,7 @@ Defines the shape of the port.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
@@ -11680,7 +11434,7 @@ this.nodes=[{
       shape:ej.datavisualization.Diagram.PortShapes.Circle}]
         }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.ports.size `number`
@@ -11694,7 +11448,7 @@ Defines the size of the port
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
@@ -11707,7 +11461,6 @@ this.nodes=[{
 ### nodes.ports.visibility `enum`
 {:#members:nodes-ports-visibility}
 
-<ts name = "ej.datavisualization.Diagram.PortVisibility"/>
 
 Defines when the port should be visible.
 
@@ -11748,7 +11501,7 @@ Defines when the port should be visible.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
@@ -11770,18 +11523,17 @@ Sets the angle to which the node should be rotated
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50, rotateAngle: 45  }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.scale `enum`
 {:# members:nodes-scale}
 
-<ts name = "ej.datavisualization.Diagram.ScaleConstraints "/>
     
 Defines how the node should be scaled/stretched
 
@@ -11818,12 +11570,12 @@ Defines how the node should be scaled/stretched
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            scale:ej.datavisualization.Diagram.ScaleConstraints.Slice }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 ### nodes.shadow `object`
 {:#members:nodes-shadow}
@@ -11836,14 +11588,14 @@ Defines the opacity and the position of shadow
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: ej.datavisualization.Diagram.NodeConstraints.Default | ej.datavisualization.Diagram.NodeConstraints.Shadow,
       shadow: {opacity: 0.5, distance: 10, angle: 45} }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.shadow.angle `number`
@@ -11857,14 +11609,14 @@ Defines the angle of the shadow relative to node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: ej.datavisualization.Diagram.NodeConstraints.Default | ej.datavisualization.Diagram.NodeConstraints.Shadow,
       shadow: { angle: 135} }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.shadow.distance `number`
@@ -11878,14 +11630,14 @@ Sets the distance to move the shadow relative to node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: ej.datavisualization.Diagram.NodeConstraints.Default | ej.datavisualization.Diagram.NodeConstraints.Shadow,
      shadow: { distance: 10 } }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.shadow.opacity `number`
@@ -11899,20 +11651,19 @@ Defines the opaque of the shadow
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
            name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       constraints: ej.datavisualization.Diagram.NodeConstraints.Default | ej.datavisualization.Diagram.NodeConstraints.Shadow,
       shadow: {opacity: 0.9} }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.shape `enum|string`
 {:#members:nodes-shape}
 
-<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes | ej.datavisualization.Diagram.UMLActivityShapes"/>
 
 Sets the shape of the node. It depends upon the type of node.
 
@@ -12202,14 +11953,14 @@ The following table illustrates the list of UMLActivity shapes.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	  // Sets the shape as ellipse
       type:"basic", shape:ej.datavisualization.Diagram.BasicShapes.Ellipse}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.source `string`
@@ -12223,13 +11974,13 @@ Sets the source path of the image. Applicable, if the type of the node is image.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 type:"image", source: "Clayton.png"}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess `object`
@@ -12243,14 +11994,14 @@ Defines the sub process of a BPMN Activity. Applicable, if the type of the BPMN 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
 		subProcess:{ loop: ej.datavisualization.Diagram.BPMNLoops.Standard }}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.adhoc `boolean`
@@ -12264,7 +12015,7 @@ Defines whether the BPMN sub process is without any prescribed order or not
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
@@ -12277,7 +12028,6 @@ subProcess:{ adhoc: true }}]
 ### nodes.subProcess.boundary `enum`
 {:#members:nodes-subprocess-boundary}
 
-<ts name = "ej.datavisualization.Diagram.BPMNBoundary"/>
 
 Sets the boundary of the BPMN process
 
@@ -12310,14 +12060,14 @@ Sets the boundary of the BPMN process
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
 		subProcess:{ boundary: ej.datavisualization.Diagram.BPMNBoundary.Call }}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.compensation `boolean`
@@ -12331,14 +12081,14 @@ Sets whether the BPMN subprocess is triggered as a compensation of a specific ac
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
 		subProcess:{ compensation: true }}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.collapsed `boolean`
@@ -12352,14 +12102,14 @@ Sets whether the BPMN subprocess is triggered as a collapsed of a specific activ
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
 		subProcess:{ collapsed: false } }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.event `enum`
@@ -12375,14 +12125,14 @@ Sets the type of the event by which the sub-process will be triggered
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
         subProcess: { type: "event", event: "start" } }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.events `array`
@@ -12396,7 +12146,7 @@ Defines the collection of events that need to be appended with BPMN Sub-Process
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
@@ -12407,13 +12157,12 @@ this.nodes=[{
             { event: "intermediate", offset: { x: 0.25, y: 1 } },
             { event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 } }]} }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.loop `enum`
 {:#members:nodes-subprocess-loop}
 
-<ts name = "ej.datavisualization.Diagram.BPMNLoops"/>
 
 Defines the loop type of a sub process.
 
@@ -12450,14 +12199,14 @@ Defines the loop type of a sub process.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 type:"bpmn", shape:"activity", activity:"subprocess", 
 subProcess:{ loop: ej.datavisualization.Diagram.BPMNLoops.ParallelMultiInstance} }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.Processes `array`
@@ -12471,14 +12220,14 @@ Defines the children for BPMN's SubProcess
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
             subProcess: { type: "event",  trigger: "conditional", offset: { x: 0.75, y: 1 } } }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.subProcess.trigger `enum`
@@ -12494,21 +12243,20 @@ Defines the type of the event trigger
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"subprocess", 
             subProcess: { type: "event",  trigger: "conditional", offset: { x: 0.75, y: 1 } } }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 
 ### nodes.subProcess.type `enum`
 {:#members:nodes-subprocess-type}
 
-<ts name = "ej.datavisualization.Diagram.BPMNSubProcessTypes"/>
 
 Defines the type of a sub process
 
@@ -12541,14 +12289,14 @@ Defines the type of a sub process
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
             name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
             type: "bpmn", shape: "activity", activity: "subprocess",
             subProcess: { type: event } }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.task `object`
@@ -12562,14 +12310,14 @@ Defines the task of the BPMN activity. Applicable, if the type of activity is se
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
              name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ compensation: true }  }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.task.call `boolean`
@@ -12583,14 +12331,14 @@ To set whether the task is a global task or not
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
              name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ call: true }  }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -12605,20 +12353,19 @@ Sets whether the task is triggered as a compensation of another specific activit
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
              name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type:"bpmn", shape:"activity", activity:"task", 
 		task:{ compensation: true } }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.task.loop `enum`
 {:#members:nodes-tasks-loop}
 
-<ts name = "ej.datavisualization.Diagram.BPMNLoops"/>
 
 Sets the loop type of a BPMN task.
 
@@ -12655,7 +12402,7 @@ Sets the loop type of a BPMN task.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
               name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
@@ -12668,7 +12415,6 @@ this.nodes=[{
 ### nodes.task.type `enum`
 {:#members:nodes-tasks-type}
 
-<ts name = "ej.datavisualization.Diagram.BPMNTasks"/>
 
 Sets the type of the BPMN task.
 
@@ -12729,7 +12475,7 @@ Sets the type of the BPMN task.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
               name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
@@ -12763,12 +12509,17 @@ Sets the id of svg/html templates. Applicable, if the node is HTML or native.
     </svg>
 </script>
 
+{% endhighlight %}
+
+
+{% highlight ts %}
+
 this.nodes=[{
               name: "Clayton", width: 100, height:50, offsetX:50, offsetY:50, 
 		addInfo:{source:"Clayton.png"},
 		type:"native", templateId:"svgTemplate"  }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.textBlock `object`
@@ -12782,7 +12533,7 @@ Defines the textBlock of a text node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
                name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
@@ -12810,6 +12561,11 @@ Defines the tooltip that should be shown when the mouse hovers over node. For to
    </div>
 </script>
 
+{% endhighlight %}
+
+
+{% highlight ts %}
+
 this.nodes = [{
 		name:"Rectangle", width:50, height: 50, offsetX: 100, offsetY: 100,
         constraints: ej.datavisualization.Diagram.NodeConstraints.Default & ~ej.datavisualization.Diagram.NodeConstraints.InheritTooltip, 
@@ -12827,7 +12583,6 @@ this.nodes = [{
 ### nodes.trigger `enum`
 {:#members:nodes-trigger}
 
-<ts name = "ej.datavisualization.Diagram.BPMNTriggers"/>
 
 Sets the type of BPMN Event Triggers.
 
@@ -12900,18 +12655,17 @@ Sets the type of BPMN Event Triggers.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
                type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event, trigger: ej.datavisualization.Diagram.BPMNTriggers.None  }
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.type `enum`
 {:#members:nodes-type}
 
-<ts name = "ej.datavisualization.Diagram.Shapes"/>
 
 Defines the type of the node.
 
@@ -12968,19 +12722,18 @@ Defines the type of the node.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
                name: "node1", width: 100, height:100, offsetX:50, offsetY:50, 
 		type: ej.datavisualization.Diagram.Shapes.BPMN  }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.verticalAlign `enum`
 {:#members:nodes-verticalalign}
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Sets the vertical alignment of a node. Applicable, if the parent of a node is a container.
 
@@ -13013,7 +12766,7 @@ Sets the vertical alignment of a node. Applicable, if the parent of a node is a 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[
             {name: "node1", width: 50, height:50
@@ -13027,7 +12780,7 @@ this.nodes=[
         container: { type: "canvas" }, offsetX:200, offsetY:100, 
         fillColor:"gray", minWidth:200, minHeight:200}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.visible `boolean`
@@ -13041,12 +12794,12 @@ Defines the visibility of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
                name: "node1", width: 100, height:100, offsetX:50, offsetY:50, visible:false  }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.width `number`
@@ -13060,12 +12813,12 @@ Defines the width of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
                name: "node1", width: 100, height:50, offsetX:50, offsetY:50 }]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.zOrder `number`
@@ -13079,12 +12832,12 @@ Defines the z-index of the node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.nodes=[{
                name: "node1", width: 100, height:100, offsetX:50, offsetY:50, zOrder: 10}]
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodeTemplate `object`
@@ -13097,7 +12850,7 @@ Binds the custom JSON data with node properties
 * null
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
  let data = [{ "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
         { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" }];
@@ -13106,7 +12859,7 @@ Binds the custom JSON data with node properties
             node.labels[0].text = node.Name;
         };
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### pageSettings `object`
@@ -13125,8 +12878,8 @@ Defines the maximum distance to be left between the object and the scroll bar to
 
 #### Example
 
-{% highlight html %}
-pageSettings:Array<any>;
+{% highlight ts %}
+
 
 this.pageSettings=[{
         autoScrollBorder: { left: 50, top: 50, right: 50, bottom: 50 }
@@ -13146,7 +12899,7 @@ Sets whether multiple pages can be created to fit all nodes and connectors
 * false
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         multiplePage:false
@@ -13167,7 +12920,7 @@ Defines the background color of diagram pages
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         pageBackgroundColor:"lightgray"
@@ -13186,15 +12939,13 @@ Defines the page border color
 * "#565656"
 
 #### Example
-{% highlight html %}
-
-
+{% highlight ts %}
 
 this.pageSettings=[{
         pageBorderColor:"black", pageBorderWidth: 2
-       }];
+}];
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### pageSettings.pageBorderWidth `number`
@@ -13207,15 +12958,13 @@ Sets the border width of diagram pages
 * 0
 
 #### Example
-{% highlight html %}
-
-
+{% highlight ts %}
 
 this.pageSettings=[{
         pageBorderColor:"black", pageBorderWidth: 2
-       }];
+}];
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### pageSettings.pageHeight `number`
@@ -13229,11 +12978,11 @@ Defines the height of a page
 
 #### Example
 
-{% highlight html %}
+{% highlight httsml %}
 
 this.pageSettings=[{
         pageWidth: 500, pageHeight: 500
-       }];
+}];
 
 {% endhighlight %}
 
@@ -13250,11 +12999,11 @@ Defines the page margin
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         pageMargin : 20
-       }];
+}];
 
 {% endhighlight %}
 
@@ -13262,7 +13011,6 @@ this.pageSettings=[{
 ### pageSettings.pageOrientation `enum`
 {:#members:pagesettings-pageorientation}
 
-<ts name = "ej.datavisualization.Diagram.PageOrientations"/>
 
 Sets the orientation of the page.
 
@@ -13292,7 +13040,7 @@ Sets the orientation of the page.
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         pageWidth: 800, pageHeight: 500, 
@@ -13313,7 +13061,7 @@ Defines the height of a diagram page
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         pageWidth: 500, pageHeight: 500
@@ -13333,7 +13081,7 @@ Defines the scrollable area of diagram. Applicable, if the scroll limit is "limi
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         scrollLimit: "limited",
@@ -13346,7 +13094,6 @@ this.pageSettings=[{
 ### pageSettings.scrollLimit `enum`
 {:#members:pagesettings-scrolllimit}
 
-<ts name = "ej.datavisualization.Diagram.ScrollLimit"/>
 
 Defines the scrollable region of diagram.
 
@@ -13379,7 +13126,7 @@ Defines the scrollable region of diagram.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         scrollLimit: ej.datavisualization.Diagram.ScrollLimit.Diagram
@@ -13392,7 +13139,6 @@ this.pageSettings=[{
 ### pageSettings.boundaryConstraints `enum`
 {:#members:pagesettings-boundaryconstraints}
 
-<ts name = "ej.datavisualization.Diagram.BoundaryConstraints"/>
 
 Defines the draggable region of diagram elements.
 
@@ -13425,7 +13171,7 @@ Defines the draggable region of diagram elements.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         boundaryConstraints: ej.datavisualization.Diagram.BoundaryConstraints.Diagram
@@ -13445,7 +13191,7 @@ Enables or disables the page breaks
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.pageSettings=[{
         showPageBreak: true
@@ -13471,7 +13217,7 @@ Allows to read the zoom value of diagram
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
@@ -13491,9 +13237,8 @@ Sets the horizontal scroll offset
 * 0
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-scrollSettings:object;
 
 this.scrollSettings = {horizontalOffset: 50};
 
@@ -13511,7 +13256,7 @@ Allows to extend the scrollable region that is based on the scroll limit
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.scrollSettings = {padding: { left: 25, right: 25, top: 25, bottom: 25}};
 
@@ -13529,7 +13274,7 @@ Sets the vertical scroll offset
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.scrollSettings = {verticalOffset: 50};
 
@@ -13548,7 +13293,7 @@ Allows to read the view port height of the diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
@@ -13571,7 +13316,7 @@ Allows to read the view port width of the diagram
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
@@ -13598,7 +13343,7 @@ A read only collection of the selected items
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
@@ -13613,7 +13358,6 @@ for(let i =0; i< this.diagram.widget.model.selectedItems.children; i++){
 ### selectedItems.constraints `enum`
 {:#members:selecteditems-constraints}
 
-<ts name = "ej.datavisualization.Diagram.SelectorConstraints"/>
 
 Controls the visibility of selector.
 
@@ -13667,9 +13411,8 @@ Controls the visibility of selector.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-selectedItems:object;
 
 this.selectedItems={constraints: ej.datavisualization.Diagram.SelectorConstraints.UserHandles};
 
@@ -13687,9 +13430,8 @@ Defines a method that dynamically enables/ disables the interaction with multipl
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-selectedItems:object;
 
 this.selectedItems={getConstraints: function() {
 		//Allows to drag the multiple selected elements even when the selected elements are not movable 
@@ -13710,9 +13452,8 @@ Sets the height of the selected items
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-selectedItems:object;
 
 this.selectedItems={height:100, width: 100};
 
@@ -13730,9 +13471,8 @@ Sets the x position of the selector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-selectedItems:object;
 
 this.selectedItems={offsetX:100, offsetY: 100};
 
@@ -13750,9 +13490,8 @@ Sets the y position of the selector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-selectedItems:object;
 
 this.selectedItems={offsetX:100, offsetY: 100};
 
@@ -13770,9 +13509,7 @@ Sets the angle to rotate the selected items
 
 #### Example
 
-{% highlight html %}
-
-selectedItems:object;
+{% highlight ts %}
 
 this.selectedItems={rotateAngle: 90};
 
@@ -13790,9 +13527,8 @@ Sets the angle to rotate the selected items. For tooltip properties, refer [Tool
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-selectedItems:object;
 
 this.selectedItems={tooltip : { alignment:{ vertical:"top" } }};
 
@@ -13810,11 +13546,13 @@ A collection of frequently used commands that will be added around the selector
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-selectedItems:object;
-
-this.selectedItems={tooltip : { alignment:{ vertical:"top" } }};
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.name = "cloneHandle";
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
 
 {% endhighlight %}
 
@@ -13830,7 +13568,16 @@ Defines the name of the user handle
 
 ####Example
 
-SELECTEDITEMS.USERHANDLES.NAME
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.backgroundColor = "#4D4D4D";
+cloneHandle.name = "cloneHandle";
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.userHandles.backgroundColor `string`
@@ -13844,7 +13591,15 @@ Defines the background color of the user handle
 
 ####Example
 
-SELECTEDITEMS.USERHANDLES.BACKGROUNDCOLOR
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.backgroundColor = "#4D4D4D";
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.userHandles.borderColor `string`
@@ -13858,7 +13613,15 @@ Sets the border color of the user handle
 
 #### Example
 
-SELECTEDITEMS.USERHANDLES.BORDERCOLOR
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.borderColor = "#4D4D4D";
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.userHandles.enableMultiSelection `boolean`
@@ -13872,7 +13635,15 @@ Defines whether the user handle should be added, when more than one element is s
 
 #### Example
 
-SELECTEDITEMS.USERHANDLES.ENABLEMULTISELECTION
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.enableMultiSelection = true;
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.userHandles.pathColor `string`
@@ -13886,7 +13657,16 @@ Sets the stroke color of the user handle
 
 ####Example
 
-SELECTEDITEMS.USERHANDLES.PATHCOLOR
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+cloneHandle.pathColor = "white";
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.userHandles.pathData `string`
@@ -13900,13 +13680,22 @@ Defines the custom shape of the user handle
 
 ####Example
 
-SELECTEDITEMS.USERHANDLES.PATHDATA
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.pathData = "M4.6350084,4.8909971 L4.6350084,9.3649971 9.5480137,9.3649971 9.5480137,4.8909971 z M3.0000062,2.8189973 L11.184016,2.8189973 11.184016,10.999997 3.0000062,10.999997 z M0,0 L7.3649998,0 7.3649998,1.4020001 1.4029988,1.4020001 1.4029988,8.0660002 0,8.0660002 0,1.4020001 0,0.70300276 z";
+cloneHandle.pathColor = "white";
+cloneHandle.tool = new CloneTool(cloneHandle.name);
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
       
 ### selectedItems.userHandles.position `enum`
 {:#members:selecteditems-userhandles-position}
 
-<ts name = "ej.datavisualization.Diagram.UserHandlePositions "/>
     
 Defines the position of the user handle
     
@@ -13959,7 +13748,15 @@ Defines the position of the user handle
 
 #### Example
 
-SELECTEDITEMS.USERHANDLES.POSITION
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.position =" middleleft";
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.userHandles.size `number`
@@ -13973,7 +13770,15 @@ Defines the size of the user handle
 
 #### Example
 
-SELECTEDITEMS.USERHANDLES.SIZE
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.size = 20;
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 
@@ -13988,7 +13793,16 @@ Defines the interactive behaviors of the user handle
 
 #### Example
 
-SELECTEDITEMS.USERHANDLES.TOOL
+
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.size = 20;
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.userHandles.visible `boolean`
@@ -14002,7 +13816,16 @@ Defines the visibility of the user handle
 
 #### Example
 
-SELECTEDITEMS.USERHANDLES.VISIBLE
+
+{% highlight ts %}
+
+let cloneHandle = ej.datavisualization.Diagram.UserHandle();
+cloneHandle.visibe = "true";
+let userHandle;
+userHandle = userHandle.push(cloneHandle);
+this.selectedItems={userHandles:userHandle};
+
+{% endhighlight %}
 
 
 ### selectedItems.width `number`
@@ -14016,7 +13839,14 @@ Sets the width of the selected items
 
 #### Example
 
-SELECTEDITEMS.WIDTH
+
+{% highlight ts %}
+
+
+this.selectedItems={ height:100, width: 100};
+
+{% endhighlight %}
+
 
 
 ### showTooltip `boolean`
@@ -14029,7 +13859,7 @@ Enables or disables tooltip of diagram
 * true
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
  showTooltip:boolean;
 
@@ -14055,7 +13885,7 @@ Enables or disables both the horizontal and vertical ruler.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 rulerSettings:object;
 
@@ -14080,7 +13910,7 @@ Defines the number of intervals to be present on the each segment of the horizon
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {horizontalRuler:{interval: 10  }};
 
@@ -14098,7 +13928,7 @@ Defines the textual description of the ruler segment, and the appearance of the 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {horizontalRuler:{segmentWidth: 50  }};
 
@@ -14116,7 +13946,7 @@ Defines the method which used to position and arrange the tick elements of the h
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {horizontalRuler:{arrangeTick: function alignTick(args){ }  }};
 
@@ -14126,7 +13956,6 @@ this.rulerSettings = {horizontalRuler:{arrangeTick: function alignTick(args){ } 
 ### rulerSettings.horizontalRuler.tickAlignment`enum`
 {:#members:rulersettings-horizontalruler-tickalignment}
 
-<ts name = "ej.datavisualization.Diagram.TickAlignment"/>
 Defines and sets the tick alignment of the ruler scale.
 <table class="props">
     <thead>
@@ -14153,7 +13982,7 @@ Defines and sets the tick alignment of the ruler scale.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {horizontalRuler:{tickAlignment: ej.datavisualization.Diagram.TickAlignment.LeftOrTop  }};
 
@@ -14171,7 +14000,7 @@ Defines the color of the horizontal marker brush.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {horizontalRuler:{markerColor: "pink" }};
 
@@ -14189,7 +14018,7 @@ Defines the width of the horizontal ruler.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {horizontalRuler:length: 1000 };
 
@@ -14207,7 +14036,7 @@ Defines the height of the horizontal ruler.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {horizontalRuler:thickness: 50 };
 
@@ -14230,7 +14059,7 @@ Defines the number of intervals to be present on the each segment of the vertica
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {verticalRuler:{interval: 10  } };
 
@@ -14248,7 +14077,7 @@ Defines the textual description of the ruler segment, and the appearance of the 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {verticalRuler:{segmentWidth: 50  } };
 
@@ -14266,7 +14095,7 @@ Defines the method which used to position and arrange the tick elements of the v
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {verticalRuler:{arrangeTick: function alignTick(args){ }   } };
 
@@ -14276,7 +14105,6 @@ this.rulerSettings = {verticalRuler:{arrangeTick: function alignTick(args){ }   
 ### rulerSettings. verticalRuler.tickAlignment`enum`
 {:#members:rulersettings- verticalruler -tickalignment}
 
-<ts name = "ej.datavisualization.Diagram.TickAlignment"/>
 Defines and sets the tick alignment of the ruler scale.
 <table class="props">
     <thead>
@@ -14303,7 +14131,7 @@ Defines and sets the tick alignment of the ruler scale.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {verticalRuler:{tickAlignment: ej.datavisualization.Diagram.TickAlignment.LeftOrTop    } };
 
@@ -14321,7 +14149,7 @@ Defines the color of the vertical marker brush.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {verticalRuler:{tmarkerColor: "pink" } };
 
@@ -14339,7 +14167,7 @@ Defines the height of the vertical ruler.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {verticalRuler:{length: 1000 } };
 
@@ -14357,7 +14185,7 @@ Defines the width of the vertical ruler.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.rulerSettings = {verticalRuler:{thickness: 50 } };
 
@@ -14389,9 +14217,8 @@ Enables or disables snapping nodes/connectors to objects
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
 this.snapSettings = {enableSnapToObject: false}
 
 {% endhighlight %}
@@ -14413,10 +14240,8 @@ Defines the line color of horizontal grid lines
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-gridLine:object;
 this.gridLine = {lineColor:"blue"};
 this.snapSettings = {horizontalGridLines: gridline};
 
@@ -14434,10 +14259,8 @@ Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-gridLine:object;
 this.gridLine = {lineColor :"blue", lineDashArray:"2,2"};
 this.snapSettings = {horizontalGridLines: gridline};
 
@@ -14455,10 +14278,8 @@ A pattern of lines and gaps that defines a set of horizontal gridlines
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-gridLine:object;
 this.gridLine = {linesInterval: [1, 14, 0.5, 14.5 ] };
 this.snapSettings = {horizontalGridLines: gridline};
 
@@ -14476,10 +14297,8 @@ Specifies a set of intervals to snap the objects
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-gridLine:object;
 this.gridLine = {snapInterval : [5 };
 this.snapSettings = {horizontalGridLines: gridline};
 
@@ -14497,9 +14316,8 @@ Defines the angle by which the object needs to be snapped
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
 this.snapSettings = {snapAngle: 10};
 
 {% endhighlight %}
@@ -14508,7 +14326,6 @@ this.snapSettings = {snapAngle: 10};
 ### snapSettings.snapConstraints `enum`
 {:#members:snapsettings-snapconstraints}
 
-<ts name = "ej.datavisualization.Diagram.SnapConstraints"/>
 Defines and sets the snapConstraints
 <table class="props">
     <thead>
@@ -14558,9 +14375,8 @@ Defines and sets the snapConstraints
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
 this.snapSettings = {snapConstraints:ej.datavisualization.Diagram.SnapConstraints.ShowLines};
 
 {% endhighlight %}
@@ -14577,10 +14393,8 @@ Defines the minimum distance between the selected object and the nearest object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-snap:object;
 snap = {"snapObjectDistance":5};
 this.snapSettings = {snapSettings: snap};
 
@@ -14603,10 +14417,8 @@ Defines the line color of horizontal grid lines
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-snap:object;
 snap = {"snapObjectDistance":5};
 this.snapSettings = {verticalGridLines: gridline};
 
@@ -14624,10 +14436,8 @@ Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-gridLine:object;
 gridLine = {lineColor :"blue", lineDashArray:"2,2"};
 this.snapSettings = {verticalGridLines: gridline};
 
@@ -14645,10 +14455,8 @@ A pattern of lines and gaps that defines a set of horizontal gridlines
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-gridLine:object;
 gridLine = {linesInterval: [1, 14, 0.5, 14.5 ]};
 this.snapSettings = {verticalGridLines: gridline};
 
@@ -14666,10 +14474,8 @@ Specifies a set of intervals to snap the objects
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
-snapSettings:object;
-gridLine:object;
 gridLine = {snapInterval : [5]};
 this.snapSettings = {snapSettings: { verticalGridLines: gridline}};
 
@@ -14679,7 +14485,6 @@ this.snapSettings = {snapSettings: { verticalGridLines: gridline}};
 ### tool `enum`
 {:#members:tool}
 
-<ts name = "ej.datavisualization.Diagram.Tool"/>
 
 Enables/Disables the interactive behaviors of diagram.
 
@@ -14723,9 +14528,8 @@ Enables/Disables the interactive behaviors of diagram.
 * ej.datavisualization.Diagram.Tool.All
 
 #### Example
-{% highlight html %}
+{% highlight ts %}
 
-tool:object;
 this.tool = {tool:ej.datavisualization.Diagram.Tool.ZoomPan};
 
 {% endhighlight %}
@@ -14750,6 +14554,10 @@ An object that defines the description, appearance and alignments of tooltips
     </div>
  </script>
 
+ {% endhighlight %}
+
+ {% highlight ts %}
+
 this.Nodes = [{
 	    name: "elizabeth",width: 70,height: 40,	offsetX: 100,offsetY: 100,
 		Designation: "Managing Director"
@@ -14773,7 +14581,6 @@ Aligns the tooltip around nodes/connectors
 ### tooltip.alignment.horizontal `enum`
 {:#members:tooltip-alignment-horizontal}
 
-<ts name = "ej.datavisualization.Diagram.HorizontalAlignment"/>
 
 Defines the horizontal alignment of tooltip.
 
@@ -14806,7 +14613,7 @@ Defines the horizontal alignment of tooltip.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.tooltip={
         alignment: {
@@ -14814,13 +14621,12 @@ this.tooltip={
         }
        };
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### tooltip.alignment.vertical `enum`
 {:#members:tooltip-alignment-vertical}
 
-<ts name = "ej.datavisualization.Diagram.VerticalAlignment"/>
 
 Defines the vertical alignment of tooltip.
 
@@ -14853,7 +14659,7 @@ Defines the vertical alignment of tooltip.
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.tooltip={
         alignment: {
@@ -14861,7 +14667,7 @@ this.tooltip={
         }
        };
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### tooltip.margin `object`
@@ -14875,19 +14681,18 @@ Sets the margin of the tooltip
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.tooltip={
         margin : { top:10 }
        };
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### tooltip.relativeMode `enum`
 {:#members:tooltip-relativemode}
 
-<ts name = "ej.datavisualization.Diagram.RelativeMode"/>
 
 Defines whether the tooltip should be shown at the mouse position or around node.
 
@@ -14916,7 +14721,7 @@ Defines whether the tooltip should be shown at the mouse position or around node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.tooltip={
        tooltip: {
@@ -14925,7 +14730,7 @@ this.tooltip={
 	}
        };
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### tooltip.templateId `string`
@@ -14947,13 +14752,17 @@ Sets the svg/html template to be bound with tooltip
    </div>
 </script>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 this.tooltip={
        tooltip: {
 		templateId: "mouseovertooltip"
 	}
        };
 
-       {% endhighlight %}
+{% endhighlight %}
 
 
 ### width `string`
@@ -14966,8 +14775,12 @@ Specifies the width of the diagram
 * null
 
 #### Example
+{% highlight html %}
 
-WIDTH
+ <ej-diagram id="diagram" width="100%" height="450" >
+ </ej-diagram>
+
+ {% endhighlight %}
 
 
 ### zoomFactor `number`
@@ -14979,10 +14792,12 @@ Sets the factor by which we can zoom in or zoom out
 
 * 0.2
 
-#### Example
+{% endhighlight %}
 
-$("#diagramcontent").ejDiagram({zoomFactor: 1});
+<ej-diagram id="diagram" width="100%" height="450" zoomFactor="1" >
+ </ej-diagram>
 
+ {% endhighlight %}
 
 ## Methods
 
@@ -15014,7 +14829,7 @@ Add nodes and connectors to diagram at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
 //add a single node to diagram
@@ -15042,7 +14857,7 @@ addNodesColl()
 
     @ViewChild('diagram') Diagram: EJComponents<any,any>;
 
-    {% endhighlight %}
+{% endhighlight %}
 
 ### addLabel(nodeName, newLabel)
 {:#methods:addlabel}
@@ -15074,7 +14889,7 @@ Add a label to a node at runtime
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
@@ -15117,7 +14932,7 @@ Add dynamic Lanes to swimlane at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 addLaneColl()
     {
@@ -15154,7 +14969,7 @@ addLaneColl()
 
     @ViewChild('diagram') Diagram: EJComponents<any,any>;
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### addPhase(name, options)
@@ -15187,7 +15002,7 @@ Add a phase to a swimlane at runtime
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: "CustomPhase" } });
@@ -15196,7 +15011,7 @@ ngAfterViewInit(){
 @ViewChild('diagram') Diagram: EJComponents<any,any>;
 
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### addPorts(name, ports)
@@ -15228,7 +15043,7 @@ Add a collection of ports to the node specified by name
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 // Defines a collection of ports that have to be added at runtime
 let port = [{
@@ -15252,7 +15067,7 @@ this.Diagram.widget.addPorts("node", ports)
     }
 
 
-    {% endhighlight %}
+{% endhighlight %}
 
 
 ### addSelection(node, \[clearSelection\])
@@ -15284,7 +15099,7 @@ Add the specified node to selection list
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 this.Diagram.widget.addSelection(this.Diagram.widget.Nodes[0])
 
@@ -15316,7 +15131,7 @@ Align the selected objects based on the reference object and direction
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.align("left");
@@ -15351,7 +15166,7 @@ Bring the specified portion of the diagram content to the diagram viewport
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.align("left");
@@ -15386,7 +15201,7 @@ Bring the specified portion of the diagram content to the center of the diagram 
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 addNodesColl()
     {
@@ -15412,7 +15227,7 @@ Visually move the selected object over all other intersected objects
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.bringToFront();
@@ -15431,7 +15246,7 @@ Remove all the elements from diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.clear();
@@ -15450,7 +15265,7 @@ Clears the actions which is recorded to perform undo/redo operation in the diagr
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.clearHistory();
@@ -15469,7 +15284,7 @@ Remove the current selection in diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.clearSelection();
@@ -15492,10 +15307,9 @@ Copy the selected object to internal clipboard and get the copied object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 
-copiedObject:object;
 
 ngAfterViewInit(){
     //Save the copied object
@@ -15515,7 +15329,7 @@ Cut the selected object from diagram to diagram internal clipboard
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.widget.cut();
@@ -15603,7 +15417,7 @@ Export the diagram as downloadable files or as data
 #### Example
 
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
 //Exports the whole diagram content as an image of JPEG format
@@ -15777,7 +15591,7 @@ Read a node/connector object by its name
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.findNode("nodeName");
@@ -15823,7 +15637,7 @@ Fit the diagram content into diagram viewport
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.fitToPage(mode,region,margin);
@@ -15869,7 +15683,7 @@ Group the selected nodes and connectors
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit(){
     this.Diagram.group();
@@ -15915,7 +15729,7 @@ Insert a label into a node's label collection at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.insertLabel(nodename,{fontColor:"red", text:"newLabel"},0)        
@@ -15933,7 +15747,7 @@ Refresh the diagram with the specified layout
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.layout();       
@@ -15968,7 +15782,7 @@ Load the diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.load(data);       
@@ -15985,7 +15799,7 @@ Visually move the selected object over its closest intersected object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.moveForward();       
@@ -16025,7 +15839,7 @@ Move the selected objects by either one pixel or by the pixels specified through
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.nudge("direction",5);       
@@ -16065,7 +15879,7 @@ Paste the selected object from internal clipboard to diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 //Paste the object from internal clipboard to diagram
@@ -16086,7 +15900,7 @@ Print the diagram as image
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 
@@ -16105,7 +15919,7 @@ Restore the last action that was reverted
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 
@@ -16124,7 +15938,7 @@ Refresh the diagram at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 
@@ -16160,7 +15974,7 @@ Remove either the given node/connector or the selected element from diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 
@@ -16201,7 +16015,7 @@ Add a collection of ports to the node specified by name
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.removePorts(this.diagram.widget.findNode("Rect1"));
@@ -16240,7 +16054,7 @@ Add a collection of ports to the node specified by name
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
@@ -16277,7 +16091,7 @@ Remove a particular object from selection list
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
@@ -16297,7 +16111,7 @@ Scale the selected objects to the height of the first selected object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.sameHeight();
@@ -16315,7 +16129,7 @@ Scale the selected objects to the size of the first selected object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.sameSize();
@@ -16333,7 +16147,7 @@ Scale the selected objects to the width of the first selected object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.sameWidth();
@@ -16355,7 +16169,7 @@ Returns the diagram as serialized JSON
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.save();
@@ -16389,7 +16203,7 @@ Bring the node into view
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 let node = this.diagram.widget.selectionList[0];
@@ -16408,7 +16222,7 @@ Select all nodes and connector in diagram
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.selectAll();
@@ -16426,7 +16240,7 @@ Visually move the selected object behind its closest intersected object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.sendBackward();
@@ -16444,7 +16258,7 @@ Visually move the selected object behind all other intersected objects
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.sendToBack();
@@ -16462,7 +16276,7 @@ Update the horizontal space between the selected objects as equal and within the
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.spaceAcross();
@@ -16480,7 +16294,7 @@ Update the vertical space between the selected objects as equal and within the s
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.spaceDown();
@@ -16520,7 +16334,7 @@ Move the specified label to edit mode
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.startLabelEdit(node,node.labels[0]);
@@ -16538,7 +16352,7 @@ Reverse the last action that was performed
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.undo();
@@ -16556,7 +16370,7 @@ Ungroup the selected group
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.Diagram.widget.ungroup();
@@ -16591,7 +16405,7 @@ Update diagram at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.update({
@@ -16633,7 +16447,7 @@ Update Connectors at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.updateConnector("connector1", { lineColor: "red", lineWidth: 3 });
@@ -16682,7 +16496,7 @@ Update the given label at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.updateConnector("connector1", { lineColor: "red", lineWidth: 3 });
@@ -16722,7 +16536,7 @@ Update nodes at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.updateNode("node1",{fillColor:"red",borderWidth:"3"});
@@ -16767,7 +16581,7 @@ Update a port with its modified properties at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight tsd %}
 
 ngAfterViewInit() {
 
@@ -16802,7 +16616,7 @@ Update the specified node as selected object
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.updateSelectedObject(name);
@@ -16837,7 +16651,7 @@ Update the selection at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.updateSelection();
@@ -16872,7 +16686,7 @@ Update user handles with respect to the given node
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 let node = this.diagram.widget.selectionList[0];
@@ -16891,7 +16705,7 @@ Update the diagram viewport at runtime
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.updateViewPort();
@@ -16926,7 +16740,7 @@ Upgrade the diagram from old version
 
 #### Example
 
-{% highlight html %}
+{% highlight ts %}
 
 ngAfterViewInit() {
 this.diagram.widget.upgrade(jsonData);
@@ -16988,9 +16802,7 @@ Used to zoomIn/zoomOut diagram
 	</tbody>
 </table>
 
-#### Example
 
-ZOOMTO
 
 
 #### ZoomCommand
@@ -17051,6 +16863,9 @@ Triggers When auto scroll is changed
 
 <ej-diagram #diagram [dataSource]="diagramData" (nodeCollectionChanged) ="nodeCollectionChanged($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
 
  nodeCollectionChanged(args:any){
 //doSomething.
@@ -17123,6 +16938,10 @@ Triggers when a node, connector or diagram is clicked
 <ej-diagram #diagram [dataSource]="diagramData" (click) ="click($event)"> </ej-diagram>
 
 
+{% endhighlight %}
+
+{% highlight ts %}
+
  click(args:any){
 //doSomething.
     }
@@ -17179,6 +16998,10 @@ Triggers when the connection is changed
 <ej-diagram #diagram [dataSource]="diagramData" (connectionChange) ="conncectionChange($event)"> </ej-diagram>
 
 
+{% endhighlight %}
+
+{% highlight ts %}
+
  connectionChange(args:any){
 //doSomething.
     }
@@ -17234,6 +17057,9 @@ Triggers when the connector collection is changed
 
 <ej-diagram #diagram [dataSource]="diagramData" (connectorCollectionChange) ="connectorCollectionChange($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
 
  connectorCollectionChange(args:any){
 //doSomething.
@@ -17301,6 +17127,10 @@ Triggers when the connectors' source point is changed
 <ej-diagram #diagram [dataSource]="diagramData" (connectorSourceChange) ="connectorSourceChange($event)"> </ej-diagram>
 
 
+{% endhighlight %}
+
+{% highlight ts %}
+
  connectorSourceChange(args:any){
 //doSomething.
     }
@@ -17367,6 +17197,10 @@ Triggers when the connectors' target point is changed
 <ej-diagram #diagram [dataSource]="diagramData" (connectorTargetChange) ="connectorTargetChange($event)"> </ej-diagram>
 
 
+{% endhighlight %}
+
+{% highlight ts %}
+
  connectorTargetChnage(args:any){
 //doSomething.
     }
@@ -17432,6 +17266,10 @@ Triggers before opening the context menu
 
 <ej-diagram #diagram [dataSource]="diagramData" (contextMenuBeforeOpen) ="contextMenuBeforeOpen($event)"> </ej-diagram>
 
+
+{% endhighlight %}
+
+{% highlight ts %}
 
  contextMenuBeforeOpen(args:any){
 //doSomething.
@@ -17518,6 +17356,11 @@ Triggers when a context menu item is clicked
 
 <ej-diagram #diagram [dataSource]="diagramData" (contextMenuClick) ="contextMenuClick($event)"> </ej-diagram>
 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //contextMenuClick event for diagram
  contextMenuClick(args:any){
 //doSomething.
@@ -17568,6 +17411,12 @@ Triggers when a node, connector or diagram model is clicked twice
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (doubleClick) ="doubleClick($event)"> </ej-diagram>
+
+
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //doubleClick event for diagram
  doubleClick(args:any){
@@ -17635,6 +17484,12 @@ Triggers while dragging the elements in diagram
 
 <ej-diagram #diagram [dataSource]="diagramData" (drag) ="drag($event)"> </ej-diagram>
 
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //drag event for diagram
  drag(args:any){
 //doSomething.
@@ -17681,6 +17536,12 @@ Triggers when a symbol is dragged into diagram from symbol palette
 
 <ej-diagram #diagram [dataSource]="diagramData" (dragEnter) ="dragEnter($event)"> </ej-diagram>
 
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //dragEnter event for diagram
  dragEnter(args:any){
 //doSomething.
@@ -17726,6 +17587,12 @@ Triggers when a symbol is dragged outside of the diagram.
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (dragLeave) ="dragLeave($event)"> </ej-diagram>
+
+
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //dragLeave event for diagram
  dragLeave(args:any){
@@ -17793,6 +17660,12 @@ Triggers when a symbol is dragged over diagram
 
 <ej-diagram #diagram [dataSource]="diagramData" (dragOver) ="dragOver($event)"> </ej-diagram>
 
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //dragOver event for diagram
  dragOver(args:any){
 //doSomething.
@@ -17854,6 +17727,10 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
 
 <ej-diagram #diagram [dataSource]="diagramData" (drop) ="drop($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 //drop event for diagram
  drop(args:any){
 //doSomething.
@@ -17903,6 +17780,10 @@ Triggers when editor got focus at the time of node's label or text node editing.
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (draeditorFocusChange) ="editorFocusChange($event)"> </ej-diagram>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //editorFocusChange event for diagram
  editorFocusChange(args:any){
@@ -17960,6 +17841,9 @@ Triggers when a child is added to or removed from a group
 
 <ej-diagram #diagram [dataSource]="diagramData" (groupChange) ="groupChange($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
 //groupChange event for diagram
  groupChange(args:any){
 //doSomething.
@@ -18060,6 +17944,10 @@ Triggers when a change is reverted or restored(undo/redo)
 
 <ej-diagram #diagram [dataSource]="diagramData" (historyChange) ="historyChange($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 //historyChange Enter event for diagram
  historyChange(args:any){
 //doSomething.
@@ -18115,6 +18003,10 @@ Triggers when a diagram element is clicked
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (itemClick) ="itemClick($event)"> </ej-diagram>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //itemClick event for diagram
  itemClick(args:any){
@@ -18172,6 +18064,10 @@ Triggers when mouse enters a node/connector
 
 <ej-diagram #diagram [dataSource]="diagramData" (mouseEnter) ="mouseEnter($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 //mouseEnt event for diagram
  mouseEnter(args:any){
 //doSomething.
@@ -18228,6 +18124,10 @@ Triggers when mouse leaves node/connector
 
 <ej-diagram #diagram [dataSource]="diagramData" (mouseLeave) ="mouseLeave($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 //mouseLeave event for diagram
  mouseLeave(args:any){
 //doSomething.
@@ -18282,6 +18182,11 @@ Triggers when mouse hovers over a node/connector
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (mouseOver) ="momouseOver($event)"> </ej-diagram>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //mouseOver event for diagram
  mouseOver(args:any){
@@ -18338,6 +18243,10 @@ Triggers when node collection is changed
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (nodeCollectionChange) ="nodeCollectionChange($event)"> </ej-diagram>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //nodeCollectionChange event for diagram
  nodeCollectionChange(args:any){
@@ -18405,6 +18314,10 @@ Triggers when the node properties(x, y,width and height alone) are changed using
 
 <ej-diagram #diagram [dataSource]="diagramData" (propertyChange) ="propertyChange($event)"> </ej-diagram>
 
+{% endhighlight %}
+
+{% highlight ts %}
+
 //propertyChange event for diagram
  propertyChange(args:any){
 //doSomething.
@@ -18466,6 +18379,11 @@ Triggers when the diagram elements are rotated
 
 <ej-diagram #diagram [dataSource]="diagramData" (rotationChange) ="rotationChange($event)"> </ej-diagram>
 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //rotationChange event for diagram
  rotationChange(args:any){
 //doSomething.
@@ -18522,6 +18440,11 @@ Triggers when the diagram is zoomed or panned
 
 <ej-diagram #diagram [dataSource]="diagramData" (scrollChange) ="scrollChange($event)"> </ej-diagram>
 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //scrollChange event for diagram
  scrollChange(args:any){
 //doSomething.
@@ -18577,6 +18500,11 @@ Triggers when a connector segment is edited
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (segmentChange) ="segmentChange($event)"> </ej-diagram>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //segmentChange event for diagram
  segmentChange(args:any){
@@ -18654,6 +18582,11 @@ Triggers when the selection is changed in diagram
 
 <ej-diagram #diagram [dataSource]="diagramData" (selectionChange) ="selectionChange($event)"> </ej-diagram>
 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //selectionChange event for diagram
  selectionChange(args:any){
 //doSomething.
@@ -18725,6 +18658,11 @@ Triggers when a node is resized
 
 <ej-diagram #diagram [dataSource]="diagramData" (sizeChange) ="sizeChange($event)"> </ej-diagram>
 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //sizeChange event for diagram
  sizeChange(args:any){
 //doSomething.
@@ -18780,6 +18718,11 @@ Triggers when label editing is ended
 
 <ej-diagram #diagram [dataSource]="diagramData" (textChange) ="textChange($event)"> </ej-diagram>
 
+
+{% endhighlight %}
+
+{% highlight ts %}
+
 //textChange event for diagram
  textChange(args:any){
 //doSomething.
@@ -18825,6 +18768,10 @@ Triggered when the diagram is rendered completely.
 {% highlight html %}
 
 <ej-diagram #diagram [dataSource]="diagramData" (create) ="create($event)"> </ej-diagram>
+
+{% endhighlight %}
+
+{% highlight ts %}
 
 //create event for diagram
  create(args:any){
