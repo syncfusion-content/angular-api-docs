@@ -7263,18 +7263,26 @@ Fires on load of range navigator.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from range navigator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the range navigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -7333,18 +7341,26 @@ Fires after range navigator is loaded.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from range navigator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the range navigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -7403,18 +7419,26 @@ Fires on changing the range of range navigator.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from range navigator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the range navigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -7467,26 +7491,38 @@ Fires on changing the scrollbar position of range navigator.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+dataoldRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the scrollbar position old start and end range value on changing scrollbar</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+datanewRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scrollbar position new start and end range value on changing scrollbar</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -7534,26 +7570,38 @@ Fires on when starting to change the scrollbar position of range navigator.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+datastartRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the scrollbar position starting range value on changing scrollbar</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+dataendRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the scrollbar position end range value on changing scrollbar</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -7582,6 +7630,140 @@ onscrollstart(sender){
 {% endhighlight %}
 
 
+### selectedRangeStart
+{:#events:selectedrangestart}
+
+
+
+Fires on when starting to change the slider position of range navigator.
+
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+
+#### Example
+
+{% highlight ts %}
+
+onselectedrangestart(sender){
+     
+     //Do something
+
+}
+
+{% endhighlight %}
+
+
+{% highlight html %}
+
+<ej-rangenavigator id="events" (selectedRangeStart)="onselectedrangestart($event)">
+</ej-rangenavigator>
+
+{% endhighlight %}
+
+### selectedRangeEnd 
+{:#events:selectedrangeend}
+
+
+
+Fires when the selection  ends in the range navigator
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">parameters from RangeNavigator</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the RangeNavigator model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% highlight ts %}
+
+onselectedrangeend(sender){
+     
+     //Do something
+
+}
+
+{% endhighlight %}
+
+
+{% highlight html %}
+
+<ej-rangenavigator id="events" (selectedRangeEnd)="onselectedrangeend($event)">
+</ej-rangenavigator>
+
+{% endhighlight %}
+
 
 
 ### scrollEnd
@@ -7602,26 +7784,38 @@ Fires on changes ending the scrollbar position of range navigator.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+dataoldRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the scrollbar position old start and end range value on change end of scrollbar</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+datanewRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scrollbar position new start and end range value on change end of scrollbar</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
