@@ -5216,7 +5216,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">               
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5273,7 +5274,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">  
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5330,7 +5332,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5387,7 +5390,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5466,7 +5470,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5521,7 +5526,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5576,7 +5582,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5631,7 +5638,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5709,7 +5717,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5764,7 +5773,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5819,7 +5829,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5896,7 +5907,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -5951,7 +5963,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6028,7 +6041,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6083,7 +6097,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6138,7 +6153,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6191,7 +6207,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6244,7 +6261,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6321,7 +6339,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6376,7 +6395,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6431,7 +6451,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6484,7 +6505,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6559,7 +6581,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6642,7 +6665,8 @@ this.quatitativeScale = {
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">                </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [quantitativeScaleSettings]="quatitativeScale">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6760,7 +6784,8 @@ Specifies template for caption tooltip
     <table style="color:green"> <tr> <td> Current </td> <td> : </td> </tr> <tr> <td> Target </td> <td> : </td> </tr> </table> 
 </div>
 
-<ej-bulletgraph id="bullet1" tooltipSettings.captionTemplate="BulletGraphTooltip">          </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" tooltipSettings.captionTemplate="BulletGraphTooltip">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -6805,7 +6830,8 @@ Toggles the visibility of caption tooltip
 
 {% highlight html %}
 
-<ej-bulletgraph id="bullet1" [tooltipSettings.enableCaptionTooltip]="true">          </ej-bulletgraph>
+<ej-bulletgraph id="bullet1" [tooltipSettings.enableCaptionTooltip]="true">
+</ej-bulletgraph>
 
 {% endhighlight %}
 
@@ -7108,10 +7134,14 @@ To set the value for comparative measure in bullet graph.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.Index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.Measure{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
@@ -7166,10 +7196,14 @@ To set the value for feature measure bar.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.Index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.Measure{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
@@ -7230,18 +7264,26 @@ Fires on rendering the caption of bullet graph.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+captionElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the current captionSettings element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+captionType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the type of the captionSettings.</td>
 </tr>
@@ -7300,18 +7342,26 @@ Fires on rendering the category.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+categoryElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of category element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the text value of the category that is drawn.</td>
 </tr>
@@ -7370,18 +7420,26 @@ Fires on rendering the comparative measure symbol.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+targetElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of comparative measure element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the comparative measure symbol.</td>
 </tr>
@@ -7440,18 +7498,26 @@ Fires on rendering the feature measure bar.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+currentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of feature measure element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the feature measure bar.</td>
 </tr>
@@ -7510,18 +7576,26 @@ Fires on rendering the indicator of bullet graph.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+indicatorSettings{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns an object to customize bullet graph indicator text and symbol before rendering it.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of bullet graph.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the type of event.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">for canceling the event.</td>
 </tr>
@@ -7580,18 +7654,26 @@ Fires on rendering the labels.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+tickElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description last">returns the current label element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+labelType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the label type.</td>
 </tr>
@@ -7622,6 +7704,101 @@ ondrawlabels(sender){
 
 
 
+### drawTicks
+{:#events:drawticks}
+
+
+
+Fires on rendering the ticks.
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the model of the bullet graph.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+majorTickSettings{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the settings for majorTicks.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+minorTickSettings{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the settings for minorTicks.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+maximum{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the maximum value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+minimum{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the minimum value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+interval{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the interval value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+minorTickPerInterval{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the value of minorTicksPerInterval.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+#### Example
+
+{% highlight ts %}
+
+ondrawticks(sender){
+     
+     //Do something
+
+}
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<ej-bulletgraph id="events" (drawTicks)="ondrawticks($event)"> 
+</ej-bulletgraph>
+
+{% endhighlight %}
 
 
 
@@ -7650,18 +7827,26 @@ Fires on rendering the qualitative ranges.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of current range.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+rangeOptions{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the settings for current range.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+rangeEndValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the end value of current range.</td>
 </tr>
@@ -7709,6 +7894,37 @@ ondrawqualitativeranges(sender){
 
 
 Fires on loading bullet graph.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the model of the bullet graph.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+</tbody>
+</table>
 
 
 
