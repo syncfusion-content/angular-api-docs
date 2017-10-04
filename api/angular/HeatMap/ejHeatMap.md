@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejHeatMap Widget
 description: API reference for ejHeatMap
 documentation: API
-platform: js-api
+platform: Angular-api
 keywords: heatmap, ejHeatMap, heatmap api, syncfusion
 ---
 

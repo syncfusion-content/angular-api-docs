@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejDiagram Widget
 description: API reference for ejDiagram
 documentation: API
-platform: js-api
+platform: Angular-api
 keywords: diagram, ejDiagram, diagram api, syncfusion
 ---
 
