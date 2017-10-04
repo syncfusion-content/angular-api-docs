@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejDiagram Widget
 description: API reference for ejDiagram
 documentation: API
-platform: js-api
+platform: Angular-api
 keywords: diagram, ejDiagram, diagram api, syncfusion
 ---
 
@@ -14792,7 +14792,7 @@ Sets the factor by which we can zoom in or zoom out
 
 * 0.2
 
-{% endhighlight %}
+{% highlight html %}
 
 <ej-diagram id="diagram" width="100%" height="450" zoomFactor="1" >
  </ej-diagram>
