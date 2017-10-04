@@ -3,12 +3,11 @@ layout: post
 title: Properties, Methods and Events of ejHeatMapLegend Widget
 description: API reference for ejHeatMapLegend
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: heatMapLegend, ejHeatMapLegend, heatMapLegend api, syncfusion
 ---
 
-# ejHeatMapLegend
-<ts root="datavisualization" />
+
 
 Legend is a control used to summarize the range of colors in HeatMap. This gives visual guideline for mapping between value and color.
 
@@ -122,9 +121,9 @@ Specifies the color values of the column data.
 
 <ej-heatmaplegend id="heatmaplegend" width="400px" height="400px" showLabel="true">
  <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="0">
+                <e-colormapping [value]="0" color="#8ec8f8" [label]="rangeLabel1">
                 </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="100">
+                <e-colormapping [value]="100" color="#0d47a1" [label]="rangeLabel2">
                 </e-colormapping>
             </e-colormappingcollection>
 </ej-heatmaplegend>
@@ -132,13 +131,10 @@ Specifies the color values of the column data.
 {% endhighlight %}
 
 {% highlight ts%}
-let colorMappingCollection = [
-                { value: 0, color: "#8ec8f8", label: { text: "0" } },
-            { value: 100, color: "#0d47a1", label: { text: "100" } }
 
-            ];
+this.rangeLabel1 = { 'text': 'poor' };
+this.rangeLabel2 = { 'text': 'good' };
 
-            this.colorMappingCollection = colorMappingCollection;
 {% endhighlight %}
 
 ### colorMappingCollection.color `string`
@@ -156,9 +152,9 @@ Specifies the color of the heatmap legend data.
 
 <ej-heatmaplegend id="heatmaplegend" width="400px" height="400px" showLabel="true">
  <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="0">
+                <e-colormapping [value]="0" color="#8ec8f8" [label]="rangeLabel1">
                 </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="100">
+                <e-colormapping [value]="100" color="#0d47a1" [label]="rangeLabel2">
                 </e-colormapping>
             </e-colormappingcollection>
 </ej-heatmaplegend>
@@ -166,13 +162,10 @@ Specifies the color of the heatmap legend data.
 {% endhighlight %}
 
 {% highlight ts%}
-let colorMappingCollection = [
-                { value: 0, color: "#8ec8f8", label: { text: "0" } },
-            { value: 100, color: "#0d47a1", label: { text: "100" } }
 
-            ];
+this.rangeLabel1 = { 'text': 'poor' };
+this.rangeLabel2 = { 'text': 'good' };
 
-            this.colorMappingCollection = colorMappingCollection;
 {% endhighlight %}
 
 
@@ -191,9 +184,9 @@ Specifies the color values of the heatmap legend column data.
 
 <ej-heatmaplegend id="heatmaplegend" width="400px" height="400px" showLabel="true">
  <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="0">
+                <e-colormapping [value]="0" color="#8ec8f8" [label]="rangeLabel1">
                 </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="100">
+                <e-colormapping [value]="100" color="#0d47a1" [label]="rangeLabel2">
                 </e-colormapping>
             </e-colormappingcollection>
 </ej-heatmaplegend>
@@ -201,13 +194,10 @@ Specifies the color values of the heatmap legend column data.
 {% endhighlight %}
 
 {% highlight ts%}
-let colorMappingCollection = [
-                { value: 0, color: "#8ec8f8", label: { text: "0" } },
-            { value: 100, color: "#0d47a1", label: { text: "100" } }
 
-            ];
+this.rangeLabel1 = { 'text': 'poor' };
+this.rangeLabel2 = { 'text': 'good' };
 
-            this.colorMappingCollection = colorMappingCollection;
 {% endhighlight %}
 
 
@@ -226,9 +216,9 @@ Specifies the label properties of the heatmap legend color.
 
 <ej-heatmaplegend id="heatmaplegend" width="400px" height="400px" showLabel="true">
  <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="0">
+                <e-colormapping [value]="0" color="#8ec8f8" [label]="rangeLabel1">
                 </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="100">
+                <e-colormapping [value]="100" color="#0d47a1" [label]="rangeLabel2">
                 </e-colormapping>
             </e-colormappingcollection>
 </ej-heatmaplegend>
@@ -237,9 +227,8 @@ Specifies the label properties of the heatmap legend color.
 
 {% highlight ts%}
 
-let colorMappingCollection = [{ value: 0, color: "#8ec8f8", label: { text: "0" } },{ value: 100, color: "#0d47a1", label: { text: "100" } }];
-
-this.colorMappingCollection = colorMappingCollection;
+this.rangeLabel1 = { 'text': 'poor' };
+this.rangeLabel2 = { 'text': 'good' };;
 
 {% endhighlight %}
 
@@ -451,9 +440,9 @@ Specifies the orientation of the heatmap legend
 
 <ej-heatmaplegend id="heatmaplegend" width="400px" height="400px" showLabel="true" [orientation] =  "orientation">
  <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="0">
+                <e-colormapping [value]="0" color="#8ec8f8" [label]="rangeLabel1">
                 </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="100">
+                <e-colormapping [value]="100" color="#0d47a1" [label]="rangeLabel2">
                 </e-colormapping>
             </e-colormappingcollection>
 </ej-heatmaplegend>
@@ -461,6 +450,9 @@ Specifies the orientation of the heatmap legend
 {% endhighlight %}
 
 {% highlight ts%}
+
+this.rangeLabel1 = { 'text': 'poor' };
+this.rangeLabel2 = { 'text': 'good' };
 
 this.orientation = ej.HeatMap.LegendOrientation.Vertical;
 
@@ -504,9 +496,9 @@ Specifies the legend mode as gradient or list.
 
 <ej-heatmaplegend id="heatmaplegend" width="400px" height="400px" showLabel="true" [legendMode] =  "legendMode">
  <e-colormappingcollection>
-                <e-colormapping [value]="0" color="#8ec8f8" [label]="0">
+                <e-colormapping [value]="0" color="#8ec8f8" [label]="rangeLabel1">
                 </e-colormapping>
-                <e-colormapping [value]="100" color="#0d47a1" [label]="100">
+                <e-colormapping [value]="100" color="#0d47a1" [label]="rangeLabel2">
                 </e-colormapping>
             </e-colormappingcollection>
 </ej-heatmaplegend>
@@ -514,6 +506,9 @@ Specifies the legend mode as gradient or list.
 {% endhighlight %}
 
 {% highlight ts%}
+
+this.rangeLabel1 = { 'text': 'poor' };
+this.rangeLabel2 = { 'text': 'good' };
 
 this.legendMode = ej.HeatMap.LegendMode.List;
 

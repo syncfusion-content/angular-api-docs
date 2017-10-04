@@ -42,7 +42,7 @@ The sourceId property of overview should be set with the corresponding Diagram I
 {% highlight html %}
 
 <div>
-        <ej-overview  id="overview">
+        <ej-overview  id="overview" sourceID="diagramCore">
             </ej-overview>
 </div>
 
@@ -63,7 +63,7 @@ Defines the height of the overview
 {% highlight html %}
 
 <div>
-        <ej-overview  id="overview" sourceID="diagramCore"  height="560px">
+        <ej-overview  height="560px">
             </ej-overview>
 </div>
 
@@ -84,7 +84,7 @@ Defines the width of the overview
 {% highlight html %}
 
 <div>
-        <ej-overview  id="overview" sourceID="diagramCore" width="100%" height="560px">
+        <ej-overview  id="overview" width="100%">
             </ej-overview>
 </div>
 
