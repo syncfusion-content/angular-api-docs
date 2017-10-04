@@ -1564,7 +1564,7 @@ Border color of all series.
 
 
 ### commonSeriesOptions.border.dashArray `string`
-{:#members:commonSeriesOptions-border-dasharray}
+{:#members:commonseriesoptions-border-dasharray}
 
 
 
@@ -3004,7 +3004,7 @@ Auto</td>
 
  
 ### commonSeriesOptions.bubbleOptions.minRadius `number`
-{:#members:commonseriesoptions-bubbleoptions-minRadius}
+{:#members:commonseriesoptions-bubbleoptions-minradius}
 
 
 
@@ -3031,7 +3031,7 @@ Used for the setting the minimum radius of the bubble
 
 
 ### commonSeriesOptions.bubbleOptions.maxRadius `number`
-{:#members:commonseriesoptions-bubbleoptions-maxRadius}
+{:#members:commonseriesoptions-bubbleoptions-maxradius}
 
 
 
@@ -5623,7 +5623,7 @@ Start angle from where the pie/doughnut series renders. By default it starts fro
 
 
 ### commonSeriesOptions.cornerRadius `object`
-{:#members:commonSeriesOptions-cornerradius}
+{:#members:commonseriesoptions-cornerradius}
 
 
 
@@ -5643,7 +5643,7 @@ Options for customizing the corner radius. cornerRadius property also takes the 
 
 
 ### commonSeriesOptions.cornerRadius.topLeft `number`
-{:#members:commonSeriesOptions.cornerradius.topleft}
+{:#members:commonseriesoptions.cornerradius.topleft}
 
 
 
@@ -5672,7 +5672,7 @@ Specifies the radius for the top left corner.
 
 
 ### commonSeriesOptions.cornerRadius.topRight `number`
-{:#members:commonSeriesOptions.cornerradius.topright}
+{:#members:commonseriesoptions.cornerradius.topright}
 
 
 
@@ -5702,7 +5702,7 @@ Specifies the radius for the top right corner.
 
 
 ### commonSeriesOptions.cornerRadius.bottomLeft `number`
-{:#members:commonSeriesOptions.cornerradius.bottomleft}
+{:#members:commonseriesoptions.cornerradius.bottomleft}
 
 
 
@@ -5731,7 +5731,7 @@ Specifies the radius for the bottom left corner.
 
 
 ### commonSeriesOptions.cornerRadius.bottomRight `number`
-{:#members:commonSeriesOptions.cornerradius.bottomright}
+{:#members:commonseriesoptions.cornerradius.bottomright}
 
 
 
@@ -6721,7 +6721,7 @@ Options for customizing the empty point in the series.
 
 
 ### commonSeriesOptions.emptyPointSettings.visible `boolean`
-{:#members:commonSeriesOptions-emptypointsettings-visible}
+{:#members:commonseriesoptions-emptypointsettings-visible}
 
 
 
@@ -6754,7 +6754,7 @@ Controls the visibility of the empty point.
 
 
 ### commonSeriesOptions.emptyPointSettings.displayMode `enum`
-{:#members:commonSeriesOptions-emptypointsettings-displaymode}
+{:#members:commonseriesoptions-emptypointsettings-displaymode}
 
 
 <ts name="ej.datavisualization.Chart.EmptyPointMode"/>
@@ -6816,7 +6816,7 @@ See [Mode](https://help.syncfusion.com/api/js/global#members:mode).
 
  
 ### commonSeriesOptions.emptyPointSettings.style `object`
-{:#members:commonSeriesOptions-emptypointsettings-style}
+{:#members:commonseriesoptions-emptypointsettings-style}
 
 
 
@@ -6825,7 +6825,7 @@ Options for customizing the color and border of the empty point in the series.
 
 
 ### commonSeriesOptions.emptyPointSettings.style.color `string`
-{:#members:commonSeriesOptions-emptypointsettings-style-color}
+{:#members:commonseriesoptions-emptypointsettings-style-color}
 
 
 
@@ -6861,7 +6861,7 @@ this.emptyStyle = {
  
  
 ### commonSeriesOptions.emptyPointSettings.style.border `object`
-{:#members:commonSeriesOptions-emptypointsettings-style-border}
+{:#members:commonseriesoptions-emptypointsettings-style-border}
 
 
 
@@ -6870,7 +6870,7 @@ Options for customizing border of the empty point in the series.
  
 
 ### commonSeriesOptions.emptyPointSettings.style.border.color `string`
-{:#members:commonSeriesOptions-emptypointsettings-style-border-color}
+{:#members:commonseriesoptions-emptypointsettings-style-border-color}
 
 
 
@@ -6909,7 +6909,7 @@ this.emptyStyle = {
  
 
 ### commonSeriesOptions.emptyPointSettings.style.border.width `number`
-{:#members:commonSeriesOptions-emptypointsettings-style-border-color}
+{:#members:commonseriesoptions-emptypointsettings-style-border-color}
 
 
 
@@ -6950,7 +6950,7 @@ this.emptyStyle = {
 
  
 ### commonSeriesOptions.positiveFill `string`
-{:#members:commonSeriesOptions-positivefill}
+{:#members:commonseriesoptions-positivefill}
 
 
 
@@ -6982,7 +6982,7 @@ Fill color for the positive column of the waterfall.
  
  
 ### commonSeriesOptions.connectorLine `object`
-{:#members:commonSeriesOptions-connectorline}
+{:#members:commonseriesoptions-connectorline}
 
 
 
@@ -6993,7 +6993,7 @@ Options for customizing the waterfall connector line.
 
 
 ### commonSeriesOptions.connectorLine.width `number`
-{:#members:commonSeriesOptions.connectorline.width}
+{:#members:commonseriesoptions.connectorline.width}
 
 
 
@@ -7117,7 +7117,7 @@ DashArray of the connector line.
 Options to customize the drag and drop in series.
 
 ### commonSeriesOptions.dragSettings.enable `boolean`
-{:#members:commonSeriesOptions.dragsettings.enable}
+{:#members:commonseriesoptions.dragsettings.enable}
 
 drag/drop the series
 
@@ -7136,7 +7136,7 @@ drag/drop the series
 
 
 ### commonSeriesOptions.dragSettings.type `string`
-{:#members:commonSeriesOptions.dragsettings.type}
+{:#members:commonseriesoptions.dragsettings.type}
 
 
 Specifies the type of drag settings.
@@ -7160,14 +7160,14 @@ Specifies the type of drag settings.
 
 
 ### commonSeriesOptions.errorBar `object`
-{:#members:commonSeriesOptions.errorbar}
+{:#members:commonseriesoptions.errorbar}
 
 
 Options to customize the error bar in series.
 
 
 ### commonSeriesOptions.errorBar.visibility `boolean`
-{:#members:commonSeriesOptions.errorbar.visibility}
+{:#members:commonseriesoptions.errorbar.visibility}
 
 
 Show/hides the error bar
@@ -7194,7 +7194,7 @@ Show/hides the error bar
  
    
 ### commonSeriesOptions.errorBar.type `enum`
-{:#members:commonSeriesOptions.errorbar.type}
+{:#members:commonseriesoptions.errorbar.type}
 
 <ts name="ej.datavisualization.Chart.ErrorBarType"/>
 Specifies the type of error bar.
@@ -7258,7 +7258,7 @@ StandardError</td>
  
  
 ### commonSeriesOptions.errorBar.mode `enum`
-{:#members:commonSeriesOptions.errorbar.mode}
+{:#members:commonseriesoptions.errorbar.mode}
  
 <ts name="ej.datavisualization.Chart.ErrorBarMode"/>
 Specifies the mode of error bar.
@@ -7317,7 +7317,7 @@ Horizontal</td>
  
 
 ### commonSeriesOptions.errorBar.direction `enum`
-{:#members:commonSeriesOptions.errorbar.direction}
+{:#members:commonseriesoptions.errorbar.direction}
 
 
 <ts name="ej.datavisualization.Chart.ErrorBarDirection"/>
@@ -7378,7 +7378,7 @@ Minus</td>
  
 
 ### commonSeriesOptions.errorBar.verticalErrorValue `number`
-{:#members:commonSeriesOptions.errorbar.verticalerrorvalue}
+{:#members:commonseriesoptions.errorbar.verticalerrorvalue}
 
 
 Value of vertical error bar.
@@ -7404,7 +7404,7 @@ Value of vertical error bar.
 
 
 ### commonSeriesOptions.errorBar.horizontalErrorValue `number`
-{:#members:commonSeriesOptions.errorbar.horizontalerrorvalue}
+{:#members:commonseriesoptions.errorbar.horizontalerrorvalue}
 
 
 Value of horizontal  error bar.
@@ -7431,7 +7431,7 @@ Value of horizontal  error bar.
 
 
 ### commonSeriesOptions.errorBar.horizontalPositiveErrorValue `number`
-{:#members:commonSeriesOptions.errorbar.horizontalpositiveerrorvalue}
+{:#members:commonseriesoptions.errorbar.horizontalpositiveerrorvalue}
 
 
 Value of positive horizontal error bar.
@@ -7459,7 +7459,7 @@ Value of positive horizontal error bar.
 
 
 ### commonSeriesOptions.errorBar.horizontalNegativeErrorValue `number`
-{:#members:commonSeriesOptions.errorbar.horizontalnegativeerrorvalue}
+{:#members:commonseriesoptions.errorbar.horizontalnegativeerrorvalue}
 
 
 Value of negative horizontal error bar.
@@ -7486,7 +7486,7 @@ Value of negative horizontal error bar.
 
 
 ### commonSeriesOptions.errorBar.verticalPositiveErrorValue `number`
-{:#members:commonSeriesOptions.errorbar.verticalpositiveerrorvalue}
+{:#members:commonseriesoptions.errorbar.verticalpositiveerrorvalue}
 
 
 Value of positive vertical error bar.
@@ -7514,7 +7514,7 @@ Value of positive vertical error bar.
 
 
 ### commonSeriesOptions.errorBar.verticalNegativeErrorValue `number`
-{:#members:commonSeriesOptions.errorbar.verticalnegativeerrorvalue}
+{:#members:commonseriesoptions.errorbar.verticalnegativeerrorvalue}
 
 
 Value of negative vertical error bar.
@@ -7541,7 +7541,7 @@ Value of negative vertical error bar.
 
 
 ### commonSeriesOptions.errorBar.fill `string`
-{:#members:commonSeriesOptions.errorbar.fill}
+{:#members:commonseriesoptions.errorbar.fill}
 
 
 Fill color of the error bar.
@@ -7568,7 +7568,7 @@ Fill color of the error bar.
     
 
 ### commonSeriesOptions.errorBar.width `number`
-{:#members:commonSeriesOptions.errorbar.width}
+{:#members:commonseriesoptions.errorbar.width}
 
 
 Width of the error bar.
@@ -7594,7 +7594,7 @@ Width of the error bar.
 
 
 ### commonSeriesOptions.errorBar.cap `object`
-{:#members:commonSeriesOptions.errorbar.cap}
+{:#members:commonseriesoptions.errorbar.cap}
 
 
 Options for customizing the error bar cap.
@@ -7603,7 +7603,7 @@ Options for customizing the error bar cap.
 
 
 ### commonSeriesOptions.errorBar.cap.visible `boolean`
-{:#members:commonSeriesOptions.errorbar.cap.visible}
+{:#members:commonseriesoptions.errorbar.cap.visible}
 
 Show/Hides the error bar cap.
 
@@ -7627,7 +7627,7 @@ Show/Hides the error bar cap.
  
 
 ### commonSeriesOptions.errorBar.cap.width `number`
-{:#members:commonSeriesOptions.errorbar.cap.width}
+{:#members:commonseriesoptions.errorbar.cap.width}
 
 Width of the error bar cap.
 
@@ -7652,7 +7652,7 @@ Width of the error bar cap.
  
  
 ### commonSeriesOptions.errorBar.cap.length `number`
-{:#members:commonSeriesOptions.errorbar.cap.length}
+{:#members:commonseriesoptions.errorbar.cap.length}
 
 Length of the error bar cap.
 
@@ -7676,7 +7676,7 @@ Length of the error bar cap.
  
 
 ### commonSeriesOptions.errorBar.cap.fill `string`
-{:#members:commonSeriesOptions.errorbar.cap.fill}
+{:#members:commonseriesoptions.errorbar.cap.fill}
 
 Color of the error bar cap.
 
@@ -40864,14 +40864,20 @@ data{% endhighlight %}</td>
 </ul></td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -40928,14 +40934,20 @@ data{% endhighlight %}</td>
 </ul></td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -40993,14 +41005,20 @@ data{% endhighlight %}</td>
 </ul></td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
