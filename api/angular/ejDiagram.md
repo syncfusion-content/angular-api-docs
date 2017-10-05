@@ -5945,12 +5945,16 @@ Customizes the orientation of trees/sub trees. For orientations, see [Chart Orie
 
 #### Example
 
-{% highlight ts %}
+{% highlight html %}
 
 <ej-diagram id="diagramCore" width="100%" height="450" [pageSettings]="pageSettings" [snapSettings]="snapSettings" 
 [dataSourceSettings]="dataSourceSettings" [layout]="layout" >
 </ej-diagram>
 
+{% endhighlight %}
+
+
+{% highlight ts %}
 
  getLayoutInfo(diagram, node, options){
         options.orientation = "vertical"; 
@@ -5958,7 +5962,7 @@ Customizes the orientation of trees/sub trees. For orientations, see [Chart Orie
         offset = 10;
 }
 
-   this.layout ={{ getLayoutInfo:getLayoutInfo }};
+   this.layout = { getLayoutInfo:getLayoutInfo };
 
 
 {% endhighlight %}
@@ -9153,7 +9157,7 @@ this.nodes=[
              sourceNode:"node1", targetNode:"node2" , name:"connector"
          }];
 
-         {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.isSwimlane `boolean`
@@ -9167,7 +9171,7 @@ Sets the node as a swimlane
 
 #### Example
 
-{% highlight htstml %}
+{% highlight ts %}
 
 this.nodes=[
             {
@@ -9175,7 +9179,7 @@ this.nodes=[
             
         },
 
-        {% endhighlight %}
+{% endhighlight %}
 
 
 ### nodes.labels `array`
