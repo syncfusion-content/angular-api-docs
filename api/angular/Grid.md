@@ -1553,7 +1553,7 @@ Gets or sets a value that indicates whether to enables column template for a par
 
 {% highlight html %} 
 <script id="columnTemplate" type="text/x-jsrender">
-<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
 </script>
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
@@ -1635,7 +1635,7 @@ Sets the template for Tooltip in Grid Columns(both header and content)
 
 {% highlight html %}
 <script type="text/template" id="colTip">
-  {{:value }}
+  {{"{{"}}:value{{}}}}
 </script>
 <ej-grid id="Grid" [dataSource]="gridData" >
     <e-columns>
@@ -2007,7 +2007,7 @@ This specifies the grid to add the details row for the corresponding master row
 <table>
 <tr>
 <td>
-<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
 </td>
 </tr>
 </table>
@@ -2156,19 +2156,19 @@ This specifies the id of the template. This template can be used to display the 
             <tr>
                 <td>OrderID</td>
                 <td>
-                    <input id="OrderID" name="OrderID" value="{{:OrderID}}" disabled="disabled" />
+                    <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
                 </td>
             </tr>
             <tr>
                 <td>CustomerID</td>
                 <td>
-                    <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" />
+                    <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
                 </td>
             </tr>
             <tr>
                 <td>EmployeeID</td>
                 <td>
-                    <input id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+                    <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
                 </td>
             </tr>
         </table>
@@ -2276,17 +2276,17 @@ This specifies the id of the template. This template can be used to display the 
        <tr>
            <td>OrderID</td>
            <td>
-               <input id="OrderID" name="OrderID" value="{{:OrderID}}" disabled="disabled" /></td>
+               <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
        </tr>
        <tr>
            <td>CustomerID</td>
            <td>
-               <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" /></td>
+              <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
        </tr>
        <tr>
            <td>EmployeeID</td>
            <td>
-               <input id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" /></td>
+               <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
        </tr>
    </table>
 </script>
@@ -2368,17 +2368,17 @@ This specifies the id of the template. This template can be used to display the 
        <tr>
            <td>OrderID</td>
            <td>
-               <input id="OrderID" name="OrderID" value="{{:OrderID}}" disabled="disabled" /></td>
+               <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
        </tr>
        <tr>
            <td>CustomerID</td>
            <td>
-               <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" /></td>
+              <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
        </tr>
        <tr>
            <td>EmployeeID</td>
            <td>
-               <input id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" /></td>
+               <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
        </tr>
    </table>
 </script>
@@ -3170,7 +3170,7 @@ Gets or sets a value that customize the group caption format.
 {% highlight ts %}
 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 this.gridData = window.gridData;
-this.groupSettings={ captionFormat: "{{:field}} - {{:key}} : {{:count}} {{if count == 1 }} item {{else}} items {{/if}}" };
+this.groupSettings={ captionFormat: "{{"{{"}}:field{{}}}} - {{"{{"}}:key{{}}}} : {{"{{"}}:count{{}}}} {{"{{"}}if count == 1 {{}}}} item {{"{{"}}else{{}}}} items {{"{{"}}/if{{}}}}"};
 {% endhighlight %}
 
 ### groupSettings.enableDropAreaAutoSizing `boolean`
@@ -3840,10 +3840,10 @@ Gets or sets a value that indicates to render the grid with template rows. The t
 <script id="templateData" type="text/x-jsrender">
 <tr>
 <td>
-<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
 </td>
 <td>
-{{:EmployeeID}}
+{{"{{"}}:EmployeeID{{}}}}
 </td>
 </tr>
 </script>
@@ -4847,6 +4847,9 @@ Sets the template for tooltip for the Grid stackedHeaderColumns.
 
 
 {% highlight html %} 
+<script type="text/template" id="colTip">
+  {{"{{"}}:value{{}}}}
+</script>
 <ej-grid id="Grid" [dataSource]="gridData" allowSorting="true" showStackedHeader="true" [textAlign]="right" [stackedHeaderRows]="stackedHeaderRows">
     <e-columns>
         <e-column field="OrderID"  headerText="Order ID"  width="80" [textAlign]="right"></e-column>
@@ -5307,7 +5310,7 @@ Gets or sets a value that indicates to add the template for the summary value of
 
 {% highlight html %}
 <script id="templateData" type="text/x-jsrender">
-     Freight has Average of {{:summaryValue}} in  dollars
+     Freight has Average of {{"{{"}}:summaryValue{{}}}} in  dollars
 </script>
 <ej-grid id="Grid" [dataSource]="gridData" allowPaging="true" showSummary="true"  [summaryRows]="summaryRows" >
     <e-columns>
