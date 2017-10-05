@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejHeatMapLegend Widget
 description: API reference for ejHeatMapLegend
 documentation: API
-platform: angular-api
+platform: Angular-api
 keywords: heatMapLegend, ejHeatMapLegend, heatMapLegend api, syncfusion
 ---
 
