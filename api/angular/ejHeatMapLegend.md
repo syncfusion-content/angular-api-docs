@@ -103,7 +103,7 @@ Specifies whether the cell label can be shown or not.
 
 </ej-heatmaplegend>
 
-{% endhighlight 
+{% endhighlight %}
 
 
 ### colorMappingCollection `array`
