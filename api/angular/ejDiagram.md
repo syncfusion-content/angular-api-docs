@@ -9195,7 +9195,7 @@ A collection of objects where each object represents a label
 
 #### Example
 
-{% highlight httsml %}
+{% highlight ts %}
 
 this.labels = [{"text": "Node1", "fontColor":"red"}];
 
@@ -12982,7 +12982,7 @@ Defines the height of a page
 
 #### Example
 
-{% highlight httsml %}
+{% highlight ts %}
 
 this.pageSettings=[{
         pageWidth: 500, pageHeight: 500
@@ -16585,13 +16585,14 @@ Update a port with its modified properties at runtime
 
 #### Example
 
-{% highlight tsd %}
+{% highlight ts %}
 
 ngAfterViewInit() {
-
-    }
-
-    @ViewChild('diagram') Diagram: EJComponents<any,any>;
+let node = this.Diagram.widget.selectionList[0];
+let port ={fillColor:"red", visibility:ej.datavisualization.Diagram.PortVisibility.Visible};
+this.diagram.widget.updatePort("node",node.ports[0],port);
+}
+@ViewChild('diagram') Diagram: EJComponents<any,any>;
 
 {% endhighlight %}
 
