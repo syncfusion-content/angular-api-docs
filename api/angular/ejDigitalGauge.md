@@ -44,6 +44,8 @@ The Digital gauge can be easily configured to the DOM element, such as div. you 
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">For setting the Digital gauge</td>
 </tr>
@@ -2168,11 +2170,18 @@ To destroy the digital gauge
 
 {% highlight ts %}
 
+export class AppComponent {
+
 destroy(){          
        
      this.digital.widget.destroy();
      
      }
+
+// Create digitalgauge instance
+@ViewChild('gauge') digital: EJComponents<any, any>;
+
+}
      
   {% endhighlight %}
 
@@ -2222,11 +2231,19 @@ To export Digital Gauge as Image
 
 {% highlight ts %}
 
+export class AppComponent {
+
 exportImage(){
      
      this.digital.widget.exportImage("myImage","jpeg");
 
 }
+
+// Create digitalgauge instance
+@ViewChild('gauge') digital: EJComponents<any, any>;
+
+}
+
 {% endhighlight %}
 
 
@@ -2258,6 +2275,8 @@ Gets the location of an item that is displayed on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Position value of an item that is displayed on the gauge.</td>
 </tr>
@@ -2272,9 +2291,16 @@ Gets the location of an item that is displayed on the gauge.
 
 {% highlight ts %}
 
+export class AppComponent {
+
 getPosition(){
      
      this.digital.widget.getPosition(0);
+
+}
+
+// Create digitalgauge instance
+@ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
 
@@ -2309,6 +2335,8 @@ ClientSideMethod getValue Gets the value of an item that is displayed on the gau
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index value of an item that displayed on the gauge</td>
 </tr>
@@ -2323,9 +2351,16 @@ ClientSideMethod getValue Gets the value of an item that is displayed on the gau
 
 {% highlight ts %}
 
+export class AppComponent {
+
 getValue(){
      
      this.digital.widget.getValue(0);
+
+}
+
+// Create digitalgauge instance
+@ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
 
@@ -2359,11 +2394,19 @@ Refresh the digital gauge widget
 
 {% highlight ts %}
 
+export class AppComponent {
+
 refresh(){   
     
          this.digital.widget.refresh();
          
          }
+
+// Create digitalgauge instance
+@ViewChild('gauge') digital: EJComponents<any, any>;
+
+}
+
 {% endhighlight %}
 
 
@@ -2394,10 +2437,14 @@ ClientSideMethod Set Position Sets the location of an item to be displayed in th
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index value of the digital gauge item</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Location value of the digital gauge</td>
 </tr>
@@ -2412,9 +2459,16 @@ ClientSideMethod Set Position Sets the location of an item to be displayed in th
 
 {% highlight ts %}
 
+export class AppComponent {
+
 setPosition(){
      
      this.digital.widget.setPosition(0,{x:10,y:10});
+
+}
+
+// Create digitalgauge instance
+@ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
 
@@ -2448,10 +2502,14 @@ ClientSideMethod SetValue Sets the value of an item to be displayed in the gauge
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index value of the digital gauge item</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Text value to be displayed in the gaugeS</td>
 </tr>
@@ -2466,9 +2524,16 @@ ClientSideMethod SetValue Sets the value of an item to be displayed in the gauge
 
 {% highlight ts %}
 
+export class AppComponent {
+
 setValue(){
      
      this.digital.widget.setValue(0, "Welcome");
+
+}
+
+// Create digitalgauge instance
+@ViewChild('gauge') digital: EJComponents<any, any>;
 
 }
 
@@ -2510,26 +2575,38 @@ Triggers when the gauge is initialized.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2587,26 +2664,38 @@ Triggers when the gauge item rendering.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2664,26 +2753,38 @@ Triggers when the gauge is start to load.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2737,26 +2838,38 @@ Triggers when the gauge render is completed.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
