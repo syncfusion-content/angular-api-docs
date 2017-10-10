@@ -621,3 +621,5 @@ export class AppComponent {
     }
 
 }
+
+{% endhighlight %}
