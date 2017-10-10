@@ -39,10 +39,14 @@ The range navigator can be easily configured to the DOM element, such as div. Yo
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for range navigator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for range navigator</td>
 </tr>

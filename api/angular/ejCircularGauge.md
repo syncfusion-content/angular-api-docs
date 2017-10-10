@@ -210,7 +210,7 @@ Specify the frame of circular gauge
 
 
 ### frame.backgroundImageUrl `string`
-{:#members:frame.backgroundimageurl}
+{:#members:frame-backgroundimageurl}
 
 
 
@@ -240,7 +240,7 @@ Specify the URL of the frame background image for circular gauge
 
 
 ### frame.frameType `enum`
-{:#members:frame.frametype}
+{:#members:frame-frametype}
 
 <ts name = "ej.datavisualization.CircularGauge.FrameType"/>
 
@@ -294,7 +294,7 @@ HalfCircle</td>
 
 
 ### frame.halfCircleFrameEndAngle `number`
-{:#members:frame.halfcircleframeendangle}
+{:#members:frame-halfcircleframeendangle}
 
 
 
@@ -324,7 +324,7 @@ Specifies the end angle for the half circular frame.
 
 
 ### frame.halfCircleFrameStartAngle `number`
-{:#members:frame.halfcircleframestartangle}
+{:#members:frame-halfcircleframestartangle}
 
 
 
@@ -796,7 +796,7 @@ Specify the pointers, ticks, labels, indicators, ranges of circular gauge
 
 
 ### scales.backgroundColor `string`
-{:#members:scales.backgroundcolor}
+{:#members:scales-backgroundcolor}
 
 
 
@@ -829,7 +829,7 @@ Specify backgroundColor for the scale of circular gauge
 
 
 ### scales.border `object`
-{:#members:scales.border}
+{:#members:scales-border}
 
 
 
@@ -862,7 +862,7 @@ Specify border for scales of circular gauge
 
 
 ### scales.border.color `string`
-{:#members:scales.border.color}
+{:#members:scales-border-color}
 
 
 
@@ -895,7 +895,7 @@ Specify border color for scales of circular gauge
 
 
 ### scales.border.width `number`
-{:#members:scales.border.width}
+{:#members:scales-border-width}
 
 
 
@@ -928,7 +928,7 @@ Specify border width of circular gauge
 
 
 ### scales.direction `enum`
-{:#members:scales.direction}
+{:#members:scales-direction}
 
 <ts name = "ej.datavisualization.CircularGauge.Direction"/>
 
@@ -985,7 +985,7 @@ CounterClockwise</td>
 
 
 ### scales.customLabels `Array`
-{:#members:scales.customlabels}
+{:#members:scales-customlabels}
 
 
 
@@ -1008,7 +1008,7 @@ Specify the custom labels for the scales.
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]=" "></e-scale>
+        <e-scale [customLabels]="[{  }]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1017,7 +1017,7 @@ Specify the custom labels for the scales.
 
 
 ### scales.customLabels.value `string`
-{:#members:scales.customlabels.value}
+{:#members:scales-customlabels-value}
 
 
 
@@ -1040,7 +1040,7 @@ Value of the custom labels.
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]="[value:'Sports']"></e-scale>
+        <e-scale [customLabels]="[{value:'Sports'}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1048,7 +1048,7 @@ Value of the custom labels.
 
 
 ### scales.customLabels.color `string`
-{:#members:scales.customlabels.color}
+{:#members:scales-customlabels-color}
 
 
 
@@ -1082,7 +1082,7 @@ Color of the custom labels.
 
 
 ### scales.customLabels.position `object`
-{:#members:scales.customlabels.position}
+{:#members:scales-customlabels-position}
 
 
 
@@ -1105,7 +1105,7 @@ Specify position of custom labels
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]="[position:{x:10,y:10}]"></e-scale>
+        <e-scale [customLabels]="[{position:{x:10,y:10}}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1115,7 +1115,7 @@ Specify position of custom labels
 
 
 ### scales.customLabels.position.x `number`
-{:#members:scales.customlabels.position.x}
+{:#members:scales-customlabels-position-x}
 
 
 
@@ -1138,7 +1138,7 @@ Specify x-axis position of label
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]="[position:{x:10}]"></e-scale>
+        <e-scale [customLabels]="[{position:{x:10}}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1148,7 +1148,7 @@ Specify x-axis position of label
 
 
 ### scales.customLabels.position.y `number`
-{:#members:scales.customlabels.position.y}
+{:#members:scales-customlabels-position-y}
 
 
 
@@ -1171,7 +1171,7 @@ Specify y-axis  position of labels.
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]="[position:{y:10}]"></e-scale>
+        <e-scale [customLabels]="[{position:{y:10}}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1180,7 +1180,7 @@ Specify y-axis  position of labels.
 
 
 ### scales.customLabels.font `object`
-{:#members:scales.customlabels.font}
+{:#members:scales-customlabels-font}
 
 
 
@@ -1213,7 +1213,7 @@ Specify font for custom labels
 
 
 ### scales.customLabels.font.fontFamily `string`
-{:#members:scales.customlabels.font.fontfamily}
+{:#members:scales-customlabels-font-fontfamily}
 
 
 
@@ -1236,7 +1236,7 @@ Specify font fontFamily for custom labels.
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]="[font: {fontFamily: 'Arial'}]"></e-scale>
+        <e-scale [customLabels]="[{font: {fontFamily: 'Arial'}}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1246,7 +1246,7 @@ Specify font fontFamily for custom labels.
 
 
 ### scales.customLabels.font.fontStyle `string`
-{:#members:scales.customlabels.font.fontstyle}
+{:#members:scales-customlabels-font-fontstyle}
 
 
 
@@ -1269,7 +1269,7 @@ Specify font Style for custom labels.
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]="[font: {fontStyle: 'Bold'}]"></e-scale>
+        <e-scale [customLabels]="[{font: {fontStyle: 'Bold'}}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1280,7 +1280,7 @@ Specify font Style for custom labels.
  
  
 ### scales.customLabels.font.size `string`
-{:#members:scales.customlabels.font.size}
+{:#members:scales-customlabels-font-size}
 
 
 
@@ -1303,7 +1303,7 @@ Specify font size for custom labels.
 
 <ej-circularGauge id="circularGauge1">
     <e-scales>
-        <e-scale [customLabels]="[font: {size:'12px'}]"></e-scale>
+        <e-scale [customLabels]="[{font: {size:'12px'}}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1315,7 +1315,7 @@ Specify font size for custom labels.
 
 
 ### scales.indicators `Array`
-{:#members:scales.indicators}
+{:#members:scales-indicators}
 
 
 
@@ -1338,7 +1338,7 @@ Specify representing state of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{position:{x:10} }]">          
+        <e-scale [indicators]="[{position:{x:10} }]">          
 
         </e-scale>
     </e-scales>
@@ -1350,7 +1350,7 @@ Specify representing state of circular gauge
 
 
 ### scales.indicators.height `number`
-{:#members:scales.indicators.height}
+{:#members:scales-indicators-height}
 
 
 
@@ -1373,7 +1373,7 @@ Specify indicator height of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators: [{ height: 10 }]"></e-scale>
+        <e-scale [indicators]="[{ height: 10 }]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1383,7 +1383,7 @@ Specify indicator height of circular gauge
 
 
 ### scales.indicators.imageUrl `string`
-{:#members:scales.indicators.imageurl}
+{:#members:scales-indicators-imageurl}
 
 
 
@@ -1406,7 +1406,7 @@ Specify imageUrl of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators: [{ imageUrl:'Sun.jpeg' }]"></e-scale>
+        <e-scale [indicators]="[{ imageUrl:'Sun.jpeg' }]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1416,7 +1416,7 @@ Specify imageUrl of circular gauge
 
 
 ### scales.indicators.position `object`
-{:#members:scales.indicators.position}
+{:#members:scales-indicators-position}
 
 
 
@@ -1439,7 +1439,7 @@ Specify position of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{position:{x:10,y:10} }]">          
+        <e-scale [indicators]="[{position:{x:10,y:10} }]">          
 
         </e-scale>
     </e-scales>
@@ -1451,7 +1451,7 @@ Specify position of circular gauge
 
 
 ### scales.indicators.position.x `number`
-{:#members:scales.indicators.position.x}
+{:#members:scales-indicators-position-x}
 
 
 
@@ -1474,7 +1474,7 @@ Specify x-axis of position of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{position:{x:10} }]">          
+        <e-scale [indicators]="[{position:{x:10} }]">          
 
         </e-scale>
     </e-scales>
@@ -1486,7 +1486,7 @@ Specify x-axis of position of circular gauge
 
 
 ### scales.indicators.position.y `number`
-{:#members:scales.indicators.position.y}
+{:#members:scales-indicators-position-y}
 
 
 
@@ -1509,7 +1509,7 @@ Specify y-axis of position of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{position:{y:10} }]">          
+        <e-scale [indicators]="[{position:{y:10} }]">          
 
         </e-scale>
     </e-scales>
@@ -1521,7 +1521,7 @@ Specify y-axis of position of circular gauge
 
 
 ### scales.indicators.stateRanges `Array`
-{:#members:scales.indicators.stateranges}
+{:#members:scales-indicators-stateranges}
 
 
 
@@ -1544,7 +1544,7 @@ Specify the various states of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ endValue:70, borderColor:'Red', backgroundColor: '#5DF243',font:{ size: '11px', fontFamily: 'Arial', fontStyle: 'Bold' } }]}]"></e-scale>
+        <e-scale [indicators]="[{ stateRanges:[{ endValue:70, borderColor:'Red', backgroundColor: '#5DF243',font:{ size: '11px', fontFamily: 'Arial', fontStyle: 'Bold' } }]}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1554,7 +1554,7 @@ Specify the various states of circular gauge
 
 
 ### scales.indicators.stateRanges.backgroundColor `string`
-{:#members:scales.indicators.stateranges.backgroundcolor}
+{:#members:scales-indicators-stateranges-backgroundcolor}
 
 
 
@@ -1577,8 +1577,7 @@ Specify backgroundColor for indicator of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ backgroundColor:'#5DF243'}]}]">          
-
+        <e-scale [indicators]="[{ stateRanges:[{ backgroundColor:'#5DF243'}]}]">          
         </e-scale>
     </e-scales>
 </ej-circularGauge>
@@ -1589,7 +1588,7 @@ Specify backgroundColor for indicator of circular gauge
 
 
 ### scales.indicators.stateRanges.borderColor `string`
-{:#members:scales.indicators.stateranges.bordercolor}
+{:#members:scales-indicators-stateranges-bordercolor}
 
 
 
@@ -1612,7 +1611,7 @@ Specify borderColor for indicator of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ borderColor:'Red'}]}]">          
+        <e-scale [indicators]="[{ stateRanges:[{ borderColor:'Red'}]}]">          
 
         </e-scale>
     </e-scales>
@@ -1624,7 +1623,7 @@ Specify borderColor for indicator of circular gauge
 
 
 ### scales.indicators.stateRanges.endValue `number`
-{:#members:scales.indicators.stateranges.endvalue}
+{:#members:scales-indicators-stateranges-endvalue}
 
 
 
@@ -1647,7 +1646,7 @@ Specify end value for each specified state of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ endValue:200 }]}]">          
+        <e-scale [indicators]="[{ stateRanges:[{ endValue:200 }]}]">          
 
         </e-scale>
     </e-scales>
@@ -1659,7 +1658,7 @@ Specify end value for each specified state of circular gauge
 
 
 ### scales.indicators.stateRanges.font `object`
-{:#members:scales.indicators.stateranges.font}
+{:#members:scales-indicators-stateranges-font}
 
 
 
@@ -1682,7 +1681,7 @@ Specify value of the font as the indicator when the indicator style is set with 
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ font:{ size: '11px', fontFamily: 'Arial', fontStyle: 'Bold' } }]}]"></e-scale>
+        <e-scale [indicators]="[{ stateRanges:[{ font:{ size: '11px', fontFamily: 'Arial', fontStyle: 'Bold' } }]}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1692,7 +1691,7 @@ Specify value of the font as the indicator when the indicator style is set with 
 
 
 ### scales.indicators.stateRanges.startValue `number`
-{:#members:scales.indicators.stateranges.startvalue}
+{:#members:scales-indicators-stateranges-startvalue}
 
 
 
@@ -1715,7 +1714,7 @@ Specify start value for each specified state of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ startValue:70 }]}]"></e-scale>
+        <e-scale [indicators]="[{ stateRanges:[{ startValue:70 }]}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1725,7 +1724,7 @@ Specify start value for each specified state of circular gauge
 
 
 ### scales.indicators.stateRanges.text `string`
-{:#members:scales.indicators.stateranges.text}
+{:#members:scales-indicators-stateranges-text}
 
 
 
@@ -1748,7 +1747,7 @@ Specify value of the text as the indicator when the indicator style is set with 
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ text:'staterange1' }]}]"></e-scale>
+        <e-scale [indicators]="[{ stateRanges:[{ text:'staterange1' }]}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1758,7 +1757,7 @@ Specify value of the text as the indicator when the indicator style is set with 
 
 
 ### scales.indicators.stateRanges.textColor `string`
-{:#members:scales.indicators.stateranges.textcolor}
+{:#members:scales-indicators-stateranges-textcolor}
 
 
 
@@ -1781,7 +1780,7 @@ Specify value of the textColor as the indicator when the indicator style is set 
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ textColor:'Yellow' }]}]"></e-scale>
+        <e-scale [indicators]="[{ stateRanges:[{ textColor:'Yellow' }]}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1791,7 +1790,7 @@ Specify value of the textColor as the indicator when the indicator style is set 
 
 
 ### scales.indicators.type `enum`
-{:#members:scales.indicators.type}
+{:#members:scales-indicators-type}
 
 <ts name = "ej.datavisualization.CircularGauge.IndicatorTypes"/>
 
@@ -1857,7 +1856,7 @@ Image</td>
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ stateRanges:[{ type:'circle' }]}]"></e-scale>
+        <e-scale [indicators]="[{ stateRanges:[{ type:'circle' }]}]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1867,7 +1866,7 @@ Image</td>
 
 
 ### scales.indicators.width `number`
-{:#members:scales.indicators.width}
+{:#members:scales-indicators-width}
 
 
 
@@ -1890,7 +1889,7 @@ Specify indicator width of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [indicators]="indicators:[{ width: 100 }]"></e-scale>
+        <e-scale [indicators]="[{ width: 100 }]"></e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1900,7 +1899,7 @@ Specify indicator width of circular gauge
 
 
 ### scales.labels `Array`
-{:#members:scales.labels}
+{:#members:scales-labels}
 
 
 
@@ -1923,7 +1922,12 @@ Specify the text values displayed in a meaningful manner alongside the ticks of 
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ angle:10, opacity:0.5 }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label>
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1933,7 +1937,7 @@ Specify the text values displayed in a meaningful manner alongside the ticks of 
 
 
 ### scales.labels.angle `number`
-{:#members:scales.labels.angle}
+{:#members:scales-labels-angle}
 
 
 
@@ -1956,7 +1960,12 @@ Specify the angle for the labels of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ angle: 30 }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [angle]="30">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1966,7 +1975,7 @@ Specify the angle for the labels of circular gauge
 
 
 ### scales.labels.autoAngle `boolean`
-{:#members:scales.labels.autoangle}
+{:#members:scales-labels-autoangle}
 
 
 
@@ -1989,7 +1998,12 @@ Specify labels autoAngle value of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ autoAngle: 'true' }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [autoAngle]="true">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -1999,7 +2013,7 @@ Specify labels autoAngle value of circular gauge
 
 
 ### scales.labels.color `string`
-{:#members:scales.labels.color}
+{:#members:scales-labels-color}
 
 
 
@@ -2022,7 +2036,12 @@ Specify label color of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ color : 'red' }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label color="red">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2032,7 +2051,7 @@ Specify label color of circular gauge
 
 
 ### scales.labels.distanceFromScale `number`
-{:#members:scales.labels.distancefromscale}
+{:#members:scales-labels-distancefromscale}
 
 
 
@@ -2055,7 +2074,12 @@ Specify distanceFromScale value for labels of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ distanceFromScale : 10 }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [distanceFromScale]="10">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2065,7 +2089,7 @@ Specify distanceFromScale value for labels of circular gauge
 
 
 ### scales.labels.font `object`
-{:#members:scales.labels.font}
+{:#members:scales-labels-font}
 
 
 
@@ -2088,7 +2112,12 @@ Specify font for labels of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ font : { size: '12px', fontFamily: 'Segou', fontStyle: 'Bold' } }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [font]="{size: '12px', fontFamily: 'Segou', fontStyle: 'Bold' }">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2098,7 +2127,7 @@ Specify font for labels of circular gauge
 
 
 ### scales.labels.font.fontFamily `string`
-{:#members:scales.labels.font.fontfamily}
+{:#members:scales-labels-font-fontfamily}
 
 
 
@@ -2121,7 +2150,12 @@ Specify font fontFamily for labels of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ font : { fontFamily: 'Arial' } }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [font]="{fontFamily:'Arial'}">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2131,7 +2165,7 @@ Specify font fontFamily for labels of circular gauge
 
 
 ### scales.labels.font.fontStyle `string`
-{:#members:scales.labels.font.fontstyle}
+{:#members:scales-labels-font-fontstyle}
 
 
 
@@ -2154,7 +2188,12 @@ Specify font Style for labels of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ font : { fontStyle: 'Bold' } }]"></e-scale>
+        <e-scale [labels]="[{ font : { fontStyle: 'Bold' } }]">
+            <e-labels>
+                <e-label [font]="{fontStyle:'Bold'}">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2164,7 +2203,7 @@ Specify font Style for labels of circular gauge
 
 
 ### scales.labels.font.size `string`
-{:#members:scales.labels.font.size}
+{:#members:scales-labels-font-size}
 
 
 
@@ -2187,7 +2226,12 @@ Specify font size for labels of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ font : { size: '12px' } }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [font]="{size:'12px'}">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2197,7 +2241,7 @@ Specify font size for labels of circular gauge
 
 
 ### scales.labels.includeFirstValue `boolean`
-{:#members:scales.labels.includefirstvalue}
+{:#members:scales-labels-includefirstvalue}
 
 
 
@@ -2220,7 +2264,12 @@ Specify includeFirstValue of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ includeFirstValue:'false' }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [includeFirstValue]="false">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2230,7 +2279,7 @@ Specify includeFirstValue of circular gauge
 
 
 ### scales.labels.opacity `number`
-{:#members:scales.labels.opacity}
+{:#members:scales-labels-opacity}
 
 
 
@@ -2253,7 +2302,12 @@ Specify opacity value for labels of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ opacity:0.5 }]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label [opacity]="0.5">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2263,7 +2317,7 @@ Specify opacity value for labels of circular gauge
 
 
 ### scales.labels.placement `enum`
-{:#members:scales.labels.placement}
+{:#members:scales-labels-placement}
 
 <ts name = "ej.datavisualization.CircularGauge.Placement"/>
 
@@ -2315,7 +2369,12 @@ Center</td>
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ placement:'near'}]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label placement="near">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2325,7 +2384,7 @@ Center</td>
 
 
 ### scales.labels.type `enum`
-{:#members:scales.labels.type}
+{:#members:scales-labels-type}
 
 <ts name = "ej.datavisualization.CircularGauge.LabelType"/>
 
@@ -2371,7 +2430,12 @@ Minor</td>
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ type:'major'}]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label type="major">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2381,7 +2445,7 @@ Minor</td>
 
 
 ### scales.labels.unitText `string`
-{:#members:scales.labels.unittext}
+{:#members:scales-labels-unittext}
 
 
 
@@ -2404,7 +2468,12 @@ Specify unitText of circular gauge
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ unitText:'kmph'}]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label unitText="kmph">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2414,7 +2483,7 @@ Specify unitText of circular gauge
 
 
 ### scales.labels.unitTextPosition `enum`
-{:#members:scales.labels.unittextposition}
+{:#members:scales-labels-unittextposition}
 
 <ts name = "ej.datavisualization.CircularGauge.UnitTextPlacement"/>
 
@@ -2461,7 +2530,12 @@ Front</td>
 
 <ej-circularGauge id="circularGauge1" >
     <e-scales>
-        <e-scale [labels]="[{ unitTextPosition:'front'}]"></e-scale>
+        <e-scale>
+            <e-labels>
+                <e-label unitTextPosition="front">
+                </e-label>
+            </e-labels>
+        </e-scale>
     </e-scales>
 </ej-circularGauge>
 
@@ -2471,7 +2545,7 @@ Front</td>
 
 
 ### scales.majorIntervalValue `number`
-{:#members:scales.majorintervalvalue}
+{:#members:scales-majorintervalvalue}
 
 
 
@@ -2504,7 +2578,7 @@ Specify majorIntervalValue of circular gauge
 
 
 ### scales.maximum `number`
-{:#members:scales.maximum}
+{:#members:scales-maximum}
 
 
 
@@ -2537,7 +2611,7 @@ Specify maximum scale value of circular gauge
 
 
 ### scales.minimum `number`
-{:#members:scales.minimum}
+{:#members:scales-minimum}
 
 
 
@@ -2570,7 +2644,7 @@ Specify minimum scale value of circular gauge
 
 
 ### scales.minorIntervalValue `number`
-{:#members:scales.minorintervalvalue}
+{:#members:scales-minorintervalvalue}
 
 
 
@@ -2603,7 +2677,7 @@ Specify minorIntervalValue of circular gauge
 
 
 ### scales.opacity `number`
-{:#members:scales.opacity}
+{:#members:scales-opacity}
 
 
 
@@ -2636,7 +2710,7 @@ Specify opacity value of circular gauge
 
 
 ### scales.pointerCap `object`
-{:#members:scales.pointercap}
+{:#members:scales-pointercap}
 
 
 
@@ -2669,7 +2743,7 @@ Specify pointer cap of circular gauge
 
 
 ### scales.pointerCap.backgroundColor `string`
-{:#members:scales.pointercap.backgroundcolor}
+{:#members:scales-pointercap-backgroundcolor}
 
 
 
@@ -2702,7 +2776,7 @@ Specify cap backgroundColor of circular gauge
 
 
 ### scales.pointerCap.borderColor `string`
-{:#members:scales.pointercap.bordercolor}
+{:#members:scales-pointercap-bordercolor}
 
 
 
@@ -2735,7 +2809,7 @@ Specify cap borderColor of circular gauge
 
 
 ### scales.pointerCap.borderWidth `number`
-{:#members:scales.pointercap.borderwidth}
+{:#members:scales-pointercap-borderwidth}
 
 
 
@@ -2768,7 +2842,7 @@ Specify pointerCap borderWidth value of circular gauge
 
 
 ### scales.pointerCap.interiorGradient `object`
-{:#members:scales.pointercap.interiorgradient}
+{:#members:scales-pointercap-interiorgradient}
 
 
 
@@ -2801,7 +2875,7 @@ Specify cap interiorGradient value of circular gauge
 
 
 ### scales.pointerCap.radius `number`
-{:#members:scales.pointercap.radius}
+{:#members:scales-pointercap-radius}
 
 
 
@@ -2834,7 +2908,7 @@ Specify pointerCap Radius value of circular gauge
 
 
 ### scales.pointers `Array`
-{:#members:scales.pointers}
+{:#members:scales-pointers}
 
 
 
@@ -2871,7 +2945,7 @@ Specify pointers value of circular gauge
 
 
 ### scales.pointers.backgroundColor `string`
-{:#members:scales.pointers.backgroundcolor}
+{:#members:scales-pointers-backgroundcolor}
 
 
 
@@ -2908,7 +2982,7 @@ Specify backgroundColor for the pointer of circular gauge
 
 
 ### scales.pointers.backNeedleLength `number`
-{:#members:scales.pointers.backneedlelength}
+{:#members:scales-pointers-backneedlelength}
 
 
 
@@ -2945,7 +3019,7 @@ Specify backNeedleLength of circular gauge
 
 
 ### scales.pointers.border `object`
-{:#members:scales.pointers.border}
+{:#members:scales-pointers-border}
 
 
 
@@ -2982,7 +3056,7 @@ Specify the border for pointers of circular gauge
 
 
 ### scales.pointers.border.color `string`
-{:#members:scales.pointers.border.color}
+{:#members:scales-pointers-border-color}
 
 
 
@@ -3019,7 +3093,7 @@ Specify border color for pointer of circular gauge
 
 
 ### scales.pointers.border.width `number`
-{:#members:scales.pointers.border.width}
+{:#members:scales-pointers-border-width}
 
 
 
@@ -3056,7 +3130,7 @@ Specify border width for pointers of circular gauge
 
 
 ### scales.pointers.distanceFromScale `number`
-{:#members:scales.pointers.distancefromscale}
+{:#members:scales-pointers-distancefromscale}
 
 
 
@@ -3093,7 +3167,7 @@ Specify distanceFromScale value for pointers of circular gauge
 
 
 ### scales.pointers.gradients `object`
-{:#members:scales.pointers.gradients}
+{:#members:scales-pointers-gradients}
 
 
 
@@ -3130,7 +3204,7 @@ Specify pointer gradients of circular gauge
 
 
 ### scales.pointers.imageUrl `string`
-{:#members:scales.pointers.imageurl}
+{:#members:scales-pointers-imageurl}
 
 
 
@@ -3167,7 +3241,7 @@ Specify pointer image of circular gauge.It is applicable for both marker as well
 
 
 ### scales.pointers.length `number`
-{:#members:scales.pointers.length}
+{:#members:scales-pointers-length}
 
 
 
@@ -3204,7 +3278,7 @@ Specify pointer length of circular gauge
 
 
 ### scales.pointers.markerType `enum`
-{:#members:scales.pointers.markertype}
+{:#members:scales-pointers-markertype}
 
 <ts name = "ej.datavisualization.CircularGauge.MarkerType"/>
 
@@ -3325,7 +3399,7 @@ Image</td>
 
 
 ### scales.pointers.needleType `enum`
-{:#members:scales.pointers.needletype}
+{:#members:scales-pointers-needletype}
 
 <ts name = "ej.datavisualization.CircularGauge.NeedleType"/>
 
@@ -3405,7 +3479,7 @@ Trapezoid</td>
 
 
 ### scales.pointers.opacity `number`
-{:#members:scales.pointers.opacity}
+{:#members:scales-pointers-opacity}
 
 
 
@@ -3441,7 +3515,7 @@ Specify opacity value for pointer of circular gauge
 
 
 ### scales.pointers.radius `number`
-{:#members:scales.pointers.radius}
+{:#members:scales-pointers-radius}
 
 
 
@@ -3477,7 +3551,7 @@ Specify radius value for pointer of circular gauge
 {% endhighlight %}
 
 ### scales.pointers.placement `enum`
-{:#members:scales.pointers.placement}
+{:#members:scales-pointers-placement}
 
 
 <ts ref = "ej.datavisualization.CircularGauge.Placement"/>
@@ -3515,7 +3589,7 @@ Specify pointer Placement value of circular gauge. See <a href="global.html#Poin
 
 
 ### scales.pointers.pointerValueText `object`
-{:#members:scales.pointers.pointervaluetext}
+{:#members:scales-pointers-pointervaluetext}
 
 
 
@@ -3554,7 +3628,7 @@ Specify pointer value text of circular gauge.
 
 
 ### scales.pointers.pointerValueText.angle `number`
-{:#members:scales.pointers.pointervaluetext.angle}
+{:#members:scales-pointers-pointervaluetext-angle}
 
 
 
@@ -3593,7 +3667,7 @@ Specify pointer text angle of circular gauge.
 
 
 ### scales.pointers.pointerValueText.autoAngle `boolean`
-{:#members:scales.pointers.pointervaluetext.autoangle}
+{:#members:scales-pointers-pointervaluetext-autoangle}
 
 
 
@@ -3632,7 +3706,7 @@ Specify pointer text auto angle of circular gauge.
 
 
 ### scales.pointers.pointerValueText.color `string`
-{:#members:scales.pointers.pointervaluetext.color}
+{:#members:scales-pointers-pointervaluetext-color}
 
 
 
@@ -3671,7 +3745,7 @@ Specify pointer value text color of circular gauge.
 
 
 ### scales.pointers.pointerValueText.distance `number`
-{:#members:scales.pointers.pointervaluetext.distance}
+{:#members:scales-pointers-pointervaluetext-distance}
 
 
 
@@ -3710,7 +3784,7 @@ Specify pointer value text distance from pointer of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font `object`
-{:#members:scales.pointers.pointervaluetext.font}
+{:#members:scales-pointers-pointervaluetext-font}
 
 
 
@@ -3749,7 +3823,7 @@ Specify pointer value text font option of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font.fontFamily `string`
-{:#members:scales.pointers.pointervaluetext.font.fontfamily}
+{:#members:scales-pointers-pointervaluetext-font-fontfamily}
 
 
 
@@ -3788,7 +3862,7 @@ Specify pointer value text font family of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font.fontStyle `string`
-{:#members:scales.pointers.pointervaluetext.font.fontstyle}
+{:#members:scales-pointers-pointervaluetext-font-fontstyle}
 
 
 
@@ -3827,7 +3901,7 @@ Specify pointer value text font style of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font.size `string`
-{:#members:scales.pointers.pointervaluetext.font.size}
+{:#members:scales-pointers-pointervaluetext-font-size}
 
 
 
@@ -3865,7 +3939,7 @@ Specify pointer value text size of circular gauge.
 
 
 ### scales.pointers.pointerValueText.opacity `number`
-{:#members:scales.pointers.pointervaluetext.opacity}
+{:#members:scales-pointers-pointervaluetext-opacity}
 
 
 
@@ -3903,7 +3977,7 @@ Specify pointer value text opacity of circular gauge.
 
 
 ### scales.pointers.pointerValueText.showValue `boolean`
-{:#members:scales.pointers.pointervaluetext.showvalue}
+{:#members:scales-pointers-pointervaluetext-showvalue}
 
 
 
@@ -3942,7 +4016,7 @@ enable pointer value text visibility of circular gauge.
 
 
 ### scales.pointers.showBackNeedle `boolean`
-{:#members:scales.pointers.showbackneedle}
+{:#members:scales-pointers-showbackneedle}
 
 
 
@@ -3980,7 +4054,7 @@ Specify showBackNeedle value of circular gauge
 
 
 ### scales.pointers.type `enum`
-{:#members:scales.pointers.type}
+{:#members:scales-pointers-type}
 
 <ts name = "ej.datavisualization.CircularGauge.PointerType"/>
 
@@ -4043,7 +4117,7 @@ Marker</td>
 
 
 ### scales.pointers.value `number`
-{:#members:scales.pointers.value}
+{:#members:scales-pointers-value}
 
 
 
@@ -4081,7 +4155,7 @@ Specify value of the pointer of circular gauge
 
 
 ### scales.pointers.width `number`
-{:#members:scales.pointers.width}
+{:#members:scales-pointers-width}
 
 
 
@@ -4119,7 +4193,7 @@ Specify pointer width of circular gauge
 
 
 ### scales.radius `number`
-{:#members:scales.radius}
+{:#members:scales-radius}
 
 
 
@@ -4152,7 +4226,7 @@ Specify scale radius of circular gauge
 
 
 ### scales.ranges `Array`
-{:#members:scales.ranges}
+{:#members:scales-ranges}
 
 
 
@@ -4189,7 +4263,7 @@ Specify ranges value of circular gauge
 
 
 ### scales.ranges.backgroundColor `string`
-{:#members:scales.ranges.backgroundcolor}
+{:#members:scales-ranges-backgroundcolor}
 
 
 
@@ -4226,7 +4300,7 @@ Specify backgroundColor for the ranges of circular gauge
 
 
 ### scales.ranges.border `object`
-{:#members:scales.ranges.border}
+{:#members:scales-ranges-border}
 
 
 
@@ -4263,7 +4337,7 @@ Specify border for ranges of circular gauge
 
 
 ### scales.ranges.border.color `string`
-{:#members:scales.ranges.border.color}
+{:#members:scales-ranges-border-color}
 
 
 
@@ -4300,7 +4374,7 @@ Specify border color for ranges of circular gauge
 
 
 ### scales.ranges.border.width `number`
-{:#members:scales.ranges.border.width}
+{:#members:scales-ranges-border-width}
 
 
 
@@ -4337,7 +4411,7 @@ Specify border width for ranges of circular gauge
 
 
 ### scales.ranges.distanceFromScale `number`
-{:#members:scales.ranges.distancefromscale}
+{:#members:scales-ranges-distancefromscale}
 
 
 
@@ -4374,7 +4448,7 @@ Specify distanceFromScale value for ranges of circular gauge
 
 
 ### scales.ranges.endValue `number`
-{:#members:scales.ranges.endvalue}
+{:#members:scales-ranges-endvalue}
 
 
 
@@ -4411,7 +4485,7 @@ Specify endValue for ranges of circular gauge
 
 
 ### scales.ranges.endWidth `number`
-{:#members:scales.ranges.endwidth}
+{:#members:scales-ranges-endwidth}
 
 
 
@@ -4448,7 +4522,7 @@ Specify endWidth for ranges of circular gauge
 
 
 ### scales.ranges.gradients `object`
-{:#members:scales.ranges.gradients}
+{:#members:scales-ranges-gradients}
 
 
 
@@ -4473,7 +4547,7 @@ Specify range gradients of circular gauge
 
 
 ### scales.ranges.opacity `number`
-{:#members:scales.ranges.opacity}
+{:#members:scales-ranges-opacity}
 
 
 
@@ -4510,7 +4584,7 @@ Specify opacity value for ranges of circular gauge
 
 
 ### scales.ranges.placement `enum`
-{:#members:scales.ranges.placement}
+{:#members:scales-ranges-placement}
 
 <ts ref = "ej.datavisualization.CircularGauge.Placement"/>
 
@@ -4547,7 +4621,7 @@ Specify placement of circular gauge. See <a href="global.html#RangePlacement">Ra
 
 
 ### scales.ranges.size `number`
-{:#members:scales.ranges.size}
+{:#members:scales-ranges-size}
 
 
 
@@ -4584,7 +4658,7 @@ Specify size of the range value of circular gauge
 
 
 ### scales.ranges.startValue `number`
-{:#members:scales.ranges.startvalue}
+{:#members:scales-ranges-startvalue}
 
 
 
@@ -4621,7 +4695,7 @@ Specify startValue for ranges of circular gauge
 
 
 ### scales.ranges.startWidth `number`
-{:#members:scales.ranges.startwidth}
+{:#members:scales-ranges-startwidth}
 
 
 
@@ -4658,7 +4732,7 @@ Specify startWidth of circular gauge
 
 
 ### scales.shadowOffset `number`
-{:#members:scales.shadowoffset}
+{:#members:scales-shadowoffset}
 
 
 
@@ -4692,7 +4766,7 @@ Specify shadowOffset value of circular gauge
 
 
 ### scales.showIndicators `boolean`
-{:#members:scales.showindicators}
+{:#members:scales-showindicators}
 
 
 
@@ -4726,7 +4800,7 @@ Specify showIndicators of circular gauge
 
 
 ### scales.showLabels `boolean`
-{:#members:scales.showlabels}
+{:#members:scales-showlabels}
 
 
 
@@ -4760,7 +4834,7 @@ Specify showLabels of circular gauge
 
 
 ### scales.showPointers `boolean`
-{:#members:scales.showpointers}
+{:#members:scales-showpointers}
 
 
 
@@ -4794,7 +4868,7 @@ Specify showPointers of circular gauge
 
 
 ### scales.showRanges `boolean`
-{:#members:scales.showranges}
+{:#members:scales-showranges}
 
 
 
@@ -4827,7 +4901,7 @@ Specify showRanges of circular gauge
 
 
 ### scales.showScaleBar `boolean`
-{:#members:scales.showscalebar}
+{:#members:scales-showscalebar}
 
 
 
@@ -4861,7 +4935,7 @@ Specify showScaleBar of circular gauge
 
 
 ### scales.showTicks `boolean`
-{:#members:scales.showticks}
+{:#members:scales-showticks}
 
 
 
@@ -4895,7 +4969,7 @@ Specify showTicks of circular gauge
 
 
 ### scales.size `number`
-{:#members:scales.size}
+{:#members:scales-size}
 
 
 
@@ -4928,7 +5002,7 @@ Specify scaleBar size of circular gauge
 
 
 ### scales.startAngle `number`
-{:#members:scales.startangle}
+{:#members:scales-startangle}
 
 
 
@@ -4961,7 +5035,7 @@ Specify startAngle of circular gauge
 
 
 ### scales.subGauges `Array`
-{:#members:scales.subgauges}
+{:#members:scales-subgauges}
 
 
 
@@ -4995,7 +5069,7 @@ Specify subGauge of circular gauge
 
 
 ### scales.subGauges.height `number`
-{:#members:scales.subgauges.height}
+{:#members:scales-subgauges-height}
 
 
 
@@ -5029,7 +5103,7 @@ Specify subGauge Height of circular gauge
 
 
 ### scales.subGauges.position `object`
-{:#members:scales.subgauges.position}
+{:#members:scales-subgauges-position}
 
 
 
@@ -5063,7 +5137,7 @@ Specify position for sub-gauge of circular gauge
 
 
 ### scales.subGauges.position.x `number`
-{:#members:scales.subgauges.position.x}
+{:#members:scales-subgauges-position-x}
 
 
 
@@ -5097,7 +5171,7 @@ Specify x-axis position for sub-gauge of circular gauge
 
 
 ### scales.subGauges.position.y `number`
-{:#members:scales.subgauges.position.y}
+{:#members:scales-subgauges-position-y}
 
 
 
@@ -5131,7 +5205,7 @@ Specify y-axis position for sub-gauge of circular gauge
 
 
 ### scales.subGauges.width `number`
-{:#members:scales.subgauges.width}
+{:#members:scales-subgauges-width}
 
 
 
@@ -5165,7 +5239,7 @@ Specify subGauge Width of circular gauge
 
 
 ### scales.sweepAngle `number`
-{:#members:scales.sweepangle}
+{:#members:scales-sweepangle}
 
 
 
@@ -5199,7 +5273,7 @@ Specify sweepAngle of circular gauge
 
 
 ### scales.ticks `Array`
-{:#members:scales.ticks}
+{:#members:scales-ticks}
 
 
 
@@ -5236,7 +5310,7 @@ Specify ticks of circular gauge
 
 
 ### scales.ticks.angle `number`
-{:#members:scales.ticks.angle}
+{:#members:scales-ticks-angle}
 
 
 
@@ -5273,7 +5347,7 @@ Specify the angle for the ticks of circular gauge
 
 
 ### scales.ticks.color `string`
-{:#members:scales.ticks.color}
+{:#members:scales-ticks-color}
 
 
 
@@ -5310,7 +5384,7 @@ Specify tick color of circular gauge
 
 
 ### scales.ticks.distanceFromScale `number`
-{:#members:scales.ticks.distancefromscale}
+{:#members:scales-ticks-distancefromscale}
 
 
 
@@ -5347,7 +5421,7 @@ Specify distanceFromScale value for ticks of circular gauge
 
 
 ### scales.ticks.height `number`
-{:#members:scales.ticks.height}
+{:#members:scales-ticks-height}
 
 
 
@@ -5384,7 +5458,7 @@ Specify tick height of circular gauge
 
 
 ### scales.ticks.placement `enum`
-{:#members:scales.ticks.placement}
+{:#members:scales-ticks-placement}
 
 <ts ref = "ej.datavisualization.CircularGauge.Placement"/>
 
@@ -5421,7 +5495,7 @@ Specify tick placement of circular gauge. See <a href="global.html#TickPlacement
 
 
 ### scales.ticks.type `enum`
-{:#members:scales.ticks.type}
+{:#members:scales-ticks-type}
 
 <ts ref = "ej.datavisualization.CircularGauge.LabelType"/>
 
@@ -5458,7 +5532,7 @@ Specify tick Style of circular gauge. See <a href="global.html#TickType">TickTyp
 
 
 ### scales.ticks.width `number`
-{:#members:scales.ticks.width}
+{:#members:scales-ticks-width}
 
 
 
@@ -5522,6 +5596,789 @@ Specify the theme of circular gauge.
 {% endhighlight %}
 
 
+### legend `object`
+{:#members:legend}
+
+Options to customize the legend.
+
+### legend.visible `boolean`
+{:#members:legend-visible}
+
+
+Toggles the visibility of the legend.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.visible]="true">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+### legend.toggleVisibility `boolean`
+{:#members:legend-togglevisibility}
+
+
+Toggles the visibility of the ranges.
+
+
+#### Default Value
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.toggleVisibility]="flase">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+### legend.alignment `enum`
+{:#members:legend-alignment}
+
+<ts name="ej.datavisualization.CircularGauge.LegendAlignment"/>
+Specifies the alignment of the legend.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Center</td>
+<td class="type">string</td> 
+<td class="description"> Align the legend as center to the circulargauge</td>
+</tr>
+<tr>
+<td class="name">
+Near</td>
+<td class="type">string</td>
+<td class="description"> Align the legend as near to the circulargauge</td>
+</tr> 
+<tr>
+<td class="name">
+Far</td>
+<td class="type">string</td>
+<td class="description"> Align the legend as far to the circulargauge</td>
+</tr> 
+</tbody>
+</table>
+
+#### Default Value
+
+* "Center". See <a href="global.html#members:alignment">Alignment</a>
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" legend.alignment="far">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.border `object`
+{:#members:legend-border}
+
+
+
+
+Options for customizing the legend border.
+
+
+
+
+
+### legend.border.color `string`
+{:#members:legend-border-color}
+
+
+
+
+Border color of the legend.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.border]="{color:'red'}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.border.width `number`
+{:#members:legend-border-width}
+
+
+
+
+Border width of the legend.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.border]="{width:2}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+### legend.fill `string`
+{:#members:legend-fill}
+
+
+
+
+Fill color for the legend items. By using this property, it displays all legend item shapes in same color. 
+Legend items representing invisible ranges is displayed in gray color.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" legend.fill="green">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.itemPadding `number`
+{:#members:legend-itempadding}
+
+
+
+
+Gap or padding between the legend items.
+
+
+#### Default Value
+
+* 20
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.itemPadding]="10">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+
+
+### legend.itemStyle `object`
+{:#members:legend-itemstyle}
+
+
+
+
+Options to customize the style of legend items.
+
+
+
+
+
+
+### legend.itemStyle.border `object`
+{:#members:legend-itemstyle-border}
+
+
+
+
+Options for customizing the border of legend items.
+
+
+
+
+
+### legend.itemStyle.border.color `string`
+{:#members:legend-itemstyle-border-color}
+
+
+
+
+Border color of the legend items.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.itemStyle.border]="{color:'red'}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.itemStyle.border.width `number`
+{:#members:legend-itemstyle-border-width}
+
+
+
+
+Border width of the legend items.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.itemStyle.border]="{width:2}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.itemStyle.height `number`
+{:#members:legend-itemstyle-height}
+
+
+
+
+Specifies the height of the  legend item shapes.
+
+
+#### Default Value
+
+* 10
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.itemStyle.height]="120">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.itemStyle.width `number`
+{:#members:legend-itemstyle-width}
+
+
+
+
+Specifies the width of the  legend item shapes.
+
+#### Default Value
+
+* 10
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.itemStyle.width]="2">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+### legend.opacity `number`
+{:#members:legend-opacity}
+
+
+
+
+Opacity of the legend.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.opacity]="0.5">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.position `enum`
+{:#members:legend-position}
+
+<ts name="ej.datavisualization.CircularGauge.LegendPosition"/>
+Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the circular gauge.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Left</td>
+<td class="type">string</td> 
+<td class="description">Legend will be placed left side of the circulargauge area</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="type">string</td>
+<td class="description">Legend will be placed right side of the circulargauge area</td>
+</tr> 
+<tr>
+<td class="name">
+Top</td>
+<td class="type">string</td>
+<td class="description">Legend will be placed top of the circulargauge area</td>
+</tr> 
+<tr>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
+<td class="description">Legend will be placed bottom of the circulargauge area</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+* "Bottom". See <a href="global.html#members:position">Position</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" legend.position="left">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.shape `enum`
+{:#members:legend-shape}
+
+<ts name="ej.datavisualization.CircularGauge.LegendShape"/>
+Shape of the legend items.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td> 
+<td class="description">Legend shape of circular gauge will be rectangle</td>
+</tr>
+<tr>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be circle</td>
+</tr> 
+<tr>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be triangle</td>
+</tr> 
+<tr>
+<td class="name">
+Ellipse</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be ellipse</td>
+</tr> 
+<tr>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be diamond</td>
+</tr> 
+<tr>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be pentagon</td>
+</tr> 
+<tr>
+<td class="name">
+Slider</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be slider</td>
+</tr> 
+<td class="name">
+Wedge</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be wedge</td>
+</tr> 
+<tr>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be trapezoid</td>
+</tr>
+<tr>
+<td class="name">
+Line</td>
+<td class="type">string</td>
+<td class="description">Legend shape of circular gauge will be line</td>
+</tr>   
+</tbody>
+</table>
+
+
+#### Default Value
+
+* "Circle". See <a href="global.html#members:shape">Shape</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" legend.shape="triangle">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+
+### legend.size `object`
+{:#members:legend-size}
+
+
+
+
+Options to customize the size of the legend.
+
+
+
+
+
+
+
+### legend.size.height `string`
+{:#members:legend-size-height}
+
+
+
+
+Specify the height of the legend. Height can be specified in pixel.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.size.height]="100">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.size.width `string`
+{:#members:legend-size-width}
+
+
+
+
+Specify the width of the legend. Width can be specified in pixel.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.size.width]="100">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+### legend.font `object`
+{:#members:legend-font}
+
+
+
+
+Options to customize the font used for legend item text.
+
+
+
+
+
+
+### legend.font.fontFamily `string`
+{:#members:legend-font-fontfamily}
+
+
+
+
+Font family for legend item text.
+
+
+#### Default Value
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.font]="{fontFamily:'Arial'}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.font.fontStyle `string`
+{:#members:legend-font-fontstyle}
+
+Font style for legend item text.
+
+
+#### Default Value
+
+* "Normal"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.font]="{fontStyle:'Bold'}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.font.fontWeight `string`
+{:#members:legend-font-fontweight}
+
+Font weight for legend item text.
+
+
+#### Default Value
+
+* "Regular"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.font]="{fontWeight:'lighter'}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### legend.font.size `string`
+{:#members:legend-font-size}
+
+
+
+
+Font size for legend item text.
+
+
+#### Default Value
+
+* "12px"
+
+#### Example
+
+
+{% highlight js %}
+ 
+<ej-circularGauge id="circularGauge1" [legend.font]="{size:'12px'}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+### legend.font.color `string`
+{:#members:legend-font-color}
+
+
+
+
+Font color of the text for legend items.
+
+
+#### Default Value
+
+
+
+* null
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+<ej-circularGauge id="circularGauge1" [legend.font]="{color:'red'}">    
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
 
 
 ### tooltip `object`
@@ -5556,7 +6413,7 @@ Specify tooltip option of circular gauge
 
 
 ### tooltip.showCustomLabelTooltip `boolean`
-{:#members:tooltip.showcustomlabeltooltip}
+{:#members:tooltip-showcustomlabeltooltip}
 
 
 
@@ -5586,7 +6443,7 @@ enable showCustomLabelTooltip of circular gauge
 
 
 ### tooltip.showLabelTooltip `boolean`
-{:#members:tooltip.showlabeltooltip}
+{:#members:tooltip-showlabeltooltip}
 
 
 
@@ -5616,7 +6473,7 @@ enable showLabelTooltip of circular gauge
 
 
 ### tooltip.templateID `string`
-{:#members:tooltip.templateid}
+{:#members:tooltip-templateid}
 
 
 
@@ -5766,10 +6623,14 @@ To export Image
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileName for the Image</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.fileType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileType for the Image</td>
 </tr>
@@ -5813,10 +6674,14 @@ To get BackNeedleLength
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5860,10 +6725,14 @@ To get CustomLabelAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -5907,10 +6776,14 @@ To get CustomLabelValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -5954,10 +6827,14 @@ To get LabelAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -6001,10 +6878,14 @@ To get LabelDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -6048,10 +6929,14 @@ To get LabelPlacement
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -6095,10 +6980,14 @@ To get LabelStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -6142,6 +7031,8 @@ To get MajorIntervalValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6185,10 +7076,14 @@ To get MarkerDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6232,10 +7127,14 @@ To get MarkerStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6279,6 +7178,8 @@ To get MaximumValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6322,6 +7223,8 @@ To get MinimumValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6365,6 +7268,8 @@ To get MinorIntervalValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6408,10 +7313,14 @@ To get NeedleStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6455,6 +7364,8 @@ To get PointerCapBorderWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6498,6 +7409,8 @@ To get PointerCapRadius
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6541,10 +7454,14 @@ To get PointerLength
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6588,10 +7505,14 @@ To get PointerNeedleType
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6634,10 +7555,14 @@ To get PointerPlacement
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6681,10 +7606,14 @@ To get PointerValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6730,10 +7659,14 @@ To get PointerWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -6778,10 +7711,14 @@ To get RangeBorderWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6827,10 +7764,14 @@ To get RangeDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6875,10 +7816,14 @@ To get RangeEndValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6923,10 +7868,14 @@ To get RangePosition
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6971,10 +7920,14 @@ To get RangeSize
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -7020,10 +7973,14 @@ To get RangeStartValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -7067,6 +8024,8 @@ To get ScaleBarSize
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7111,6 +8070,8 @@ To get ScaleBorderWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7155,6 +8116,8 @@ To get ScaleDirection
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7198,6 +8161,8 @@ To get ScaleRadius
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7242,6 +8207,8 @@ To get StartAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7285,10 +8252,14 @@ To get SubGaugeLocation
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.GaugeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">GaugeIndex value for the Gauge</td>
 </tr>
@@ -7332,6 +8303,8 @@ To get SweepAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7376,10 +8349,14 @@ To get TickAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -7423,10 +8400,14 @@ To get TickDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -7470,10 +8451,14 @@ To get TickHeight
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -7517,10 +8502,14 @@ To get TickPlacement
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -7564,10 +8553,14 @@ To get TickStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -7611,10 +8604,14 @@ To get TickWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -7659,14 +8656,20 @@ To set includeFirstValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7709,6 +8712,8 @@ Switching the redraw option for the gauge
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">redraw value for the gauge</td>
 </tr>
@@ -7752,14 +8757,20 @@ To set BackNeedleLength
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7802,14 +8813,20 @@ To set CustomLabelAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7853,14 +8870,20 @@ To set CustomLabelValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7905,14 +8928,20 @@ To set LabelAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">angle value for the gauge</td>
 </tr>
@@ -7957,14 +8986,20 @@ To set LabelDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8009,14 +9044,20 @@ To set LabelPlacement
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8061,14 +9102,20 @@ To set LabelStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8113,10 +9160,14 @@ To set MajorIntervalValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8160,14 +9211,20 @@ To set MarkerDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8211,14 +9268,20 @@ To set MarkerStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8264,10 +9327,14 @@ To set MaximumValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8312,10 +9379,14 @@ To set MinimumValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8359,10 +9430,14 @@ To set MinorIntervalValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8407,14 +9482,20 @@ To set NeedleStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8459,10 +9540,14 @@ To set PointerCapBorderWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8507,10 +9592,14 @@ To set PointerCapRadius
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8554,14 +9643,20 @@ To set PointerLength
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8605,14 +9700,20 @@ To set PointerNeedleType
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8656,14 +9757,20 @@ To set PointerPlacement
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8707,14 +9814,20 @@ To set PointerValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8758,14 +9871,20 @@ To set PointerWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8809,14 +9928,20 @@ To set RangeBorderWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8862,14 +9987,20 @@ To set RangeDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8913,14 +10044,20 @@ To set RangeEndValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8965,14 +10102,20 @@ To set RangePosition
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9016,14 +10159,20 @@ To set RangeSize
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9067,14 +10216,20 @@ To set RangeStartValue
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9118,10 +10273,14 @@ To set ScaleBarSize
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9165,10 +10324,14 @@ To set ScaleBorderWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9213,10 +10376,14 @@ To set ScaleDirection
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9260,10 +10427,14 @@ To set ScaleRadius
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9307,10 +10478,14 @@ To set StartAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9354,14 +10529,20 @@ To set SubGaugeLocation
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.GaugeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">GaugeIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9405,10 +10586,14 @@ To set SweepAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9452,14 +10637,20 @@ To set TickAngle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9503,14 +10694,20 @@ To set TickDistanceFromScale
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9554,14 +10751,20 @@ To set TickHeight
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9605,14 +10808,20 @@ To set TickPlacement
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9656,14 +10865,20 @@ To set TickStyle
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9707,14 +10922,20 @@ To set TickWidth
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9762,46 +10983,68 @@ Triggers while the custom labels are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the custom label</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the custom label belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the custom label style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+customLabelElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current custom label element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the custom label.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9851,46 +11094,68 @@ Triggers while the indicators are being started to drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the indicator</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the indicator belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the indicator style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+indicatorElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current indicator element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+indicatorIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the indicator.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9940,38 +11205,56 @@ Triggers while the labels are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the labels</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the label belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the label style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+label{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the label object of the gauge.
 <table class="params">
@@ -9984,14 +11267,20 @@ Triggers while the labels are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the labels.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current label element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the label.</td>
 </tr>
@@ -10000,10 +11289,14 @@ Triggers while the labels are being drawn on the gauge.
 </td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+pointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the label.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -10053,34 +11346,50 @@ Triggers while the pointer cap is being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer cap.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer cap style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -10130,38 +11439,56 @@ Triggers while the pointers are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object of the gauge.
 <table class="params">
@@ -10174,18 +11501,26 @@ Triggers while the pointers are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current pointer element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the pointer.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
@@ -10194,6 +11529,8 @@ Triggers while the pointers are being drawn on the gauge.
 </td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -10243,46 +11580,68 @@ Triggers when the ranges begin to be getting drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the range</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the range belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the range style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+rangeElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current range element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the range.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -10332,38 +11691,56 @@ Triggers while the ticks are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the ticks</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the tick belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the ticks style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+tick{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the tick object of the gauge.
 <table class="params">
@@ -10376,14 +11753,20 @@ Triggers while the ticks are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the tick.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current tick element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the tick.</td>
 </tr>
@@ -10392,10 +11775,14 @@ Triggers while the ticks are being drawn on the gauge.
 </td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+pointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the label value of the tick.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -10445,26 +11832,38 @@ Triggers while the gauge start to Load.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the entire scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -10514,34 +11913,50 @@ Triggers when the left mouse button is clicked.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object
 <table class="params">
@@ -10554,18 +11969,26 @@ Triggers when the left mouse button is clicked.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
@@ -10574,10 +11997,14 @@ Triggers when the left mouse button is clicked.
 </td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -10627,34 +12054,50 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object
 <table class="params">
@@ -10667,18 +12110,26 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
@@ -10687,10 +12138,14 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -10740,34 +12195,50 @@ Triggers when the mouse click is released.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object
 <table class="params">
@@ -10780,18 +12251,26 @@ Triggers when the mouse click is released.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
@@ -10800,10 +12279,14 @@ Triggers when the mouse click is released.
 </td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -10853,26 +12336,38 @@ Triggers when the rendering of the gauge is completed.
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the entire scale element.</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
