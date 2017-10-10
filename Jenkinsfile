@@ -1,6 +1,6 @@
 node('content')
 { 
-String platform='';
+String platform='angular-api';
    try
 	{   
 		//Clone scm repository in Workspace source directory
@@ -15,6 +15,7 @@ String platform='';
 	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.gitlabCredentialId, url: 'https://gitlab.syncfusion.com/content/ug_spellchecker.git']]])
 		 
 	  }
+	  
 	  //method to get modified file path
 	  changeLogs()
 	}
