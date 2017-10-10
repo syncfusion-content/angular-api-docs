@@ -1,6 +1,6 @@
 node('content')
 { 
-String platform='JavaScript API';
+String platform='angular-api';
    try
 	{   
 		//Clone scm repository in Workspace source directory
