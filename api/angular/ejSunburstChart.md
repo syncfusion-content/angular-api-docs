@@ -61,7 +61,7 @@ Background color of the plot area.
 
 
 ### valueMemberPath `string`
-{:#members:valueMemberPath}
+{:#members:valuememberpath}
 
 Bind the data field from the data source.
 
@@ -207,7 +207,7 @@ Palette color for the data points.
 
 
 ### parentNode `string`
-{:#members:parentNode}
+{:#members:parentnode}
 
 Parent node of the data points.
 
@@ -680,7 +680,46 @@ Custom template to the tooltip.
 </ej-sunburstchart>
 
 {% endhighlight %}
- 
+
+
+
+### tooltip.format `string`
+{:#members:tooltip-format}
+
+Setting the format for the data displayed in the tooltip
+
+#### Default Value
+
+* "#point.x# : #point.y#"
+
+#### Example
+
+
+{% highlight html %}
+
+<ej-sunburstchart  id="sunburst"  [tooltip.format]=" ">   
+</ej-sunburstchart>
+
+{% endhighlight %}
+
+
+### tooltip.opacity `number`
+{:#members:tooltip-opacity}
+
+Sets the opacity of the dispalyed tooltip
+
+#### Default Value
+
+* 0.95
+
+#### Example
+
+{% highlight html %}
+
+<ej-sunburstchart  id="sunburst"  [tooltip.opacity]="0.5">   
+</ej-sunburstchart>
+
+{% endhighlight %}
 
 
 
@@ -768,7 +807,7 @@ Points fill color of the sunburst.
 
 
 ### startAngle `number`
-{:#members:startAngle}
+{:#members:startangle}
 
 Sunburst rendering will start from the specified value
 
@@ -786,7 +825,7 @@ Sunburst rendering will start from the specified value
 {% endhighlight %}
 
 ### endAngle `number`
-{:#members:startAngle}
+{:#members:endangle}
 
 Sunburst rendering will end at the specified value
 
@@ -869,7 +908,7 @@ Datalabel visibility of the Sunburst.
 
 
 ### dataLabelSettings.labelRotationMode `enum`
-{:#members:datalabelsettings-labelRotationMode}
+{:#members:datalabelsettings-labelrotationmode}
 
 <ts name = "ej.datavisualization.Sunburst.SunburstLabelRotationMode"/>
 
@@ -1113,7 +1152,7 @@ Fill color for the datalabel
 
 
 ### dataLabelSettings.labelOverflowMode `enum`
-{:#members:datalabelsettings-labelOverflowMode}
+{:#members:datalabelsettings-labeloverflowmode}
 
 <ts name = "ej.datavisualization.Sunburst.SunburstLabelOverflowMode"/>
 
@@ -1220,7 +1259,7 @@ Title text visibility for sunburst
 
 
 ### title.textAlignment `enum`
-{:#members:title-textAlignment}
+{:#members:title-textalignment}
 
 <ts name = "ej.datavisualization.Sunburst.SunburstAlignment"/>
 
@@ -1410,7 +1449,7 @@ Options to customize the sub title of Sunburst.
 
 
 ### title.subtitle.text `string`
-{:#members:title--subtitle-text}
+{:#members:title-subtitle-text}
 
 
 Subtitle text for sunburst
@@ -1457,7 +1496,7 @@ Sub title text visibility for sunburst
 
 
 ### title.subtitle.textAlignment `enum`
-{:#members:title-subtitle-textAlignment}
+{:#members:title-subtitle-textalignment}
 
 <ts ref="ej.datavisualization.Sunburst.SunburstAlignment"/>
 
@@ -1617,7 +1656,7 @@ Options for customizing the appearance of the levels or point while highlighting
 
 
 ### highlightSettings.enable `boolean`
-{:#members:highlightSettings-enable}
+{:#members:highlightsettings-enable}
 
 
 Enables/disables the ability to highlight the levels or point interactively.
@@ -1640,7 +1679,7 @@ Enables/disables the ability to highlight the levels or point interactively.
 
 
 ### highlightSettings.mode `enum`
-{:#members:highlightSettings-mode}
+{:#members:highlightsettings-mode}
 
 
 <ts name = "ej.datavisualization.Sunburst.SunburstHighlightMode"/>
@@ -1751,7 +1790,7 @@ Opacity of the levels/point on highlight.
 
 
 ### highlightSettings.type `enum`
-{:#members:highlightSettings-type}
+{:#members:highlightsettings-type}
 
 
 <ts name = "ej.datavisualization.Sunburst.SunburstHighlightType"/>
@@ -1909,7 +1948,7 @@ Opacity of the levels/point on selection.
 
 
 ### selectionSettings.type `enum`
-{:#members:selectionSettings-type}
+{:#members:selectionsettings-type}
 
 
 <ts ref = "ej.datavisualization.Sunburst.SunburstHighlightType"/>
