@@ -154,6 +154,59 @@ Specify distanceFromCorner value of circular gauge
 
 
 
+### rangeZOrder `enum`
+{:#members:rangezorder}
+
+<ts name="ej.datavisualization.CircularGauge.RangeZOrderPlacement"/>
+Specify range zOrder placement of circular gauge.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Rear</td>
+<td class="type">string</td>
+<td class="description">Place the ranges above the ticks of the gauge</td>
+</tr>
+<tr>
+<td class="name">
+Front</td>
+<td class="type">string</td>
+<td class="description">Place the ticks above the ranges of the gauge</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* Rear
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+<ej-circularGauge id="circularGauge1" rangeZOrder="rear" >
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
 ### enableAnimation `boolean`
 {:#members:enableanimation}
 
@@ -181,6 +234,66 @@ Specify animate value of circular gauge
 
 {% endhighlight %}
 
+
+### enableGroupSeparator `boolean`
+{:#members:enablegroupseparator}
+
+
+
+Specify to convert the  date object to  string, using locale settings.
+
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+<ej-circularGauge id="circularGauge1" [enableGroupSeparator]="true" >
+</ej-circularGauge>
+
+{% endhighlight %}
+
+
+
+
+### enableResize `boolean`
+{:#members:enableresize}
+
+
+
+
+Controls whether circular gauge has to be responsive while resizing.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+
+<ej-circularGauge id="circularGauge1" [enableResize]="true" >
+</ej-circularGauge>
+
+{% endhighlight %}
 
 
 
@@ -579,6 +692,35 @@ Specify isResponsive value of circular gauge
 </ej-circularGauge>
 
 {% endhighlight %}
+
+
+
+
+### locale `string`
+{:#members:locale}
+
+
+
+
+Name of the culture based on which circular gauge should be localized. 
+
+
+#### Default Value
+
+* "en-US"
+
+
+
+
+#### Example
+
+{% highlight html %}
+
+<ej-circularGauge id="circularGauge1" locale="en-Us">
+</ej-circularGauge>
+
+{% endhighlight %}
+
 
 
 
@@ -1178,6 +1320,38 @@ Specify y-axis  position of labels.
 {% endhighlight %}
 
 
+### scales.customLabels.textAngle `number`
+{:#members:scales.customlabels.textangle}
+
+
+
+
+Specify angle for the rotation of the custom labels in degrees.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+ 
+{% highlight html %}
+
+<ej-circularGauge id="circularGauge1">
+    <e-scales>
+        <e-scale [customLabels.textAngle]="90"></e-scale>
+    </e-scales>
+</ej-circularGauge>
+
+{% endhighlight %}
+ 
+
 
 ### scales.customLabels.font `object`
 {:#members:scales-customlabels-font}
@@ -1312,6 +1486,59 @@ Specify font size for custom labels.
 
 
 
+### scales.customLabels.positionType `enum`
+{:#members:scales.customlabels.positiontype}
+
+<ts name="ej.datavisualization.CircularGauge.CustomLabelPositionType"/>
+Specifies the position of the  custom labels. See <a href="global.html#CustomLabelPositionType">CustomLabelPositionType</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Inner</td>
+<td class="type">string</td> 
+<td class="description">Sets the Custom label position as Inner</td>
+</tr>
+<tr>
+<td class="name">
+Outer</td>
+<td class="type">string</td>
+<td class="description">Sets the Custom label position as Outer</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* inner
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+<ej-circularGauge id="circularGauge1">
+    <e-scales>
+        <e-scale customLabels.positionType="outer"></e-scale>
+    </e-scales>
+</ej-circularGauge>
+
+{% endhighlight %}
 
 
 ### scales.indicators `Array`
@@ -4297,6 +4524,35 @@ Specify backgroundColor for the ranges of circular gauge
 {% endhighlight %}
 
 
+### scales.ranges.legendText `string`
+{:#members:scales.ranges.legendtext}
+
+
+Specify text for the ranges of circular gauge
+
+
+#### Default Value
+
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+
+ <ej-circularGauge id="circularGauge1">
+    <e-scales>
+        <e-scale>
+            <e-ranges>
+                <e-range legendText="high"></e-range>
+            </e-ranges>
+        </e-scale>
+    </e-scales>
+</ej-circularGauge>
+
+{% endhighlight %}
+
 
 
 ### scales.ranges.border `object`
@@ -4325,7 +4581,7 @@ Specify border for ranges of circular gauge
     <e-scales>
         <e-scale>
             <e-ranges>
-                <e-range [border] = "[color:'red', width:2 ]"></e-range>
+                <e-range [border] = "{color:'red', width:2 }"></e-range>
             </e-ranges>
         </e-scale>
     </e-scales>
@@ -6376,6 +6632,211 @@ Font color of the text for legend items.
 </ej-circularGauge>
 
 {% endhighlight %}
+
+
+
+### legendItemRender
+{:#events:legenditemrender}
+
+
+
+
+Fires before rendering the legend item. This event is fired for each legend item in CircularGauge. You can use this event to customize legend item shape or add custom text to legend item.
+
+
+#### Example
+
+
+{% highlight ts %}
+
+onLegendItemRender(sender){
+     
+     //Do something
+
+}
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<ej-circulargauge id="events" (legendItemRender)="onLegendItemRender($event)"> 
+</ej-circulargauge>
+
+{% endhighlight %}
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the circulargauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the legend item object that is about to be rendered</td>
+</tr>
+</tbody>
+</table>
+
+
+### legendItemClick
+{:#events:legenditemclick}
+
+
+
+
+Fires on clicking the legend item. 
+
+
+#### Example
+
+
+
+{% highlight ts %}
+
+onLegendItemClick(sender){
+     
+     //Do something
+
+}
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<ej-circulargauge id="events" (legendItemClick)="onLegendItemClick($event)"> 
+</ej-circulargauge>
+
+{% endhighlight %}
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the circulargauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the legend item object that is about to be rendered</td>
+</tr>
+</tbody>
+</table>
+
+
+### rangeMouseMove
+{:#events:rangemousemove}
+
+
+
+
+Fires when mouse moving on ranges. 
+
+
+#### Example
+
+
+
+{% highlight ts %}
+
+onRangeMouseMove(sender){
+     
+     //Do something
+
+}
+
+{% endhighlight %}
+
+{% highlight html %}
+
+<ej-circulargauge id="events" (rangeMouseMove)="onRangeMouseMove($event)"> 
+</ej-circulargauge>
+
+{% endhighlight %}
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the circulargauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Region of ranges</td>
+</tr>
+</tbody>
+</table>
 
 
 

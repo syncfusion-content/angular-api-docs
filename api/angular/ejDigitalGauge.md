@@ -2213,10 +2213,14 @@ To export Digital Gauge as Image
 </thead>
 <tbody>
 <tr>
+<td class="name">{% highlight html %}
+fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileName for the Image</td>
 </tr>
 <tr>
+<td class="name">{% highlight html %}
+fileType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileType for the Image</td>
 </tr>
