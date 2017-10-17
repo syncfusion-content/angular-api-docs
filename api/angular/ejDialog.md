@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejDialog Widget
 description: Methods, members, events available in ejDialog
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: ejDialog, API, Essential JS Dialog
 ---
 

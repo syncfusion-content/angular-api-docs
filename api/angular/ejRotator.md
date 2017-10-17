@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejRotator Widget
 description: API reference for ejRotator
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Rotator, ejRotator, syncfusion, Rotator api  
 ---
 

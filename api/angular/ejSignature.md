@@ -3,7 +3,7 @@ layout: post
 title: Properties,Methods and Events of Essential JS ejSignature Widget
 description: Methods, members, events available in ejSignature
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: ejSignature, API, Essential JS Signature 
 ---
 

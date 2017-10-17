@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejSplitter Widget
 description: API reference for ejSplitter
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Splitter, ejSplitter, syncfusion, Splitter api  
 ---
 

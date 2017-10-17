@@ -2,7 +2,7 @@
 layout: post
 title: ejRadialSlider
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: ejRadialSlider, API, Essential JS RadialSlider
 ---
 

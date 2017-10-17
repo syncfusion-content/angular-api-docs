@@ -2,7 +2,7 @@
 layout: post
 title: Properties, Methods and Events of ejRadialMenu Widget
 documentation: API
-platform: js-api
+platform: angular-api
 metaname: 
 metacontent: 
 ---

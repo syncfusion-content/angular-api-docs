@@ -4,7 +4,7 @@ title: Properties,Methods and Events of Essential JS ejListBox Widget
 description: What are the options, methods and events available in Essential JavaScript ListBox.
 documentation: API
 keywords: ejListBox, API, Essential JS ListBox, ListBox
-platform: js-api
+platform: angular-api
 metaname: 
 metacontent: 
 ---

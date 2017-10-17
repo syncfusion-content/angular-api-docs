@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejTile Widget
 description: API reference for ejTile
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Tile, ejTile, syncfusion, Tile api 
 ---
 

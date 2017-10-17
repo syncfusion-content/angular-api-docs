@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejNavigationDrawer Widget
 description: API reference for ejNavigationDrawer
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: NavigationDrawer, ejNavigationDrawer, syncfusion, NavigationDrawer api 
 ---
 
