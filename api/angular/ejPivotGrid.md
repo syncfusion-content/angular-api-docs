@@ -1,36 +1,34 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejPivotGrid Widget
+description: Methods,members and events avaliable in PivotGrid
 documentation: API
-platform: js-api
+platform: angular-api
+description: API reference for PivotGrid
 keywords: ejPivotGrid, API, Essential JS PivotGrid
-metaname: 
-metacontent: 
 ---
 
 # PivotGrid
 
 The PivotGrid control is easily configurable, presentation-quality business control that reads OLAP data from a Microsoft SQL Server Analysis Services database, an offline cube, XML/A or relational datasource.
 
-#### Syntax
-
-{% highlight javascript %}
-
-    $(element).ejPivotGrid()
-{% endhighlight %}
 
 #### Example
 
 {% highlight html %}
- 
-    <div id="PivotGrid1"> </div> 
-    
-    <script>
-        //Create PivotGrid
-        $("#PivotGrid1").ejPivotGrid(...);       
-    </script>
+<ej-pivotgrid ></ej-pivotgrid>
+
 
 {% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+  //..
+ }
+
+{% endhighlight %}
+
 
 #### Requires
 
@@ -78,11 +76,26 @@ Sets the mode for the PivotGrid widget for binding either OLAP or relational dat
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ analysisMode: ej.Pivot.AnalysisMode.Olap });
+{% highlight html %}
+<ej-pivotgrid [analysisMode]="analysisMode">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  analysisMode;
+
+        constructor()
+        {
+          this.analysisMode = ej.Pivot.AnalysisMode.Olap; 
+        }
+ }
+
+{% endhighlight %}
 
 ### cssClass `string`
 {:#members:cssclass}
@@ -93,9 +106,19 @@ Specifies the CSS class to PivotGrid to achieve custom theme.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ cssClass: "gradient-lime" });
+{% highlight html %}
+<ej-pivotgrid cssClass="gradient-lime">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### pivotTableFieldListID `string`
@@ -107,9 +130,19 @@ Connects the PivotSchemaDesigner with the specified ID to the PivotGrid Control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ pivotTableFieldListID: "PivotTableFieldListID" });
+{% highlight html %}
+<ej-pivotgrid pivotTableFieldListID="pivotTableFieldListID">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### dataSource `object`
@@ -121,9 +154,25 @@ Initializes the data source for the PivotGrid widget, when it functions complete
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid( { dataSource: { data: value } });
+{% highlight html %}
+<ej-pivotgrid [dataSource]="dataSource">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  dataSource;
+
+        constructor()
+        {
+          this.dataSource = { data: value }; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns `array`
@@ -135,11 +184,26 @@ Lists out the items to be arranged in columns section of PivotGrid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: itemsArray } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = itemsArray; 
+        }
+ }
+
+{% endhighlight %}
 
 ### dataSource.columns.fieldName `string`
 {:#members:datasource-columns-fieldname}
@@ -150,9 +214,25 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName : "MyFieldName" }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.fieldCaption `string`
@@ -164,9 +244,25 @@ Allows the user to set the display caption for an item.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldCaption : "MyFieldCaption" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldCaption : "MyFieldCaption" }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter `array`
@@ -178,9 +274,25 @@ Allows the user to filter the report by default using advanced filtering (excel-
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : itemArray }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ advancedFilter : itemArray }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.name `string`
@@ -192,9 +304,25 @@ Allows the user to provide level unique name to perform advanced filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : [{ name: "levelUniqueName" }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ advancedFilter : [{ advancedFilter : [{ name: "levelUniqueName" }] }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.labelFilterOperator `string`
@@ -206,9 +334,25 @@ Allows the user to set the operator to perform Label Filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ advancedFilter : [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith }] }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.valueFilterOperator `string`
@@ -220,9 +364,25 @@ Allows the user to set the operator to perform Value Filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.Between }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ advancedFilter : [{ advancedFilter : [{ name: "levelUniqueName" }] }][{ valueFilterOperator: ej.olap.ValueFilterOptions.Between }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.advancedFilterType `string`
@@ -234,9 +394,25 @@ Allows the user to set the filtering type while performing advanced filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.measure `string`
@@ -248,9 +424,25 @@ In case of value filtering, this property contains the measure name to which the
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : [{ measure: "measureUniqueName", advancedFilterType: ej.olap.AdvancedFilterType.ValueFilter }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ advancedFilter : [{ measure: "measureUniqueName", advancedFilterType: ej.olap.AdvancedFilterType.ValueFilter }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.advancedFilter.values `array`
@@ -262,15 +454,30 @@ Allows the user to hold the filter operand values in advanced filtering.
 
 **Example:**
 
-{% highlight javascript %}
-    
-    //For Label Filters
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith, values:  ["002"] }] }] } });
-    
-    //For Value Filters
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.GreaterThan, values:  ["200"] }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          //For Label Filters
+          this.columns = [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith, values:  ["002"] }] }]; 
+
+          //For Label Filters
+          this.columns = [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.GreaterThan, values:  ["200"] }] }]; 
+        }
+ }
+
+{% endhighlight %}
 
 ### dataSource.columns.isNamedSets `boolean`
 {:#members:datasource-columns-isnamedsets}
@@ -283,9 +490,25 @@ Allows the user to indicate whether the added item is a named set or not.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "[Core Product Group]", isNamedSets : true }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.showSubTotal `boolean`
@@ -299,9 +522,25 @@ Shows/Hides the sub-total of the field in PivotGrid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", showSubTotal : false }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Country", showSubTotal : false }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.format `string`
@@ -315,9 +554,25 @@ Allows to set the format for the column headers.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ format : "date" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ format : "date" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.formatString `string`
@@ -331,9 +586,25 @@ This property sets type of display of date.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ formatString : "MM/DD/YYYY" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ formatString : "MM/DD/YYYY" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.cssClass `string`
@@ -347,9 +618,25 @@ Allows to set the custom theme for the column headers.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ cssClass : "className" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ cssClass : "className" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.delimiter `string`
@@ -363,9 +650,25 @@ Allows the user to set delimiter for date type format in **formatString**. This 
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ delimiter : "-" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ delimiter : "-" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.sortOrder `enum`
@@ -404,9 +707,25 @@ Allows the user to set the sorting order of the members of the field.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", sortOrder: ej.PivotAnalysis.SortOrder.Descending }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Country", sortOrder: ej.PivotAnalysis.SortOrder.Descending }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.drilledItems `array`
@@ -418,9 +737,25 @@ Contains the list of members need to be drilled down by default in the field.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", drilledItems: ["Canada", "France"] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Country", drilledItems: ["Canada", "France"] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.filterItems `object`
@@ -432,9 +767,25 @@ Applies filter to the field members.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.filterItems.filterType `enum`
@@ -469,9 +820,25 @@ Sets the type of filter whether to include/exclude the mentioned values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.filterItems.values `array`
@@ -483,9 +850,25 @@ Contains the collection of items to be included/excluded among the field members
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.groupByDate `object`
@@ -499,9 +882,25 @@ Allows the user to group the field by date. This is applicable only when the for
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.groupByDate.interval `array`
@@ -513,9 +912,25 @@ Specifies the intervals to seperating the date and time.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.columns]="columns">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  columns;
+
+        constructor()
+        {
+          this.columns = [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows `array`
@@ -527,11 +942,26 @@ Lists out the items to be arranged in rows section of PivotGrid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: itemsArray } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = itemsArray; 
+        }
+ }
+
+{% endhighlight %}
 
 ### dataSource.rows.fieldName `string`
 {:#members:datasource-rows-fieldname}
@@ -542,9 +972,25 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName : "MyFieldName" }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.fieldCaption `string`
@@ -556,9 +1002,25 @@ Allows the user to set the display caption for an item.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldCaption : "MyFieldCaption" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldCaption : "MyFieldCaption" }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter `array`
@@ -570,9 +1032,25 @@ Allows the user to filter the report by default using advanced filtering (excel-
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : itemArray }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ advancedFilter : itemArray }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.name `string`
@@ -584,9 +1062,25 @@ Allows the user to provide level unique name to perform advanced filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : [{ name: "levelUniqueName" }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ advancedFilter : [{ advancedFilter : [{ name: "levelUniqueName" }] }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.labelFilterOperator `string`
@@ -598,9 +1092,25 @@ Allows the user to set the operator to perform Label Filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ advancedFilter : [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith }] }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.valueFilterOperator `string`
@@ -612,9 +1122,25 @@ Allows the user to set the operator to perform Value Filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.Between }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ advancedFilter : [{ advancedFilter : [{ name: "levelUniqueName" }] }][{ valueFilterOperator: ej.olap.ValueFilterOptions.Between }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.advancedFilterType `string`
@@ -626,9 +1152,25 @@ Allows the user to set the filtering type while performing advanced filtering.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ advancedFilter : [{ advancedFilterType:  ej.olap.AdvancedFilterType.LabelFilter }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.measure `string`
@@ -640,9 +1182,25 @@ In case of value filtering, this property contains the measure name to which the
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : [{ measure: "measureUniqueName", advancedFilterType: ej.olap.AdvancedFilterType.ValueFilter }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ advancedFilter : [{ measure: "measureUniqueName", advancedFilterType: ej.olap.AdvancedFilterType.ValueFilter }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.advancedFilter.values `array`
@@ -654,15 +1212,30 @@ Allows the user to hold the filter operand values in advanced filtering.
 
 **Example:**
 
-{% highlight javascript %}
-    
-    //For Label Filters
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith, values:  ["002"] }] }] } });
-    
-    //For Value Filters
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.GreaterThan, values:  ["200"] }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          //For Label Filters
+          this.rows = [{ advancedFilter : [{ labelFilterOperator: ej.olap.LabelFilterOptions.EndsWith, values:  ["002"] }] }]; 
+
+          //For Label Filters
+          this.rows = [{ advancedFilter : [{ valueFilterOperator: ej.olap.ValueFilterOptions.GreaterThan, values:  ["200"] }] }]; 
+        }
+ }
+
+{% endhighlight %}
 
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
@@ -675,9 +1248,25 @@ Allows the user to indicate whether the added item is a named set or not.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "[Core Product Group]", isNamedSets : true }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.showSubTotal `boolean`
@@ -691,9 +1280,25 @@ Shows/Hides the sub-total of the field.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", showSubTotal : false }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Country", showSubTotal : false }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.format `string`
@@ -707,9 +1312,25 @@ Allows to set the format for the row headers.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ format : "date" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ format : "date" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.formatString `string`
@@ -723,9 +1344,25 @@ This property sets type of display of date.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ formatString : "MM/DD/YYYY" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ formatString : "MM/DD/YYYY" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.cssClass `string`
@@ -739,9 +1376,25 @@ Allows to set the custom theme for the row headers.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ cssClass : "className" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ cssClass : "className" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.delimiter `string`
@@ -755,9 +1408,25 @@ Allows the user to set delimiter for date type format in **formatString**. This 
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ delimiter : "-" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ delimiter : "-" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.sortOrder `enum`
@@ -796,9 +1465,25 @@ Allows the user to set the sorting order of the members of the field.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", sortOrder : ej.PivotAnalysis.SortOrder.Descending }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Country", sortOrder: ej.PivotAnalysis.SortOrder.Descending }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.drilledItems `array`
@@ -810,9 +1495,25 @@ Contains the list of members need to be drilled down by default in the field.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", drilledItems : ["Canada", "France"] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Country", drilledItems: ["Canada", "France"] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.filterItems `object`
@@ -824,9 +1525,25 @@ Applies filter to the field members.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.filterItems.filterType `enum`
@@ -861,9 +1578,25 @@ Sets the type of filter whether to include/exclude the mentioned values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.filterItems.values `array`
@@ -875,9 +1608,25 @@ Contains the collection of items to be included/excluded among the field members
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.groupByDate `object`
@@ -891,9 +1640,25 @@ Allows the user to group the field by date. This is applicable only when the for
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.groupByDate.interval `array`
@@ -905,9 +1670,25 @@ Specifies the intervals to seperating the date and time.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({dataSource: { rows: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.rows]="rows">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  rows;
+
+        constructor()
+        {
+          this.rows = [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values `array`
@@ -919,9 +1700,25 @@ Lists out the items which supports calculation in PivotGrid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: itemsArray } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = itemsArray; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.fieldName `string`
@@ -933,9 +1730,25 @@ Allows the user to bind the item by using its unique name as field name for Rela
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ fieldName : "MyFieldName" }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.fieldCaption `string`
@@ -947,9 +1760,25 @@ Allows the user to set the display caption for an item for Relational datasource
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ fieldCaption : "MyFieldCaption" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ fieldCaption : "MyFieldCaption" }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.measures `array`
@@ -961,9 +1790,25 @@ This holds the list of unique names of measures to bind them from the OLAP cube.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ measures : itemsArray }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ measures: itemsArray }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.measures.fieldName `string`
@@ -975,9 +1820,25 @@ Allows the user to bind the measure from OLAP datasource by using its unique nam
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ measures : [{ fieldName: "MeasureUniqueName" }] }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ measures: [{ fieldName: "MeasureUniqueName" }] }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.axis `string`
@@ -991,9 +1852,25 @@ Allows to set the axis name to place the measures items.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ axis : ej.olap.AxisName.Row }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ axis : ej.olap.AxisName.Row }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.isCalculatedField `boolean`
@@ -1005,9 +1882,25 @@ Indicates whether the field is a calculated field or not with Relational datasou
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ isCalculatedField : true }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ isCalculatedField : true }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.summaryType `enum`
@@ -1052,9 +1945,25 @@ Allows to set the type of PivotGrid summary calculation for the value field with
     </tbody>
 </table>
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ summaryType : ej.PivotAnalysis.SummaryType.Average }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ summaryType : ej.PivotAnalysis.SummaryType.Average }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.format `string`
@@ -1068,9 +1977,25 @@ Allows to set the format for the values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ format : "percentage" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ format : "percentage" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.formatString `string`
@@ -1084,9 +2009,24 @@ This property sets type of display of date.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ formatString : "MM/DD/YYYY" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ formatString : "MM/DD/YYYY" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.formula `string`
@@ -1098,9 +2038,25 @@ Allows to set the formula for calculation of values for calculated members in Re
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ formula : "Quantity*10" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ formula : "Quantity*10" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.cssClass `string`
@@ -1114,9 +2070,25 @@ Allows to set the custom theme for the values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ cssClass : "className" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.values]="values">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  values;
+
+        constructor()
+        {
+          this.values = [{ cssClass : "className" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters `array`
@@ -1128,11 +2100,26 @@ Lists out the items which supports filtering of values without displaying the me
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { filters: itemsArray } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.filters]="filters">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  filters;
+
+        constructor()
+        {
+          this.filters = itemsArray; 
+        }
+ }
+
+{% endhighlight %}
 
 ### dataSource.filters.fieldName `string`
 {:#members:datasource-filters-fieldname}
@@ -1143,9 +2130,25 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { filters: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.filters]="filters">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  filters;
+
+        constructor()
+        {
+          this.filters = [{ fieldName : "MyFieldName" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters.fieldCaption `string`
@@ -1157,9 +2160,25 @@ Allows the user to set the display name for an item.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { filters: [{ fieldCaption : "MyFieldCaption" }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.filters]="filters">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  filters;
+
+        constructor()
+        {
+          this.filters = [{ fieldCaption : "MyFieldCaption" }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters.filterItems `object`
@@ -1171,9 +2190,25 @@ Applies filter to the field members.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.filters]="filters">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  filters;
+
+        constructor()
+        {
+          this.filters = [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters.filterItems.filterType `enum`
@@ -1208,9 +2243,25 @@ Sets the type of filter whether to include/exclude the mentioned values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.filters]="filters">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  filters;
+
+        constructor()
+        {
+          this.filters = [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters.filterItems.values `array`
@@ -1222,9 +2273,25 @@ Contains the collection of items to be included/excluded among the field members
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.filters]="filters">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  filters;
+
+        constructor()
+        {
+          this.filters = [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.cube `string`
@@ -1236,9 +2303,19 @@ Contains the respective cube name from OLAP database as string type.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { cube: "Adventure Works" } });
+{% highlight html %}
+<ej-pivotgrid dataSource.cube="Adventure Works">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.sourceInfo `string`
@@ -1252,9 +2329,19 @@ To set the data source name to fetch data from that.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { sourceInfo: "Provider Mondrian" } });
+{% highlight html %}
+<ej-pivotgrid dataSource.sourceInfo="Provider Mondrian">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.providerName `string`
@@ -1287,9 +2374,19 @@ Set the provider name for PivotGrid to identify whether the provider is SSAS or 
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { providerName: "mondrian" } });
+{% highlight html %}
+<ej-pivotgrid dataSource.providerName="mondrian">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.data `object`
@@ -1301,9 +2398,25 @@ Provides the raw data source for the PivotGrid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { data: value } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.data]="data">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  data;
+
+        constructor()
+        {
+          this.data = "http://bi.syncfusion.com/olap/msmdpump.dll"; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.catalog `string`
@@ -1315,9 +2428,19 @@ In connection with an OLAP database, this property contains the database name as
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid( { dataSource: { catalog: "databaseName" } } );
+{% highlight html %}
+<ej-pivotgrid dataSource.catalog="Adventure Works DW 2008 SE">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.enableAdvancedFilter `boolean`
@@ -1329,9 +2452,19 @@ Allows user to filter the members (by its name and values) through advanced filt
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { enableAdvancedFilter: true } });
+{% highlight html %}
+<ej-pivotgrid [dataSource.enableAdvancedFilter]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.reportName `string`
@@ -1343,9 +2476,19 @@ Sets a name to the report bound to the control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { reportName: "Default Report" } });
+{% highlight html %}
+<ej-pivotgrid dataSource.reportName="Default Report">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.pagerOptions `object`
@@ -1359,9 +2502,25 @@ Allows to set the page size and current page number for each axis on applying pa
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { pagerOptions: pagerSettings } }); 
+{% highlight html %}
+<ej-pivotgrid [dataSource.pagerOptions]="pagerOptions">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   
+    public  pagerOptions;
+
+        constructor()
+        {
+          this.pagerOptions = pagerSettings; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.pagerOptions.categoricalPageSize `number`
@@ -1373,9 +2532,19 @@ Allows to set the number of categorical columns to be displayed in each page on 
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { pagerOptions: { categoricalPageSize: 10 } } }); 
+{% highlight html %}
+<ej-pivotgrid [dataSource.pagerOptions.categoricalPageSize]=10>
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.pagerOptions.seriesPageSize `number`
@@ -1387,9 +2556,19 @@ Allows to set the number of series rows to be displayed in each page on applying
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { pagerOptions: { seriesPageSize: 5 } } }); 
+{% highlight html %}
+<ej-pivotgrid [dataSource.pagerOptions.seriesPageSize]=5>
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.pagerOptions.categoricalCurrentPage `number`
@@ -1403,9 +2582,19 @@ Allows to set the page number in categorical axis to be loaded by default.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { pagerOptions: { categoricalCurrentPage: 3 } } }); 
+{% highlight html %}
+<ej-pivotgrid [dataSource.pagerOptions.categoricalCurrentPage]=3>
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.pagerOptions.seriesCurrentPage `number`
@@ -1417,9 +2606,19 @@ Allows to set the page number in series axis to be loaded by default.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { pagerOptions: { seriesCurrentPage: 7 } } }); 
+{% highlight html %}
+<ej-pivotgrid [dataSource.pagerOptions.seriesCurrentPage]=7>
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### valueSortSettings `object`
@@ -1431,9 +2630,27 @@ Holds the necessary properties for value sorting.
 
 #### Default Value: {}
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { } }); 
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [valueSortSettings]="valueSortSettings">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   
+    public  valueSortSettings;
+
+        constructor()
+        {
+          this.valueSortSettings = valueSortSettings; 
+        }
+ }
+
 {% endhighlight %}
 
 ### valueSortSettings.headerText `string`
@@ -1445,9 +2662,21 @@ Contains the headers of the specific column to which value sorting is applied.
 
 #### Default Value: ""
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { headerText: "Bike##FY 2005##Amount" } });
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid valueSortSettings.headerText="Bike##FY 2005##Amount">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### valueSortSettings.headerDelimiters `string`
@@ -1459,9 +2688,21 @@ Allows the user to set the string for separating column headers provided in the 
 
 #### Default Value: ""
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { headerDelimiters: "##" } });
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid valueSortSettings.headerDelimiters="##">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### valueSortSettings.sortOrder `enum`
@@ -1498,9 +2739,27 @@ Allows the user to set the sorting order of the values of the field.
     </tbody>
 </table>
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { sortOrder: ej.PivotAnalysis.SortOrder.Descending } });
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [valueSortSettings.sortOrder]="sortOrder">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   
+    public  sortOrder;
+
+        constructor()
+        {
+          this.sortOrder = ej.PivotAnalysis.SortOrder.Descending; 
+        }
+ }
+
 {% endhighlight %}
 
 ### frozenHeaderSettings `object`
@@ -1510,9 +2769,27 @@ Object that holds the settings of frozen headers.
 
 #### Default Value: {}
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenHeaders: true } }); 
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [frozenHeaderSettings]="frozenHeaderSettings">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   
+    public  frozenHeaderSettings;
+
+        constructor()
+        {
+          this.frozenHeaderSettings = frozenHeaderSettings; 
+        }
+ }
+
 {% endhighlight %}
 
 ### frozenHeaderSettings.enableFrozenRowHeaders `boolean`
@@ -1522,9 +2799,20 @@ Allows the user to freeze the row headers alone on scrolling the horizontal scro
 
 #### Default Value: false
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenRowHeaders: true } });
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [frozenHeaderSettings.enableFrozenRowHeaders]="true">
+    </ej-pivotgrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### frozenHeaderSettings.enableFrozenColumnHeaders `boolean`
@@ -1534,9 +2822,20 @@ Allows the user to freeze the column headers alone on scrolling the vertical scr
 
 #### Default Value: false
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenColumnHeaders: true } });
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [frozenHeaderSettings.enableFrozenColumnHeaders]="true">
+    </ej-pivotgrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### frozenHeaderSettings.enableFrozenHeaders `boolean`
@@ -1546,9 +2845,20 @@ Allows the user to freeze both the row headers and column headers on scrolling.
 
 #### Default Value: false
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenHeaders: true } });
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [frozenHeaderSettings.enableFrozenHeaders]="true">
+    </ej-pivotgrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### frozenHeaderSettings.scrollerSize `number`
@@ -1558,9 +2868,20 @@ Allows user to set the size of the scrollbar (horizontal and vertical) visible i
 
 #### Default Value: 18
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { scrollerSize: 18 } });
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [frozenHeaderSettings.scrollerSize]=18>
+    </ej-pivotgrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### headerSettings `object`
@@ -1572,9 +2893,25 @@ Allows user to display header name in PivotGrid control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ headerSettings: { showRowItems: true, showColumnItems: true } });
+{% highlight html %}
+<ej-pivotgrid [headerSettings]="headerSettings">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+   
+    public  headerSettings;
+
+        constructor()
+        {
+          this.headerSettings = headerSettings; 
+        }
+ }
+
 {% endhighlight %}
 
 ### headerSettings.showRowItems `boolean`
@@ -1586,9 +2923,19 @@ Allows user to enable/disable row header names in PivotGrid control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ headerSettings: { showRowItems: true } });
+{% highlight html %}
+<ej-pivotgrid [headerSettings.showRowItems]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### headerSettings.showColumnItems `boolean`
@@ -1600,11 +2947,20 @@ Allows user to enable/disable column header names in PivotGrid control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ headerSettings: { showColumnItems: true } });
+{% highlight html %}
+<ej-pivotgrid [headerSettings.showColumnItems]="true">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
+{% endhighlight %}
 
 ### showUniqueNameOnPivotButton `boolean`
 {:#members:showUniqueNameOnPivotButton}
@@ -1617,9 +2973,19 @@ Allows user to show appropriate unique name on Pivot button.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ showUniqueNameOnPivotButton: true });
+{% highlight html %}
+<ej-pivotgrid [showUniqueNameOnPivotButton]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### customObject `object`
@@ -1631,9 +2997,25 @@ Object utilized to pass additional information between client-end and service-en
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ customObject: { Language: "en-US" } });
+{% highlight html %}
+<ej-pivotgrid [customObject]="customObject">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  customObject;
+
+        constructor()
+        {
+          this.customObject = { Language: "en-US" }; 
+        }
+ }
+
 {% endhighlight %}
 
 ### collapsedMembers `object`
@@ -1645,9 +3027,25 @@ Allows the user to collapsed the specified members in each field by default.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ collapsedMembers: { Country: ["Canada", "France"] } });
+{% highlight html %}
+<ej-pivotgrid [collapsedMembers]="collapsedMembers">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  collapsedMembers;
+
+        constructor()
+        {
+          this.collapsedMembers = { Country: ["Canada", "France"] }; 
+        }
+ }
+
 {% endhighlight %}
 
 ### enableCellContext `boolean`
@@ -1659,9 +3057,19 @@ Allows the user to access each cell on mouse right-click.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableCellContext: true });
+{% highlight html %}
+<ej-pivotgrid [enableCellContext]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableCellSelection `boolean`
@@ -1673,9 +3081,19 @@ Enables the cell selection for a specific range of value cells.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableCellSelection: true });
+{% highlight html %}
+<ej-pivotgrid [enableCellSelection]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableDrillThrough `boolean`
@@ -1687,9 +3105,19 @@ Enables the Drill-Through feature which retrieves the raw items that are used to
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableDrillThrough: true });
+{% highlight html %}
+<ej-pivotgrid [enableDrillThrough]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableCellDoubleClick `boolean`
@@ -1701,9 +3129,19 @@ Allows user to get the cell details in JSON format on double clicking the cell.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableCellDoubleClick: true });
+{% highlight html %}
+<ej-pivotgrid [enableCellDoubleClick]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableCellEditing `boolean`
@@ -1715,11 +3153,20 @@ Allows user to edit the value cells for write-back support in PivotGrid. This is
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableCellEditing:true });
+{% highlight html %}
+<ej-pivotgrid [enableCellEditing]="true">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
+{% endhighlight %}
 
 ### enableCollapseByDefault `boolean`
 {:#members:enablecollapsebydefault}
@@ -1730,9 +3177,19 @@ Collapses the Pivot items along rows and columns by default.  It works only for 
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight html %}
+<ej-pivotgrid [enableCollapseByDefault]="true">
+    </ej-pivotgrid>
 
-    $("#PivotGrid1").ejPivotGrid({ enableCollapseByDefault: true });
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableColumnGrandTotal `boolean`
@@ -1744,9 +3201,19 @@ Enables/Disables the display of grand total for all the columns.
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight html %}
+<ej-pivotgrid [enableColumnGrandTotal]="true">
+    </ej-pivotgrid>
 
-    $("#PivotGrid1").ejPivotGrid({ enableColumnGrandTotal: true });
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableConditionalFormatting `boolean`
@@ -1758,11 +3225,20 @@ Allows the user to format a specific set of cells based on the condition.
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight html %}
+<ej-pivotgrid [enableConditionalFormatting]="true">
+    </ej-pivotgrid>
 
-    $("#PivotGrid1").ejPivotGrid({ enableConditionalFormatting:true });
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
+{% endhighlight %}
 
 ### enableAdvancedFilter `boolean`
 {:#members:enableadvancedfilter}
@@ -1773,9 +3249,19 @@ Enables the advanced filtering options Value Filtering, Label Filtering and Sort
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableAdvancedFilter: true });
+{% highlight html %}
+<ej-pivotgrid [enableAdvancedFilter]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableDeferUpdate `boolean`
@@ -1787,11 +3273,20 @@ Allows the user to refresh the control on-demand and not during every UI operati
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableDeferUpdate: true });
+{% highlight html %}
+<ej-pivotgrid [enableDeferUpdate]="true">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
+{% endhighlight %}
 
 ### enableGroupingBar `boolean`
 {:#members:enablegroupingbar}
@@ -1802,9 +3297,19 @@ Enables the display of GroupingBar allowing you to filter, sort and remove field
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableGroupingBar: true });
+{% highlight html %}
+<ej-pivotgrid [enableGroupingBar]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableMemberEditorPaging `boolean`
@@ -1816,9 +3321,19 @@ Enables/Disables paging in Member Editor for viewing the large count of members 
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableMemberEditorPaging: true });
+{% highlight html %}
+<ej-pivotgrid [enableMemberEditorPaging]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### memberEditorPageSize `number`
@@ -1830,9 +3345,19 @@ Allows the user to set the number of members to be displayed in each page of Mem
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ memberEditorPageSize: 50 });
+{% highlight html %}
+<ej-pivotgrid [memberEditorPageSize]=50>
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableGrandTotal `boolean`
@@ -1844,9 +3369,19 @@ Enables/Disables the display of grand total for rows and columns.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableGrandTotal: true });
+{% highlight html %}
+<ej-pivotgrid [enableGrandTotal]="false">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableJSONRendering `boolean`
@@ -1858,9 +3393,19 @@ Allows the user to load PivotGrid using JSON data.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableJSONRendering: true });
+{% highlight html %}
+<ej-pivotgrid [enableJSONRendering]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enablePivotFieldList `boolean`
@@ -1872,9 +3417,19 @@ Enables rendering of PivotGrid widget along with the PivotTable Field List, whic
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enablePivotFieldList: true });
+{% highlight html %}
+<ej-pivotgrid [enablePivotFieldList]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableRowGrandTotal `boolean`
@@ -1886,9 +3441,19 @@ Enables the display of grand total for all the rows.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableRowGrandTotal: true });
+{% highlight html %}
+<ej-pivotgrid [enableRowGrandTotal]="false">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableRTL `boolean`
@@ -1900,9 +3465,19 @@ Allows the user to view layout of the PivotGrid from right to left.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableRTL: true });
+{% highlight html %}
+<ej-pivotgrid [enableRTL]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableToolTip `boolean`
@@ -1914,9 +3489,19 @@ Allows the user to enable ToolTip option.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableToolTip: true });
+{% highlight html %}
+<ej-pivotgrid [enableToolTip]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableToolTipAnimation `boolean`
@@ -1928,9 +3513,19 @@ Allows the user to enable the animation effects in tooltip.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableToolTipAnimation: true });
+{% highlight html %}
+<ej-pivotgrid [enableToolTipAnimation]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableColumnResizing `boolean`
@@ -1942,9 +3537,19 @@ Allows the user to adjust the width of the columns dynamically within given widg
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableColumnResizing: true });
+{% highlight html %}
+<ej-pivotgrid [enableColumnResizing]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### resizeColumnsToFit `boolean`
@@ -1956,9 +3561,19 @@ Allows the user to fit the width of the column based on its maximum text width.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ resizeColumnsToFit: true });
+{% highlight html %}
+<ej-pivotgrid [resizeColumnsToFit]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableContextMenu `boolean`
@@ -1970,9 +3585,19 @@ Allows the user to enable/disable the context menu of Pivot buttons in the Pivot
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableContextMenu: true });
+{% highlight html %}
+<ej-pivotgrid [enableContextMenu]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enableVirtualScrolling `boolean`
@@ -1984,9 +3609,19 @@ Allows the user to view large amount of data through virtual scrolling.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enableVirtualScrolling: true });
+{% highlight html %}
+<ej-pivotgrid [enableVirtualScrolling]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### enablePaging `boolean`
@@ -1998,10 +3633,21 @@ Allows the user to view large amount of data by applying paging.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ enablePaging: true });
+{% highlight html %}
+<ej-pivotgrid [enablePaging]="true">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
+{% endhighlight %}
+
 
 ### hyperlinkSettings `object`
 {:#members:hyperlinksettings}
@@ -2012,9 +3658,25 @@ Allows the user to configure hyperlink settings of PivotGrid control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableValueCellHyperlink: true, enableRowHeaderHyperlink: true } });
+{% highlight html %}
+<ej-pivotgrid [hyperlinkSettings]="hyperlinkSettings">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  hyperlinkSettings;
+
+        constructor()
+        {
+          this.hyperlinkSettings = hyperlinkSettings; 
+        }
+ }
+
 {% endhighlight %}
 
 ### hyperlinkSettings.enableColumnHeaderHyperlink `boolean`
@@ -2026,9 +3688,19 @@ Allows the user to enable/disable hyperlink for column header.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableColumnHeaderHyperlink: true } });
+{% highlight html %}
+<ej-pivotgrid [hyperlinkSettings.enableColumnHeaderHyperlink]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### hyperlinkSettings.enableRowHeaderHyperlink `boolean`
@@ -2040,9 +3712,19 @@ Allows the user to enable/disable hyperlink for row header.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableRowHeaderHyperlink: true } });
+{% highlight html %}
+<ej-pivotgrid [hyperlinkSettings.enableRowHeaderHyperlink]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### hyperlinkSettings.enableSummaryCellHyperlink `boolean`
@@ -2054,9 +3736,19 @@ Allows the user to enable/disable hyperlink for summary cells.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableSummaryCellHyperlink: true } });
+{% highlight html %}
+<ej-pivotgrid [hyperlinkSettings.enableSummaryCellHyperlink]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### hyperlinkSettings.enableValueCellHyperlink `boolean`
@@ -2068,9 +3760,19 @@ Allows the user to enable/disable hyperlink for value cells.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ hyperlinkSettings: { enableValueCellHyperlink: true } });
+{% highlight html %}
+<ej-pivotgrid [hyperlinkSettings.enableValueCellHyperlink]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### isResponsive `boolean`
@@ -2082,9 +3784,19 @@ Allows the user to enable PivotGrid’s responsiveness in the browser layout.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ isResponsive: true });
+{% highlight html %}
+<ej-pivotgrid [isResponsive]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### jsonRecords `string`
@@ -2096,9 +3808,25 @@ Contains the serialized JSON string which renders PivotGrid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ jsonRecords: serializedJSON });
+{% highlight html %}
+<ej-pivotgrid [jsonRecords]="jsonRecords">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  jsonRecords;
+
+        constructor()
+        {
+          this.jsonRecords = serializedJSON; 
+        }
+ }
+
 {% endhighlight %}
 
 ### layout `enum`
@@ -2140,9 +3868,25 @@ Following are the ways in which summary can be positioned: normal summary (botto
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ layout: ej.PivotGrid.Layout.NoSummaries });
+{% highlight html %}
+<ej-pivotgrid [layout]="layout">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+    public  layout;
+
+        constructor()
+        {
+          this.layout = ej.PivotGrid.Layout.NoSummaries; 
+        }
+ }
+
 {% endhighlight %}
 
 ### locale `string`
@@ -2154,11 +3898,20 @@ Allows the user to set the localized language for the widget.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ locale: "en-US" });
+{% highlight html %}
+<ej-pivotgrid [locale]="en-US">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+    //..
+ }
+
+{% endhighlight %}
 
 ### operationalMode `enum`
 {:#members:operationalmode}
@@ -2190,346 +3943,28 @@ Sets the mode for the PivotGrid widget for binding data source either in server-
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
+{% highlight html %}
+<ej-pivotgrid [operationalMode]="operationalMode">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
-### serviceMethodSettings `object`
-{:#members:servicemethodsettings}
+{% highlight ts %}
 
-Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
+export class PivotGridComponent {
+    
+    public  operationalMode;
 
-#### Default Value: {}
+        constructor()
+        {
+          this.operationalMode = ej.Pivot.OperationalMode.ServerMode; 
+        }
+ }
 
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { initialize: "InitializeGrid"} });
-{% endhighlight %}
-
-### serviceMethodSettings.drillDown `string`
-{:#members:servicemethodsettings-drilldown}
-
-Allows the user to set the custom name for the service method responsible for drill up/down operation in PivotGrid.
-
-#### Default Value: "DrillGrid"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillDown: "DrillGridMyMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.exportPivotGrid `string`
-{:#members:servicemethodsettings-exportpivotgrid}
-
-Allows the user to set the custom name for the service method responsible for exporting.
-
-#### Default Value: "Export"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { exportPivotGrid: "ExportMyMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.deferUpdate `string`
-{:#members:servicemethodsettings-deferupdate}
-
-Allows the user to set the custom name for the service method responsible for performing server-side actions on defer update.
-
-#### Default Value: "DeferUpdate"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { deferUpdate: "DeferUpdateMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.fetchMembers `string`
-{:#members:servicemethodsettings-fetchmembers}
-
-Allows the user to set the custom name for the service method responsible for getting the values for the tree-view inside filter dialog.
-
-#### Default Value: "FetchMembers"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings:  { fetchMembers: "FetchMembersMethod" } });
-{% endhighlight %}
- 
-### serviceMethodSettings.filtering `string`
-{:#members:servicemethodsettings-filtering}
-
-Allows the user to set the custom name for the service method responsible for filtering operation in PivotGrid.
-
-#### Default Value: "Filtering"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings:  { filtering : "FilteringMethod" } });
-{% endhighlight %}
- 
-### serviceMethodSettings.initialize `string`
-{:#members:servicemethodsettings-initialize}
-
-Allows the user to set the custom name for the service method responsible for initializing PivotGrid.
-
-#### Default Value: "InitializeGrid"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { initialize: "InitializeGrid" } });
-{% endhighlight %}
-
-### serviceMethodSettings.nodeDropped `string`
-{:#members:servicemethodsettings-nodedropped}
-
-Allows the user to set the custom name for the service method responsible for the server-side action, on dropping a node from Field List.
-
-#### Default Value: "NodeDropped"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { nodeDropped: "nodedroppedMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.nodeStateModified `string`
-{:#members:servicemethodsettings-nodestatemodified}
-
-Allows the user to set the custom name for the service method responsible for the server-side action on changing the checked state of a node in Field List.
-
-#### Default Value: "NodeStateModified"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { nodeStateModified: "NodeStateModifiedMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.paging `string`
-{:#members:servicemethodsettings-paging}
-
-Allows the user to set the custom name for the service method responsible for performing paging operation in PivotGrid.
-
-#### Default Value: "Paging"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { paging: "PagingMyMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.sorting `string`
-{:#members:servicemethodsettings-sorting}
-
-Allows the user to set the custom name for the service method responsible for sorting operation in PivotGrid.
-
-#### Default Value: "Sorting"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { sorting: "SortingMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.memberExpand `string`
-{:#members:servicemethodsettings-memberexpand}
-
-Allows the user to set the custom name for the service method responsible for expanding members inside member editor.
-
-#### Default Value: "MemberExpanded"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { memberExpand: "MemberExpandedMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.cellEditing `string`
-{:#members:servicemethodsettings-cellediting}
-
-Allows the user to set the custom name for the service method responsible for editing the cells.
-
-#### Default Value: "CellEditing"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { cellEditing: "MyCellEditingMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.saveReport `string`
-{:#members:servicemethodsettings-savereport}
-
-Allows the user to set the custom name for the service method responsible for saving the current report to database.
-
-#### Default Value: "SaveReport"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { saveReport: "MySaveReportMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.loadReport `string`
-{:#members:servicemethodsettings-loadreport}
-
-Allows the user to set the custom name for the service method responsible for loading a report from database.
-
-#### Default Value: "LoadReportFromDB"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { loadReport: "MyLoadReportMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.calculatedField `string`
-{:#members:servicemethodsettings-calculatedfield}
-
-Allows the user to set the custom name for the service method responsible for adding a calculated field to the report.
-
-#### Default Value: "CalculatedField"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { calculatedField: "MyCalculatedFieldMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.drillThroughHierarchies `string`
-{:#members:servicemethodsettings-drillthroughhierarchies}
-
-Allows the user to set the custom name for the service method responsible for performing drill through operation.
-
-#### Default Value: "DrillThroughHierarchies"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillThroughHierarchies: "MyDrillThroughHierarchiesMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.drillThroughDataTable `string`
-{:#members:servicemethodsettings-drillthroughdatatable}
-
-Allows the user to set the custom name for the service method responsible for performing drill through operation in data table.
-
-#### Default Value: "DrillThroughDataTable"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillThroughDataTable: "MyDrillThroughDataTableMethod" } });
-{% endhighlight %}
-
-### serviceMethodSettings.valueSorting `string`
-{:#members:servicemethodsettings-valuesorting}
-
-Allows the user to set the custom name for the service method responsible for performing value sorting operation in PivotGrid.
-
-#### Default Value: "ValueSorting"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { valueSorting: "MyValueSorting" } });
-{% endhighlight %}
-
-### serviceMethodSettings.removeButton `string`
-{:#members:servicemethodsettings-removebutton}
-
-Allows the user to set the custom name for the service method responsible for removing pivot button from GroupingBar/Field List.
-
-#### Default Value: "RemoveButton"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { removeButton: "MyRemoveButton" } });
-{% endhighlight %}
-
-### serviceMethodSettings.writeBack `string`
-{:#members:servicemethodsettings-writeback}
-
-Allows the user to set the custom name for the service method responsible for write-back operation in OLAP Cube. This is only applicable in server-side component.
-
-#### Default Value: "WriteBack"
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { writeBack: "WriteBackMethod" } });
-{% endhighlight %}
-
-### url `string`
-{:#members:url}
-
-Connects the service using the specified URL for any server updates.
-
-#### Default Value: “”
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ url: "/PivotService" });
 {% endhighlight %}
 
 ## Methods
-
-### doAjaxPost()
-{:#methods:doajaxpost}
-
-Performs an asynchronous HTTP (AJAX) request.
-
-**Example:**
-
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.doAjaxPost("POST", "/PivotService/Initialize", { "key", "Hello World" }, successEvent, null);
-{% endhighlight %}
-
-### doPostBack()
-{:#methods:dopostback}
-
-Performs an asynchronous HTTP (FullPost) submit.
-
-**Example:**
-
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.doPostBack("/PivotService/Initialize", { "key", "Hello World" });
-{% endhighlight %}
 
 ### exportPivotGrid()
 {:#methods:exportpivotgrid}
@@ -2538,10 +3973,17 @@ Exports the PivotGrid to the specified format.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gridObj = $("# PivotGrid1").data("ejPivotGrid");
-    gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
+  }
+}
+
 {% endhighlight %}
 
 ### refreshPagedPivotGrid()
@@ -2551,10 +3993,17 @@ This function re-renders the PivotGrid on clicking the navigation buttons on Piv
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.refreshPagedPivotGrid("series", 2);
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.refreshPagedPivotGrid("series", 2);
+  }
+}
+
 {% endhighlight %}
 
 ### refreshPivotGrid()
@@ -2564,10 +4013,17 @@ This function refreshes the PivotGrid with modified data input in client-mode.
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.refreshPivotGrid();
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.refreshPivotGrid();
+  }
+}
+
 {% endhighlight %}
 
 ### refreshControl()
@@ -2577,11 +4033,18 @@ This function re-renders the control with the report available at that instant.
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.model.dataSource = newDataSource;
-    gridObj.refreshControl();
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.model.dataSource = newDataSource;
+     gridObj.refreshControl();
+  }
+}
+
 {% endhighlight %}
 
 ### destroy()
@@ -2591,10 +4054,17 @@ This function Destroy the PivotGrid widget all events bound using this._on will 
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.destroy();
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.destroy();
+  }
+}
+
 {% endhighlight %}
 
 ### calculateCellWidths()
@@ -2608,10 +4078,17 @@ object
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    var gridDimensions = gridObj.calculateCellWidths();
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     let gridDimensions = gridObj.calculateCellWidths();
+  }
+}
+
 {% endhighlight %}
 
 ### openConditionalFormattingDialog()
@@ -2621,10 +4098,17 @@ This function creates the conditional formatting dialog to apply conditional for
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.openConditionalFormattingDialog();
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.openConditionalFormattingDialog();
+  }
+}
+
 {% endhighlight %}
 
 ### saveReport()
@@ -2634,12 +4118,19 @@ This function saves the current report to the database/local storage.
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    var storageOption = "local"; //it takes the string value "local" for local storage and "database" for storing to database.
-    var url = "";//it takes the service url for storing to database. For local it is not required.
-    gridObj.saveReport("reportName", storageOption, url);
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     let storageOption = "local"; //it takes the string value "local" for local storage.
+     let url = "";//for local it is not required.
+     gridObj.saveReport("reportName", storageOption, url);
+  }
+}
+
 {% endhighlight %}
 
 ### loadReport()
@@ -2649,12 +4140,19 @@ This function loads the specified report from the database/local storage.
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    var storageOption = "local"; //it takes the string value "local" for loading a report from local storage and "database" for loading from database.
-    var url = "";//it takes the service method url for loading report from database. For local it is not required.
-    gridObj.loadReport("reportName", storageOption, url);
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     let storageOption = "local"; //it takes the string value "local" for loading a report from local storage.
+     let url = "";//for local it is not required.
+     gridObj.loadReport("reportName", storageOption, url);
+  }
+}
+
 {% endhighlight %}
 
 ### excelLikeLayout()
@@ -2664,40 +4162,17 @@ This function reconstructs the JSON data formed for rendering PivotGrid in excel
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.excelLikeLayout(JSONObjectArray);
-{% endhighlight %}
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
 
-### getOlapReport()
-{:#methods:getolapreport}
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.excelLikeLayout(JSONObjectArray);
+  }
+}
 
-Returns the OlapReport string maintained along with the axis elements information.
-
-#### Returns:
-
-string
-
-**Example:**
-
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    var report = gridObj.getOlapReport();
-{% endhighlight %}
-
-### setOlapReport()
-{:#methods:setolapreport}
-
-Sets the OlapReport string along with the axis information.
-
-**Example:**
-
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.setOlapReport(olapReportObj);
 {% endhighlight %}
 
 ### getJSONRecords()
@@ -2711,10 +4186,17 @@ array
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    var jsonRecords = gridObj.getJSONRecords();
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     let jsonRecords = gridObj.getJSONRecords();
+  }
+}
+
 {% endhighlight %}
 
 ### setJSONRecords()
@@ -2724,10 +4206,17 @@ Sets the JSON records formed to render the control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.setJSONRecords(jsonRecords);
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.setJSONRecords(jsonRecords);
+  }
+}
+
 {% endhighlight %}
 
 ### refreshFieldCaption()
@@ -2737,10 +4226,17 @@ This function allows user to change the caption of the Pivot Item (name displaye
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.refreshFieldCaption( "name", "caption", "axisClassName");
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.refreshFieldCaption( "name", "caption", "axisClassName");
+  }
+}
+
 {% endhighlight %}
 
 ### renderControlFromJSON()
@@ -2750,102 +4246,20 @@ This function receives the JSON formatted datasource to render the PivotGrid con
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.renderControlFromJSON({ this.getJSONRecords() });
+{% highlight ts %}
+
+export class PivotGridComponent {
+    
+  ngAfterViewInit(){
+
+     let gridObj = $('.e-pivotgrid').data('ejPivotGrid');
+     gridObj.renderControlFromJSON({ this.getJSONRecords() });
+  }
+}
+
 {% endhighlight %}
 
 ## Events
-
-### afterServiceInvoke
-{:#events:afterserviceinvoke}
-
-Triggers when it reaches client-side after any AJAX request.
-
-<table class="params">
-<thead>
-<tr>
-<th colspan="3">Event Parameters</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">returns the current action of PivotGrid control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">returns the custom object bound with PivotGrid control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">object</td>
-<td class="description last">returns the HTML element of PivotGrid control.</td>
-</tr>
-</tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        afterServiceInvoke: function (args) {}
-    });
-{% endhighlight %}
-
-
-### beforeServiceInvoke
-{:#events:beforeserviceinvoke}
-
-Triggers before any AJAX request is passed from PivotGrid to service methods.
-
-<table class="params">
-<thead>
-<tr>
-<th colspan="3">Event Parameters</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type">string</td>
-<td class="description last">returns the current action of PivotGrid control.</td>
-</tr>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">returns the custom object bound with PivotGrid control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">object</td>
-<td class="description last">returns the HTML element of PivotGrid control.</td>
-</tr>
-</tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
-    
-    $("#PivotGrid1").ejPivotGrid({
-        beforeServiceInvoke: function (args) {}
-    });
-{% endhighlight %}
 
 ### beforePivotEnginePopulate
 {:#events:beforepivotenginepopulate}
@@ -2874,11 +4288,22 @@ Triggers before Pivot Engine starts to populate.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        beforePivotEnginePopulate: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (beforePivotEnginePopulate)="beforePivotEnginePopulate($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    beforePivotEnginePopulate(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 
@@ -2919,11 +4344,22 @@ Triggers when double click action is performed over a cell.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        cellDoubleClick: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (cellDoubleClick)="cellDoubleClick($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    cellDoubleClick(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### cellContext
@@ -2983,11 +4419,22 @@ Triggers when right-click action is performed on a cell.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        cellContext: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (cellContext)="cellContext($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    cellContext(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 
@@ -3033,11 +4480,22 @@ Triggers when a specific range of value cells are selected.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        cellSelection: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (cellSelection)="cellSelection($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    cellSelection(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### columnHeaderHyperlinkClick
@@ -3077,11 +4535,22 @@ Triggers when the hyperlink of column header is clicked.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        columnHeaderHyperlinkClick: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (columnHeaderHyperlinkClick)="columnHeaderHyperlinkClick($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    columnHeaderHyperlinkClick(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 
@@ -3112,11 +4581,22 @@ Triggers after performing drill operation in PivotGrid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        drillSuccess: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (drillSuccess)="drillSuccess($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    drillSuccess(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 
@@ -3152,11 +4632,22 @@ Triggers while clicking "OK" button in the drill-through dialog.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        drillThrough: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (drillThrough)="drillThrough($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    drillThrough(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 
@@ -3192,11 +4683,22 @@ Triggers when PivotGrid loading is initiated.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        load: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (load)="load($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    load(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### renderComplete
@@ -3236,11 +4738,22 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        renderComplete: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (renderComplete)="renderComplete($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    renderComplete(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### renderFailure
@@ -3285,11 +4798,22 @@ Triggers when any error occurred during AJAX request.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        renderFailure: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (renderFailure)="renderFailure($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    renderFailure(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 
@@ -3330,11 +4854,22 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        renderSuccess: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (renderSuccess)="renderSuccess($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    renderSuccess(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 
@@ -3375,11 +4910,22 @@ Triggers when the hyperlink of row header is clicked.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        rowHeaderHyperlinkClick: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (rowHeaderHyperlinkClick)="rowHeaderHyperlinkClick($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    rowHeaderHyperlinkClick(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### summaryCellHyperlinkClick
@@ -3419,11 +4965,22 @@ Triggers when the hyperlink of summary cell is clicked.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        summaryCellHyperlinkClick: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (summaryCellHyperlinkClick)="summaryCellHyperlinkClick($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    summaryCellHyperlinkClick(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### valueCellHyperlinkClick
@@ -3463,11 +5020,22 @@ Triggers when the hyperlink of value cell is clicked.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        valueCellHyperlinkClick: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (valueCellHyperlinkClick)="valueCellHyperlinkClick($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    valueCellHyperlinkClick(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### saveReport
@@ -3497,11 +5065,22 @@ Triggers before saving the current report to database.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        saveReport: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (saveReport)="saveReport($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    saveReport(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### loadReport
@@ -3536,11 +5115,22 @@ Triggers before loading a report from database.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        loadReport: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (loadReport)="loadReport($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    loadReport(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### beforeExport
@@ -3575,11 +5165,22 @@ Triggers before performing exporting in pivot grid.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        beforeExport: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (beforeExport)="beforeExport($event)">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    beforeExport(args){
+         //Do Something.
+    }
+}
+
 {% endhighlight %}
 
 ### cellEdit
@@ -3609,10 +5210,20 @@ Triggers before editing the cells.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({
-        cellEdit: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgrid (cellEdit)="cellEdit($event)">
+    </ej-pivotgrid>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class PivotGridComponent {
+
+    cellEdit(args){
+         //Do Something.
+    }
+}
+
+{% endhighlight %}

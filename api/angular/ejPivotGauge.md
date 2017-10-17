@@ -1,34 +1,31 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejPivotGauge Widget
+description: Methods,members and events avaliable in PivotGauge
 documentation: API
-platform: js-api
+platform: angular-api
+description: API reference for PivotGauge
 keywords: ejPivotGauge, API, Essential JS PivotGauge
-metaname: 
-metacontent: 
 ---
 
 # PivotGauge
 
 The PivotGauge control is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. The PivotGauge let you present values against goals in a very intuitive manner.
 
-#### Syntax
-
-{% highlight javascript %}
-
-    $(element).ejPivotGauge()
-{% endhighlight %}
 
 #### Example
 
 {% highlight html %}
- 
-    <div id="PivotGauge1"></div> 
-    
-    <script>
-    //Create PivotGauge
-    $("#PivotGauge1").ejPivotGauge(...);       
-    </script>
+<ej-pivotgauge ></ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+  //..
+ }
 
 {% endhighlight %}
 
@@ -56,9 +53,19 @@ Sets the number of columns to arrange the Pivot Gauges.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ columnsCount: 1 });
+{% highlight html %}
+<ej-pivotgauge [columnsCount]=1>
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### cssClass `string`
@@ -70,9 +77,19 @@ Specifies the CSS class to PivotGauge to achieve custom theme.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ cssClass : "gradient-lime" });
+{% highlight html %}
+<ej-pivotgauge cssClass="gradient-lime">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+  //..
+ }
+
 {% endhighlight %}
 
 ### customObject `object`
@@ -84,9 +101,25 @@ Object utilized to pass additional information between client-end and service-en
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ customObject: { "key": "Hello World" } });
+{% highlight html %}
+<ej-pivotgauge [customObject]="customObject">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  customObject;
+
+        constructor()
+        {
+          this.customObject = { Language: "en-US" }; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource `object`
@@ -98,9 +131,25 @@ Initializes the data source for the PivotGauge widget, when it functions complet
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge( { dataSource: { data: value } });
+{% highlight html %}
+<ej-pivotgauge [dataSource]="dataSource">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+   
+    public  dataSource;
+
+        constructor()
+        {
+          this.dataSource = { data: value }; 
+        }
+ }
+
 {% endhighlight %}
 
 ### dataSource.cube `string`
@@ -112,9 +161,19 @@ Contains the respective cube name from OLAP database as string type.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { cube: "Adventure Works" } });
+{% highlight html %}
+<ej-pivotgauge dataSource.cube="Adventure Works">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.sourceInfo `string`
@@ -128,9 +187,19 @@ To set the data source name to fetch data from that.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { sourceInfo: "Provider Mondrian" } });
+{% highlight html %}
+<ej-pivotgauge dataSource.sourceInfo="Provider Mondrian">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.providerName `string`
@@ -163,9 +232,19 @@ Set the provider name for PivotGauge to identify whether the provider is SSAS or
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { providerName: "mondrian" } });
+{% highlight html %}
+<ej-pivotgauge dataSource.providerName="mondrian">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.data `object`
@@ -177,9 +256,19 @@ Provides the raw data source for the PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { data: value } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.data]="data">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.catalog `string`
@@ -191,9 +280,19 @@ In connection with an OLAP database, this property contains the database name as
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge( { dataSource: { catalog: "databaseName" } } );
+{% highlight html %}
+<ej-pivotgauge dataSource.catalog="Adventure Works DW 2008 SE">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+   //..
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns `array`
@@ -205,9 +304,25 @@ Lists out the items to bind in columns section.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: itemsArray } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.columns]="columns">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  columns;
+
+    constructor()
+    {
+        this.columns = itemsArray; 
+    }
+ }
+
 {% endhighlight %}
 
 
@@ -220,9 +335,25 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.columns]="columns">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  columns;
+
+    constructor()
+    {
+        this.columns = [{ fieldName : "MyFieldName" }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.filterItems `object`
@@ -234,9 +365,25 @@ Applies filter to the field members.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.columns]="columns">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  columns;
+
+    constructor()
+    {
+        this.columns = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.filterItems.filterType `enum`
@@ -271,9 +418,25 @@ Sets the type of filter whether to include/exclude the mentioned values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.columns]="columns">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  columns;
+
+    constructor()
+    {
+        this.columns = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.columns.filterItems.values `array`
@@ -285,9 +448,25 @@ Contains the collection of items to be included/excluded among the field members
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { columns: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.columns]="columns">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  columns;
+
+    constructor()
+    {
+        this.columns = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows `array`
@@ -299,9 +478,25 @@ Lists out the items to bind in rows section.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: itemsArray } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.rows]="rows">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  rows;
+
+    constructor()
+    {
+        this.rows = itemsArray; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.fieldName `string`
@@ -313,9 +508,25 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.rows]="rows">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  rows;
+
+    constructor()
+    {
+        this.rows = [{ fieldName : "MyFieldName" }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.filterItems `object`
@@ -327,9 +538,25 @@ Applies filter to the field members.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.rows]="rows">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  rows;
+
+    constructor()
+    {
+        this.rows = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.filterItems.filterType `enum`
@@ -364,9 +591,25 @@ Sets the type of filter whether to include/exclude the mentioned values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.rows]="rows">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  rows;
+
+    constructor()
+    {
+        this.rows = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.rows.filterItems.values `array`
@@ -378,9 +621,25 @@ Contains the collection of items to be included/excluded among the field members
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.rows]="rows">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  rows;
+
+    constructor()
+    {
+        this.rows = [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values `array`
@@ -392,9 +651,25 @@ Lists out the items supports calculation in PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: itemsArray } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = itemsArray; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.fieldName `string`
@@ -406,9 +681,25 @@ Allows the user to bind the item by using its unique name as field name for Rela
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = [{ fieldName : "MyFieldName" }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.fieldCaption `string`
@@ -420,9 +711,25 @@ Allows the user to set the display caption for an item for Relational datasource
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ fieldCaption : "MyFieldCaption" }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = [{ fieldCaption : "MyFieldCaption" }];
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.measures `array`
@@ -434,9 +741,25 @@ This holds the list of unique names of measures to bind them from the OLAP cube.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ measures : itemsArray }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = [{ measures: itemsArray }];
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.measures.fieldName `string`
@@ -448,9 +771,25 @@ Allows the user to bind the measure from OLAP datasource by using its unique nam
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ measures : [{ fieldName: "MeasureUniqueName" }] }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = [{ measures: [{ fieldName: "MeasureUniqueName" }] }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.axis `string`
@@ -464,9 +803,25 @@ Allows to set the axis name to place the measures items.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ axis : ej.olap.AxisName.Row }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = [{ axis : ej.olap.AxisName.Row }];
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.isCalculatedField `boolean`
@@ -478,9 +833,25 @@ Indicates whether the field is a calculated field or not with Relational datasou
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ isCalculatedField : true }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = [{ isCalculatedField : true }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.values.formula `string`
@@ -492,9 +863,25 @@ Allows to set the formula for calculation of values for calculated members in Re
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { values: [{ formula : "Quantity*10" }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.values]="values">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.values = [{ formula : "Quantity*10" }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters `array`
@@ -506,9 +893,25 @@ Lists out the items which supports filtering of values without displaying the me
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: itemsArray } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.filters]="filters">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.filters = itemsArray; 
+    }
+ }
+
 {% endhighlight %}
 
 
@@ -521,9 +924,25 @@ Allows the user to bind the item by using its unique name as field name.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName : "MyFieldName" }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.filters]="filters">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.filters = [{ fieldName : "MyFieldName" }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters.filterItems `object`
@@ -535,9 +954,25 @@ Applies filter to the field members.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.filters]="filters">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.filters = [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters.filterItems.filterType `enum`
@@ -572,9 +1007,25 @@ Sets the type of filter whether to include/exclude the mentioned values.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.filters]="filters">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.filters = [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: valueArray } }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### dataSource.filters.filterItems.values `array`
@@ -586,9 +1037,25 @@ Contains the collection of items to be included/excluded among the field members
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ dataSource: { filters: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% highlight html %}
+<ej-pivotgauge [dataSource.filters]="filters">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  values;
+
+    constructor()
+    {
+        this.filters = [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }]; 
+    }
+ }
+
 {% endhighlight %}
 
 ### enableAnimation `boolean`
@@ -600,9 +1067,19 @@ Enables/disables the animation of pointer in PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ enableAnimation: true });
+{% highlight html %}
+<ej-pivotgauge [enableAnimation]="true">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### animationSpeed `number`
@@ -615,9 +1092,19 @@ Specifies animation speed of PivotGauge
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ animationSpeed: 500 });
+{% highlight html %}
+<ej-pivotgauge [animationSpeed]=500>
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### enableTooltip `boolean`
@@ -629,9 +1116,19 @@ Enables/disables tooltip visibility in PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ enableTooltip: true }); 
+{% highlight html %}
+<ej-pivotgauge [enableTooltip]="true">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### enableRTL `boolean`
@@ -643,9 +1140,19 @@ Allows the user to view PivotGauge from right to left.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ enableRTL: true });
+{% highlight html %}
+<ej-pivotgauge [enableRTL]="true">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 
@@ -658,9 +1165,19 @@ Allows the user to enable PivotGauge’s responsiveness in the browser layout.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ isResponsive: true });
+{% highlight html %}
+<ej-pivotgauge [isResponsive]="true">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### labelFormatSettings `object`
@@ -672,9 +1189,25 @@ Allows the user to change the format of the label values in PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: value  });
+{% highlight html %}
+<ej-pivotgauge [labelFormatSettings]="labelFormatSettings">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  labelFormatSettings;
+
+    constructor()
+    {
+        this.labelFormatSettings = labelValueSettings; 
+    }
+ }
+
 {% endhighlight %}
 
 ### labelFormatSettings.numberFormat `enum`
@@ -728,9 +1261,25 @@ Allows the user to change the number format of the label values in PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { numberFormat: ej.PivotGauge.NumberFormat.Default } });
+{% highlight html %}
+<ej-pivotgauge [labelFormatSettings.numberFormat]="numberFormat">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  numberFormat;
+
+    constructor()
+    {
+        this.numberFormat = ej.PivotGauge.NumberFormat.Default; 
+    }
+ }
+
 {% endhighlight %}
 
 
@@ -743,9 +1292,19 @@ Allows you to set the number of digits displayed after decimal point.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { decimalPlaces: 3 } });
+{% highlight html %}
+<ej-pivotgauge [labelFormatSettings.decimalPlaces]=3>
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 
@@ -758,9 +1317,19 @@ Allows you to add a text at the beginning of the label.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { prefixText: "prefixTextValue" } });
+{% highlight html %}
+<ej-pivotgauge [labelFormatSettings.prefixText]="prefixTextValue">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 
@@ -773,9 +1342,19 @@ Allows you to add text at the end of the label.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ labelFormatSettings: { suffixText: "suffixTextValue" } });
+{% highlight html %}
+<ej-pivotgauge [labelFormatSettings.suffixText]="suffixTextValue">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 
@@ -788,10 +1367,21 @@ Allows the user to set the localized language for the widget.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ locale: "fr-FR" });
+{% highlight html %}
+<ej-pivotgauge locale="en-US">
+</ej-pivotgauge>
+
+
 {% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
+{% endhighlight %}
+
 
 ### rowsCount `number`
 {:#members:rowscount}
@@ -802,9 +1392,19 @@ Sets the number of rows to arrange the Pivot Gauges.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ rowsCount: 1 });
+{% highlight html %}
+<ej-pivotgauge [rowsCount]=1>
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    //..
+ }
+
 {% endhighlight %}
 
 ### scales `object`
@@ -816,9 +1416,25 @@ Sets the scale values such as pointers, indicators, etc... for PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ scales: { showRanges: true, showIndicators: true } });
+{% highlight html %}
+<ej-pivotgauge [scales]="scales">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  scales;
+
+        constructor()
+        {
+          this.scales = { showRanges: true, showIndicators: true }; 
+        }
+ }
+
 {% endhighlight %}
 
 ### serviceMethodSettings `object`
@@ -832,23 +1448,25 @@ Allows the user to set the custom name for the methods at service-end, communica
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ serviceMethodSettings: { initialize: "MyMethod" } });
+{% highlight html %}
+<ej-pivotgauge [serviceMethodSettings]="serviceMethodSettings">
+</ej-pivotgauge>
+
+
 {% endhighlight %}
 
-### serviceMethodSettings.initialize `string`
-{:#members:servicemethodsettings-initialize}
+{% highlight ts %}
 
-Allows the user to set the custom name for the service method responsible for initializing PivotGauge.
+export class AppComponent {
+    
+    public  serviceMethodSettings;
 
-#### Default Value: "InitializeGauge"
+        constructor()
+        {
+          this.serviceMethodSettings = { initialize: "MyMethod" }; 
+        }
+ }
 
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ serviceMethodSettings: { initialize: "InitializeGaugeMyMethod" } }); 
 {% endhighlight %}
 
 ### showHeaderLabel `boolean`
@@ -860,23 +1478,19 @@ Enables/disables the header labels in PivotGauge.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ showHeaderLabel: false });
+{% highlight html %}
+<ej-pivotgauge [showHeaderLabel]="false">
+</ej-pivotgauge>
+
+
 {% endhighlight %}
 
-### url `string`
-{:#members:url}
+{% highlight ts %}
 
-Connects the service using the specified URL for any server updates on server mode operation.
+export class AppComponent {
+    //..
+ }
 
-#### Default Value: “”
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ url: "/PivotGaugeService" });
 {% endhighlight %}
 
 ### analysisMode `enum`
@@ -909,9 +1523,25 @@ Sets the mode for the PivotGauge widget for binding either OLAP or Relational da
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ analysisMode: ej.Pivot.AnalysisMode.Olap });
+{% highlight html %}
+<ej-pivotgauge [analysisMode]="analysisMode">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  analysisMode;
+
+        constructor()
+        {
+          this.analysisMode = ej.Pivot.AnalysisMode.Olap; 
+        }
+ }
+
 {% endhighlight %}
 
 ### operationalMode `enum`
@@ -944,25 +1574,28 @@ Sets the mode for the PivotGauge widget for binding data source either in server
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
+{% highlight html %}
+<ej-pivotgauge [operationalMode]="operationalMode">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  operationalMode;
+
+        constructor()
+        {
+          this.operationalMode = ej.Pivot.OperationalMode.ServerMode; 
+        }
+ }
+
 {% endhighlight %}
 
 ## Methods
-
-### doAjaxPost()
-{:#methods:doajaxpost}
-
-Performs an asynchronous HTTP (AJAX) request.
-
-**Example:**
-
-{% highlight javascript %}
-    
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    gaugeObj.doAjaxPost("POST", "/PivotService/Initialize", { "key", "Hello World" }, "renderControlSuccess", null);
-{% endhighlight %}
 
 ### refresh()
 {:#methods:refresh}
@@ -971,10 +1604,17 @@ This function is used to refresh the PivotGauge at client-side itself.
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    gaugeObj.refresh();
+export class PivotChartComponent {
+    
+  ngAfterViewInit(){
+
+     let gaugeObj = $(".e-pivotgauge").data("ejPivotGauge");
+     gaugeObj.refresh();
+  }
+ }
+
 {% endhighlight %}
 
 ### removeImg()
@@ -984,10 +1624,17 @@ This function removes the KPI related images from PivotGauge on binding OLAP dat
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    gaugeObj.removeImg();
+export class PivotChartComponent {
+    
+  ngAfterViewInit(){
+
+     let gaugeObj = $(".e-pivotgauge").data("ejPivotGauge");
+     gaugeObj.removeImg();
+  }
+ }
+
 {% endhighlight %}
 
 ### renderControlFromJSON()
@@ -997,10 +1644,17 @@ This function receives the JSON formatted datasource and renders the PivotGauge 
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    gaugeObj.renderControlFromJSON(this.getJSONRecords());
+export class PivotChartComponent {
+    
+  ngAfterViewInit(){
+
+     let gaugeObj = $(".e-pivotgauge").data("ejPivotGauge");
+     gaugeObj.renderControlFromJSON(this.getJSONRecords());
+  }
+ }
+
 {% endhighlight %}
 
 ### destroy()
@@ -1010,44 +1664,17 @@ This function Destroy the PivotGauge widget all events bound using this._on will
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    gaugeObj.destroy();
-{% endhighlight %}
+{% highlight ts %}
 
-### getOlapReport()
-{:#methods:getolapreport}
+export class PivotChartComponent {
+    
+  ngAfterViewInit(){
 
-Returns the OlapReport string maintained along with the axis elements information.
+     let gaugeObj = $(".e-pivotgauge").data("ejPivotGauge");
+     gaugeObj.destroy();
+  }
+ }
 
-#### Returns:
-
-string
-
->**Note**: This method is applicable only on operating the control in server mode.
-
-**Example:**
-
-{% highlight javascript %}
- 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    var report = gaugeObj.getOlapReport();
-{% endhighlight %}
-
-### setOlapReport()
-{:#methods:setolapreport}
-
-Sets the OlapReport string along with the axis information and maintains it in a property.
-
->**Note**: This method is applicable only on operating the control in server mode.
-
-**Example:**
-
-{% highlight javascript %}
- 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    gaugeObj.setOlapReport(olapReportObj);
 {% endhighlight %}
 
 ### getJSONRecords()
@@ -1061,10 +1688,17 @@ array
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    var jsonRecords = gaugeObj.getJSONRecords();
+{% highlight ts %}
+
+export class PivotChartComponent {
+    
+  ngAfterViewInit(){
+
+     let gaugeObj = $(".e-pivotgauge").data("ejPivotGauge");
+     let jsonRecords = gaugeObj.getJSONRecords();
+  }
+ }
+
 {% endhighlight %}
 
 ### setJSONRecords()
@@ -1074,10 +1708,17 @@ Sets the JSON records to render the control.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    gaugeObj.setJSONRecords(jsonRecords);
+{% highlight ts %}
+
+export class PivotChartComponent {
+    
+  ngAfterViewInit(){
+
+     let gaugeObj = $(".e-pivotgauge").data("ejPivotGauge");
+     gaugeObj.setJSONRecords(jsonRecords);
+  }
+ }
+
 {% endhighlight %}
 
 ### getJSONData()
@@ -1087,94 +1728,21 @@ Returns the JSON records required to render the PivotGauge on performing any act
 
 **Example:**
 
-{% highlight javascript %}
+{% highlight ts %}
 
-    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
-    var args = { action : "initialize", activeObject : gaugeObj };
-    var jsonData = gaugeObj.getJSONData(args, dataSource);
+export class PivotChartComponent {
+    
+  ngAfterViewInit(){
+
+     let gaugeObj = $(".e-pivotgauge").data("ejPivotGauge");
+     let args = { action : "initialize", activeObject : gaugeObj };
+     let jsonData = gaugeObj.getJSONData(args, dataSource);
+  }
+ }
+
 {% endhighlight %}
 
 ## Events
-
-### afterServiceInvoke
-{:#events:afterserviceinvoke}
-
-Triggers when it reaches client-side after any AJAX request.
-
-<table class="params">
-<thead>
-<tr>
-<th colspan="3">Event Parameters</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">returns the custom object bound with PivotGauge control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">object</td>
-<td class="description last">returns the HTML element of PivotGauge control.</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({
-        afterServiceInvoke: function (args) {}
-    });
-{% endhighlight %}
-
-
-### beforeServiceInvoke
-{:#events:beforeserviceinvoke}
-
-Triggers before any AJAX request is passed from PivotGauge to service methods.
-
-<table class="params">
-<thead>
-<tr>
-<th colspan="3">Event Parameters</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">customObject</td>
-<td class="type">object</td>
-<td class="description last">returns the custom object bound with PivotGauge control.</td>
-</tr>
-<tr>
-<td class="name">element</td>
-<td class="type">object</td>
-<td class="description last">returns the HTML element of PivotGauge control.</td>
-</tr>
-</tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({
-        beforeServiceInvoke: function (args) {}
-    });
-{% endhighlight %}
 
 ### beforePivotEnginePopulate
 {:#events:beforepivotenginepopulate}
@@ -1203,11 +1771,22 @@ Triggers before populating the pivot engine on operating in client mode.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({
-        beforePivotEnginePopulate: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgauge (beforePivotEnginePopulate)="beforePivotEnginePopulate($event)">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    beforePivotEnginePopulate(args){
+         //Do Something.
+    }
+ }
+
 {% endhighlight %}
 
 ### load
@@ -1252,11 +1831,22 @@ Triggers when PivotGauge started loading at client-side.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({
-        load: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgauge (load)="load($event)">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    load(args){
+         //Do Something.
+    }
+ }
+
 {% endhighlight %}
 
 ### renderComplete
@@ -1292,11 +1882,22 @@ Triggers when PivotGauge widget completes all operations at client-side after an
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({
-        renderComplete: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgauge (renderComplete)="renderComplete($event)">
+</ej-pivotgauge>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    renderComplete(args){
+         //Do Something.
+    }
+ }
+
 {% endhighlight %}
 
 ### renderFailure
@@ -1336,13 +1937,23 @@ Triggers when any error occurred during AJAX request.
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({
-        renderFailure: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgauge (renderFailure)="renderFailure($event)">
+</ej-pivotgauge>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class AppComponent {
+    
+    renderFailure(args){
+         //Do Something.
+    }
+ }
+
+{% endhighlight %}
 
 ### renderSuccess
 {:#events:rendersuccess}
@@ -1376,10 +1987,20 @@ Triggers when PivotGauge successfully reaches client-side after any AJAX request
 
 **Example:**
 
-{% highlight javascript %}
- 
-    $("#PivotGauge1").ejPivotGauge({
-        renderSuccess: function (args) {}
-    });
+{% highlight html %}
+<ej-pivotgauge (renderSuccess)="renderSuccess($event)">
+</ej-pivotgauge>
+
+
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class AppComponent {
+    
+    renderSuccess(args){
+         //Do Something.
+    }
+ }
+
+{% endhighlight %}
