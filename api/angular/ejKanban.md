@@ -5,6 +5,7 @@ description: Members,Methods,Events available in Kanban
 documentation: API
 platform: angular-api
 keywords: Kanban, API, Essential Angular Kanban
+encoding: utf-8
 ---
 
 # ejKanban
