@@ -5,7 +5,6 @@ description: Members,Methods,Events available in Kanban
 documentation: API
 platform: angular-api
 keywords: Kanban, API, Essential Angular Kanban
-encoding: utf-8
 ---
 
 # ejKanban
@@ -4075,7 +4074,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
             SaveButton: "Speichern",
             CancelButton: "stornieren",
             EditFormTitle: "Details von ",
-            AddFormTitle: "Neue Karte hinzufügen",
+            AddFormTitle: "Neue Karte hinzufÃ¼gen",
             SwimlaneCaptionFormat: "- 8 Artikel  Artikel ",
             FilterSettings: "Filter:",
             FilterOfText: "Von",
