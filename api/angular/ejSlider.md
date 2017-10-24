@@ -40,8 +40,6 @@ export class AppComponent {
 
 * module:jQuery
 
-* module:jquery.easing.1.3.js
-
 * module:ej.core.js
 
 * module:ej.slider.js
