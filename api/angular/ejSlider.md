@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejSlider Widget
-description: API reference for ejSlider
+title: Properties, Methods and Events of Slider Widget
+description: API reference for Slider
 documentation: API
 platform: angular-api
-keywords: Slider, ejSlider, syncfusion, Slider api 
+keywords: Slider, Essential Angular Slider, Slider API 
 ---
 
 # ejSlider
