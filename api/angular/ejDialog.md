@@ -66,9 +66,7 @@ Specifies the ajaxSettings option to load the content to the Dialog control.
 
 #### Example
 
-{% highlight html %}
- <ej-dialog id="basicDialog" title="Facebook" [ajaxSettings]="ajaxSettings" containment="#parent">
-  </ej-dialog>{% endhighlight %}{% highlight ts %}  // Set the ajaxSettings options during initialization.    ajaxSettings:Object;         constructor() {       this.ajaxSettings={       type:'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true }  }    }    {% endhighlight %}
+{% highlight html %}          <ej-dialog id="basicDialog" title="Facebook" [ajaxSettings]="ajaxSettings" containment="#parent">            </ej-dialog>{% endhighlight %}{% highlight ts %}      // Set the ajaxSettings options during initialization.            ajaxSettings:Object;                 constructor() {              this.ajaxSettings={               type:'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true }                  }                {% endhighlight %}
 
 
 ### ajaxSettings.async `boolean`
@@ -382,7 +380,7 @@ Specifies the HTML Attributes of the Dialog.
 
 #### Example
 
-{% highlight html %}     <ej-dialog id="basicDialog"  [htmlAttributes]="htmlAttributes" > </ej-dialog>{% endhighlight %}{% highlight ts %}    htmlAttributes:object;    constructor() {          this.htmlAttributes={class:"my-class", style:"border:1px solid red"}                       }  {% endhighlight %}
+{% highlight html %}        <ej-dialog id="basicDialog"  [htmlAttributes]="htmlAttributes" > </ej-dialog>{% endhighlight %}{% highlight ts %}            htmlAttributes:object;            constructor() {            this.htmlAttributes={class:"my-class", style:"border:1px solid red"}           }  {% endhighlight %}
 
 
 ### isResponsive `boolean` 
