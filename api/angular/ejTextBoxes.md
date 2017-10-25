@@ -18,7 +18,7 @@ keywords: TextBoxes, Essential Angular TextBoxes, TextBoxes api
 
 #### Syntax
 
-{% highlight javascript %}
+{% highlight html %}
 
 <input id="numeric" type="text" ej-numerictextbox />
 
@@ -347,8 +347,6 @@ It allows to define the characteristics of the Editors control. It will helps to
 
 #### Example
 
-{% highlight html %}
- 
 {% highlight html %}
  
 <input id="numeric" type="text" ej-numerictextbox value="5" [htmlAttributes]="htmlAttributes" />
@@ -877,8 +875,7 @@ Specifies the width of the editor.
 
 {% endhighlight %}
 
-{% highlight html %}
- 
+
 ## Methods
 
 ### destroy()
