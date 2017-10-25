@@ -10,32 +10,7 @@ keywords: TreeView, API, Essential Angular TreeView
 # ejTreeView
 
 
-
-
-
-
 The TreeView can be easily configured with the DOM element, such as div or ul. you can create a TreeView with a highly customizable look and feel.
-
-
-
-
-
-#### Syntax
-
-{% highlight javascript %}
-
-$(element).ejTreeView(options)
-
-{% endhighlight %}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -66,40 +41,51 @@ options </td>
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
+  <ej-treeview id="treeView" [fields]='field'></ej-treeview>
 
- 
+ {% endhighlight %}
+
+ {% highlight ts %}
+
 <script>
-// Create TreeView
-$('#treeView').ejTreeView();    
-</script>{% endhighlight %}
 
+export class TreeViewComponent {
+
+   public hierarchicalData: Object[] = [
+        { id: '01', name: 'Local Disk (C:)', expanded: true,
+            subChild: [
+                {
+                    id: '01-01', name: 'Program Files',
+                    subChild: [
+                        { id: '01-01-01', name: 'Windows NT' },
+                        { id: '01-01-02', name: 'Windows Mail' },
+                        { id: '01-01-03', name: 'Windows Photo Viewer' },
+                    ]
+                },
+                {
+                    id: '01-02', name: 'Users', expanded: true,
+                    subChild: [
+                        { id: '01-02-01', name: 'Smith' },
+                        { id: '01-02-02', name: 'Public' },
+                        { id: '01-02-03', name: 'Admin' },
+                    ]
+                },
+                {
+                    id: '01-03', name: 'Windows',
+                    subChild: [
+                        { id: '01-03-01', name: 'Boot' },
+                        { id: '01-03-02', name: 'FileManager' },
+                        { id: '01-03-03', name: 'System32' },
+                    ]
+                },
+            ]
+        },       
+    ];
+    public field:Object ={ dataSource: this.hierarchicalData, id: 'id', text: 'name', child: 'subChild' };
+}
+</script>
+
+ {% endhighlight %}
 
 
 
