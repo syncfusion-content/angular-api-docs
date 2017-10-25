@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejFileExplorer Widget
 description: API reference for ejFileExplorer
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: FileExplorer, ejFileExplorer, syncfusion, FileExplorer api
 ---
 
