@@ -3654,85 +3654,6 @@ Triggered while collapsing the TreeGrid record
 
 {% tabs %}{% highlight html %}<ej-treegrid id="TreeGridControl" (collapsing)="collapsing($event)"></ej-treegrid>{% endhighlight %}{% highlight ts %}export class AppComponent {    constructor() {    }    collapsing(sender) {        //...    }}{% endhighlight %}{% endtabs %}  
 
-
-
-### recordClick
-{:#events:recordclick}
-
-Triggered while clicking a row, even when allowSelection property is disabled.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when recordClick event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cell</td>
-<td class="type">object</td>
-<td class="description">Returns the element of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellValue</td>
-<td class="type">object</td>
-<td class="description">Returns the data of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">row</td>
-<td class="type">object</td>
-<td class="description">Returns the element of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">columnName</td>
-<td class="type">string</td>
-<td class="description">Returns the column name of the clicked cell.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-{% tabs %}{% highlight html %}<ej-treegrid id="TreeGridControl" (recordClick)="recordClick($event)"></ej-treegrid>{% endhighlight %}{% highlight ts %}export class AppComponent {    constructor() {    }    recordClick(sender) {        //...    }}{% endhighlight %}{% endtabs %}  
-
-
 ### columnDragStart
 {:#events:columndragstart}
 
@@ -4931,6 +4852,11 @@ Triggered while dragging a row in TreeGrid control
 <td class="description">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
+<td class="name">dropPosition</td>
+<td class="type">string</td>
+<td class="description">Returns the drop position details such as insertAbove,insertBelow,insertAsChild and invalidPosition</td>
+</tr>
+<tr>
 <td class="name">targetRow</td>
 <td class="type">object</td>
 <td class="description">Returns the row on which we are dragging.</td>
@@ -5449,6 +5375,198 @@ Triggered before the row is going to be selected.
 
 {% tabs %}{% highlight html %}<ej-treegrid id="TreeGridControl" (rowSelecting)="rowSelecting($event)"></ej-treegrid>{% endhighlight %}{% highlight ts %}export class AppComponent {    constructor() {    }    rowSelecting(sender) {        //...    }}{% endhighlight %}{% endtabs %}  
 
+### recordClick
+{:#events:recordclick}
+
+Triggered while clicking a row, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (recordClick)="recordClick($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    recordClick(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+
+### recordDoubleClick
+{:#events:recorddoubleclick}
+
+Triggered during record double click action, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordDoubleClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (recordDoubleClick)="recordDoubleClick($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    recordDoubleClick(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 
 ### toolbarClick
