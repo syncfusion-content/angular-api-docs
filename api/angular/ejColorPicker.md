@@ -1230,7 +1230,8 @@ Disables the color picker control
  $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
         var colorObj = $("#colorPicker").data("ejColorPicker");
-        colorObj.disable(); // disables the colorPicker
+        colorObj.disable(); 
+        // disables the colorPicker
 
 {% endhighlight %}
 
