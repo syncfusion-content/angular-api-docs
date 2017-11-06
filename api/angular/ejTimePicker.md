@@ -2460,19 +2460,6 @@ value</td>
 #### Example
 
 
-
-{% highlight html %}
- 
-<input type="text" id="timepicker" />
-<script>
-//select event for TimePicker
-$("#timepicker").ejTimePicker({
-   select: function (args) {}
-});   
-</script> 
- {% endhighlight %}
-
-
 {% highlight html %}
 
 <input type="text" ej-timepicker id="timePicker" (select)="onSelect(&event)"/>
