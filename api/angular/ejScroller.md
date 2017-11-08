@@ -45,7 +45,7 @@ export class AppComponent {
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -113,7 +113,7 @@ Specifies the swipe scrolling speed(in millisecond).
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -166,7 +166,7 @@ Set true to hides the scrollbar, when mouseout the content area.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -218,7 +218,7 @@ Specifies the height and width of button in the scrollbar.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -296,7 +296,7 @@ It can also send commands to the model to update the model's state (e.g., editin
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -348,7 +348,7 @@ Save current model value to browser cookies for state maintenance. While refresh
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -398,7 +398,7 @@ Indicates the Right to Left direction to scroller
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -450,7 +450,7 @@ Enables or Disable the touch Scroll
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -502,7 +502,7 @@ Specifies the height of Scroll panel and scrollbars.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -554,7 +554,7 @@ If the scrollbar has vertical it set as width, else it will set as height of the
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -605,7 +605,7 @@ The Scroller content and scrollbars move left with given value.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -656,7 +656,7 @@ While press on the arrow key the scrollbar position added to the given pixel val
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -708,7 +708,7 @@ The Scroller content and scrollbars move to top position with specified value.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -760,7 +760,7 @@ Indicates the target area to which scroller have to appear.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -811,7 +811,7 @@ Specifies the width of Scroll panel and scrollbars.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -858,7 +858,7 @@ destroy the Scroller control, unbind the all ej control related events automatic
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -899,7 +899,7 @@ User disables the Scroller control at any time.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -937,7 +937,7 @@ User enables the Scroller control at any time.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -980,7 +980,7 @@ boolean
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1023,7 +1023,7 @@ boolean
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1061,7 +1061,7 @@ User refreshes the Scroller control at any time.
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1128,7 +1128,7 @@ animationSpeed </td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1194,7 +1194,7 @@ animationSpeed </td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1269,7 +1269,7 @@ type</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1340,7 +1340,7 @@ type</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1423,7 +1423,7 @@ type</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1506,7 +1506,7 @@ type</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1588,7 +1588,7 @@ type</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1679,7 +1679,7 @@ type</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1764,7 +1764,7 @@ type</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
@@ -1855,7 +1855,7 @@ scrollData</td>
             user's interaction with it. The model consists of application data, business rules, logic, and functions. A view
             can be any output representation of data, such as a chart or a diagram. Multiple views of the same data are possible,
             such as a bar chart for management and a tabular view for accountants. The controller mediates input, converting
-            it to commands for the model or view.The central ideas behind MVC are code reusability and n addition to dividing
+            it to commands for the model or view.The central ideas behind MVC are code reusable and n addition to dividing
             the application into three kinds of components, the MVC design defines the interactions between them.
         </div>
     </div>
