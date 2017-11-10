@@ -841,7 +841,7 @@ Gets the number of the page being displayed in the PDF viewer.
 
 export class DefaultComponent {
     @ViewChild('viewer') PdfViewer: EJComponents<any, any>;
-    var pagenumber = this.PdfViewer.widget.currentPageNumber;
+    var pageNumber = this.PdfViewer.widget.currentPageNumber;
 }
     
 {% endhighlight %}
@@ -2657,7 +2657,7 @@ Returns the current Y position
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (pageclick)="pageclick($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (pageClick)="pageClick($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
@@ -2669,7 +2669,7 @@ export class DefaultComponent {
     {
           this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
-    pageclick(sender)
+    pageClick(sender)
     {
           alert("The page number" + sender.currentPageNumber + " is clicked");
     }  
