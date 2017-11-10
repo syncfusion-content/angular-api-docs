@@ -53,19 +53,19 @@ Specifies the locale information of the PDF viewer.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" [(locale)]="locale"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" [(locale)]="locale"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public locale:string;
     constructor()
     {
 	  this.locale = "fr-FR";
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     } 
 }
 
@@ -89,19 +89,19 @@ Shows or hides the tooltip of the toolbar items.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(toolbarSettings)]="toolbarSettings"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(toolbarSettings)]="toolbarSettings"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public toolbarSettings:any;
     constructor()
     {
 	  this.toolbarSettings = { showTooltip: false };   
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -208,19 +208,19 @@ Shows all the toolbar items.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(toolbarSettings)]="toolbarSettings"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(toolbarSettings)]="toolbarSettings"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public toolbarSettings:any;
     constructor()
     {
 	  this.toolbarSettings = { toolbarItem: ej.PdfViewer.ToolbarItems.MagnificationTools };   
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -268,19 +268,19 @@ Specifies the name of the action method used for downloading the PDF document fr
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(serverActionSettings)]="serverActionSettings"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(serverActionSettings)]="serverActionSettings"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public serverActionSettings:any;
     constructor()
     {
       this.serverActionSettings = { load: "Load", fileUpload: "FileUpload", print: "Print", download: "Download" };
-      this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+      this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -296,17 +296,17 @@ Sets the PDF Web API service URL
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-      this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+      this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -322,19 +322,19 @@ Sets the PDF document path for initial loading.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" [(documentPath)]="documentPath"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" [(documentPath)]="documentPath"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public documentPath:string;
     constructor()
     {
 	  this.documentPath = "HTTP Succinctly.pdf";
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -352,19 +352,19 @@ Enables or disables the text markup annotations.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(enableTextMarkupAnnotations)]="enableTextMarkupAnnotations"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(enableTextMarkupAnnotations)]="enableTextMarkupAnnotations"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public enableTextMarkupAnnotations:boolean;
     constructor()
     {
 	  this.enableTextMarkupAnnotations = true;
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -382,19 +382,19 @@ Enables or disables the highlight annotation.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(enableHighlightAnnotation)]="enableHighlightAnnotation"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(enableHighlightAnnotation)]="enableHighlightAnnotation"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public enableHighlightAnnotation:boolean;
     constructor()
     {
 	  this.enableHighlightAnnotation = true;
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -412,19 +412,19 @@ Enables or disables the underline annotation.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(enableUnderlineAnnotation)]="enableUnderlineAnnotation"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(enableUnderlineAnnotation)]="enableUnderlineAnnotation"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public enableUnderlineAnnotation:boolean;
     constructor()
     {
 	  this.enableUnderlineAnnotation = true;
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -442,19 +442,19 @@ Enables or disables the strikethrough annotation.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(enableStrikethroughAnnotation)]="enableStrikethroughAnnotation"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(enableStrikethroughAnnotation)]="enableStrikethroughAnnotation"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public enableStrikethroughAnnotation:boolean;
     constructor()
     {
 	  this.enableStrikethroughAnnotation = true;
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -472,19 +472,19 @@ export class DefaultComponent {
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(enableSignature)]="enableSignature"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(enableSignature)]="enableSignature"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public enableSignature:boolean;
     constructor()
     {
 	  this.enableSignature = true;
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -548,20 +548,20 @@ Gets/sets the locked property of the strikethrough annotation.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(strikethroughSettings)]="strikethroughSettings"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(strikethroughSettings)]="strikethroughSettings"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public strikethroughSettings:any;
     constructor()
     {
 	  this.strikethroughSettings = {color: "#ff0000", author: "Guest", opacity: 0.5, subject: "strikethrough", modifiedDate: "2017-03-27 12:00:51", isLocked: true
 			           };   
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -625,20 +625,20 @@ Gets/sets the locked property of the underline annotation.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(underlineSettings)]="underlineSettings"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(underlineSettings)]="underlineSettings"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public underlineSettings:any;
     constructor()
     {
 	  this.underlineSettings = {color: "#00ff00", author: "Guest", opacity: 0.5, subject: "underline", modifiedDate: "2017-03-27 12:00:51", isLocked: true
 			           };   
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -702,20 +702,20 @@ Gets/sets the locked property of the highlight annotation.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(highlightSettings)]="highlightSettings"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(highlightSettings)]="highlightSettings"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public highlightSettings:any;
     constructor()
     {
 	  this.highlightSettings = {color: "#ffff00", author: "Guest", opacity: 0.5, subject: "highlight", modifiedDate: "2017-03-27 12:00:51", isLocked: true
 			           };   
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -747,19 +747,19 @@ Gets/sets the opacity of the handwritten signature.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(signatureSettings)]="signatureSettings"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(signatureSettings)]="signatureSettings"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public signatureSettings:any;
     constructor()
     {
       this.signatureSettings = { color: "#000000", opacity: 1 };
-      this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+      this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -910,19 +910,19 @@ The below code snippet shows the service accessed from remote server.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(pdfService)]="pdfService"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(pdfService)]="pdfService"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public pdfService:any;
     constructor()
     {
       this.pdfService =  ej.PdfViewer.PdfService.Remote;
-      this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+      this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -975,19 +975,19 @@ The below code snippet shows to set the Panning mode to the PDF viewer control.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(interactionMode)]="interactionMode"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(interactionMode)]="interactionMode"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public interactionMode:any;
     constructor()
     {
       this.interactionMode = ej.PdfViewer.InteractionMode.Pan;
-      this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+      this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
@@ -1049,36 +1049,159 @@ The below code snippet shows the hyperlink opened in a new tab.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(hyperlinkOpenState)]="hyperlinkOpenState"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(hyperlinkOpenState)]="hyperlinkOpenState"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public hyperlinkOpenState:any;
     constructor()
     {
 	    this.hyperlinkOpenState = ej.PdfViewer.LinkTarget.NewTab
-        this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
 }
 
 {% endhighlight %}
 
-### enableHyperlink `boolean`{:#members:enablehyperlink}Enables or disables the hyperlinks in PDF document.**Default Value**: true##### Example:{% highlight html %}<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(enableHyperlink)]="enableHyperlink"> </ej-pdfviewer> {% endhighlight html %}{% highlight ts %}export class DefaultComponent {    public serviceurl:string;    public enableHyperlink:boolean;    constructor()    {
-        this.enableHyperlink = true;        this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer";     }}{% endhighlight %}
+### enableHyperlink `boolean`
+{:#members:enablehyperlink}
 
-### enableTextSelection `boolean`{:#members:enabletextselection}Enables or disables the text selection in PDF document.**Default Value**: true##### Example:{% highlight html %}<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(enableTextSelection)]="enableTextSelection"> </ej-pdfviewer> {% endhighlight html %}{% highlight ts %}export class DefaultComponent {    public serviceurl:string;    public enableTextSelection:boolean;    constructor()    {        this.enableTextSelection = false;        this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer";     }}{% endhighlight %}
+Enables or disables the hyperlinks in PDF document.
+**Default Value**: true
 
-### isResponsive `boolean`{:#members:isresponsive}Enables or disables the responsiveness of the PDF viewer control during the window resize.**Default Value**: true#### Example{% highlight html %}<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" [(isResponsive)]="isResponsive"> </ej-pdfviewer> {% endhighlight html %}{% highlight ts %}export class DefaultComponent {    public serviceurl:string;    public isResponsive:boolean;    constructor()    {
-        this.isResponsive = true;        this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer";     } }{% endhighlight %}
+##### Example:
 
-### isDocumentEdited `boolean`{:#members:isdocumentedited}Checks whether the PDF document is edited. **Default Value**: false#### Example{% highlight ts %}export class DefaultComponent {     @ViewChild('viewer') PdfViewer: EJComponents<any, any>;     var documentEdited = this.PdfViewer.widget.isDocumentEdited;}    {% endhighlight %}
+{% highlight html %}
 
-### allowClientBuffering `boolean`{:#members:allowclientbuffering}Enables or disables the buffering of the PDF pages in the client side.**Default Value**: false##### Example:{% highlight html %}<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(allowClientBuffering)]="allowClientBuffering"> </ej-pdfviewer> {% endhighlight html %}{% highlight ts %}export class DefaultComponent {    public serviceurl:string;    public allowClientBuffering:boolean;    constructor()    {
-  this.allowClientBuffering = true;          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer";     }}{% endhighlight %}
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(enableHyperlink)]="enableHyperlink"> </ej-pdfviewer> 
+
+{% endhighlight html %}
+
+{% highlight ts %}
+
+export class DefaultComponent {
+    public serviceUrl:string;
+    public enableHyperlink:boolean;
+    constructor()
+    {
+        this.enableHyperlink = true;
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+    }
+}
+
+{% endhighlight %}
+
+### enableTextSelection `boolean`
+{:#members:enabletextselection}
+
+Enables or disables the text selection in PDF document.
+
+**Default Value**: true
+
+##### Example:
+
+{% highlight html %}
+
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(enableTextSelection)]="enableTextSelection"> </ej-pdfviewer> 
+
+{% endhighlight html %}
+
+{% highlight ts %}
+
+export class DefaultComponent {
+    public serviceUrl:string;
+    public enableTextSelection:boolean;
+    constructor()
+    {
+        this.enableTextSelection = false;
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+    }
+}
+
+{% endhighlight %}
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Enables or disables the responsiveness of the PDF viewer control during the window resize.
+
+**Default Value**: true
+
+#### Example
+
+{% highlight html %}
+
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" [(isResponsive)]="isResponsive"> </ej-pdfviewer> 
+
+{% endhighlight html %}
+
+{% highlight ts %}
+
+export class DefaultComponent {
+    public serviceUrl:string;
+    public isResponsive:boolean;
+    constructor()
+    {
+        this.isResponsive = true;
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+    } 
+}
+
+{% endhighlight %}
+
+### isDocumentEdited `boolean`
+
+{:#members:isdocumentedited}
+
+Checks whether the PDF document is edited. 
+
+**Default Value**: false
+
+#### Example
+
+{% highlight ts %}
+
+export class DefaultComponent {
+     @ViewChild('viewer') PdfViewer: EJComponents<any, any>;
+     var documentEdited = this.PdfViewer.widget.isDocumentEdited;
+}
+
+{% endhighlight %}
+
+### allowClientBuffering `boolean`
+
+{:#members:allowclientbuffering}
+
+Enables or disables the buffering of the PDF pages in the client side.
+
+**Default Value**: false
+
+##### Example:
+
+{% highlight html %}
+
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(allowClientBuffering)]="allowClientBuffering"> </ej-pdfviewer> 
+
+{% endhighlight html %}
+
+{% highlight ts %}
+
+export class DefaultComponent {
+    public serviceUrl:string;
+    public allowClientBuffering:boolean;
+    constructor()
+    {
+    	this.allowClientBuffering = true;
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+	}
+}
+
+{% endhighlight %}
+
 
 ### fileName `string`
 
@@ -1593,17 +1716,17 @@ Returns the PDF document name displaying in the PDF viewer.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (documentLoad)="documentLoaded($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (documentLoad)="documentLoaded($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-        this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     documentLoaded(sender)
     {
@@ -1701,17 +1824,17 @@ Returns the name of the event
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (documentUnload)="documentUnloaded($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (documentUnload)="documentUnloaded($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-        this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     documentUnloaded(sender)
     {
@@ -1820,17 +1943,17 @@ Returns the current page number in view.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (pageChange)="currentPageChanged($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (pageChange)="currentPageChanged($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     currentPageChanged(sender)
     {
@@ -1844,7 +1967,7 @@ export class DefaultComponent {
 
 {:#events:ajaxrequestfailure}
 
-Triggers when the ajax request is failed.
+Triggers when the AJAX request is failed.
 <table>
 <thead>
 <tr>
@@ -1939,17 +2062,17 @@ Returns the exception details.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (ajaxRequestFailure)="ajaxRequestFailed($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (ajaxRequestFailure)="ajaxRequestFailed($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     ajaxRequestFailed(sender)
     {
@@ -2069,17 +2192,17 @@ Returns the current zoom percentage of the PDF viewer control
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (zoomChange)="zoomChange($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (zoomChange)="zoomChange($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     zoomChange(sender)
     {
@@ -2188,17 +2311,17 @@ Returns the clicked hyperlink
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (hyperlinkClick)="onHyperlinkClicked($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (hyperlinkClick)="onHyperlinkClicked($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-         this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+         this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     onHyperlinkClicked(sender)
     {
@@ -2296,17 +2419,17 @@ Returns the name of the event
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (beforePrint)="beforePrint($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (beforePrint)="beforePrint($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     beforePrint(sender)
     {
@@ -2404,17 +2527,17 @@ Returns the name of the event
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (afterPrint)="afterPrint($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (afterPrint)="afterPrint($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     afterPrint(sender)
     {
@@ -2534,17 +2657,17 @@ Returns the current Y position
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (pageclick)="pageclick($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (pageclick)="pageclick($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     pageclick(sender)
     {
@@ -2697,17 +2820,17 @@ Returns the type of the annotation added in the page of the PDF document.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (annotationAdd)="annotationAdd($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (annotationAdd)="annotationAdd($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     annotationAdd(sender)
     {
@@ -2838,17 +2961,17 @@ Returns the type of the annotation removed from the page of the PDF document.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (annotationRemove)="annotationRemove($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (annotationRemove)="annotationRemove($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     annotationRemove(sender)
     {
@@ -3001,17 +3124,17 @@ Specifies that the opacity of the annotation is changed.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (annotationPropertiesChange)="annotationPropertiesChange($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (annotationPropertiesChange)="annotationPropertiesChange($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-        this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+        this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     annotationPropertiesChange(sender)
     {
@@ -3142,17 +3265,17 @@ Returns the page number in which the signature is added.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (signatureAdd)="signatureAdd($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (signatureAdd)="signatureAdd($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     signatureAdd(sender)
     {
@@ -3261,17 +3384,17 @@ Returns the page number in which the signature is removed.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (signatureDelete)="signatureDelete($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (signatureDelete)="signatureDelete($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     signatureDelete(sender)
     {
@@ -3446,17 +3569,17 @@ Returns the current opacity of the signature.
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (signaturePropertiesChange)="signaturePropertiesChange($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (signaturePropertiesChange)="signaturePropertiesChange($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-         this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+         this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     signaturePropertiesChange(sender)
     {
@@ -3598,17 +3721,17 @@ Returns the previous bounds of the signature resized in the page of the PDF docu
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (signatureResize)="signatureResize($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (signatureResize)="signatureResize($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-         this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+         this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     signatureResize(sender)
     {
@@ -3717,19 +3840,19 @@ Specifies the state of the buffering
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(allowClientBuffering)]="allowClientBuffering" (bufferStart)="bufferStart($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(allowClientBuffering)]="allowClientBuffering" (bufferStart)="bufferStart($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public allowClientBuffering:boolean;
     constructor()
     {
           this.allowClientBuffering = true;
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     bufferStart(sender)
     {
@@ -3838,19 +3961,19 @@ Specifies the state of the buffering
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl"  [(allowClientBuffering)]="allowClientBuffering" (bufferEnd)="bufferEnd($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl"  [(allowClientBuffering)]="allowClientBuffering" (bufferEnd)="bufferEnd($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     public allowClientBuffering:boolean;
     constructor()
     {
           this.allowClientBuffering = true;
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     bufferEnd(sender)
     {
@@ -3948,17 +4071,17 @@ Returns the name of the event
 
 {% highlight html %}
 
-<ej-pdfviewer id="viewer" [(serviceurl)]="serviceurl" (destroy)="destroy($event)"> </ej-pdfviewer> 
+<ej-pdfviewer id="viewer" [(serviceUrl)]="serviceUrl" (destroy)="destroy($event)"> </ej-pdfviewer> 
 
 {% endhighlight html %}
 
 {% highlight ts %}
 
 export class DefaultComponent {
-    public serviceurl:string;
+    public serviceUrl:string;
     constructor()
     {
-          this.serviceurl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
+          this.serviceUrl = "http://js.syncfusion.com/ejservices/api/PdfViewer"; 
     }
     destroy(sender)
     {
