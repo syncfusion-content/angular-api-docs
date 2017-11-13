@@ -113,7 +113,7 @@ Gets or sets an active sheet index in the Spreadsheet. By defining this value, y
 import {Component, ViewEncapsulation} from '@angular/core';
     @Component({
         selector: 'ej-app',
-        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
+        templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file
     })
     export class AppComponent {
         //..
