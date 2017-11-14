@@ -2935,7 +2935,198 @@ Gets or sets the working days of a week in a project.
 #### Example
 
 {% tabs %}{% highlight html %}<ej-gantt id="GanttControl"    [workweek]= "workweek"></ej-gantt>{% endhighlight %}{% highlight ts %}export class AppComponent {    public workweek: any;    constructor() {        this.workweek =  ["Sunday","Monday","Tuesday","Wednesday","Thursday"];    }}{% endhighlight %}{% endtabs %}  
+### viewType `enum`
+{:#members:viewtype}
 
+<ts name = "ej.Gantt.ViewType"/>
+
+Specifies the view type for a project in the Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">ProjectView</td>
+<td class="description">Displays the project in task view in Gantt.</td>
+</tr>
+<tr>
+<td class="name">ResourceView</td>
+<td class="description">Displays the project in resource allocation view in Gantt.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+{:.param}
+
+* ej.Gantt.ViewType.ProjectView
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    [viewType]= "viewType">
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public viewType: any;
+    constructor() {
+        this.viewType = ej.Gantt.ViewType.ResourceView;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### groupCollection `array`
+{:#members:groupcollection}
+
+Specifies the data collection for grouping the resources in resource allocation view in Gantt.
+
+#### Default Value
+{:.param}
+
+* []
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    [groupCollection]= "groups">
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public resources: any;
+    constructor() {
+        this.groups =[{groupId:1; groupName:"Team A" }] ;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### resourceCollectionMapping `string`
+{:#members:resourcecollectionmapping}
+
+Specifies the mapping property path for resource collection in datasource in resource allocation view type.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    resourceCollectionMapping= "resources">
+</ej-gantt>
+
+{% endhighlight %}
+
+### taskCollectionMapping `string`
+{:#members:taskcollectionmapping}
+
+Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    taskCollectionMapping= "tasks">
+</ej-gantt>
+
+{% endhighlight %}
+
+### taskCollectionMapping `string`
+{:#members:taskcollectionmapping}
+
+Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    taskCollectionMapping= "tasks">
+</ej-gantt>
+
+{% endhighlight %}
+
+### groupIdMapping `string`
+{:#members:groupidmapping}
+
+Specifies the mapping property path for group ID in datasource in resource allocation view type.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    groupIdMapping= "groupId">
+</ej-gantt>
+
+{% endhighlight %}
+
+### groupNameMapping `string`
+{:#members:groupnamemapping}
+
+Specifies the mapping property path for group name in datasource in resource allocation view type.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    groupNameMapping= "groupName">
+</ej-gantt>
+
+{% endhighlight %}
 
 ## Methods
 
