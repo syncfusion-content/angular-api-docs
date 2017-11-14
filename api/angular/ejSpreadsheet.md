@@ -1463,7 +1463,7 @@ Gets or sets a value that indicates custom formulas in Spreadsheet.
 
 {% highlight html %}
 
-<ej-spreadsheet id="spreadsheet" [customFormulas]="customformulas">
+<ej-spreadsheet id="spreadsheet" [customFormulas]="formulas">
     </ej-spreadsheet>
 
 {% endhighlight %}
@@ -1476,9 +1476,9 @@ import {Component, ViewEncapsulation} from '@angular/core';
         templateUrl: 'app/app.component.html',  //give the path file for spreadsheet component html file.
     })
     export class AppComponent {
-        public customformulas;
+        public formulas;
         constructor(){
-        this.customformulas=[{
+        this.formulas=[{
 	    formulaName:"CUSTOMTOTAL",
 	    functionName:"customTotal"
      }];
@@ -5049,7 +5049,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
          rows:[
             {
                 cells: [
-                    { value: "AliExpress", hyperlink: { webAddr: "www.aliexpress.com" } }
+                    { value: "Google", hyperlink: { webAddr: "www.google.com" } }
                 ]
             }
         ]
@@ -5091,7 +5091,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
          rows:[
             {
                 cells: [
-                    { value: "AliExpress", hyperlink: { webAddr: "www.aliexpress.com" } }
+                    { value: "Google", hyperlink: { webAddr: "www.google.com" } }
                 ]
             }
         ]
@@ -5133,7 +5133,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
          rows:[
             {
                 cells: [
-                    { value: "AliExpress", hyperlink: { cellAddr: "B2" } }
+                    { value: "Address", hyperlink: { cellAddr: "B2" } }
                 ]
             }
         ]
@@ -5177,7 +5177,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
          rows:[
             {
                 cells: [
-                    { value: "AliExpress", hyperlink: { cellAddr: "B2" , sheetIndex: 2} }
+                    { value: "Address", hyperlink: { cellAddr: "B2" , sheetIndex: 2} }
                 ]
             }
         ]
@@ -6592,7 +6592,7 @@ export class AppComponent {
 ngAfterViewInit(){
     
 let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-let updateFn = function(cell, cellIdx) {
+let update = function(cell, cellIdx) {
 if (cellIdx % 2 == 0)
 return "SpreadSheet";
 else
@@ -6621,7 +6621,7 @@ showPanel: true
 //Update new rangeSettings property before invoking edit range
 xlObj.model.sheets[1].rangeSettings["updateTable"] = rangeSettings;
 //Sends a edit range request to the Spreadsheet
-xlObj.editRange("updateTable", updateFn);
+xlObj.editRange("updateTable", update);
        } 
      }
 
@@ -14063,6 +14063,52 @@ ngAfterViewInit(){
 
 {% endhighlight %}
 
+### XLScroll
+{:#methods:xlscroll}
+
+### XLScroll.scrollToCell(cellAddr)
+{:#methods:xlscroll-scrolltocell}
+
+This method is used to scroll the sheet content to the specified cell address in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">range</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the cell address that you want to scroll to it.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<ej-spreadsheet id="spreadsheet"></ej-spreadsheet>
+    
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+
+ngAfterViewInit(){
+    
+    let xlObj = $("#spreadsheet").data("ejSpreadsheet");
+    // To scroll the sheet to the specified cell address.
+    xlObj.XLScroll.scrollToCell("A30");
+    } 
+ }
+
+{% endhighlight %}
 
 
 ### XLSearch
@@ -14809,7 +14855,7 @@ export class AppComponent {
 ngAfterViewInit(){
     
     let xlObj = $("#spreadsheet").data("ejSpreadsheet");
-    xlObj.XLShape.changePicture('Spreadsheet_picture1', "img.png"); // To change the picture.
+    xlObj.XLShape.changePicture('Spreadsheet_picture1', "image.png"); // To change the picture.
     } 
  }
 
@@ -16090,7 +16136,7 @@ export class AppComponent {
 ### beforeOpen
 {:#events:beforeopen}
 
-Triggered before the contextmenu is open.
+Triggered before the context menu is open.
 
 <table class="params">
 <thead>
@@ -16794,7 +16840,7 @@ export class AppComponent {
 ### contextMenuClick
 {:#events:contextmenuclick}
 
-Triggered when click the contextmenu items.
+Triggered when click the context menu items.
 <table class="params">
 <thead>
 <tr>
