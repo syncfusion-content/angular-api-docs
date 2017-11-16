@@ -500,7 +500,7 @@ Specifies the image content for Split Button while initialization.
     contentType: any;
     prefixIcon: string;
     constructor() {
-      this.contentType = "imageonly";
+      this.contentType = ej.ContentType.ImageOnly;
       this.prefixIcon="e-uiLight e-icon e-handup";
     }
 }
@@ -633,7 +633,7 @@ Specifies the image content for Split Button while initialization.
     suffixIcon: string;
     prefixIcon: string;
     constructor() {
-      this.contentType = "imageboth";
+      this.contentType = ej.ContentType.ImageBoth;
       this.suffixIcon= "e-uiLight e-icon-padlockclosed";
       this.prefixIcon= "e-uiLight e-icon-handup";
     }
@@ -671,7 +671,7 @@ N> Usage of target API is recommended since targetID API is to be deprecated.
 ### target `string`
 {:#members:target}
 
-Specifies the target of splitbutton menu while initialization with ID or class as a selector. 
+Specifies the target of SplitButton menu while initialization with ID or class as a selector. 
 
 #### Default Value
 
