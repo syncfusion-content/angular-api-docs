@@ -1565,11 +1565,11 @@ Gets or sets a value that indicates to add the template for card .
         <e-kanban-column key="Close" headertext="Done"></e-kanban-column>
       </e-kanban-columns>
     </ej-kanban>
-	<script id="template" type="text/x-jsrender">
+	<script id="template" type="text/ng-template">
     <table>
         <tr>
             <td class="photo">
-                <img src="../themes/images/kanban/.png">
+                <img src="../themes/images/kanban/{{:Priority}}.png">
             </td>
             <td class="details">
                 <table>
@@ -1580,11 +1580,11 @@ Gets or sets a value that indicates to add the template for card .
                     <tbody>
                         <tr>
                             <td class="CardHeader">Name: </td>
-                            <td></td>
+                            <td>{{:Assignee}}</td>
                         </tr>
                         <tr>
                             <td class="CardHeader">Task: </td>
-                            <td></td>
+                            <td>{{:Type}}</td>
                         </tr>
                     </tbody>
                 </table>
