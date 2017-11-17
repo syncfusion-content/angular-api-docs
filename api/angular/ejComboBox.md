@@ -369,7 +369,7 @@ Accepts the template design and assigns it to the footer container of the popup 
 {% highlight html %}
 
 
-<input type="text" id="searchbox" ej-combobox [dataSource]="empList" [fields]="fields" [headerTemplate]="headerTemplate" [itemTemplate]="itemTemplate" [footerTemplate]="footerTemplate"/>
+<input type="text" id="searchbox" ej-combobox [dataSource]="List" [fields]="fields" [headerTemplate]="headerTemplate" [itemTemplate]="itemTemplate" [footerTemplate]="footerTemplate"/>
 
 {% endhighlight %}
 
@@ -377,7 +377,7 @@ Accepts the template design and assigns it to the footer container of the popup 
 
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
-        this.empList = [
+        this.List = [
         { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
         { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
         { text: 'Business', image: '3', status: 'Available', country: 'England' },
@@ -407,7 +407,7 @@ Accepts the template design and assigns it to the group headers present in the p
 {% highlight html %}
 
 
-<input type="text" id="searchbox" ej-combobox [dataSource]="empList" [fields]="fields" [groupTemplate]="groupTemplate"/>
+<input type="text" id="searchbox" ej-combobox [dataSource]="List" [fields]="fields" [groupTemplate]="groupTemplate"/>
 
 {% endhighlight %}
 
@@ -415,7 +415,7 @@ Accepts the template design and assigns it to the group headers present in the p
 
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
-        this.empList = [
+        this.List = [
         { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
         { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
         { text: 'Business', image: '3', status: 'Available', country: 'England' },
@@ -442,7 +442,7 @@ Accepts the template design and assigns it to the header container of the popup 
 {% highlight html %}
 
 
-<input type="text" id="searchbox" ej-combobox [dataSource]="empList" [fields]="fields" [headerTemplate]="headerTemplate" [itemTemplate]="itemTemplate" [footerTemplate]="footerTemplate"/>
+<input type="text" id="searchbox" ej-combobox [dataSource]="List" [fields]="fields" [headerTemplate]="headerTemplate" [itemTemplate]="itemTemplate" [footerTemplate]="footerTemplate"/>
 
 {% endhighlight %}
 
@@ -450,7 +450,7 @@ Accepts the template design and assigns it to the header container of the popup 
 
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
-        this.empList = [
+        this.List = [
         { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
         { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
         { text: 'Business', image: '3', status: 'Available', country: 'England' },
@@ -547,7 +547,7 @@ Accepts the template design and assigns it to each list item present in the popu
 {% highlight html %}
 
 
-<input type="text" id="searchbox" ej-combobox [dataSource]="empList" [fields]="fields" [headerTemplate]="headerTemplate" [itemTemplate]="itemTemplate" [footerTemplate]="footerTemplate"/>
+<input type="text" id="searchbox" ej-combobox [dataSource]="List" [fields]="fields" [headerTemplate]="headerTemplate" [itemTemplate]="itemTemplate" [footerTemplate]="footerTemplate"/>
 
 {% endhighlight %}
 
@@ -555,7 +555,7 @@ Accepts the template design and assigns it to each list item present in the popu
 
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
-        this.empList = [
+        this.List = [
         { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
         { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
         { text: 'Business', image: '3', status: 'Available', country: 'England' },
@@ -598,7 +598,7 @@ Overrides the global culture and localization value for this component. Default 
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
-		this.locale= "de-DE";
+		this.locale= "en-US";
     }
 
     
@@ -1407,7 +1407,7 @@ Triggers when an item in a popup is selected or when the model value is changed.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (ejchange)="onchange(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (ejchange)="change(args)" />
 
 {% endhighlight %}
 
@@ -1419,7 +1419,7 @@ Triggers when an item in a popup is selected or when the model value is changed.
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    onchange(args) {
+    change(args) {
         // Your code here
     }
 
