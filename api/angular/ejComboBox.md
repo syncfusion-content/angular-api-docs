@@ -49,7 +49,7 @@ Accepts the template and assigns it to the popup list content of the component w
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -79,7 +79,7 @@ Specifies whether the component allows user defined value which does not exist i
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -110,7 +110,7 @@ When allowFiltering is set to true, show the filter bar (search box) of the comp
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -141,7 +141,7 @@ Specifies whether suggest a first matched item in input when searching. No actio
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -172,7 +172,7 @@ Sets CSS classes to the root element of the component that helps customize the U
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -212,7 +212,7 @@ Accepts the list items either through local or remote service and binds it to th
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -243,7 +243,7 @@ When set to true, enables RTL mode of the component that displays the content in
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -274,7 +274,7 @@ Specifies a value that indicates whether the component is enabled or not.
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -378,14 +378,14 @@ Accepts the template design and assigns it to the footer container of the popup 
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
         this.empList = [
-        { text: 'Mona Sak', eimg: '1', status: 'Available', country: 'USA'  },
-        { text: 'Kapil Sharma', eimg: '2', status: 'Available', country: 'USA' },
-        { text: 'Erik Linden', eimg: '3', status: 'Available', country: 'England' },
-        { text: 'Kavi Tam', eimg: '4', status: 'Available', country: 'England' },
-        { text: "Harish Sree", eimg: "5", status: "Available", country: 'USA' },
+        { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
+        { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
+        { text: 'Business', image: '3', status: 'Available', country: 'England' },
+        { text: 'ComputerIT', image: '4', status: 'Available', country: 'England' },
+        { text: "Comics", image: "5", status: "Available", country: 'USA' }
    		 ];
 		this.headerTemplate= '<div class="head">  Photo  <span style="padding-left:42px"> Contact Info </span></div>';
-        this.itemTemplate= '<div><img class="eimg" src="${eimg}.png" alt="employee"/>' +
+        this.itemTemplate= '<div><img class="image" src="${image}.png" alt="employee"/>' +
             '<div class="ename"> ${text} </div><div class="temp"> ${country} </div></div>';
         this.footerTemplate= '<div class="Foot"> Total Items Count: 5 </div>';
 
@@ -416,11 +416,11 @@ Accepts the template design and assigns it to the group headers present in the p
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
         this.empList = [
-        { text: 'Mona Sak', eimg: '1', status: 'Available', country: 'USA'  },
-        { text: 'Kapil Sharma', eimg: '2', status: 'Available', country: 'USA' },
-        { text: 'Erik Linden', eimg: '3', status: 'Available', country: 'England' },
-        { text: 'Kavi Tam', eimg: '4', status: 'Available', country: 'England' },
-        { text: "Harish Sree", eimg: "5", status: "Available", country: 'USA' },
+        { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
+        { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
+        { text: 'Business', image: '3', status: 'Available', country: 'England' },
+        { text: 'ComputerIT', image: '4', status: 'Available', country: 'England' },
+        { text: "Comics", image: "5", status: "Available", country: 'USA' }
    		 ];
 		this.groupTemplate = '<div class="group"> ${country} </div>';
 
@@ -451,14 +451,14 @@ Accepts the template design and assigns it to the header container of the popup 
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
         this.empList = [
-        { text: 'Mona Sak', eimg: '1', status: 'Available', country: 'USA'  },
-        { text: 'Kapil Sharma', eimg: '2', status: 'Available', country: 'USA' },
-        { text: 'Erik Linden', eimg: '3', status: 'Available', country: 'England' },
-        { text: 'Kavi Tam', eimg: '4', status: 'Available', country: 'England' },
-        { text: "Harish Sree", eimg: "5", status: "Available", country: 'USA' },
+        { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
+        { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
+        { text: 'Business', image: '3', status: 'Available', country: 'England' },
+        { text: 'ComputerIT', image: '4', status: 'Available', country: 'England' },
+        { text: "Comics", image: "5", status: "Available", country: 'USA' }
    		 ];
 		this.headerTemplate= '<div class="head">  Photo  <span style="padding-left:42px"> Contact Info </span></div>';
-        this.itemTemplate= '<div><img class="eimg" src="${eimg}.png" alt="employee"/>' +
+        this.itemTemplate= '<div><img class="image" src="${image}.png" alt="employee"/>' +
             '<div class="ename"> ${text} </div><div class="temp"> ${country} </div></div>';
         this.footerTemplate= '<div class="Foot"> Total Items Count: 5 </div>';
 
@@ -489,7 +489,7 @@ Allows additional HTML attributes such as title, name, etc., and accepts n numbe
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -523,7 +523,7 @@ Gets or sets the index of the selected item in the component.
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -556,14 +556,14 @@ Accepts the template design and assigns it to each list item present in the popu
     constructor() {
         this.fields = { text: 'text', groupBy: 'country'};
         this.empList = [
-        { text: 'Mona Sak', eimg: '1', status: 'Available', country: 'USA'  },
-        { text: 'Kapil Sharma', eimg: '2', status: 'Available', country: 'USA' },
-        { text: 'Erik Linden', eimg: '3', status: 'Available', country: 'England' },
-        { text: 'Kavi Tam', eimg: '4', status: 'Available', country: 'England' },
-        { text: "Harish Sree", eimg: "5", status: "Available", country: 'USA' },
+        { text: 'Architecture', image: '1', status: 'Available', country: 'USA'  },
+        { text: 'Biographies', image: '2', status: 'Available', country: 'USA' },
+        { text: 'Business', image: '3', status: 'Available', country: 'England' },
+        { text: 'ComputerIT', image: '4', status: 'Available', country: 'England' },
+        { text: "Comics", image: "5", status: "Available", country: 'USA' }
    		 ];
 		this.headerTemplate= '<div class="head">  Photo  <span style="padding-left:42px"> Contact Info </span></div>';
-        this.itemTemplate= '<div><img class="eimg" src="${eimg}.png" alt="employee"/>' +
+        this.itemTemplate= '<div><img class="image" src="${image}.png" alt="employee"/>' +
             '<div class="ename"> ${text} </div><div class="temp"> ${country} </div></div>';
         this.footerTemplate= '<div class="Foot"> Total Items Count: 5 </div>';
 
@@ -594,7 +594,7 @@ Overrides the global culture and localization value for this component. Default 
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -628,7 +628,7 @@ Accepts the template design and assigns it to popup list of component when no da
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -663,7 +663,7 @@ Accepts the value to be displayed as a watermark text on the component input.
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -696,7 +696,7 @@ Specifies the height of the popup list.
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -729,7 +729,7 @@ Specifies the width of the popup list. By default, the popup width sets based on
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -761,7 +761,7 @@ The query to retrieve the data from the data source.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
     }
     
@@ -788,7 +788,7 @@ When set to true, the user interactions on the component are disabled.
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -820,7 +820,7 @@ Specifies whether to show or hide the clear button. When the clear button is cli
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -873,7 +873,7 @@ Specifies the sortOrder to sort the data source. The available type of sort orde
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -903,7 +903,7 @@ Gets or sets the display text of the selected item in the component.
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -933,7 +933,7 @@ Gets or sets the value of the selected item in the component.
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -963,7 +963,7 @@ Specifies the width of the component. By default, the component width sets based
 
     constructor() {
         this.language = ['ActionScript', 'AppleScript', 'ASP', 'BASIC', 'BeanShell',
-            'C', 'C++', 'C#', 'Clojure', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
+            'C', 'C++', 'C#', 'COBOL', 'ColdFusion', 'DataFlex', 'DCL',
             'Erlang', 'E#', 'Fortran', 'F#', 'Flex', 'Google Apps Script', 'Groovy', 'Haskell', 'Hope', 'IBM HAScript',
             'Java', 'JavaScript', 'J#', 'Lisp', 'MATLAB', 'Oak', 'Perl', 'PHP',
             'Python', 'Ruby', 'Scala', 'Scheme', 'T-SQL', 'WebQL', 'ZOPL'];
@@ -1207,7 +1207,7 @@ Triggers before fetching data from the remote server.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (actionBegin)="actionbegin(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (actionBegin)="actioning(args)" />
 
 {% endhighlight %}
 
@@ -1215,11 +1215,11 @@ Triggers before fetching data from the remote server.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    actionbegin(args) {
+    actioning(args) {
         // Your code here
     }
     
@@ -1270,7 +1270,7 @@ N> It internally uses jQuery ajaxComplete event. For details refer [here](http:/
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (actionComplete)="actioncomplete(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (actionComplete)="actioning(args)" />
 
 {% endhighlight %}
 
@@ -1278,11 +1278,11 @@ N> It internally uses jQuery ajaxComplete event. For details refer [here](http:/
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    actioncomplete(args) {
+    actioning(args) {
         // Your code here
     }
 
@@ -1332,7 +1332,7 @@ Triggers when the data fetch request from the remote server fails.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (actionFailure)="actionfailure(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (actionFailure)="actioning(args)" />
 
 {% endhighlight %}
 
@@ -1340,11 +1340,11 @@ Triggers when the data fetch request from the remote server fails.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/ds', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/ds', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    actionfailure(args) {
+    actioning(args) {
         // Your code here
     }
 
@@ -1415,7 +1415,7 @@ Triggers when an item in a popup is selected or when the model value is changed.
 
     constructor() {
         this.fields = { text: 'ContactName', key: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
@@ -1439,7 +1439,7 @@ Triggers when the popup is closed.
 <tr>
 <td>popup<br/></td>
 <td>object<br/></td>
-<td>Element of the combobox popuplist<br/></td>
+<td>Element of the combobox popup list<br/></td>
 </tr>
 </table>
 
@@ -1448,7 +1448,7 @@ Triggers when the popup is closed.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (close)="onclose(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (close)="close(args)" />
 
 {% endhighlight %}
 
@@ -1456,11 +1456,11 @@ Triggers when the popup is closed.
 
     constructor() {
         this.fields = { text: 'ContactName', key: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    onclose(args) {
+    close(args) {
         // Your code here
     }
 
@@ -1499,7 +1499,7 @@ Triggers when ComboBox widget is created.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (create)="oncreate(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (create)="create(args)" />
 
 {% endhighlight %}
 
@@ -1507,11 +1507,11 @@ Triggers when ComboBox widget is created.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    oncreate(args) {
+    create(args) {
         // Your code here
     }
     
@@ -1550,7 +1550,7 @@ Triggers on set a custom value to this component.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (customValueSpecifier)="oncustomValueSpecifier(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (customValueSpecifier)="custom(args)" />
 
 {% endhighlight %}
 
@@ -1558,11 +1558,11 @@ Triggers on set a custom value to this component.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    oncustomValueSpecifier(args) {
+    custom(args) {
         // Your code here
     }
     
@@ -1607,7 +1607,7 @@ Triggers on typing a character in the component.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (filtering)="onfiltering(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (filtering)="filtering(args)" />
 
 {% endhighlight %}
 
@@ -1615,11 +1615,11 @@ Triggers on typing a character in the component.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    onfiltering(args) {
+    filtering(args) {
         // Your code here
     }
     
@@ -1659,7 +1659,7 @@ Triggers when the component is focused.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (focus)="onfocus(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (focus)="focus(args)" />
 
 {% endhighlight %}
 
@@ -1667,11 +1667,11 @@ Triggers when the component is focused.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    onfocus(args) {
+    focus(args) {
         // Your code here
     }
     
@@ -1691,7 +1691,7 @@ Triggers after the suggestion list is opened.
 <tr>
 <td>popup<br/></td>
 <td>object<br/></td>
-<td>Element of the combobox popuplist<br/></td>
+<td>Element of the combobox popup list<br/></td>
 </tr>
 </table>
 
@@ -1700,7 +1700,7 @@ Triggers after the suggestion list is opened.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (open)="onopen(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (open)="open(args)" />
 
 {% endhighlight %}
 
@@ -1708,11 +1708,11 @@ Triggers after the suggestion list is opened.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    onopen(args) {
+    open(args) {
         // Your code here
     }
     
@@ -1781,7 +1781,7 @@ Triggers when an item in the popup is selected.
 {% highlight html %}
 
 
-<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (select)="onselect(args)" />
+<input id="databindingremote" type="text" ej-combobox [query]="query" [fields]="fields" placeholder="Search a customer" [dataSource]="dataManger" (select)="select(args)" />
 
 {% endhighlight %}
 
@@ -1789,11 +1789,11 @@ Triggers when an item in the popup is selected.
 
     constructor() {
         this.fields = { text: 'ContactName', value: 'SupplierID' };
-        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); // eslint-disable-line new-cap
+        this.dataManger = ej.DataManager({ url: 'http://js.syncfusion.com/ejServices/wcf/NorthWind.svc/', crossDomain: true }); 
         this.query = ej.Query().from('Suppliers').select('SupplierID', 'ContactName');
 
     }
-    onselect(args) {
+    select(args) {
         // Your code here
     }
     
