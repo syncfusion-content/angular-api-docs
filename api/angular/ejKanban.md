@@ -1569,7 +1569,7 @@ Gets or sets a value that indicates to add the template for card .
     <table>
         <tr>
             <td class="photo">
-                <img src="../themes/images/kanban/{{:Priority}}.png">
+                <img src="../themes/images/kanban/{% raw %}{{:Priority}}{% endraw %}.png">
             </td>
             <td class="details">
                 <table>
@@ -1580,11 +1580,11 @@ Gets or sets a value that indicates to add the template for card .
                     <tbody>
                         <tr>
                             <td class="CardHeader">Name: </td>
-                            <td>{{:Assignee}}</td>
+                            <td>{% raw %}{{:Assignee}}{% endraw %}</td>
                         </tr>
                         <tr>
                             <td class="CardHeader">Task: </td>
-                            <td>{{:Type}}</td>
+                            <td>{% raw %}{{:Type}}{% endraw %}</td>
                         </tr>
                     </tbody>
                 </table>
