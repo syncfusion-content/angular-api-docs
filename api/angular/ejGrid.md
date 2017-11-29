@@ -16282,6 +16282,78 @@ onRowDeselecting(e: any){
 
 {% endhighlight %}
 
+### rowHover
+{:#events:rowHover}
+
+Triggered while hover the grid row.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowHover event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">row</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered row index.</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered record details</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered row cell</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+  
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+  <ej-grid #grid  [dataSource]="gridData" (rowHover)="onRowHover($event)"> 
+  
+{% endhighlight %}
+
+{% highlight ts %}
+
+onRowHover(e: any){ 
+             //Do Something.
+  }
+
+{% endhighlight %}
+
 ### templateRefresh
 {:#events:templaterefresh}
 
