@@ -4409,6 +4409,10 @@ Enables/Disables the default behaviors of the diagram.
             <td class="name">APIUpdate</td>
             <td class="description last">Enables/Disables interaction done with the help of API methods</td>
        </tr>
+        <tr>
+            <td class="name">AllowDrop</td>
+            <td class="description last">It shows highlighter on elements when we drag any elements and mouse hover onto the another element</td>
+       </tr>
        <tr>
             <td class="name">UserInteraction</td>
             <td class="description last">Enables/Disables UserInteraction</td>
