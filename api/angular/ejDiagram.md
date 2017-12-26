@@ -4411,7 +4411,7 @@ Enables/Disables the default behaviors of the diagram.
        </tr>
         <tr>
             <td class="name">AllowDrop</td>
-            <td class="description last">It shows highlighter on elements when we drag any elements and mouse hover onto the another element</td>
+            <td class="description last">It shows highlighter on element when we drag any elements and mouse hover onto the another element</td>
        </tr>
        <tr>
             <td class="name">UserInteraction</td>
