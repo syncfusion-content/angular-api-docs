@@ -681,7 +681,7 @@ Defines the width of the line bridges
         },
         {
             name:"connector2",
-            sourcePonint:{
+            sourcePoint:{
                 x:1000,
                 y:1000
             },
@@ -2277,7 +2277,7 @@ Defines the minimum space to be left between the bottom of parent bounds and the
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
 
@@ -2315,7 +2315,7 @@ Defines the minimum space to be left between the left of parent bounds and the c
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
         
@@ -2354,7 +2354,7 @@ Defines the minimum space to be left between the right of parent bounds and the 
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
         
@@ -2392,7 +2392,7 @@ Defines the minimum space to be left between the top of parent bounds and the co
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
         
@@ -5861,19 +5861,19 @@ Defines the type of the rendering mode of label.
     </thead>
     <tbody>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Sets the labelRenderingMode as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Sets the labelRenderingMode as HTML</td>
         </tr>
         <tr>
-            <td class="name">Svg</td>
-            <td class="description last">Sets the labelRenderingMode as Svg</td>
+            <td class="name">SVG</td>
+            <td class="description last">Sets the labelRenderingMode as SVG</td>
         </tr>
     </tbody>
 </table>
 
 #### Default Value:
 
-* Html
+* HTML
 
 #### Example
 
@@ -8669,8 +8669,7 @@ Describes the transparency level of the region
 this.nodes=[
             {
                 name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
-                gradient:{ type:"radial", 
-                   fx:50, fy:50, cx:50, cy:70,
+                gradient:{ type:"radial", fx:50, fy:50, cx:50, cy:70,
                    stops:[
                    {color:"white", offset:0 }, 
                    //Sets the opacity
@@ -13759,7 +13758,7 @@ Defines the position of the user handle
 {% highlight ts %}
 
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
-cloneHandle.position =" middleleft";
+cloneHandle.position ="middleleft";
 let userHandle;
 userHandle = userHandle.push(cloneHandle);
 this.selectedItems={userHandles:userHandle};
@@ -13828,7 +13827,7 @@ Defines the visibility of the user handle
 {% highlight ts %}
 
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
-cloneHandle.visibe = "true";
+cloneHandle.visible = "true";
 let userHandle;
 userHandle = userHandle.push(cloneHandle);
 this.selectedItems={userHandles:userHandle};
@@ -14159,7 +14158,7 @@ Defines the color of the vertical marker brush.
 
 {% highlight ts %}
 
-this.rulerSettings = {verticalRuler:{tmarkerColor: "pink" } };
+this.rulerSettings = {verticalRuler:{markerColor: "pink" } };
 
 {% endhighlight %}
 
@@ -14567,7 +14566,7 @@ An object that defines the description, appearance and alignments of tooltips
  {% highlight ts %}
 
 this.Nodes = [{
-	    name: "elizabeth",width: 70,height: 40,	offsetX: 100,offsetY: 100,
+	    name: "Elizabeth",width: 70,height: 40,	offsetX: 100,offsetY: 100,
 		Designation: "Managing Director"
 				constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default & ~ ej.datavisualization.Diagram.ConnectorConstraints.InheritTooltip, 
 		}];
@@ -15055,7 +15054,7 @@ Add a collection of ports to the node specified by name
 
 // Defines a collection of ports that have to be added at runtime
 let port = [{
-        offset: { x: 0, y: 0.5 }, name: "aport", fillColor: "yellow"}, { offset: { x: 0.5, y: 0.5 }, name: "bport", fillColor: "yellow"
+        offset: { x: 0, y: 0.5 }, name: "port1", fillColor: "yellow"}, { offset: { x: 0.5, y: 0.5 }, name: "port2", fillColor: "yellow"
     },
     
 ];
@@ -15740,7 +15739,7 @@ Insert a label into a node's label collection at runtime
 {% highlight ts %}
 
 ngAfterViewInit() {
-this.diagram.widget.insertLabel(nodename,{fontColor:"red", text:"newLabel"},0)        
+this.diagram.widget.insertLabel(node.name,{fontColor:"red", text:"newLabel"},0)        
     }
 
     @ViewChild('diagram') Diagram: EJComponents<any,any>;
@@ -17210,7 +17209,7 @@ Triggers when the connectors' target point is changed
 
 {% highlight ts %}
 
- connectorTargetChnage(args:any){
+ connectorTargetChange(args:any){
 //doSomething.
     }
 
@@ -18077,7 +18076,7 @@ Triggers when mouse enters a node/connector
 
 {% highlight ts %}
 
-//mouseEnt event for diagram
+//mouseEvent event for diagram
  mouseEnter(args:any){
 //doSomething.
     }
