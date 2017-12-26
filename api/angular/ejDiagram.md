@@ -3159,7 +3159,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				shape: {type: "umlClassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Aggregation,
+				shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Aggregation,
                  }
 	    }];
 
@@ -3216,7 +3216,7 @@ Sets the type of the multiplicity. Applicable, if the connector is of type "clas
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlClassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:{type: ej.datavisualization.Diagram.Multiplicity.OneToMany}
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:{type: ej.datavisualization.Diagram.Multiplicity.OneToMany}
                  }
 	    }];
 
@@ -3281,7 +3281,7 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlClassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{
                           type: ej.datavisualization.Diagram.Multiplicity.OneToMany, source: { optional: true, lowerBounds: 89, upperBounds: 67 }}
                  }
@@ -3306,7 +3306,7 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlClassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{
                           type: ej.datavisualization.Diagram.Multiplicity.OneToMany, 
                           source: { optional: true, 
@@ -3332,7 +3332,7 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlClassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{
                           type: ej.datavisualization.Diagram.Multiplicity.OneToMany, 
                           source: { optional: true, lowerBounds: 1, upperBounds: 10 }}
@@ -3359,7 +3359,7 @@ Defines the target label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlClassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{type: ej.datavisualization.Diagram.Multiplicity.OneToMany,
                           source: { optional: true, lowerBounds: 1, upperBounds: 10 },
                           target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
@@ -3416,7 +3416,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				shape: { type: "umlactivity", activityFlow: ej.datavisualization.Diagram.UMLActivityFlow.Exception }
+				shape: { type: ej.datavisualization.Diagram.ConnectorShapes.UMLActivity, activityFlow: ej.datavisualization.Diagram.UMLActivityFlow.Exception }
 	    }];
         {% endhighlight %}
 
@@ -6535,7 +6535,7 @@ Sets the height of the text annotation
 {% highlight ts %}
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier"
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier
         },
 
         {% endhighlight %}
@@ -6751,7 +6751,7 @@ Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram 
 {% highlight ts %}
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
         },
 
         {% endhighlight %}
@@ -6771,7 +6771,7 @@ Defines the name, attributes and methods of a Class. Applicable, if the node is 
 {% highlight ts %}
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
         },
 
         {% endhighlight %}
@@ -6790,7 +6790,7 @@ Sets the name of class.
 {% highlight html %}
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", }
         },];
         {% endhighlight %}
@@ -6811,7 +6811,7 @@ Defines the collection of attributes
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted",}], },
         },];
 
@@ -6833,7 +6833,7 @@ Sets the name of the attribute
 
 this.nodes=[
             {
-                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted" }], },
         },];
 
@@ -6855,7 +6855,7 @@ Sets the data type of attribute
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted", type: "Date", }], },
         },]
 
@@ -6876,7 +6876,7 @@ Defines the visibility of the attribute
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted", type: "Date", scope:"protected" }], },
         },]
 
@@ -6898,7 +6898,7 @@ Defines the collection of methods of a Class.
 
 this.nodes=[
             {
-               name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+               name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", methods: [{ name: "getHistory" }]  },
         },]
 
@@ -6920,7 +6920,7 @@ Sets the name of the method.
 
  this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], }]  },
         },]
 
@@ -6941,7 +6941,7 @@ Defines the arguments of the method.
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date",type:"String" }], }]  },
         }]
 
@@ -6961,7 +6961,7 @@ Sets the name of the argument
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },
         },]
 
@@ -6982,7 +6982,7 @@ Sets the type of the argument
 
 this.nodes=[
             {
-                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
           class: {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },
         },]
 
@@ -7005,7 +7005,7 @@ Sets the return type of the method
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
           class: {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },
         },]
 
@@ -7026,7 +7026,7 @@ Sets the visibility of the method.
 
 this.nodes=[
             {
-             name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+             name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
           "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History",scope:"protected" }]  },]
 
 {% endhighlight %}
@@ -7724,7 +7724,7 @@ Defines an Enumeration in a UML Class Diagram
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", }
         },
         
@@ -7749,7 +7749,7 @@ Sets the name of the Enumeration
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", }
         },
         
@@ -7773,7 +7773,7 @@ Defines the collection of enumeration members
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", members: [{ name: "CheckingAccount"}]}
         },
         
@@ -7797,7 +7797,7 @@ Sets the name of the enumeration member
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", members: [{ name: "CheckingAccount"}]}
         },
         
@@ -8836,7 +8836,7 @@ Defines an interface in a UML Class Diagram
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface
             
         },
     ];
@@ -8858,7 +8858,7 @@ Sets the name of the interface
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",}
             
         },
@@ -8882,7 +8882,7 @@ Defines a collection of attributes of the interface
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar"}], },
             
         },
@@ -8906,7 +8906,7 @@ Sets the name of the attribute
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar"}], },
             
         },
@@ -8930,7 +8930,7 @@ Sets the type of the attribute
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar",  type: "String[*]" ,  }], },
             
         },
@@ -8954,7 +8954,7 @@ Sets the visibility of the attribute
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar",  type: "String[*]",scope:"protected" }], },
             
         },
@@ -8978,7 +8978,7 @@ Defines the collection of public methods of an interface
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", }]  },
             
         },
@@ -9002,7 +9002,7 @@ Sets the name of the method.
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", }]  },
             
         },
@@ -9026,7 +9026,7 @@ Defines the collection of arguments of a method
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", }],  }]  },
             
         },
@@ -9050,7 +9050,7 @@ Sets the name of the argument
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", }],  }]  },
             
         },
@@ -9074,7 +9074,7 @@ Sets the type of the argument
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  }]  },
             
         },
@@ -9098,7 +9098,7 @@ Sets the return type of the method
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  type:"account"}]  },
             
         },
@@ -9122,7 +9122,7 @@ Sets the visibility of the method
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  type:"account",scope:"private"}]  },
             
         },
@@ -13758,7 +13758,7 @@ Defines the position of the user handle
 {% highlight ts %}
 
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
-cloneHandle.position ="middleleft";
+cloneHandle.position =ej.datavisualization.Diagram.UserHandlePositions.MiddleLeft;
 let userHandle;
 userHandle = userHandle.push(cloneHandle);
 this.selectedItems={userHandles:userHandle};
