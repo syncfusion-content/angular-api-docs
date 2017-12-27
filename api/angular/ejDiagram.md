@@ -681,7 +681,7 @@ Defines the width of the line bridges
         },
         {
             name:"connector2",
-            sourcePonint:{
+            sourcePoint:{
                 x:1000,
                 y:1000
             },
@@ -2277,7 +2277,7 @@ Defines the minimum space to be left between the bottom of parent bounds and the
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
 
@@ -2315,7 +2315,7 @@ Defines the minimum space to be left between the left of parent bounds and the c
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
         
@@ -2354,7 +2354,7 @@ Defines the minimum space to be left between the right of parent bounds and the 
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
         
@@ -2392,7 +2392,7 @@ Defines the minimum space to be left between the top of parent bounds and the co
 	            //Set the horizontal alignment
 	            horizontalAlign: ej.datavisualization.Diagram.HorizontalAlignment.Right
 	        }],
-	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"grey"
+	        container:{type:"canvas"},offsetX:200,offsetY:100,minWidth:200,minHeight:200,fillColor:"gray"
 	
 	    }];
         
@@ -3159,7 +3159,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Aggregation,
+				shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Aggregation,
                  }
 	    }];
 
@@ -3216,7 +3216,7 @@ Sets the type of the multiplicity. Applicable, if the connector is of type "clas
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:{type: "onetomany"}
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, multiplicity:{type: ej.datavisualization.Diagram.Multiplicity.OneToMany}
                  }
 	    }];
 
@@ -3281,9 +3281,9 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{
-                          type: "onetomany", source: { optional: true, lowerBounds: 89, upperBounds: 67 }}
+                          type: ej.datavisualization.Diagram.Multiplicity.OneToMany, source: { optional: true, lowerBounds: 89, upperBounds: 67 }}
                  }
 	    }];
 
@@ -3306,9 +3306,9 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{
-                          type: "onetomany", 
+                          type: ej.datavisualization.Diagram.Multiplicity.OneToMany, 
                           source: { optional: true, 
                               lowerBounds: 1, upperBounds: 10 }}
                  }
@@ -3332,9 +3332,9 @@ Defines the source label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
                       multiplicity:{
-                          type: "onetomany", 
+                          type: ej.datavisualization.Diagram.Multiplicity.OneToMany, 
                           source: { optional: true, lowerBounds: 1, upperBounds: 10 }}
                  }
 	    }];
@@ -3359,8 +3359,8 @@ Defines the target label to connector. Applicable, if the connector is of type "
 
 this.connectors = [{
 	       name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
-                  shape: {type: "umlclassifier", relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
-                      multiplicity:{type: "onetomany",
+                  shape: {type: ej.datavisualization.Diagram.ConnectorShapes.UMLClassifier, relationship: ej.datavisualization.Diagram.ClassifierShapes.Dependency, 
+                      multiplicity:{type: ej.datavisualization.Diagram.Multiplicity.OneToMany,
                           source: { optional: true, lowerBounds: 1, upperBounds: 10 },
                           target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
                  }
@@ -3416,7 +3416,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				shape: { type: "umlactivity", activityFlow: ej.datavisualization.Diagram.UMLActivityFlow.Exception }
+				shape: { type: ej.datavisualization.Diagram.ConnectorShapes.UMLActivity, activityFlow: ej.datavisualization.Diagram.UMLActivityFlow.Exception }
 	    }];
         {% endhighlight %}
 
@@ -3443,7 +3443,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				sourceDecorator : { shape:"openarrow" }
+				sourceDecorator : { shape:ej.datavisualization.Diagram.DecoratorShapes.OpenArrow }
 	    }];
 
 {% endhighlight %}
@@ -3471,7 +3471,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				sourceDecorator : { shape:"openarrow" ,borderColor:"red"}
+				sourceDecorator : { shape:ej.datavisualization.Diagram.DecoratorShapes.OpenArrow ,borderColor:"red"}
 	    }];
 
 {% endhighlight %}
@@ -3500,7 +3500,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				sourceDecorator : { shape:"openarrow" ,borderWidth:5}
+				sourceDecorator : { shape:ej.datavisualization.Diagram.DecoratorShapes.OpenArrow ,borderWidth:5}
 	    }];
 
 {% endhighlight %}
@@ -3872,7 +3872,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				targetDecorator : { shape:"openarrow" },
+				targetDecorator : { shape:ej.datavisualization.Diagram.DecoratorShapes.OpenArrow },
 		}];
 
 {% endhighlight %}
@@ -3900,7 +3900,7 @@ this.connectors = [{
 	                x: 200,
 	                y: 200
 	            },
-				targetDecorator : { shape:"openarrow", borderColor:"red" },
+				targetDecorator : { shape:ej.datavisualization.Diagram.DecoratorShapes.OpenArrow, borderColor:"red" },
 		}];
 
 {% endhighlight %}
@@ -4161,7 +4161,7 @@ this.nodes = [{
 	this.connectors = [{
 	    name: "connector1",
 	    sourcePoint:{x:100,y:100},
-        targetpoint:{x:200,y:200},				  
+        targetPoint:{x:200,y:200},				  
 	}];
 {% endhighlight %}
 
@@ -4227,7 +4227,7 @@ this.connectors = [{
 				constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default & ~ ej.datavisualization.Diagram.ConnectorConstraints.InheritTooltip, 
 		}];
 		this.tooltip = {
-				templateId:"mouseovertooltip",
+				templateId:"mouseOverTooltip",
 								};
 	}	
 	};
@@ -4380,7 +4380,7 @@ this.connectors = [{
                 zOrder: 1000,
 		}];
 
-        this.conectorTemplate = function (diagram, connector) {
+        this.connectorTemplate = function (diagram, connector) {
             connector.lineColor="green";
         };
 	
@@ -4408,6 +4408,10 @@ Enables/Disables the default behaviors of the diagram.
        <tr>
             <td class="name">APIUpdate</td>
             <td class="description last">Enables/Disables interaction done with the help of API methods</td>
+       </tr>
+        <tr>
+            <td class="name">AllowDrop</td>
+            <td class="description last">It shows highlighter on element when we drag any elements and mouse hover onto the another element</td>
        </tr>
        <tr>
             <td class="name">UserInteraction</td>
@@ -4631,7 +4635,7 @@ Defines the image url for the collection of context menu items
         items: [{
             name: "hyperLink",
             text: "hyperLink",
-            image:"Images/zoomin.png",
+            image:"Images/zoomIn.png",
             "style:""",
         }],
         showCustomMenuItemsOnly: true
@@ -4661,7 +4665,7 @@ Defines the CssClass for the collection of context menu items
 
 
 <style>
-    .menuplace{
+    .menuPlace{
             background-size:14px 14px;
             }
 </style>
@@ -4678,8 +4682,8 @@ Defines the CssClass for the collection of context menu items
         items: [{
             name: "hyperLink",
             text: "hyperLink",
-            image:"Images/zoomin.png",
-            "cssClass":"menuplace",
+            image:"Images/zoomIn.png",
+            "cssClass":"menuPlace",
             "style:""",
         }],
         };
@@ -5604,10 +5608,10 @@ A method that takes a history entry as argument and returns whether the specific
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 
 //Add a change to history manager
-        let entry =  { object: this.node, prevState: this.node.empInfo };
+        let entry =  { object: this.node, prevState: this.node.EmployeeInfo };
         this.diagram.widget.model.historyManager.push(entry);
         let newValues = { role: "New role" };
-        this.node.empInfo = newValues;
+        this.node.EmployeeInfo = newValues;
         //Pop if the change doesn't need to be tracked
         if(this.diagram.widget.model.historyManager.canPop(entry))
         this.diagram.widget.model.historyManager.pop();
@@ -5672,12 +5676,12 @@ A method that allows to track the custom changes made in diagram
 @ViewChild('diagram') diagram: EJComponents<any, any>;
 //Pop the last change
 //Creates a custom entry and adds that to history manager
-let entry = { object: node, prevState: node.empInfo };
+let entry = { object: node, prevState: node.EmployeeInfo };
 this.diagram.widget.model.historyManager.push(entry);
 
 //Updates the new information
 let newValue = { role: "New role" };
-node.empInfo = newValue;
+node.EmployeeInfo = newValue;
 
 {% endhighlight %}
 
@@ -5707,10 +5711,10 @@ this.historyManager ={
 //Method to handle the custom action
  customUndoRedo(args) {
 	let node = args.object;
-	let currentState = node.empInfo;
+	let currentState = node.EmployeeInfo;
 
 	//Resets the state
-	node.empInfo = args.prevState;
+	node.EmployeeInfo = args.prevState;
 
 	//Saves the previous state
 	args.prevState = currentState;
@@ -5810,10 +5814,10 @@ this.historyManager ={
 //Method to handle the custom action
  customUndoRedo(args) {
 	let node = args.object;
-	let currentState = node.empInfo;
+	let currentState = node.EmployeeInfo;
 
 	//Resets the state
-	node.empInfo = args.prevState;
+	node.EmployeeInfo = args.prevState;
 
 	//Saves the previous state
 	args.prevState = currentState;
@@ -5857,19 +5861,19 @@ Defines the type of the rendering mode of label.
     </thead>
     <tbody>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Sets the labelRenderingMode as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Sets the labelRenderingMode as HTML</td>
         </tr>
         <tr>
-            <td class="name">Svg</td>
-            <td class="description last">Sets the labelRenderingMode as Svg</td>
+            <td class="name">SVG</td>
+            <td class="description last">Sets the labelRenderingMode as SVG</td>
         </tr>
     </tbody>
 </table>
 
 #### Default Value:
 
-* Html
+* HTML
 
 #### Example
 
@@ -5904,7 +5908,7 @@ Specifies the custom bounds to arrange/align the layout
 </ej-diagram>
 
 
-this.layout = { type: 'radialtree', horizontalSpacing: 30, verticalSpacing: 30 };
+this.layout = { type:  ej.datavisualization.Diagram.LayoutTypes.RadialTree, horizontalSpacing: 30, verticalSpacing: 30 };
 
 
 {% endhighlight %}
@@ -6235,7 +6239,7 @@ Sets the type of the layout based on which the elements will be arranged.
        </tr>
         <tr>
             <td class="name">OrganizationalChart</td>
-            <td class="description last">Used to set layout type as organnizational chart</td>
+            <td class="description last">Used to set layout type as organizational chart</td>
        </tr>
    </tbody>
 </table>
@@ -6531,7 +6535,7 @@ Sets the height of the text annotation
 {% highlight ts %}
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier"
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier
         },
 
         {% endhighlight %}
@@ -6747,7 +6751,7 @@ Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram 
 {% highlight ts %}
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
         },
 
         {% endhighlight %}
@@ -6767,7 +6771,7 @@ Defines the name, attributes and methods of a Class. Applicable, if the node is 
 {% highlight ts %}
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class
         },
 
         {% endhighlight %}
@@ -6786,7 +6790,7 @@ Sets the name of class.
 {% highlight html %}
 this.nodes=[
             {
-                name: "Patiet",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", }
         },];
         {% endhighlight %}
@@ -6807,7 +6811,7 @@ Defines the collection of attributes
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted",}], },
         },];
 
@@ -6829,7 +6833,7 @@ Sets the name of the attribute
 
 this.nodes=[
             {
-                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted" }], },
         },];
 
@@ -6851,7 +6855,7 @@ Sets the data type of attribute
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted", type: "Date", }], },
         },]
 
@@ -6872,7 +6876,7 @@ Defines the visibility of the attribute
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", attributes: [{ name: "accepted", type: "Date", scope:"protected" }], },
         },]
 
@@ -6894,7 +6898,7 @@ Defines the collection of methods of a Class.
 
 this.nodes=[
             {
-               name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+               name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", methods: [{ name: "getHistory" }]  },
         },]
 
@@ -6916,7 +6920,7 @@ Sets the name of the method.
 
  this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], }]  },
         },]
 
@@ -6937,7 +6941,7 @@ Defines the arguments of the method.
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date",type:"String" }], }]  },
         }]
 
@@ -6957,7 +6961,7 @@ Sets the name of the argument
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
                 class: {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },
         },]
 
@@ -6978,7 +6982,7 @@ Sets the type of the argument
 
 this.nodes=[
             {
-                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                 name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
           class: {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },
         },]
 
@@ -7001,7 +7005,7 @@ Sets the return type of the method
 
 this.nodes=[
             {
-                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+                name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
           class: {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History" }]  },
         },]
 
@@ -7022,7 +7026,7 @@ Sets the visibility of the method.
 
 this.nodes=[
             {
-             name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
+             name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
           "class": {name: "Patient", methods: [{ name: "getHistory", arguments: [{name: "Date" }], type: "History",scope:"protected" }]  },]
 
 {% endhighlight %}
@@ -7039,7 +7043,7 @@ Defines the state of the node is collapsed.
 
 this.nodes=[
             {
-             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10 } }]
+             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10 } }]
 
 {% endhighlight %}
 
@@ -7059,7 +7063,7 @@ Sets the border color for collapse icon of node
 
 this.nodes=[
             {
-             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,borderColor: "red"} }]
+             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10,borderColor: "red"} }]
 
 {% endhighlight %}
 
@@ -7080,7 +7084,7 @@ Sets the border width for collapse icon of node
 this.nodes=[
             {
              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    collapseIcon:{ shape:"arrowdown", width:10, height:10, borderWidth: "2"}  }]
+    collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, borderWidth: "2"}  }]
 
 {% endhighlight %}
 
@@ -7100,7 +7104,7 @@ Sets the fill color for collapse icon of node
 
 this.nodes=[
             {
-             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10,fillColor: "green"}  }]
+             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10,fillColor: "green"}  }]
 
 {% endhighlight %}
 
@@ -7120,7 +7124,7 @@ Defines the height for collapse icon of node
 
 this.nodes=[
             {
-             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:"arrowdown", width:10, height:10} }]
+             name: "node1", width: 75, height:55, offsetX:50, offsetY:50, collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10} }]
 
 {% endhighlight %}
 
@@ -7165,7 +7169,7 @@ Sets the horizontal alignment of the icon.
 this.nodes=[
             {
              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-collapseIcon:{ shape:"arrowdown", width:10, height:10, 
+collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, 
 horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left }}]
 
 {% endhighlight %}
@@ -7187,7 +7191,7 @@ To set the margin for the collapse icon of node
 this.nodes=[
             {
              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    collapseIcon:{ shape:"arrowdown", width:10, height:10, margin:{ left: 5 }}}]
+    collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, margin:{ left: 5 }}}]
 
 {% endhighlight %}
 
@@ -7208,7 +7212,7 @@ Sets the fraction/ratio(relative to node) that defines the position of the icon
 this.nodes=[
             {
              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    collapseIcon:{ shape:"arrowdown", width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }}]
+    collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }}]
 
 {% endhighlight %}
 
@@ -7269,7 +7273,7 @@ Defines the shape of the collapsed state of the node.
 this.nodes=[
             {
              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-collapseIcon:{ shape:"arrowdown", width:10, height:10}}]
+collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10}}]
 
 {% endhighlight %}
 
@@ -7315,7 +7319,7 @@ Sets the vertical alignment of the icon.
 this.nodes=[
             {
              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-collapseIcon:{ shape:"arrowdown", width:10, height:10, 
+collapseIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, 
     verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }}]
 
 {% endhighlight %}
@@ -7673,7 +7677,7 @@ Sets the type of the BPMN Data object
 
 this.nodes=[
             {
-                 name:"dataobject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input }, width:50, height: 50, offsetX:100, offsetY:100
+                 name:"dataObject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input }, width:50, height: 50, offsetX:100, offsetY:100
         },
         
     ];
@@ -7696,7 +7700,7 @@ Defines whether the BPMN data object is a collection or not
 
 this.nodes=[
             {
-                 name:"dataobject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input, collection: false }, width:50, height: 50, offsetX:100, offsetY:100
+                 name:"dataObject", type: "bpmn", shape:ej.datavisualization.Diagram.BPMNShapes.DataObject, data: { type: ej.datavisualization.Diagram.BPMNDataObjects.Input, collection: false }, width:50, height: 50, offsetX:100, offsetY:100
         },
         
     ];
@@ -7720,7 +7724,7 @@ Defines an Enumeration in a UML Class Diagram
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", }
         },
         
@@ -7745,7 +7749,7 @@ Sets the name of the Enumeration
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", }
         },
         
@@ -7769,7 +7773,7 @@ Defines the collection of enumeration members
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", members: [{ name: "CheckingAccount"}]}
         },
         
@@ -7793,7 +7797,7 @@ Sets the name of the enumeration member
 
 this.nodes=[
             {
-                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier",classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
+                 name: "Enums",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier,classifier: ej.datavisualization.Diagram.ClassifierShapes.Enumeration, 
       enumeration:{ name: "AccountType", members: [{ name: "CheckingAccount"}]}
         },
         
@@ -7903,7 +7907,7 @@ Defines the state of the node is expanded or collapsed.
 
 this.nodes=[
             {
-               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10} 
+               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10} 
         },
         
     ];
@@ -7926,7 +7930,7 @@ Sets the border color for expand icon of node
 
 this.nodes=[
             {
-              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10,borderColor: "red"} 
+              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10,borderColor: "red"} 
         },
         
     ];
@@ -7950,7 +7954,7 @@ Sets the border width for expand icon of node
 this.nodes=[
             {
               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    expandIcon:{ shape:"arrowdown", width:10, height:10, borderWidth: "2"}
+    expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, borderWidth: "2"}
         },
         
     ];
@@ -7973,7 +7977,7 @@ Sets the fill color for expand icon of node
 
 this.nodes=[
             {
-              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10,fillColor: "green"} 
+              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10,fillColor: "green"} 
         },
         
     ];
@@ -7996,7 +8000,7 @@ Defines the height for expand icon of node
 
 this.nodes=[
             {
-              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:"arrowdown", width:10, height:10}
+              name: "node1", width: 75, height:55, offsetX:50, offsetY:50, expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10}
         },
         
     ];
@@ -8044,7 +8048,7 @@ Sets the horizontal alignment of the icon.
 this.nodes=[
             {
               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-expandIcon:{ shape:"arrowdown", width:10, height:10, 
+expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, 
 horizontalAlignment:ej.datavisualization.Diagram.HorizontalAlignment.Left }
         },
         
@@ -8069,7 +8073,7 @@ To set the margin for the expand icon of node
 this.nodes=[
             {
               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    expandIcon:{ shape:"arrowdown", width:10, height:10, margin:{ left: 5 }}
+    expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, margin:{ left: 5 }}
         },
         
     ];
@@ -8093,7 +8097,7 @@ Sets the fraction/ratio(relative to node) that defines the position of the icon
 this.nodes=[
             {
               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-    expandIcon:{ shape:"arrowdown", width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }
+    expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, offset:ej.datavisualization.Diagram.Point(0,0.5) }
         },
         
     ];
@@ -8157,7 +8161,7 @@ Defines the shape of the expanded state of the node.
 this.nodes=[
             {
               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-expandIcon:{ shape:"arrowdown", width:10, height:10}
+expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10}
         },
         
     ];
@@ -8205,7 +8209,7 @@ Sets the vertical alignment of the icon.
 this.nodes=[
             {
               name: "node1", width: 75, height:55, offsetX:50, offsetY:50, 
-expandIcon:{ shape:"arrowdown", width:10, height:10, 
+    expandIcon:{ shape:ej.datavisualization.Diagram.IconShapes.ArrowDown, width:10, height:10, 
     verticalAlignment:ej.datavisualization.Diagram.VerticalAlignment.Top }
         },
         
@@ -8665,8 +8669,7 @@ Describes the transparency level of the region
 this.nodes=[
             {
                 name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
-                gradient:{ type:"radial", 
-                   fx:50, fy:50, cx:50, cy:70,
+                gradient:{ type:"radial", fx:50, fy:50, cx:50, cy:70,
                    stops:[
                    {color:"white", offset:0 }, 
                    //Sets the opacity
@@ -8833,7 +8836,7 @@ Defines an interface in a UML Class Diagram
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface
             
         },
     ];
@@ -8855,7 +8858,7 @@ Sets the name of the interface
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",}
             
         },
@@ -8879,7 +8882,7 @@ Defines a collection of attributes of the interface
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar"}], },
             
         },
@@ -8903,7 +8906,7 @@ Sets the name of the attribute
 
 this.nodes=[
             {
-                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+                name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar"}], },
             
         },
@@ -8927,7 +8930,7 @@ Sets the type of the attribute
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar",  type: "String[*]" ,  }], },
             
         },
@@ -8951,7 +8954,7 @@ Sets the visibility of the attribute
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount", attributes: [{ name: "ownar",  type: "String[*]",scope:"protected" }], },
             
         },
@@ -8975,7 +8978,7 @@ Defines the collection of public methods of an interface
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", }]  },
             
         },
@@ -8999,7 +9002,7 @@ Sets the name of the method.
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", }]  },
             
         },
@@ -9023,7 +9026,7 @@ Defines the collection of arguments of a method
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", }],  }]  },
             
         },
@@ -9047,7 +9050,7 @@ Sets the name of the argument
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", }],  }]  },
             
         },
@@ -9071,7 +9074,7 @@ Sets the type of the argument
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  }]  },
             
         },
@@ -9095,7 +9098,7 @@ Sets the return type of the method
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  type:"account"}]  },
             
         },
@@ -9119,7 +9122,7 @@ Sets the visibility of the method
 
 this.nodes=[
             {
-               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
+               name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: ej.datavisualization.Diagram.Shapes.UMLClassifier, classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
           "interface": {name: "BankAccount",methods: [{ name: "deposit", arguments: [{name:"amount", type:"Dollars"  }],  type:"account",scope:"private"}]  },
             
         },
@@ -9752,7 +9755,7 @@ Sets how to decorate the label text.
        </tr>
         <tr>
             <td class="name">Overline</td>
-            <td class="description last">Used to set text decoration of the label as Overline</td>
+            <td class="description last">Used to set text decoration of the label as OverLine</td>
        </tr>
         <tr>
             <td class="name">LineThrough</td>
@@ -12559,7 +12562,7 @@ Defines the tooltip that should be shown when the mouse hovers over node. For to
 
 {% highlight html %}
 
-<script type="text/x-jsrender" id="mouseovertooltip">
+<script type="text/x-jsrender" id="mouseOverTooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
         <span style="padding: 5px;">  </span>
    </div>
@@ -12576,7 +12579,7 @@ this.nodes = [{
         tooltip:tooltip, 
 		}];
 		this.tooltip = {
-				templateId:"mouseovertooltip",
+				templateId:"mouseOverTooltip",
 								};
 	}	
 	};
@@ -12691,7 +12694,7 @@ Defines the type of the node.
        </tr>
         <tr>
             <td class="name">Html</td>
-            <td class="description last">Used to specify node type as Html</td>
+            <td class="description last">Used to specify node type as HTML</td>
        </tr>
         <tr>
             <td class="name">Native</td>
@@ -13713,35 +13716,35 @@ Defines the position of the user handle
     <tbody>
         <tr>
             <td class="name">TopLeft</td>
-            <td class="description last">Set the position of the userhandle as topleft</td>
+            <td class="description last">Set the position of the userHandle as topLeft</td>
        </tr>
         <tr>
             <td class="name">TopCenter</td>
-            <td class="description last">Set the position of the userhandle as topcenter</td>
+            <td class="description last">Set the position of the userHandle as topCenter</td>
        </tr>
         <tr>
             <td class="name">TopRight</td>
-            <td class="description last">Set the position of the userhandle as topright</td>
+            <td class="description last">Set the position of the userHandle as topRight</td>
        </tr>
        <tr>
             <td class="name">MiddleLeft</td>
-            <td class="description last">Set the position of the userhandle as middleleft</td>
+            <td class="description last">Set the position of the userHandle as middleLeft</td>
        </tr>
        <tr>
             <td class="name">MiddleRight</td>
-            <td class="description last">Set the position of the userhandle as middleright</td>
+            <td class="description last">Set the position of the userHandle as middleRight</td>
        </tr>
        <tr>
             <td class="name">BottomLeft</td>
-            <td class="description last">Set the position of the userhandle as bottomleft</td>
+            <td class="description last">Set the position of the userHandle as bottomLeft</td>
        </tr>
        <tr>
             <td class="name">BottomCenter</td>
-            <td class="description last">Set the position of the userhandle as bottomcenter</td>
+            <td class="description last">Set the position of the userHandle as bottomCenter</td>
        </tr>
         <tr>
             <td class="name">BottomRight</td>
-            <td class="description last">Set the position of the userhandle as bottom right</td>
+            <td class="description last">Set the position of the userHandle as bottomRight</td>
        </tr>
    </tbody>
 </table>
@@ -13755,7 +13758,7 @@ Defines the position of the user handle
 {% highlight ts %}
 
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
-cloneHandle.position =" middleleft";
+cloneHandle.position =ej.datavisualization.Diagram.UserHandlePositions.MiddleLeft;
 let userHandle;
 userHandle = userHandle.push(cloneHandle);
 this.selectedItems={userHandles:userHandle};
@@ -13824,7 +13827,7 @@ Defines the visibility of the user handle
 {% highlight ts %}
 
 let cloneHandle = ej.datavisualization.Diagram.UserHandle();
-cloneHandle.visibe = "true";
+cloneHandle.visible = "true";
 let userHandle;
 userHandle = userHandle.push(cloneHandle);
 this.selectedItems={userHandles:userHandle};
@@ -14155,7 +14158,7 @@ Defines the color of the vertical marker brush.
 
 {% highlight ts %}
 
-this.rulerSettings = {verticalRuler:{tmarkerColor: "pink" } };
+this.rulerSettings = {verticalRuler:{markerColor: "pink" } };
 
 {% endhighlight %}
 
@@ -14552,7 +14555,7 @@ An object that defines the description, appearance and alignments of tooltips
 
 {% highlight html %}
 
-<script type="text/x-jsrender" id="mouseovertooltip">
+<script type="text/x-jsrender" id="mouseOverTooltip">
     <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
          <span style="padding: 5px;">  </span>
     </div>
@@ -14563,12 +14566,12 @@ An object that defines the description, appearance and alignments of tooltips
  {% highlight ts %}
 
 this.Nodes = [{
-	    name: "elizabeth",width: 70,height: 40,	offsetX: 100,offsetY: 100,
+	    name: "Elizabeth",width: 70,height: 40,	offsetX: 100,offsetY: 100,
 		Designation: "Managing Director"
 				constraints: ej.datavisualization.Diagram.ConnectorConstraints.Default & ~ ej.datavisualization.Diagram.ConnectorConstraints.InheritTooltip, 
 		}];
 		this.tooltip = {
-				templateId:"mouseovertooltip",
+				templateId:"mouseOverTooltip",
 								};
 	}	
 	};
@@ -14750,7 +14753,7 @@ Sets the svg/html template to be bound with tooltip
 
 {% highlight html %}
 
-<script type="text/x-jsrender" id="mouseovertooltip">
+<script type="text/x-jsrender" id="mouseOverTooltip">
    <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
         <span style="padding: 5px;">  </span>
    </div>
@@ -14762,7 +14765,7 @@ Sets the svg/html template to be bound with tooltip
 
 this.tooltip={
        tooltip: {
-		templateId: "mouseovertooltip"
+		templateId: "mouseOverTooltip"
 	}
        };
 
@@ -15051,7 +15054,7 @@ Add a collection of ports to the node specified by name
 
 // Defines a collection of ports that have to be added at runtime
 let port = [{
-        offset: { x: 0, y: 0.5 }, name: "aport", fillColor: "yellow"}, { offset: { x: 0.5, y: 0.5 }, name: "bport", fillColor: "yellow"
+        offset: { x: 0, y: 0.5 }, name: "port1", fillColor: "yellow"}, { offset: { x: 0.5, y: 0.5 }, name: "port2", fillColor: "yellow"
     },
     
 ];
@@ -15736,7 +15739,7 @@ Insert a label into a node's label collection at runtime
 {% highlight ts %}
 
 ngAfterViewInit() {
-this.diagram.widget.insertLabel(nodename,{fontColor:"red", text:"newLabel"},0)        
+this.diagram.widget.insertLabel(node.name,{fontColor:"red", text:"newLabel"},0)        
     }
 
     @ViewChild('diagram') Diagram: EJComponents<any,any>;
@@ -17206,7 +17209,7 @@ Triggers when the connectors' target point is changed
 
 {% highlight ts %}
 
- connectorTargetChnage(args:any){
+ connectorTargetChange(args:any){
 //doSomething.
     }
 
@@ -18073,7 +18076,7 @@ Triggers when mouse enters a node/connector
 
 {% highlight ts %}
 
-//mouseEnt event for diagram
+//mouseEvent event for diagram
  mouseEnter(args:any){
 //doSomething.
     }
