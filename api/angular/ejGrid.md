@@ -3930,6 +3930,46 @@ this.gridData = window.gridData;
 this.rowDropSettings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler" };
 {% endhighlight %}
 
+### rowDropSettings-dragBehavior `enum`
+{:#members:rowDropSettings-dragBehavior}
+
+<ts name="ej.Grid.DragBehavior"/>
+
+Gets or sets a value that indicates whether move or copy a record from one grid to another or within the grid
+
+#### Default Value:
+
+* ej.Grid.DragBehavior.Move
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Move</td>
+<td class="description">Allows to move a record from one grid to another or within the grid.</td>
+</tr>
+<tr>
+<td class="name">Copy</td>
+<td class="description">Allows to copy a record from one grid to another or within the grid.</td>
+</tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" allowRowDragAndDrop="true" [rowDropSettings]="rowDropSettings" >
+</ej-grid> 
+{% endhighlight %}
+
+
+{% highlight ts %}
+//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = window.gridData;
+this.rowDropSettings={dropTargetID: "#DestGrid",dropMapper: "Home/DragHandler",dragBehavior:ej.Grid.DragBehavior.Copy };
+{% endhighlight %}
+
 ### searchSettings `object`
 {:#members:searchsettings}
 
