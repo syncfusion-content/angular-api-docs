@@ -3959,7 +3959,7 @@ Gets or sets a value that indicates whether move or copy a record from one grid 
 #### Example
 
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" allowRowDragAndDrop="true" [rowDropSettings]="rowDropSettings" >
+<ej-grid id="Grid" [dataSource]="gridData" [allowRowDragAndDrop]="true" [rowDropSettings]="rowDropSettings" >
 </ej-grid> 
 {% endhighlight %}
 
