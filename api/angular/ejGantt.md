@@ -3207,7 +3207,7 @@ Specifies the row index of the cell to be selected Gantt control
 
 #### Default Value
 
-* ""
+* -1
 
 ### selectedCellIndexes.cellIndex `number`
 {:#members:selectedcellindexes-cellIndex}
