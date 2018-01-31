@@ -1273,7 +1273,7 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 
 {% highlight ts %}
 
-iexport class AppComponent {
+export class AppComponent {
     public editSettings: any;
     constructor() {
         this.editSettings = {editMode : "normal"}
@@ -2076,7 +2076,7 @@ Specifies the mapping property path for milestone in datasource
 {% highlight html %}
 
 <ej-gantt id="GanttControl"
-    milstoneMapping= "milestone">
+    milestoneMapping= "milestone">
 </ej-gantt>
 
 {% endhighlight %}
@@ -2097,7 +2097,7 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
 {% highlight html %}
 
 <ej-gantt id="GanttControl"
-    milstoneTemplate= "MilestoneTemplate">
+    milestoneTemplate= "MilestoneTemplate">
 </ej-gantt>
 
 {% endhighlight %}
