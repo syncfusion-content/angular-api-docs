@@ -2580,7 +2580,6 @@ Specifies the data source field name to be displayed as right task label
 
 * ""
 
-
 #### Example
 
 {% highlight html %}
@@ -2600,7 +2599,6 @@ Specifies the template for right task label
 #### Default Value
 
 * ""
-
 
 #### Example
 
