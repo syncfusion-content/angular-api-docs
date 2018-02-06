@@ -6063,10 +6063,8 @@ To update the predecessor type and offset value for existing task dependency.
 </table>
 
 #### Example
-
-{% highlight html %}
  
- {% tabs %}
+{% tabs %}
 {% highlight html %}
  
 <button id="updateDependency" (click)="updateDependency($event)">updateDependency</button>
@@ -8075,6 +8073,11 @@ Triggered while dragging a row in Gantt control
 <td class="description">Returns that we can drop over that record or not.</td>
 </tr>
 <tr>
+<td class="name">dropPosition </td>
+<td class="type">string</td>
+<td class="description">Returns the drop position value on current target row.</td>
+</tr>
+<tr>
 <td class="name">model</td>
 <td class="type">object</td>
 <td class="description">Returns the Gantt model.</td>
@@ -8747,6 +8750,11 @@ Triggered while editing the Gantt chart (dragging, resizing the taskbar )
 <td class="name">type</td>
 <td class="type">string</td>
 <td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">roundOffDuration</td>
+<td class="type">boolean</td>
+<td class="description">Returns duration value will be round-off or not.</td>
 </tr>
 </tbody>
 </table>
