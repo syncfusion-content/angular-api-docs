@@ -827,7 +827,7 @@ toggleObj.enable(); // enable the toggle button
 
 ## Events
 
-### change
+### ejchange
 {:#events:change}
 
 Fires when ToggleButton control state is changed successfully.
@@ -872,7 +872,7 @@ type</td>
 
 {% highlight html %}
  
-<ej-togglebutton type="checkbox" id="toggleButton" defaultText="Play" activeText="Pause" (change)="onChange($event)"></ej-togglebutton>
+<ej-togglebutton type="checkbox" id="toggleButton" defaultText="Play" activeText="Pause" (ejchange)="onChange($event)"></ej-togglebutton>
    
 {% endhighlight %}
 
@@ -889,7 +889,7 @@ type</td>
 {% endhighlight %}
 
 
-### click
+### ejclick
 {:#events:click}
 
 Fires when ToggleButton control is clicked successfully.
@@ -941,7 +941,7 @@ type</td>
 
 {% highlight html %}
  
-<ej-togglebutton type="checkbox" id="toggleButton" defaultText="Play" activeText="Pause" (click)="onClick($event)"></ej-togglebutton>
+<ej-togglebutton type="checkbox" id="toggleButton" defaultText="Play" activeText="Pause" (ejclick)="onClick($event)"></ej-togglebutton>
      
 {% endhighlight %}
 

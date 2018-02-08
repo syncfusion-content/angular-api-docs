@@ -943,7 +943,7 @@ type</td>
 {% endhighlight %}
 
 
-### click
+### ejclick
 {:#events:click}
 
 Fires when Button control is clicked successfully
@@ -994,7 +994,7 @@ status</td>
 
 {% highlight html %}
  
-<ej-splitbutton id="splitButton" targetID="target" width="100" (click)="onClick($event)"></ej-splitbutton>
+<ej-splitbutton id="splitButton" targetID="target" width="100" (ejclick)="onClick($event)"></ej-splitbutton>
 <ul id="target">
 <li><a href="#">Open..</a></li>
 <li><a href="#">Save</a></li>

@@ -545,7 +545,7 @@ export class AppComponent {
 {% endhighlight %}
 
 
-### change
+### ejchange
 {:#events:change}
 
 Fires when the RadioButton state is changed successfully
@@ -596,7 +596,7 @@ isInteraction</td>
 
 {% highlight html %}
  
-<input type="radio" name="radioButton" id="radioButton" ej-radiobutton (change)="onChange($event)"/>
+<input type="radio" name="radioButton" id="radioButton" ej-radiobutton (ejchange)="onChange($event)"/>
 <label for="radioButton">Experienced</label>
 
 {% endhighlight %}
