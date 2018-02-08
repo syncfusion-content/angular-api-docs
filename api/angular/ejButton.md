@@ -622,8 +622,8 @@ destroy the button widget all events bound using this._on will be unbind automat
 
 {% highlight ts %}
 
-var btnObj = $("#button1").data("ejButton"); // Create instance of Button
-btnObj.destroy(); // destroy the button
+var buttonObj = $("#button1").data("ejButton"); // Create instance of Button
+buttonObj.destroy(); // destroy the button
 
    
 {% endhighlight %}
@@ -644,8 +644,8 @@ To disable the button
 
 {% highlight ts %}
 
-var btnObj = $("#button1").data("ejButton"); // Create instance of Button
-btnObj.disable(); // disable the button
+var buttonObj = $("#button1").data("ejButton"); // Create instance of Button
+buttonObj.disable(); // disable the button
 
     
 {% endhighlight %}
@@ -665,8 +665,8 @@ To enable the button
 
 {% highlight ts %}
 
-var btnObj = $("#button1").data("ejButton"); // Create instance of Button
-btnObj.enable(); // enable the button
+var buttonObj = $("#button1").data("ejButton"); // Create instance of Button
+buttonObj.enable(); // enable the button
 
 {% endhighlight %}
 
