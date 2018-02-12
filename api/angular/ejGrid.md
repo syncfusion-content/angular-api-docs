@@ -4221,7 +4221,7 @@ Gets or sets a value that indicates whether to select multiple rows or cells by 
 #### Example
 
 {% highlight html %}
-<ej-grid id="Grid" [dataSource]="gridData" allowSelection="true" [selectionType]="multiple" [selectionSettings]="selectionSettings" >
+<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true" [selectionType]="multiple" [selectionSettings]="selectionSettings" >
 </ej-grid>
 {% endhighlight %}
 
