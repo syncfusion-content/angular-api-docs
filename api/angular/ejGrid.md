@@ -4227,7 +4227,7 @@ Gets or sets a value that indicates whether to select multiple rows or cells by 
 
 {% highlight ts %}
 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-this.gridData = window.gridData;
+this.gridData = (window as any).gridData;
 this.selectionSettings={selectionMode: ["cell"], allowDragSelection: true, cellSelectionMode: ej.Grid.CellSelectionMode.Flow };
 {% endhighlight %}
 
