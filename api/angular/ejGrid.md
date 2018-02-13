@@ -4212,7 +4212,7 @@ this.selectionSettings={enableToggle: true };
 ### selectionSettings.allowDragSelection `boolean`
 {:#members:selectionsettings-allowdragselection}
 
-Gets or sets a value that indicates whether to select multiple rows or cells or columns by performing dragging in Grid.
+Gets or sets a value that indicates whether to select multiple rows or cells by performing dragging in Grid.
 
 #### Default Value:
 {:.param}
