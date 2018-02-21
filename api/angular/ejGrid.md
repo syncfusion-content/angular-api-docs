@@ -4209,6 +4209,28 @@ this.gridData = window.gridData;
 this.selectionSettings={enableToggle: true };
 {% endhighlight %}
 
+### selectionSettings.allowDragSelection `boolean`
+{:#members:selectionsettings-allowdragselection}
+
+Gets or sets a value that indicates whether to select multiple rows or cells by performing dragging in Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+
+{% highlight html %}
+<ej-grid id="Grid" [dataSource]="gridData" [allowSelection]="true" [selectionType]="multiple" [selectionSettings]="selectionSettings" >
+</ej-grid>
+{% endhighlight %}
+
+{% highlight ts %}
+//The datasource "(window as any).gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+this.gridData = (window as any).gridData;
+this.selectionSettings={selectionMode: ["cell"], allowDragSelection: true, cellSelectionMode: ej.Grid.CellSelectionMode.Flow };
+{% endhighlight %}
+
 ### selectionSettings.selectionMode `array`
 {:#members:selectionsettings-selectionmode}
 
