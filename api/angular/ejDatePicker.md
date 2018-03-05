@@ -2724,7 +2724,7 @@ element</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (beforeClose)="onBeforeClose(&event)"/>
+<input type="text" ej-datepicker (beforeClose)="onBeforeClose($event)"/>
 
 {% endhighlight %}
 
@@ -2802,7 +2802,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (beforeDateCreate)="onBeforeDateCreate(&event)"/>
+<input type="text" ej-datepicker (beforeDateCreate)="onBeforeDateCreate($event)"/>
 
 {% endhighlight %}
 
@@ -2875,7 +2875,7 @@ element</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (beforeOpen)="onBeforeOpen(&event)"/>
+<input type="text" ej-datepicker (beforeOpen)="onBeforeOpen($event)"/>
 
 {% endhighlight %}
 
@@ -2891,7 +2891,7 @@ export class AppComponent{
 
 {% endhighlight %}
 
-### change
+### ejchange
 {:#events:change}
 
 
@@ -2947,7 +2947,7 @@ prevDate</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (change)="onChange(&event)"/>
+<input type="text" ej-datepicker (ejchange)="onChange($event)"/>
 
 {% endhighlight %}
 
@@ -3028,7 +3028,7 @@ prevDate</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (close)="onClose(&event)"/>
+<input type="text" ej-datepicker (close)="onClose($event)"/>
 
 {% endhighlight %}
 
@@ -3092,7 +3092,7 @@ type</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (create)="onCreate(&event)"/>
+<input type="text" ej-datepicker (create)="onCreate($event)"/>
 
 {% endhighlight %}
 
@@ -3153,7 +3153,7 @@ type</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (destroy)="onDestroy(&event)"/>
+<input type="text" ej-datepicker (destroy)="onDestroy($event)"/>
 
 {% endhighlight %}
 
@@ -3221,7 +3221,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (focusIn)="onFocusIn(&event)"/>
+<input type="text" ej-datepicker (focusIn)="onFocusIn($event)"/>
 
 {% endhighlight %}
 
@@ -3296,7 +3296,7 @@ prevDate</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (focusOut)="onFocusOut(&event)"/>
+<input type="text" ej-datepicker (focusOut)="onFocusOut($event)"/>
 
 {% endhighlight %}
 
@@ -3382,7 +3382,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (navigate)="onNavigate(&event)"/>
+<input type="text" ej-datepicker (navigate)="onNavigate($event)"/>
 
 {% endhighlight %}
 
@@ -3462,7 +3462,7 @@ prevDate</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (open)="onOpen(&event)"/>
+<input type="text" ej-datepicker (open)="onOpen($event)"/>
 
 {% endhighlight %}
 
@@ -3550,7 +3550,7 @@ isSpecialDay</td>
 
 {% highlight html %}
 
-<input type="text" ej-datepicker (select)="onSelect(&event)"/>
+<input type="text" ej-datepicker (select)="onSelect($event)"/>
 
 {% endhighlight %}
 
