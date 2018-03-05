@@ -1656,7 +1656,7 @@ timeObj.show(); // show the time picker popup
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (show)="onShow(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (show)="onShow($event)"/>
 
 {% endhighlight %}
 
@@ -1742,7 +1742,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (beforeChange)="onBeforeChange(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (beforeChange)="onBeforeChange($event)"/>
 
 {% endhighlight %}
 
@@ -1824,7 +1824,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (beforeOpen)="onBeforeOpen(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (beforeOpen)="onBeforeOpen($event)"/>
 
 {% endhighlight %}
 
@@ -1844,7 +1844,7 @@ export class AppComponent{
 
 
 
-### change
+### ejchange
 {:#events:change}
 
 
@@ -1915,7 +1915,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (change)="onChange(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (ejchange)="onChange($event)"/>
 
 {% endhighlight %}
 
@@ -1995,7 +1995,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (close)="onClose(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (close)="onClose($event)"/>
 
 {% endhighlight %}
 
@@ -2064,7 +2064,7 @@ type</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (create)="onCreate(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (create)="onCreate($event)"/>
 
 {% endhighlight %}
 
@@ -2134,7 +2134,7 @@ type</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (destroy)="onDestroy(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (destroy)="onDestroy($event)"/>
 
 {% endhighlight %}
 
@@ -2217,7 +2217,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (focusIn)="onFocusIn(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (focusIn)="onFocusIn($event)"/>
 
 {% endhighlight %}
 
@@ -2303,7 +2303,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (focusOut)="onFocusOut(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (focusOut)="onFocusOut($event)"/>
 
 {% endhighlight %}
 
@@ -2380,7 +2380,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (open)="onOpen(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (open)="onOpen($event)"/>
 
 {% endhighlight %}
 
@@ -2462,7 +2462,7 @@ value</td>
 
 {% highlight html %}
 
-<input type="text" ej-timepicker id="timePicker" (select)="onSelect(&event)"/>
+<input type="text" ej-timepicker id="timePicker" (select)="onSelect($event)"/>
 
 {% endhighlight %}
 
