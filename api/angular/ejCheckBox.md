@@ -693,7 +693,7 @@ isChecked</td>
 
 {% endhighlight %}
 
-### change
+### ejchange
 {:#events:change}
 
 Fires when the CheckBox state is changed successfully
@@ -751,7 +751,7 @@ checkState</td>
 
 {% highlight html %}
 
-<ej-checkbox id="checkBox" (change)="onChange($event)"></ej-checkbox>
+<ej-checkbox id="checkBox" (ejchange)="onChange($event)"></ej-checkbox>
 <label for="checkBox">Experienced</label> 
 
 {% endhighlight %}
