@@ -1567,7 +1567,7 @@ Open the ColorPicker popup.
 
 
 
-### change
+### ejchange
 {:#events:change}
 
 
@@ -1621,7 +1621,7 @@ value</td>
 
 {% highlight html %}
    
-<input id="colorPicker" ej-colorpicker (change)="onChange($event)"/>
+<input id="colorPicker" ej-colorpicker (ejchange)="onChange($event)"/>
 
 {% endhighlight %}
 
