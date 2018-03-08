@@ -1568,7 +1568,7 @@ Open the ColorPicker popup.
 
 
 ### ejchange
-{:#events:change}
+{:#events:ejchange}
 
 
 Fires after Color value has been changed successfully.If the user want to perform any operation after the color value changed then the user can make use of this change event.

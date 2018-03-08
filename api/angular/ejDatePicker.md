@@ -2892,7 +2892,7 @@ export class AppComponent{
 {% endhighlight %}
 
 ### ejchange
-{:#events:change}
+{:#events:ejchange}
 
 
 Fires when the DatePicker input value is changed.

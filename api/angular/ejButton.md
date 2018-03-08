@@ -673,7 +673,7 @@ buttonObj.enable(); // enable the button
 ## Events
 
 ### ejclick
-{:#events:click}
+{:#events:ejclick}
 
 Fires when Button control is clicked successfully.Consider the scenario to perform any validation,modification of content or any other operations click on button,we can make use of this click event to achieve the scenario.
 
