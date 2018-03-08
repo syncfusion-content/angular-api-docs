@@ -546,7 +546,7 @@ export class AppComponent {
 
 
 ### ejchange
-{:#events:change}
+{:#events:ejchange}
 
 Fires when the RadioButton state is changed successfully
 
