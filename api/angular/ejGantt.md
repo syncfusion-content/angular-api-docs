@@ -9,7 +9,7 @@ keywords: ejGantt, API, Essential JS Gantt
 
 # ejGantt
 
-The Essential JavaScript Gantt control is designed to visualize and edit the project schedule, and track the project progress. 
+The Essential JavaScript Gantt control is designed to visualize and edit the project schedule, and track the project progress.
 
 #### Example
 
@@ -48,10 +48,10 @@ export class AppComponent {
 ### addDialogFields `array`
 {:#members:adddialogfields}
 
-Specifies the fields to be included in the add dialog in Gantt
+Specifies the fields to be included in the add dialog in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -82,10 +82,10 @@ export class AppComponent {
 ### addDialogFields.field `string`
 {:#members:adddialogfields-field}
 
-Specifies mapping name to include required fields in Gantt
+Specifies the mapping name to include required fields in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -117,10 +117,10 @@ export class AppComponent {
 ### addDialogFields.editType `string`
 {:#members:adddialogfields-edittype}
 
-Specifies editType of fields to be included in the add dialog in Gantt
+Specifies editType of fields to be included in the add dialog in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -151,9 +151,9 @@ export class AppComponent {
 ### addDialogFields.displayInGeneralTab `boolean`
 {:#members:adddialogfields-displayingeneraltab}
 
-Specifies the custom column field was displayed in General tab of add dialog or not.
+Specifies whether the custom column field is displayed in the General tab of add dialog or not.
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -185,10 +185,10 @@ export class AppComponent {
 ### allowColumnResize `boolean`
 {:#members:allowcolumnresize}
 
-Enables or disables the ability to resize column.
+Enables or disables the ability to resize the column.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -205,10 +205,10 @@ Enables or disables the ability to resize column.
 ### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}
 
-Enables or disables the ability to drag and drop the row interactively to reorder the rows
+Enables or disables the ability to drag and drop the row interactively to reorder the rows.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -227,10 +227,10 @@ Enables or disables the ability to drag and drop the row interactively to reorde
 ### allowGanttChartEditing `boolean`
 {:#members:allowganttchartediting}
 
-Enables or Disables Gantt chart editing in Gantt
+Enables or disables the edit option of the Gantt chart.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -249,10 +249,10 @@ Enables or Disables Gantt chart editing in Gantt
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
-Enables or Disables Keyboard navigation in Gantt
+Enables or disables the keyboard navigation in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -272,10 +272,10 @@ Enables or Disables Keyboard navigation in Gantt
 ### allowMultiSorting `boolean`
 {:#members:allowmultisorting}
 
-Specifies enabling or disabling multiple sorting for Gantt columns
+Specifies enabling or disabling the multiple sorting option for Gantt columns.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -293,10 +293,10 @@ Specifies enabling or disabling multiple sorting for Gantt columns
 ### allowMultipleExporting `boolean`
 {:#members:allowmultipleexporting}
 
-Enables or disables the option for multiple exporting 
+Enables or disables the option for multiple exporting. 
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -318,7 +318,7 @@ Enables or disables the option for multiple exporting
 Enables or disables the interactive selection of a row.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -337,10 +337,10 @@ Enables or disables the interactive selection of a row.
 ### allowSorting `boolean`
 {:#members:allowsorting}
 
-Enables or disables sorting. When enabled, we can sort the column by clicking on the column.
+Enables or disables sorting. When sorting is enabled, you can sort the column by clicking it.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -358,10 +358,10 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 ### baselineColor `string`
 {:#members:baselinecolor}
 
-Specifies the baseline background color in Gantt
+Specifies the baseline background color in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * "#fba41c"
 
@@ -379,10 +379,10 @@ Specifies the baseline background color in Gantt
 ### baselineEndDateMapping `string`
 {:#members:baselineenddatemapping}
 
-Specifies the mapping property path for baseline end date in datasource
+Specifies the mapping property path for baseline end date in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -401,10 +401,10 @@ Specifies the mapping property path for baseline end date in datasource
 ### baselineStartDateMapping `string`
 {:#members:baselinestartdatemapping}
 
-Specifies the mapping property path for baseline start date of a task in datasource
+Specifies the mapping property path for baseline start date of a task in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -422,9 +422,9 @@ Specifies the mapping property path for baseline start date of a task in datasou
 ### cellTooltipTemplate `string`
 {:#members:celltooltiptemplate}
 
-Specifies the template for cell tooltip
+Specifies the template for cell tooltip.
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -442,10 +442,10 @@ Specifies the template for cell tooltip
 ### childMapping `string`
 {:#members:childmapping}
 
-Specifies the mapping property path for sub tasks in datasource
+Specifies the mapping property path for sub tasks in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -463,10 +463,10 @@ Specifies the mapping property path for sub tasks in datasource
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 
-To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
+Specifies the column fields to be displayed in the dialog while inserting a column using the column menu.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -498,10 +498,10 @@ export class AppComponent {
 ### connectorLineBackground `string`
 {:#members:connectorlinebackground}
 
-Specifies the background of connector lines in Gantt
+Specifies the background of connector lines in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -521,10 +521,10 @@ Specifies the background of connector lines in Gantt
 ### connectorlineWidth `number`
 {:#members:connectorlinewidth}
 
-Specifies the width of the connector lines in Gantt
+Specifies the width of connector lines in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * 1
 
@@ -544,10 +544,10 @@ Specifies the width of the connector lines in Gantt
 ### cssClass `string`
 {:#members:cssclass}
 
-Specify the CSS class for Gantt to achieve custom theme.
+Specifies the CSS class for Gantt to achieve custom theme.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -565,10 +565,10 @@ Specify the CSS class for Gantt to achieve custom theme.
 ### dataSource `array`
 {:#members:datasource}
 
-Collection of data or hierarchical data to represent in Gantt
+Represents the collection of data or hierarchical data in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -600,10 +600,10 @@ export class AppComponent {
 ### dateFormat `string`
 {:#members:dateformat}
 
-Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
+Specifies the dateFormat for Gantt, given format is displayed in the tooltip of grid.
 
 
-#### Default Value
+#### Default value
 
 * "MM/dd/yyyy"
 
@@ -622,10 +622,10 @@ Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid
 ### dayWorkingTime `array`
 {:#members:dayworkingtime}
 
-Specifies the customized working time for tasks in Gantt 
+Specifies the customized working time for tasks in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
 
@@ -656,16 +656,16 @@ export class AppComponent {
 ### dragTooltip `object`
 {:#members:dragtooltip}
 
-Option for customizing the drag tooltip while reordering the rows.
+Provides option to customize the drag tooltip while reordering the rows.
 
 
 ### dragTooltip.showTooltip `boolean`
 {:#members:dragtooltip-showtooltip}
 
-Specifies option to enable/disable tooltip while drag and drop a row.
+Specifies the option to enable/disable the tooltip while dragging and dropping the row.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -701,7 +701,7 @@ export class AppComponent {
 Specifies the data source fields to be displayed in the drag tooltip.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -737,7 +737,7 @@ export class AppComponent {
 Specifies the custom template for drag tooltip.
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -773,10 +773,10 @@ export class AppComponent {
 ### durationMapping `string`
 {:#members:durationmapping}
 
-Specifies the mapping property path for duration of a task in datasource
+Specifies the mapping property path for duration of a task in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -798,7 +798,7 @@ Specifies the mapping property path for duration of a task in datasource
 
 <ts name = "ej.Gantt.DurationUnit"/>
 
-Specifies the duration unit for each tasks whether days or hours or minutes
+Specifies the duration unit for each tasks in days, hours, or minutes.
 
 <table class="params">
 <thead>
@@ -823,7 +823,7 @@ Specifies the duration unit for each tasks whether days or hours or minutes
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.DurationUnit.Day
 
@@ -854,9 +854,9 @@ export class AppComponent {
 ### durationUnitMapping `string`
 {:#members:durationunitmapping }
 
-Specifies the mapping property path for task duration unit in datasource
+Specifies the mapping property path for task duration unit in the data source.
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -874,10 +874,10 @@ Specifies the mapping property path for task duration unit in datasource
 ### editDialogFields `array`
 {:#members:editdialogfields}
 
-Specifies the fields to be included in the edit dialog in Gantt
+Specifies the fields to be included in the edit dialog of the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -909,10 +909,10 @@ export class AppComponent {
 ### editDialogFields.field `string`
 {:#members:editdialogfields-field}
 
-Specifies mapping name to include required fields in Gantt
+Specifies mapping name to include the required fields in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -947,10 +947,10 @@ export class AppComponent {
 ### editDialogFields.editType `string`
 {:#members:editdialogfields-edittype}
 
-Specifies editType of fields to be included in the edit dialog in Gantt
+Specifies editType of fields to be included in the edit dialog of the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -981,9 +981,9 @@ export class AppComponent {
 ### editDialogFields.displayInGeneralTab `boolean`
 {:#members:editdialogfields-displayingeneraltab}
 
-Specifies the custom column field was displayed in General tab of edit dialog or not.
+Specifies whether the custom column field is displayed in the general tab of edit dialog or not.
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1015,16 +1015,16 @@ export class AppComponent {
 ### editSettings `object`
 {:#members:editsettings}
 
-Specifies the editSettings options in Gantt.
+Specifies the editSettings options in the Gantt.
 
 
 ### editSettings.allowAdding `boolean`
 {:#members:editsettings-allowadding}
 
-Enables or disables add record icon in Gantt toolbar
+Enables or disables the add record icon in the Gantt toolbar.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1057,10 +1057,10 @@ export class AppComponent {
 ### editSettings.allowDeleting `boolean`
 {:#members:editsettings-allowdeleting}
 
-Enables or disables delete icon in Gantt toolbar
+Enables or disables the delete icon in the Gantt toolbar.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1093,10 +1093,10 @@ export class AppComponent {
 ### editSettings.allowEditing `boolean`
 {:#members:editsettings-allowediting}
 
-Specifies the option for enabling or disabling editing in Gantt grid part
+Enables or disables the edit option in the Gantt grid part.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1128,10 +1128,10 @@ export class AppComponent {
 ### editSettings.allowIndent `boolean`
 {:#members:editsettings-allowindent}
 
-Specifies the option for enabling or disabling indent action in Gantt.
+Specifies the option to enable or disable the indent action in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1163,9 +1163,9 @@ export class AppComponent {
 ### editSettings.allowOutdent `boolean`
 {:#members:editsettings-allowoutdent}
 
-Specifies the option for enabling or disabling outdent action in Gantt
+Enables or disables thee outdent action in the Gantt.
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1199,7 +1199,7 @@ export class AppComponent {
 
 <ts name = "ej.Gantt.BeginEditAction"/>
 
-Specifies the mouse action whether single click or double click to begin the editing
+Specifies the mouse action whether single click or double click is required to begin the editing.
 
 <table class="params">
 <thead>
@@ -1221,7 +1221,7 @@ Specifies the mouse action whether single click or double click to begin the edi
 </table>
 
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.BeginEditAction.DblClick
 
@@ -1252,10 +1252,10 @@ export class AppComponent {
 ### editSettings.editMode `string`
 {:#members:editsettings-editmode}
 
-Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" is for cell type editing
+Specifies the edit mode in the Gantt; the "normal" mode is for dialog editing and the "cellEditing" mode is for cell type editing.
 
 
-#### Default Value
+#### Default value
 
 * normal
 
@@ -1324,7 +1324,7 @@ Specifies the position where the new row has to be added.
 </table>
 
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.RowPosition.BelowSelectedRow
 
@@ -1357,10 +1357,10 @@ export class AppComponent {
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
-Enables or Disables enableAltRow row effect in Gantt
+Enables or disables the enableAltRow row effect in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -1380,7 +1380,7 @@ Enables or Disables enableAltRow row effect in Gantt
 Enables or disables the collapse all records when loading the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1398,10 +1398,10 @@ Enables or disables the collapse all records when loading the Gantt.
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
-Enables or disables the contextmenu for Gantt , when enabled contextmenu appears on right clicking Gantt
+Enables or disables the contextmenu of Gantt when right-clicking the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1419,7 +1419,7 @@ Enables or disables the contextmenu for Gantt , when enabled contextmenu appears
 ### enablePredecessorValidation `boolean`
 {:#members:enablepredecessorvalidation}
 
-Enable or disable predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
+Enables or disables the predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
 
 #### Default Value
 
@@ -1438,10 +1438,10 @@ Enable or disable predecessor validation. When it is true, all the task's start 
 ### enableProgressBarResizing `boolean`
 {:#members:enableprogressbarresizing}
 
-Indicates whether we can edit the progress of a task interactively in Gantt.
+Indicates whether you can edit the progress of a task interactively in Gantt or not.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -1460,10 +1460,10 @@ Indicates whether we can edit the progress of a task interactively in Gantt.
 ### enableResize `boolean`
 {:#members:enableresize}
 
-Enables or disables the option for dynamically updating the Gantt size on window resizing
+Enables or disables the option for dynamically updating the Gantt size while resizing the window.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1481,10 +1481,10 @@ Enables or disables the option for dynamically updating the Gantt size on window
 ### enableSerialNumber `boolean`
 {:#members:enableSerialNumber}
 
-Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
+Enables or disables the serial number column for the Gantt. When it is enabled, the records will be numbered in sequence.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1501,10 +1501,10 @@ Enables or disables serial number column for Gantt. When enabled, the records wi
 ### enableTaskbarDragTooltip `boolean`
 {:#members:enabletaskbardragtooltip}
 
-Enables or disables tooltip while editing (dragging/resizing) the taskbar.
+Enables or disables the tooltip while editing (dragging/resizing) the taskbar.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -1523,10 +1523,10 @@ Enables or disables tooltip while editing (dragging/resizing) the taskbar.
 ### enableTaskbarTooltip `boolean`
 {:#members:enabletaskbartooltip}
 
-Enables or disables tooltip for taskbar.
+Enables or disables the tooltip for taskbar.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -1545,10 +1545,10 @@ Enables or disables tooltip for taskbar.
 ### enableVirtualization `boolean`
 {:#members:enablevirtualization}
 
-Enables/Disables virtualization for rendering Gantt items.
+Enables/disables the virtualization for rendering Gantt items.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1566,10 +1566,10 @@ Enables/Disables virtualization for rendering Gantt items.
 ### enableWBS `boolean`
 {:#members:enablewbs}
 
-Enables/disables work breakdown structure column. 
+Enables/disables the work breakdown structure column. 
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1589,7 +1589,7 @@ Enables/disables work breakdown structure column.
 Enables/disables WBS predecessor column. 
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -1607,10 +1607,10 @@ Enables/disables WBS predecessor column.
 ### endDateMapping `string`
 {:#members:enddatemapping}
 
-Specifies the mapping property path for end Date of a task in datasource
+Specifies the mapping property path for end date of a task in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -1630,7 +1630,7 @@ Specifies the mapping property path for end Date of a task in datasource
 Specifies the mapping property path for the expand status of a record in data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -1648,22 +1648,22 @@ Specifies the mapping property path for the expand status of a record in data so
 ### filterSettings `object`
 {:#members:filtersettings}
 
-Options for filtering and customizing filter actions.
+Provides option to filter and customize the filter actions.
 
 ### filterSettings.filteredColumns `array`
 {:#members:filtersettings-filteredcolumns}
 
-Specifies the column collection for filtering the Gantt content on initial load
+Specifies the column collection to filter the Gantt content when initial loading.
 
-#### Default Value
+#### Default value
 * []
 
 ### filterSettings.filteredColumns.value `string`
 {:#members:filtersettings-filteredcolumns-value}
 
-Specifies the value to be filtered in Gantt.
+Specifies the value to be filtered in the Gantt.
 
-#### Default Value
+#### Default value
 * -
 
 ### filterSettings.filteredColumns.field `string`
@@ -1671,7 +1671,7 @@ Specifies the value to be filtered in Gantt.
 
 Specifies the field where filtering has to be performed.
 
-#### Default Value
+#### Default value
 * -
 
 ### filterSettings.filteredColumns.predicate `string`
@@ -1679,15 +1679,15 @@ Specifies the field where filtering has to be performed.
 
 Specifies the predicate(and/or) value to perform filtering.
 
-#### Default Value
+#### Default value
 * -
 
 ### filterSettings.filteredColumns.operator `string`
 {:#members:filtersettings-filteredcolumns-operator}
 
-Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
+Applies the filter condition to the filtered column. See <a href="global.html#enum:filteroperator">operator</a>
 
-#### Default Value
+#### Default value
 
 * -
 
@@ -1724,9 +1724,9 @@ export class AppComponent {
 ### groupCollection `array`
 {:#members:groupcollection}
 
-Specifies the data collection for grouping the resources in resource allocation view in Gantt.
+Specifies the data collection for grouping the resources in resource allocation view of the Gantt.
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -1756,10 +1756,10 @@ export class AppComponent {
 ### groupIdMapping `string`
 {:#members:groupidmapping}
 
-Specifies the mapping property path for group ID in datasource in resource allocation view type.
+Specifies the mapping property path for group ID in the data source of resource allocation view type.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -1776,10 +1776,10 @@ Specifies the mapping property path for group ID in datasource in resource alloc
 ### groupNameMapping `string`
 {:#members:groupnamemapping}
 
-Specifies the mapping property path for group name in datasource in resource allocation view type.
+Specifies the mapping property path for group name in the data source of resource allocation view type.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -1796,10 +1796,10 @@ Specifies the mapping property path for group name in datasource in resource all
 ### highlightWeekends `boolean`
 {:#members:highlightweekends}
 
-Specifies whether to highlight the weekends in Gantt .
+Specifies whether to highlight the weekends in Gantt.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -1817,10 +1817,10 @@ Specifies whether to highlight the weekends in Gantt .
 ### holidays `array`
 {:#members:holidays}
 
-Collection of holidays with date, background and label information to be displayed in Gantt.
+Specifies collection of holidays with date, background, and label information to be displayed in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -1852,10 +1852,10 @@ export class AppComponent {
 ### holidays.day `string`
 {:#members:holidays-day}
 
-Specifies holiday date to be displayed in Gantt
+Specifies the holiday date to be displayed in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -1887,10 +1887,10 @@ export class AppComponent {
 ### holidays.background `string`
 {:#members:holidays-background}
 
-Specifies the background color for holiday date in Gantt Schedule
+Provides the background color for holiday date in the Gantt schedule.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -1923,10 +1923,10 @@ export class AppComponent {
 ### holidays.label `string`
 {:#members:holidays-label}
 
-Specifies the label to be displayed for rendered holiday in Gantt
+Specifies the label to be displayed for rendered holiday in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -1958,10 +1958,10 @@ export class AppComponent {
 ### includeWeekend `boolean`
 {:#members:includeweekend}
 
-Specifies whether to include weekends while calculating the duration of a task.
+Specifies whether to include the weekends or not while calculating the duration of the task.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -1980,9 +1980,9 @@ Specifies whether to include weekends while calculating the duration of a task.
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Enables or disables the responsiveness of Gantt
+Enables or disables the responsiveness of Gantt.
 
-#### Default Value
+#### Default value
 
 * "false"
 
@@ -2000,9 +2000,9 @@ Enables or disables the responsiveness of Gantt
 ### leftTaskLabelMapping `string`
 {:#members:lefttasklabelmapping}
 
-Specifies the data source field name to be displayed as left task label
+Specifies the data source field name to be displayed as left task label.
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2020,10 +2020,10 @@ Specifies the data source field name to be displayed as left task label
 ### leftTaskLabelTemplate `string`
 {:#members:lefttasklabeltemplate}
 
-Specifies the template for left task label
+Specifies the template for left task label.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2041,10 +2041,10 @@ Specifies the template for left task label
 ### locale `string`
 {:#members:locale}
 
-Specify the locale for Gantt
+Specifies the locale for Gantt.
 
 
-#### Default Value
+#### Default value
 
 * "en-US"
 
@@ -2063,10 +2063,10 @@ Specify the locale for Gantt
 ### milestoneMapping `string`
 {:#members:milestonemapping}
 
-Specifies the mapping property path for milestone in datasource
+Specifies the mapping property path for milestone in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2084,10 +2084,10 @@ Specifies the mapping property path for milestone in datasource
 ### milestoneTemplate `string`
 {:#members:milestonetemplate}
 
-To Specify the JsRender script Id to customize the mile stone with our preference
+Specifies the JsRender script Id to customize the milestone with preference.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2105,9 +2105,9 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
 ### notesMapping `string`
 {:#members:notesmapping }
 
-Specifies the mapping property path for the task description in datasource
+Specifies the mapping property path for task description in the data source.
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2125,10 +2125,10 @@ Specifies the mapping property path for the task description in datasource
 ### parentProgressbarBackground `string`
 {:#members:parentprogressbarbackground}
 
-Specifies the background of parent progressbar in Gantt
+Specifies the background of parent progressbar in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2146,10 +2146,10 @@ Specifies the background of parent progressbar in Gantt
 ### parentTaskIdMapping `string`
 {:#members:parenttaskidmapping}
 
-Specifies the mapping property path for parent task Id in self reference datasource
+Specifies the mapping property path for parent task Id in the self reference data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2167,10 +2167,10 @@ Specifies the mapping property path for parent task Id in self reference datasou
 ### parentTaskbarBackground `string`
 {:#members:parenttaskbarbackground}
 
-Specifies the background of parent taskbar in Gantt
+Specifies the background of parent taskbar in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2188,10 +2188,10 @@ Specifies the background of parent taskbar in Gantt
 ### parentTaskbarTemplate `string`
 {:#members:parenttaskbartemplate}
 
-Specifies the template for parent taskbar
+Specifies the template for parent taskbar.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2209,10 +2209,10 @@ Specifies the template for parent taskbar
 ### predecessorMapping `string`
 {:#members:predecessormapping}
 
-Specifies the mapping property path for predecessors of a task in datasource
+Specifies the mapping property path for predecessors of a task in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2232,7 +2232,7 @@ Specifies the mapping property path for predecessors of a task in datasource
 
 Specifies the JsRender template id or template script for predecessor tooltip on mouse action.
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2250,10 +2250,10 @@ Specifies the JsRender template id or template script for predecessor tooltip on
 ### progressMapping `string`
 {:#members:progressmapping}
 
-Specifies the mapping property path for progress percentage of a task in datasource
+Specifies the mapping property path for progress percentage of the task in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2271,10 +2271,10 @@ Specifies the mapping property path for progress percentage of a task in datasou
 ### progressbarBackground `string`
 {:#members:progressbarbackground}
 
-Specifies the background of progressbar in Gantt
+Specifies the background of progressbar in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2294,10 +2294,10 @@ Specifies the background of progressbar in Gantt
 {:#members:progressbarheight}
 
 
-Specified the height of the progressbar in taskbar
+Specifies the height of progressbar in the taskbar.
 
 
-#### Default Value
+#### Default value
 
 * 100
 
@@ -2316,10 +2316,10 @@ Specified the height of the progressbar in taskbar
 ### progressbarTooltipTemplate `string`
 {:#members:progressbartooltiptemplate}
 
-Specifies the template for tooltip on resizing progressbar
+Specifies the template for tooltip while resizing the progress bar.
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -2338,10 +2338,10 @@ Specifies the template for tooltip on resizing progressbar
 ### progressbarTooltipTemplateId `string`
 {:#members:progressbartooltiptemplateid}
 
-Specifies the template ID for customized tooltip for progressbar editing in Gantt
+Specifies the template ID for customized tooltip for editing progress bar in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -2359,10 +2359,10 @@ Specifies the template ID for customized tooltip for progressbar editing in Gant
 ### query `object`
 {:#members:query}
 
-It receives query to retrieve data from the table (query is same as SQL).
+Receives query to retrieve data from the table (query is same as SQL).
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -2393,9 +2393,9 @@ export class AppComponent {
 ### readOnly `boolean`
 {:#members:readonly}
 
-Enables or disables Gantt to read-only mode
+Enables or disables the Gantt in read-only mode.
 
-#### Default Value
+#### Default value
 
 * "false"
 
@@ -2412,10 +2412,10 @@ Enables or disables Gantt to read-only mode
 ### renderBaseline `boolean`
 {:#members:renderbaseline}
 
-Enables or Disables rendering baselines in Gantt , when enabled baseline is rendered in Gantt
+Enables or disables the rendering baselines in Gantt, when the enabled baseline is rendered in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * "false"
 
@@ -2433,10 +2433,10 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 ### resourceCollectionMapping `string`
 {:#members:resourcecollectionmapping}
 
-Specifies the mapping property path for resource collection in datasource in resource allocation view type.
+Specifies the mapping property path for resource collection in the data source of resource allocation view type.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2453,10 +2453,10 @@ Specifies the mapping property path for resource collection in datasource in res
 ### resourceIdMapping `string`
 {:#members:resourceidmapping}
 
-Specifies the mapping property name for resource ID in resource Collection in Gantt
+Specifies the mapping property name for resource ID in resource collection of the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2475,10 +2475,10 @@ Specifies the mapping property name for resource ID in resource Collection in Ga
 ### resourceInfoMapping `string`
 {:#members:resourceinfomapping}
 
-Specifies the mapping property path for resources of a task in datasource
+Specifies the mapping property path for task resources in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2498,10 +2498,10 @@ Specifies the mapping property path for resources of a task in datasource
 {:#members:resourcenamemapping}
 
 
-Specifies the mapping property path for resource name of a task in Gantt
+Specifies the mapping property path for resource name of the task in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2519,9 +2519,9 @@ Specifies the mapping property path for resource name of a task in Gantt
 ### resourceUnitMapping `string`
 {:#members:resourceunitmapping}
 
-Specifies the mapping property path for resource's percent effort involved in a task in datasource
+Specifies the mapping property path for resource's percent effort that involved in a task in data source.
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2539,10 +2539,10 @@ Specifies the mapping property path for resource's percent effort involved in a 
 ### resources `array`
 {:#members:resources}
 
-Collection of data regarding resources involved in entire project
+Specifies the collection of data regarding resources that are involved in the entire project.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -2573,10 +2573,10 @@ export class AppComponent {
 ### rightTaskLabelMapping `string`
 {:#members:righttasklabelmapping}
 
-Specifies the data source field name to be displayed as right task label
+Specifies the data source field name to be displayed as right task label.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2593,10 +2593,10 @@ Specifies the data source field name to be displayed as right task label
 ### rightTaskLabelTemplate `string`
 {:#members:righttasklabeltemplate}
 
-Specifies the template for right task label
+Specifies the template for right task label.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2614,10 +2614,10 @@ Specifies the template for right task label
 {:#members:roundoffdayworkingtime}
 
 
-Specifies whether rounding off the day working time edits
+Specifies the rounding off of the day working time.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -2636,10 +2636,10 @@ Specifies whether rounding off the day working time edits
 ### rowHeight `number`
 {:#members:rowheight}
 
-Specifies the height of a single row in Gantt. Also, we need to set same height in the CSS style with class name e-rowcell.
+Specifies the height of a single row in the Gantt. Set the same height in the CSS style with class name e-rowcell.
 
 
-#### Default Value
+#### Default value
 
 * 30
 
@@ -2660,10 +2660,10 @@ Specifies the height of a single row in Gantt. Also, we need to set same height 
 {:#members:scheduleenddate}
 
 
-Specifies end date of the Gantt schedule. By default, end date will be rounded to its next Saturday.
+Specifies the end date of the Gantt schedule. By default, the end date will be rounded to its next Saturday.
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -2682,16 +2682,16 @@ Specifies end date of the Gantt schedule. By default, end date will be rounded t
 ### scheduleHeaderSettings `object`
 {:#members:scheduleheadersettings}
 
-Specifies the options for customizing schedule header.
+Specifies the options to customize the schedule header.
 
 
 ### scheduleHeaderSettings.dayHeaderFormat `string`
 {:#members:scheduleheadersettings-dayheaderformat}
 
-Specified the format for day view in schedule header
+Specifies the format for day view in the schedule header.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -2724,10 +2724,10 @@ export class AppComponent {
 ### scheduleHeaderSettings.hourHeaderFormat `string`
 {:#members:scheduleheadersettings-hourheaderformat}
 
-Specified the format for Hour view in schedule header
+Specifies the format for Hour view in the schedule header.
 
 
-#### Default Value
+#### Default value
 
 * "HH"
 
@@ -2762,7 +2762,7 @@ export class AppComponent {
 
 <ts name = "ej.Gantt.minutesPerInterval"/>
 
-Specifies the number of minutes per interval
+Specifies the number of minutes per interval.
 
 <table class="params">
 <thead>
@@ -2795,7 +2795,7 @@ Specifies the number of minutes per interval
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.minutesPerInterval.Auto
 
@@ -2828,10 +2828,10 @@ export class AppComponent {
 ### scheduleHeaderSettings.monthHeaderFormat `string`
 {:#members:scheduleheadersettings-monthheaderformat}
 
-Specified the format for month view in schedule header
+Specifies the format for month view in the schedule header.
 
 
-#### Default Value
+#### Default value
 
 * "MMM"
 
@@ -2866,7 +2866,7 @@ export class AppComponent {
 
 <ts name = "ej.Gantt.ScheduleHeaderType"/>
 
-Specifies the schedule mode
+Specifies the schedule mode.
 
 <table class="params">
 <thead>
@@ -2899,7 +2899,7 @@ Specifies the schedule mode
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.ScheduleHeaderType.Week
 
@@ -2962,7 +2962,7 @@ Specifies the round-off mode for the start date in schedule header.
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.TimescaleRoundMode.Auto
 
@@ -2994,10 +2994,10 @@ export class AppComponent {
 ### scheduleHeaderSettings.weekendBackground `string`
 {:#members:scheduleheadersettings-weekendbackground}
 
-Specified the background for weekends in Gantt
+Specifies the background for weekends in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * "#F2F2F2"
 
@@ -3030,10 +3030,10 @@ export class AppComponent {
 ### scheduleHeaderSettings.weekHeaderFormat `string`
 {:#members:scheduleheadersettings-weekheaderformat}
 
-Specified the format for week view in schedule header
+Specifies the format for week view in the schedule header.
 
 
-#### Default Value
+#### Default value
 
 * "MMM dd , yyyy"
 
@@ -3066,10 +3066,10 @@ export class AppComponent {
 ### scheduleHeaderSettings.yearHeaderFormat `string`
 {:#members:scheduleheadersettings-yearheaderformat}
 
-Specified the format for year view in schedule header
+Specifies the format for year view in the schedule header.
 
 
-#### Default Value
+#### Default value
 
 * "yyyy"
 
@@ -3105,7 +3105,7 @@ export class AppComponent {
 Specifies the size of the lowest time unit along the timescale, with minimum value as "50%" and maximum value as "500%". It is also possible to set the value in pixels.
 
 
-#### Default Value
+#### Default value
 
 * "100%"
 
@@ -3138,10 +3138,10 @@ export class AppComponent {
 ### scheduleHeaderSettings.weekStartDay `number`
 {:#members:scheduleheadersettings-weekstartday}
 
-Specifies the start day of the week in week timescale mode
+Specifies the start day of the week in week timescale mode.
 
 
-#### Default Value
+#### Default value
 
 * 0
 
@@ -3173,10 +3173,10 @@ export class AppComponent {
 ### scheduleStartDate `string`
 {:#members:schedulestartdate}
 
-Specifies start date of the Gantt schedule. By default, start date will be rounded to its previous Sunday.
+Specifies the start date of the Gantt schedule. By default, the start date will be rounded to its previous Sunday.
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -3194,16 +3194,16 @@ Specifies start date of the Gantt schedule. By default, start date will be round
 ### selectedCellIndexes `array`
 {:#members:selectedcellindexes}
 
-Specifies the selected cell information on rendering Gantt.
+Specifies the selected cell information while rendering the Gantt.
 
 ### selectedCellIndexes.rowIndex `number`
 {:#members:selectedcellindexes-rowIndex}
 
 
-Specifies the row index of the cell to be selected Gantt control
+Specifies the row index of the cell to be selected in the Gantt control.
 
 
-#### Default Value
+#### Default value
 
 * -1
 
@@ -3213,7 +3213,7 @@ Specifies the row index of the cell to be selected Gantt control
 Specifies the cell index to be selected in the row.
 
 
-#### Default Value
+#### Default value
 
 * -1
 
@@ -3244,10 +3244,10 @@ export class AppComponent {
 ### selectedRowIndex `number`
 {:#members:selectedrowindex}
 
-Specifies the selected row Index in Gantt , the row with given index will highlighted
+Specifies the selected row Index in the Gantt. The row with given index will be highlighted.
 
 
-#### Default Value
+#### Default value
 
 * -1
 
@@ -3288,7 +3288,7 @@ Specifies the row selection type.
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.SelectionType.Single
 
@@ -3321,7 +3321,7 @@ export class AppComponent {
 
 <ts name = "ej.Gantt.SelectionMode"/>
 
-Specifies the type of selection whether to select row or cell.
+Specifies the type of selection whether to select the row or cell.
 
 <table class="params">
 <thead>
@@ -3342,7 +3342,7 @@ Specifies the type of selection whether to select row or cell.
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.SelectionMode.Row
 
@@ -3376,7 +3376,7 @@ export class AppComponent {
 Enables or disables the column chooser.
 
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -3394,9 +3394,9 @@ Enables or disables the column chooser.
 ### showColumnOptions `boolean`
 {:#members:showcolumnoptions}
 
-Enables/disables the options for inserting , deleting and renaming  columns.       
+Enables/disables the options for inserting, deleting, and renaming columns.    
 
-#### Default Value
+#### Default value
 
 * false
 
@@ -3416,7 +3416,7 @@ Enables/disables the options for inserting , deleting and renaming  columns.
 
 Specifies the template for cell tooltip
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -3435,7 +3435,7 @@ Specifies the template for cell tooltip
 ### showGridExpandCellTooltip `boolean`
 {:#members:showgridexpandcelltooltip}
 
-Specifies whether to show grid cell tooltip over expander cell alone.
+Specifies whether to show the grid cell tooltip over an expander cell alone.
 
 
 #### Default Value
@@ -3457,10 +3457,10 @@ Specifies whether to show grid cell tooltip over expander cell alone.
 ### showProgressStatus `boolean`
 {:#members:showprogressstatus}
 
-Specifies whether display task progress inside taskbar.
+Specifies whether to display task progress in the taskbar.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -3482,7 +3482,7 @@ Specifies whether display task progress inside taskbar.
 Specifies whether to display resource names for a task beside taskbar.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -3504,7 +3504,7 @@ Specifies whether to display resource names for a task beside taskbar.
 Specifies whether to display task name beside task bar.
 
 
-#### Default Value
+#### Default value
 
 
 * true
@@ -3524,17 +3524,17 @@ Specifies whether to display task name beside task bar.
 ### sizeSettings `object`
 {:#members:sizesettings}
 
-Specifies the size option of Gantt control.
+Specifies the size option of the Gantt control.
 
 
 ### sizeSettings.height `string`
 {:#members:sizesettings-height}
 
 
-Specifies the height of Gantt control
+Specifies the height of the Gantt control.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3567,10 +3567,10 @@ export class AppComponent {
 ### sizeSettings.width `string`
 {:#members:sizesettings-width}
 
-Specifies the width of Gantt control
+Specifies the width of Gantt control.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3608,10 +3608,10 @@ Specifies the sorting options for Gantt.
 ### sortSettings.sortedColumns `array`
 {:#members:sortsettings-sortedcolumns}
 
-Specifies the sorted columns for Gantt
+Specifies the sorted columns for Gantt.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -3643,10 +3643,10 @@ export class AppComponent {
 ### sortSettings.sortedColumns.field `string`
 {:#members:sortsettings-sortedcolumns-field}
 
-Specifies the field to be sorted in Gantt
+Specifies the field to be sorted in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3678,10 +3678,10 @@ export class AppComponent {
 ### sortSettings.sortedColumns.direction `string`
 {:#members:sortsettings-sortedcolumns-direction}
 
-Specifies the sort direction in Gantt
+Specifies the sort direction in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3712,10 +3712,10 @@ export class AppComponent {
 ### splitterPosition `string`
 {:#members:splitterposition}
 
-Specifies splitter position in Gantt.
+Specifies the splitter position in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * null
 
@@ -3733,15 +3733,15 @@ Specifies splitter position in Gantt.
 ### splitterSettings `object`
 {:#members:splittersettings}
 
-Option to configure the splitter position.
+Provides option to configure the splitter position.
 
 
 ### splitterSettings.position `string`
 {:#members:splittersettings-position}
 
-Specifies position of the splitter in Gantt , splitter can be placed either based on percentage values or pixel values.
+Specifies the position of splitter in the Gantt and the splitter can be placed based on percentage values or pixel values.
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3773,9 +3773,9 @@ export class AppComponent {
 ### splitterSettings.index `string`
 {:#members:splittersettings-index}
 
-Specifies the position of splitter in Gantt, based on column index in Gantt.
+Specifies the position of splitter in the Gantt based on column index in the Gantt.
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3806,10 +3806,10 @@ export class AppComponent {
 {:#members:startdatemapping}
 
 
-Specifies the mapping property path for start date of a task in datasource
+Specifies the mapping property path for start date of a task in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3828,10 +3828,10 @@ Specifies the mapping property path for start date of a task in datasource
 ### stripLines `array`
 {:#members:striplines}
 
-Specifies the options for striplines
+Specifies the options for striplines.
 
 
-#### Default Value
+#### Default value
 
 * []
 
@@ -3843,10 +3843,10 @@ Specifies the options for striplines
 ### stripLines.day `string`
 {:#members:striplines-day}
 
-Specifies date to render striplines in Gantt
+Specifies the date to render striplines in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3878,10 +3878,10 @@ export class AppComponent {
 ### stripLines.label `string`
 {:#members:striplines-label}
 
-Specifies label to be displayed for striplines in Gantt
+Specifies the label to be displayed for striplines in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3913,10 +3913,10 @@ export class AppComponent {
 ### stripLines.lineStyle `string`
 {:#members:striplines-linestyle}
 
-Specifies line style for rendered striplines in Gantt
+Specifies the line style for rendered striplines in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3948,10 +3948,10 @@ export class AppComponent {
 ### stripLines.lineColor `string`
 {:#members:striplines-linecolor}
 
-Specifies the line color for rendered striplines in Gantt
+Specifies the line color for rendered striplines in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -3983,10 +3983,10 @@ export class AppComponent {
 ### stripLines.lineWidth `string`
 {:#members:striplines-linewidth}
 
-Specifies the width of the stripline in Gantt
+Specifies the width of stripline in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4017,10 +4017,10 @@ export class AppComponent {
 ### taskCollectionMapping `string`
 {:#members:taskcollectionmapping}
 
-Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
+Specifies the mapping property path for assigned task collection of resources in the data source of resource allocation view type.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4037,10 +4037,10 @@ Specifies the mapping property path for assigned task collection for resources i
 ### taskIdMapping `string`
 {:#members:taskidmapping}
 
-Specifies the mapping property path for task Id in datasource
+Specifies the mapping property path for task Id in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4059,10 +4059,10 @@ Specifies the mapping property path for task Id in datasource
 ### taskNameMapping `string`
 {:#members:tasknamemapping}
 
-Specifies the mapping property path for task name in datasource
+Specifies the mapping property path for task name in the data source.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4082,7 +4082,7 @@ Specifies the mapping property path for task name in datasource
 
 <ts name = "ej.Gantt.TaskSchedulingMode"/>
 
-Specifies the task scheduling mode for a project and this will be set to all the tasks available in the project
+Specifies the task scheduling mode for a project, and this will be set to all tasks available in the project.
 
 <table class="params">
 <thead>
@@ -4108,7 +4108,7 @@ Specifies the task scheduling mode for a project and this will be set to all the
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 *  ej.Gantt.TaskSchedulingMode.Auto
 
@@ -4139,9 +4139,9 @@ export class AppComponent {
 ### taskSchedulingModeMapping `string`
 {:#members:taskschedulingmodemapping }
 
-Specifies the mapping property path for the task scheduling mode for a task in datasource
+Specifies the mapping property path for the task scheduling mode of a task in the data source.
 
-#### Default Value
+#### Default value
 
 * "auto"
 
@@ -4161,7 +4161,7 @@ Specifies the mapping property path for the task scheduling mode for a task in d
 
 <ts name = "ej.Gantt.TaskType"/>
 
-Specifies the nature of a task for calculating the work,  and it can fixed duration, fixed work and fixed resource unit
+Specifies the nature of a task to calculate the work and it contains the fixed duration, fixed work, and fixed resource unit.
 
 <table class="params">
 <thead>
@@ -4186,7 +4186,7 @@ Specifies the nature of a task for calculating the work,  and it can fixed durat
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 *  ej.Gantt.TaskType.FixedUnit
 
@@ -4218,10 +4218,10 @@ export class AppComponent {
 ### taskbarBackground `string`
 {:#members:taskbarbackground}
 
-Specifies the background of the taskbar in Gantt
+Specifies the background of taskbar in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4240,10 +4240,10 @@ Specifies the background of the taskbar in Gantt
 ### taskbarEditingTooltipTemplate `string`
 {:#members:taskbareditingtooltiptemplate}
 
-Specifies the template script for customized tooltip for taskbar editing in Gantt
+Specifies the template script of the customized tooltip for editing taskbar in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4263,10 +4263,10 @@ Specifies the template script for customized tooltip for taskbar editing in Gant
 {:#members:taskbareditingtooltiptemplateid}
 
 
-Specifies the template Id for customized tooltip for taskbar editing in Gantt
+Specifies the template Id of customized tooltip for editing the taskbar in Gantt.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4286,10 +4286,10 @@ Specifies the template Id for customized tooltip for taskbar editing in Gantt
 {:#members:taskbarheight}
 
 
-Specifies the height of taskBar in Gantt.
+Specifies the height of taskBar in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * 20
 
@@ -4307,10 +4307,10 @@ Specifies the height of taskBar in Gantt.
 ### taskbarTemplate `string`
 {:#members:taskbartemplate}
 
-To Specify the JsRender script Id to customize the task bar with our preference
+To Specify the JsRender script Id to customize the task bar with our preference.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4328,10 +4328,10 @@ To Specify the JsRender script Id to customize the task bar with our preference
 ### taskbarTooltipTemplate `string`
 {:#members:taskbartooltiptemplate}
 
-Specifies the template for tooltip on mouse action on taskbars
+Specifies the template for tooltip on mouse action on taskbars.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4352,7 +4352,7 @@ Specifies the template for tooltip on mouse action on taskbars
 Specifies the template id for tooltip on mouse action on taskbars
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4376,10 +4376,10 @@ Specifies the toolbarSettings options.
 ### toolbarSettings.showToolbar `boolean`
 {:#members:toolbarsettings-showtoolbar}
 
-Specifies the state of enabling or disabling toolbar
+Specifies the enabling or disabling state of the toolbar.
 
 
-#### Default Value
+#### Default value
 
 * true
 
@@ -4412,7 +4412,7 @@ export class AppComponent {
 ### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
 
-Specifies the list of toolbar items to be rendered in Gantt toolbar
+Specifies the list of toolbar items to be rendered in the Gantt toolbar.
 
 <table class="params">
 <thead>
@@ -4477,7 +4477,7 @@ Specifies the list of toolbar items to be rendered in Gantt toolbar
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 * []
 
 #### Example
@@ -4507,15 +4507,15 @@ export class AppComponent {
 ### toolbarSettings.customToolbarItems `array`
 {:#members:toolbarsettings-customtoolbaritems}
 
-Allows the user to insert custom toolbar items.
+Allows users to insert custom toolbar items.
 
 ### toolbarSettings.customToolbarItems.text `string`
 {:#members:toolbarsettings-customtoolbaritems-text}
 
-Allows the user to insert the custom icons in toolbar using CSS class name selector.
+Allows users to insert custom icons in the toolbar by using the CSS class name selector.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4548,10 +4548,10 @@ export class AppComponent {
 ### toolbarSettings.customToolbarItems.templateID `string`
 {:#members:toolbarsettings-customtoolbaritems-templateid}
 
-Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
+Allows users to insert custom icons in the toolbar by using script templates. Using this property, you can bind HTML elements and other EJ controls to the Gantt toolbar.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4584,10 +4584,10 @@ export class AppComponent {
 ### toolbarSettings.customToolbarItems.tooltipText `string`
 {:#members:toolbarsettings-customtoolbaritems-tooltiptext}
 
-Allows the user to display custom tooltip text for Gantt custom toolbar items.
+Allows users to display custom tooltip text for Gantt custom toolbar items.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4618,10 +4618,10 @@ export class AppComponent {
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
 
-Specifies the tree expander column in Gantt
+Specifies the tree expander column in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * 0
 
@@ -4640,9 +4640,9 @@ Specifies the tree expander column in Gantt
 ### validateManualTasksOnLinking `boolean`
 {:#members:validatemanualtasksonlinking}
 
-Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
+Enables or disables the schedule date validation while connecting the scheduled task to predecessor manually.
 
-#### Default Value
+#### Default value
 
 * "false"
 
@@ -4662,7 +4662,7 @@ Enables or disables the schedule date validation while connecting a manually sch
 
 <ts name = "ej.Gantt.ViewType"/>
 
-Specifies the view type for a project in the Gantt.
+Specifies the view type for the project in the Gantt.
 
 <table class="params">
 <thead>
@@ -4683,7 +4683,7 @@ Specifies the view type for a project in the Gantt.
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.ViewType.ProjectView
 
@@ -4713,10 +4713,10 @@ export class AppComponent {
 ### weekendBackground `string`
 {:#members:weekendbackground}
 
-Specifies the weekendBackground color in Gantt
+Specifies the weekendBackground color in the Gantt.
 
 
-#### Default Value
+#### Default value
 
 * "#F2F2F2"
 
@@ -4734,10 +4734,10 @@ Specifies the weekendBackground color in Gantt
 ### workMapping `string`
 {:#members:workmapping}
 
-Specifies the mapping property path for the work field of a task in the data source. When it is mapped the end date and duration for a task will be calculated automatically.
+Specifies the mapping property path of work field of the task in the data source. When it is mapped, the end date and duration for the task will be calculated automatically.
 
 
-#### Default Value
+#### Default value
 
 * ""
 
@@ -4757,7 +4757,7 @@ Specifies the mapping property path for the work field of a task in the data sou
 
 <ts name = "ej.Gantt.WorkUnit"/>
 
-Specifies the unit for the work involved in a task and it can be day, hour or minute
+Specifies the unit of the work involved in a task; it can be day, hour, or minute.
 
 <table class="params">
 <thead>
@@ -4815,7 +4815,7 @@ export class AppComponent {
 
 Gets or sets the working days of a week in a project.
 
-#### Default Value
+#### Default value
 
 * ["Monday","Tuesday","Wednesday","Thursday","Friday"]
 
@@ -4848,7 +4848,7 @@ export class AppComponent {
 
 <ts name = "ej.Gantt.workingTimeScale"/>
 
-Specifies the working time schedule of day
+Specifies the working time schedule of a day.
 
 <table class="params">
 <thead>
@@ -4869,7 +4869,7 @@ Specifies the working time schedule of day
 </tbody>
 </table>
 
-#### Default Value
+#### Default value
 
 * ej.Gantt.workingTimeScale.TimeScale8Hours
 
@@ -4902,7 +4902,7 @@ export class AppComponent {
 ### addRecord(data, rowPosition)
 {:#methods:addrecord}
 
-To add a new item in Gantt
+To add a new item in the Gantt.
 
 <table class="params">
 <thead>
@@ -4958,7 +4958,7 @@ export class AppComponent {
 ### cancelEdit()
 {:#methods:canceledit}
 
-To cancel the edited state of an item in Gantt
+To cancel the edited state of an item in the Gantt.
 
 #### Example
 
@@ -4990,7 +4990,7 @@ export class AppComponent {
 ### clearFilter()
 {:#methods:clearfilter}
 
-To clear all the filtered columns in Gantt.
+To clear all filtered columns in the Gantt.
 
 #### Example
 
@@ -5022,7 +5022,7 @@ export class AppComponent {
 ### collapseAllItems()
 {:#methods:collapseallitems}
 
-To collapse all the parent items in Gantt
+To collapse all parent items in the Gantt.
 
 
 #### Example
@@ -5055,7 +5055,7 @@ export class AppComponent {
 ### deleteDependency(fromTaskId,toTaskId)
 {:#methods:deletedependency}
 
-To delete the dependency between the two tasks.
+To delete the dependency between two tasks.
 
 <table class="params">
 <thead>
@@ -5110,7 +5110,7 @@ export class AppComponent {
 ### deleteItem()
 {:#methods:deleteitem}
 
-To delete a selected item in Gantt
+To delete a selected item in the Gantt.
 
 
 #### Example
@@ -5144,7 +5144,7 @@ export class AppComponent {
 ### destroy()
 {:#methods:destroy}
 
-destroy the Gantt widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Destroys the Gantt widget all events bound using "this._on" will be unbind automatically and bring the control to pre-init state.
 
 
 #### Example
@@ -5178,7 +5178,7 @@ export class AppComponent {
 ### expandAllItems()
 {:#methods:expandallitems}
 
-To Expand all the parent items in Gantt
+Expands all parent items in the Gantt.
 
 
 #### Example
@@ -5212,7 +5212,7 @@ export class AppComponent {
 ### expandCollapseRecord(taskId)
 {:#methods:expandcollapserecord}
 
-To expand and collapse an item in Gantt using item's ID
+To expand and collapse an item in the Gantt by using the item's ID.
 
 <table class="params">
 <thead>
@@ -5261,7 +5261,7 @@ export class AppComponent {
 ### export(action, \[serverEvent\], \[multipleExport\])
 {:#methods:export}
 
-Export the Gantt content to excel or PDF document.
+Exports the Gantt content to a Microsoft Excel or PDF document.
 
 <table class="params">
 <thead>
@@ -5326,7 +5326,7 @@ export class AppComponent {
 ### filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase])
 {:#methods:filtercolumn}
 
-Sends filtering request to filter a column in Gantt dynamically.
+Sends filtering request to filter a column in the Gantt dynamically.
 
 <table class="params">
 <thead>
@@ -5395,7 +5395,7 @@ export class AppComponent {
 ### hideColumn(headerText)
 {:#methods:hidecolumn}
 
-To hide the column by using header text
+To hide the column by using the header text.
 
 <table class="params">
 <thead>
@@ -5446,7 +5446,7 @@ export class AppComponent {
 ### indentItem()
 {:#methods:indentitem}
 
-To indent a selected item in Gantt
+Indents a selected item in the Gantt.
 
 
 #### Example
@@ -5480,7 +5480,7 @@ export class AppComponent {
 ### openAddDialog()
 {:#methods:openadddialog}
 
-To Open the dialog to add new task to the Gantt
+Opens the dialog to add a new task to the Gantt.
 
 
 #### Example
@@ -5514,7 +5514,7 @@ export class AppComponent {
 ### openEditDialog()
 {:#methods:openeditdialog}
 
-To Open the dialog to edit existing task to the Gantt
+Opens the dialog to edit the existing task to the Gantt.
 
 
 #### Example
@@ -5548,7 +5548,7 @@ export class AppComponent {
 ### outdentItem()
 {:#methods:outdentitem}
 
-To outdent a selected item in Gantt
+To outdent the selected item in the Gantt.
 
 
 #### Example
@@ -5582,7 +5582,7 @@ export class AppComponent {
 ### saveEdit()
 {:#methods:saveedit}
 
-To save the edited state of an item in Gantt
+Saves the edited state of an item in the Gantt.
 
 
 #### Example
@@ -5616,7 +5616,7 @@ export class AppComponent {
 ### searchItem(searchString)
 {:#methods:searchitem}
 
-To search an item with search string provided at the run time
+Searchs an item with search string provided at the run time.
 
 <table class="params">
 <thead>
@@ -5666,7 +5666,7 @@ export class AppComponent {
 ### selectCells(Indexes,preservePreviousSelectedCell)
 {:#methods:selectcells}
 
-To select cell based on the cell and row index dynamically.
+Selects the cell dynamically based on the cell and row index.
 
 <table class="params">
 <thead>
@@ -5722,7 +5722,7 @@ export class AppComponent {
 ### selectMultipleRows(rowIndexes)
 {:#methods:selectmultiplerows}
 
-To select multiple rows dynamically.
+Selects the multiple rows dynamically.
 
 <table class="params">
 <thead>
@@ -5823,7 +5823,7 @@ export class AppComponent {
 ### setSplitterPosition(width)
 {:#methods:setsplitterposition}
 
-To set the grid width in Gantt
+Sets the grid width in the Gantt.
 
 <table class="params">
 <thead>
@@ -5874,7 +5874,7 @@ export class AppComponent {
 ### showColumn(headerText)
 {:#methods:showcolumn}
 
-To show the column by using header text
+Shows the column by using the header text.
 
 <table class="params">
 <thead>
@@ -5924,7 +5924,7 @@ export class AppComponent {
 ### showCriticalPath(isShown)
 {:#methods:showcriticalpath}
 
-To show/hide the critical tasks in current project.
+Shows/hides the critical tasks in the current project.
 
 <table class="params">
 <thead>
@@ -5973,7 +5973,7 @@ export class AppComponent {
 ### sortColumn(mappingName, columnSortDirection)
 {:#methods:sortcolumn}
 
-To sort the column in required direction
+Sorts the column in the required direction.
 
 <table class="params">
 <thead>
@@ -5987,12 +5987,12 @@ To sort the column in required direction
 <tr>
 <td class="name">mappingName</td>
 <td class="type">string</td>
-<td class="description">Defines the column's mapping name in which sorting have to be performed</td>
+<td class="description">Defines the column's mapping name in which sorting has to be performed</td>
 </tr>
 <tr>
 <td class="name">columnSortDirection</td>
 <td class="type">string</td>
-<td class="description">Defines the sort direction whether the column has to sorted in ascending/descending order. By default it is sorting in an ascending order</td>
+<td class="description">Defines the sort direction whether the column has to sorted in ascending/descending order. By default, it is sorted in an ascending order</td>
 </tr>
 </tbody>
 </table>
@@ -6028,7 +6028,7 @@ export class AppComponent {
 ### updateDependency(fromTaskId,toTaskId, predecessorType, offset)
 {:#methods:updatedependency}
 
-To update the predecessor type and offset value for existing task dependency.
+Updates the predecessor type and offset value for existing the task dependency.
 
 <table class="params">
 <thead>
@@ -6092,7 +6092,7 @@ export class AppComponent {
 ### updateRecordByTaskId(data)
 {:#methods:updaterecordbytaskid}
 
-To update the value of Gantt record by using it's task id value.
+Updates the value of Gantt record by using it's task id value.
 
 <table class="params">
 <thead>
@@ -6143,7 +6143,7 @@ export class AppComponent {
 ### updateRecordByIndex(index, data)
 {:#methods:updaterecordbyindex}
 
-To update the value of Gantt record by using row index.
+Updates the value of Gantt record by using the row index.
 
 <table class="params">
 <thead>
@@ -6199,7 +6199,7 @@ export class AppComponent {
 ### updateTaskId(currentId, newId)
 {:#methods:updatetaskid}
 
-To change an existing Gantt ID by new ID value dynamically
+Changes an existing Gantt ID by a new ID value dynamically.
 
 <table class="params">
 <thead>
@@ -6213,12 +6213,12 @@ To change an existing Gantt ID by new ID value dynamically
 <tr>
 <td class="name">currentId</td>
 <td class="type">number</td>
-<td class="description">you can pass an existing ID value to be change</td>
+<td class="description">you can pass an existing ID value to be changed</td>
 </tr>
 <tr>
 <td class="name">newId</td>
 <td class="type">number</td>
-<td class="description">you can pass a new ID value to be change</td>
+<td class="description">you can pass a new ID value to be changed</td>
 </tr>
 </tbody>
 </table>
@@ -6257,7 +6257,7 @@ export class AppComponent {
 ### actionBegin
 {:#events:actionbegin}
 
-Triggered for every Gantt action before its starts.
+Triggers for every Gantt action before its starts.
 
 <table class="params">
 <thead>
@@ -6303,7 +6303,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters while perform sorting in grid tree action starts:
+<td class="description">Event parameters while starting the sorting in grid tree:
 <table class="params">
 <thead>
 <tr>
@@ -6341,7 +6341,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">columnSortDirection</td>
 <td class="type">string</td>
-<td class="description">Returns the direction of sorting ascending or descending</td>
+<td class="description">Returns the sorting direction in ascending or descending order</td>
 </tr>
 </tbody>
 </table>
@@ -6350,7 +6350,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters while searching action starts:
+<td class="description">Event parameters while starting the searching action:
 <table class="params">
 <thead>
 <tr>
@@ -6392,7 +6392,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters while performing the delete operation starts:
+<td class="description">Event parameters while starting the delete operation:
 <table class="params">
 <thead>
 <tr>
@@ -6434,7 +6434,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters while performing the add operation starts:
+<td class="description">Event parameters while starting the add operation:
 <table class="params">
 <thead>
 <tr>
@@ -6471,7 +6471,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters while performing the edit operation starts:
+<td class="description">Event parameters while starting the edit operation:
 <table class="params">
 <thead>
 <tr>
@@ -6537,7 +6537,7 @@ export class AppComponent {
 ### actionComplete
 {:#events:actioncomplete}
 
-Triggered for every Gantt action success event.
+Gets triggerred for every Gantt action success event.
 
 <table class="params">
 <thead>
@@ -6583,7 +6583,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters after perform the sorting in TreeGrid part is completed:
+<td class="description">Event parameters after completing the sorting in tree grid part:
 <table class="params">
 <thead>
 <tr>
@@ -6621,7 +6621,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">columnSortDirection</td>
 <td class="type">string</td>
-<td class="description">Returns the direction of sorting ascending or descending</td>
+<td class="description">Returns the direction of sorting in ascending or descending order</td>
 </tr>
 </tbody>
 </table>
@@ -6630,7 +6630,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters after searching completed:
+<td class="description">Event parameters after searching is completed:
 <table class="params">
 <thead>
 <tr>
@@ -6672,7 +6672,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters while performing after completing the delete operation is completed:
+<td class="description">Event parameters after completing the delete operation:
 <table class="params">
 <thead>
 <tr>
@@ -6714,7 +6714,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters after the add operation completed:
+<td class="description">Event parameters after the add operation is completed:
 <table class="params">
 <thead>
 <tr>
@@ -6751,7 +6751,7 @@ Triggered for every Gantt action success event.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters after the edit operation completed:
+<td class="description">Event parameters after the edit operation is completed:
 <table class="params">
 <thead>
 <tr>
@@ -6817,7 +6817,7 @@ export class AppComponent {
 ### beginEdit
 {:#events:beginedit}
 
-Triggered while enter the edit mode in the TreeGrid cell
+Gets triggered while entering the edit mode in the tree grid cell.
 
 <table class="params">
 <thead>
@@ -6831,7 +6831,7 @@ Triggered while enter the edit mode in the TreeGrid cell
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Arguments when beginEdit event is triggered.
+<td class="description">Arguments when the beginEdit event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -6854,7 +6854,7 @@ Triggered while enter the edit mode in the TreeGrid cell
 <tr>
 <td class="name">cellElement</td>
 <td class="type">object</td>
-<td class="description">Returns the Element of editing cell.</td>
+<td class="description">Returns the element of editing cell.</td>
 </tr>
 <tr>
 <td class="name">data</td>
@@ -6901,7 +6901,7 @@ export class AppComponent {
 ### cellSelected
 {:#events:cellselected}
 
-Triggered after selected a cell
+Gets triggered after selecting a cell.
 
 <table class="params">
 <thead>
@@ -7020,7 +7020,7 @@ export class AppComponent {
 ### cellSelecting
 {:#events:cellselecting}
 
-Triggered before selecting a cell
+Triggers before selecting a cell.
 
 <table class="params">
 <thead>
@@ -7115,7 +7115,7 @@ export class AppComponent {
 {:#events:collapsed}
 
 
-Triggered after collapsed the Gantt record
+Triggers after collapsing the Gantt record.
 
 <table class="params">
 <thead>
@@ -7162,7 +7162,7 @@ Triggered after collapsed the Gantt record
 <tr>
 <td class="name">expanded</td>
 <td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
+<td class="description">Returns the state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -7200,7 +7200,7 @@ export class AppComponent {
 ### collapsing
 {:#events:collapsing}
 
-Triggered while collapsing the Gantt record
+Triggers while collapsing the Gantt record.
 
 <table class="params">
 <thead>
@@ -7214,7 +7214,7 @@ Triggered while collapsing the Gantt record
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Arguments when collapsing event is triggered.
+<td class="description">Arguments when the collapsing event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -7237,12 +7237,12 @@ Triggered while collapsing the Gantt record
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of edited cell record..</td>
+<td class="description">Returns the data of edited cell record.</td>
 </tr>
 <tr>
 <td class="name">expanded</td>
 <td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
+<td class="description">Returns the state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -7280,7 +7280,7 @@ export class AppComponent {
 ### contextMenuOpen
 {:#events:contextmenuopen}
 
-Triggered while Context Menu is rendered in Gantt control
+Triggers while the Context Menu is rendered in the Gantt control.
 
 <table class="params">
 <thead>
@@ -7312,7 +7312,7 @@ Triggered while Context Menu is rendered in Gantt control
 <tr>
 <td class="name">contextMenuItems</td>
 <td class="type">array</td>
-<td class="description">Returns the default context menu items to which we add custom items.</td>
+<td class="description">Returns the default context menu items to which custom items are added.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -7364,7 +7364,7 @@ export class AppComponent {
 ### create
 {:#events:create}
 
-Triggered when Gantt is rendered completely.
+Triggers when the Gantt is rendered completely.
 
 <table class="params">
 <thead>
@@ -7437,7 +7437,7 @@ export class AppComponent {
 ### endEdit
 {:#events:endedit}
 
-Triggered after save the modified cellValue in Gantt.
+Gets triggered after saving the modified cellValue in the Gantt.
 
 <table class="params">
 <thead>
@@ -7451,7 +7451,7 @@ Triggered after save the modified cellValue in Gantt.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Arguments when endEdit event is triggered.
+<td class="description">Arguments when the endEdit event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -7474,7 +7474,7 @@ Triggered after save the modified cellValue in Gantt.
 <tr>
 <td class="name">cellElement</td>
 <td class="type">object</td>
-<td class="description">Returns the Element of editing cell.</td>
+<td class="description">Returns the element of editing cell.</td>
 </tr>
 <tr>
 <td class="name">data</td>
@@ -7484,12 +7484,12 @@ Triggered after save the modified cellValue in Gantt.
 <tr>
 <td class="name">columnName</td>
 <td class="type">string</td>
-<td class="description">Returns the column name of edited cell belongs.</td>
+<td class="description">Returns the column name of edited cell.</td>
 </tr>
 <tr>
 <td class="name">columnObject</td>
 <td class="type">object</td>
-<td class="description">Returns the column object of edited cell belongs.</td>
+<td class="description">Returns the column object of edited cell.</td>
 </tr>
 </tbody>
 </table>
@@ -7527,7 +7527,7 @@ export class AppComponent {
 ### expanded
 {:#events:expanded}
 
-Triggered after expand the record
+Gets triggered after expanding the record.
 
 <table class="params">
 <thead>
@@ -7574,7 +7574,7 @@ Triggered after expand the record
 <tr>
 <td class="name">expanded</td>
 <td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
+<td class="description">Returns the state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -7612,7 +7612,7 @@ export class AppComponent {
 ### expanding
 {:#events:expanding}
 
-Triggered while expanding the Gantt record
+Gets triggered while expanding the Gantt record.
 
 <table class="params">
 <thead>
@@ -7626,7 +7626,7 @@ Triggered while expanding the Gantt record
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Arguments when expanding event is triggered.
+<td class="description">Arguments when the expanding event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -7649,12 +7649,12 @@ Triggered while expanding the Gantt record
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of edited cell record..</td>
+<td class="description">Returns the data of edited cell record.</td>
 </tr>
 <tr>
 <td class="name">expanded</td>
 <td class="type">boolean</td>
-<td class="description">Returns state of a record whether it is in expanded or collapsed state.</td>
+<td class="description">Returns the state of a record whether it is in expanded or collapsed state.</td>
 </tr>
 </tbody>
 </table>
@@ -7692,7 +7692,7 @@ export class AppComponent {
 ### load
 {:#events:load}
 
-Triggered while Gantt is loaded
+Gets triggered when the Gantt is loaded.
 
 <table class="params">
 <thead>
@@ -7767,7 +7767,7 @@ export class AppComponent {
 ### queryCellInfo
 {:#events:querycellinfo}
 
-Triggered while rendering each cell in the TreeGrid
+Gets triggered while rendering each cell in the tree grid.
 
 <table class="params">
 <thead>
@@ -7814,7 +7814,7 @@ Triggered while rendering each cell in the TreeGrid
 <tr>
 <td class="name">column</td>
 <td class="type">object</td>
-<td class="description">Returns the column of cell belongs.</td>
+<td class="description">Returns the column of corresponding cell.</td>
 </tr>
 </tbody>
 </table>
@@ -7852,7 +7852,7 @@ export class AppComponent {
 ### queryTaskbarInfo
 {:#events:querytaskbarinfo}
 
-Triggered while rendering each taskbar in the Gantt 
+Gets triggered while rendering each taskbar in the Gantt.
 
 <table class="params">
 <thead>
@@ -7942,7 +7942,7 @@ export class AppComponent {
 ### rowDataBound
 {:#events:rowdatabound}
 
-Triggered while rendering each row
+Gets triggered while rendering each row.
 
 <table class="params">
 <thead>
@@ -7979,7 +7979,7 @@ Triggered while rendering each row
 <tr>
 <td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the data of rendering row record..</td>
+<td class="description">Returns the data of rendering row record.</td>
 </tr>
 </tbody>
 </table>
@@ -8018,7 +8018,7 @@ export class AppComponent {
 {:#events:rowdrag}
 
 
-Triggered while dragging a row in Gantt control
+Gets triggered while dragging a row in the Gantt control.
 
 <table class="params">
 <thead>
@@ -8050,12 +8050,12 @@ Triggered while dragging a row in Gantt control
 <tr>
 <td class="name">draggedRow</td>
 <td class="type">object</td>
-<td class="description">Returns the row which we start to drag.</td>
+<td class="description">Returns the row on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">draggedRowIndex</td>
 <td class="type">number</td>
-<td class="description">Returns the row index which we start to drag.</td>
+<td class="description">Returns the row index on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">targetRow</td>
@@ -8065,12 +8065,12 @@ Triggered while dragging a row in Gantt control
 <tr>
 <td class="name">targetRowIndex</td>
 <td class="type">number</td>
-<td class="description">Returns the row index on which we are dragging.</td>
+<td class="description">Returns the row index on which dragging is performed.</td>
 </tr>
 <tr>
 <td class="name">canDrop</td>
 <td class="type">boolean</td>
-<td class="description">Returns that we can drop over that record or not.</td>
+<td class="description">Returns that you can drop over that record or not.</td>
 </tr>
 <tr>
 <td class="name">dropPosition </td>
@@ -8131,7 +8131,7 @@ export class AppComponent {
 {:#events:rowdragstart}
 
 
-Triggered while start to drag row in Gantt control
+Triggers while starting to drag a row in the Gantt control.
 
 <table class="params">
 <thead>
@@ -8163,12 +8163,12 @@ Triggered while start to drag row in Gantt control
 <tr>
 <td class="name">draggedRow</td>
 <td class="type">object</td>
-<td class="description">Returns the row which we start to drag.</td>
+<td class="description">Returns the row on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">draggedRowIndex</td>
 <td class="type">boolean</td>
-<td class="description">Returns the row index which we start to drag.</td>
+<td class="description">Returns the row index on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -8224,7 +8224,7 @@ export class AppComponent {
 {:#events:rowdragstop}
 
 
-Triggered while drop a row in Gantt control
+Gets triggerred while dropping a row in the Gantt control.
 
 <table class="params">
 <thead>
@@ -8256,22 +8256,22 @@ Triggered while drop a row in Gantt control
 <tr>
 <td class="name">draggedRow</td>
 <td class="type">object</td>
-<td class="description">Returns the row which we start to drag.</td>
+<td class="description">Returns the row on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">draggedRowIndex</td>
 <td class="type">number</td>
-<td class="description">Returns the row index which we start to drag.</td>
+<td class="description">Returns the row index on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">targetRow</td>
 <td class="type">object</td>
-<td class="description">Returns the row which we are dropped to row.</td>
+<td class="description">Returns the row on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">targetRowIndex</td>
 <td class="type">number</td>
-<td class="description">Returns the row index which we are dropped to row.</td>
+<td class="description">Returns the row index on which dragging is started.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -8325,7 +8325,7 @@ export class AppComponent {
 ### rowSelected
 {:#events:rowselected}
 
-Triggered after the row is selected.
+Gets triggered after the row is selected.
 
 <table class="params">
 <thead>
@@ -8405,7 +8405,7 @@ export class AppComponent {
 ### rowSelecting
 {:#events:rowselecting}
 
-Triggered before the row is going to be selected.
+Gets triggered before the row is going to be selected.
 
 <table class="params">
 <thead>
@@ -8509,7 +8509,7 @@ export class AppComponent {
 ### taskbarClick
 {:#events:taskbarclick}
 
-Triggered when taskbar item is clicked in Gantt.
+Gets triggered when the taskbar item is clicked in the Gantt.
 
 <table class="params">
 <thead>
@@ -8597,7 +8597,7 @@ export class AppComponent {
 ### taskbarEdited
 {:#events:taskbaredited}
 
-Triggered after completing the editing operation in taskbar
+Gets triggered after completing the editing operation in the taskbar.
 
 <table class="params">
 <thead>
@@ -8611,7 +8611,7 @@ Triggered after completing the editing operation in taskbar
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Arguments when taskbarEdited event is triggered.
+<td class="description">Arguments when the taskbarEdited event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -8702,7 +8702,7 @@ export class AppComponent {
 ### taskbarEditing
 {:#events:taskbarediting}
 
-Triggered while editing the Gantt chart (dragging, resizing the taskbar )
+Gets triggered while editing the Gantt chart (dragging and resizing the taskbar).
 
 <table class="params">
 <thead>
@@ -8716,7 +8716,7 @@ Triggered while editing the Gantt chart (dragging, resizing the taskbar )
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Arguments when taskbarEditing event is triggered.
+<td class="description">Arguments when the taskbarEditing event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -8791,7 +8791,7 @@ export class AppComponent {
 ### toolbarClick
 {:#events:toolbarclick}
 
-Triggered when toolbar item is clicked in Gantt.
+Gets triggered when toolbar item is clicked in the Gantt.
 
 <table class="params">
 <thead>

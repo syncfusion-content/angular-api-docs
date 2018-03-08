@@ -944,7 +944,7 @@ type</td>
 
 
 ### ejclick
-{:#events:click}
+{:#events:ejclick}
 
 Fires when Button control is clicked successfully
 

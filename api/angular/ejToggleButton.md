@@ -828,7 +828,7 @@ toggleObj.enable(); // enable the toggle button
 ## Events
 
 ### ejchange
-{:#events:change}
+{:#events:ejchange}
 
 Fires when ToggleButton control state is changed successfully.
 
