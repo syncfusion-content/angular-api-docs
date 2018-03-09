@@ -694,7 +694,7 @@ isChecked</td>
 {% endhighlight %}
 
 ### ejchange
-{:#events:change}
+{:#events:ejchange}
 
 Fires when the CheckBox state is changed successfully
 
