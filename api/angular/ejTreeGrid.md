@@ -532,7 +532,7 @@ export class AppComponent {
     public columns: any;
     constructor() {
         this.columns =[                    
-{ field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: stageData, editParams: { fields: { text: "text", value: "value" } } }];
+{ field: "priority", headerText: "Priority", editType: ej.TreeGrid.EditingType.Dropdown, dropdownData: stageData, editParams: { fields: { text: "text", value: "value" } } }];
     }
 }
 
@@ -697,7 +697,7 @@ export class AppComponent {
           { id: 4, text: "Critical", value: "Critical" }
         ];
         this.columns = [                    
-{ field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: this.dataSource}]
+{ field: "priority", headerText: "Priority", editType: ej.TreeGrid.EditingType.Dropdown, dropdownData: this.dataSource}]
     }
 }
 
@@ -1066,7 +1066,7 @@ export class AppComponent {
 
 {:#members:columns-width}
 
-Gets or sets a value for treegrid column width
+Gets or sets a value for TreeGrid column width
 
 #### Default Value
 
@@ -1601,12 +1601,12 @@ export class AppComponent {
     public columns: any;
     constructor() {
         this.columns =  [
-                { field: "taskID", headerText: "Task Id", width: "45", editType: "numericedit" },
+                { field: "taskID", headerText: "Task Id", width: "45", editType: ej.TreeGrid.EditingType.Numeric },
                 { field: "taskName", headerText: "Task Name", width: "90", editType: "stringedit" },
                 { field: "startDate", headerText: "Start Date", editType: "datepicker", format: dateFormat },
                 { field: "endDate", headerText: "End Date", format: dateFormat, editType: "datepicker", priority:5 },
-                { field: "duration", headerText: "Duration", editType: "numericedit", priority: 6 },
-                { field: "progress", headerText: "Progress", editType: "numericedit",priority:6 }
+                { field: "duration", headerText: "Duration", editType: ej.TreeGrid.EditingType.Numeric, priority: 6 },
+                { field: "progress", headerText: "Progress", editType: ej.TreeGrid.EditingType.Numeric,priority:6 }
             ];
     }
 }
@@ -2550,7 +2550,7 @@ Specifies the type of column filtering.
 <tbody>
 <tr>
 <td class="name">FilterBar</td>
-<td class="description">Enables the filterbar filtering</td>
+<td class="description">Enables the filter bar filtering</td>
 </tr>
 <tr>
 <td class="name">Menu</td>
@@ -4436,7 +4436,7 @@ export class AppComponent {
     public selectCells(event, item) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
         var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
-        treegridObj.selectCells(indexes, true);
+        treeObj.selectCells(indexes, true);
     }
 }
 
@@ -4968,7 +4968,7 @@ export class AppComponent {
     }
     public showColumn(event, item) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treegridObj.showColumn("Task Name");
+        treeObj.showColumn("Task Name");
     }
 }
 
@@ -5024,7 +5024,7 @@ export class AppComponent {
     }
     public sortColumn(event, item) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treegridObj.sortColumn("Start Date", ej.sortOrder.Descending);
+        treeObj.sortColumn("Start Date", ej.sortOrder.Descending);
     }
 }
 
@@ -5707,7 +5707,7 @@ Triggered before the printing initiated in TreeGrid.
 <tr>
 <td class="name">element</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid element which is going to be print</td>
+<td class="description">Returns the TreeGrid element which is going to be print</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
@@ -7269,7 +7269,7 @@ export class AppComponent {
 {:#events:load}
 
 
-Triggered while Treegrid is loaded
+Triggered while TreeGrid is loaded
 
 <table class="params">
 <thead>
