@@ -5616,7 +5616,7 @@ export class AppComponent {
 ### searchItem(searchString)
 {:#methods:searchitem}
 
-Searchs an item with search string provided at the run time.
+Searches an item with search string provided at the run time.
 
 <table class="params">
 <thead>
@@ -6537,7 +6537,7 @@ export class AppComponent {
 ### actionComplete
 {:#events:actioncomplete}
 
-Gets triggerred for every Gantt action success event.
+Gets triggered for every Gantt action success event.
 
 <table class="params">
 <thead>
@@ -8224,7 +8224,7 @@ export class AppComponent {
 {:#events:rowdragstop}
 
 
-Gets triggerred while dropping a row in the Gantt control.
+Gets triggered while dropping a row in the Gantt control.
 
 <table class="params">
 <thead>
