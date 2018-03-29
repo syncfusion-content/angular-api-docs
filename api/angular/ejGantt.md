@@ -3169,6 +3169,33 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### scheduleHeaderSettings.updateTimescaleView `boolean`
+{:#members:scheduleheadersettings-updatetimescaleview}
+
+Enable or disable the automatic timescale update on cell editing, dialog editing and taskbar editing.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+	<ej-gantt id="GanttControl"
+		[scheduleHeaderSettings]= "scheduleHeaderSettings">
+	</ej-gantt>
+{% endhighlight %}
+
+{% highlight ts %}
+	export class AppComponent {
+		public scheduleHeaderSettings: any;
+		constructor() {
+			this.scheduleHeaderSettings ={updateTimescaleView : false };
+    }
+}
+{% endhighlight %}
+{% endtabs %}  
 
 ### scheduleStartDate `string`
 {:#members:schedulestartdate}
