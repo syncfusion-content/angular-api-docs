@@ -5417,6 +5417,90 @@ export class AppComponent {
 }
 
 {% endhighlight %}
+{% endtabs %}
+
+### filterContent(ejPredicate)
+{:#methods:filtercontent}
+
+To filter multiple columns with multiple conditions dynamically in Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">ejPredicate</td>
+<td class="type">object</td>
+<td class="description">Pass the filtering column details and conditions as ejPredicate instance. The ejPredicate object is defined as fieldName,filterOperator, filterValue and ignoreCase properties.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the field name of the column.</td>
+</tr>
+<tr>
+<td class="name">filterOperator</td>
+<td class="type">string</td>
+<td class="description">string/integer/date operator.</td>
+</tr>
+<tr>
+<td class="name">filterValue</td>
+<td class="type">string</td>
+<td class="description">Pass the value to be filtered in a column.</td>
+</tr>
+<tr>
+<td class="name">ignoreCase</td>
+<td class="type">boolean</td>
+<td class="description">Optional - pass the ignore case value as true/false.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="filterContent" (click)="filterContent($event)">filterContent</button>
+<ej-gantt id="GanttControl">
+//...
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public filterContent(event) {
+        var obj = $("#gantt").ejGantt("instance");
+        var predicate = ej.Predicate("taskName", ej.FilterOperators.equal, "planning", false)
+                          .or("taskName", ej.FilterOperators.equal, "plan budget", false)
+                          .and("progress", ej.FilterOperators.equal, 100, true);
+        obj.filterContent(predicate);
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}  
 
 ### hideColumn(headerText)
