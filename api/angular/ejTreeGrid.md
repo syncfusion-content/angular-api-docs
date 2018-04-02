@@ -1066,7 +1066,7 @@ export class AppComponent {
 
 {:#members:columns-width}
 
-Gets or sets a value for treegrid column width.
+Gets or sets a value for tree grid column width.
 
 #### Default Value
 
