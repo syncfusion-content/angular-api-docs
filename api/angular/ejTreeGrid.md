@@ -532,7 +532,7 @@ export class AppComponent {
     public columns: any;
     constructor() {
         this.columns =[                    
-{ field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: stageData, editParams: { fields: { text: "text", value: "value" } } }];
+{ field: "priority", headerText: "Priority", editType: ej.TreeGrid.EditingType.Dropdown, dropdownData: stageData, editParams: { fields: { text: "text", value: "value" } } }];
     }
 }
 
@@ -697,7 +697,7 @@ export class AppComponent {
           { id: 4, text: "Critical", value: "Critical" }
         ];
         this.columns = [                    
-{ field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: this.dataSource}]
+{ field: "priority", headerText: "Priority", editType:  ej.TreeGrid.EditingType.Dropdown, dropdownData: this.dataSource}]
     }
 }
 
@@ -1601,12 +1601,12 @@ export class AppComponent {
     public columns: any;
     constructor() {
         this.columns =  [
-                { field: "taskID", headerText: "Task Id", width: "45", editType: "numericedit" },
-                { field: "taskName", headerText: "Task Name", width: "90", editType: "stringedit" },
-                { field: "startDate", headerText: "Start Date", editType: "datepicker", format: dateFormat },
-                { field: "endDate", headerText: "End Date", format: dateFormat, editType: "datepicker", priority:5 },
-                { field: "duration", headerText: "Duration", editType: "numericedit", priority: 6 },
-                { field: "progress", headerText: "Progress", editType: "numericedit",priority:6 }
+                { field: "taskID", headerText: "Task Id", width: "45", editType: ej.TreeGrid.EditingType.Numeric },
+                { field: "taskName", headerText: "Task Name", width: "90", editType: ej.TreeGrid.EditingType.String },
+                { field: "startDate", headerText: "Start Date", editType: ej.TreeGrid.EditingType.DatePicker, format: dateFormat },
+                { field: "endDate", headerText: "End Date", format: dateFormat, editType: ej.TreeGrid.EditingType.DatePicker, priority:5 },
+                { field: "duration", headerText: "Duration", editType: ej.TreeGrid.EditingType.Numeric, priority: 6 },
+                { field: "progress", headerText: "Progress", editType: ej.TreeGrid.EditingType.Numeric,priority:6 }
             ];
     }
 }
