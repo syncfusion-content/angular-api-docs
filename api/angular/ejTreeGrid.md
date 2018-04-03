@@ -2550,7 +2550,7 @@ Specifies the type of column filtering.
 <tbody>
 <tr>
 <td class="name">FilterBar</td>
-<td class="description">Enables the filterbar filtering</td>
+<td class="description">Enables the filter bar filtering</td>
 </tr>
 <tr>
 <td class="name">Menu</td>
@@ -4436,7 +4436,7 @@ export class AppComponent {
     public selectCells(event, item) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
         var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
-        treegridObj.selectCells(indexes, true);
+        treeObj.selectCells(indexes, true);
     }
 }
 
@@ -4968,7 +4968,7 @@ export class AppComponent {
     }
     public showColumn(event, item) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treegridObj.showColumn("Task Name");
+        treeObj.showColumn("Task Name");
     }
 }
 
@@ -5024,7 +5024,7 @@ export class AppComponent {
     }
     public sortColumn(event, item) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treegridObj.sortColumn("Start Date", ej.sortOrder.Descending);
+        treeObj.sortColumn("Start Date", ej.sortOrder.Descending);
     }
 }
 
@@ -5624,7 +5624,7 @@ Triggers before the printing initiated in tree grid.
 <tr>
 <td class="name">element</td>
 <td class="type">object</td>
-<td class="description">Returns the treegrid element which is going to be print</td>
+<td class="description">Returns the TreeGrid element which is going to be print</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
