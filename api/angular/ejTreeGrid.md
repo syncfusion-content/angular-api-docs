@@ -3605,6 +3605,43 @@ Specifies the visibility of total summary row for the corresponding summary colu
 
 {% endhighlight %}
 
+### collapsibleTotalSummary `boolean`
+{:#members:collapsibletotalsummary}
+
+Specifies the  visibility  of expander button in total summary row. By default, cells in the first column contain the expander button.
+
+#### Default Value
+{:.param}
+* false
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [collapsibleTotalSummary]= "true">
+</ej-treegrid>
+
+{% endhighlight %}
+
+### totalSummaryHeight `number`
+{:#members:totalsummaryheight}
+
+Specifies the custom summary height to the total summary row.
+
+#### Default Value
+{:.param}
+* 90
+
+#### Example
+
+{% highlight html %}
+                 
+<ej-treegrid id="TreeGridControl"
+    [totalsummaryheight]= 120 >
+</ej-treegrid>
+{% endhighlight %}
+
 ### summaryRows `array`
 {:#members:summaryrows}
 
@@ -4574,6 +4611,55 @@ export class AppComponent {
     public collapseAll(event, item) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
         treeObj.collapseAll();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### expandCollapseTotalSummary(expanded)
+{:#methods:expandcollapsetotalSummary}
+
+To expand collapse the total summary row. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">expanded</td>
+<td class="type">boolean</td>
+<td class="description">Decides to expand/collapse the total summary</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="expandCollapseTotalSummary" (click)="expandCollapseTotalSummary($event, item)">expandCollapseTotalSummary</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public expandCollapseTotalSummary(event, item) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.expandCollapseTotalSummary(true);
     }
 }
 
