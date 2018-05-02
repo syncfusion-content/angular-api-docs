@@ -4300,7 +4300,7 @@ Triggers before Pivot Engine starts to populate.
 export class PivotGridComponent {
 
     beforePivotEnginePopulate(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4356,7 +4356,7 @@ Triggers when double click action is performed over a cell.
 export class PivotGridComponent {
 
     cellDoubleClick(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4431,7 +4431,7 @@ Triggers when right-click action is performed on a cell.
 export class PivotGridComponent {
 
     cellContext(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4492,7 +4492,7 @@ Triggers when a specific range of value cells are selected.
 export class PivotGridComponent {
 
     cellSelection(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4547,7 +4547,7 @@ Triggers when the hyperlink of column header is clicked.
 export class PivotGridComponent {
 
     columnHeaderHyperlinkClick(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4593,7 +4593,7 @@ Triggers after performing drill operation in PivotGrid.
 export class PivotGridComponent {
 
     drillSuccess(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4644,7 +4644,7 @@ Triggers while clicking "OK" button in the drill-through dialog.
 export class PivotGridComponent {
 
     drillThrough(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4695,7 +4695,7 @@ Triggers when PivotGrid loading is initiated.
 export class PivotGridComponent {
 
     load(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4750,7 +4750,7 @@ Triggers when PivotGrid widget completes all operations at client-side after any
 export class PivotGridComponent {
 
     renderComplete(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4810,7 +4810,7 @@ Triggers when any error occurred during AJAX request.
 export class PivotGridComponent {
 
     renderFailure(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4866,7 +4866,7 @@ Triggers when PivotGrid successfully reaches client-side after any AJAX request.
 export class PivotGridComponent {
 
     renderSuccess(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4922,7 +4922,7 @@ Triggers when the hyperlink of row header is clicked.
 export class PivotGridComponent {
 
     rowHeaderHyperlinkClick(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -4977,7 +4977,7 @@ Triggers when the hyperlink of summary cell is clicked.
 export class PivotGridComponent {
 
     summaryCellHyperlinkClick(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -5032,7 +5032,7 @@ Triggers when the hyperlink of value cell is clicked.
 export class PivotGridComponent {
 
     valueCellHyperlinkClick(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -5077,7 +5077,7 @@ Triggers before saving the current report to database.
 export class PivotGridComponent {
 
     saveReport(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -5127,7 +5127,7 @@ Triggers before loading a report from database.
 export class PivotGridComponent {
 
     loadReport(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -5177,7 +5177,7 @@ Triggers before performing exporting in pivot grid.
 export class PivotGridComponent {
 
     beforeExport(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -5222,7 +5222,7 @@ Triggers before editing the cells.
 export class PivotGridComponent {
 
     cellEdit(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 

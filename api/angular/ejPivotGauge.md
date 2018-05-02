@@ -1783,7 +1783,7 @@ Triggers before populating the pivot engine on operating in client mode.
 export class AppComponent {
     
     beforePivotEnginePopulate(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1843,7 +1843,7 @@ Triggers when PivotGauge started loading at client-side.
 export class AppComponent {
     
     load(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1894,7 +1894,7 @@ Triggers when PivotGauge widget completes all operations at client-side after an
 export class AppComponent {
     
     renderComplete(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1949,7 +1949,7 @@ Triggers when any error occurred during AJAX request.
 export class AppComponent {
     
     renderFailure(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1999,7 +1999,7 @@ Triggers when PivotGauge successfully reaches client-side after any AJAX request
 export class AppComponent {
     
     renderSuccess(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
