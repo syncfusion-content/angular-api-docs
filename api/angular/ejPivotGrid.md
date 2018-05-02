@@ -906,7 +906,7 @@ export class PivotGridComponent {
 ### dataSource.columns.groupByDate.interval `array`
 {:#members:datasource-columns-groupbydate-interval}
 
-Specifies the intervals to seperating the date and time.
+Specifies the intervals to separating the date and time.
 
 #### Default Value: []
 
@@ -1664,7 +1664,7 @@ export class PivotGridComponent {
 ### dataSource.rows.groupByDate.interval `array`
 {:#members:datasource-rows-groupbydate-interval}
 
-Specifies the intervals to seperating the date and time.
+Specifies the intervals to separating the date and time.
 
 #### Default Value: []
 
