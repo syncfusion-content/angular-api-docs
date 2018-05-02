@@ -2186,6 +2186,49 @@ export class PivotChartComponent {
 
 {% endhighlight %}
 
+### beforeSeriesRender
+{:#events:beforeseriesrender}
+
+Triggers before rendering multiple series with multiple axes.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"><b>series</b> - Instance of the series which is about to get rendered</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight html %}
+<ej-pivotchart (beforeSeriesRender)="beforeSeriesRender($event)">
+    </ej-pivotchart>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotChartComponent {
+
+    beforeSeriesRender(args){
+         //Do Something.
+    }
+}
+
+{% endhighlight %}
+
 ### drillSuccess
 {:#events:drillsuccess}
 
