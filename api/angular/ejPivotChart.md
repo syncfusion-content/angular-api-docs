@@ -2135,7 +2135,7 @@ Triggers when PivotChart starts to render.
 export class PivotChartComponent {
 
     load(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -2180,7 +2180,7 @@ Triggers before Pivot Engine starts to populate.
 export class PivotChartComponent {
 
     beforePivotEnginePopulate(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -2223,7 +2223,7 @@ data{% endhighlight %}</td>
 export class PivotChartComponent {
 
     beforeSeriesRender(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -2284,7 +2284,7 @@ Triggers on performing drill up/down in PivotChart control.
 export class PivotChartComponent {
 
     drillSuccess(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -2340,7 +2340,7 @@ Triggers when PivotChart widget completes all operations at client-side after an
 export class PivotChartComponent {
 
     renderComplete(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -2400,7 +2400,7 @@ Triggers when any error occurred during AJAX request.
 export class PivotChartComponent {
 
     renderFailure(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -2447,7 +2447,7 @@ Triggers when PivotChart successfully reaches client-side after any AJAX request
 export class PivotChartComponent {
 
     renderSuccess(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 
@@ -2498,7 +2498,7 @@ Triggers before performing exporting in pivot chart.
 export class PivotChartComponent {
 
     beforeExport(args){
-         //Do Something.
+         //Enter your code here.
     }
 }
 

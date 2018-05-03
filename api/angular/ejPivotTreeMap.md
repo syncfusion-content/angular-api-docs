@@ -1066,7 +1066,7 @@ Triggers when PivotTreeMap starts to render.
 export classPivotTreeMapComponent {
     
     load(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1111,7 +1111,7 @@ Triggers before populating the pivot engine from datasource.
 export classPivotTreeMapComponent {
     
     beforePivotEnginePopulate(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1155,7 +1155,7 @@ Triggers when drill up/down happens in PivotTreeMap control. And it returns the 
 export classPivotTreeMapComponent {
     
     drillSuccess(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1211,7 +1211,7 @@ Triggers when PivotTreeMap widget completes all operations at client-side after 
 export classPivotTreeMapComponent {
     
     renderComplete(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1272,7 +1272,7 @@ Triggers when any error occurred during AJAX request.
 export classPivotTreeMapComponent {
     
     renderFailure(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -1328,7 +1328,7 @@ Triggers when PivotTreeMap successfully reaches client-side after any AJAX reque
 export classPivotTreeMapComponent {
     
     renderSuccess(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
