@@ -491,7 +491,7 @@ Triggers when PivotSchemaDesigner loading is initiated.
 export class AppComponent {
 
     load(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
@@ -551,7 +551,7 @@ Triggers when we start dragging any field from PivotSchemaDesigner.
 export class AppComponent {
 
     dragMove(args){
-         //Do Something.
+         //Enter your code here.
     }
  }
 
