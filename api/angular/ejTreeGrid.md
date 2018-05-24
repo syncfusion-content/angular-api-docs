@@ -4135,7 +4135,7 @@ export class AppComponent {
 ### stackedHeaderRows `array`
 {:#members:stackedheaderrows}
 
-Gets or sets an object that indicates to managing the collection of stacked header rows for the treegrid.
+Gets or sets an object that indicates to managing the collection of stacked header rows for the TreeGrid.
 
 #### Default Value
 
@@ -6909,7 +6909,7 @@ export class AppComponent {
     }
     public updateCheckboxColumn(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        tvar data = { taskName: "updated value"};
+        var data = { taskName: "updated value"};
         treeObj.updateRecordByIndex(4, data);
     }
 }

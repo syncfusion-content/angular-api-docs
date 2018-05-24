@@ -5577,7 +5577,7 @@ To get the column collection which are used to edit the task by using task add/e
 {% tabs %}
 {% highlight html %}
  
-<button id="getresourcevieweditcolumns" (click)="getresourcevieweditcolumns($event)">getresourcevieweditcolumns</button>
+<button id="getResourceViewEditColumns" (click)="getResourceViewEditColumns($event)">getResourceViewEditColumns</button>
 <ej-gantt id="GanttControl">
 //...
 </ej-gantt>
@@ -5590,9 +5590,9 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public getresourcevieweditcolumns(event) {
+    public getResourceViewEditColumns(event) {
         var ganttObj = $("#GanttControl").ejGantt("instance");
-        var columns = ganttObj.getresourcevieweditcolumns();
+        var columns = ganttObj.getResourceViewEditColumns();
     }
 }
 
