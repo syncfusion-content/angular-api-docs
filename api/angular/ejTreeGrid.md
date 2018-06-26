@@ -3,19 +3,35 @@ layout: post
 title: Properties, Methods and Events of ejTreeGrid Widget
 description: Methods, members, events available in ejTreeGrid
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: ejTreeGrid, API, Essential JS TreeGrid
 ---
 
 # ejTreeGrid
 
- Custom Design for HTML TreeGrid control.
-
-
+Custom Design for HTML TreeGrid control.
 
 #### Example
 
+{% highlight html %}
+<ej-treegrid id="TreeGridControl" [dataSource]="projectData">
 
+</ej-treegrid>
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    
+    public  projectData;
+
+        constructor()
+        {
+          this.projectData = taskCollection; 
+        }
+}
+
+{% endhighlight %}
 
 #### Requires
 
@@ -25,32 +41,7 @@ keywords: ejTreeGrid, API, Essential JS TreeGrid
 * module:jsrender.js
 * module:ej.web.all.js
 
-
 ## Members
-
-
-### allowColumnResize `boolean`
-{:#members:allowcolumnresize}
-
-Enables or disables the ability to resize the column width interactively.
-
-
-#### Default Value
-
- * false
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [allowColumnResize]= "true">
-</ej-treegrid>
-
-{% endhighlight %}
-
-
 
 ### allowColumnReordering `boolean`
 {:#members:allowcolumnreordering}
@@ -60,7 +51,6 @@ Enables or disables the option for column reordering
 #### Default Value
 
  * false
-
 
 #### Example
 
@@ -72,20 +62,33 @@ Enables or disables the option for column reordering
 
 {% endhighlight %}
 
+### allowColumnResize `boolean`
+{:#members:allowcolumnresize}
 
+Enables or disables the ability to resize the column width interactively.
 
+#### Default Value
 
+ * false
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [allowColumnResize]= "true">
+</ej-treegrid>
+
+{% endhighlight %}
 
 ### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}
 
 Enables or disables the ability to drag and drop the row interactively to reorder the rows.
 
-
 #### Default Value
 
 * false
-
 
 #### Example
 
@@ -97,19 +100,14 @@ Enables or disables the ability to drag and drop the row interactively to reorde
 
 {% endhighlight %}
 
-
-
-
 ### allowFiltering `boolean`
 {:#members:allowfiltering}
 
 Enables or disables the ability to filter the data on all the columns. Enabling this property will display a row with editor controls corresponding to each column. You can restrict filtering on particular column by disabling this property directly on that column instance itself.
 
-
 #### Default Value
 
 * false
-
 
 #### Example
 
@@ -121,19 +119,14 @@ Enables or disables the ability to filter the data on all the columns. Enabling 
 
 {% endhighlight %}
 
-
-
-
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 Enables or disables keyboard navigation.
 
-
 #### Default Value
 
 * true
-
 
 #### Example
 
@@ -145,19 +138,14 @@ Enables or disables keyboard navigation.
 
 {% endhighlight %}
 
-
-
-
 ### allowMultiSorting `boolean`
 {:#members:allowmultisorting}
 
 Enables or disables the ability to sort the rows based on multiple columns/fields by clicking on each column header. Rows will be sorted recursively on clicking the column headers.
 
-
 #### Default Value
 
 * false
-
 
 #### Example
 
@@ -169,56 +157,6 @@ Enables or disables the ability to sort the rows based on multiple columns/field
 
 {% endhighlight %}
 
-
-
-
-### allowSelection `boolean`
-{:#members:allowselection}
-
-Enables or disables the ability to select a row interactively.
-
-
-#### Default Value
-
-* true
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [allowSelection]= "true">
-</ej-treegrid>
-
-{% endhighlight %}
-
-
-
-
-### allowSorting `boolean`
-{:#members:allowsorting}
-
-Enables or disables the ability to sort the rows based on a single field/column by clicking on that column header. When enabled, rows can be sorted only by single field/column.
-
-
-#### Default Value
-
-* false
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [allowSorting]= "true">
-</ej-treegrid>
-
-{% endhighlight %}
-
-
-
 ### allowPaging `boolean`
 {:#members:allowpaging}
 
@@ -227,7 +165,6 @@ Enables/disables pagination of rows in TreeGrid
 #### Default Value
 
 * false
-
 
 #### Example
 
@@ -239,7 +176,62 @@ Enables/disables pagination of rows in TreeGrid
 
 {% endhighlight %}
 
+### allowSearching `boolean`
+{:#members:allowsearching}
 
+Enables/disables pagination of rows in TreeGrid
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [allowSearching]= "true">
+</ej-treegrid>
+
+{% endhighlight %}
+
+### allowSelection `boolean`
+{:#members:allowselection}
+
+Enables or disables the ability to select a row interactively.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [allowSelection]= "true">
+</ej-treegrid>
+
+{% endhighlight %}
+
+### allowSorting `boolean`
+{:#members:allowsorting}
+
+Enables or disables the ability to sort the rows based on a single field/column by clicking on that column header. When enabled, rows can be sorted only by single field/column.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [allowSorting]= "true">
+</ej-treegrid>
+
+{% endhighlight %}
 
 ### allowTextWrap `boolean`
 {:#members:allowtextwrap}
@@ -260,19 +252,14 @@ Gets or sets a value that indicates whether the Content will wrap to the next li
 
 {% endhighlight %}
 
-
-
-
 ### altRowTemplateID `string`
 {:#members:altrowtemplateid}
 
 Specifies the id of the template that has to be applied for alternate rows.
 
-
 #### Default Value
 
 * ""
-
 
 #### Example
 
@@ -284,26 +271,21 @@ Specifies the id of the template that has to be applied for alternate rows.
 
 {% endhighlight %}
 
+### cellTooltipTemplate `string`
+{:#members:celltooltiptemplate}
 
-
-
-### expandStateMapping `string`
-{:#members:expandstatemapping}
-
-Specifies the mapping property path for the expand status of a record in data source.
-
+Specifies the template for cell tooltip
 
 #### Default Value
-{:.param}
 
-* ""
+* null
 
 #### Example
 
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    expandStateMapping= "isExpanded">
+    cellTooltipTemplate="cellTooltipTemplate">
 </ej-treegrid>
 
 {% endhighlight %}
@@ -313,12 +295,9 @@ Specifies the mapping property path for the expand status of a record in data so
 
 Specifies the mapping property path for sub tasks in datasource
 
-
 #### Default Value
-{:.param}
 
 * ""
-
 
 #### Example
 
@@ -330,14 +309,123 @@ Specifies the mapping property path for sub tasks in datasource
 
 {% endhighlight %}
 
+### collapsibleTotalSummary `boolean`
+{:#members:collapsibletotalsummary}
 
+Specifies the  visibility  of expander button in total summary row. By default, cells in the first column contain the expander button.
 
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [collapsibleTotalSummary]= "true">
+</ej-treegrid>
+
+{% endhighlight %}
+
+### columnDialogFields `array`
+{:#members:columndialogfields}
+
+To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columnDialogFields]= "columnDialogFields">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columnDialogFields: any;
+    constructor() {
+        this.columnDialogFields = ["field", "headerText", "editType", "width", "visible", "allowSorting", "textAlign", "headerTextAlign"];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### columnResizeSettings `object`
+{:#members:columnresizesettings}
+
+Specifies the settings for column resize
+
+### columnResizeSettings.columnResizeMode `enum`
+{:#members:columnresizesettings-columnresizemode}
+
+<ts name = "ej.TreeGrid.ColumnResizeMode"/>
+
+Specifies the mode for column resizing 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">FixedColumns</td>
+<td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description">At load time columns are stretched with control width,while resizing the column, current column width updated based on next column</td>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">In this mode columns are stretched with control width in load time and on resizing action.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.ColumnResizeMode.Normal
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columnResizeSettings]= "columnResizeSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columnResizeSettings: any;
+    constructor() {
+        this.columnResizeSettings = { columnResizeMode : ej.TreeGrid.ColumnResizeMode.FixedColumns};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
 
 ### columns `array`
 {:#members:columns}
 
 Option for adding columns; each column has the option to bind to a field in the dataSource.
-
 
 #### Example
 
@@ -365,18 +453,79 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### columns.allowCellSelection `boolean`
+{:#members:columns-allowcellselection}
 
+Enables/disables cell selection.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns = [{ allowCellSelection: true },{allowCellSelection: false }];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### columns.allowEditing `boolean`
+
+{:#members:columns-allowediting}
+
+Enables or disables the ability to edit a row or cell.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns = [{ allowEditing: true },{ allowEditing: false }];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### columns.allowFiltering `boolean`
 {:#members:columns-allowfiltering}
 
 Enables or disables the ability to filter the rows based on this column.
 
-
 #### Default Value
 
 * false
-
 
 #### Example
 
@@ -411,7 +560,6 @@ Enables the blanks option in ejDropDownList mapped in TreeGrid column
 
 * true
 
-
 #### Example
 
 {% tabs %}
@@ -433,8 +581,39 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
+### columns.allowFreezing `boolean`
+{:#members:columns-allowfreezing}
+
+Enables or disables the ability to freeze/unfreeze the columns
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =  [{ allowFreezing: true }];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### columns.allowSorting `boolean`
 {:#members:columns-allowsorting}
@@ -444,7 +623,6 @@ Enables or disables the ability to sort the rows based on this column/field.
 #### Default Value
 
 * false
-
 
 #### Example
 
@@ -469,16 +647,70 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### columns.angularTemplate `string`
+{:#members:columns-angulartemplate}
 
-### columns.allowCellSelection `boolean`
-{:#members:columns-allowcellselection}
+Specifies the template ID or the template string of the AngularJS script element to enable column template for a column.
 
-Enables/disables cell selection.
+#### Default Value
+* ""
+
+#### Example
+
+{% tabs %}
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns = [{
+     isTemplateColumn: true,
+     angularTemplate: "#ngColumnTemplate"  
+   }];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+<ts name = "ej.TreeGrid.ClipMode"/>
+
+Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header and content)
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Ellipsis</td>
+<td class="description">Shows ellipsis for the overflown cell.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell.</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
-* false
-
+* ej.TreeGrid.ClipMode.Clip
 
 #### Example
 
@@ -496,24 +728,232 @@ Enables/disables cell selection.
 export class AppComponent {
     public columns: any;
     constructor() {
-        this.columns = [{ allowCellSelection: true },{allowCellSelection: false }];
+        this.columns = [{ clipMode: ej.TreeGrid.ClipMode.Clip},{clipMode: ej.TreeGrid.ClipMode.Ellipsis}];
     }
 }
 
 {% endhighlight %}
 {% endtabs %}  
 
+### columns.commands `array`
+{:#members:columns-commands}
+
+Gets or sets an object to define a command column in TreeGrid.
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns = [{
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ],
+             }
+    ];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### columns.commands.buttonOptions `object`
+{:#members:columns-commands-buttonoptions}
+
+Gets or sets an object to customize command button with available ejButton properties.
+
+#### Default Value
+
+* -
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns = [{commands: [buttonOptions: { text: "Edit" } }]}];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### columns.commands.type `enum`
+{:#members:columns-commands-type}
+
+<ts name="ej.TreeGrid.UnboundType"/>
+
+Gets or sets a value that define the command column buttons to be displayed.
+
+#### Default Value
+
+* -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Unbound type to perform edit action</td>
+</tr>
+<tr>
+<td class="name">Save</td>
+<td class="description">Unbound type to perform save action</td>
+</tr> 
+<tr>
+<td class="name">Delete</td>
+<td class="description">Unbound type to perform delete action</td>
+</tr> 
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Unbound type to perform cancel action</td>
+</tr> 
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =[          
+           {
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ]             
+           }
+
+        ];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### columns.displayAsCheckbox `boolean`
+{:#members:columns-displayascheckbox}
+
+Gets or sets a value that indicates to display a column value as checkbox or string
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns = [{ field: "Approved", displayAsCheckbox: true, editType: ej.TreeGrid.EditingType.Boolean}]
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### columns.dropdownData `string`
+{:#members:columns-dropdowndata}
+
+To bind the dropdown data for TreeGrid column mapped with ejDropDownList
+
+#### Default Value
+
+* -
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    public dataSource:any;
+    constructor() {
+        this.dataSource = [
+                    //
+          { id: 4, text: "Critical", value: "Critical" }
+        ];
+        this.columns = [                    
+{ field: "priority", headerText: "Priority", editType: ej.TreeGrid.EditingType.Dropdown, dropdownData: this.dataSource}]
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
 
 ### columns.editParams `Object`
 {:#members:columns-editparams}
 
 To customize the ej controls defined in TreeGrid column with their native property.
 
-
 #### Default Value
 
 * -
-
 
 #### Example
 
@@ -539,13 +979,12 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### columns.editTemplate `Object`
 {:#members:columns-edittemplate}
 
 Gets or sets a template that displays a custom editor for editing the column values.
 
-#### Default Value:
+#### Default Value
 
 * null
 
@@ -587,7 +1026,6 @@ export class AppComponent {
 
 {% endhighlight %}
 {% endtabs %}  
-
 
 ### columns.editType `enum`
 {:#members:columns-edittype}
@@ -639,7 +1077,6 @@ Specifies the edit type of the column.
 
 * ej.TreeGrid.EditingType.String
 
-
 #### Example
 
 {% tabs %}
@@ -663,58 +1100,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-### columns.dropdownData `string`
-{:#members:columns-dropdowndata}
-
-To bind the dropdown data for TreeGrid column mapped with ejDropDownList
-
-
-#### Default Value
-
-* -
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    public dataSource:any;
-    constructor() {
-        this.dataSource = [
-                    //
-          { id: 4, text: "Critical", value: "Critical" }
-        ];
-        this.columns = [                    
-{ field: "priority", headerText: "Priority", editType: ej.TreeGrid.EditingType.Dropdown, dropdownData: this.dataSource}]
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
 ### columns.field `string`
 {:#members:columns-field}
 
 Specifies the name of the field from the dataSource to bind with this column.
 
-
 #### Default Value
 
 * ""
-
 
 #### Example
 
@@ -738,119 +1131,6 @@ export class AppComponent {
 
 {% endhighlight %}
 {% endtabs %}  
-
-
-
-### columns.template `string`
-{:#members:columns-template}
-
-Specifies the template string of the script element to enable column template for a column.
-
-#### Default Value
-* ""
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns =  [{
-         isTemplateColumn: true,
-         template: "<script type="text/x-jsrender" id="columnTemplate">
-                   <div style="display:inline-block;">
-                   <img src="../images/gantt/.png" height="40" /></div></script>"
-           }];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### columns.templateID `string`
-{:#members:columns-templateid}
-
-Specifies the template ID of the script element to enable column template for a column.
-
-#### Default Value
-* ""
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns =  [{
-        isTemplateColumn: true,
-        templateID: "columnTemplate"
-    }];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### columns.angularTemplate `string`
-{:#members:columns-angulartemplate}
-
-Specifies the template ID or the template string of the AngularJS script element to enable column template for a column.
-
-#### Default Value
-* ""
-
-#### Example
-
-{% tabs %}
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns = [{
-     isTemplateColumn: true,
-     angularTemplate: "#ngColumnTemplate"  
-   }];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
 
 ### columns.filterEditType `enum`
 {:#members:columns-filteredittype}
@@ -898,7 +1178,6 @@ Specifies the type of the editor control to be used to filter the rows.
 
 * ej.TreeGrid.EditingType.String
 
-
 #### Example
 
 {% tabs %}
@@ -920,175 +1199,9 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
-
-
-### columns.headerText `string`
-{:#members:columns-headertext}
-
-Header text of the column.
-
-
-#### Default Value
-
-* null
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns = [{ headerText: "Name"},{headerText: "Type"}];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### columns.displayAsCheckbox `boolean`
-{:#members:columns-displayascheckbox}
-
-Gets or sets a value that indicates to display a column value as checkbox or string
-
-#### Default Value
-
-* false
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns = [{ field: "Approved", displayAsCheckbox: true, editType: ej.TreeGrid.EditingType.Boolean}]
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### columns.showCheckbox `boolean`
-{:#members:columns-showcheckbox}
-
-Enables or disables the checkbox visibility in a column for checkbox selection.
-
-#### Default Value
-
-* false
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns =   [{ field: "name",showCheckbox: true}];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### columns.visible `boolean`
-{:#members:columns-visible}
-
-Controls the visibility of the column.
-
-
-#### Default Value
-
-* true
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns = [{ field: "name",visible: true},{field: "Type",visible: false}];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### columns.width `number`
-
-{:#members:columns-width}
-
-Gets or sets a value for TreeGrid column width
-
-#### Default Value
-
-* -
-
-#### Example
-
-
-
-### columns.headerTemplateID `string`
-
-{:#members:columns-headertemplateid}
-
-Specifies the header template value for the column header
-
-#### Default Value
-
-* ""
-
-#### Example
-
-
+  
 
 ### columns.format `object`
 {:#members:columns-format}
@@ -1098,7 +1211,6 @@ Specifies the display format of a column
 #### Default Value
 
 * null
-
 
 #### Example
 
@@ -1121,22 +1233,71 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### columns.headerTemplateID `string`
+{:#members:columns-headertemplateid}
 
-
-### columns.isTemplateColumn `boolean`
-
-{:#members:columns-istemplatecolumn}
-
-Specifies whether the column is a template column
+Specifies the header template value for the column header
 
 #### Default Value
 
-* false
+* ""
 
 #### Example
 
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =  [{ field: "Currency",  headerTemplateID: "#headerTemplate"}, //... }];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### columns.headerText `string`
+{:#members:columns-headertext}
+
+Header text of the column.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns = [{ headerText: "Name"},{headerText: "Type"}];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### columns.headerTextAlign `enum`
 {:#members:columns-headertextalign}
@@ -1199,6 +1360,38 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### columns.headerTooltip   `string`
+
+{:#members:columns-headertooltip}
+
+Sets the tooltip template for the column header
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =[{  headerTooltip: "#headerTooltip"}];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
 
 ### columns.isFrozen `boolean`
 {:#members:columns-isfrozen}
@@ -1230,8 +1423,217 @@ export class AppComponent {
 }
 
 {% endhighlight %}
+{% endtabs %}
+
+### columns.isTemplateColumn `boolean`
+
+{:#members:columns-istemplatecolumn}
+
+Specifies whether the column is a template column
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =  [{
+            isTemplateColumn: true,
+            template: ""
+        }];
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}  
 
+### columns.priority `number`
+{:#members:columns-priority}
+
+Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
+
+#### Default Value
+
+* -1
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =  [
+                { field: "taskID", headerText: "Task Id", width: "45", editType: ej.TreeGrid.EditingType.Numeric },
+                { field: "taskName", headerText: "Task Name", width: "90", editType: "stringedit" },
+                { field: "startDate", headerText: "Start Date", editType: "datepicker", format: dateFormat },
+                { field: "endDate", headerText: "End Date", format: dateFormat, editType: "datepicker", priority:5 },
+                { field: "duration", headerText: "Duration", editType: ej.TreeGrid.EditingType.Numeric, priority: 6 },
+                { field: "progress", headerText: "Progress", editType: ej.TreeGrid.EditingType.Numeric,priority:6 }
+            ];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### columns.showCheckbox `boolean`
+{:#members:columns-showcheckbox}
+
+Enables or disables the checkbox visibility in a column for checkbox selection.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =   [{ field: "name",showCheckbox: true}];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### columns.showInColumnChooser `boolean`
+
+{:#members:columns-showincolumnchooser}
+
+We can include or exclude particular column from column visibility list in column menu.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =   [{ field: "name",showInColumnChooser: true}];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### columns.template `string`
+{:#members:columns-template}
+
+Specifies the template string of the script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =  [{
+         isTemplateColumn: true,
+         template: "<script type="text/x-jsrender" id="columnTemplate">
+                   <div style="display:inline-block;">
+                   <img src="../images/treeGrid/image.png" height="40" /></div></script>"
+           }];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### columns.templateID `string`
+{:#members:columns-templateid}
+
+Specifies the template ID of the script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =  [{
+        isTemplateColumn: true,
+        templateID: "columnTemplate"
+    }];
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### columns.textAlign `enum`
 {:#members:columns-textalign}
@@ -1292,233 +1694,7 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-
-### columns.allowEditing `boolean`
-
-{:#members:columns-allowediting}
-
-Enables or disables the ability to edit a row or cell.
-
-#### Default Value
-
-* false
-
-#### Example
-
-
-### columns.commands `array`
-{:#members:columns-commands}
-
-Gets or sets an object to define a command column in TreeGrid.
-
-#### Default Value:
-{:.param}
-* []
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns = [{
-              headerText: "Manage Records",
-              commands: [
-                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
-                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
-                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
-                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
-               ],
-             }
-    ];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### columns.commands.buttonOptions `object`
-{:#members:columns-commands-buttonoptions}
-
-Gets or sets an object to customize command button with available ejButton properties.
-
-#### Default Value:
-{:.param}
-* -
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns = [{commands: [buttonOptions: { text: "Edit" } }]}];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### columns.commands.type `enum`
-{:#members:columns-commands-type}
-
-<ts name="ej.TreeGrid.UnboundType"/>
-
-Gets or sets a value that define the command column buttons to be displayed.
-
-#### Default Value:
-{:.param}
-* -
-
-<table>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-<tr>
-<td class="name">Edit</td>
-<td class="description">Unbound type to perform edit action</td>
-</tr>
-<tr>
-<td class="name">Save</td>
-<td class="description">Unbound type to perform save action</td>
-</tr> 
-<tr>
-<td class="name">Delete</td>
-<td class="description">Unbound type to perform delete action</td>
-</tr> 
-<tr>
-<td class="name">Cancel</td>
-<td class="description">Unbound type to perform cancel action</td>
-</tr> 
-</table>
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns =[          
-           {
-              headerText: "Manage Records",
-              commands: [
-                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
-                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
-                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
-                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
-               ]             
-           }
-
-] ;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### columns.showInColumnChooser `boolean`
-
-{:#members:columns-showincolumnchooser}
-
-We can include or exclude particular column from column visibility list in column menu.
-
-#### Default Value
-
-* true
-
-#### Example
-
-
-### columns.clipMode `enum`
-{:#members:columns-clipmode}
-
-<ts name = "ej.TreeGrid.ClipMode"/>
-
-Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header and content)
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Ellipsis</td>
-<td class="description">Shows ellipsis for the overflown cell.</td>
-</tr>
-<tr>
-<td class="name">Clip</td>
-<td class="description">Truncate the text in the cell.</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-
-* ej.TreeGrid.ClipMode.Clip
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [columns]= "columns">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public columns: any;
-    constructor() {
-        this.columns = [{ clipMode: ej.TreeGrid.ClipMode.Clip},{clipMode: ej.TreeGrid.ClipMode.Ellipsis}];
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
+{% endtabs %} 
 
 ### columns.tooltip  `string`
 
@@ -1532,19 +1708,26 @@ Sets the tooltip template for the specific column.
 
 #### Example
 
+{% tabs %}
+{% highlight html %}
 
-### columns.headerTooltip   `string`
+<ej-treegrid id="TreeGridControl"
+    [columns]= "columns">
+</ej-treegrid>
 
-{:#members:columns-headertooltip}
+{% endhighlight %}
 
-Sets the tooltip template for the column header
+{% highlight ts %}
 
-#### Default Value
+export class AppComponent {
+    public columns: any;
+    constructor() {
+        this.columns =  [{  tooltip: "#tooltip" }];
+    }
+}
 
-* null
-
-#### Example
-
+{% endhighlight %}
+{% endtabs %} 
 
 ### columns.validationRules `Object`
 {:#members:columns-validationrules}
@@ -1572,17 +1755,16 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### columns.visible `boolean`
+{:#members:columns-visible}
 
-### columns.priority `number`
-{:#members:columns-priority}
-
-Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
+Controls the visibility of the column.
 
 #### Default Value
 
-* -1
+* true
 
 #### Example
 
@@ -1600,31 +1782,21 @@ Gets or sets the priority value of the column. It is used to show/hide TreeGrid 
 export class AppComponent {
     public columns: any;
     constructor() {
-        this.columns =  [
-                { field: "taskID", headerText: "Task Id", width: "45", editType: ej.TreeGrid.EditingType.Numeric },
-                { field: "taskName", headerText: "Task Name", width: "90", editType: "stringedit" },
-                { field: "startDate", headerText: "Start Date", editType: "datepicker", format: dateFormat },
-                { field: "endDate", headerText: "End Date", format: dateFormat, editType: "datepicker", priority:5 },
-                { field: "duration", headerText: "Duration", editType: ej.TreeGrid.EditingType.Numeric, priority: 6 },
-                { field: "progress", headerText: "Progress", editType: ej.TreeGrid.EditingType.Numeric,priority:6 }
-            ];
+        this.columns = [{ field: "name",visible: true},{field: "Type",visible: false}];
     }
 }
 
 {% endhighlight %}
 {% endtabs %}  
 
+### columns.width `number`
+{:#members:columns-width}
 
-### columnDialogFields `array`
-{:#members:columndialogfields}
-
-To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
+Gets or sets a value for TreeGrid column width
 
 #### Default Value
-{:.param}
 
-* []
-
+* -
 
 #### Example
 
@@ -1632,7 +1804,7 @@ To Specify the column fields to be displayed in the dialog while inserting a col
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [columnDialogFields]= "columnDialogFields">
+    [columns]= "columns">
 </ej-treegrid>
 
 {% endhighlight %}
@@ -1640,28 +1812,33 @@ To Specify the column fields to be displayed in the dialog while inserting a col
 {% highlight ts %}
 
 export class AppComponent {
-    public columnDialogFields: any;
+    public columns: any;
     constructor() {
-        this.columnDialogFields = ["field", "headerText", "editType", "width", "visible", "allowSorting", "textAlign", "headerTextAlign"];
+        this.columns = [{ field: "name",width: 100},{field: "Type",width: 150}];
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### commonWidth `number`
+{:#members:commonwidth}
 
-### columns.allowFreezing `boolean`
-
-{:#members:columns-allowfreezing}
-
-Enables or disables the ability to freeze/unfreeze the columns
+Defines the common width for all the columns in TreeGrid
 
 #### Default Value
 
-* false
+* 150
 
 #### Example
 
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [commonWidth]="180">
+</ej-treegrid>
+
+{% endhighlight %}
 
 ### contextMenuSettings `object`
 {:#members:contextmenusettings}
@@ -1739,15 +1916,12 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### cssClass `string`
 {:#members:cssclass}
 
 Specify the CSS class for TreeGrid to achieve custom theme.
 
-
 #### Default Value
-{:.param}
 
 * ""
 
@@ -1761,18 +1935,14 @@ Specify the CSS class for TreeGrid to achieve custom theme.
 
 {% endhighlight %}
 
-
-
 ### dataSource `array`
 {:#members:datasource}
 
 Specifies hierarchical or self-referential data to populate the TreeGrid.
 
-
 #### Default Value
 
 * null
-
 
 #### Example
 
@@ -1795,82 +1965,59 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
+### detailsTemplate `string`
+{:#members:detailstemplate}
 
-
-### headerTextOverflow `enum`
-{:#members:headertextoverflow}
-
-<ts name = "ej.TreeGrid.HeaderTextOverflow"/>
-
-Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">None</td>
-<td class="description">You can disable the word wrap</td>
-</tr>
-<tr>
-<td class="name">Wrap</td>
-<td class="description">You can wrap the header content</td>
-</tr>
-</tbody>
-</table>
+Specifies the template for details view
 
 #### Default Value
-{:.param}
 
-* ej.TreeGrid.HeaderTextOverflow.None
+* ""
 
 #### Example
 
-{% tabs %}
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [headerTextOverflow]= "headerTextOverflow">
+    detailsTemplate= "#detailsTemplate">
 </ej-treegrid>
 
 {% endhighlight %}
 
-{% highlight ts %}
+### detailsRowHeight `number`
+{:#members:detailsrowheight}
 
-export class AppComponent {
-    public headerTextOverflow: any;
-    constructor() {
-        this.headerTextOverflow =   ej.TreeGrid.HeaderTextOverflow.Wrap;
-    }
-}
+Specifies the row height of the details view
+
+#### Default Value
+
+* 100
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [detailsRowHeight]= "150">
+</ej-treegrid>
 
 {% endhighlight %}
-{% endtabs %}  
-
-
 
 ### dragTooltip `object`
 {:#members:dragtooltip}
 
 Options for displaying and customizing the tooltip. This tooltip will show the preview of the row that is being dragged.
 
-
 ### dragTooltip.showTooltip `boolean`
 {:#members:dragtooltip-showtooltip}
 
 Specifies whether to show tooltip while dragging a row.
 
-
 #### Default Value
 
 * true
-
 
 #### Example
 
@@ -1895,18 +2042,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### dragTooltip.tooltipItems `array`
 {:#members:dragtooltip-tooltipitems}
 
 Option to add field names whose corresponding values in the dragged row needs to be shown in the preview tooltip.
 
-
 #### Default Value
 
 * []
-
 
 #### Example
 
@@ -1931,18 +2074,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### dragTooltip.tooltipTemplate `string`
 {:#members:dragtooltip-tooltiptemplate}
 
 Custom template for that tooltip that is shown while dragging a row.
 
-
 #### Default Value
 
 * null
-
 
 #### Example
 
@@ -1965,26 +2104,21 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-
+{% endtabs %} 
 
 ### editSettings `object`
 {:#members:editsettings}
 
 Options for enabling and configuring the editing related operations. 
 
-
 ### editSettings.allowAdding `boolean`
 {:#members:editsettings-allowadding}
 
 Enables or disables the button to add new row in context menu as well as in toolbar.
 
-
 #### Default Value
 
 * true
-
 
 #### Example
 
@@ -2009,18 +2143,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### editSettings.allowDeleting `boolean`
 {:#members:editsettings-allowdeleting}
 
 Enables or disables the button to delete the selected row in context menu as well as in toolbar.
 
-
 #### Default Value
 
 * true
-
 
 #### Example
 
@@ -2045,18 +2175,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### editSettings.allowEditing `boolean`
 {:#members:editsettings-allowediting}
 
 Enables or disables the ability to edit a row or cell.
 
-
 #### Default Value
 
 * false
-
 
 #### Example
 
@@ -2133,8 +2259,39 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### editSettings.dialogEditorTemplateID  `string`
+{:#members:editsettings-dialogeditortemplateid}
+
+Specifies the template ID for the custom dialog.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [editSettings]= "editSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public editSettings: any;
+    constructor() {
+        this.editSettings = {dialogEditorTemplateID  : ""};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### editSettings.editMode `enum`
 {:#members:editsettings-editmode}
@@ -2166,11 +2323,9 @@ specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and
 </tbody>
 </table>
 
-
 #### Default Value
 
 * ej.TreeGrid.EditMode.CellEditing
-
 
 #### Example
 
@@ -2194,8 +2349,6 @@ export class AppComponent {
 
 {% endhighlight %}
 {% endtabs %}  
-
-
 
 ### editSettings.rowPosition `enum`
 {:#members:editsettings-rowposition}
@@ -2235,11 +2388,9 @@ Specifies the position where the new row has to be added.
 </tbody>
 </table>
 
-
 #### Default Value
 
 * "top"
-
 
 #### Example
 
@@ -2264,17 +2415,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### editSettings.showDeleteConfirmDialog `boolean`
+{:#members:editsettings-showdeleteconfirmdialog}
 
-### editSettings.dialogEditorTemplateID  `string`
-{:#members:editsettings-dialogeditortemplateid}
-
-Specifies the template ID for the custom dialog.
-
+Enable or disable the confirmation dialog while deleting the record.
 
 #### Default Value
 
-* null
-
+* false
 
 #### Example
 
@@ -2292,24 +2440,21 @@ Specifies the template ID for the custom dialog.
 export class AppComponent {
     public editSettings: any;
     constructor() {
-        this.editSettings = {dialogEditorTemplateID  : ""};
+        this.editSettings = {showDeleteConfirmDialog : true};
     }
 }
 
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
 Specifies whether to render alternate rows in different background colors.
 
-
 #### Default Value
 
 * true
-
 
 #### Example
 
@@ -2321,68 +2466,21 @@ Specifies whether to render alternate rows in different background colors.
 
 {% endhighlight %}
 
-
 ### enableCollapseAll `boolean`
 {:#members:enablecollapseall}
 
 Specifies whether to load all the rows in collapsed state when the TreeGrid is rendered for the first time.
 
-
 #### Default Value
 
 * false
-
 
 #### Example
 
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [enableCollapse]= "false">
-</ej-treegrid>
-
-{% endhighlight %}
-
-
-### enableResize `boolean`
-{:#members:enableresize}
-
-Specifies whether to resize TreeGrid whenever window size changes.
-
-
-#### Default Value
-
-* false
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [enableResize]= "false">
-</ej-treegrid>
-
-{% endhighlight %}
-
-
-### enableVirtualization `boolean`
-{:#members:enablevirtualization}
-
-Specifies whether to render only the visual elements that are visible in the UI. When you enable this property, it will reduce the loading time for loading large number of records. 
-
-
-#### Default Value
-
-* false
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [enableVirtualization]= "false">
+    [enableCollapseAll]= "false">
 </ej-treegrid>
 
 {% endhighlight %}
@@ -2396,7 +2494,6 @@ Gets or sets a value that indicates whether to enable load on demand approach, f
 
 * false
 
-
 #### Example
 
 {% highlight html %}
@@ -2407,46 +2504,76 @@ Gets or sets a value that indicates whether to enable load on demand approach, f
 
 {% endhighlight %}
 
+### enableResize `boolean`
+{:#members:enableresize}
 
-### columnResizeSettings `object`
-{:#members:columnresizesettings}
-
-Specifies the settings for column resize
-
-### columnResizeSettings.columnResizeMode `enum`
-{:#members:columnresizesettings-columnresizemode}
-
-<ts name = "ej.TreeGrid.ColumnResizeMode"/>
-
-Specifies the mode for column resizing 
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">FixedColumns</td>
-<td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
-</tr>
-<tr>
-<td class="name">Normal</td>
-<td class="description">At load time columns are stretched with control width,while resizing the column, current column width updated based on next column</td>
-</tr>
-<tr>
-<td class="name">NextColumn</td>
-<td class="description">In this mode columns are stretched with control width in load time and on resizing action.</td>
-</tr>
-</tbody>
-</table>
+Specifies whether to resize TreeGrid whenever window size changes.
 
 #### Default Value
-{:.param}
 
-* ej.TreeGrid.ColumnResizeMode.Normal
+* false
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [enableResize]= "false">
+</ej-treegrid>
+
+{% endhighlight %}
+
+### enableVirtualization `boolean`
+{:#members:enablevirtualization}
+
+Specifies whether to render only the visual elements that are visible in the UI. When you enable this property, it will reduce the loading time for loading large number of records. 
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [enableVirtualization]= "false">
+</ej-treegrid>
+
+{% endhighlight %}
+
+### expandStateMapping `string`
+{:#members:expandstatemapping}
+
+Specifies the mapping property path for the expand status of a record in data source.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    expandStateMapping= "isExpanded">
+</ej-treegrid>
+
+{% endhighlight %}
+
+### filterSettings `object`
+{:#members:filtersettings}
+
+Options for filtering and customizing filter actions.
+
+### filterSettings.enableCaseSensitivity `boolean`
+{:#members:filtersettings-enablecasesensitivity}
+
+Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode.
+
+#### Default Value
+
+* false
 
 #### Example
 
@@ -2454,7 +2581,7 @@ Specifies the mode for column resizing
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [columnResizeSettings]= "columnResizeSettings">
+    [filterSettings]= "filterSettings">
 </ej-treegrid>
 
 {% endhighlight %}
@@ -2462,42 +2589,46 @@ Specifies the mode for column resizing
 {% highlight ts %}
 
 export class AppComponent {
-    public columnResizeSettings: any;
+    public filterSettings: any;
     constructor() {
-        this.columnResizeSettings = { columnResizeMode : ej.TreeGrid.ColumnResizeMode.FixedColumns};
+        this.filterSettings = { enableCaseSensitivity : false};
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
+### filterSettings.enableComplexBlankFilter `boolean`
+{:#members:filtersettings-enablecomplexblankfilter}
 
-### commonWidth `number`
-{:#members:commonwidth}
-
-Defines the common width for all the columns in TreeGrid
+Enables or disables the ability to filter the columns with empty, null and undefined values.
 
 #### Default Value
 
-* 150
-
+* true
 
 #### Example
 
+{% tabs %}
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [commonWidth]="180">
+    [filterSettings]= "filterSettings">
 </ej-treegrid>
 
 {% endhighlight %}
 
+{% highlight ts %}
 
+export class AppComponent {
+    public filterSettings: any;
+    constructor() {
+        this.filterSettings = { enableComplexBlankFilter : false};
+    }
+}
 
-### filterSettings `object`
-{:#members:filtersettings}
-
-Options for filtering and customizing filter actions.
+{% endhighlight %}
+{% endtabs %}
 
 ### filterSettings.filterBarMode `string`
 {:#members:filtersettings-filterbarmode}
@@ -2507,7 +2638,6 @@ Specifies the mode on which column filtering should start
 #### Default Value
 
 * "immediate"
-
 
 #### Example
 
@@ -2532,6 +2662,66 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### filterSettings.filterHierarchyMode `enum`
+{:#members:filtersettings-filterhierarchymode}
+
+<ts name = "ej.TreeGrid.FilterHierarchyMode"/>
+
+Specifies the mode of filtering to filter the record with or without hierarchy.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Parent</td>
+<td class="description">Shows the filtered record with parent record</td>
+</tr>
+<tr>
+<td class="name">Child</td>
+<td class="description">Shows the filtered record with child record</td>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">shows the filtered record with both parent and child record</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">Shows only filtered record.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.FilterHierarchyMode.Parent
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [filterSettings]= "filterSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public filterSettings: any;
+    constructor() {
+        this.filterSettings = { filterHierarchyMode : ej.TreeGrid.FilterHierarchyMode.Parent};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
 
 ### filterSettings.filterType `enum`
 {:#members:filtersettings-filtertype}
@@ -2560,10 +2750,8 @@ Specifies the type of column filtering.
 </table>
 
 #### Default Value
-{:.param}
 
 * ej.TreeGrid.FilterType.FilterBar
-
 
 #### Example
 
@@ -2586,9 +2774,7 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-
+{% endtabs %}
 
 ### filterSettings.filteredColumns `array`
 {:#members:filtersettings-filteredcolumns}
@@ -2599,19 +2785,19 @@ Specifies the column collection for filtering the TreeGrid content on initial lo
 
 * []
 
-### filterSettings.filteredColumns.value `string`
-{:#members:filtersettings-filteredcolumns-value}
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
 
-Specifies the value to be filtered in TreeGrid.
+Specifies the field where filtering has to be performed.
 
 #### Default Value
 
 * -
 
-### filterSettings.filteredColumns.field `string`
-{:#members:filtersettings-filteredcolumns-field}
+### filterSettings.filteredColumns.operator `string`
+{:#members:filtersettings-filteredcolumns-operator}
 
-Specifies the field where filtering has to be performed.
+Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
 
 #### Default Value
 
@@ -2626,10 +2812,10 @@ Specifies the predicate(and/or) value to perform filtering.
 
 * -
 
-### filterSettings.filteredColumns.operator `string`
-{:#members:filtersettings-filteredcolumns-operator}
+### filterSettings.filteredColumns.value `string`
+{:#members:filtersettings-filteredcolumns-value}
 
-Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
+Specifies the value to be filtered in TreeGrid.
 
 #### Default Value
 
@@ -2663,62 +2849,101 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### filterSettings.maxFilterChoice `number`
+{:#members:filtersettings-maxfilterchoice}
 
-### locale `string`
-{:#members:locale}
-
-Specifies the localization information to customize the User Interface (UI) to support regional language and culture
-
+Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
 
 #### Default Value
 
-* "en-US"
-
+* 1000
 
 #### Example
 
+{% tabs %}
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    locale= "fr-FR">
+    [filterSettings]= "filterSettings">
 </ej-treegrid>
 
 {% endhighlight %}
 
-### parseRowTemplate  `boolean`
-{:#members:parserowtemplate}
+{% highlight ts %}
 
-Enables or disables internal parsing of a row. When disabled this property, row will be displayed using the defined template without any internal event bindings.
+export class AppComponent {
+    public filterSettings: any;
+    constructor() {
+        this.filterSettings =  { maxFilterChoice : 500 };
+    }
+}
 
+{% endhighlight %}
+{% endtabs %}
+
+### headerTextOverflow `enum`
+{:#members:headertextoverflow}
+
+<ts name = "ej.TreeGrid.HeaderTextOverflow"/>
+
+Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">None</td>
+<td class="description">You can disable the word wrap</td>
+</tr>
+<tr>
+<td class="name">Wrap</td>
+<td class="description">You can wrap the header content</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
-* true
-
+* ej.TreeGrid.HeaderTextOverflow.None
 
 #### Example
 
+{% tabs %}
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [parseRowTemplate]= "false">
+    [headerTextOverflow]= "headerTextOverflow">
 </ej-treegrid>
 
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class AppComponent {
+    public headerTextOverflow: any;
+    constructor() {
+        this.headerTextOverflow =   ej.TreeGrid.HeaderTextOverflow.Wrap;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### idMapping `string`
 {:#members:idmapping}
 
 Specifies the name of the field in the dataSource, which contains the id of that row.
 
-
 #### Default Value
 
 * ""
-
 
 #### Example
 
@@ -2735,11 +2960,9 @@ Specifies the name of the field in the dataSource, which contains the id of that
 
 Enables or disables the responsiveness of TreeGrid
 
-
 #### Default Value
 
 * "false"
-
 
 #### Example
 
@@ -2751,45 +2974,70 @@ Enables or disables the responsiveness of TreeGrid
 
 {% endhighlight %}
 
-### parentIdMapping `string`
-{:#members:parentidmapping}
+### locale `string`
+{:#members:locale}
 
-Specifies the name of the field in the dataSource, which contains the parent's id. This is necessary to form a parent-child hierarchy, if the dataSource contains self-referential data.
-
+Specifies the localization information to customize the User Interface (UI) to support regional language and culture
 
 #### Default Value
 
-* ""
-
+* "en-US"
 
 #### Example
 
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    parentIdMapping= "parentID">
+    locale= "fr-FR">
 </ej-treegrid>
 
 {% endhighlight %}
-
 
 ### pageSettings `object`
 {:#members:pagesettings}
 
 Specifies the options for customizing the pager.
 
+### pageSettings.currentPage `number`
+{:#members:pagesettings-currentpage}
+
+Specifies the current page to display at load time.
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [pageSettings]= "pageSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public pageSettings: any;
+    constructor() {
+        this.pageSettings =  {currentPage : 2};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### pageSettings.pageCount `number`
 {:#members:pagesettings-pagecount}
 
 Using this property we can specify the number of pages should pager contains, according to this count TreeGrid height will be updated.
 
-
 #### Default Value
-{:.param}
 
 * 8
-
 
 #### Example
 
@@ -2814,19 +3062,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### pageSettings.pageSize `number`
 {:#members:pagesettings-pagesize}
 
 This specifies the number of rows to display in each page.
 
-
 #### Default Value
-{:.param}
 
 * 12
-
 
 #### Example
 
@@ -2849,79 +3092,7 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-
-### pageSettings.totalRecordsCount `number`
-{:#members:pagesettings-totalrecordscount}
-
-Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
-
-
-#### Default Value
-{:.param}
-
-* null
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [pageSettings]= "pageSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public pageSettings: any;
-    constructor() {
-        this.pageSettings ={totalRecordsCount : null};
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### pageSettings.currentPage `number`
-{:#members:pagesettings-currentpage}
-
-Specifies the current page to display at load time.
-
-#### Default Value
-{:.param}
-
-* 1
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [pageSettings]= "pageSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public pageSettings: any;
-    constructor() {
-        this.pageSettings =  {currentPage : 2};
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
+{% endtabs %}
 
 ### pageSettings.pageSizeMode `enum`
 {:#members:pagesettings-pagesizemode}
@@ -2953,7 +3124,6 @@ Specifies the mode of record count in a page, whether it should count all the re
 
 * ej.TreeGrid.PageSizeMode.All
 
-
 #### Example
 
 {% tabs %}
@@ -2976,8 +3146,6 @@ export class AppComponent {
 
 {% endhighlight %}
 {% endtabs %}  
-
-
 
 ### pageSettings.printMode `enum`
 {:#members:pagesettings-printmode}
@@ -3009,7 +3177,6 @@ Specifies the mode of printing the control, whether it should print the all the 
 
 * ej.TreeGrid.PrintMode.AllPages
 
-
 #### Example
 
 {% tabs %}
@@ -3033,17 +3200,14 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### pageSettings.template `string`
 {:#members:pagesettings-template}
 
 Specifies the Custom template for Pager control.
 
-
 #### Default Value
 
 * null
-
 
 #### Example
 
@@ -3066,43 +3230,86 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
+### pageSettings.totalRecordsCount `number`
+{:#members:pagesettings-totalrecordscount}
 
-### cellTooltipTemplate `string`
-{:#members:celltooltiptemplate}
-
-Specifies the template for cell tooltip
-
+Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
 
 #### Default Value
 
 * null
 
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [pageSettings]= "pageSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public pageSettings: any;
+    constructor() {
+        this.pageSettings ={totalRecordsCount : null};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### parentIdMapping `string`
+{:#members:parentidmapping}
+
+Specifies the name of the field in the dataSource, which contains the parent's id. This is necessary to form a parent-child hierarchy, if the dataSource contains self-referential data.
+
+#### Default Value
+
+* ""
 
 #### Example
 
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    cellTooltipTemplate="cellTooltipTemplate">
+    parentIdMapping= "parentID">
 </ej-treegrid>
 
 {% endhighlight %}
 
+### parseRowTemplate  `boolean`
+{:#members:parserowtemplate}
 
+Enables or disables internal parsing of a row. When disabled this property, row will be displayed using the defined template without any internal event bindings.
 
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [parseRowTemplate]= "false">
+</ej-treegrid>
+
+{% endhighlight %}
 
 ### query `object`
 {:#members:query}
 
 Specifies ej.Query to select data from the dataSource. This property is applicable only when the dataSource is ej.DataManager.
 
-
 #### Default Value
 
 * null
-
 
 #### Example
 
@@ -3125,20 +3332,16 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-
+{% endtabs %}
 
 ### rowHeight `number`
 {:#members:rowheight}
 
 Specifies the height of a single row in tree grid. Also, we need to set same height in the CSS style with class name e-rowcell.
 
-
 #### Default Value
 
 * 30
-
 
 #### Example
 
@@ -3150,19 +3353,14 @@ Specifies the height of a single row in tree grid. Also, we need to set same hei
 
 {% endhighlight %}
 
-
-
-
 ### rowTemplateID `string`
 {:#members:rowtemplateid}
 
 Specifies the id of the template to be applied for all the rows.
 
-
 #### Default Value
 
 * ""
-
 
 #### Example
 
@@ -3174,57 +3372,174 @@ Specifies the id of the template to be applied for all the rows.
 
 {% endhighlight %}
 
+### searchSettings `object`
+{:#members:searchsettings}
 
+Specifies the toolbar searching customizations.
 
-### selectedRowIndex `number`
-{:#members:selectedrowindex}
-
-Specifies the index of the selected row.
-
+### searchSettings.fields `array`
+{:#members:searchsettings-fields}
+Gets or Sets a specific column for searching the tree grid content.
 
 #### Default Value
 
-* -1
-
+* []
 
 #### Example
 
+{% tabs %}
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [selectedRowIndex]= "3">
+    [searchSettings]= "searchSettings">
 </ej-treegrid>
 
 {% endhighlight %}
 
+{% highlight ts %}
+
+export class AppComponent {
+    public searchSettings: any;
+    constructor() {
+        this.searchSettings = {
+            fields:["TaskId","TaskName"],
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### searchSettings.ignoreCase `boolean`
+{:#members:searchsettings-ignorecase}
+Enables or disables the case sensitivity while searching.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [searchSettings]= "searchSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public searchSettings: any;
+    constructor() {
+        this.searchSettings = {
+            ignoreCase: false
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### searchSettings.key `string`
+{:#members:searchsettings-key}
+Gets or Sets a key word for searching the tree grid content.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [searchSettings]= "searchSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public searchSettings: any;
+    constructor() {
+        this.searchSettings = {
+            key:"task 1",
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### searchSettings.operator `string`
+{:#members:searchsettings-operator}
+
+Specifies the operator for the search key words in toolbar searching.
+
+**List of enum type operators**
+
+1. ej.FilterOperators.contain
+2. ej.FilterOperators.equal
+3. ej.FilterOperators.notEqual
+4. ej.FilterOperators.startsWith
+5. ej.FilterOperators.endsWith
+
+#### Default Value
+
+* "contains"
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [searchSettings]= "searchSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public searchSettings: any;
+    constructor() {
+        this.searchSettings = {
+            operator:"startsWith",
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### selectedCellIndexes `array`
 {:#members:selectedcellindexes}
 
 Specifies the selected cell information on rendering TreeGrid.
 
-### selectedCellIndexes.rowIndex `number`
-{:#members:selectedcellindexes-rowIndex}
-
-
-Specifies the row index of the cell to be selected in TreeGrid control
-
-
-#### Default Value
-{:.param}
-
-* ""
-
 ### selectedCellIndexes.cellIndex `number`
-{:#members:selectedcellindexes-cellIndex}
+{:#members:selectedcellindexes-cellindex}
 
 Specifies the cell index to be selected in the row.
 
+#### Default Value
+
+* ""
+
+### selectedCellIndexes.rowIndex `number`
+{:#members:selectedcellindexes-rowindex}
+
+Specifies the row index of the cell to be selected in TreeGrid control
 
 #### Default Value
-{:.param}
 
-* " "
+* ""
 
 #### Example
 
@@ -3247,13 +3562,95 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
+### selectedRowIndex `number`
+{:#members:selectedrowindex}
+
+Specifies the index of the selected row.
+
+#### Default Value
+
+* -1
+
+#### Example
+
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [selectedRowIndex]= "3">
+</ej-treegrid>
+
+{% endhighlight %}
 
 ### selectionSettings `object`
 {:#members:selectionsettings}
 
 Specifies the settings for row and cell selection.
+
+### selectionSettings.enableHierarchySelection `boolean`
+{:#members:selectionsettings-enablehierarchyselection}
+
+Enables or disables the selection by hierarchy in check box selection
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [selectionSettings]= "selectionSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public selectionSettings: any;
+    constructor() {
+        this.selectionSettings ={enableHierarchySelection : false };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### selectionSettings.enableSelectAll `boolean`
+{:#members:selectionsettings-enableselectall}
+
+Toggles the visibility of the checkbox in column header, using which all the check boxes can be selected or unselected.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [selectionSettings]= "selectionSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public selectionSettings: any;
+    constructor() {
+        this.selectionSettings ={enableSelectAll : false };
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### selectionSettings.selectionMode `enum`
 {:#members:selectionsettings-selectionmode}
@@ -3282,7 +3679,6 @@ Specifies the type of selection whether to select row or cell.
 </table>
 
 #### Default Value
-{:.param}
 
 * ej.TreeGrid.SelectionMode.Row
 
@@ -3308,8 +3704,6 @@ export class AppComponent {
 
 {% endhighlight %}
 {% endtabs %}  
-
-
 
 ### selectionSettings.selectionType `enum`
 {:#members:selectionsettings-selectiontype}
@@ -3368,75 +3762,24 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### showColumnChooser `boolean`
+{:#members:showcolumnchooser}
 
-
-### selectionSettings.enableHierarchySelection `boolean`
-{:#members:selectionsettings-enablehierarchyselection}
-
-Enables or disables the selection by hierarchy in check box selection
-
-#### Default Value
-{:.param}
-
-* true
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [selectionSettings]= "selectionSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public selectionSettings: any;
-    constructor() {
-        this.selectionSettings ={enableHierarchySelection : false };
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### selectionSettings.enableSelectAll `boolean`
-{:#members:selectionsettings-enableselectall}
-
-Toggles the visibility of the checkbox in column header, using which all the check boxes can be selected or unselected.
+Controls the visibility of the menu button, which is displayed on the column header. Clicking on this button will show a popup menu. When you choose `Columns` item from this popup, a list box with column names will be shown, from which you can select/deselect a column name to control the visibility of the respective columns.
 
 #### Default Value
 
-* true
+* false
 
 #### Example
 
-{% tabs %}
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [selectionSettings]= "selectionSettings">
+    [showColumnChooser]= "false">
 </ej-treegrid>
 
 {% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public selectionSettings: any;
-    constructor() {
-        this.selectionSettings ={enableSelectAll : false };
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
 
 ### showColumnOptions `boolean`
 {:#members:showcolumnoptions}
@@ -3444,7 +3787,6 @@ export class AppComponent {
 Enables/disables the options for inserting , deleting and renaming  columns.
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -3458,38 +3800,14 @@ Enables/disables the options for inserting , deleting and renaming  columns.
 
 {% endhighlight %}
 
-
-### showColumnChooser `boolean`
-{:#members:showcolumnchooser}
-
-Controls the visibility of the menu button, which is displayed on the column header. Clicking on this button will show a popup menu. When you choose `Columns` item from this popup, a list box with column names will be shown, from which you can select/deselect a column name to control the visibility of the respective columns.
-
-
-#### Default Value
-{:.param}
-* false
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [showColumnChooser]= "false">
-</ej-treegrid>
-
-{% endhighlight %}
-
 ### showDetailsRow `boolean`
 {:#members:showdetailsrow}
 
 Specifies the visibility of details view
 
-
 #### Default Value
-{:.param}
-* false
 
+* false
 
 #### Example
 
@@ -3506,11 +3824,9 @@ Specifies the visibility of details view
 
 Specifies the visibility of the expander column which is used to expand or collapse the details view
 
-
 #### Default Value
-{:.param}
-* false
 
+* false
 
 #### Example
 
@@ -3522,50 +3838,91 @@ Specifies the visibility of the expander column which is used to expand or colla
 
 {% endhighlight %}
 
-### detailsTemplate `string`
-{:#members:detailstemplate}
+### showGridCellTooltip `boolean`
+{:#members:showgridcelltooltip}
 
-Specifies the template for details view
-
+Specifies whether to show tooltip when mouse is hovered on the cell.
 
 #### Default Value
-{:.param}
-* ""
 
+* true
 
 #### Example
 
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    detailsTemplate= "#detailsTemplate">
+    [showGridCellTooltip]= "true">
 </ej-treegrid>
 
 {% endhighlight %}
 
+### showGridExpandCellTooltip `boolean`
+{:#members:showgridexpandcelltooltip}
 
-
-### detailsRowHeight `number`
-{:#members:detailsrowheight}
-
-Specifies the row height of the details view
-
+Specifies whether to show tooltip for the cells, which has expander button.
 
 #### Default Value
-{:.param}
-* 100
+
+* true
 
 #### Example
 
 {% highlight html %}
 
 <ej-treegrid id="TreeGridControl"
-    [detailsRowHeight]= "150">
+    [showGridExpandCellTooltip]= "true">
 </ej-treegrid>
 
 {% endhighlight %}
 
+### showStackedHeader `boolean`
+{:#members:showstackedheader}
 
+Gets or sets a value that indicates stacked header should be shown on TreeGrid layout when the property `stackedHeaderRows` is set.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [columns]= "columns"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+        ]};          
+        this.columns: [
+                    { field: "ID", headerText: "S.No", width: columnWidth },
+                    { field: "Name", headerText: "Shipment Name", isFrozen:true },
+                    { field: "category", headerText: "Category" },
+                    { field: "units", headerText: "Units" },
+                    { field: "unitPrice", headerText: "Unit Price($)" },
+                    { field: "price", headerText: "Price($)" }
+        ]
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
 
 ### showSummaryRow `boolean`
 {:#members:showsummaryrow}
@@ -3573,7 +3930,7 @@ Specifies the row height of the details view
 Specifies the visibility of summary row
 
 #### Default Value
-{:.param}
+
 * false
 
 #### Example
@@ -3592,7 +3949,7 @@ Specifies the visibility of summary row
 Specifies the visibility of total summary row for the corresponding summary column
 
 #### Default Value
-{:.param}
+
 * false
 
 #### Example
@@ -3605,23 +3962,462 @@ Specifies the visibility of total summary row for the corresponding summary colu
 
 {% endhighlight %}
 
+### sizeSettings `object`
+{:#members:sizesettings}
+
+Options for setting width and height for TreeGrid.
+
+### sizeSettings.height `string`
+{:#members:sizesettings-height}
+
+Height of the TreeGrid.
+
+#### Default Value
+
+* "450px"
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [sizeSettings]= "sizeSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public sizeSettings: any;
+    constructor() {
+        this.sizeSettings ={height:'450px'};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### sizeSettings.width `string`
+{:#members:sizesettings-width}
+
+Width of the TreeGrid.
+
+#### Default Value
+
+* "100%"
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [sizeSettings]= "sizeSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public sizeSettings: any;
+    constructor() {
+        this.sizeSettings ={width:'500px'};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### sortSettings `object`
+{:#members:sortsettings}
+
+Options for sorting the rows.
+
+### sortSettings.sortedColumns `array`
+{:#members:sortsettings-sortedcolumns}
+
+Option to add columns based on which the rows have to be sorted recursively.
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [sortSettings]= "sortSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public sortSettings: any;
+    constructor() {
+        this.sortSettings ={sortedColumns : [{ field:"startDate",direction:"ascending" }]};        
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### sortSettings.sortedColumns.direction `string`
+{:#members:sortsettings-sortedcolumns-direction}
+
+Specifies the sort direction in TreeGrid
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [sortSettings]= "sortSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public sortSettings: any;
+    constructor() {
+        this.sortSettings ={sortedColumns : [{ direction:"ascending" }]};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### sortSettings.sortedColumns.field `string`
+{:#members:sortsettings-sortedcolumns-field}
+
+Specifies the field to be sorted in TreeGrid
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [sortSettings]= "sortSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public sortSettings: any;
+    constructor() {
+        this.sortSettings ={sortedColumns : [{ field:"startDate" }]};        
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### stackedHeaderRows `array`
+{:#members:stackedheaderrows}
+
+Gets or sets an object that indicates to managing the collection of stacked header rows for the TreeGrid.
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [columns]= "columns"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+        ]};          
+        this.columns: [
+                    { field: "ID", headerText: "S.No", width: columnWidth },
+                    { field: "Name", headerText: "Shipment Name", isFrozen:true },
+                    { field: "category", headerText: "Category" },
+                    { field: "units", headerText: "Units" },
+                    { field: "unitPrice", headerText: "Unit Price($)" },
+                    { field: "price", headerText: "Price($)" }
+        ]
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### stackedHeaderRows.stackedHeaderColumns `array`
+{:#members:stackedheaderrows-stackedheadercolumns}
+
+Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                { column: "unitPrice,price", headerText: "Price details" }
+            ]  
+        ]};          
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### stackedHeaderRows.stackedHeaderColumns.column `object`{:#members:stackedheaderrows-stackedheadercolumns-column}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                { column: "unitPrice,price", headerText: "Price details" }
+            ]  
+        ]};          
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### stackedHeaderRows.stackedHeaderColumns.cssClass `string`{:#members:stackedheaderrows-stackedheadercolumns-cssclass}
+
+Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                { column: "unitPrice,price", headerText: "Price details" }
+            ]  
+        ]};          
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### stackedHeaderRows.stackedHeaderColumns.headerText `string`{:#members:stackedheaderrows-stackedheadercolumns-headertext}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                { column: "unitPrice,price", headerText: "Price details" }
+            ]  
+        ]};          
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### stackedHeaderRows.stackedHeaderColumns.textAlign `string`{:#members:stackedheaderrows-stackedheadercolumns-textalign}
+
+Gets or sets a value that indicates the text alignment of the corresponding headerText.
+
+#### Default Value
+
+* ej.TextAlign.Left
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp", textAlign: ej.TextAlign.Right },
+                { column: "unitPrice,price", headerText: "Price details" }
+            ]  
+        ]};          
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+### stackedHeaderRows.stackedHeaderColumns.tooltip `string`{:#members:stackedheaderrows-stackedheadercolumns-tooltip}
+
+Sets the template for tooltip for the Grid stackedHeaderColumns.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [showStackedHeader]= "true"
+    [stackedHeaderRows]= "stackedHeaderRows">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public stackedHeaderRows: any;
+    public columns: any;
+    constructor() {
+        this.stackedHeaderRows = [{
+            stackedHeaderColumns: [
+                { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp", tooltip:"#colTip" },
+                { column: "unitPrice,price", headerText: "Price details" }
+            ]  
+        ]};          
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ### summaryRows `array`
 {:#members:summaryrows}
 
 Specifies the summary row collection object to be displayed
 
 #### Default Value
-{:.param}
+
 * []
-
-### summaryRows.title `string`
-{:#members:summaryrows-title}
-
-Specifies the title for summary row collection in TreeGrid
-
-#### Default Value
-{:.param}
-* -
 
 ### summaryRows.summaryColumns `array`
 {:#members:summaryrows-summarycolumns}
@@ -3629,7 +4425,52 @@ Specifies the title for summary row collection in TreeGrid
 Specifies the summary columns in the summary rows.
 
 #### Default Value
-{:.param}
+
+* -
+
+### summaryRows.summaryColumns.dataMember `string`
+{:#members:summaryrows-summarycolumns-datamember}
+
+Specifies summary column used to perform the summary calculation.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.displayColumn `string`
+{:#members:summaryrows-summarycolumns-displaycolumn}
+
+Specifies the required column to display the summary.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.format `string`
+{:#members:summaryrows-summarycolumns-format}
+
+Specifies the format to be applied on the summary column value.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.prefix `string`
+{:#members:summaryrows-summarycolumns-prefix}
+
+Specifies the text to be displayed before the summary column value.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.suffix `string`
+{:#members:summaryrows-summarycolumns-suffix}
+
+Specifies the text to be displayed after the summary column value.
+
+#### Default Value
+
 * -
 
 ### summaryRows.summaryColumns.summaryType `enum`
@@ -3687,52 +4528,16 @@ Specifies the summary type to perform calculations in a corresponding summary co
 </table>
 
 #### Default Value
-{:.param}
+
 * -
 
-### summaryRows.summaryColumns.dataMember `string`
-{:#members:summaryrows-summarycolumns-datamember}
+### summaryRows.title `string`
+{:#members:summaryrows-title}
 
-Specifies summary column used to perform the summary calculation.
-
-#### Default Value
-{:.param}
-* -
-
-### summaryRows.summaryColumns.displayColumn `string`
-{:#members:summaryrows-summarycolumns-displaycolumn}
-
-Specifies the required column to display the summary.
+Specifies the title for summary row collection in TreeGrid
 
 #### Default Value
-{:.param}
-* -
 
-### summaryRows.summaryColumns.prefix `string`
-{:#members:summaryrows-summarycolumns-prefix}
-
-Specifies the text to be displayed before the summary column value.
-
-#### Default Value
-{:.param}
-* -
-
-### summaryRows.summaryColumns.suffix `string`
-{:#members:summaryrows-summarycolumns-suffix}
-
-Specifies the text to be displayed after the summary column value.
-
-#### Default Value
-{:.param}
-* -
-
-### summaryRows.summaryColumns.format `string`
-{:#members:summaryrows-summarycolumns-format}
-
-Specifies the format to be applied on the summary column value.
-
-#### Default Value
-{:.param}
 * -
 
 #### Example
@@ -3752,284 +4557,143 @@ export class AppComponent {
     public summaryRows: any;
     constructor() {
         this.summaryRows =[{
-        title: "Maximum",
-        summaryColumns: [{
-            summaryType: ej.TreeGrid.SummaryType.Maximum,
-            dataMember: "TotalUnits",
-            displayColumn: "TotalUnits",
-            prefix: "Individual maximum unit = ",
-        }, {
-            summaryType: ej.TreeGrid.SummaryType.Maximum,
-            dataMember: "TotalCosts",
-            displayColumn: "TotalCosts",
-            prefix: "Individual maximum Cost = ",
-
-
-
-suffix:"/-",
-            format: "{0:C}"
-        }]
-    }, ],;        
+            title: "Maximum",
+            summaryColumns: [{
+                summaryType: ej.TreeGrid.SummaryType.Maximum,
+                dataMember: "TotalUnits",
+                displayColumn: "TotalUnits",
+                prefix: "Individual maximum unit = ",
+            },
+            {
+                summaryType: ej.TreeGrid.SummaryType.Maximum,
+                dataMember: "TotalCosts",
+                displayColumn: "TotalCosts",
+                prefix: "Individual maximum Cost = ",
+                suffix:"/-",
+                format: "{0:C}"
+            }]
+        }];      
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-
-### showGridCellTooltip `boolean`
-{:#members:showgridcelltooltip}
-
-Specifies whether to show tooltip when mouse is hovered on the cell.
-
-
-#### Default Value
-{:.param}
-* true
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [showGridCellTooltip]= "true">
-</ej-treegrid>
-
-{% endhighlight %}
-
-
-### showGridExpandCellTooltip `boolean`
-{:#members:showgridexpandcelltooltip}
-
-Specifies whether to show tooltip for the cells, which has expander button.
-
-
-#### Default Value
-{:.param}
-* true
-
-
-#### Example
-
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [showGridExpandCellTooltip]= "true">
-</ej-treegrid>
-
-{% endhighlight %}
-
-
-### sizeSettings `object`
-{:#members:sizesettings}
-
-Options for setting width and height for TreeGrid.
-
-
-### sizeSettings.height `string`
-{:#members:sizesettings-height}
-
-Height of the TreeGrid.
-
-
-#### Default Value
-{:.param}
-* null
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [sizeSettings]= "sizeSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public sizeSettings: any;
-    constructor() {
-        this.sizeSettings ={height:'450px'};
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### sizeSettings.width `string`
-{:#members:sizesettings-width}
-
-Width of the TreeGrid.
-
-
-#### Default Value
-{:.param}
-
-* null
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [sizeSettings]= "sizeSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public sizeSettings: any;
-    constructor() {
-        this.sizeSettings ={width:'500px'};
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### sortSettings `object`
-{:#members:sortsettings}
-
-Options for sorting the rows.
-
-
-### sortSettings.sortedColumns `array`
-{:#members:sortsettings-sortedcolumns}
-
-Option to add columns based on which the rows have to be sorted recursively.
-
-
-#### Default Value
-{:.param}
-* []
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [sortSettings]= "sortSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public sortSettings: any;
-    constructor() {
-        this.sortSettings ={sortedColumns : [{ field:"startDate",direction:"ascending" }]};        
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### sortSettings.sortedColumns.field `string`
-{:#members:sortsettings-sortedcolumns-field}
-
-Specifies the field to be sorted in TreeGrid
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [sortSettings]= "sortSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public sortSettings: any;
-    constructor() {
-        this.sortSettings ={sortedColumns : [{ field:"startDate" }]};        
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### sortSettings.sortedColumns.direction `string`
-{:#members:sortsettings-sortedcolumns-direction}
-
-Specifies the sort direction in TreeGrid
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [sortSettings]= "sortSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public sortSettings: any;
-    constructor() {
-        this.sortSettings ={sortedColumns : [{ direction:"ascending" }]};
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
+{% endtabs %} 
 
 ### toolbarSettings `object`
 {:#members:toolbarsettings}
 
 Options for displaying and customizing the toolbar items.
 
+### toolbarSettings.customToolbarItems `array`
+{:#members:toolbarsettings-customtoolbaritems}
+
+Allows the user to insert custom toolbar items.
+
+### toolbarSettings.customToolbarItems.text `string`
+{:#members:toolbarsettings-customtoolbaritems-text}
+
+Allows the user to insert the custom icons in toolbar using CSS class name selector.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [toolbarSettings]= "toolbarSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public toolbarSettings: any;
+    constructor() {
+        this.toolbarSettings = {customToolbarItems: [{ text: "Reset",tooltipText:"Column Visibility" }]};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### toolbarSettings.customToolbarItems.templateID `string`
+{:#members:toolbarsettings-customtoolbaritems-templateid}
+
+Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [toolbarSettings]= "toolbarSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public toolbarSettings: any;
+    constructor() {
+        this.toolbarSettings ={customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" }]
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### toolbarSettings.customToolbarItems.tooltipText `string`
+{:#members:toolbarsettings-customtoolbaritems-tooltiptext}
+
+Allows the user to display custom tooltip text for TreeGrid custom toolbar items.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [toolbarSettings]= "toolbarSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public toolbarSettings: any;
+    constructor() {
+        this.toolbarSettings ={customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" },{ text: "Reset",tooltipText:"Column Visibility" }]};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### toolbarSettings.showToolbar `boolean`
 {:#members:toolbarsettings-showtoolbar}
 
 Shows/hides the toolbar.
 
-
 #### Default Value
-{:.param}
-* false
 
+* false
 
 #### Example
 
@@ -4052,9 +4716,7 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-
+{% endtabs %} 
 
 ### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
@@ -4113,9 +4775,8 @@ Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 </table>
 
 #### Default Value
-{:.param}
-* []
 
+* []
 
 #### Example
 
@@ -4138,133 +4799,34 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### totalSummaryHeight `number`
+{:#members:totalsummaryheight}
 
-### toolbarSettings.customToolbarItems `array`
-{:#members:toolbarsettings-customtoolbaritems}
-
-Allows the user to insert custom toolbar items.
-
-### toolbarSettings.customToolbarItems.text `string`
-{:#members:toolbarsettings-customtoolbaritems-text}
-
-Allows the user to insert the custom icons in toolbar using CSS class name selector.
-
+Specifies the custom summary height to the total summary row.
 
 #### Default Value
 
-* ""
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [toolbarSettings]= "toolbarSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public toolbarSettings: any;
-    constructor() {
-        this.toolbarSettings = {customToolbarItems: [{ text: "Reset",tooltipText:"Column Visibility" }]};
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### toolbarSettings.customToolbarItems.templateID `string`
-{:#members:toolbarsettings-customtoolbaritems-templateid}
-
-Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
-
-
-#### Default Value
-
-* ""
-
+* 90
 
 #### Example
 
-{% tabs %}
 {% highlight html %}
-
+                 
 <ej-treegrid id="TreeGridControl"
-    [toolbarSettings]= "toolbarSettings">
+    [totalsummaryheight]= 120 >
 </ej-treegrid>
-
 {% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public toolbarSettings: any;
-    constructor() {
-        this.toolbarSettings ={customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" }]
-        }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-
-### toolbarSettings.customToolbarItems.tooltipText `string`
-{:#members:toolbarsettings-customtoolbaritems-tooltiptext}
-
-Allows the user to display custom tooltip text for TreeGrid custom toolbar items.
-
-
-#### Default Value
-
-* ""
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl"
-    [toolbarSettings]= "toolbarSettings">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    public toolbarSettings: any;
-    constructor() {
-        this.toolbarSettings ={customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" },{ text: "Reset",tooltipText:"Column Visibility" }]};
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
 
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
 
 Specifies the index of the column that needs to have the expander button. By default, cells in the first column contain the expander button.
 
-
 #### Default Value
-{:.param}
-* 0
 
+* 0
 
 #### Example
 
@@ -4275,9 +4837,6 @@ Specifies the index of the column that needs to have the expander button. By def
 </ej-treegrid>
 
 {% endhighlight %}
-
-
-
 
 ## Methods
 
@@ -4308,13 +4867,12 @@ Add a new row in TreeGrid, while allowAdding is set to true
 </tbody>
 </table>
 
-
 #### Example
 
 {% tabs %}
 {% highlight html %}
  
-<button id="addrow" (click)="addRow($event, item)">Add Row</button>
+<button id="addrow" (click)="addRow($event)">Add Row</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4327,7 +4885,7 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public addRow(event, item) {
+    public addRow(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
         var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
         treeObj.addRow(data, ej.TreeGrid.AddRowPosition.Child); // To add a task
@@ -4337,6 +4895,56 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### clearFilter(fieldName)
+{:#methods:clearfilter}
+
+Clears the filter applied to a specific column.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to clear filtering done in that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to clear the filtering done in any specific column dynamically by passing its field name as parameter.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="clearFilter" (click)="clearFilter($event)">clearFilter</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public clearFilter(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.clearFilter("taskName");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### clearSelection(index)
 {:#methods:clearselection}
@@ -4365,7 +4973,7 @@ To clear all the selection in TreeGrid
 {% tabs %}
 {% highlight html %}
  
-<button id="clearSelection" (click)="clearSelection($event, item)">Clear Selection</button>
+<button id="clearSelection" (click)="clearSelection($event)">Clear Selection</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4378,49 +4986,26 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public clearSelection(event, item) {
+    public clearSelection(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
         treeObj.clearSelection();
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
-### selectCells(Indexes,preservePreviousSelectedCell)
-{:#methods:selectcells}
+### clearSorting()
+{:#methods:clearsorting}
 
-To select cell based on the cell and row index dynamically.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Indexes</td>
-<td class="type">array</td>
-<td class="description">array of cell indexes to be select</td>
-</tr>
-<tr>
-<td class="name">preservePreviousSelectedCell</td>
-<td class="type">boolean</td>
-<td class="description">Defines that we need to preserve the previously selected cells or not</td>
-</tr>
-</tbody>
-</table>
-
+To clear the sorting from sorted columns in TreeGrid.
 
 #### Example
 
 {% tabs %}
 {% highlight html %}
  
-<button id="selectCells" (click)="selectCells($event, item)">selectCells</button>
+<button id="clearSorting" (click)="clearSorting($event)">Clear Selection</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4433,120 +5018,14 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public selectCells(event, item) {
+    public clearSorting(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
-        treeObj.selectCells(indexes, true);
+        treeObj.clearSorting();
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-### renameColumn(columnIndex,name)
-{:#methods:renamecolumn}
-
-To rename a column with the specified name
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">columnIndex</td>
-<td class="type">number</td>
-<td class="description">Index of the column to be renamed</td>
-</tr>
-<tr>
-<td class="name">name</td>
-<td class="type">string</td>
-<td class="description">Header text of the column </td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="renameColumn" (click)="renameColumn($event, item)">renameColumn</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public renameColumn(event, item) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.renameColumn(1, "New Text");
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-### deleteColumn(columnIndex)
-{:#methods:deletecolumn}
-
-To delete the specified column
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">columnIndex</td>
-<td class="type">number</td>
-<td class="description">Index of the column to be deleted</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="deleteColumn" (click)="deleteColumn($event, item)">deleteColumn</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public deleteColumn(event, item) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.deleteColumn(1);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
 ### collapseAll()
 {:#methods:collapseall}
@@ -4558,7 +5037,7 @@ To collapse all the parent items in tree grid
 {% tabs %}
 {% highlight html %}
  
-<button id="collapseAll" (click)="collapseAll($event, item)">collapseAll</button>
+<button id="collapseAll" (click)="collapseAll($event)">collapseAll</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4578,106 +5057,7 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-### hideColumn(headerText)
-{:#methods:hidecolumn}
-
-To hide the column by using header text
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">headerText</td>
-<td class="type">string</td>
-<td class="description">you can pass a header text of a column to hide.</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="hideColumn" (click)="hideColumn($event, item)">hideColumn</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public hideColumn(event, item) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.hideColumn("Task Name");
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-### expandAtLevel(index)
-{:#methods:expandatlevel}
-
-Expands the records at specific hierarchical level
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">index</td>
-<td class="type">number</td>
-<td class="description">you can pass the level as index number to expand</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="expandAtLevel" (click)="expandAtLevel($event, item)">expandAtLevel</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public expandAtLevel(event, item) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.expandAtLevel(1);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
 ### collapseAtLevel(index)
 {:#methods:collapseatlevel}
@@ -4706,7 +5086,7 @@ Collapses the records at specific hierarchical level
 {% tabs %}
 {% highlight html %}
  
-<button id="collapseAtLevel" (click)="collapseAtLevel($event, item)">collapseAtLevel</button>
+<button id="collapseAtLevel" (click)="collapseAtLevel($event)">collapseAtLevel</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4719,19 +5099,19 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public collapseAtLevel(event, item) {
+    public collapseAtLevel(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
         treeObj.collapseAtLevel(1);
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
-### refresh(dataSource, query)
-{:#methods:refresh}
+### columnIndex(index)
+{:#methods:columnindex}
 
-To refresh the changes in tree grid
+To change the index of the tree column in TreeGrid.
 
 <table class="params">
 <thead>
@@ -4743,25 +5123,21 @@ To refresh the changes in tree grid
 </thead>
 <tbody>
 <tr>
-<td class="name">dataSource</td>
-<td class="type">array</td>
-<td class="description">Pass which data source you want to show in tree grid</td>
-</tr>
-<tr>
-<td class="name">query</td>
-<td class="type">object</td>
-<td class="description">Pass which data you want to show in tree grid</td>
+<td class="name">Index</td>
+<td class="type">number</td>
+<td class="description">Pass the column index to make the column as treeColumnIndex.</td>
 </tr>
 </tbody>
 </table>
 
+Usage: we can able to change any column as tree column dynamically. 
 
 #### Example
 
 {% tabs %}
 {% highlight html %}
  
-<button id="refresh" (click)="refresh($event, item)">refresh</button>
+<button id="columnIndex" (click)="columnIndex($event)">columnIndex</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4774,23 +5150,19 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public refresh(event, item) {
+    public columnIndex(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        var dataManager = ej.DataManager(this.projectData);
-        var query = ej.Query().select(["taskID", "taskName", "startDate", "endDate", "subtasks", "progress", "duration"]);
-        treeObj.refresh(dataManager, query);
+        treeObj.columnIndex(2);
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### deleteColumn(columnIndex)
+{:#methods:deletecolumn}
 
-
-### freezePrecedingColumns (field)
-{:#methods:freezeprecedingcolumns}
-
-Freeze all the columns preceding to the column specified by the field name.
+To delete the specified column
 
 <table class="params">
 <thead>
@@ -4802,9 +5174,9 @@ Freeze all the columns preceding to the column specified by the field name.
 </thead>
 <tbody>
 <tr>
-<td class="name">field</td>
-<td class="type">string</td>
-<td class="description">Freeze all Columns before this field column.</td>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Index of the column to be deleted</td>
 </tr>
 </tbody>
 </table>
@@ -4814,7 +5186,7 @@ Freeze all the columns preceding to the column specified by the field name.
 {% tabs %}
 {% highlight html %}
  
-<button id="freezePrecedingColumns" (click)="freezePrecedingColumns($event, item)">freezePrecedingColumns</button>
+<button id="deleteColumn" (click)="deleteColumn($event)">deleteColumn</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4827,20 +5199,53 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public freezePrecedingColumns(event, item) {
+    public deleteColumn(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.freezePrecedingColumns(field);
+        treeObj.deleteColumn(1);
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### expandAll()
+{:#methods:expandall}
 
-### freezeColumn (field, isFrozen)
-{:#methods:freezecolumn}
+To expand all the root level nodes in TreeGrid.
 
-Freeze/unfreeze the specified column.
+Usage: we can able to expand all the parents records in TreeGrid control dynamically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="expandAll" (click)="expandAll($event)">expandAll</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public expandAll(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.expandAll();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### expandAtLevel(index)
+{:#methods:expandatlevel}
+
+Expands the records at specific hierarchical level
 
 <table class="params">
 <thead>
@@ -4852,14 +5257,109 @@ Freeze/unfreeze the specified column.
 </thead>
 <tbody>
 <tr>
-<td class="name">field</td>
-<td class="type">string</td>
-<td class="description">Freeze/Unfreeze this field column.</td>
+<td class="name">index</td>
+<td class="type">number</td>
+<td class="description">you can pass the level as index number to expand</td>
 </tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="expandAtLevel" (click)="expandAtLevel($event)">expandAtLevel</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public expandAtLevel(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.expandAtLevel(1);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### expandCollapseRow(index)
+{:#methods:expandcollapserow}
+
+To expand and collapse an item in TreeGrid using item’s index.
+
+<table class="params">
+<thead>
 <tr>
-<td class="name">isFrozen</td>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Index</td>
+<td class="type">number</td>
+<td class="description">Pass the row index of row to expand/collapse.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to expand/collapse any specific parent record dynamically by passing its row index.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="expandCollapseRow" (click)="expandCollapseRow($event)">expandCollapseRow</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public expandCollapseRow(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.expandCollapseRow(5);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### expandCollapseTotalSummary(expanded)
+{:#methods:expandcollapsetotalSummary}
+
+To expand collapse the total summary row. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">expanded</td>
 <td class="type">boolean</td>
-<td class="description">Decides to Freeze/Unfreeze this field column.</td>
+<td class="description">Decides to expand/collapse the total summary</td>
 </tr>
 </tbody>
 </table>
@@ -4869,7 +5369,7 @@ Freeze/unfreeze the specified column.
 {% tabs %}
 {% highlight html %}
  
-<button id="freezeColumn" (click)="freezeColumn($event, item)">freezeColumn</button>
+<button id="expandCollapseTotalSummary" (click)="expandCollapseTotalSummary($event)">expandCollapseTotalSummary</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -4882,104 +5382,19 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public freezeColumn(event, item) {
+    public expandCollapseTotalSummary(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.freezeColumn(field, isFrozen);
+        treeObj.expandCollapseTotalSummary(true);
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %} 
 
+### filterColumn(fieldName, filterOperator, filterValue, predicate, match case, actualFilterValue)
+{:#methods:filtercolumn}
 
-### saveCell()
-{:#methods:savecell}
-
-To save the edited cell in TreeGrid
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="saveCell" (click)="saveCell($event, item)">saveCell</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public saveCell(event, item) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.saveCell();
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-### showColumn(headerText)
-{:#methods:showcolumn}
-
-To show the column by using header text
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">headerText</td>
-<td class="type">string</td>
-<td class="description">you can pass a header text of a column to show.</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="showColumn" (click)="showColumn($event, item)">showColumn</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public showColumn(event, item) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.showColumn("Task Name");
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### sortColumn(fieldName, columnSortDirection)
-{:#methods:sortcolumn}
-
-To sorting the data based on the particular fields
+Sends filtering request to filter a column in TreeGrid.
 
 <table class="params">
 <thead>
@@ -4993,23 +5408,44 @@ To sorting the data based on the particular fields
 <tr>
 <td class="name">fieldName</td>
 <td class="type">string</td>
-<td class="description">you can pass a name of column to sort.</td>
+<td class="description">Pass the field name of the column.</td>
 </tr>
 <tr>
-<td class="name">columnSortDirection</td>
+<td class="name">filterOperator</td>
 <td class="type">string</td>
-<td class="description">you can pass a sort direction to sort the column.</td>
+<td class="description">string/integer/dateTime operator.</td>
+</tr>
+<tr>
+<td class="name">filterValue</td>
+<td class="type">string</td>
+<td class="description">Pass the value to be filtered in a column.</td>
+</tr>
+<tr>
+<td class="name">predicate</td>
+<td class="type">string</td>
+<td class="description">Pass the predicate as and/or.</td>
+</tr>
+<tr>
+<td class="name">match case</td>
+<td class="type">boolean</td>
+<td class="description">Optional pass the match case value as true/false.</td>
+</tr>
+<tr>
+<td class="name">actualFilterValue</td>
+<td class="type">object</td>
+<td class="description">Optional actualFilterValue denote the filter object of current filtered columns. </td>
 </tr>
 </tbody>
 </table>
 
+Usage: we can able to perform filter operation dynamically.
 
 #### Example
 
 {% tabs %}
 {% highlight html %}
  
-<button id="sortColumn" (click)="sortColumn($event, item)">sortColumn</button>
+<button id="filterColumn" (click)="filterColumn($event)">filterColumn</button>
 <ej-treegrid id="TreeGridControl">
 //...
 </ej-treegrid>
@@ -5022,69 +5458,14 @@ export class AppComponent {
     constructor() {
         //...
     }
-    public sortColumn(event, item) {
+    public filterColumn(event) {
         var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.sortColumn("Start Date", ej.sortOrder.Descending);
+        treeObj.filterColumn("taskName", "startswith", "plan", "and");
     }
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-### reorderColumn(fieldName, targetIndex)
-{:#methods:reordercolumn}
-
-To reorder the column with field name and target index values
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">fieldName</td>
-<td class="type">string</td>
-<td class="description">you can pass a name of column to reorder.</td>
-</tr>
-<tr>
-<td class="name">targetIndex</td>
-<td class="type">string</td>
-<td class="description">you can pass a target column index to be inserted.</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="reorderColumn" (click)="reorderColumn($event, item)">reorderColumn</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public reorderColumn(event, item) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        treeObj.reorderColumn("startDate", 4);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
+{% endtabs %} 
 
 ### filterContent(ejPredicate)
 {:#methods:filtercontent}
@@ -5169,6 +5550,1430 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
+### freezeColumn (field, isFrozen)
+{:#methods:freezecolumn}
+
+Freeze/unfreeze the specified column.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">field</td>
+<td class="type">string</td>
+<td class="description">Freeze/Unfreeze this field column.</td>
+</tr>
+<tr>
+<td class="name">isFrozen</td>
+<td class="type">boolean</td>
+<td class="description">Decides to Freeze/Unfreeze this field column.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="freezeColumn" (click)="freezeColumn($event)">freezeColumn</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public freezeColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.freezeColumn(field, isFrozen);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### freezePrecedingColumns (field)
+{:#methods:freezeprecedingcolumns}
+
+Freeze all the columns preceding to the column specified by the field name.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">field</td>
+<td class="type">string</td>
+<td class="description">Freeze all Columns before this field column.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="freezePrecedingColumns" (click)="freezePrecedingColumns($event)">freezePrecedingColumns</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public freezePrecedingColumns(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.freezePrecedingColumns(field);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### getColumnByField(fieldName)
+{:#methods:getcolumnbyfield}
+
+Gets the column object of specific column.
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to get details of that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the detail collection of any column by passing its field name as parameter.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getColumnByField" (click)="getColumnByField($event)">getColumnByField</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getColumnByField(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getColumnByField("taskName");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### getColumnByHeaderText(headerText)
+{:#methods:getcolumnbyheadertext}
+
+Gets the column object of specific column.
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerText</td>
+<td class="type">string</td>
+<td class="description">Pass the column header text to get details of that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the object of any column by passing its header text as parameter.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getColumnByHeaderText" (click)="getColumnByHeaderText($event)">getColumnByHeaderText</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getColumnByHeaderText(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getColumnByHeaderText("Task Name");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### getColumnIndexByField(fieldName)
+{:#methods:getcolumnindexbyfield}
+
+Gets the column index of specific column with data source field.
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to get its index.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the index of any column by passing its field name as parameter.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getColumnIndexByField" (click)="getColumnIndexByField($event)">getColumnIndexByField</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getColumnIndexByField(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getColumnIndexByField("taskName");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### getFieldNameByHeaderText(headerText)
+{:#methods:getfieldnamebyheadertext}
+
+Gets the column field name using column header text.
+
+#### Returns:
+{:#methods:returns:}
+
+string
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerText</td>
+<td class="type">string</td>
+<td class="description">Pass the column header text to get its field name.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the field name of any column by passing its header text as parameter.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getFieldNameByHeaderText" (click)="getFieldNameByHeaderText($event)">getFieldNameByHeaderText</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getFieldNameByHeaderText(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getFieldNameByHeaderText("Task Name");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### getScrollLeftOffset()
+{:#methods:getscrollleftoffset}
+
+Gets the scroll left offset of TreeGrid. 
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+Usage: we can able to get scroll left offset of TreeGrid dynamically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getScrollLeftOffset" (click)="getScrollLeftOffset($event)">getScrollLeftOffset</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getScrollLeftOffset(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getScrollLeftOffset();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### getScrollTopOffset()
+{:#methods:getscrolltopoffset}
+
+Gets the scroll top offset of TreeGrid. 
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+Usage: we can able to get scroll top offset of TreeGrid dynamically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getScrollTopOffset" (click)="getScrollTopOffset($event)">getScrollTopOffset</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getScrollTopOffset(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getScrollTopOffset();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### getSelectedCells()
+{:#methods:getselectedcells}
+
+Gets the selected cell(s) element details in TreeGrid. 
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+Usage: we can able to get cell elements of selected cells for further processing.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getSelectedCells" (click)="getSelectedCells($event)">getSelectedCells</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getSelectedCells(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getSelectedCells();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### getUpdatedRecords()
+{:#methods:getupdatedrecords}
+
+To get the updated data source of TreeGrid.
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+Usage: We can able to get the updated record collection by using this method.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getUpdatedRecords" (click)="getUpdatedRecords($event)">getUpdatedRecords</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getUpdatedRecords(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.getUpdatedRecords();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### gotoPage(pageIndex)
+{:#methods:gotopage}
+
+Sends request to navigate to a specific page in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">PageIndex</td>
+<td class="type">number</td>
+<td class="description">Pass the page index to perform paging at specified page index.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the active page at run time.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="gotoPage" (click)="gotoPage($event)">gotoPage</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public gotoPage(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var value = treeObj.gotoPage(3);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### hideColumn(headerText)
+{:#methods:hidecolumn}
+
+To hide the column by using header text
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerText</td>
+<td class="type">string</td>
+<td class="description">you can pass a header text of a column to hide.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="hideColumn" (click)="hideColumn($event)">hideColumn</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public hideColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.hideColumn("Task Name");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### moveRow(fromIndex, toIndex , position)
+{:#methods:moverow}
+
+To move the TreeGrid rows programmatically with from index ,to index and position.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fromIndex</td>
+<td class="type">number</td>
+<td class="description">you can pass drag Index of the row</td>
+</tr>
+<tr>
+<td class="name">toIndex</td>
+<td class="type">number</td>
+<td class="description">you can pass target Index of the row.</td>
+</tr>
+<tr>
+<td class="name">position</td>
+<td class="type">string</td>
+<td class="description">you can pass the drop position as above,below,child</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="moveRow" (click)="moveRow($event)">moveRow</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public moveRow(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.moveRow(4, 15, "child");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### refresh(dataSource, query)
+{:#methods:refresh}
+
+To refresh the changes in tree grid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">dataSource</td>
+<td class="type">array</td>
+<td class="description">Pass which data source you want to show in tree grid</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type">object</td>
+<td class="description">Pass which data you want to show in tree grid</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="refresh" (click)="refresh($event)">refresh</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public refresh(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var dataManager = ej.DataManager(this.projectData);
+        var query = ej.Query().select(["taskID", "taskName", "startDate", "endDate", "subtasks", "progress", "duration"]);
+        treeObj.refresh(dataManager, query);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### renameColumn(columnIndex,name)
+{:#methods:renamecolumn}
+
+To rename a column with the specified name
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Index of the column to be renamed</td>
+</tr>
+<tr>
+<td class="name">name</td>
+<td class="type">string</td>
+<td class="description">Header text of the column </td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="renameColumn" (click)="renameColumn($event)">renameColumn</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public renameColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.renameColumn(1, "New Text");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### reorderColumn(fieldName, targetIndex)
+{:#methods:reordercolumn}
+
+To reorder the column with field name and target index values
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">you can pass a name of column to reorder.</td>
+</tr>
+<tr>
+<td class="name">targetIndex</td>
+<td class="type">string</td>
+<td class="description">you can pass a target column index to be inserted.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="reorderColumn" (click)="reorderColumn($event)">reorderColumn</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public reorderColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.reorderColumn("startDate", 4);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### saveCell()
+{:#methods:savecell}
+
+To save the edited cell in TreeGrid
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="saveCell" (click)="saveCell($event)">saveCell</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public saveCell(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.saveCell();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### scrollOffset(left, top)
+{:#methods:scrolloffset}
+
+Sets the scroll left and scroll top offsets of TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Left</td>
+<td class="type">String</td>
+<td class="description">Pass a value to set left position of horizontal scroll bar.</td>
+</tr>
+<tr>
+<td class="name">Top</td>
+<td class="type">String</td>
+<td class="description">Pass a value to set top position of vertical scroll bar.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the left and top position of horizontal and vertical scroll bar dynamically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="scrollOffset" (click)="scrollOffset($event)">scrollOffset</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public scrollOffset(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.scrollOffset(50,50)
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### scrollToBottom()
+{:#methods:scrolltobottom}
+
+Sets the scroll top offset of TreeGrid to maximum value. 
+
+Usage:we can able to scroll the TreeGrid's content to the maximum offset vertically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="scrollToBottom" (click)="scrollToBottom($event)">scrollToBottom</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public scrollToBottom(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.scrollToBottom()
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### scrollToTop()
+{:#methods:scrolltotop}
+
+Sets the scroll top offset of TreeGrid to `0`.
+
+Usage: we can able to scroll the TreeGrid's content to `0` offset vertically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="scrollToTop" (click)="scrollToTop($event)">scrollToTop</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public scrollToTop(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.scrollToTop()
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### selectCells(Indexes,preservePreviousSelectedCell)
+{:#methods:selectcells}
+
+To select cell based on the cell and row index dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Indexes</td>
+<td class="type">array</td>
+<td class="description">array of cell indexes to be select</td>
+</tr>
+<tr>
+<td class="name">preservePreviousSelectedCell</td>
+<td class="type">boolean</td>
+<td class="description">Defines that we need to preserve the previously selected cells or not</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="selectCells" (click)="selectCells($event)">selectCells</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public selectCells(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
+        treeObj.selectCells(indexes, true);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### showAddDialog()
+{:#methods:showadddialog}
+
+To open the dialog to add new record/row in TreeGrid.
+
+Usage: we can able to open add dialog dynamically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="showAddDialog" (click)="showAddDialog($event)">showAddDialog</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public showAddDialog(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.showAddDialog();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### showColumn(headerText)
+{:#methods:showcolumn}
+
+To show the column by using header text
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerText</td>
+<td class="type">string</td>
+<td class="description">you can pass a header text of a column to show.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="showColumn" (click)="showColumn($event)">showColumn</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public showColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.showColumn("Task Name");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### showEditDialog(index)
+{:#methods:showeditdialog}
+
+To open the dialog to edit a row/record in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Index</td>
+<td class="type">number</td>
+<td class="description">Pass the index of row to be edit.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passed as parameter then the selected row gets edited. It’s necessary to select a row before opening edit dialog when you are not passing any index as parameter.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="showEditDialog" (click)="showEditDialog($event)">showEditDialog</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public showEditDialog(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.showEditDialog(3);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### showHideDetailsRow(rowIndex)
+{:#methods:showhidedetailsrow}
+
+Show/Hide the detail row of a specific record.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Pass the row index of record to show/hide the detail row.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to dynamically show/hide the detail row of any record by passing its index as parameter.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="showHideDetailsRow" (click)="showHideDetailsRow($event)">showHideDetailsRow</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public showHideDetailsRow(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.showHideDetailsRow(3);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### sortColumn(fieldName, columnSortDirection)
+{:#methods:sortcolumn}
+
+To sorting the data based on the particular fields
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">you can pass a name of column to sort.</td>
+</tr>
+<tr>
+<td class="name">columnSortDirection</td>
+<td class="type">string</td>
+<td class="description">you can pass a sort direction to sort the column.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="sortColumn" (click)="sortColumn($event)">sortColumn</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public sortColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.sortColumn("Start Date", ej.sortOrder.Descending);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### updateCheckboxColumn(fieldName)
+{:#methods:updatecheckboxcolumn}
+
+To change the checkbox selection to any column. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to check box selection to that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the selection checkbox column dynamically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="updateCheckboxColumn" (click)="updateCheckboxColumn($event)">updateCheckboxColumn</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public updateCheckboxColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.updateCheckboxColumn("taskName");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### updateRecordByIndex(index, data)
+{:#methods:updaterecordbyindex}
+
+To update the value of TreeGrid row by using row index.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type">number</td>
+<td class="description">index of record to be updated</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">object with modified field value</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="updateRecordByIndex" (click)="updateRecordByIndex($event)">updateRecordByIndex</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public updateCheckboxColumn(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        var data = { taskName: "updated value"};
+        treeObj.updateRecordByIndex(4, data);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### updateResponsiveMinWidth(width)
+{:#methods:updateresponsiveminwidth}
+
+Sets the minimum responsive width for TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">width</td>
+<td class="type">String</td>
+<td class="description">Pass the minimum responsive width, above which the TreeGrid needs to work in responsive mode.</td>
+</tr>
+</tbody>
+</table>
+
+
+Usage: we can able to change the minimum responsive width of TreeGrid dynamically.
+
+#### Returns
+
+{:#methods:returns:}
+
+void
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="updateResponsiveMinWidth" (click)="updateResponsiveMinWidth($event)">updateResponsiveMinWidth</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public updateResponsiveMinWidth(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.updateResponsiveMinWidth("200px");
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ## Events
 
@@ -5362,9 +7167,6 @@ Triggered before every success event of TreeGrid action.
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -5389,10 +7191,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### actionComplete
 {:#events:actioncomplete}
-
 
 Triggered for every TreeGrid action success event.
 
@@ -5645,9 +7445,6 @@ Triggered for every TreeGrid action success event.
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -5745,8 +7542,6 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### beginEdit
 {:#events:beginedit}
 
@@ -5806,9 +7601,6 @@ Triggered while enter the edit mode in the TreeGrid cell
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -5831,12 +7623,221 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
+### cellSelected
+{:#events:cellselected}
+
+Triggered after selected a cell
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when cellSelected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the cell index on the selection.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on the selection</td>
+</tr>
+<tr>
+<td class="name">targetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting cell element</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting row element</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting record object</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt object Model</td>
+</tr>
+<tr>
+<td class="name">previousData</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row data</td>
+</tr>
+<tr>
+<td class="name">previousCellIndex</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected cell index</td>
+</tr>
+<tr>
+<td class="name">previousRowIndex</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row index</td>
+</tr>
+<tr>
+<td class="name">previousTargetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected cell element</td>
+</tr>
+<tr>
+<td class="name">previousTargetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the previously selected row element</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (cellSelected)="cellSelected($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    cellSelected(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### cellSelecting
+{:#events:cellselecting}
+
+Triggered before selecting a cell
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when cellSelecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the cell index on the selection.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on the selection</td>
+</tr>
+<tr>
+<td class="name">targetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting cell element</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting row element</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting record object</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt object Model</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (cellSelecting)="cellSelecting($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    cellSelecting(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 ### collapsed
 {:#events:collapsed}
-
 
 Triggered after collapsed the TreeGrid record
 
@@ -5899,9 +7900,6 @@ Triggered after collapsed the TreeGrid record
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -5926,11 +7924,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### collapsing
 {:#events:collapsing}
-
 
 Triggered while collapsing the TreeGrid record
 
@@ -5988,9 +7983,6 @@ Triggered while collapsing the TreeGrid record
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -6008,89 +8000,6 @@ export class AppComponent {
 
     }
     collapsing(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-### columnDragStart
-{:#events:columndragstart}
-
-Triggered  when you start to drag a column
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when columnDragStart event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the control model values.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event Type.</td>
-</tr>
-<tr>
-<td class="name">draggedColumn</td>
-<td class="type">object</td>
-<td class="description">Returns the column data which is dragged</td>
-</tr>
-<tr>
-<td class="name">draggedColumnIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the column being dragged</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (columnDragStart)="columnDragStart($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    columnDragStart(sender) {
         //...
     }
 }
@@ -6196,6 +8105,89 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### columnDragStart
+{:#events:columndragstart}
+
+Triggered  when you start to drag a column
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnDragStart event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">draggedColumn</td>
+<td class="type">object</td>
+<td class="description">Returns the column data which is dragged</td>
+</tr>
+<tr>
+<td class="name">draggedColumnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the column being dragged</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (columnDragStart)="columnDragStart($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    columnDragStart(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
 ### columnDrop
 {:#events:columndrop}
 
@@ -6287,192 +8279,7 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
-
-### columnResized
-{:#events:columnresized}
-
-
-Triggered after a column resized
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when columnResized event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the control model values.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event Type.</td>
-</tr>
-<tr>
-<td class="name">column</td>
-<td class="type">object</td>
-<td class="description">Returns the column data which is resized</td>
-</tr>
-<tr>
-<td class="name">columnIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the column being resized.</td>
-</tr>
-<tr>
-<td class="name">newWidth</td>
-<td class="type">number</td>
-<td class="description">Returns resized column width after resized.</td>
-</tr>
-<tr>
-<td class="name">oldWidth</td>
-<td class="type">number</td>
-<td class="description">Returns resized column width before resizing</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (columnResized)="columnResized($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    columnResized(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-### columnResizeStart
-{:#events:columnresizestart}
-
-Triggered while start to resize a column
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when columnResizeStart event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the control model values.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the event Type.</td>
-</tr>
-<tr>
-<td class="name">column</td>
-<td class="type">object</td>
-<td class="description">Returns the column data in which the resizing started</td>
-</tr>
-<tr>
-<td class="name">columnIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the column index in which the resizing started</td>
-</tr>
-<tr>
-<td class="name">oldWidth</td>
-<td class="type">number</td>
-<td class="description">Returns column width before dragging</td>
-</tr>
-<tr>
-<td class="name">target</td>
-<td class="type">object </td>
-<td class="description">Returns initial column element object.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (columnResizeStart)="columnResizeStart($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    columnResizeStart(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
 ### columnResizeEnd
 {:#events:columnresizeend}
@@ -6574,11 +8381,194 @@ export class AppComponent {
 }
 
 {% endhighlight %}
+{% endtabs %}
+
+### columnResizeStart
+{:#events:columnresizestart}
+
+Triggered while start to resize a column
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnResizeStart event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type">object</td>
+<td class="description">Returns the column data in which the resizing started</td>
+</tr>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the column index in which the resizing started</td>
+</tr>
+<tr>
+<td class="name">oldWidth</td>
+<td class="type">number</td>
+<td class="description">Returns column width before dragging</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type">object </td>
+<td class="description">Returns initial column element object.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (columnResizeStart)="columnResizeStart($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    columnResizeStart(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### columnResized
+{:#events:columnresized}
+
+Triggered after a column resized
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnResized event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type">object</td>
+<td class="description">Returns the column data which is resized</td>
+</tr>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the column being resized.</td>
+</tr>
+<tr>
+<td class="name">newWidth</td>
+<td class="type">number</td>
+<td class="description">Returns resized column width after resized.</td>
+</tr>
+<tr>
+<td class="name">oldWidth</td>
+<td class="type">number</td>
+<td class="description">Returns resized column width before resizing</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (columnResized)="columnResized($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    columnResized(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}  
 
 ### contextMenuOpen
 {:#events:contextmenuopen}
-
 
 Triggered while Context Menu is rendered in TreeGrid control
 
@@ -6635,9 +8625,6 @@ Triggered while Context Menu is rendered in TreeGrid control
 </tr>
 </tbody>
 </table>
-
-
-
 
 #### Example
 
@@ -6824,6 +8811,84 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### detailsHidden 
+{:#events:detailshidden }
+
+Triggered when details template pop-up is hidden.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when detailsHidden event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
+<td class="type">object</td>
+<td class="description">Returns the data collection of hidden details Template</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (detailsHidden)="detailsHidden($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    detailsHidden(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ### detailsShown 
 {:#events:detailsshown }
 
@@ -6912,87 +8977,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-### detailsHidden 
-{:#events:detailshidden }
-
-Triggered when details template pop-up is hidden.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when detailsHidden event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the TreeGrid model</td>
-</tr>
-<tr>
-<td class="name">rowData</td>
-<td class="type">object</td>
-<td class="description">Returns the data collection of hidden details Template</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (detailsHidden)="detailsHidden($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    detailsHidden(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
 ### endEdit
 {:#events:endedit}
-
 
 Triggered after saved the modified cellValue in TreeGrid
 
@@ -7055,9 +9041,6 @@ Triggered after saved the modified cellValue in TreeGrid
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7082,10 +9065,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### expanded
 {:#events:expanded}
-
 
 Triggered after expand the record
 
@@ -7148,9 +9129,6 @@ Triggered after expand the record
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7175,11 +9153,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
-
 ### expanding
 {:#events:expanding}
-
 
 Triggered while expanding the TreeGrid record
 
@@ -7237,9 +9212,6 @@ Triggered while expanding the TreeGrid record
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7264,10 +9236,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### load
 {:#events:load}
-
 
 Triggered while TreeGrid is loaded
 
@@ -7315,9 +9285,6 @@ Triggered while TreeGrid is loaded
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7342,10 +9309,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### queryCellInfo
 {:#events:querycellinfo}
-
 
 Triggered while rendering each cell in the TreeGrid
 
@@ -7403,9 +9368,6 @@ Triggered while rendering each cell in the TreeGrid
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7428,12 +9390,196 @@ export class AppComponent {
 }
 
 {% endhighlight %}
-{% endtabs %}  
+{% endtabs %}
 
+### recordClick
+{:#events:recordclick}
+
+Triggered while clicking a row, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (recordClick)="recordClick($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    recordClick(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+### recordDoubleClick
+{:#events:recorddoubleclick}
+
+Triggered during record double click action, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordDoubleClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl" (recordDoubleClick)="recordDoubleClick($event)">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    recordDoubleClick(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### rowDataBound
 {:#events:rowdatabound}
-
 
 Triggered while rendering each row
 
@@ -7481,9 +9627,6 @@ Triggered while rendering each row
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7508,10 +9651,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### rowDrag
 {:#events:rowdrag}
-
 
 Triggered while dragging a row in TreeGrid control
 
@@ -7594,9 +9735,6 @@ Triggered while dragging a row in TreeGrid control
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7621,10 +9759,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### rowDragStart
 {:#events:rowdragstart}
-
 
 Triggered while start to drag row in TreeGrid control
 
@@ -7687,9 +9823,6 @@ Triggered while start to drag row in TreeGrid control
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7714,10 +9847,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### rowDragStop
 {:#events:rowdragstop}
-
 
 Triggered while drop a row in TreeGrid control
 
@@ -7790,9 +9921,6 @@ Triggered while drop a row in TreeGrid control
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -7817,223 +9945,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-### cellSelecting
-{:#events:cellselecting}
-
-Triggered before selecting a cell
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when cellSelecting event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the cell index on the selection.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index on the selection</td>
-</tr>
-<tr>
-<td class="name">targetCell</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting cell element</td>
-</tr>
-<tr>
-<td class="name">targetRow</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting row element</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting record object</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the Gantt object Model</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (cellSelecting)="cellSelecting($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    cellSelecting(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-### cellSelected
-{:#events:cellselected}
-
-Triggered after selected a cell
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when cellSelected event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the cell index on the selection.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index on the selection</td>
-</tr>
-<tr>
-<td class="name">targetCell</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting cell element</td>
-</tr>
-<tr>
-<td class="name">targetRow</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting row element</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting record object</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the Gantt object Model</td>
-</tr>
-<tr>
-<td class="name">previousData</td>
-<td class="type">object</td>
-<td class="description">Returns the previously selected row data</td>
-</tr>
-<tr>
-<td class="name">previousCellIndex</td>
-<td class="type">object</td>
-<td class="description">Returns the previously selected cell index</td>
-</tr>
-<tr>
-<td class="name">previousRowIndex</td>
-<td class="type">object</td>
-<td class="description">Returns the previously selected row index</td>
-</tr>
-<tr>
-<td class="name">previousTargetCell</td>
-<td class="type">object</td>
-<td class="description">Returns the previously selected cell element</td>
-</tr>
-<tr>
-<td class="name">previousTargetRow</td>
-<td class="type">object</td>
-<td class="description">Returns the previously selected row element</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (cellSelected)="cellSelected($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    cellSelected(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
 ### rowSelected
 {:#events:rowselected}
-
 
 Triggered after the row is selected.
 
@@ -8091,9 +10004,6 @@ Triggered after the row is selected.
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -8118,10 +10028,8 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
-
 ### rowSelecting
 {:#events:rowselecting}
-
 
 Triggered before the row is going to be selected.
 
@@ -8189,9 +10097,6 @@ Triggered before the row is going to be selected.
 </tbody>
 </table>
 
-
-
-
 #### Example
 
 {% tabs %}
@@ -8215,200 +10120,6 @@ export class AppComponent {
 
 {% endhighlight %}
 {% endtabs %}  
-
-### recordClick
-{:#events:recordclick}
-
-Triggered while clicking a row, even when allowSelection property is disabled.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when recordClick event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cell</td>
-<td class="type">object</td>
-<td class="description">Returns the element of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellValue</td>
-<td class="type">object</td>
-<td class="description">Returns the data of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">row</td>
-<td class="type">object</td>
-<td class="description">Returns the element of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">columnName</td>
-<td class="type">string</td>
-<td class="description">Returns the column name of the clicked cell.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (recordClick)="recordClick($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    recordClick(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}  
-
-
-### recordDoubleClick
-{:#events:recorddoubleclick}
-
-Triggered during record double click action, even when allowSelection property is disabled.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when recordDoubleClick event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cell</td>
-<td class="type">object</td>
-<td class="description">Returns the element of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellValue</td>
-<td class="type">object</td>
-<td class="description">Returns the data of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">row</td>
-<td class="type">object</td>
-<td class="description">Returns the element of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">columnName</td>
-<td class="type">string</td>
-<td class="description">Returns the column name of the clicked cell.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
-
-<ej-treegrid id="TreeGridControl" (recordDoubleClick)="recordDoubleClick($event)">
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-
-    }
-    recordDoubleClick(sender) {
-        //...
-    }
-}
-
-{% endhighlight %}
-{% endtabs %} 
-
 
 ### toolbarClick
 {:#events:toolbarclick}
@@ -8492,4 +10203,3 @@ export class AppComponent {
 
 {% endhighlight %}
 {% endtabs %}  
-

@@ -5046,6 +5046,38 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
+### clearSorting()
+{:#methods:clearsorting}
+
+To clear the sorted columns in Gantt.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="clearSorting" (click)="clearSorting($event)">clearSorting</button>
+<ej-gantt id="GanttControl">
+//...
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public clearSorting(event) {
+        var ganttObj = $("#GanttControl").ejGantt("instance");
+        ganttObj.clearSorting(); 
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ### collapseAllItems()
 {:#methods:collapseallitems}
 
@@ -5503,6 +5535,70 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### getColumns()
+{:#methods:getcolumns}
+
+To get available column collection in Gantt.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getColumns" (click)="getColumns($event)">getColumns</button>
+<ej-gantt id="GanttControl">
+//...
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getColumns(event) {
+        var ganttObj = $("#GanttControl").ejGantt("instance");
+        var columns = ganttObj.getColumns();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### getResourceViewEditColumns()
+{:#methods:getresourcevieweditcolumns}
+
+To get the column collection which are used to edit the task by using task add/edit dialog in resource view.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="getResourceViewEditColumns" (click)="getResourceViewEditColumns($event)">getResourceViewEditColumns</button>
+<ej-gantt id="GanttControl">
+//...
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public getResourceViewEditColumns(event) {
+        var ganttObj = $("#GanttControl").ejGantt("instance");
+        var columns = ganttObj.getResourceViewEditColumns();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ### hideColumn(headerText)
 {:#methods:hidecolumn}
 
@@ -5881,6 +5977,56 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### setScrollTop(top)
+{:#methods:setscrolltop}
+
+Method to set scroll top value for Gantt control.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Top</td>
+<td class="type">number</td>
+<td class="description">Pass a value to set top position of vertical scroll bar.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the top position of vertical scroll bar dynamically.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="setScrollTop" (click)="setScrollTop($event)">setScrollTop</button>
+<ej-gantt id="GanttControl">
+//...
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public setScrollTop(event) {
+        var ganttObj = $("#GanttControl").ejGantt("instance");
+        ganttObj.setScrollTop(100);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
 
 ### setSplitterIndex(index)
 {:#methods:setsplitterindex}
@@ -6306,6 +6452,59 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### updateScheduleDates(startDate, endDate)
+{:#methods:updatescheduledates}
+
+To update the schedule start date and schedule end date of project.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startDate</td>
+<td class="type">string</td>
+<td class="description">New schedule start date of project</td>
+</tr>
+<tr>
+<td class="name">endDate</td>
+<td class="type">string</td>
+<td class="description">New schedule end date of project</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="updateScheduleDates" (click)="updateScheduleDates($event)">updateScheduleDates</button>
+<ej-gantt id="GanttControl">
+//...
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public updateScheduleDates(event) {
+        var ganttObj = $("#GanttControl").ejGantt("instance");
+        ganttObj.updateScheduleDates("5/25/2017", "9/27/2017")
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
 
 ### updateTaskId(currentId, newId)
 {:#methods:updatetaskid}
