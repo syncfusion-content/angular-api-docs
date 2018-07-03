@@ -4487,7 +4487,7 @@ Specifies the text to be displayed after the summary column value.
 
 <ts name = "ej.TreeGrid.SummaryType"/>
 
-Specifies the summary type to perform calculations in a corresponding summary column. See <a href="global.html#enum:summarytype">summaryType</a>.
+Specifies the summary type to perform calculations in a corresponding summary column.
 
 <table class="params">
 <thead>
