@@ -1984,7 +1984,7 @@ Enables or disables the responsiveness of Gantt
 
 #### Default Value
 
-* "false"
+* false
 
 
 #### Example
