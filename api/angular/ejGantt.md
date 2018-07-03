@@ -8856,7 +8856,7 @@ Triggered after splitter resizing action in Gantt.
 <tr>
 <td class="name">customSplitterPosition</td>
 <td class="type">string</td>
-<td class="description">Sets custom position for splitter resizing</td>
+<td class="description">To set custom position for splitter after resize action.</td>
 </tr>
 <tr>
 <td class="name">isOnResize</td>
@@ -8866,7 +8866,7 @@ Triggered after splitter resizing action in Gantt.
 <tr>
 <td class="name">isSplitterIndex</td>
 <td class="type">boolean</td>
-<td class="description">To set custom index value for splitter resizing</td>
+<td class="description">To differentiate `customSplitterPosition` value was index or position.</td>
 </tr>
 <tr>
 <td class="name">prevSplitterPosition</td>
