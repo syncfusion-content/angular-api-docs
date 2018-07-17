@@ -8414,6 +8414,51 @@ ngAfterViewInit(){
    }
 {% endhighlight %}
 
+### refreshData(\[additionalParameters\])
+{:#methods:refreshData}
+
+
+Refresh the grid contents with updated server Data, using XMLHttpRequest. Url Path should be provided in Grid datasource otherwise it refreshes with local data without XMLHttpRequest.
+
+N> It is applicable only for Grid with remoteSaveAdaptor.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">additionalParameters</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><span class="optional">optional</span>Data to the server</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+void
+
+
+#### Example
+
+
+{% highlight ts %}
+export class AppComponent {
+    
+ngAfterViewInit(){
+    
+    this.Grid.widget.refreshData();   // Refreshes the grid contents with data from server
+    this.Grid.widget.refreshData("additionalParameter");   // Refreshes the grid contents with data from server by passing parameter to server
+   }
+   @ViewChild('grid') Grid: EJComponents<any, any>;   // Create grid instance. 
+   }
+{% endhighlight %}
 
 ### refreshTemplate()
 {:#methods:refreshtemplate}
