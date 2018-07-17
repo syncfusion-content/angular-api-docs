@@ -1207,7 +1207,7 @@ Gets or sets a value that indicates to render the excel or menu filter dialog to
     <e-columns>
         <e-column field= "OrderID"></e-column>
         <e-column field= "Freight"></e-column>
-        <e-column field= "EmployeeID" [filterType]="filtertype"></e-column>
+        <e-column field= "EmployeeID" [filterType]="filterType"></e-column>
     </e-columns>
 </ej-grid>
 {% endhighlight %}
@@ -1216,7 +1216,7 @@ Gets or sets a value that indicates to render the excel or menu filter dialog to
 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 this.gridData = window.gridData;
 this.filter = { filterType: "menu"};
-this.filtertype={filterType: ej.Grid.FilterType.Excel };
+this.filterType={filterType: ej.Grid.FilterType.Excel };
 {% endhighlight %}
 
 ### columns.foreignKeyField `string`
@@ -2324,11 +2324,11 @@ This specifies to set the position of an External edit form either in the top-ri
 </tr>
 <tr>
 <td class="name">BottomLeft</td>
-<td class="description">Form position is bottomleft.</td>
+<td class="description">Form position is bottom left.</td>
 </tr>
 <tr>
 <td class="name">TopRight</td>
-<td class="description">Form position is topright.</td>
+<td class="description">Form position is top right.</td>
 </tr> 
 </table>
 
@@ -2502,7 +2502,7 @@ this.toolbarSettings={ showToolbar: true,toolbarItems: ["edit","delete","cancel"
 ### editSettings.titleColumn `string`
 {:#members:editsettings-titleColumn}
 
-Gets or sets a value that indicates whether the title for edit form is different from the primarykey column.
+Gets or sets a value that indicates whether the title for edit form is different from the primary key column.
 
 #### Default Value:
 
@@ -2971,7 +2971,7 @@ Gets or sets a value that indicates whether to define the filter condition to fi
 </tr> 
 <tr>
 <td class="name">notEqual</td>
-<td class="description">Specifies the filter operator as notequal.</td>
+<td class="description">Specifies the filter operator as 'not equal'.</td>
 </tr> 
 <tr>
 <td class="name">greaterThan</td>
@@ -2979,7 +2979,7 @@ Gets or sets a value that indicates whether to define the filter condition to fi
 </tr> 
 <tr>
 <td class="name">greaterThanOrEqual</td>
-<td class="description">Specifies the filter operator as greaterthanorequal.</td>
+<td class="description">Specifies the filter operator as 'greaterthan or equal'.</td>
 </tr> 
 <tr>
 <td class="name">lessThan</td>
@@ -2987,7 +2987,7 @@ Gets or sets a value that indicates whether to define the filter condition to fi
 </tr> 
 <tr>
 <td class="name">lessThanOrEqual</td>
-<td class="description">Specifies the filter operator as Lessthanorequal.</td>
+<td class="description">Specifies the filter operator as 'Lessthan or equal'.</td>
 </tr> 
 </table>
 
@@ -3040,7 +3040,7 @@ This specifies the grid to show the filterBar or filterMenu to the grid records.
 </tr> 
 <tr>
 <td class="name">FilterBar</td>
-<td class="description">Specifies the filter type as filterbar.</td>
+<td class="description">Specifies the filter type as filter bar.</td>
 </tr> 
 </table>
 
@@ -4926,8 +4926,8 @@ Sets the template for tooltip for the Grid stackedHeaderColumns.
 //The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 this.gridData = window.gridData;
 this.right=ej.TextAlign.Right;
-this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textalign: 
-         ej.TextAlign.Right},{headerText:"Frieght",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
+this.stackedHeaderRows=[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textAlign: 
+         ej.TextAlign.Right},{headerText:"Freight",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",tooltip:"#colTip",column:"ShipCity"}
            ]}];
 {% endhighlight %}
@@ -5134,7 +5134,6 @@ this.summaryRows=[{title: "Sum",summaryColumns: [{ summaryType: ej.Grid.SummaryT
 currency(){ 
         this.gridObj = $("#Grid").ejGrid("instance")
         this.rs=ej.sum(this.gridObj.model.dataSource(), "Freight")
-        this.dol = 0.017
         return (this.rs);
     }
 {% endhighlight %}
@@ -9324,7 +9323,7 @@ ngAfterViewInit(){
 #### setCellText(primaryKeyValue, field, value)
 {:#methods:setcelltext}
 
-Used to update a particular cell value based on specified primarykeyvalue and fieldname
+Used to update a particular cell value based on specified primary key value and fieldname
 
 <table class="params">
 <thead>
@@ -10590,7 +10589,7 @@ Triggered for every grid action before its starts.
 <tr>
 <td class="name">isCustomFilter</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the customfilter option value.</td>
+<td class="description last">Returns the custom filter option value.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -11410,7 +11409,7 @@ columnName</td>
 <tr>
 <td class="name">isCustomFilter</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the customfilter option value.</td>
+<td class="description last">Returns the custom filter option value.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -14615,7 +14614,7 @@ Triggered when detail template row is clicked to collapse.
 
 {% highlight ts %}
 
-onDetailsCollpase(e: any){ 
+onDetailsCollapse(e: any){ 
              //Do Something.
   }
 
