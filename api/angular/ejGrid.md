@@ -9323,7 +9323,7 @@ ngAfterViewInit(){
 #### setCellText(primaryKeyValue, field, value)
 {:#methods:setcelltext}
 
-Used to update a particular cell value based on specified primary key value and fieldname
+Used to update a particular cell value based on specified primary key value and field name
 
 <table class="params">
 <thead>
@@ -9337,7 +9337,7 @@ Used to update a particular cell value based on specified primary key value and 
 <tr>
 <td class="name">primaryKeyValue</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">It is used to set the primarykey value for selecting the corresponding row cell.</td>
+<td class="description last">It is used to set the primary key value for selecting the corresponding row cell.</td>
 </tr>
 <tr>
 <td class="name">field</td>
