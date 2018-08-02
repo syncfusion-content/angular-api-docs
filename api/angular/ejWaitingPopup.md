@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejWaitingPopup Widget
 description: API reference for ejWaitingPopup
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: WaitingPopup, ejWaitingPopup, syncfusion, WaitingPopup api 
 ---
 

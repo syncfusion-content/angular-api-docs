@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejTagCloud Widget
 description: API reference for ejTagCloud
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: TagCloud, ejTagCloud, syncfusion, TagCloud api 
 ---
 

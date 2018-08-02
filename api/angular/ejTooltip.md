@@ -3,7 +3,7 @@ layout: post
 title: ejTooltip
 description: API reference for ejTooltip
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Tooltip, ejTooltip, syncfusion, Tooltip api
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejProgressBar Widget
 description: API reference for ejProgressBar
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: ProgressBar, ejProgressBar, syncfusion, ProgressBar api 
 ---
 

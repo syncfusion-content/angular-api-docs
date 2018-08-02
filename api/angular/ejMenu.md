@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejMenu Widget
 description: API reference for ejMenu
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Menu, ejMenu, syncfusion, Menu api  
 ---
 

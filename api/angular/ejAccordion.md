@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejAccordion Widget
 description: API reference for ejAccordion
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: accordion, ejAccordion, syncfusion, accordion api
 
 ---

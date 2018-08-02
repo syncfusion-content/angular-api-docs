@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejToolbar Widget
 description: API reference for ejToolbar
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Toolbar, ejToolbar, syncfusion, Toolbar api 
 ---
 

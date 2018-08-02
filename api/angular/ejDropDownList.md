@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejDropDownList Widget
 description: API reference for ejDropDownList
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: DropDownList, ejDropDownList, syncfusion, DropDownList api
 ---
 

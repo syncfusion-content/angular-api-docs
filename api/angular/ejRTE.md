@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejRTE Widget
 description: API reference for ejRTE
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: RTE, ejRTE, syncfusion, RTE api  
 ---
 
