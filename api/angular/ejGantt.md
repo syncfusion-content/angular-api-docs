@@ -1984,7 +1984,7 @@ Enables or disables the responsiveness of Gantt
 
 #### Default Value
 
-* "false"
+* false
 
 
 #### Example
@@ -8809,6 +8809,95 @@ export class AppComponent {
 
     }
     rowSelecting(sender) {
+        //...
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
+### splitterResized
+{:#events:splitterresized}
+
+Triggered after splitter resizing action in Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when splitterResized event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">currentSplitterPosition</td>
+<td class="type">string</td>
+<td class="description">Returns the value based on current splitter position.</td>
+</tr>
+<tr>
+<td class="name">customSplitterPosition</td>
+<td class="type">string</td>
+<td class="description">To set custom position for splitter after resize action.</td>
+</tr>
+<tr>
+<td class="name">isOnResize</td>
+<td class="type">boolean</td>
+<td class="description">Returns the value to differentiate whether splitter resizing is performed either by manual resizing or by method</td>
+</tr>
+<tr>
+<td class="name">isSplitterIndex</td>
+<td class="type">boolean</td>
+<td class="description">To differentiate `customSplitterPosition` value was index or position.</td>
+</tr>
+<tr>
+<td class="name">prevSplitterPosition</td>
+<td class="type">string</td>
+<td class="description">Returns the previous splitter position.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-gantt id="GanttControl" (splitterResized)="splitterResized($event)">
+</ej-gantt>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+
+    }
+    splitterResized(sender) {
         //...
     }
 }
