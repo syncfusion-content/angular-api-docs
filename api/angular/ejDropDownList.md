@@ -21,7 +21,7 @@ The DropDownList control provides a list of options to choose an item from the l
 
 {% highlight html %}
 
-<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" width="100%" [(value)]="value" />
+<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="100%" [(value)]="value" />
 
  {% endhighlight %}
 
@@ -35,24 +35,24 @@ The DropDownList control provides a list of options to choose an item from the l
 })
 export class DefaultComponent {
     data: Array<Object> = [];
-    fieldsvalues: Object;
+    fields: Object;
     value: string;
     constructor() {
         this.data = [
-            { empid: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
-            { empid: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
-            { empid: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
-            { empid: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
-            { empid: 'cr5', text: 'Dazzler', value: 'Dazzler' },
-            { empid: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
-            { empid: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
-            { empid: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
-            { empid: 'cr9', text: 'Honda Crosstour', value: 'Honda Crosstour' },
-            { empid: 'cr10', text: 'Acura RL', value: 'Acura RL' },
-            { empid: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
-            { empid: 'cr12', text: 'Mazda3', value: 'Mazda3' }
+            { id: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
+            { id: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
+            { id: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
+            { id: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
+            { id: 'cr5', text: 'Dazzler', value: 'Dazzler' },
+            { id: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
+            { id: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
+            { id: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
+            { id: 'cr9', text: 'Honda Cross tour', value: 'Honda Cross tour' },
+            { id: 'cr10', text: 'Acura RL', value: 'Acura RL' },
+            { id: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
+            { id: 'cr12', text: 'Mazda3', value: 'Mazda3' }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: 'text', value: 'value' };
+        this.fields = { dataSource: this.data, text: 'text', value: 'value' };
         this.value = 'Dazzler';
     }
 }
@@ -97,7 +97,7 @@ The Virtual Scrolling(lazy loading) feature is used to display a large amount of
 
 {% highlight html %}
 
-<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fieldsvalues" width="100%" [(value)]="value" [allowVirtualScrolling]="allowVirtualScrolling"/>
+<input id="bookSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="100%" [(value)]="value" [allowVirtualScrolling]="allowVirtualScrolling"/>
 
  {% endhighlight %}
 
@@ -111,25 +111,25 @@ The Virtual Scrolling(lazy loading) feature is used to display a large amount of
 })
 export class DefaultComponent {
     data: Array<Object> = [];
-    fieldsvalues: Object;
+    fields: Object;
     value: string;
     allowVirtualScrolling: boolean;
     constructor() {
         this.data = [
-            { empid: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
-            { empid: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
-            { empid: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
-            { empid: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
-            { empid: 'cr5', text: 'Dazzler', value: 'Dazzler' },
-            { empid: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
-            { empid: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
-            { empid: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
-            { empid: 'cr9', text: 'Honda Crosstour', value: 'Honda Crosstour' },
-            { empid: 'cr10', text: 'Acura RL', value: 'Acura RL' },
-            { empid: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
-            { empid: 'cr12', text: 'Mazda3', value: 'Mazda3' }
+            { id: 'cr1', text: 'Dodge Avenger', value: 'Dodge Avenger' },
+            { id: 'cr2', text: 'Chrysler 200', value: 'Chrysler 200' },
+            { id: 'cr3', text: 'Ford Focus', value: 'Ford Focus' },
+            { id: 'cr4', text: 'Ford Taurus', value: 'Ford Taurus' },
+            { id: 'cr5', text: 'Dazzler', value: 'Dazzler' },
+            { id: 'cr6', text: 'Chevy Spark', value: 'Chevy Spark' },
+            { id: 'cr7', text: 'Chevy Volt', value: 'Chevy Volt' },
+            { id: 'cr8', text: 'Honda Fit', value: 'Honda Fit' },
+            { id: 'cr9', text: 'Honda Cross tour', value: 'Honda Cross tour' },
+            { id: 'cr10', text: 'Acura RL', value: 'Acura RL' },
+            { id: 'cr11', text: 'Hyundai Elantra', value: 'Hyundai Elantra' },
+            { id: 'cr12', text: 'Mazda3', value: 'Mazda3' }
         ];
-        this.fieldsvalues = { dataSource: this.data, text: 'text', value: 'value' };
+        this.fields = { dataSource: this.data, text: 'text', value: 'value' };
         this.value = 'Dazzler';
         this.allowVirtualScrolling = true;
     }
@@ -151,8 +151,8 @@ The cascading DropDownLists is a series of two or more DropDownLists in which ea
 
 {% highlight html %}
 
-<input id="countrySelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="50%" [enabled]="enabled"/>
-<input id="groupSelect" ej-dropdownlist [dataSource]="groups" [fields]="fieldsvaluesforgroup" width="50%" cascadeTo="countrySelect"/>
+<input id="countrySelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="50%" [enabled]="enabled"/>
+<input id="groupSelect" ej-dropdownlist [dataSource]="groups" [fields]="group" width="50%" cascadeTo="countrySelect"/>
 
 {% endhighlight %}
 
@@ -169,8 +169,8 @@ export class cascadeToComponent {
 
 groups: Array<Object> = [];
 
-fieldsvaluesforgroup: Object;
-    fieldsvalues: Object;   
+group: Object;
+    fields: Object;   
 
 enabled: boolean;
     constructor() {
@@ -205,10 +205,10 @@ this.groups = [
 
 
 ];
-        this.fieldsvalues = { dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = { dataSource: this.countries, text: 'text', value: 'value' };
 
 
-this.fieldsvaluesforgroup={ dataSource: this.groups, text: 'text', value: 'parentId'};
+this.group={ dataSource: this.groups, text: 'text', value: 'parentId'};
 
 
 this.enabled= false;
@@ -244,7 +244,7 @@ You can customize the appearance of the dropdown by using the cssClass property.
 #### Example
 
 {% highlight html %}
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" cssClass="customCss"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" cssClass="customCss"/>
 
 {% endhighlight %}
 
@@ -262,7 +262,7 @@ styleUrls: ['./Dropdownlist.component.css'],
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     customCss: string;
 
     constructor() {
@@ -284,7 +284,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = { dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = { dataSource: this.countries, text: 'text', value: 'value' };
 
 
 this.customCss = "customCss";
@@ -306,7 +306,7 @@ This property is used to serve data from the data services based on the query pr
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="dataManager" [fields]="fieldsvalues" width="100%" [(value)]="value"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="dataManager" [fields]="fields" width="100%" [(value)]="value"/>
 
 {% endhighlight %}
 
@@ -320,11 +320,11 @@ import {Component} from '@angular/core';
 })
 export class DropdownlistComponent {   
 
-    fieldsvalues: Object;
+    fields: Object;
 
 dataManager: Object;
     constructor() {        
-        this.fieldsvalues = {  text: 'Country' };
+        this.fields = {  text: 'Country' };
         this.dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Customers");
     }
 }
@@ -344,7 +344,7 @@ Sets the separator when the multiSelectMode with delimiter option or checkbox is
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" delimiterChar= ";" multiSelectMode= "delimiter"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" delimiterChar= ";" multiSelectMode= "delimiter"/>
 
 {% endhighlight %}
 
@@ -359,7 +359,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;  
+    fields: Object;  
     constructor() {
         this.countries = [
            { value: 11, parentId: 'a', text: "Algeria"},
@@ -379,7 +379,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
     }
 }
 
@@ -399,7 +399,7 @@ The enabled Animation property uses the easeOutQuad animation to SlideDown and S
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enableAnimation]="enableAnimation"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enableAnimation]="enableAnimation"/>
 
 {% endhighlight %}
 
@@ -414,7 +414,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enableAnimation: boolean;
     constructor() {
@@ -436,7 +436,7 @@ enableAnimation: boolean;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 this.enableAnimation = true;
@@ -458,7 +458,7 @@ This property is used to indicate whether the DropDownList control responds to t
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enabled]="enable"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enabled]="enable"/>
 
 {% endhighlight %}
 
@@ -473,7 +473,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enabled: boolean;
     constructor() {
@@ -495,7 +495,7 @@ enabled: boolean;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.enabled = true;
@@ -518,7 +518,7 @@ Specifies to perform incremental search for the selection of items from the Drop
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enableIncrementalSearch]="enableIncrementalSearch"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enableIncrementalSearch]="enableIncrementalSearch"/>
 
 {% endhighlight %}
 
@@ -533,7 +533,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enableIncrementalSearch: boolean;
     constructor() {
@@ -555,7 +555,7 @@ enableIncrementalSearch: boolean;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.enableIncrementalSearch = true;
@@ -578,7 +578,7 @@ This property selects the item in the DropDownList when the item is entered in t
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enableFilterSearch]="enableFilterSearch"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enableFilterSearch]="enableFilterSearch"/>
 
 {% endhighlight %}
 
@@ -593,7 +593,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enableFilterSearch: boolean;
     constructor() {
@@ -615,7 +615,7 @@ enableFilterSearch: boolean;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.enableFilterSearch = true;
@@ -628,7 +628,7 @@ this.enableFilterSearch = true;
 ### enableServerFiltering  `boolean`
 {:#members:enableServerFiltering}
 
-The serverfiltering is to perform filter action when text is typed in the search box and filtering will be done based on the collection which contains the matched item from entire datasource. Serverfiltering will be done based on the entire items in DataSource. 
+The Server filtering is to perform filter action when text is typed in the search box and filtering will be done based on the collection which contains the matched item from entire datasource. Server filtering will be done based on the entire items in DataSource. 
 
 #### Default Value
 
@@ -638,7 +638,7 @@ The serverfiltering is to perform filter action when text is typed in the search
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width="100%" [(value)]="value" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="100%" [(value)]="value" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" />
 
 {% endhighlight %}
 
@@ -653,9 +653,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -663,8 +663,8 @@ enableServerFiltering: boolean;
 
 itemsCount: int;
     constructor() {       
-        this.fieldsvalues = {   text: 'CompanyName', value: 'ContactName'};
-        this.datamanager = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers/" });
+        this.fields = {   text: 'CompanyName', value: 'ContactName'};
+        this.data = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers/" });
 
 
 this.itemsCount= 10;
@@ -691,7 +691,7 @@ Saves the current model value to the browser cookies for state maintenance. Whil
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enablePersistence]="enablePersistence"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enablePersistence]="enablePersistence"/>
 
 {% endhighlight %}
 
@@ -706,7 +706,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enablePersistence: boolean;
     constructor() {
@@ -720,7 +720,7 @@ enablePersistence: boolean;
            { value: 17, parentId: 'c', text: "Finland"},
            { value: 18, parentId: 'c', text: "India"},          
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.enablePersistence = true;
@@ -742,7 +742,7 @@ This enables the resize handler to resize the popup to any size.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enablePopupResize]="enablePopupResize"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enablePopupResize]="enablePopupResize"/>
 
 {% endhighlight %}
 
@@ -757,7 +757,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enablePopupResize: boolean;
     constructor() {
@@ -779,7 +779,7 @@ enablePopupResize: boolean;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.enablePopupResize = true;
@@ -801,7 +801,7 @@ Sets the DropDownList textbox direction from right to left align.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enableRTL]="enableRTL"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enableRTL]="enableRTL"/>
 
 {% endhighlight %}
 
@@ -816,7 +816,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enableRTL: boolean;
     constructor() {
@@ -838,7 +838,7 @@ enableRTL: boolean;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.enableRTL = true;
@@ -861,7 +861,7 @@ This property is used to sort the Items in the DropDownList. By default, it sort
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [enableSorting]="enableSorting"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [enableSorting]="enableSorting"/>
 
 {% endhighlight %}
 
@@ -876,7 +876,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 enableSorting: boolean;
     constructor() {
@@ -898,7 +898,7 @@ enableSorting: boolean;
            { value: 25, parentId: 'e', text: "Singapore"},
            { value: 26, parentId: 'e', text: "Finland"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.enableSorting = true;
@@ -921,7 +921,7 @@ Specifies the mapping fields for the data items of the DropDownList.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value"/>
 
 {% endhighlight %}
 
@@ -936,17 +936,16 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
     constructor() {
         this.countries = [
           { text: "Algeria", flag: "flag-dz" }, 
-           { text: "Argentina", flag: "flag-ar" },
+           { text: "Argentina", flag: "flag" },
            { text: "Armenia", flag: "flag-am" }, 
-           { text: "Brazil", flag: "flag-br" },
-           { text: "Bangladesh", flag: "flag-bd" }
+           { text: "Brazil", flag: "flag-br" }
         ];
-        this.fieldsvalues = {   text: "text", value: "flag" };
+        this.fields = {   text: "text", value: "flag" };
     }
 }
 
@@ -1041,7 +1040,7 @@ startsWith</td>
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="list" [fields]="fieldsvalues" width="100%" [(value)]="value" enableFilterSearch=true filterType="Contains"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="list" [fields]="fields" width="100%" [(value)]="value" enableFilterSearch=true filterType="Contains"/>
 
 {% endhighlight %}
 
@@ -1056,7 +1055,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     list: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1076,7 +1075,7 @@ export class DropdownlistComponent {
 
    { text: "Language", id:"Language" }
         ];
-        this.fieldsvalues = {   text: "text", value: "id" };
+        this.fields = {   text: "text", value: "id" };
     }
 }
 
@@ -1084,7 +1083,7 @@ export class DropdownlistComponent {
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="list" [fields]="fieldsvalues" width="100%" [(value)]="value" enableFilterSearch=true filterType="StartsWith"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="list" [fields]="fields" width="100%" [(value)]="value" enableFilterSearch=true filterType="StartsWith"/>
 
 {% endhighlight %}
 
@@ -1099,7 +1098,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     list: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1119,7 +1118,7 @@ export class DropdownlistComponent {
 
    { text: "Language", id:"Language" }
         ];
-        this.fieldsvalues = {   text: "text", value: "id" };
+        this.fields = {   text: "text", value: "id" };
     }
 }
 
@@ -1140,7 +1139,7 @@ Used to create visualized header for dropdown items
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList" [width]="width" [headerTemplate]="headertemplate" [template]="template">
+<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList" [width]="width" [headerTemplate]="header" [template]="template">
 
  
 {% endhighlight %}
@@ -1150,7 +1149,7 @@ Used to create visualized header for dropdown items
 import {Component} from '@angular/core';
 import {ViewEncapsulation} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html',
 styleUrls: ['app/components/dropdown/dropdown.component.css'],
 encapsulation: ViewEncapsulation.None
@@ -1158,7 +1157,7 @@ encapsulation: ViewEncapsulation.None
 export class DropDownListComponent {
    
 empList: Array<Object>;
-    headertemplate: string;
+    header: string;
     template: string;
     width: any;
     constructor() {
@@ -1183,7 +1182,7 @@ empList: Array<Object>;
                 role: "Representative",
                 country: "India"
         }];
-        this.headertemplate = "<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>";
+        this.header = "<div class='header'><span>PHOTO</span> <span>DETAILS</span></div>";
         this.template = '<div><img class="imgId" src="Employee/${imgId}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>';
         this.width = "200";
     }
@@ -1205,13 +1204,13 @@ Add the below css in dropdown.component.css file.
         float: left;
     }
     
-    .eheader {
+    .header {
         font-weight: bold;
         border-bottom: 1px solid #c8c8c8;
         background: #c8c8c8;
     }
     
-    .eheader > span {
+    .header > span {
         display: inline-block;
         padding: 10px;
     }
@@ -1243,7 +1242,7 @@ Defines the height of the DropDownList textbox.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" height=100/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" height=100/>
 
 {% endhighlight %}
 
@@ -1258,7 +1257,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1280,7 +1279,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 
@@ -1303,7 +1302,7 @@ It sets the given HTML attributes for the DropDownList control such as ID, name,
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" [htmlAttributes]="htmlAttributes"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" [htmlAttributes]="htmlAttributes"/>
 
 {% endhighlight %}
 
@@ -1318,7 +1317,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 htmlAttributes: any;
     constructor() {
@@ -1340,7 +1339,7 @@ htmlAttributes: any;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries };       
+        this.fields = {  dataSource: this.countries };       
 
 
 this.htmlAttributes = { disabled: "disabled"};
@@ -1364,7 +1363,7 @@ Data can be fetched in the DropDownList control by using the DataSource, specify
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width="100%" [(value)]="value" [itemsCount] = "itemsCount"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="100%" [(value)]="value" [itemsCount] = "itemsCount"/>
 
 {% endhighlight %}
 
@@ -1379,14 +1378,14 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 itemsCount: int;
 
-datamanager: Object;
+data: Object;
     constructor() {
-        this.fieldsvalues = {   text: "CompanyName" };
-        this.datamanager = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers/" });
+        this.fields = {   text: "CompanyName" };
+        this.data = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers/" });
 
 
 this.itemsCount = 3;
@@ -1408,7 +1407,7 @@ Allows the user to set the particular country or region language for the DropDow
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width="100%" [(value)]="value" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" [locale]= "locale" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width="100%" [(value)]="value" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" [locale]= "locale" />
 
 {% endhighlight %}
 
@@ -1422,9 +1421,9 @@ import {Component} from '@angular/core';
 })
 export class DropdownlistComponent {    
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -1434,8 +1433,8 @@ itemsCount: int;
     locale: string;
 
     constructor() {       
-        this.fieldsvalues = {   text: 'CompanyName', value: 'ContactName'};
-        this.datamanager = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers/" });
+        this.fields = {   text: 'CompanyName', value: 'ContactName'};
+        this.data = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/Customers/" });
 
 
 this.itemsCount= 10;
@@ -1465,7 +1464,7 @@ Defines the maximum height of the suggestion box. This property restricts the ma
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" 
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" 
 enablePopupResize = true maxPopupHeight = "200px"/>
 
 {% endhighlight %}
@@ -1481,7 +1480,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1503,7 +1502,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 
@@ -1525,7 +1524,7 @@ Defines the minimum height of the suggestion box. This property restricts the mi
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupHeight= "150px" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupHeight= "150px" />
 
 {% endhighlight %}
 
@@ -1540,9 +1539,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -1552,8 +1551,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -1581,7 +1580,7 @@ Defines the maximum width of the suggestion box. This property restricts the max
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true maxPopupWidth= "500px" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true maxPopupWidth= "500px" />
 
 {% endhighlight %}
 
@@ -1596,9 +1595,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -1608,8 +1607,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -1637,7 +1636,7 @@ Defines the minimum height of the suggestion box. This property restricts the mi
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupWidth= "150px" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupWidth= "150px" />
 
 {% endhighlight %}
 
@@ -1652,9 +1651,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -1664,8 +1663,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -1725,7 +1724,7 @@ visualMode</td>
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" multiSelectMode="VisualMode"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" multiSelectMode="VisualMode"/>
 
 {% endhighlight %}
 
@@ -1740,7 +1739,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1762,7 +1761,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 
@@ -1773,7 +1772,7 @@ export class DropdownlistComponent {
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" multiSelectMode="VisualMode"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" multiSelectMode="VisualMode"/>
 
 {% endhighlight %}
 
@@ -1788,7 +1787,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1810,7 +1809,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 
@@ -1834,7 +1833,7 @@ Defines the height of the suggestion popup box in the DropDownList control.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" popupHeight="190px"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" popupHeight="190px"/>
 
 {% endhighlight %}
 
@@ -1849,7 +1848,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1871,7 +1870,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 
@@ -1893,7 +1892,7 @@ Defines the width of the suggestion popup box in the DropDownList control.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" popupWidth=200 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" popupWidth=200 />
 
 {% endhighlight %}
 
@@ -1908,7 +1907,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -1930,7 +1929,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 
@@ -1952,7 +1951,7 @@ Specifies the query to retrieve the data from the DataSource.
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
 
 {% endhighlight %}
 
@@ -1967,9 +1966,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -1977,8 +1976,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -2005,7 +2004,7 @@ Specifies that the DropDownList textbox values should be read-only.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" [readOnly]="readOnly"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" [readOnly]="readOnly"/>
 
 {% endhighlight %}
 
@@ -2020,7 +2019,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 readOnly: boolean;
     constructor() {
@@ -2042,7 +2041,7 @@ readOnly: boolean;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 this.readOnly = true;
@@ -2065,7 +2064,7 @@ Specifies an item to be selected in the DropDownList.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="100%" [(value)]="value" selectedIndex=2 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="100%" [(value)]="value" selectedIndex=2 />
 
 {% endhighlight %}
 
@@ -2080,7 +2079,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -2102,7 +2101,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 
@@ -2124,7 +2123,7 @@ Specifies the selectedItems for the DropDownList.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" multiSelectMode="Delimiter" showCheckbox=true [selectedIndices]="selectedIndices" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" multiSelectMode="Delimiter" showCheckbox=true [selectedIndices]="selectedIndices" />
 
 {% endhighlight %}
 
@@ -2139,7 +2138,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 selectedIndices: array;
 
@@ -2162,7 +2161,7 @@ selectedIndices: array;
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };       
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };       
 
 
 this.selectedIndices = [0,1,3];
@@ -2184,7 +2183,7 @@ Selects multiple items in the DropDownList with the help of the checkbox control
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" multiSelectMode="Delimiter" showCheckbox=true />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" multiSelectMode="Delimiter" showCheckbox=true />
 
 {% endhighlight %}
 
@@ -2199,7 +2198,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     constructor() {
         this.countries = [
            { value: 11, parentId: 'a', text: "Algeria"},
@@ -2219,7 +2218,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };
     }
 }
 
@@ -2238,7 +2237,7 @@ DropDownList control is displayed with the popup seen.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" multiSelectMode="Delimiter" [showPopupOnLoad]="showPopupOnLoad"  />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" multiSelectMode="Delimiter" [showPopupOnLoad]="showPopupOnLoad"  />
 
 {% endhighlight %}
 
@@ -2253,7 +2252,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showPopupOnLoad: boolean;
     constructor() {
         this.countries = [
@@ -2274,7 +2273,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };
         this.showPopupOnLoad = true;
     }
 }
@@ -2294,7 +2293,7 @@ DropDownList textbox displayed with the rounded corner style.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" multiSelectMode="Delimiter" [showRoundedCorner]="showRoundedCorner"  />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" multiSelectMode="Delimiter" [showRoundedCorner]="showRoundedCorner"  />
 
 {% endhighlight %}
 
@@ -2309,7 +2308,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showRoundedCorner: boolean;
     constructor() {
         this.countries = [
@@ -2330,7 +2329,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };
         this.showRoundedCorner = true;
     }
 }
@@ -2371,7 +2370,7 @@ When the enableSorting property value is set to true, this property helps to sor
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" multiSelectMode="Delimiter" [enableSorting]="enableSorting" sortOrder="Descending" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" multiSelectMode="Delimiter" [enableSorting]="enableSorting" sortOrder="Descending" />
 
 {% endhighlight %}
 
@@ -2386,7 +2385,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     enableSorting: boolean;
 
     constructor() {
@@ -2408,7 +2407,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };
         this.enableSorting = true;
     }
 }
@@ -2494,7 +2493,7 @@ By default, you can add any text or image to the DropDownList item. To customize
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList" [width]="width" [headerTemplate]="headertemplate" [template]="template">
+<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList" [width]="width" [headerTemplate]="header" [template]="template">
 
  
 {% endhighlight %}
@@ -2504,7 +2503,7 @@ By default, you can add any text or image to the DropDownList item. To customize
 import {Component} from '@angular/core';
 import {ViewEncapsulation} from '@angular/core';
 @Component({
-selector: 'sd-home',
+selector: 'ej-app',
 templateUrl: 'app/components/dropdown/dropdown.component.html',
 styleUrls: ['app/components/dropdown/dropdown.component.css'],
 encapsulation: ViewEncapsulation.None
@@ -2512,7 +2511,7 @@ encapsulation: ViewEncapsulation.None
 export class DropDownListComponent {
    
 empList: Array<Object>;
-    headertemplate: string;
+    header: string;
     template: string;
     width: any;
     constructor() {
@@ -2537,7 +2536,7 @@ empList: Array<Object>;
                 role: "Representative",
                 country: "India"
         }];
-        this.headertemplate = "<div class='eheader'><span>PHOTO</span> <span>DETAILS</span></div>";
+        this.header = "<div class='header'><span>PHOTO</span> <span>DETAILS</span></div>";
         this.template = '<div><img class="imgId" src="Employee/${imgId}.png" alt="employee"/>' + '<div class="ename"> ${text} </div><div class="role"> ${role} </div><div class="cont"> ${country} </div></div>';
         this.width = "200";
     }
@@ -2559,13 +2558,13 @@ Add the below css in dropdown.component.css file.
         float: left;
     }
     
-    .eheader {
+    .header {
         font-weight: bold;
         border-bottom: 1px solid #c8c8c8;
         background: #c8c8c8;
     }
     
-    .eheader > span {
+    .header > span {
         display: inline-block;
         padding: 10px;
     }
@@ -2599,7 +2598,7 @@ For the single selection mode, the selected item's text will be returned in its 
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width=360 [(value)]="value" multiSelectMode="Delimiter" [text]="text"  />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width=360 [(value)]="value" multiSelectMode="Delimiter" [text]="text"  />
 
 {% endhighlight %}
 
@@ -2614,7 +2613,7 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     text: string;
     constructor() {
         this.countries = [
@@ -2635,7 +2634,7 @@ export class DropdownlistComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = {  dataSource: this.countries, text: 'text', value: 'value' };
         this.text = "Norway";
     }
 }
@@ -2657,7 +2656,7 @@ Sets the jQuery validation error message in the DropDownList
 {% highlight html %}
 
 <form id="form1">
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340  [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupWidth= "150px" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340  [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupWidth= "150px" />
 <div><br/>
 <input type="submit" value="Validate">
  </div>
@@ -2676,9 +2675,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -2698,8 +2697,8 @@ validMessage: any;
             $(error).insertAfter(element.closest(".e-widget"));
         }
     });       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -2734,7 +2733,7 @@ Sets the jQuery validation rules in the Dropdownlist.
 {% highlight html %}
 
 <form id="form1">
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340  [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupWidth= "150px" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340  [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" enableServerFiltering="enableServerFiltering" enablePopupResize=true minPopupWidth= "150px" />
 <div><br/>
 <input type="submit" value="Validate">
  </div>
@@ -2753,9 +2752,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -2775,8 +2774,8 @@ validMessage: any;
             $(error).insertAfter(element.closest(".e-widget"));
         }
     });       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -3040,7 +3039,7 @@ continuous</td>
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" virtualScrollMode="continuous" [itemsCount]="itemsCount" [allowVirtualScrolling]="allowVirtualScrolling" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" virtualScrollMode="continuous" [itemsCount]="itemsCount" [allowVirtualScrolling]="allowVirtualScrolling" />
 
 {% endhighlight %}
 
@@ -3055,9 +3054,9 @@ import {Component} from '@angular/core';
 export class DropdownlistComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -3066,8 +3065,8 @@ itemsCount: int;
     allowVirtualScrolling: boolean;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount = 40;
@@ -3114,8 +3113,8 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" />
-<button (click)="additem()">additem</button>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" />
+<button (click)="add()">add</button>
 
 {% endhighlight %}
 
@@ -3130,7 +3129,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     newCountries: Array<Object> = [];
 
 
@@ -3170,12 +3169,12 @@ this.newCountries=[
 
 
 ];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
 
-additem(){
+add(){
 
 
 
@@ -3205,7 +3204,7 @@ This method is used to select all the items in the DropDownList.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" [showCheckbox]="showCheckBox" multiSelectMode="VisualMode" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" [showCheckbox]="showCheckBox" multiSelectMode="VisualMode" />
 <button (click)="CheckAll()">CheckAll</button>
 
 {% endhighlight %}
@@ -3221,7 +3220,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -3247,7 +3246,7 @@ export class DropDownListComponent {
            { value: 25, parentId: 'e', text: "Thailand"},
            { value: 26, parentId: 'e', text: "Ukraine"}
         ];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -3281,7 +3280,7 @@ Clears the text in the DropDownList textbox.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="ClearText()">ClearText</button>
 
 {% endhighlight %}
@@ -3297,7 +3296,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3325,7 +3324,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -3349,7 +3348,7 @@ obj.clearText());
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="ClearText()">ClearText</button>
 
 {% endhighlight %}
@@ -3365,7 +3364,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3393,7 +3392,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -3419,7 +3418,7 @@ Destroys the DropDownList widget.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="Destroy()">Destroy</button>
 
 {% endhighlight %}
@@ -3435,7 +3434,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3463,7 +3462,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -3487,7 +3486,7 @@ obj.destroy());
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="Destroy()">Destroy</button>
 
 {% endhighlight %}
@@ -3503,7 +3502,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3531,7 +3530,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -3558,7 +3557,7 @@ This property is used to disable the DropDownList widget.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="Disable()">Disable</button>
 
 {% endhighlight %}
@@ -3574,7 +3573,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3602,7 +3601,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -3626,7 +3625,7 @@ obj.disable();
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="Disable()">Disable</button>
 
 {% endhighlight %}
@@ -3642,7 +3641,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3670,7 +3669,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -3715,7 +3714,7 @@ This property disables the set of items in the DropDownList.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" />
 <button (click)="DisableItemsByIndices()">DisableItemsByIndices</button>
 
 {% endhighlight %}
@@ -3731,7 +3730,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3759,7 +3758,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -3783,7 +3782,7 @@ obj.disableItemsByIndices("0,3,6");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" />
 <button (click)="DisableItemsByIndices()">DisableItemsByIndices</button>
 
 {% endhighlight %}
@@ -3799,7 +3798,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -3827,7 +3826,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4009,7 +4008,7 @@ Enables an Item or set of Items that are disabled in the DropDownList
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" (create)="OnLoading()" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" (create)="OnLoading()" />
 <button (click)="EnableItemsByIndices()">EnableItemsByIndices</button>
 
 {% endhighlight %}
@@ -4025,7 +4024,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4053,7 +4052,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4088,7 +4087,7 @@ obj.EnableItemsByIndices(0,1,2));
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" (create)="OnLoading()" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" (create)="OnLoading()" />
 <button (click)="EnableItemsByIndices()">EnableItemsByIndices</button>
 
 {% endhighlight %}
@@ -4104,7 +4103,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4132,7 +4131,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4194,7 +4193,7 @@ This method will return the whole object corresponds to given value from datasou
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
 <button (click)="GetItemDataByValue()">GetItemDataByValue</button>
 
 {% endhighlight %}
@@ -4208,9 +4207,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -4218,8 +4217,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -4243,7 +4242,7 @@ console.log("Target ShipName - "+ obj[0].ShipName);
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
 <button (click)="GetItemDataByValue()">GetItemDataByValue</button>
 
 {% endhighlight %}
@@ -4257,9 +4256,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -4267,8 +4266,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -4308,7 +4307,7 @@ This method will return the whole data which binds with Dropdownlist control
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="GetListData()">GetListData</button>
 
 {% endhighlight %}
@@ -4324,7 +4323,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4352,7 +4351,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4382,7 +4381,7 @@ for (var i=0;i< items.length; i++)
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="GetListData()">GetListData</button>
 
 {% endhighlight %}
@@ -4398,7 +4397,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4426,7 +4425,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4460,7 +4459,7 @@ This method will return the selected item elements
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
 <button (click)="GetSelectedItem()">GetSelectedItem</button>
 
 {% endhighlight %}
@@ -4476,7 +4475,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4504,7 +4503,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4527,7 +4526,7 @@ obj.getSelectedItem();
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
 <button (click)="GetSelectedItem()">GetSelectedItem</button>
 
 {% endhighlight %}
@@ -4543,7 +4542,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4571,7 +4570,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4602,7 +4601,7 @@ This method will return the selected Item value and separated by delimiterChar i
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
 <button (click)="GetSelectedValue()">GetSelectedValue</button>
 
 {% endhighlight %}
@@ -4618,7 +4617,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4646,7 +4645,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4668,7 +4667,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" />
 <button (click)="GetSelectedValue()">GetSelectedValue</button>
 
 {% endhighlight %}
@@ -4684,7 +4683,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4712,7 +4711,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4739,7 +4738,7 @@ This method hides the suggestion popup in the DropDownList.
 {% highlight html %}
 
 <button (click)="HidePopup()">HidePopup</button>
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" showPopupOnLoad=true />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" showPopupOnLoad=true />
 
 {% endhighlight %}
 
@@ -4754,7 +4753,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4782,7 +4781,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4805,7 +4804,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 {% highlight html %}
 
 <button (click)="HidePopup()">HidePopup</button>
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" showPopupOnLoad=true />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" text="Romania" showPopupOnLoad=true />
 
 {% endhighlight %}
 
@@ -4820,7 +4819,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -4848,7 +4847,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4893,7 +4892,7 @@ This method is used to select the list of items in the DropDownList through the 
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox"/>
 <button (click)="SelectItemByIndex()">SelectItemByIndex</button>
 
 {% endhighlight %}
@@ -4909,7 +4908,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
 
@@ -4938,7 +4937,7 @@ showCheckBox: boolean;
 
 
 this.showCheckBox = true;
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -4960,7 +4959,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" />
 <button (click)="SelectItemByIndex()">SelectItemByIndex</button>
 
 {% endhighlight %}
@@ -4976,7 +4975,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
 
@@ -5005,7 +5004,7 @@ showCheckBox: boolean;
 
 
 this.showCheckBox = true;
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5049,7 +5048,7 @@ This method is used to select an item in the DropDownList by using the given tex
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox"/>
 <button (click)="SelectItemByText()">SelectItemByText</button>
 
 {% endhighlight %}
@@ -5065,7 +5064,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
 
@@ -5094,7 +5093,7 @@ showCheckBox: boolean;
 
 
 this.showCheckBox = true;
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5116,7 +5115,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" />
 <button (click)="SelectItemByText()">SelectItemByText</button>
 
 {% endhighlight %}
@@ -5132,7 +5131,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
 
@@ -5161,7 +5160,7 @@ showCheckBox: boolean;
 
 
 this.showCheckBox = true;
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5206,7 +5205,7 @@ This method is used to select an item in the DropDownList by using the given val
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox"/>
 <button (click)="SelectItemByValue()">SelectItemByValue</button>
 
 {% endhighlight %}
@@ -5222,7 +5221,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
 
@@ -5251,7 +5250,7 @@ showCheckBox: boolean;
 
 
 this.showCheckBox = true;
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5273,7 +5272,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" />
 <button (click)="SelectItemByValue()">SelectItemByValue</button>
 
 {% endhighlight %}
@@ -5289,7 +5288,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
 
@@ -5318,7 +5317,7 @@ showCheckBox: boolean;
 
 
 this.showCheckBox = true;
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5344,7 +5343,7 @@ This method shows the DropDownList control with the suggestion popup.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="ShowPopup()">ShowPopup</button>
 
 {% endhighlight %}
@@ -5360,7 +5359,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -5388,7 +5387,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5412,7 +5411,7 @@ obj.showPopup();
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 />
 <button (click)="ShowPopup()">ShowPopup</button>
 
 {% endhighlight %}
@@ -5428,7 +5427,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -5456,7 +5455,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5482,7 +5481,7 @@ This method is used to unselect all the items in the DropDownList.
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
 <input type="checkbox" id="tbutton" ej-togglebutton (change)="onCheckUncheckAll($event)"/>
 
 {% endhighlight %}
@@ -5496,9 +5495,9 @@ import {Component} from '@angular/core';
     templateUrl: './DropDownList.component.html'
 })
 export class DropDownListComponent {
-   fieldsvalues: Object;
+   fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -5506,8 +5505,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -5528,7 +5527,7 @@ onCheckUncheckAll(event) {
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" />
 <input type="checkbox" id="tbutton" ej-togglebutton (change)="onCheckUncheckAll($event)"/>
 
 {% endhighlight %}
@@ -5542,9 +5541,9 @@ import {Component} from '@angular/core';
     templateUrl: './DropDownList.component.html'
 })
 export class DropDownListComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -5552,8 +5551,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -5599,7 +5598,7 @@ This method is used to unselect the list of items in the DropDownList through In
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices"/>
 <button (click)="UnSelectItemByIndex()">UnSelectItemByIndex</button>
 
 {% endhighlight %}
@@ -5615,7 +5614,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
     selectedIndices: array;
@@ -5646,7 +5645,7 @@ showCheckBox: boolean;
 
 this.showCheckBox = true;
         this.selectedIndices=[1,2];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5668,7 +5667,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices" />
 <button (click)="UnSelectItemByIndex()">UnSelectItemByIndex</button>
 
 {% endhighlight %}
@@ -5684,7 +5683,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
     selectedIndices: array;
@@ -5715,7 +5714,7 @@ showCheckBox: boolean;
 
 this.showCheckBox = true;
         this.selectedIndices=[1,2];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5759,7 +5758,7 @@ This method is used to unselect an item in the DropDownList by using the given t
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices"/>
 <button (click)="UnSelectItemByText()">UnSelectItemByText</button>
 
 {% endhighlight %}
@@ -5775,7 +5774,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
     selectedIndices: array;
@@ -5806,7 +5805,7 @@ showCheckBox: boolean;
 
 this.showCheckBox = true;
         this.selectedIndices=[1,2];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5828,7 +5827,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices" />
 <button (click)="UnSelectItemByText()">UnSelectItemByText</button>
 
 {% endhighlight %}
@@ -5844,7 +5843,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
     selectedIndices: array;
@@ -5875,7 +5874,7 @@ showCheckBox: boolean;
 
 this.showCheckBox = true;
         this.selectedIndices=[1,2];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5919,7 +5918,7 @@ This method is used to unselect an item in the DropDownList by using the given v
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices"/>
 <button (click)="UnSelectItemByValue()">UnSelectItemByValue</button>
 
 {% endhighlight %}
@@ -5935,7 +5934,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
     selectedIndices: array;
@@ -5966,7 +5965,7 @@ showCheckBox: boolean;
 
 this.showCheckBox = true;
         this.selectedIndices=[1,2];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -5988,7 +5987,7 @@ var obj=$("#countriesSelect").data("ejDropDownList");
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" [selectedIndex]="selectedIndices" />
 <button (click)="UnSelectItemByValue()">UnSelectItemByValue</button>
 
 {% endhighlight %}
@@ -6004,7 +6003,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 showCheckBox: boolean;
     selectedIndices: array;
@@ -6035,7 +6034,7 @@ showCheckBox: boolean;
 
 this.showCheckBox = true;
         this.selectedIndices=[1,2];
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -6091,7 +6090,7 @@ Fires the action before the XHR request.
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionBegin)="actionBeginEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionBegin)="actionBeginEvent($event)" />
 
 {% endhighlight %}
 
@@ -6104,9 +6103,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -6114,8 +6113,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -6198,7 +6197,7 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionComplete)="actionCompleteEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionComplete)="actionCompleteEvent($event)" />
 
 {% endhighlight %}
 
@@ -6211,9 +6210,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -6221,8 +6220,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -6289,7 +6288,7 @@ Fires the action when the xhr post calling failed on remote data binding with th
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionFailure)="actionFailureEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionFailure)="actionFailureEvent($event)" />
 
 {% endhighlight %}
 
@@ -6302,9 +6301,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -6312,8 +6311,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -6394,7 +6393,7 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionSuccess)="actionSuccessEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (actionSuccess)="actionSuccessEvent($event)" />
 
 {% endhighlight %}
 
@@ -6407,9 +6406,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -6417,8 +6416,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -6485,7 +6484,7 @@ Fires the action before the popup is ready to hide.
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (beforePopupHide)="BeforePopupHideEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (beforePopupHide)="BeforePopupHideEvent($event)" />
 
 {% endhighlight %}
 
@@ -6498,9 +6497,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -6508,8 +6507,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -6575,7 +6574,7 @@ Fires the action before the popup is ready to be displayed.
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (beforePopupShown)="BeforePopupShownEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (beforePopupShown)="BeforePopupShownEvent($event)" />
 
 {% endhighlight %}
 
@@ -6588,9 +6587,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -6598,8 +6597,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -6670,8 +6669,8 @@ Fires when the cascading happens between two DropDownList exactly after the valu
 
 {% highlight html %}
 
-<input id="countrySelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues" width="50%" [enabled]="enabled"/>
-<input id="groupSelect" ej-dropdownlist [dataSource]="groups" [fields]="fieldsvaluesforgroup" width="50%" cascadeTo="countrySelect" (cascade)="cascade($event)"/>
+<input id="countrySelect" ej-dropdownlist [dataSource]="countries" [fields]="fields" width="50%" [enabled]="enabled"/>
+<input id="groupSelect" ej-dropdownlist [dataSource]="groups" [fields]="group" width="50%" cascadeTo="countrySelect" (cascade)="cascade($event)"/>
 
 {% endhighlight %}
 
@@ -6688,8 +6687,8 @@ export class cascadeToComponent {
 
 groups: Array<Object> = [];
 
-fieldsvaluesforgroup: Object;
-    fieldsvalues: Object;   
+group: Object;
+    fields: Object;   
 
 enabled: boolean;
     constructor() {
@@ -6724,10 +6723,10 @@ this.groups = [
 
 
 ];
-        this.fieldsvalues = { dataSource: this.countries, text: 'text', value: 'value' };
+        this.fields = { dataSource: this.countries, text: 'text', value: 'value' };
 
 
-this.fieldsvaluesforgroup={ dataSource: this.groups, text: 'text', value: 'parentId'};
+this.group={ dataSource: this.groups, text: 'text', value: 'parentId'};
 
 
 this.enabled= false;
@@ -6802,7 +6801,7 @@ Fires the action when the DropDownList control’s value is changed.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0  (ejchange)="Change($event)"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0  (ejchange)="Change($event)"/>
 
 {% endhighlight %}
 
@@ -6817,7 +6816,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -6845,7 +6844,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -6924,7 +6923,7 @@ Fires the action when the list item checkbox value is changed.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (checkChange)="CheckChange($event)"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (checkChange)="CheckChange($event)"/>
 
 {% endhighlight %}
 
@@ -6939,7 +6938,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -6968,7 +6967,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -7023,7 +7022,7 @@ Fires the action once the DropDownList is created.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (create)="Create($event)"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (create)="Create($event)"/>
 
 {% endhighlight %}
 
@@ -7038,7 +7037,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -7067,7 +7066,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -7127,7 +7126,7 @@ Fires the action when the list items is bound to the DropDownList.
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (dataBound)="DataBoundEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (dataBound)="DataBoundEvent($event)" />
 
 {% endhighlight %}
 
@@ -7140,9 +7139,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -7150,8 +7149,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -7207,7 +7206,7 @@ Fires the action when the DropDownList is destroyed.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 (destroy)="DestroyEvent($event)" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 (destroy)="DestroyEvent($event)" />
 <button (click)="Destroy()">Destroy</button>
 
 {% endhighlight %}
@@ -7223,7 +7222,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
 
 
     constructor() {
@@ -7251,7 +7250,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
 
 
     }
@@ -7313,7 +7312,7 @@ Fires the action when the DropDownList is focused.
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (focusIn)="FocusInEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (focusIn)="FocusInEvent($event)" />
 
 {% endhighlight %}
 
@@ -7326,9 +7325,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -7336,8 +7335,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -7392,7 +7391,7 @@ Fires the action when the DropDownList is about to lose focus.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (focusOut)="FocusOut($event)"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (focusOut)="FocusOut($event)"/>
 
 {% endhighlight %}
 
@@ -7407,7 +7406,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -7436,7 +7435,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -7501,7 +7500,7 @@ Fires the action, once the popup is closed
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (popupHide)="popupHide($event)"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" (popupHide)="popupHide($event)"/>
 
 {% endhighlight %}
 
@@ -7516,7 +7515,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -7545,7 +7544,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -7605,7 +7604,7 @@ Fires the action, when the popup is resized.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupResize)="PopupResizeEvent($event)" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupResize)="PopupResizeEvent($event)" />
 
 {% endhighlight %}
 
@@ -7620,7 +7619,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -7649,7 +7648,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -7713,7 +7712,7 @@ Fires the action, once the popup is opened.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupShown)="PopupShownEvent($event)" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupShown)="PopupShownEvent($event)" />
 
 {% endhighlight %}
 
@@ -7728,7 +7727,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -7757,7 +7756,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -7818,7 +7817,7 @@ Fires the action, when resizing a popup starts.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupResizeStart)="PopupResizeStart($event)" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupResizeStart)="PopupResizeStart($event)" />
 
 {% endhighlight %}
 
@@ -7833,7 +7832,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -7862,7 +7861,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -7921,7 +7920,7 @@ Fires the action, when the popup resizing is stopped.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupResizeStop)="PopupResizeStop($event)" />
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" selectedIndex=0 [showCheckbox]="showCheckBox" enablePopupResize=true (popupResizeStop)="PopupResizeStop($event)" />
 
 {% endhighlight %}
 
@@ -7936,7 +7935,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -7965,7 +7964,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 
@@ -8034,7 +8033,7 @@ Fires the action before filtering the list items that starts in the DropDownList
 
 {% highlight html %}
 
-<input id="CompanySelect" ej-dropdownlist [dataSource]="datamanager" [fields]="fieldsvalues" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (search)="SearchEvent($event)" />
+<input id="CompanySelect" ej-dropdownlist [dataSource]="data" [fields]="fields" width=340 [(value)]="value" [query]="query" [enableFilterSearch]="enableFilterSearch" [itemsCount]="itemsCount" (search)="SearchEvent($event)" />
 
 {% endhighlight %}
 
@@ -8047,9 +8046,9 @@ import {Component} from '@angular/core';
     templateUrl: './Dropdownlist.component.html'
 })
 export class DropdownlistComponent {
-    fieldsvalues: Object;
+    fields: Object;
 
-datamanager: Object;
+data: Object;
 
 enableFilterSearch: boolean;
 
@@ -8057,8 +8056,8 @@ itemsCount: int;
     query: any;
 
     constructor() {       
-        this.fieldsvalues = {  text: "ShipName", groupBy: "ShipCountry"};
-        this.datamanager = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        this.fields = {  text: "ShipName", groupBy: "ShipCountry"};
+        this.data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
 
 this.itemsCount= 20;
@@ -8138,7 +8137,7 @@ Fires the action, when the list of item is selected.
 
 {% highlight html %}
 
-<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fieldsvalues"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" (select)="Select($event)"/>
+<input id="countriesSelect" ej-dropdownlist [dataSource]="countries" [fields]="fields"  width=340 [(value)]="value" multiSelectMode="VisualMode" [showCheckbox]="showCheckBox" (select)="Select($event)"/>
 
 {% endhighlight %}
 
@@ -8153,7 +8152,7 @@ import {Component} from '@angular/core';
 export class DropDownListComponent {
     countries: Array<Object> = [];
 
-    fieldsvalues: Object;
+    fields: Object;
     showCheckBox: boolean;
 
 
@@ -8182,7 +8181,7 @@ export class DropDownListComponent {
 
 
 
-        this.fieldsvalues = {  text: "text", value: "value" };
+        this.fields = {  text: "text", value: "value" };
         this.showCheckBox = true;
 
 

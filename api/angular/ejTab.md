@@ -42,7 +42,7 @@ The Tab control is an interface where list of items are expanded from a single i
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -96,7 +96,7 @@ Specifies the ajaxSettings option to load the content to the Tab control.
     <div id="pizza" style="background-color: #F5F5F5">
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="pizza">
-        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache">
+        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache">
             <ul>
                 <li>
                     <a href="content/cornSpinach.html">Corn & Spinach </a></li>
@@ -109,7 +109,7 @@ Specifies the ajaxSettings option to load the content to the Tab control.
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="sandwich">
-        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache">
+        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache">
             <ul>
                 <li>
                     <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
@@ -135,7 +135,7 @@ import { ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './scrolltab.component.html',
+    templateUrl: './tab.component.html',
     styleUrls: ['./tab.component.css'],
     encapsulation: ViewEncapsulation.None,
 })
@@ -144,7 +144,7 @@ export class ScrollTabComponent {
 
 contentType: any;
 
-asyn: any;
+async: any;
     cache: any;
     data: Object;
     type: any;
@@ -159,7 +159,7 @@ this.dataType= "html";
 this.contentType= "html";
 
 
-this.asyn= true;
+this.async= true;
     }
 } 
 
@@ -176,7 +176,7 @@ The file ‘**cornSpinach.html**’ content is as follows.
             Rate    : $70<br />
             Ingredients : cheese, sweet corn &amp; green capsicums.
                 <br />
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
+            Description: Small pizza bases are topped with spinach and Paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
         </div>
     </div>
 
@@ -359,7 +359,7 @@ Tab items interaction with keyboard keys, like headers active navigation.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -426,7 +426,7 @@ Allow to collapsing the active item, while click on the active header.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -493,7 +493,7 @@ Set the root class for Tab theme. This cssClass API helps to use custom skinning
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -574,7 +574,7 @@ Disables the given tab headers and content panels.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -641,7 +641,7 @@ Specifies the animation behavior of the tab.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -709,7 +709,7 @@ When this property is set to false, it disables the tab control.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -779,7 +779,7 @@ Enables the given tab headers and content panels.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -853,7 +853,7 @@ Save current model value to browser cookies for state maintains. While refresh t
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -923,7 +923,7 @@ Display Right to Left direction for headers and panels text of tab.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1030,7 +1030,7 @@ import { ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './scrolltab.component.html',
+    templateUrl: './tab.component.html',
     styleUrls: ['./tab.component.css'],
     encapsulation: ViewEncapsulation.None,
 })
@@ -1086,7 +1086,7 @@ The event API to bind the action for active the tab items.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1185,7 +1185,7 @@ Right</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1253,7 +1253,7 @@ Set the height of the tab header element. Default this property value is null, s
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1321,7 +1321,7 @@ Height set the outer panel element. Default this property value is null, so heig
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1428,7 +1428,7 @@ Fill</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1514,7 +1514,7 @@ Specifies to hide a pane of Tab control.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1599,7 +1599,7 @@ Specifies the HTML Attributes of the Tab.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1673,7 +1673,7 @@ The idPrefix property appends the given string on the added tab item id&rsquo;s 
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1741,7 +1741,7 @@ Specifies the Tab header in active for given index value.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1809,7 +1809,7 @@ Display the close button for each tab items. While clicking on the close icon, p
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1876,7 +1876,7 @@ Display the Reload button for each tab items.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -1944,7 +1944,7 @@ Tab panels and headers to be displayed in rounded corner style.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2011,7 +2011,7 @@ Set the width for outer panel element, if not it&rsquo;s take parent width.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2114,12 +2114,12 @@ id</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
 </ej-tab>
-<button type="button" (click)="OnClick()">Additem</button>
+<button type="button" (click)="OnClick()">Add item</button>
 
 {% endhighlight %}
 
@@ -2167,12 +2167,12 @@ obj.addItem("#new", "New Item", 3, "myClass", "newItem");
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
 </ej-tab>
-<button type="button" (click)="OnClick()">Additem</button>
+<button type="button" (click)="OnClick()">Add item</button>
 
 {% endhighlight %}
 
@@ -2235,7 +2235,7 @@ To disable the tab control.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2288,7 +2288,7 @@ obj.disable();
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2356,7 +2356,7 @@ To enable the tab control.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2409,7 +2409,7 @@ obj.enable();
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2479,7 +2479,7 @@ number
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2532,7 +2532,7 @@ obj.getItemsCount();
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2601,7 +2601,7 @@ This function hides the tab control.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2654,7 +2654,7 @@ obj.hide();
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2743,7 +2743,7 @@ index</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2796,7 +2796,7 @@ obj.hideItem(1);
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2883,7 +2883,7 @@ index</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -2936,7 +2936,7 @@ obj.removeItem(1);
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -3005,7 +3005,7 @@ This function is to show the tab control.
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -3058,7 +3058,7 @@ obj.show();
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -3148,7 +3148,7 @@ index</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -3201,7 +3201,7 @@ obj.showItem(1);
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -3351,7 +3351,7 @@ isInteraction</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -3492,7 +3492,7 @@ isInteraction</td>
     <div id="pizza" style="background-color: #F5F5F5">
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="pizza">
-        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxBeforeLoad)="ajaxBeforeLoad($event)">
+        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxBeforeLoad)="ajaxBeforeLoad($event)">
             <ul>
                 <li>
                     <a href="content/cornSpinach.html">Corn & Spinach </a></li>
@@ -3505,7 +3505,7 @@ isInteraction</td>
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="sandwich">
-        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxBeforeLoad)="ajaxBeforeLoad($event)">
+        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxBeforeLoad)="ajaxBeforeLoad($event)">
             <ul>
                 <li>
                     <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
@@ -3531,7 +3531,7 @@ import { ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './scrolltab.component.html',
+    templateUrl: './tab.component.html',
     styleUrls: ['./tab.component.css'],
     encapsulation: ViewEncapsulation.None,
 })
@@ -3540,7 +3540,7 @@ export class ScrollTabComponent {
 
 contentType: any;
 
-asyn: any;
+async: any;
     cache: any;
     data: Object;
     type: any;
@@ -3555,7 +3555,7 @@ this.dataType= "html";
 this.contentType= "html";
 
 
-this.asyn= true;
+this.async= true;
     }
     ajaxBeforeLoad(args){
 
@@ -3575,7 +3575,7 @@ The file ‘**cornSpinach.html**’ content is as follows.
             Rate    : $70<br />
             Ingredients : cheese, sweet corn &amp; green capsicums.
                 <br />
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
+            Description: Small pizza bases are topped with spinach and Paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
         </div>
     </div>
 
@@ -3690,7 +3690,7 @@ URL</td>
     <div id="pizza" style="background-color: #F5F5F5">
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="pizza">
-        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxError)="ajaxError($event)">
+        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxError)="ajaxError($event)">
             <ul>
                 <li>
                     <a href="content/cornSpinach.html">Corn & Spinach </a></li>
@@ -3703,7 +3703,7 @@ URL</td>
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="sandwich">
-        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxError)="ajaxError($event)">
+        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxError)="ajaxError($event)">
             <ul>
                 <li>
                     <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
@@ -3729,7 +3729,7 @@ import { ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './scrolltab.component.html',
+    templateUrl: './tab.component.html',
     styleUrls: ['./tab.component.css'],
     encapsulation: ViewEncapsulation.None,
 })
@@ -3738,7 +3738,7 @@ export class ScrollTabComponent {
 
 contentType: any;
 
-asyn: any;
+async: any;
     cache: any;
     data: Object;
     type: any;
@@ -3753,7 +3753,7 @@ this.dataType= "html";
 this.contentType= "html";
 
 
-this.asyn= true;
+this.async= true;
     }
     ajaxError(args){}
 } 
@@ -3771,7 +3771,7 @@ The file ‘**cornSpinach.html**’ content is as follows.
             Rate    : $70<br />
             Ingredients : cheese, sweet corn &amp; green capsicums.
                 <br />
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
+            Description: Small pizza bases are topped with spinach and Paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
         </div>
     </div>
 
@@ -3910,7 +3910,7 @@ isInteraction</td>
     <div id="pizza" style="background-color: #F5F5F5">
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="pizza">
-        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxLoad)="ajaxLoad($event)">
+        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxLoad)="ajaxLoad($event)">
             <ul>
                 <li>
                     <a href="content/cornSpinach.html">Corn & Spinach </a></li>
@@ -3923,7 +3923,7 @@ isInteraction</td>
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="sandwich">
-        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxLoad)="ajaxLoad($event)">
+        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxLoad)="ajaxLoad($event)">
             <ul>
                 <li>
                     <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
@@ -3949,7 +3949,7 @@ import { ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './scrolltab.component.html',
+    templateUrl: './tab.component.html',
     styleUrls: ['./tab.component.css'],
     encapsulation: ViewEncapsulation.None,
 })
@@ -3958,7 +3958,7 @@ export class ScrollTabComponent {
 
 contentType: any;
 
-asyn: any;
+async: any;
     cache: any;
     data: Object;
     type: any;
@@ -3973,7 +3973,7 @@ this.dataType= "html";
 this.contentType= "html";
 
 
-this.asyn= true;
+this.async= true;
     }
     ajaxLoad(args){
         
@@ -3993,7 +3993,7 @@ The file ‘**cornSpinach.html**’ content is as follows.
             Rate    : $70<br />
             Ingredients : cheese, sweet corn &amp; green capsicums.
                 <br />
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
+            Description: Small pizza bases are topped with spinach and Paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
         </div>
     </div>
 
@@ -4114,7 +4114,7 @@ content</td>
     <div id="pizza" style="background-color: #F5F5F5">
         <p>Pizza cooked to perfection tossed with milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="pizza">
-        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxSuccess)="ajaxSuccess($event)">
+        <ej-tab id="pizza" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxSuccess)="ajaxSuccess($event)">
             <ul>
                 <li>
                     <a href="content/cornSpinach.html">Corn & Spinach </a></li>
@@ -4127,7 +4127,7 @@ content</td>
     <div id="sandwich" style="background-color: #F5F5F5">
         <p>Sandwich cooked to perfection tossed with bread, milk, vegetables, potatoes, poultry, 100% pure mutton, and cheese - and in creating nutritious and tasty meals to maintain good health.</p>
         <div id="sandwich">
-        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="asyn" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxSuccess)="ajaxSuccess($event)">
+        <ej-tab id="sandwich" [ajaxSettings.dataType]="dataType" [ajaxSettings.contentType]="contentType" [ajaxSettings.async]="async" [ajaxSettings.data]="data" [ajaxSettings.type]="type" [ajaxSettings.cache]="cache" (ajaxSuccess)="ajaxSuccess($event)">
             <ul>
                 <li>
                     <a href="Content/gardenVeggie.html">Garden Veggie </a></li>
@@ -4153,7 +4153,7 @@ import { ViewEncapsulation } from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './scrolltab.component.html',
+    templateUrl: './tab.component.html',
     styleUrls: ['./tab.component.css'],
     encapsulation: ViewEncapsulation.None,
 })
@@ -4162,7 +4162,7 @@ export class ScrollTabComponent {
 
 contentType: any;
 
-asyn: any;
+async: any;
     cache: any;
     data: Object;
     type: any;
@@ -4177,7 +4177,7 @@ this.dataType= "html";
 this.contentType= "html";
 
 
-this.asyn= true;
+this.async= true;
     }
     ajaxSuccess(args){}
 } 
@@ -4195,7 +4195,7 @@ The file ‘**cornSpinach.html**’ content is as follows.
             Rate    : $70<br />
             Ingredients : cheese, sweet corn &amp; green capsicums.
                 <br />
-            Description: Small pizza bases are topped with spinach and paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
+            Description: Small pizza bases are topped with spinach and Paneer and fresh cream, a nice layer of mozzarella cheese. This is baked until the cheese is all hot and gooey.                   
         </div>
     </div>
 
@@ -4333,7 +4333,7 @@ isInteraction</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -4446,7 +4446,7 @@ index</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -4553,7 +4553,7 @@ type</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -4659,7 +4659,7 @@ type</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -4779,7 +4779,7 @@ tabContent</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -4893,7 +4893,7 @@ removedTab</td>
         Facebook is an online social networking service headquartered in Menlo Park, California. Its website was launched on February 4, 2004, by Mark Zuckerberg with his Harvard College roommates and fellow students Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes.The founders had initially limited the website's membership to Harvard students, but later expanded it to colleges in the Boston area, the Ivy League, and Stanford University. It gradually added support for students at various other universities and later to high-school students.
     </div>
     <div id="whatsapp">
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>

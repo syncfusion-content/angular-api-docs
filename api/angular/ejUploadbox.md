@@ -130,7 +130,7 @@ Enables the file drag and drop support to the Uploadbox control.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -207,7 +207,7 @@ Selected files are sent to the server handler by using the AJAX Post.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -279,7 +279,7 @@ Uploadbox supports auto uploading of files after the file selection is done.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -350,7 +350,7 @@ Sets the text for each action button.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -521,7 +521,7 @@ Sets the root class for the Uploadbox control theme. This cssClass API helps to 
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -605,7 +605,7 @@ Specifies the custom file details in the dialog popup on initialization.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -796,7 +796,7 @@ Specifies the actions for dialog popup while initialization.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -965,7 +965,7 @@ Displays the Uploadbox dialog at the given X and Y positions. X: Dialog sets the
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1041,7 +1041,7 @@ Property for applying the text to the Dialog title and content headers.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1208,7 +1208,7 @@ The dropAreaText is displayed when the drag and drop support is enabled in the U
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1283,7 +1283,7 @@ Specifies the dropAreaHeight when the drag and drop support is enabled in the Up
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1359,7 +1359,7 @@ Specifies the dropAreaWidth when the drag and drop support is enabled in the Upl
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1434,7 +1434,7 @@ Based on the property value, Uploadbox is enabled or disabled.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1510,7 +1510,7 @@ Sets the right-to-left direction property for the Uploadbox control.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1585,7 +1585,7 @@ Only the files with the specified extension is allowed to upload. This is mentio
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1662,7 +1662,7 @@ Only the files with the specified extension is denied for upload. This is mentio
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1742,7 +1742,7 @@ N> fileSize represents the size of the individual file.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1818,7 +1818,7 @@ Sets the height of the browse button.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1869,7 +1869,7 @@ Specifies the list of HTML attributes to be added to uploadbox control.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1941,7 +1941,7 @@ Configures the culture data and sets the culture to the Uploadbox.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2040,7 +2040,7 @@ Enables multiple file selection for upload.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2117,7 +2117,7 @@ You can push the file to the Uploadbox in the client-side of the XHR supported b
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2194,7 +2194,7 @@ Specifies the remove action to be performed after the file uploading is complete
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2272,7 +2272,7 @@ Specifies the save action to be performed after the file is pushed for uploading
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2350,7 +2350,7 @@ Enables the browse button support to the Uploadbox control.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2426,7 +2426,7 @@ Specifies the file details to be displayed when selected for uploading. This can
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2476,7 +2476,7 @@ Specifies the file details to be displayed when selected for uploading. This can
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2549,7 +2549,7 @@ Sets the name for the Uploadbox control. This API helps to Map the action in cod
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2626,7 +2626,7 @@ Sets the width of the browse button.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2696,7 +2696,7 @@ The destroy method destroys the control and brings the control to a pre-init sta
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2735,7 +2735,7 @@ export class DefaultComponent {
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2802,7 +2802,7 @@ Disables the Uploadbox control
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2844,7 +2844,7 @@ $("#uploadDefault").ejUploadBox("disable");
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2910,7 +2910,7 @@ Enables the Uploadbox control
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2952,7 +2952,7 @@ export class DefaultComponent {
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3001,7 +3001,7 @@ Refresh the Uploadbox control
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3043,7 +3043,7 @@ export class DefaultComponent {
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3095,7 +3095,7 @@ Upload the selected files.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3137,7 +3137,7 @@ export class DefaultComponent {
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3233,7 +3233,7 @@ Fires when the upload progress beforeSend.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3325,7 +3325,7 @@ Fires when the upload progress begins.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3411,7 +3411,7 @@ Fires when the upload progress is cancelled.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3513,7 +3513,7 @@ Fires when the file upload progress is completed.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3618,7 +3618,7 @@ Fires when the file upload progress is succeeded.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3701,7 +3701,7 @@ Fires when the Uploadbox control is created.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3783,7 +3783,7 @@ Fires when the Uploadbox control is destroyed.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3876,7 +3876,7 @@ Fires when the Upload process ends in Error.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -3961,7 +3961,7 @@ Fires when the file is selected for upload successfully.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -4049,7 +4049,7 @@ Fires when the file is uploading.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -4135,7 +4135,7 @@ Fires when the uploaded file is removed successfully.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {

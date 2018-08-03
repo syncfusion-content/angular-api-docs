@@ -50,7 +50,7 @@ The TagCloud allows the user to display a list of links or tags with a structure
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -61,19 +61,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -163,7 +163,7 @@ Specify the CSS class to button to achieve custom theme.
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -174,19 +174,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -260,7 +260,7 @@ The dataSource contains the list of data to display in a cloud format. Each data
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -271,19 +271,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -346,7 +346,7 @@ Sets the TagCloud and tag items direction as right to left alignment.
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -357,19 +357,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -432,7 +432,7 @@ Defines the mapping fields for the data items of the TagCloud.
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -444,19 +444,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -580,7 +580,7 @@ Specifies the list of HTML attributes to be added to TagCloud control.
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -591,19 +591,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -687,7 +687,7 @@ List</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -698,19 +698,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -773,7 +773,7 @@ Sets the maximum font size value for the tag items. The font size for the tag it
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -784,19 +784,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -859,7 +859,7 @@ Sets the minimum font size value for the tag items. The font size for the tag it
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -870,19 +870,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -945,7 +945,7 @@ Define the query to retrieve the data from online server. The query is used only
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1020,7 +1020,7 @@ Shows or hides the TagCloud title. When this set to false, it hides the TagCloud
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1031,19 +1031,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1106,7 +1106,7 @@ Sets the title image for the TagCloud. To show the title image, the showTitle pr
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1118,19 +1118,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1194,7 +1194,7 @@ Sets the title text for the TagCloud. To show the title text, the showTitle prop
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1205,19 +1205,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1293,7 +1293,7 @@ string</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1304,19 +1304,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1350,7 +1350,7 @@ obj.insert(tag);
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1361,19 +1361,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1456,7 +1456,7 @@ number</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1467,19 +1467,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1513,7 +1513,7 @@ obj.insertAt(tag,2);
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1524,19 +1524,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1608,7 +1608,7 @@ name</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1619,19 +1619,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1664,7 +1664,7 @@ obj.removeAt("Google");
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1675,19 +1675,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1759,7 +1759,7 @@ position</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1770,19 +1770,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1815,7 +1815,7 @@ obj.removeAt(2);
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1826,19 +1826,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -1958,7 +1958,7 @@ URL</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1969,19 +1969,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -2081,7 +2081,7 @@ type</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2092,19 +2092,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -2204,7 +2204,7 @@ type</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2215,19 +2215,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -2340,7 +2340,7 @@ URL</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2351,19 +2351,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
@@ -2475,7 +2475,7 @@ URL</td>
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'sd-home',
+    selector: 'ej-app',
     templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -2486,19 +2486,19 @@ export class DefaultComponent {
             { text: 'Google', url: 'http://www.google.co.in', frequency: 12 },
             { text: 'a2zwebhelp', url: 'http://www.a2zwebhelp.com', frequency: 3 },
             { text: 'Arts Technica', url: 'http://arstechnica.com/', frequency: 8 },
-            { text: 'Bxslider', url: 'http://bxslider.com/examples', frequency: 2 },
+            { text: 'Slider', url: 'http://bxslider.com/examples', frequency: 2 },
             { text: 'Yahoo', url: 'http://in.yahoo.com/', frequency: 12 },
             { text: 'Facebook', url: 'https://www.facebook.com/', frequency: 5 },
-            { text: 'Blogspot', url: 'http://www.blogspot.com/', frequency: 8 },
+            { text: 'Blog', url: 'http://www.blogspot.com/', frequency: 8 },
             { text: 'Microsoft', url: 'http://www.microsoft.com/', frequency: 20 },
             { text: 'Amazon.com', url: 'http://www.amazon.com/', frequency: 1 },
             { text: 'MSN', url: 'http://www.msn.com/', frequency: 3 },
             { text: 'Engadget', url: 'http://www.engadget.com/', frequency: 5 },
             { text: 'LinkedIn', url: 'http://www.linkedIn.com/', frequency: 9 },
             { text: 'Twitter', url: 'http://www.Twitter.com/', frequency: 0 },
-            { text: 'Menucool', url: 'http://www.menucool.com', frequency: 3 },
+            { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
-            { text: 'Valleywag', url: 'http://valleywag.gawker.com/', frequency: 6 },
+            { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
             { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 

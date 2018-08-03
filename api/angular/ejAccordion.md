@@ -37,7 +37,7 @@ The Accordion control is an interface where lists of items can be collapsed or e
         <a href="#">WhatsApp</a>
     </h3>
     <div>
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -90,7 +90,7 @@ Specifies the ajaxSettings option to load the content to the accordion control.
         <a href="#">WhatsApp</a>
     </h3>
     <div>
-        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smartphones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
+        WhatsApp Messenger is a proprietary cross-platform instant messaging client for smart phones that operates under a subscription business model. It uses the Internet to send text messages, images, video, user location and audio media messages to other users using standard cellular mobile numbers.
         As of February 2016, WhatsApp had a user base of up to one billion,[10] making it the most globally popular messaging application.
         WhatsApp Inc., based in Mountain View, California, was acquired by Facebook Inc. on February 19, 2014, for approximately US$19.3 billion.
     </div>
@@ -291,7 +291,7 @@ Sets the root CSS class for Accordion theme, which is used customize.
 
 {% highlight html %}
 
-<ej-accordion id="accordion" [cssClass]="customcss">
+<ej-accordion id="accordion" [cssClass]="custom">
    <h3>
            <a href="#">ASP.NET</a></h3>
        <div>
@@ -326,14 +326,14 @@ export class DefaultComponent { }
 {% highlight html %}
 
 <style class="cssStyles">
-    .customcss {
+    .custom {
         font-style: italic;
         text-align: justify;
     }
-    .customcss span.e-icon {
+    .custom span.e-icon {
         display: none !important;
     }
-    .customcss h3 {
+    .custom h3 {
         text-decoration: underline;
         text-align: center;
     }

@@ -429,7 +429,7 @@ It allows to define the characteristics of the progressBar control. It will help
 
 {% highlight html %}
 
-<ej-progressbar value="45" height="20" text="45%" [htmlAttributes]="htmlattributes"></ej-progressbar>
+<ej-progressbar value="45" height="20" text="45%" [htmlAttributes]="html"></ej-progressbar>
 
 {% endhighlight %}
 
@@ -446,9 +446,9 @@ import { ViewEncapsulation } from '@angular/core';
 })
 export class DefaultComponent{
 
- htmlattributes: any;
+ html: any;
   constructor() {
-      this.htmlattributes={title: "Demo"};
+      this.html={title: "Demo"};
   }
 }
 

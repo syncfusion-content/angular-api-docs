@@ -302,7 +302,7 @@ Specifies the list of HTML attributes to be added to rating control.
 
 {% highlight html %}
 
-<ej-rating [value]="rate" [htmlAttributes]="htmlattributes" > 
+<ej-rating [value]="rate" [htmlAttributes]="attributes" > 
 </ej-rating>
 
 {% endhighlight %}
@@ -321,10 +321,10 @@ import {ViewEncapsulation} from '@angular/core';
 })
 export class DefaultComponent {
     rate: number;
-    htmlattributes: any;
+    attributes: any;
     constructor() {
         this.rate = 3;
-        this.htmlattributes={"aria-label":"rating"};
+        this.attributes={"aria-label":"rating"};
     }
 }
 
@@ -1385,7 +1385,7 @@ value</td>
 <ej-rating id="rating" [value]="rate" > 
 </ej-rating>
 
-<button type="button" (click)="OnClick()">Setvalue</button>
+<button type="button" (click)="OnClick()">Set value</button>
 
 {% endhighlight %}
 
@@ -1425,7 +1425,7 @@ obj.setValue(5);
 <ej-rating id="rating" [value]="rate" > 
 </ej-rating>
 
-<button type="button" (click)="OnClick()">Setvalue</button>
+<button type="button" (click)="OnClick()">Set value</button>
 
 {% endhighlight %}
 
@@ -2115,7 +2115,7 @@ event</td>
 
 {% highlight html %}
 
-<ej-rating id="rating" [value]="rate" (mouseover)="mousemove($event)" > 
+<ej-rating id="rating" [value]="rate" (mouseover)="mouse($event)" > 
 </ej-rating>
 
 {% endhighlight %}
@@ -2138,7 +2138,7 @@ export class DefaultComponent {
         this.rate = 3;
     }
 
-    mousemove(args){
+    mouse(args){
 
 
 
