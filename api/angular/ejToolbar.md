@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejToolbar Widget
 description: API reference for ejToolbar
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Toolbar, ejToolbar, syncfusion, Toolbar api 
 ---
 
@@ -29,7 +29,7 @@ The Toolbar control supports displaying a list of tools within a web page. This 
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -45,47 +45,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -136,7 +136,7 @@ Sets the root CSS class for Toolbar control to achieve the custom theme.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" cssClass="cssClass" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" cssClass="cssClass" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -152,47 +152,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -236,7 +236,7 @@ Specifies dataSource value for the Toolbar control during initialization.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -252,47 +252,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -316,7 +316,7 @@ Disables an Item or set of Items that are enabled in the Toolbar
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [disabledItemIndices]="disabledItemIndices"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [disabledItemIndices]="disabledItemIndices"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -332,48 +332,48 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     disabledItemIndices: array;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
         this.disabledItemIndices = [1,2];
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -406,7 +406,7 @@ Specifies the Toolbar control state.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [enabled]=true  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [enabled]=true  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -422,47 +422,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -486,7 +486,7 @@ Enables an Item or set of Items that are disabled in the Toolbar
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [disabledItemIndices]="disabledItemIndices" [enabledItemIndices]="enabledItemIndices" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [disabledItemIndices]="disabledItemIndices" [enabledItemIndices]="enabledItemIndices" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -502,7 +502,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     disabledItemIndices: array;
@@ -510,34 +510,34 @@ export class DefaultComponent {
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
@@ -545,7 +545,7 @@ export class DefaultComponent {
         this.separator = true;
         this.disabledItemIndices = [1,2,3,4,5,6,7];
         this.enabledItemIndices = [1,2];
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -578,7 +578,7 @@ Specifies enableRTL property to align the Toolbar control from right to left dir
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [enableRTL]=true [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [enableRTL]=true [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -594,47 +594,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -670,7 +670,7 @@ Allows to separate the each UL items in the Toolbar control.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -686,47 +686,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -762,7 +762,7 @@ Specifies the mapping fields for the data items of the Toolbar
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -778,46 +778,46 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -920,7 +920,7 @@ Defines the text content for the tag.
 
 
 ### fields.tooltipText `string`
-{:#members:fields-tooltiptext}
+{:#members:fields-tooltip}
 
 
 
@@ -969,7 +969,7 @@ Specifies the height of the Toolbar.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [height]="height" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [height]="height" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -985,48 +985,48 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     height: number;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
         this.height = 30;
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1050,7 +1050,7 @@ Specifies the list of HTML attributes to be added to toolbar control.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [htmlAttributes]="htmlattributes" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [htmlAttributes]="attributes" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -1066,48 +1066,48 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
-    htmlattributes: Object;
+    attributes: Object;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
-        this.htmlattributes={title:"demo"};
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.attributes={title:"demo"};
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1141,7 +1141,7 @@ Specifies whether the Toolbar control is need to be show or hide.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [hide]=true [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [hide]=true [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -1157,47 +1157,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1440,7 +1440,7 @@ export class DefaultComponent {
                             { id: "button5", text: "Button5",group:"group2",spriteCssClass: "editTools round select",tooltipText:"button5",imageUrl:"content/images/toolbar/Check.png",imageAttributes:{width: 20, height: 20}}];
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1543,7 +1543,7 @@ Defines the text content for the tag.
 
 
 ### Items.tooltipText `string`
-{:#members:Items-tooltiptext}
+{:#members:Items-tooltip}
 
 
 
@@ -1617,7 +1617,7 @@ Vertical</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" orientation="vertical" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" orientation="vertical" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -1633,47 +1633,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1708,7 +1708,7 @@ Specifies the query to retrieve the data from the online server. The query is us
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="dataManager" id="toolbar" [query]="query" [fields]="fieldsvalues" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="dataManager" id="toolbar" [query]="query" [fields]="fields" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -1724,7 +1724,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     dataManager: any;
     query: any;
     separator: boolean;
@@ -1737,7 +1737,7 @@ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
  // Query creation.
 this.query = ej.Query()
                 .from("Orders").take(6);
-        this.fieldsvalues = { tooltipText: 'EmployeeID', text:'CustomerID', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'EmployeeID', text:'CustomerID', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1797,7 +1797,7 @@ Inline</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" responsiveType="inline" [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" responsiveType="inline" [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -1813,47 +1813,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1890,7 +1890,7 @@ Displays the Toolbar with rounded corners.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues" [showRoundedCorner]=true  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields" [showRoundedCorner]=true  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -1906,47 +1906,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -1981,7 +1981,7 @@ Specifies the width of the Toolbar.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -1997,47 +1997,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
 }
 
@@ -2184,7 +2184,7 @@ ID</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Deselect Item</button>
 
@@ -2201,47 +2201,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2275,7 +2275,7 @@ Allows you to destroy the Toolbar widget.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Destroy</button>
 
@@ -2292,47 +2292,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2363,7 +2363,7 @@ To disable all items in the Toolbar control.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Disable</button>
 
@@ -2380,47 +2380,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2468,7 +2468,7 @@ element</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Disable</button>
 
@@ -2485,47 +2485,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2575,7 +2575,7 @@ ID</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Disable</button>
 
@@ -2592,47 +2592,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2664,7 +2664,7 @@ Enable the Toolbar if it is in disabled state.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">enable</button>
 
@@ -2681,47 +2681,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2771,7 +2771,7 @@ element</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Enable Item</button>
 
@@ -2788,47 +2788,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2878,7 +2878,7 @@ ID</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">EnableItem</button>
 
@@ -2895,47 +2895,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -2967,7 +2967,7 @@ To hide the Toolbar
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Hide</button>
 
@@ -2984,47 +2984,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -3074,7 +3074,7 @@ element</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Remove Item</button>
 
@@ -3091,47 +3091,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -3181,7 +3181,7 @@ ID</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Remove Item</button>
 
@@ -3198,47 +3198,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -3289,7 +3289,7 @@ element</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Remove Item</button>
 
@@ -3306,47 +3306,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -3397,7 +3397,7 @@ ID</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Remove Item</button>
 
@@ -3414,47 +3414,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -3487,7 +3487,7 @@ To show the Toolbar.
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px"></ej-toolbar>
 </div>
 <button type="button" (click)="OnClick()"  style="margin-left: 35%;">Show</button>
 
@@ -3504,47 +3504,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     OnClick(){
 
@@ -3633,7 +3633,7 @@ status</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (ejclick)="click($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (ejclick)="click($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -3649,47 +3649,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     click(args){
 
@@ -3754,7 +3754,7 @@ type</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (create)="create($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (create)="create($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -3770,47 +3770,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     create(args){
 
@@ -3873,7 +3873,7 @@ type</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (focusOut)="focusOut($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (focusOut)="focusOut($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -3889,47 +3889,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     focusout(args){
 
@@ -3993,7 +3993,7 @@ type</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (destroy)="destroy($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (destroy)="destroy($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -4009,47 +4009,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     destroy(args){
 
@@ -4131,7 +4131,7 @@ status</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (itemHover)="itemHover($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (itemHover)="itemHover($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -4147,47 +4147,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     itemHover(args){
 
@@ -4271,7 +4271,7 @@ status</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (itemLeave)="itemLeave($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (itemLeave)="itemLeave($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -4287,47 +4287,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     itemLeave(args){
 
@@ -4411,7 +4411,7 @@ currentTarget</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (overflowOpen)="overflowOpen($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (overflowOpen)="overflowOpen($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -4427,47 +4427,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     overflowOpen(args){
 
@@ -4550,7 +4550,7 @@ currentTarget</td>
 {% highlight html %}
 
 <div id="toolbar_controls" style="margin-left: 35%;">
-<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fieldsvalues"  [enableSeparator]="separator" width="250px" (overflowClose)="overflowClose($event)"></ej-toolbar>
+<ej-toolbar  [dataSource]="data" id="toolbar" [fields]="fields"  [enableSeparator]="separator" width="250px" (overflowClose)="overflowClose($event)"></ej-toolbar>
 </div>
 
 {% endhighlight %}
@@ -4566,47 +4566,47 @@ import { Component, ViewEncapsulation } from '@angular/core';
     encapsulation: ViewEncapsulation.None
 })
 export class DefaultComponent {
-    fieldsvalues: Object;
+    fields: Object;
     data: Array<any>;
     separator: boolean;
     constructor() {
         this.data = [
             {
-                empid: '1', tooltiptext: 'New mail',
-                spriteCss: 'mailtools movetofolder',
+                id: '1', tooltip: 'New mail',
+                spriteCss: 'mail folder',
 
             }, {
-                empid: '2', tooltiptext: 'Calendar',
-                spriteCss: 'mailtools categorize',
+                id: '2', tooltip: 'Calendar',
+                spriteCss: 'mail categorize',
 
             }, {
-                empid: '3', tooltiptext: 'Appointments',
-                spriteCss: 'mailtools flag',
+                id: '3', tooltip: 'Appointments',
+                spriteCss: 'mail flag',
 
             }, {
-                empid: '4', tooltiptext: 'Week',
-                spriteCss: 'mailtools forward',
+                id: '4', tooltip: 'Week',
+                spriteCss: 'mail forward',
 
             }, {
-                empid: '5', tooltiptext: 'Month',
-                spriteCss: 'mailtools newmail',
+                id: '5', tooltip: 'Month',
+                spriteCss: 'mail new',
 
             },
             {
-                empid: '6', tooltiptext: 'Notes',
-                spriteCss: 'mailtools reply',
+                id: '6', tooltip: 'Notes',
+                spriteCss: 'mail reply',
 
             },
             {
-                empid: '7', tooltiptext: 'Deleted',
-                spriteCss: 'mailtools done',
+                id: '7', tooltip: 'Deleted',
+                spriteCss: 'mail done',
 
             }
         ];
 
         this.separator = true;
 
-        this.fieldsvalues = { tooltipText: 'tooltiptext', id: 'empid', spriteCssClass: 'spriteCss' };
+        this.fields = { tooltipText: 'tooltip', id: 'id', spriteCssClass: 'spriteCss' };
     }
     overflowClose(args){
 

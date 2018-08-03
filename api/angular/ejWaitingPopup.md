@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejWaitingPopup Widget
 description: API reference for ejWaitingPopup
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: WaitingPopup, ejWaitingPopup, syncfusion, WaitingPopup api 
 ---
 
@@ -112,7 +112,7 @@ Sets the root class for the WaitingPopup control theme
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -153,7 +153,7 @@ Specifies the list of HTML attributes to be added to waitingpopup control.
    <div class="cols-sample-area"> 
    <div id="parent">
 
-<ej-waitingpopup id="target" target="#parent" [htmlAttributes]="htmlattributes" appendTo="#parent" [showOnInit]="true" ></ej-waitingpopup>  
+<ej-waitingpopup id="target" target="#parent" [htmlAttributes]="attributes" appendTo="#parent" [showOnInit]="true" ></ej-waitingpopup>  
 </div>
 </div>
 </div>
@@ -167,13 +167,13 @@ Specifies the list of HTML attributes to be added to waitingpopup control.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
-    htmlattributes: any;
+    attributes: any;
     constructor() {
-    this.htmlattributes={"aria-label":"waitingpopup"};
+    this.attributes={"aria-label":"waitingpopup"};
     }
  }
 
@@ -240,7 +240,7 @@ Enables or disables the default loading icon.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -312,7 +312,7 @@ Enables the visibility of the WaitingPopup control
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -362,7 +362,7 @@ Specified a selector for elements, within the container.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -406,7 +406,7 @@ Waitingpopup element append to given container element.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -565,7 +565,7 @@ Sets the custom text in the pop-up panel to notify the waiting process
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -630,7 +630,7 @@ To hide the waiting popup
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -667,7 +667,7 @@ obj.hide();
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -732,7 +732,7 @@ Refreshes the WaitingPopup control by resetting the pop-up panel position and co
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -769,7 +769,7 @@ obj.refresh();
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -834,7 +834,7 @@ To show the waiting popup
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -871,7 +871,7 @@ obj.show();
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -971,7 +971,7 @@ type</td>
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
@@ -1059,7 +1059,7 @@ type</td>
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: './default.component.html'
 })
 export class DefaultComponent {
