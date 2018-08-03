@@ -3,7 +3,7 @@ layout: post
 title: ejTooltip
 description: API reference for ejTooltip
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: Tooltip, ejTooltip, syncfusion, Tooltip api
 ---
 
@@ -52,7 +52,7 @@ export class DefaultComponent {
     content: string;
     width: string;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
     }
 }
@@ -120,7 +120,7 @@ export class DefaultComponent {
     content: string;
     width: string;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
     }
 }
@@ -284,7 +284,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -364,7 +364,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -463,7 +463,7 @@ export class DefaultComponent {
     autoCloseTimeout: number:
     constructor() {
         this.autoCloseTimeout = 5000;
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -578,7 +578,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -698,7 +698,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -842,7 +842,7 @@ export class DefaultComponent {
     widthObj: string;
     positionObj: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -936,7 +936,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1038,7 +1038,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1132,7 +1132,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1227,7 +1227,7 @@ export class DefaultComponent {
     positionObj: Object;
     animation: Object;
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1322,7 +1322,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1470,7 +1470,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1566,7 +1566,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1662,7 +1662,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1812,7 +1812,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -1931,7 +1931,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2032,7 +2032,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2148,7 +2148,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2233,7 +2233,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2333,7 +2333,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2418,7 +2418,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2541,7 +2541,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2626,7 +2626,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2756,7 +2756,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2841,7 +2841,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -2978,7 +2978,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -3111,7 +3111,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -3243,7 +3243,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -3375,7 +3375,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -3500,7 +3500,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -3626,7 +3626,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -3758,7 +3758,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -3889,7 +3889,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";
@@ -4021,7 +4021,7 @@ export class DefaultComponent {
     positionObj: Object;
     
     constructor() {
-        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by Ecma International in ECMA-262 and ISO/IEC 16262.';
+        this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standardized by ECMA International in ECMA-262 and ISO/IEC 16262.';
         this.width = '270px';
             this.www = "The World Wide Web (WWW) is an information space where documents and other web resources are identified by URLs, interlinked by hypertext links, and can be accessed via the Internet.";
         this.widthWWW = "40%";

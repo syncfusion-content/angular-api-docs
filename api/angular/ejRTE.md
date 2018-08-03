@@ -3,7 +3,7 @@ layout: post
 title: Properties, Methods and Events of ejRTE Widget
 description: API reference for ejRTE
 documentation: API
-platform: js-api
+platform: angular-api
 keywords: RTE, ejRTE, syncfusion, RTE api  
 ---
 
@@ -285,7 +285,7 @@ This API holds configuration setting for paste cleanup behavior.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
@@ -360,13 +360,13 @@ Sets the colorCode to display the color of the fontColor and backgroundColor in 
 #### Default Value
 
 * ["000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734",
-"632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f","e36c09", "974806"]
+"632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f","e36c09", "974806"]
 
 #### Example
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [colorCode]="colorCode" [(tools)]="tools" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="List" [colorCode]="colorCode" [(tools)]="tools" ></textarea>
      
 {% endhighlight %}
 
@@ -375,21 +375,21 @@ Sets the colorCode to display the color of the fontColor and backgroundColor in 
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     constructor() {
-        this.toolslist =  ["font"];
+        this.List =  ["font"];
         this.tools = {
             font: ["fontColor", "backgroundColor"]
         };
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -412,7 +412,7 @@ The number of columns given are rendered in the color palate popup.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [(toolsList)]="toolslist" [colorCode]="colorCode" [colorPaletteColumns]="colorPaletteColumns" [tools]="tools" [autoFocus]=true [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [(toolsList)]="List" [colorCode]="colorCode" [colorPaletteColumns]="colorPaletteColumns" [tools]="tools" [autoFocus]=true [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -422,25 +422,25 @@ The number of columns given are rendered in the color palate popup.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["font"];
+        this.List =  ["font"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"]
         };
         this.colorPaletteColumns=10;
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -465,7 +465,7 @@ The number of rows given are rendered in the color palate popup.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [(toolsList)]="toolslist" [colorCode]="colorCode" [colorPaletteRows]="colorPaletteRows" [tools]="tools" [autoFocus]=true [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [(toolsList)]="List" [colorCode]="colorCode" [colorPaletteRows]="colorPaletteRows" [tools]="tools" [autoFocus]=true [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -475,25 +475,25 @@ The number of rows given are rendered in the color palate popup.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteRows: number;
     constructor() {
-        this.toolslist =  ["font"];
+        this.List =  ["font"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"]
         };
         this.colorPaletteRows=10;
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646","fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -826,7 +826,7 @@ This API allows to enable url and fileName for pdf export.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [exportToPdfSettings]="exportToPdfSettings" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [exportToPdfSettings]="exportToPdfSettings" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -836,18 +836,18 @@ This API allows to enable url and fileName for pdf export.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -862,7 +862,7 @@ importExport: ["import", "wordExport", "pdfExport"],
 
 fileName: "Sample"};
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -888,7 +888,7 @@ This API is used to receive the server-side handler for export related operation
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [exportToPdfSettings]="exportToPdfSettings" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [exportToPdfSettings]="exportToPdfSettings" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -898,18 +898,18 @@ This API is used to receive the server-side handler for export related operation
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -924,7 +924,7 @@ importExport: ["import", "wordExport", "pdfExport"],
 
 fileName: "Sample"};
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -946,7 +946,7 @@ Specifies the file name for the exported pdf file.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [exportToPdfSettings]="exportToPdfSettings" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [exportToPdfSettings]="exportToPdfSettings" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -956,18 +956,18 @@ Specifies the file name for the exported pdf file.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -982,7 +982,7 @@ importExport: ["import", "wordExport", "pdfExport"],
 
 fileName: "Sample"};
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -1009,7 +1009,7 @@ This API allows to enable url and fileName for word export.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [exportToWordSettings]="exportToPdfSettings" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [exportToWordSettings]="exportToPdfSettings" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -1019,18 +1019,18 @@ This API allows to enable url and fileName for word export.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -1045,7 +1045,7 @@ importExport: ["import", "wordExport", "pdfExport"],
 
 fileName: "Sample"};
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -1072,7 +1072,7 @@ This API is used to receive the server-side handler for export related operation
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [exportToWordSettings]="exportToPdfSettings" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [exportToWordSettings]="exportToPdfSettings" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -1082,18 +1082,18 @@ This API is used to receive the server-side handler for export related operation
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -1108,7 +1108,7 @@ importExport: ["import", "wordExport", "pdfExport"],
 
 fileName: "Sample"};
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -1131,7 +1131,7 @@ Specifies the file name for the exported word file.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [exportToWordSettings]="exportToPdfSettings" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [exportToWordSettings]="exportToPdfSettings" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -1141,18 +1141,18 @@ Specifies the file name for the exported word file.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -1167,7 +1167,7 @@ importExport: ["import", "wordExport", "pdfExport"],
 
 fileName: "Sample"};
         this.colorCode= [
-                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
+                    "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734","632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646",  "fbd5b5", "fac08f",
                     "e36c09", "974806"
             ];
     }
@@ -1234,7 +1234,7 @@ This API allows to enable the file browser support in the RTE control to browse,
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [(toolsList)]="toolslist" [tools]="tools" [fileBrowser]="fileBrowser" [autoFocus]=true [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [(toolsList)]="List" [tools]="tools" [fileBrowser]="fileBrowser" [autoFocus]=true [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -1244,17 +1244,17 @@ This API allows to enable the file browser support in the RTE control to browse,
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fileBrowser: any;
     content: string;
    
     constructor() {
-        this.toolslist =  ["images"];
+        this.List =  ["images"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             images: ["image"]
@@ -1320,7 +1320,7 @@ Sets the fontName in the RTE.
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools"  [fontName]="fonts" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="List" [(tools)]="tools"  [fontName]="fonts" ></textarea>
 
      
 {% endhighlight %}
@@ -1330,11 +1330,11 @@ Sets the fontName in the RTE.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     constructor() {
@@ -1345,7 +1345,7 @@ export class RTEComponent {
                 { text: "Roboto", value: "Roboto" },
                 { text: "Great vibes", value: "Great Vibes,cursive" }
          ];
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.List = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
    
@@ -1372,7 +1372,7 @@ Sets the fontSize in the RTE.
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools"  [fontSize]="fonts" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="List" [(tools)]="tools"  [fontSize]="fonts" ></textarea>
 
      
 {% endhighlight %}
@@ -1382,11 +1382,11 @@ Sets the fontSize in the RTE.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     constructor() {
@@ -1420,7 +1420,7 @@ export class RTEComponent {
                     value: "7"
                 }
          ];
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.List = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
    
@@ -1449,7 +1449,7 @@ Sets the format in the RTE.
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools"  [format]="format" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="List" [(tools)]="tools"  [format]="format" ></textarea>
 
      
 {% endhighlight %}
@@ -1459,11 +1459,11 @@ Sets the format in the RTE.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     format:any;
     constructor() {
@@ -1477,7 +1477,7 @@ export class RTEComponent {
                 { text: "Heading 5", value: "<h5>", spriteCssClass: "e-h5" }, 
                 { text: "Heading 6", value: "<h6>", spriteCssClass: "e-h6" }
          ];
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.List = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
    
@@ -1540,7 +1540,7 @@ Specifies the HTML Attributes of the ejRTE.
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools"  [htmlAttributes]="htmlattributes" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="List" [(tools)]="tools"  [htmlAttributes]="html" ></textarea>
 
      
 {% endhighlight %}
@@ -1550,17 +1550,17 @@ Specifies the HTML Attributes of the ejRTE.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
-    htmlattributes: Object;
+    html: Object;
     
     constructor() {
-        this.htmlattributes={readOnly: "readOnly"};
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.html={readOnly: "readOnly"};
+        this.List = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
    
@@ -1583,7 +1583,7 @@ Sets the given attributes to the iframe body element.
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="toolslist" [(tools)]="tools"  [iframeAttributes]="iframeattributes" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="List" [(tools)]="tools"  [iframeAttributes]="iframe" ></textarea>
 
      
 {% endhighlight %}
@@ -1593,17 +1593,17 @@ Sets the given attributes to the iframe body element.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
-    iframeattributes: Object;
+    iframe: Object;
     
     constructor() {
         this.iframeAttributes = { style :"color:#5C5C5C" };
-        this.toolslist = ["links", "lists", "doAction", "style", "images"];
+        this.List = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
    
@@ -1626,7 +1626,7 @@ This API allows the image browser to support in the RTE control to browse, creat
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [(toolsList)]="toolslist" [tools]="tools" [imageBrowser]="imageBrowser" [autoFocus]=true [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [(toolsList)]="List" [tools]="tools" [imageBrowser]="imageBrowser" [autoFocus]=true [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -1636,16 +1636,16 @@ This API allows the image browser to support in the RTE control to browse, creat
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     content: string;
     imageBrowser: any;
     constructor() {
-        this.toolslist =  ["images"];
+        this.List =  ["images"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             images: ["image"]
@@ -1701,7 +1701,7 @@ This API allows to enable the url for connecting to RTE import.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px"  [importSettings]="importSettings" [(toolsList)]="toolslist" [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px"  [importSettings]="importSettings" [(toolsList)]="List" [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -1711,16 +1711,16 @@ This API allows to enable the url for connecting to RTE import.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;    
     content: string;
     importSettings: any;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -1755,7 +1755,7 @@ This API is used to receive the server-side handler for import operations.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px"  [importSettings]="importSettings" [(toolsList)]="toolslist" [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px"  [importSettings]="importSettings" [(toolsList)]="List" [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -1765,16 +1765,16 @@ This API is used to receive the server-side handler for import operations.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;    
     content: string;
     importSettings: any;
     constructor() {
-        this.toolslist =  ["font","importExport"];
+        this.List =  ["font","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             font: ["fontColor", "backgroundColor"],
@@ -1847,7 +1847,7 @@ Sets the culture in the RTE when you set the localization values are needs to be
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" locale="es-ES" [(value)]="content" [(toolsList)]="toolslist" [isResponsive]="responsive">
+<textarea ej-rte width="100%" height="300px" locale="es-ES" [(value)]="content" [(toolsList)]="List" [isResponsive]="responsive">
 </textarea>
 
 {% endhighlight %}
@@ -1864,11 +1864,11 @@ declare var ej: any;
 export class LocalizationComponent {
   content: string;
   responsive: boolean;
-  toolslist: any;
+  List: any;
   constructor() {
     this.responsive = true;
     this.content = 'Description: The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content from RTE';
-    this.toolslist = ['formatStyle', 'font', 'style', 'effects', 'alignment', 'lists', 'indenting', 'clipboard', 'doAction', 'clear', 'casing', 'customTools', 'print'];
+    this.List = ['formatStyle', 'font', 'style', 'effects', 'alignment', 'lists', 'indenting', 'clipboard', 'doAction', 'clear', 'casing', 'customTools', 'print'];
   }
 }
 ej.RTE.Locale['es-ES'] = {
@@ -2771,7 +2771,7 @@ The given number of columns render the insert table pop.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [tableColumns]="tableColumns" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [tableColumns]="tableColumns" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -2781,17 +2781,17 @@ The given number of columns render the insert table pop.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     tableColumns: string;
     content: string;
     
     constructor() {
-        this.toolslist =  ["font","links", "lists", "doAction","tables", "style", "images","importExport"];
+        this.List =  ["font","links", "lists", "doAction","tables", "style", "images","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], 
@@ -2829,7 +2829,7 @@ The given number of rows render the insert table pop.
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [tableRows]="tableColumns" [(toolsList)]="toolslist" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [tableRows]="tableColumns" [(toolsList)]="List" [colorCode]="colorCode"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -2839,17 +2839,17 @@ The given number of rows render the insert table pop.
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     tableRows: string;
     content: string;
     
     constructor() {
-        this.toolslist =  ["font","links", "lists", "doAction","tables", "style", "images","importExport"];
+        this.List =  ["font","links", "lists", "doAction","tables", "style", "images","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], 
@@ -2899,7 +2899,7 @@ print:["print"]
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [(toolsList)]="toolslist"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [(toolsList)]="List"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -2910,7 +2910,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './alltools.component.html'
+    templateUrl: './tools.component.html'
 })
 export class AllToolsComponent {
     content: string;
@@ -2940,12 +2940,12 @@ export class AllToolsComponent {
             customUnorderedList: [{
                 name: 'unOrderInsert',
                 tooltip: 'Custom UnOrderList',
-                css: 'e-rte-toolbar-icon e-rte-unlistitems customUnOrder'
+                css: 'e-rte-toolbar-icon e-rte-unlisted customUnOrder'
             }],
             customOrderedList: [{
                 name: 'orderInsert',
                 tooltip: 'Custom OrderList',
-                css: 'e-rte-toolbar-icon e-rte-listitems customOrder',
+                css: 'e-rte-toolbar-icon e-rte-list customOrder',
                 text: 'Lower-Greek',
                 listStyle: 'lower-greek'
             }]
@@ -3171,7 +3171,7 @@ Specifies the image for customUnorderedList item.
 
 
 ### toolsList `array`
-{:#members:toolslist}
+{:#members:List}
 
 Specifies the list of groups and order of those groups displayed in the RTE toolbar.  The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed. When the value is not specified, it gets its default display order and tools.
 
@@ -3183,7 +3183,7 @@ Specifies the list of groups and order of those groups displayed in the RTE tool
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" [(toolsList)]="toolslist"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" [(toolsList)]="List"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -3194,7 +3194,7 @@ import {Component} from '@angular/core';
 
 @Component({
     selector: 'ej-app',
-    templateUrl: './alltools.component.html'
+    templateUrl: './tools.component.html'
 })
 export class AllToolsComponent {
     content: string;
@@ -3224,12 +3224,12 @@ export class AllToolsComponent {
             customUnorderedList: [{
                 name: 'unOrderInsert',
                 tooltip: 'Custom UnOrderList',
-                css: 'e-rte-toolbar-icon e-rte-unlistitems customUnOrder'
+                css: 'e-rte-toolbar-icon e-rte-unlisted customUnOrder'
             }],
             customOrderedList: [{
                 name: 'orderInsert',
                 tooltip: 'Custom OrderList',
-                css: 'e-rte-toolbar-icon e-rte-listitems customOrder',
+                css: 'e-rte-toolbar-icon e-rte-list customOrder',
                 text: 'Lower-Greek',
                 listStyle: 'lower-greek'
             }]
@@ -3283,7 +3283,7 @@ Inline</td>
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" toolbarOverflowMode="inline" [(toolsList)]="toolslist"  [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" toolbarOverflowMode="inline" [(toolsList)]="List"  [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -3293,16 +3293,16 @@ Inline</td>
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     content: string;
     
     constructor() {
-        this.toolslist =  ["font","links", "lists", "doAction","tables", "style", "images","importExport"];
+        this.List =  ["font","links", "lists", "doAction","tables", "style", "images","importExport"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], 
@@ -3630,7 +3630,7 @@ Increases and decreases the contents zoom range in percentage
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" height="300px" zoomStep="0.1" [(toolsList)]="toolslist" [tools]="tools" [(value)]="content">
+<textarea ej-rte width="100%" height="300px" zoomStep="0.1" [(toolsList)]="List" [tools]="tools" [(value)]="content">
 </textarea>
      
 {% endhighlight %}
@@ -3640,18 +3640,18 @@ Increases and decreases the contents zoom range in percentage
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sd-home',
+  selector: 'ej-app',
   templateUrl: 'app/components/rte/rte.component.html'
 })
 export class RTEComponent {
-    toolslist: any;
+    List: any;
     tools: Object;
     fonts:any;
     colorCode: any;
     content: string;
     colorPaletteColumns: number;
     constructor() {
-        this.toolslist =  ["view"];
+        this.List =  ["view"];
         this.content = 'ECMAScript (or ES) is a trademarked scripting-language specification standard';
         this.tools = {
             view:[“zoomIn”,”zoomOut”]
@@ -4100,7 +4100,7 @@ Gets the command status of the selected text based on the given comment in the R
 
 <textarea ej-rte width="100%" id="rteSample" height="300px" [autoFocus]=true [(value)]="content">
 </textarea>
-<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Getcommandstatus</button>
+<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Status</button>
 
 {% endhighlight %}
 
@@ -4143,7 +4143,7 @@ Gets the Document from the RTE control.
 
 <textarea ej-rte width="100%" id="rteSample" height="300px" [autoFocus]=true [(value)]="content">
 </textarea>
-<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Getcommandstatus</button>
+<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Status</button>
 
 {% endhighlight %}
 
@@ -4910,7 +4910,7 @@ Remove the given column element
 
 <textarea ej-rte width="100%" id="rteSample" height="300px" [autoFocus]=true [(value)]="content">
 </textarea>
-<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Removve</button>
+<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Remove</button>
 
 {% endhighlight %}
 
@@ -5005,7 +5005,7 @@ Remove the given row element
 
 <textarea ej-rte width="100%" id="rteSample" height="300px" [autoFocus]=true [(value)]="content">
 </textarea>
-<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Removve</button>
+<button type="button" (click)="OnClick()"  style="margin-left: 35%;">Remove</button>
 
 {% endhighlight %}
 
@@ -5377,7 +5377,7 @@ var Obj = $("#rteSample").data("ejRTE");
 
 <textarea ej-rte width="100%" id="rteSample" height="300px" [autoFocus]=true [(value)]="content">
 </textarea>
-<button type="button" (click)="OnClick()"  style="margin-left: 35%;">selectall</button>
+<button type="button" (click)="OnClick()"  style="margin-left: 35%;">select all</button>
 
 {% endhighlight %}
 
@@ -6141,7 +6141,7 @@ type</td>
 
 {% highlight html %}
 
-<textarea ej-rte width="100%" id="rteSample" height="300px" [autoFocus]=true [(value)]="content" (keyup)="keyup($event)">
+<textarea ej-rte width="100%" id="rteSample" height="300px" [autoFocus]=true [(value)]="content" (keyup)="key($event)">
 </textarea>
 
 {% endhighlight %}
@@ -6159,7 +6159,7 @@ export class DefaultComponent {
   constructor() {
       this.content = 'Description: The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents and get the HTML content from RTE';
   }
-  keyup(args){
+  key(args){
 
 }
 }
