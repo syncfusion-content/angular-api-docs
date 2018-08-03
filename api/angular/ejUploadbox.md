@@ -1858,7 +1858,7 @@ Specifies the list of HTML attributes to be added to uploadbox control.
 <div id="upload_controls" style="margin-left: 35%;">
 <div>Select a file to upload</div>
 <div style="width:100px;height:35px;">
-    <ej-uploadbox id="uploadDefault" [htmlAttributes]="htmlattributes" [saveUrl]="saveURL" [removeUrl]="removeURL"></ej-uploadbox>
+    <ej-uploadbox id="uploadDefault" [htmlAttributes]="attributes" [saveUrl]="saveURL" [removeUrl]="removeURL"></ej-uploadbox>
 </div>
 </div>
 
@@ -1875,11 +1875,11 @@ import {Component} from '@angular/core';
 export class DefaultComponent {
   saveURL: string;
   removeURL: string;
-  htmlattributes: Object;
+  attributes: Object;
   constructor() {
   this.saveURL = 'http://js.syncfusion.com/ejServices/api/uploadbox/Save';
   this.removeURL = 'http://js.syncfusion.com/ejServices/api/uploadbox/Remove';
-  this.htmlattributes={"aria-label":"uploadbox"};
+  this.attributes={"aria-label":"uploadbox"};
   }
 }
 

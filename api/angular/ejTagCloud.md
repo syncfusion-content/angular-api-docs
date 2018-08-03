@@ -74,7 +74,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -187,7 +187,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -284,7 +284,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -370,7 +370,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -422,7 +422,7 @@ Defines the mapping fields for the data items of the TagCloud.
 {% highlight html %}
 
 <div id="tagcloud_controls" style="margin-left: 35%;">
-<ej-tagcloud id="tag" titletext="Tech Sites" [dataSource]="list" [fields]="fieldsvalues" [enableRTL]=true></ej-tagcloud>
+<ej-tagcloud id="tag" titletext="Tech Sites" [dataSource]="list" [fields]="fields" [enableRTL]=true></ej-tagcloud>
 </div>
 
 {% endhighlight %}
@@ -437,7 +437,7 @@ import { Component } from '@angular/core';
 })
 export class DefaultComponent {
     list: Array<any>;
-    fieldsvalues: Object;
+    fields: Object;
     constructor() {
 
         this.list = [
@@ -457,11 +457,11 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
-        this.fieldsvalues= { text: "text" , url:"url",frequency: "frequency"};
+        this.fields= { text: "text" , url:"url",frequency: "frequency"};
     }
 }
 
@@ -604,7 +604,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -711,7 +711,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -797,7 +797,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -883,7 +883,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1044,7 +1044,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1131,7 +1131,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1218,7 +1218,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1317,7 +1317,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1374,7 +1374,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1480,7 +1480,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1537,7 +1537,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1632,7 +1632,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1688,7 +1688,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1783,7 +1783,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1839,7 +1839,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -1982,7 +1982,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -2105,7 +2105,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -2228,7 +2228,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -2364,7 +2364,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];
@@ -2499,7 +2499,7 @@ export class DefaultComponent {
             { text: 'Menu', url: 'http://www.menucool.com', frequency: 3 },
             { text: 'BBC', url: 'http://www.bbc.co.uk/', frequency: 11 },
             { text: 'Valley', url: 'http://valleywag.gawker.com/', frequency: 6 },
-            { text: 'WOWslider', url: 'http://wowslider.com', frequency: 9 },
+            { text: 'slider', url: 'http://wowslider.com', frequency: 9 },
             { text: 'W3schools', url: 'http://www.w3schools.com/', frequency: 2 }
 
         ];

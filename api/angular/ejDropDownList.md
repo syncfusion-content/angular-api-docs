@@ -1139,7 +1139,7 @@ Used to create visualized header for dropdown items
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList" [width]="width" [headerTemplate]="header" [template]="template">
+<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="List" [width]="width" [headerTemplate]="header" [template]="template">
 
  
 {% endhighlight %}
@@ -1156,12 +1156,12 @@ encapsulation: ViewEncapsulation.None
 })
 export class DropDownListComponent {
    
-empList: Array<Object>;
+List: Array<Object>;
     header: string;
     template: string;
     width: any;
     constructor() {
-        this.empList = [{
+        this.List = [{
             text: "Erik Linden",
             imgId: "3",
             role: "Representative",
@@ -2428,7 +2428,7 @@ Specifies the targetID for the DropDownList’s items.
 {% highlight html %}
 
 <input id="List" ej-dropdownlist [targetID]="list" />
-<div id="mailtoolslist">
+<div id="tools">
 
 <ul>
 
@@ -2474,7 +2474,7 @@ export class DropdownlistComponent {
 
     
     constructor() {
-        this.list = "mailtoolslist";
+        this.list = "tools";
     }
 }
 
@@ -2493,7 +2493,7 @@ By default, you can add any text or image to the DropDownList item. To customize
 
 {% highlight html %}
 
-<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="empList" [width]="width" [headerTemplate]="header" [template]="template">
+<input type="text" id="dropdown1" ej-dropdownlist [dataSource]="List" [width]="width" [headerTemplate]="header" [template]="template">
 
  
 {% endhighlight %}
@@ -2510,12 +2510,12 @@ encapsulation: ViewEncapsulation.None
 })
 export class DropDownListComponent {
    
-empList: Array<Object>;
+List: Array<Object>;
     header: string;
     template: string;
     width: any;
     constructor() {
-        this.empList = [{
+        this.List = [{
             text: "Erik Linden",
             imgId: "3",
             role: "Representative",
@@ -2812,7 +2812,7 @@ For the single selection mode, the selected item's value will be returned in its
 {% highlight html %}
 
 <input id="List" ej-dropdownlist [targetID]="list" [value]="value" />
-<div id="mailtoolslist">
+<div id="tools">
 
 <ul>
 
@@ -2858,7 +2858,7 @@ export class DropdownlistComponent {
 
     value: string;
     constructor() {
-        this.list = "mailtoolslist";
+        this.list = "tools";
         this.value = "Reply & Delete";
     }
 }
@@ -2880,7 +2880,7 @@ Specifies a short hint that describes the expected value of the DropDownList con
 {% highlight html %}
 
 <input id="List" ej-dropdownlist [targetID]="list" watermarkText="Select" />
-<div id="mailtoolslist">
+<div id="tools">
 
 <ul>
 
@@ -2926,7 +2926,7 @@ export class DropdownlistComponent {
 
     
     constructor() {
-        this.list = "mailtoolslist";
+        this.list = "tools";
     }
 }
 
@@ -2946,7 +2946,7 @@ Defines the width of the DropDownList textbox.
 {% highlight html %}
 
 <input id="List" ej-dropdownlist [targetID]="list" watermarkText="Select" width=500 />
-<div id="mailtoolslist">
+<div id="tools">
 
 <ul>
 
@@ -2992,7 +2992,7 @@ export class DropdownlistComponent {
 
     
     constructor() {
-        this.list = "mailtoolslist";
+        this.list = "tools";
     }
 }
 
@@ -3164,7 +3164,7 @@ this.newCountries=[
 
 
 
-{value: 28, parentId: 'a', text: "Malysia"},
+{value: 28, parentId: 'a', text: "Malaysia"},
 
 
 
@@ -3854,7 +3854,7 @@ This property enables the DropDownList control.
 {% highlight html %}
 
 <input id="List" ej-dropdownlist [targetID]="list" enabled=false watermarkText="Select" width=500 />
-<div id="mailtoolslist">
+<div id="tools">
 
 <ul>
 
@@ -3901,7 +3901,7 @@ export class DropdownlistComponent {
 
     
     constructor() {
-        this.list = "mailtoolslist";
+        this.list = "tools";
     }
     Enable(){
 
@@ -3923,7 +3923,7 @@ obj.enable();
 {% highlight html %}
 
 <input id="List" ej-dropdownlist [targetID]="list" enabled=false watermarkText="Select" width=500 />
-<div id="mailtoolslist">
+<div id="tools">
 
 <ul>
 
@@ -3969,7 +3969,7 @@ export class DropdownlistComponent {
     list: string;
 
     constructor() {
-        this.list = "mailtoolslist";
+        this.list = "tools";
     }
     Enable(){
         $("#List").ejDropDownList("enable");

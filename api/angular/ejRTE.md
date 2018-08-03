@@ -1540,7 +1540,7 @@ Specifies the HTML Attributes of the ejRTE.
 
 {% highlight html %}
 
-       <textarea ej-rte class="rte" [(toolsList)]="List" [(tools)]="tools"  [htmlAttributes]="htmlattributes" ></textarea>
+       <textarea ej-rte class="rte" [(toolsList)]="List" [(tools)]="tools"  [htmlAttributes]="html" ></textarea>
 
      
 {% endhighlight %}
@@ -1556,10 +1556,10 @@ import {Component} from '@angular/core';
 export class RTEComponent {
     List: any;
     tools: Object;
-    htmlattributes: Object;
+    html: Object;
     
     constructor() {
-        this.htmlattributes={readOnly: "readOnly"};
+        this.html={readOnly: "readOnly"};
         this.List = ["links", "lists", "doAction", "style", "images"];
         this.tools = { style: ["bold", "italic"], lists: ["unorderedList", "orderedList"], doAction: ["undo", "redo"], links: ["createLink", "removeLink"], images: ["image"] };
     }
