@@ -94,6 +94,9 @@ options</td>
 * module:ej.toolbar.js
 
 
+* module:ej.tooltip.js
+
+
 * module:ej.menu.js
 
 
@@ -113,6 +116,9 @@ options</td>
 
 
 * module:ej.grid.selection.js
+
+
+* module:ej.gridresize.js
 
 
 * module:ej.grid.sort.js
@@ -504,7 +510,7 @@ Allows specified type of files only to display in FileExplorer control.
 
 #### Default Value
 
-* "*.*"
+* "* . *"
 
 #### Example
 
