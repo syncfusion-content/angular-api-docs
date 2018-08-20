@@ -379,7 +379,7 @@ export class AppComponent {
                             }
                         },
                         {
-                            id: 'largeicons',
+                            id: 'LargeIcons',
                             text: 'Large icons view',
                            action: function (event) {
                                  let fileExplorerObj = $('#fileExplorer4').data('ejFileExplorer');
