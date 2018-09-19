@@ -6020,63 +6020,6 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
-### getHeaderByField(fieldName)
-{:#methods:getheaderbyfield}
-
-Gets the column header element by its field name
-
-#### Returns:
-{:#methods:returns:}
-
-string
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">fieldName</td>
-<td class="type">string</td>
-<td class="description">Pass the column field name to get its element</td>
-</tr>
-</tbody>
-</table>
-
-Usage: we can able to get the header element of any column by passing its field name as parameter.
-
-#### Example
-
-{% tabs %}
-{% highlight html %}
- 
-<button id="getHeaderElement" (click)="getHeaderElement($event)">getHeaderElement</button>
-<ej-treegrid id="TreeGridControl">
-//...
-</ej-treegrid>
-
-{% endhighlight %}
-
-{% highlight ts %}
-
-export class AppComponent {
-    constructor() {
-        //...
-    }
-    public getHeaderElement(event) {
-        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
-        var value = treeObj.getHeaderByField("TaskName");
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-
 ### getScrollLeftOffset()
 {:#methods:getscrollleftoffset}
 
