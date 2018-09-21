@@ -668,7 +668,7 @@ Specifies the customized working time for tasks in Gantt
 export class AppComponent {
     public dayWorkingTime: any;
     constructor() {
-        this.dayWorkingTime = [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
+        this.dayWorkingTime = [{ "from": "08:00 AM", "to": "12:00 PM" , background: "#FF0000"}, { "from": "01:00 PM", "to": "05:00 PM" , background: "#0000FF" }]
     }
 }
 
@@ -1815,6 +1815,26 @@ Specifies the mapping property path for group name in datasource in resource all
 
 {% endhighlight %}
 
+### highlightNonWorkingTime `boolean`
+{:#members:highlightnonworkingtime }
+
+Specifies whether to highlight the non working time in Gantt.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+{% highlight html %}
+<ej-gantt id="GanttControl"
+    [highlightNonWorkingTime]= "true">
+</ej-gantt>
+
+{% endhighlight %}
+
 ### highlightWeekends `boolean`
 {:#members:highlightweekends}
 
@@ -2120,6 +2140,27 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
 
 <ej-gantt id="GanttControl"
     milestoneTemplate= "MilestoneTemplate">
+</ej-gantt>
+
+{% endhighlight %}
+
+### nonWorkingBackground `string`
+{:#members:nonworkingbackground }
+
+Specifies the background color for non working time in Gantt.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+{% highlight html %}
+
+<ej-gantt id="GanttControl"
+    nonWorkingBackground = "#0000FF">
 </ej-gantt>
 
 {% endhighlight %}
@@ -4728,6 +4769,10 @@ Specifies the view type for a project in the Gantt.
 <tr>
 <td class="name">ResourceView</td>
 <td class="description">Displays the project in resource allocation view in Gantt.</td>
+</tr>
+<tr>
+<td class="name">HistogramView</td>
+<td class="description">Displays the project in histogram view in Gantt</td>
 </tr>
 </tbody>
 </table>
