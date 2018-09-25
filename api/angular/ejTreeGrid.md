@@ -2207,6 +2207,69 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}  
 
+### editSettings.batchEditSettings `object`
+{:#members:editsettings-batcheditsettings}
+
+specifies the batch edit mode in TreeGrid.
+
+
+### editSettings.batchEditSettings.editMode `enum`
+{:#members:editsettings-batcheditsettings-editmode}
+
+<ts name = "ej.TreeGrid.BatchEditMode"/>
+
+Specifies the batch edit mode whether it is cell, row or dialog.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Cell</td>
+<td class="description">you can edit a cell</td>
+</tr>
+<tr>
+<td class="name">Row</td>
+<td class="description">you can edit a row</td>
+</tr>
+<tr>
+<td class="name">Dialog</td>
+<td class="description">you can edit a row in dialog form</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.BatchEditMode.Cell
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [editSettings]= "editSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public editSettings: any;
+    constructor() {
+        this.editSettings = {batchEditSettings:{editMode : ej.TreeGrid.BatchEditMode.Row};
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}  
+
 
 ### editSettings.beginEditAction `enum`
 {:#members:editsettings-begineditaction}
@@ -2319,6 +2382,10 @@ specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and
 <tr>
 <td class="name">DialogEditing</td>
 <td class="description">you can edit a row in dialog form.</td>
+</tr>
+<tr>
+<td class="name">BatchEditing</td>
+<td class="description">you can edit and save bulk of records</td>
 </tr>
 </tbody>
 </table>
@@ -3436,6 +3503,69 @@ export class AppComponent {
     constructor() {
         this.searchSettings = {
             ignoreCase: false
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+### searchSettings.searchHierarchyMode `enum`
+{:#members:searchsettings-searchhierarchymode}
+
+<ts name = "ej.TreeGrid.SearchHierarchyMode"/>
+
+Specifies the search mode of records in searching.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Parent</td>
+<td class="description">Parent level records will be included in searching</td>
+</tr>
+<tr>
+<td class="name">Child</td>
+<td class="description">Filtered child records will be displayed and parent records displayed along with its children.</td>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">Filtered child records will be displayed with parents and parents will be displayed along with its children</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">Filtered records alone will be displayed without it parents or children</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.SearchHierarchyMode.Parent
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+
+<ej-treegrid id="TreeGridControl"
+    [searchSettings]= "searchSettings">
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    public searchSettings: any;
+    constructor() {
+        this.searchSettings = {
+            searchHierarchyMode: ej.TreeGrid.SearchHierarchyMode.Child,
         }
     }
 }
