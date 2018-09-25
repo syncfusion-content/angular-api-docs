@@ -3360,6 +3360,30 @@ export class PivotGridComponent {
 
 {% endhighlight %}
 
+### enableMemberEditorSorting `boolean`
+{:#members:enablemembereditorsorting}
+
+Enables/Disables sorting option in member editor dialog for the members of the respective field.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight html %}
+<ej-pivotgrid [enableMemberEditorSorting]="true">
+    </ej-pivotgrid>
+
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class PivotGridComponent {
+  //..
+ }
+
+{% endhighlight %}
+
 ### enableGrandTotal `boolean`
 {:#members:enablegrandtotal}
 
