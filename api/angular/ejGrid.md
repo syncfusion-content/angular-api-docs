@@ -14967,7 +14967,7 @@ Triggered after the record is edited.
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns modified data.</td>
-</tr
+</tr>
 <tr>
 <td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
