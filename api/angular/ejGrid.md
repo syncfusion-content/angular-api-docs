@@ -15216,13 +15216,12 @@ Triggered every time a request is made to access particular header cell informat
 <td class="type"><span class="param-type">void</span></td>
 <td class="description last">Method to merge the Grid columns headers.</td>
 </tr>
-<tr>
 
+<tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
-<tr>
 
 </tbody>
 </table>
