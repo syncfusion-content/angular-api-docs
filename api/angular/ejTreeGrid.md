@@ -7118,6 +7118,38 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %} 
 
+### deleteRow()
+{:#methods:deleterow}
+
+To delete a selected row in TreeGrid.
+
+#### Example
+
+{% tabs %}
+{% highlight html %}
+ 
+<button id="deleteRow" (click)="deleteRow()">Delete Row</button>
+<ej-treegrid id="TreeGridControl">
+//...
+</ej-treegrid>
+
+{% endhighlight %}
+
+{% highlight ts %}
+
+export class AppComponent {
+    constructor() {
+        //...
+    }
+    public deleteRow(event) {
+        var treeObj = $("#TreeGridControl").ejTreeGrid("instance");
+        treeObj.deleteRow();
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Events
 
 ### actionBegin
