@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejTreeGrid Widget
+title: Properties, Methods and Events of Syncfusion ejTreeGrid Widget
 description: Methods, members, events available in ejTreeGrid
-documentation: API
+documentation: UG
 platform: angular-api
 keywords: ejTreeGrid, API, Essential JS TreeGrid
 ---
