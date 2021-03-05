@@ -1,7 +1,7 @@
 ---
  layout: post
- title: Properties,Methods and Events of Syncfusion Essential Angular Grid Widget
- description: Methods,members and events avaliable in Grid.The grid can be easily configured to the DOM element using the 'ej-grid' html tag. You can create a grid with a highly customizable look and feel.
+ title: Properties,Methods and Events of Syncfusion Essential Angular Grid
+ description: Methods,members and events avaliable in Grid.The grid can be easily configured to the DOM element using the 'ej-grid' html tag.
  documentation: UG
  platform: angular-api
  keywords: Grid, API, Essential Angular Grid
