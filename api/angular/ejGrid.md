@@ -1,14 +1,13 @@
 ---
  layout: post
- title: Properties,Methods and Events of Essential Angular Grid Widget
- description: Methods,members and events avaliable in Grid
- documentation: API
+ title: Properties,Methods and Events of Syncfusion Essential Angular Grid
+ description: Methods,members and events avaliable in Grid.The grid can be easily configured to the DOM element using the 'ej-grid' html tag.
+ documentation: UG
  platform: angular-api
- description: API reference for Grid
  keywords: Grid, API, Essential Angular Grid
 ---
  
-# ejGrid
+# Syncfusion Essential JS ejGrid
 The grid can be easily configured to the DOM element using the 'ej-grid' html tag. You can create a grid with a highly customizable look and feel.
 
 
@@ -3279,7 +3278,7 @@ this.groupSettings={groupedColumns:["OrderID"],showGroupedColumn:false };
 ### groupSettings.showToggleButton `boolean`
 {:#members:groupsettings-showtogglebutton}
 
-Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
+Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by clicking on the toggle button.
 
 #### Default Value:
 
