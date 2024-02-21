@@ -17,7 +17,7 @@ String platform='angular-api';
            {
 		     checkout scm
 			 
-	    def branchCommit = "${env.githubSourceRepoHttpUrl}/pulls/${env.pullRequestId}/files"
+	    def branchCommit = '"' + env.githubSourceRepoHttpUrl + '/pulls/' + env.pullRequestId + '/files'
 	    echo "branchCommit is ${branchCommit}"
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
