@@ -17,11 +17,9 @@ String platform='angular-api';
            {
 		     checkout scm
 			 
-			 def branchCommit = '"' + 'https://api.github.com/repos/syncfusion-content/angular-api-docs/pulls/' + env.pullRequestId + '/files'
+			 def branchCommit = 'https://api.github.com/repos/syncfusion-content/'+env.githubSourceRepoHttpUrl.split('/')[env.githubSourceRepoHttpUrl.split('/').size() - 1]+'/pulls/' + env.pullRequestId + '/files'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
-
             def ChangeFiles= branchCommitDetails.split('"filename": ');
-
             for (int i= 1; i < ChangeFiles.size();i++)
             {
             def ChangeFile= ChangeFiles[i].split(',')[0].replace('"', '')
@@ -48,7 +46,6 @@ String platform='angular-api';
     {
 		currentBuild.result = 'FAILURE'
     } 
-
 if(currentBuild.result != 'FAILURE')
 { 
 	stage 'Build Source'
@@ -73,10 +70,9 @@ if(currentBuild.result != 'FAILURE')
     }
 }	
 
-	stage 'Delete Workspace'
-	
+	stage 'Delete Workspace'      
 		def files = findFiles(glob: '**/cireports/*.*')      
-        
+
     if(files.size() > 0) 		
     { 		
          archiveArtifacts artifacts: 'cireports/', excludes: null 	 
